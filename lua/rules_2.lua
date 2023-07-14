@@ -41,7 +41,7 @@ return {
 	{ ['row'] = 'object', ['t'] = 19, ['x'] = 17, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 50 },
 	{ ['row'] = 'object', ['t'] = 19, ['x'] = 27, ['cat'] = 'rune', ['image'] = 'items/ball-blue.png', ['amount'] = 3, ['name'] = 'Aquamarine', ['set'] = 'R1,R1,R2', ['color'] = '#617dfa', ['tooltip'] = '+10% water defense (67%)\
 +10% magic resistance (33%)' },
-	{ ['row'] = 'object', ['t'] = 29, ['x'] = 5, ['cat'] = 'heal', ['image'] = 'halo/elven/druid-healing6.png', },
+	{ ['row'] = 'object', ['t'] = 29, ['x'] = 5, ['cat'] = 'heal', ['image'] = 'halo/elven/druid-healing6.png', ['name'] = 'Fresh water' },
 	{ ['row'] = 'object', ['t'] = 30, ['x'] = 5, ['cat'] = 'heal', ['image'] = 'halo/elven/druid-healing6.png', },
 	{ ['row'] = 'object', ['t'] = 33, ['x'] = 24, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 30 },
 	{ ['row'] = 'object', ['t'] = 41, ['x'] = 21, ['cat'] = 'heal', ['image'] = 'scenery/well.png', ['name'] = 'Well' },
@@ -152,14 +152,14 @@ return {
 	
 	{ ['t'] = 23, ['d'] = 2, ['side'] = 3, ['x'] = 26, ['lvl'] = 2, ['type'] = 'AE_fut_brungar_Sting_Ray', ['default'] = 'Mermaid Enchantress', },
 	{ ['t'] = 25, ['d'] = 2, ['side'] = 4, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_mag_Cyclops', ['default'] = 'Dune Rover', },
+	{ ['t'] = 25, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Water_Snake', ['default'] = 'Elder Falcon', },
 	
-	{ ['t'] = 25, ['d'] = 3, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Water_Snake', ['default'] = 'Elder Falcon', },
 	{ ['t'] = 28, ['d'] = 3, ['side'] = 4, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_mag_Roc_Master', ['default'] = 'Jinn', },
+	{ ['t'] = 29, ['d'] = 3, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Mudcrawler', ['default'] = 'Giant Mudcrawler', ['beefy'] = 40, ['race_guard_off'] = true, ['allow_random'] = false },
 	
 	{ ['t'] = 25, ['d'] = 4, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'AE_fut_brungar_Giant_Crab', ['default'] = 'Dune Firetrooper', ['buff'] = 'A15:B7:C14', ['disallow_slash_unguardian'] = true },
 	
 	{ ['t'] = 28, ['d'] = 5, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_mag_Mighty_Cyclops', ['default'] = 'Dune Captain', ['bulky'] = 36, ['beefy'] = 24, },
-	{ ['t'] = 29, ['d'] = 5, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Mudcrawler', ['default'] = 'Giant Mudcrawler', ['beefy'] = 40, ['race_guard_off'] = true, ['allow_random'] = false },
 	
 	-- 30 - 36 (mask y 51 - 45)
 	
@@ -205,10 +205,10 @@ return {
 	
 	{ ['t'] = 38, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_ext_chaos_Flesh_Hound', ['default'] = 'Ogre', },
 	{ ['t'] = 42, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mrc_infernai_Archfiend', ['default'] = 'Troll Hero', ['guard'] = true },
+	{ ['t'] = 43, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Lesser_Daemon', ['default'] = 'Orcish Archer', },
 	
-	{ ['t'] = 43, ['d'] = 3, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Lesser_Daemon', ['default'] = 'Orcish Archer', },
+	{ ['t'] = 41, ['d'] = 3, ['side'] = 3, ['x'] = 27, ['lvl'] = 2, ['type'] = 'AE_mrc_infernai_Troglodyte', ['default'] = 'Saurian Ambusher', },
 	
-	{ ['t'] = 41, ['d'] = 4, ['side'] = 3, ['x'] = 27, ['lvl'] = 2, ['type'] = 'AE_mrc_infernai_Troglodyte', ['default'] = 'Saurian Ambusher', },
 	{ ['t'] = 41, ['d'] = 4, ['side'] = 3, ['x'] = 28, ['lvl'] = 2, ['type'] = 'AE_mrc_infernai_Troglodyte', ['default'] = 'Saurian Ambusher', ['buff'] = 'A17:B17:C17:C16', },
 	
 	{ ['t'] = 40, ['d'] = 5, ['side'] = 3, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_mag_Black_Portal', ['default'] = 'Ghast', ['allow_random'] = false, ['race_guard_off'] = true, ['buff'] = 'A18:B18:C18:C2', ['calls_for_help'] = true },
