@@ -17,7 +17,7 @@ local after_games_settings = {
 	{ ['turn'] = 40, ['index'] = 16, ['percentage'] = 1000, ['colour'] = '#800000' },
 }
 
-local afterlife_locations = {
+local after_classic_locations = {
 	['map_0'] = { { ['x'] = 6, ['y'] = 2 }, { ['x'] = 19, ['y'] = 2 } },
 	['map_1'] = { { ['x'] = 21, ['y'] = 2 } },
 	['map_2'] = { { ['x'] = 21, ['y'] = 2 }, { ['x'] = 8, ['y'] = 2 } },
@@ -41,7 +41,7 @@ local find_vacant_location = function(around_x, around_y, map_edge, from_side)
 	wesnoth.set_variable('after_spawn_y', around_y)
 	
 	wml.fire('fire_event', {
-		name='find_vacant_afterlife_spawn'
+		name='find_vacant_after_games_spawn'
 	})
 	
 	return { ['x'] = wesnoth.get_variable('available_location_x'), ['y'] = wesnoth.get_variable('available_location_y') }
@@ -166,12 +166,12 @@ function wesnoth.wml_actions.qquws_prepare_new_after_spawn(cfg)
 	local map_id = cfg.map_id
 	local key = 'map_' .. tostring(map_id)
 	
-	for k,v in ipairs(afterlife_locations[key]) do
+	for k,v in ipairs(after_classic_locations[key]) do
 		wesnoth.set_variable('after_spawn_x', v['x'])
 		wesnoth.set_variable('after_spawn_y', v['y'])
 	
 		wml.fire('fire_event', {
-			name='prepare_afterlife_spawn'
+			name='prepare_after_games_spawn'
 		})
 	end
 end
@@ -197,9 +197,9 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	end
 	
 	wml.fire('fire_event', {
-		name='prepare_afterlife_remove_placeholders'
+		name='prepare_after_games_remove_placeholders'
 	})
 	
-	copy_all_units(8, 5, afterlife_locations[key], map_edge, drop_gold, east_item)
-	copy_all_units(9, 2, afterlife_locations[key], map_edge, drop_gold, west_item)
+	copy_all_units(8, 5, after_classic_locations[key], map_edge, drop_gold, east_item)
+	copy_all_units(9, 2, after_classic_locations[key], map_edge, drop_gold, west_item)
 end

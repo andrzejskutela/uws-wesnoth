@@ -133,13 +133,13 @@ local function process_spawn_table(spawn_table)
 	end
 	
 	local use_default_spawn = true
-	if game_mode == 'afterlife' or game_mode == 'after_race' then
+	if game_mode == 'after_classic' or game_mode == 'after_race' then
 		use_default_spawn = false
 	end
 	
 	for _,table_row in pairs(spawn_table) do
 		process_object = true
-		if game_mode == 'afterlife' then
+		if game_mode == 'after_classic' then
 			if table_row['t'] > 4 then
 				process_object = false
 			elseif table_row['t'] > 1 then
@@ -400,7 +400,7 @@ local function process_spawn_table(spawn_table)
 				else
 					rules['y'] = map_scroll_length + 5 - rules['t']
 				end
-			elseif game_mode == 'afterlife' then
+			elseif game_mode == 'after_classic' then
 				if rules['t'] > 1 then
 					rules['y'] = 6 - rules['t']
 				else
@@ -467,7 +467,7 @@ local function process_spawn_table(spawn_table)
 				else
 					y = map_scroll_length + 5 - table_row['t']
 				end
-			elseif game_mode == 'afterlife' then
+			elseif game_mode == 'after_classic' then
 				if table_row['t'] > 1 then
 					y = 6 - table_row['t']
 				else

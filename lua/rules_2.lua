@@ -244,17 +244,17 @@ return {
 	{ ['t'] = 55, ['d'] = 0, ['side'] = 4, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_myh_Gargoyle', ['default'] = 'Wolf Rider', ['gold'] = 4 },
 	{ ['t'] = 55, ['d'] = 0, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_myh_Blood_Hulk', ['default'] = 'Chocobone', ['gold'] = 22, ['buff'] = 'A20:B20:C20:B21:C48' },
 	{ ['t'] = 55, ['d'] = 0, ['side'] = 4, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_stf_free_saurians_Tarantula', ['default'] = 'Goblin Pillager', ['guard'] = true },
+	{ ['t'] = 55, ['d'] = 0, ['side'] = 3, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_rhy_dw_Ghost', ['default'] = 'Troll Whelp', ['guard'] = true, },
 	
 	{ ['t'] = 54, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Spiderpriest', ['default'] = 'Dark Sorcerer', ['recruits'] = 'AE_stf_free_saurians_Spider,AE_ext_monsters_Little_Spider,AE_rhy_de_Small_Spider', ['default_recruits'] = 'Ghost,Ghoul,Skeleton Archer', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 80, ['gold'] = 40, },
 	{ ['t'] = 57, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_myh_Blood_Manipulator', ['default'] = 'Jinn', },
 	
 	{ ['t'] = 54, ['d'] = 2, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['gold'] = 7, ['armored'] = 28 },
+	{ ['t'] = 57, ['d'] = 2, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Hound', ['default'] = 'Woodland Boar', },
 	
-	{ ['t'] = 55, ['d'] = 3, ['side'] = 3, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_rhy_dw_Ghost', ['default'] = 'Troll Whelp', ['guard'] = true, },
-	{ ['t'] = 57, ['d'] = 3, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Hound', ['default'] = 'Woodland Boar', },
+	{ ['t'] = 57, ['d'] = 3, ['side'] = 4, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Deadwood', ['default'] = 'Revenant', ['beefy'] = 60, },
 	
 	{ ['t'] = 56, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_myh_Sangel', ['default'] = 'Banebow', ['beefy'] = 40, ['gold'] = 20, },
-	{ ['t'] = 57, ['d'] = 4, ['side'] = 4, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Deadwood', ['default'] = 'Revenant', ['beefy'] = 60, },
 	
 	{ ['t'] = 55, ['d'] = 5, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Deadwood', ['default'] = 'Necrophage', ['buff'] = 'A12:B2:C6', },
 	
@@ -269,12 +269,12 @@ return {
 	{ ['t'] = 63, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_rhy_tr_Luna', ['default'] = 'Elvish Lady', ['item'] = true },
 	{ ['t'] = 64, ['d'] = 0, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_rhy_aq_Newmoonmage', ['default'] = 'Elvish High Lord', ['recruits'] = 'AE_rhy_aq_Hoplite,AE_rhy_aq_Tank,Mermaid Siren,Merman Hoplite,Merman Triton,Merman Javelineer,Merman Entangler,AE_rhy_aq_Master_Bowman', ['default_recruits'] = 'Elvish Sharpshooter,Elvish Outrider,Elvish Enchantress,Mermaid Diviner,Merman Triton,Merman Entangler', ['r_lvls'] = '3,3,3,3,3,3', ['recruitment_gold'] = 280 },
 	
+	{ ['t'] = 62, ['d'] = 1, ['side'] = 2, ['x'] = 28, ['lvl'] = 1, ['type'] = 'AE_chs_aragwaith_Eagle_Rider', ['default'] = 'Drake Glider', ['gold'] = 8 },
 	{ ['t'] = 63, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_fut_welkin_Sentinel_of_the_Moon', ['default'] = 'Drake Thrasher', ['gold'] = 7, ['guard'] = true },
 	
 	{ ['t'] = 61, ['d'] = 2, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_rhy_aq_General', ['default'] = 'Drake Flameheart', ['buff'] = 'A9:B21:C10', },
 	
 	{ ['t'] = 58, ['d'] = 3, ['side'] = 2, ['x'] = 28, ['lvl'] = 3, ['type'] = 'AE_rhy_tr_Gaya', ['default'] = 'Inferno Drake', ['gold'] = 11 },
-	{ ['t'] = 62, ['d'] = 3, ['side'] = 2, ['x'] = 28, ['lvl'] = 1, ['type'] = 'AE_chs_aragwaith_Eagle_Rider', ['default'] = 'Drake Glider', ['gold'] = 8 },
 	
 	{ ['t'] = 58, ['d'] = 4, ['side'] = 4, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Black_Spider', ['default'] = 'Drake Warrior', },
 	
