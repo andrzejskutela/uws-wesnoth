@@ -270,7 +270,7 @@ return {
 	{ ['t'] = 81, ['d'] = 0, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_mag_Rhami', ['default'] = '', },
 	{ ['t'] = 81, ['d'] = 0, ['side'] = 4, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_mag_Banisher', ['default'] = '', ['gold'] = 20, ['armored'] = 8, ['calls_for_help'] = true },
 	{ ['t'] = 83, ['d'] = 0, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mag_Air_Avatar', ['default'] = '', ['guard'] = true, },
-	{ ['t'] = 84, ['d'] = 0, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = '', ['buff'] = 'A34:B3:C34', ['race_guard_off'] = true },
+	{ ['t'] = 84, ['d'] = 0, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = '', ['buff'] = 'A34:B15:C34:A41', ['race_guard_off'] = true },
 	
 	{ ['t'] = 80, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mag_Dimensional_Gate_II', ['default'] = '', ['buff'] = 'A36:B35:C35:C5', ['item'] = true },
 	
@@ -352,19 +352,19 @@ return {
 	-- 107 - 113 (mask y 63 - 57)
 	
 	{ ['t'] = 107, ['d'] = 0, ['side'] = 4, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Wasp', ['default'] = '', },
-	{ ['t'] = 108, ['d'] = 0, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mrc_refugees_Envoy', ['default'] = '', ['calls_for_help'] = true },
+	{ ['t'] = 108, ['d'] = 0, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_mrc_refugees_Envoy', ['default'] = '', ['calls_for_help'] = true },
 	{ ['t'] = 109, ['d'] = 0, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mrc_refugees_Arsonist', ['default'] = '', },
 	{ ['t'] = 109, ['d'] = 0, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = '', ['moves'] = 0, ['gold'] = 10 },
 	{ ['t'] = 109, ['d'] = 0, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = '', ['moves'] = 0, ['gold'] = 10 },
 	{ ['t'] = 113, ['d'] = 0, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Condottiero', ['default'] = '', ['moves'] = 0, ['gold'] = 15 },
 	{ ['t'] = 113, ['d'] = 0, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Condottiero', ['default'] = '', ['moves'] = 0, ['gold'] = 15 },
 	
-	{ ['t'] = 107, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_mrc_hive_Tick', ['default'] = '', ['beefy'] = 80, ['bulky'] = 40 },
+	{ ['t'] = 107, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_mrc_hive_Tick', ['default'] = '', ['beefy'] = 80, ['bulky'] = 40 },
 	{ ['t'] = 107, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_imp_Arendians_Horse_Master', ['default'] = '', ['fast'] = 2, },
 	
 	{ ['t'] = 109, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mrc_refugees_Arsonist', ['default'] = '', },
 	
-	{ ['t'] = 109, ['d'] = 3, ['side'] = 4, ['x'] = 23, ['lvl'] = 5, ['type'] = 'QQ_abyssal_fungoid', ['default'] = '', ['buff'] = 'A19:B13:C2:B51', },
+	{ ['t'] = 109, ['d'] = 3, ['side'] = 4, ['x'] = 21, ['lvl'] = 5, ['type'] = 'QQ_abyssal_fungoid', ['default'] = '', ['buff'] = 'A19:B13:C2:B51', },
 	
 	{ ['t'] = 112, ['d'] = 4, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_feu_ceresians_Knight_Commander', ['default'] = '', ['bulky'] = 60, ['beefy'] = 40, },
 	
