@@ -55,7 +55,6 @@ return {
 	
 	{ ['t'] = 6, ['d'] = 3, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Buccaneer', ['default'] = 'Dune Burner', ['guard'] = true, },
 	
-	{ ['t'] = 4, ['d'] = 4, ['side'] = 2, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Fishman', ['default'] = 'Naga Fighter', ['moves'] = 6, ['allow_random'] = false },
 	{ ['t'] = 8, ['d'] = 4, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Novice_Enchanter', ['default'] = 'Dune Herbalist', },
 	
 	{ ['t'] = 6, ['d'] = 5, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Fishman_Fighter', ['default'] = 'Naga Ophidian', },

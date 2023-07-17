@@ -100,13 +100,12 @@ return {
 	{ ['t'] = 26, ['d'] = 0, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mrc_avians_Hummingbird', ['default'] = 'Drake Thrasher', ['race_guard_off'] = true },
 	{ ['t'] = 26, ['d'] = 0, ['side'] = 2, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_mrc_avians_Shell', ['default'] = 'Inferno Drake', ['race_guard_off'] = true },
 	{ ['t'] = 27, ['d'] = 0, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_mrc_avians_Passer', ['default'] = 'Drake Warden', ['calls_for_help'] = true, ['fast'] = 3 },
-	{ ['t'] = 27, ['d'] = 0, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_mrc_avians_Bladewing', ['default'] = 'Sky Drake', ['calls_for_help'] = true },
 	{ ['t'] = 29, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_mrc_avians_Raven', ['default'] = 'Drake Blademaster', ['calls_for_help'] = true },
 	
 	{ ['t'] = 29, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Shieldmaster', ['default'] = 'Highwayman', ['guard'] = true },
 	{ ['t'] = 29, ['d'] = 1, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Shieldmaster', ['default'] = 'Highwayman', ['guard'] = true },
 	
-	{ ['t'] = 29, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mrc_avians_Egglayer', ['default'] = 'Drake Thrasher', },
+	{ ['t'] = 29, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mrc_avians_Egglayer', ['default'] = 'Sky Drake', },
 	
 	{ ['t'] = 28, ['d'] = 3, ['side'] = 2, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_mrc_avians_Bowflurry', ['default'] = 'Drake Enforcer', },
 	
