@@ -169,7 +169,7 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 end
 
 function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
-	local penalty_modifier = wesnoth.get_variable('penalty_modifier')
+	local buff_modifier = wesnoth.get_variable('uws_game.buff_modifier')
 	
 	-- {hp}, {all attacks}, {melee attacks}, {ranged attacks}, {mp}, {resistance}, {defense}
 	local params = {
@@ -211,7 +211,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	
 	for k,v in ipairs(settings_table) do
 		if c[v.input_key] > 0 then
-			local value = mathx.round(v.round_f * c[v.input_key] * penalty_modifier)
+			local value = mathx.round(v.round_f * c[v.input_key] * buff_modifier)
 			if v.round_f ~= 1 then
 				value = value / v.round_f
 			end
@@ -223,7 +223,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	end
 	
 	if c.all_res > 0 then
-		local value = mathx.round(c.all_res * penalty_modifier)
+		local value = mathx.round(c.all_res * buff_modifier)
 		params[6]['exists'] = true
 		for k,v in ipairs(all_resistances) do
 			params[6][v] = params[6][v] + value
@@ -233,7 +233,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	end
 	
 	if c.physical > 0 then
-		local value = mathx.round(c.physical * penalty_modifier)
+		local value = mathx.round(c.physical * buff_modifier)
 		params[6]['exists'] = true
 		for k,v in ipairs(physical_resistances) do
 			params[6][v] = params[6][v] + value
@@ -243,7 +243,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	end
 	
 	if c.magical > 0 then
-		local value = mathx.round(c.magical * penalty_modifier)
+		local value = mathx.round(c.magical * buff_modifier)
 		params[6]['exists'] = true
 		for k,v in ipairs(magical_resistances) do
 			params[6][v] = params[6][v] + value
@@ -256,7 +256,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 		if c[v] > 0 then
 			special_resistances = true
 			local key = 'r' .. c[v]
-			local value = mathx.round(c[v] * penalty_modifier)
+			local value = mathx.round(c[v] * buff_modifier)
 			params[6]['exists'] = true
 			params[6][v] = params[6][v] + value
 			
@@ -290,7 +290,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	end
 	
 	if c.everywhere > 0 then
-		local value = mathx.round(c.everywhere * penalty_modifier)
+		local value = mathx.round(c.everywhere * buff_modifier)
 		for k,v in ipairs(all_terrains) do
 			params[7]['exists'] = true
 			params[7][v] = params[7][v] + value
@@ -303,7 +303,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 		if c[v] > 0 then
 			special_defense = true
 			local key = 'd' .. c[v]
-			local value = mathx.round(c[v] * penalty_modifier)
+			local value = mathx.round(c[v] * buff_modifier)
 			params[7]['exists'] = true
 			params[7][v] = params[7][v] + value
 			

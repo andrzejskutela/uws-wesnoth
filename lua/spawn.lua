@@ -30,7 +30,7 @@ function build_object_row(data)
 end
 
 local function get_spawn_table()
-	local map_id = wesnoth.get_variable('awss_map_id')
+	local map_id = wesnoth.get_variable('uws_game.map_id')
 	local filepath = '~add-ons/QQ_Ultimate_Wesnoth_Survival/lua/rules_' .. tostring(map_id) .. '.lua'
 	if filesystem.have_file(filepath, true) then
 		return wesnoth.dofile(filepath)
@@ -94,15 +94,15 @@ local function get_available_items(pool, used_items)
 end
 
 local function process_spawn_table(spawn_table)
-	local difficulty = wesnoth.get_variable('difficulty')
-	local is_random = wesnoth.get_variable("randomised_waves")
-	local is_chaos_random = wesnoth.get_variable("chaos_random")
-	local map_id = wesnoth.get_variable("awss_map_id")
+	local difficulty = wesnoth.get_variable('uws_game.difficulty')
+	local is_random = wesnoth.get_variable("uws_game.random_enemies")
+	local is_full_random = wesnoth.get_variable("uws_game.full_random")
+	local map_id = wesnoth.get_variable("uws_game.map_id")
 	local map_scroll_length = wesnoth.get_variable("game_settings[" .. map_id .. "].scroll_rounds")
 	local map_edge = wesnoth.get_variable("game_settings[" .. map_id .. "].edge")
 	local middle_lane = wesnoth.get_variable("game_settings[" .. map_id .. "].middle")
 	local allow_ae = wesnoth.get_variable("qquws_allow_ae_units")
-	local game_mode = wesnoth.get_variable('game_mode')
+	local game_mode = wesnoth.get_variable('uws_game.mode')
 	local used_items_list = wesnoth.get_variable('used_items_list')
 	
 	local type = nil
@@ -177,7 +177,7 @@ local function process_spawn_table(spawn_table)
 					rules['recruits'] = get_unit_random_recruit_list(rules['r_lvls'])
 				end
 				
-				if is_chaos_random == false then
+				if is_full_random == false then
 					rules['second_random'] = type
 				end
 			else
