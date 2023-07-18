@@ -164,7 +164,7 @@ return {
 	{ ['t'] = 44, ['d'] = 0, ['side'] = 4, ['x'] = 15, ['lvl'] = 0, ['type'] = 'Walking Corpse', },
 	{ ['t'] = 45, ['d'] = 0, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'Dark Sorcerer', },
 	{ ['t'] = 47, ['d'] = 0, ['side'] = 2, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Cuttle Fish', },
-	{ ['t'] = 48, ['d'] = 0, ['side'] = 2, ['x'] = 19, ['lvl'] = 5, ['type'] = 'Elder Mage', ['quiet_buff'] = 'Q5', ['allow_random'] = false },
+	{ ['t'] = 48, ['d'] = 0, ['side'] = 2, ['x'] = 19, ['lvl'] = 5, ['type'] = 'Elder Mage', ['quiet_buff'] = 'Q5', ['allow_random'] = false, ['item'] = true },
 	{ ['t'] = 49, ['d'] = 0, ['side'] = 2, ['x'] = 14, ['lvl'] = 2, ['type'] = 'Dwarvish Thunderguard', },
 	{ ['t'] = 50, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'Ancient Wose', ['guard'] = true },
 	
@@ -189,7 +189,7 @@ return {
 	
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'Drake Fighter', },
 	
-	{ ['t'] = 52, ['d'] = 2, ['side'] = 2, ['x'] = 19, ['lvl'] = 4, ['type'] = 'Grand Marshal', },
+	{ ['t'] = 52, ['d'] = 2, ['side'] = 2, ['x'] = 19, ['lvl'] = 4, ['type'] = 'Grand Marshal', ['event'] = 'dimaga_joining_unit' },
 	
 	{ ['t'] = 51, ['d'] = 4, ['side'] = 2, ['x'] = 14, ['lvl'] = 2, ['type'] = 'Roc', ['race_guard_off'] = true, },
 	
