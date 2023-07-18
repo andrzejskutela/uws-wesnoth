@@ -83,7 +83,7 @@ return {
 	{ ['t'] = 18, ['d'] = 2, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Dark Adept', },
 	{ ['t'] = 20, ['d'] = 2, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Merman Fighter', ['guard'] = true },
 	
-	{ ['t'] = 16, ['d'] = 3, ['side'] = 2, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', ['calls_for_help'] = true },
+	{ ['t'] = 16, ['d'] = 3, ['side'] = 2, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', ['calls_for_help'] = true, ['allow_random'] = false },
 	
 	{ ['t'] = 16, ['d'] = 4, ['side'] = 2, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Horned Scarab', ['bulky'] = 60, ['beefy'] = 20 },
 	

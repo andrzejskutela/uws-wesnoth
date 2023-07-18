@@ -57,7 +57,7 @@ return {
 	
 	{ ['t'] = 8, ['d'] = 4, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Novice_Enchanter', ['default'] = 'Dune Herbalist', },
 	
-	{ ['t'] = 6, ['d'] = 5, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Fishman_Fighter', ['default'] = 'Naga Ophidian', },
+	{ ['t'] = 6, ['d'] = 5, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Fishman_Fighter', ['default'] = 'Naga Ophidian', ['guard'] = true },
 	
 	-- 9 - 15 (mask y 19 - 13)
 	
@@ -74,7 +74,7 @@ return {
 	
 	{ ['t'] = 15, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Master_at_Arms', ['default'] = 'Outlaw', ['race_guard_off'] = true, },
 	
-	{ ['t'] = 9, ['d'] = 5, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Shooter', ['default'] = 'Trapper', },
+	{ ['t'] = 9, ['d'] = 5, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Shooter', ['default'] = 'Trapper', ['guard'] = true },
 	{ ['t'] = 15, ['d'] = 5, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Sword_Brother', ['default'] = 'Thug', ['buff'] = 'A21:B52:C48:C1' },
 	
 	
