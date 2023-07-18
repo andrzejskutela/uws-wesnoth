@@ -2,8 +2,8 @@ local after_games_settings = {
 	{ ['turn'] = 1, ['index'] = 1, ['percentage'] = 33, ['colour'] = '#fafafa' },
 	{ ['turn'] = 3, ['index'] = 2, ['percentage'] = 36, ['colour'] = '#f3f5e4' },
 	{ ['turn'] = 5, ['index'] = 3, ['percentage'] = 40, ['colour'] = '#ebedce' },
-	{ ['turn'] = 7, ['index'] = 4, ['percentage'] = 44, ['colour'] = '#e2e6b5' },
-	{ ['turn'] = 9, ['index'] = 5, ['percentage'] = 48, ['colour'] = '#e3e1a3' },
+	{ ['turn'] = 7, ['index'] = 4, ['percentage'] = 44, ['colour'] = '#e4e8ac' },
+	{ ['turn'] = 9, ['index'] = 5, ['percentage'] = 48, ['colour'] = '#e3e19a' },
 	{ ['turn'] = 11, ['index'] = 6, ['percentage'] = 52, ['colour'] = '#dbcf81' },
 	{ ['turn'] = 13, ['index'] = 7, ['percentage'] = 56, ['colour'] = '#dec276' },
 	{ ['turn'] = 15, ['index'] = 8, ['percentage'] = 60, ['colour'] = '#dea866' },
@@ -11,20 +11,16 @@ local after_games_settings = {
 	{ ['turn'] = 20, ['index'] = 10, ['percentage'] = 70, ['colour'] = '#e39152' },
 	{ ['turn'] = 23, ['index'] = 11, ['percentage'] = 75, ['colour'] = '#e37944' },
 	{ ['turn'] = 26, ['index'] = 12, ['percentage'] = 80, ['colour'] = '#e36236' },
-	{ ['turn'] = 29, ['index'] = 13, ['percentage'] = 85, ['colour'] = '#e34627' },
-	{ ['turn'] = 32, ['index'] = 14, ['percentage'] = 90, ['colour'] = '#de301d' },
-	{ ['turn'] = 35, ['index'] = 15, ['percentage'] = 95, ['colour'] = '#d11111' },
-	{ ['turn'] = 40, ['index'] = 16, ['percentage'] = 1000, ['colour'] = '#800000' },
+	{ ['turn'] = 30, ['index'] = 13, ['percentage'] = 85, ['colour'] = '#e34627' },
+	{ ['turn'] = 34, ['index'] = 14, ['percentage'] = 90, ['colour'] = '#de301d' },
+	{ ['turn'] = 38, ['index'] = 15, ['percentage'] = 95, ['colour'] = '#d11111' },
+	{ ['turn'] = 42, ['index'] = 16, ['percentage'] = 1000, ['colour'] = '#800000' },
 }
 
 local after_classic_locations = {
-	['map_0'] = { { ['x'] = 6, ['y'] = 2 }, { ['x'] = 19, ['y'] = 2 } },
-	['map_1'] = { { ['x'] = 21, ['y'] = 2 } },
-	['map_2'] = { { ['x'] = 21, ['y'] = 2 }, { ['x'] = 8, ['y'] = 2 } },
-	['map_3'] = { { ['x'] = 20, ['y'] = 1 } },
-	['map_4'] = { { ['x'] = 17, ['y'] = 2 }, { ['x'] = 10, ['y'] = 18 } },
-	['map_5'] = { { ['x'] = 13, ['y'] = 2 } },
-	['map_12'] = { { ['x'] = 22, ['y'] = 2 }, { ['x'] = 11, ['y'] = 2 }, { ['x'] = 24, ['y'] = 19 } },
+	['map_13'] = { { ['x'] = 5, ['y'] = 4 }, { ['x'] = 11, ['y'] = 4 } },
+	['map_14'] = { { ['x'] = 4, ['y'] = 3 }, { ['x'] = 10, ['y'] = 3 } },
+	['map_15'] = { { ['x'] = 2, ['y'] = 2 }, { ['x'] = 9, ['y'] = 2 } },
 }
 
 local east_items_table = {}
