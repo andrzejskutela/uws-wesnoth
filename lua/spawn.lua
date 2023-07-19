@@ -282,6 +282,7 @@ local function process_spawn_table(spawn_table)
 				wesnoth.set_variable("prespawn_buff_a", buff[1])
 				wesnoth.set_variable("prespawn_buff_b", buff[2])
 				wesnoth.set_variable("prespawn_buff_c", buff[3])
+				wesnoth.set_variable("prespawn_full_buff", rules['buff'])
 				
 				for k,v in ipairs(buff) do
 					-- even without random enemies one buff or more can be rand

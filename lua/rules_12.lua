@@ -40,14 +40,14 @@ return {
 	
 	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 6, ['y'] = 4, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Serpent', ['default'] = 'Great Seahorse', ['guard'] = true, ['moves'] = 5, ['allow_random'] = false, },
 	
-	{ ['t'] = 1, ['d'] = 5, ['side'] = 2, ['x'] = 17, ['y'] = 13, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Quicksand_Golem', ['default'] = 'Ogre', ['guard'] = true, ['moves'] = 4, ['gold'] = 20, ['buff'] = 'A49:B12:C46' },
+	{ ['t'] = 1, ['d'] = 5, ['side'] = 2, ['x'] = 17, ['y'] = 13, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Quicksand_Golem', ['default'] = 'Ogre', ['guard'] = true, ['moves'] = 4, ['gold'] = 20, ['buff'] = 'A49:B12:C46', ['allow_random'] = false },
 	
 	-- 2 - 8 (mask y 26 - 20)
 	
 	{ ['t'] = 3, ['d'] = 0, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Fishman', ['default'] = 'Naga Dirkfang', ['moves'] = 6, ['allow_random'] = false },
 	{ ['t'] = 5, ['d'] = 0, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Sailor', ['default'] = 'Dune Skirmisher', ['gold'] = 12 },
 	{ ['t'] = 7, ['d'] = 0, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mrc_mercenaries_Seafarer', ['default'] = 'Dune Falconer', ['recruits'] = 'AE_FL_pirates_Buccaneer,AE_FL_pirates_Sailor,AE_FL_pirates_Fishman', ['default_recruits'] = 'Dune Burner,Dune Soldier,Dune Herbalist', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 40, },
-	{ ['t'] = 8, ['d'] = 0, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Elder_Falcon', ['default'] = 'Elder Falcon', ['race_guard_off'] = true, },
+	{ ['t'] = 8, ['d'] = 0, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Elder_Falcon', ['default'] = 'Elder Falcon', ['guard'] = true, ['allow_random'] = false },
 	
 	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Sailor', ['default'] = 'Dune Rover', },
 	

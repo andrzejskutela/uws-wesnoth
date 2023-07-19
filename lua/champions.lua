@@ -91,6 +91,22 @@ local restrict_op_buffs = function(pool)
 	return ret
 end
 
+local exclude_buffs = function(pool, exclude_table)
+	local ret = {}
+	local test_array = {}
+	for k,v in ipairs(exclude_table) do
+		test_array[v] = true
+	end
+	
+	for k,v in ipairs(pool) do
+		if not test_array[v] then
+			ret[#ret + 1] = v
+		end
+	end
+	
+	return ret
+end
+
 function wesnoth.wml_actions.qquws_champion_buff_to_name(cfg)
 	local key_a = cfg.var_buff_a or 'champion_a_key'
 	local key_b = cfg.var_buff_b or 'champion_b_key'
@@ -112,6 +128,16 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 	local buff_a_var_name = cfg.var_buff_a or 'champion_a_key'
 	local buff_b_var_name = cfg.var_buff_b or 'champion_b_key'
 	local buff_c_var_name = cfg.var_buff_c or 'champion_c_key'
+	local full_buff = cfg.full_buff
+	local exclude_from_pool = {}
+	
+	local buff_no = 0
+	for buff_section in string.gmatch(full_buff, '([^:]+)') do
+		buff_no = buff_no + 1
+		if buff_no > 3 then
+			exclude_from_pool[#exclude_from_pool + 1] = buff_section
+		end
+	end
 	
 	local pool_a = { 'A1','A3','A5','A7','A8','A10','A11','A12','A16','A18','A19','A22','A23','A26','A29','A32','A36', }
 	local pool_b = { 'B1','B10','B11','B12','B14','B15','B16','B18','B19','B21','B22','B24','B25','B29','B32','B35','B45','B46','B47','B48','B49','B50','B52', }
@@ -149,6 +175,12 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 		pool_a = restrict_op_buffs(pool_a)
 		pool_b = restrict_op_buffs(pool_b)
 		pool_c = restrict_op_buffs(pool_c)
+	end
+	
+	if #exclude_from_pool > 0 then
+		pool_a = exclude_buffs(pool_a, exclude_from_pool)
+		pool_b = exclude_buffs(pool_b, exclude_from_pool)
+		pool_c = exclude_buffs(pool_c, exclude_from_pool)
 	end
 	
 	local buff_a = wesnoth.get_variable(buff_a_var_name)
