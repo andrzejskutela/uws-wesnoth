@@ -175,7 +175,7 @@ end
 function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	local map_id = cfg.map_id
 	local key = 'map_' .. tostring(map_id)
-	local map_edge = wesnoth.get_variable("game_settings[" .. map_id .. "].edge")
+	local map_edge = wesnoth.get_variable("uws_game.edge")
 	local wave_index = wesnoth.get_variable('after_games_wave_index')
 	local available_items = {}
 	local west_item = ''
