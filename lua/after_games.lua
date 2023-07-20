@@ -1,20 +1,20 @@
 local after_games_settings = { 
-	{ ['turn'] = 1, ['index'] = 1, ['percentage'] = 33, ['colour'] = '#fafafa' },
-	{ ['turn'] = 3, ['index'] = 2, ['percentage'] = 36, ['colour'] = '#f3f5e4' },
-	{ ['turn'] = 5, ['index'] = 3, ['percentage'] = 40, ['colour'] = '#ebedce' },
-	{ ['turn'] = 7, ['index'] = 4, ['percentage'] = 44, ['colour'] = '#e4e8ac' },
-	{ ['turn'] = 9, ['index'] = 5, ['percentage'] = 48, ['colour'] = '#e3e19a' },
-	{ ['turn'] = 11, ['index'] = 6, ['percentage'] = 52, ['colour'] = '#dbcf81' },
-	{ ['turn'] = 13, ['index'] = 7, ['percentage'] = 56, ['colour'] = '#dec276' },
-	{ ['turn'] = 15, ['index'] = 8, ['percentage'] = 60, ['colour'] = '#dea866' },
-	{ ['turn'] = 17, ['index'] = 9, ['percentage'] = 65, ['colour'] = '#e09d5a' },
-	{ ['turn'] = 20, ['index'] = 10, ['percentage'] = 70, ['colour'] = '#e39152' },
-	{ ['turn'] = 23, ['index'] = 11, ['percentage'] = 75, ['colour'] = '#e37944' },
-	{ ['turn'] = 26, ['index'] = 12, ['percentage'] = 80, ['colour'] = '#e36236' },
-	{ ['turn'] = 30, ['index'] = 13, ['percentage'] = 85, ['colour'] = '#e34627' },
-	{ ['turn'] = 34, ['index'] = 14, ['percentage'] = 90, ['colour'] = '#de301d' },
-	{ ['turn'] = 38, ['index'] = 15, ['percentage'] = 95, ['colour'] = '#d11111' },
-	{ ['turn'] = 42, ['index'] = 16, ['percentage'] = 1000, ['colour'] = '#800000' },
+	{ ['turn'] = 1, ['index'] = 1, ['percentage'] = 33, ['colour'] = '#fafafa', ['item'] = true, ['gold'] = 0 },
+	{ ['turn'] = 3, ['index'] = 2, ['percentage'] = 36, ['colour'] = '#f3f5e4', ['item'] = false, ['gold'] = 2 },
+	{ ['turn'] = 5, ['index'] = 3, ['percentage'] = 40, ['colour'] = '#ebedce', ['item'] = false, ['gold'] = 4 },
+	{ ['turn'] = 7, ['index'] = 4, ['percentage'] = 44, ['colour'] = '#e4e8ac', ['item'] = false, ['gold'] = 6 },
+	{ ['turn'] = 9, ['index'] = 5, ['percentage'] = 48, ['colour'] = '#e3e19a', ['item'] = false, ['gold'] = 8 },
+	{ ['turn'] = 11, ['index'] = 6, ['percentage'] = 52, ['colour'] = '#dbcf81', ['item'] = true, ['gold'] = 0 },
+	{ ['turn'] = 13, ['index'] = 7, ['percentage'] = 56, ['colour'] = '#dec276', ['item'] = false, ['gold'] = 10 },
+	{ ['turn'] = 15, ['index'] = 8, ['percentage'] = 60, ['colour'] = '#dea866', ['item'] = false, ['gold'] = 15 },
+	{ ['turn'] = 17, ['index'] = 9, ['percentage'] = 65, ['colour'] = '#e09d5a', ['item'] = false, ['gold'] = 20 },
+	{ ['turn'] = 20, ['index'] = 10, ['percentage'] = 70, ['colour'] = '#e39152', ['item'] = false, ['gold'] = 25 },
+	{ ['turn'] = 23, ['index'] = 11, ['percentage'] = 75, ['colour'] = '#e37944', ['item'] = true, ['gold'] = 0 },
+	{ ['turn'] = 26, ['index'] = 12, ['percentage'] = 80, ['colour'] = '#e36236', ['item'] = false, ['gold'] = 40 },
+	{ ['turn'] = 30, ['index'] = 13, ['percentage'] = 85, ['colour'] = '#e34627', ['item'] = false, ['gold'] = 50 },
+	{ ['turn'] = 34, ['index'] = 14, ['percentage'] = 90, ['colour'] = '#de301d', ['item'] = false, ['gold'] = 60 },
+	{ ['turn'] = 38, ['index'] = 15, ['percentage'] = 95, ['colour'] = '#d11111', ['item'] = false, ['gold'] = 70 },
+	{ ['turn'] = 42, ['index'] = 16, ['percentage'] = 1000, ['colour'] = '#800000', ['item'] = false, ['gold'] = 0 },
 }
 
 local after_classic_locations = {
@@ -93,6 +93,9 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 		clone.side = to_side
 		clone.hitpoints = clone.max_hitpoints
 		clone.moves = clone.max_moves
+		clone.status.slowed = false
+		clone.status.poisoned = false
+		clone.status.petrified = false
 		clone.variables.items_picked_up = ''
 		wesnoth.set_variable('new_unit_spawn_id', clone.id)
 		wesnoth.set_variable('after_games_copy_unit_type', clone.type)
@@ -180,8 +183,8 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	local available_items = {}
 	local west_item = ''
 	local east_item = ''
-	local drop_gold = 3 * wave_index
-	if wave_index % 5 == 1 then
+	local drop_gold = after_games_settings[wave_index]['gold']
+	if after_games_settings[wave_index]['item'] then
 		available_items = get_available_items({'magic_res','cold_res','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura'}, west_items_table)
 		west_item = mathx.random_choice(available_items)
 		table.insert(west_items_table, west_item)
@@ -189,7 +192,6 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 		available_items = get_available_items({'magic_res','cold_res','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura'}, east_items_table)
 		east_item = mathx.random_choice(available_items)
 		table.insert(east_items_table, east_item)
-		drop_gold = 0
 	end
 	
 	wml.fire('fire_event', {
