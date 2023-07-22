@@ -7,14 +7,14 @@ local after_games_settings = {
 	{ ['turn'] = 11, ['index'] = 6, ['percentage'] = 52, ['colour'] = '#dbcf81', ['item'] = true, ['gold'] = 0 },
 	{ ['turn'] = 13, ['index'] = 7, ['percentage'] = 56, ['colour'] = '#dec276', ['item'] = false, ['gold'] = 10 },
 	{ ['turn'] = 15, ['index'] = 8, ['percentage'] = 60, ['colour'] = '#dea866', ['item'] = false, ['gold'] = 15 },
-	{ ['turn'] = 17, ['index'] = 9, ['percentage'] = 65, ['colour'] = '#e09d5a', ['item'] = false, ['gold'] = 20 },
-	{ ['turn'] = 20, ['index'] = 10, ['percentage'] = 70, ['colour'] = '#e39152', ['item'] = false, ['gold'] = 25 },
-	{ ['turn'] = 23, ['index'] = 11, ['percentage'] = 75, ['colour'] = '#e37944', ['item'] = true, ['gold'] = 0 },
-	{ ['turn'] = 26, ['index'] = 12, ['percentage'] = 80, ['colour'] = '#e36236', ['item'] = false, ['gold'] = 40 },
-	{ ['turn'] = 30, ['index'] = 13, ['percentage'] = 85, ['colour'] = '#e34627', ['item'] = false, ['gold'] = 50 },
-	{ ['turn'] = 34, ['index'] = 14, ['percentage'] = 90, ['colour'] = '#de301d', ['item'] = false, ['gold'] = 60 },
-	{ ['turn'] = 38, ['index'] = 15, ['percentage'] = 95, ['colour'] = '#d11111', ['item'] = false, ['gold'] = 70 },
-	{ ['turn'] = 42, ['index'] = 16, ['percentage'] = 1000, ['colour'] = '#800000', ['item'] = false, ['gold'] = 0 },
+	{ ['turn'] = 18, ['index'] = 9, ['percentage'] = 65, ['colour'] = '#e09d5a', ['item'] = false, ['gold'] = 20 },
+	{ ['turn'] = 21, ['index'] = 10, ['percentage'] = 70, ['colour'] = '#e39152', ['item'] = false, ['gold'] = 25 },
+	{ ['turn'] = 24, ['index'] = 11, ['percentage'] = 75, ['colour'] = '#e37944', ['item'] = true, ['gold'] = 0 },
+	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['colour'] = '#e36236', ['item'] = false, ['gold'] = 40 },
+	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 85, ['colour'] = '#e34627', ['item'] = false, ['gold'] = 50 },
+	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 90, ['colour'] = '#de301d', ['item'] = false, ['gold'] = 60 },
+	{ ['turn'] = 40, ['index'] = 15, ['percentage'] = 95, ['colour'] = '#d11111', ['item'] = false, ['gold'] = 70 },
+	{ ['turn'] = 45, ['index'] = 16, ['percentage'] = 1000, ['colour'] = '#800000', ['item'] = false, ['gold'] = 0 },
 }
 
 local after_classic_locations = {
