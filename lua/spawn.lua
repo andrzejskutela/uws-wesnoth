@@ -46,7 +46,7 @@ local function get_unit_translation(unit_type, unit_level)
 	
 	if not awss_translation_table[unit_type] then
 		if not available_units[unit_level] then
-			available_units[unit_level] = wesnoth.get_variable('all_level_' .. tostring(unit_level))
+			available_units[unit_level] = wesnoth.get_variable('random_pool.level_' .. tostring(unit_level))
 		end
 		
 		awss_translation_table[unit_type] = mathx.random_choice(available_units[unit_level])
@@ -62,7 +62,7 @@ local function get_unit_random_recruit_list(recruit_lvls)
 	for lvl_str in string.gmatch(recruit_lvls, '([^,]+)') do
 		unit_level = tonumber(lvl_str)
 		if not available_units[unit_level] then
-			available_units[unit_level] = wesnoth.get_variable('all_level_' .. tostring(unit_level))
+			available_units[unit_level] = wesnoth.get_variable('random_pool.level_' .. tostring(unit_level))
 		end
 		
 		table.insert(list, mathx.random_choice(available_units[unit_level]))
@@ -100,7 +100,7 @@ local function process_spawn_table(spawn_table)
 	local map_scroll_length = wesnoth.get_variable("uws_game.scroll_rounds")
 	local map_edge = wesnoth.get_variable("uws_game.edge")
 	local middle_lane = wesnoth.get_variable("uws_game.middle")
-	local allow_ae = wesnoth.get_variable("qquws_allow_ae_units")
+	local allow_ae = wesnoth.get_variable("random_pool.allow_ae")
 	local game_mode = wesnoth.get_variable('uws_game.mode')
 	local used_items_list = wesnoth.get_variable('used_items_list')
 	
