@@ -27,82 +27,82 @@ return {
 	
 	-- beginning
 	
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 12, ['y'] = 12, ['lvl'] = 0, ['type'] = 'Walking Corpse', ['default'] = '', ['moves'] = 4, ['bulky'] = 30 },
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 13, ['y'] = 7, ['lvl'] = 0, ['type'] = 'Walking Corpse', ['default'] = '', ['moves'] = 4, },
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 10, ['y'] = 4, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Infested', ['default'] = '', ['moves'] = 4, },
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 9, ['y'] = 16, ['lvl'] = 0, ['type'] = 'Walking Corpse', ['default'] = '', ['moves'] = 4, },
+	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 12, ['y'] = 12, ['lvl'] = 0, ['type'] = 'Walking Corpse', ['default'] = 'Walking Corpse', ['moves'] = 4, ['bulky'] = 30 },
+	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 13, ['y'] = 7, ['lvl'] = 0, ['type'] = 'Walking Corpse', ['default'] = 'Walking Corpse', ['moves'] = 4, },
+	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 10, ['y'] = 4, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Infested', ['default'] = 'Soulless', ['moves'] = 4, },
+	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 9, ['y'] = 16, ['lvl'] = 0, ['type'] = 'Walking Corpse', ['default'] = 'Walking Corpse', ['moves'] = 4, },
 	
-	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['y'] = 16, ['lvl'] = 0, ['type'] = 'Walking Corpse', ['default'] = '', ['moves'] = 4, },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['y'] = 16, ['lvl'] = 0, ['type'] = 'Walking Corpse', ['default'] = 'Walking Corpse', ['moves'] = 4, },
 	
-	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 10, ['y'] = 14, ['lvl'] = 0, ['type'] = 'Walking Corpse', ['default'] = '', ['moves'] = 4, },
+	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 10, ['y'] = 14, ['lvl'] = 0, ['type'] = 'Walking Corpse', ['default'] = 'Walking Corpse', ['moves'] = 4, },
 	
-	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 11, ['y'] = 14, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Infected', ['default'] = '', ['moves'] = 4, ['buff'] = 'A41:B6:C16', ['gold'] = 15 },
+	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 11, ['y'] = 14, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Infected', ['default'] = 'Walking Corpse', ['moves'] = 4, ['buff'] = 'A41:B6:C16', ['gold'] = 15 },
 	
-	{ ['t'] = 1, ['d'] = 5, ['side'] = 2, ['x'] = 7, ['y'] = 17, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Infested', ['default'] = '', ['moves'] = 4, ['bulky'] = 80, ['gold'] = 30 },
+	{ ['t'] = 1, ['d'] = 5, ['side'] = 2, ['x'] = 7, ['y'] = 17, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Infested', ['default'] = 'Soulless', ['moves'] = 4, ['bulky'] = 80, ['gold'] = 30 },
 	
 	-- 2 - 8 (mask y 168 - 162)
 	
-	{ ['t'] = 2, ['d'] = 0, ['side'] = 2, ['x'] = 19, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Infected', ['default'] = '', },
-	{ ['t'] = 3, ['d'] = 0, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_ext_undead_Skeleton', ['default'] = '', ['item'] = true },
-	{ ['t'] = 5, ['d'] = 0, ['side'] = 2, ['x'] = 15, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Infected', ['default'] = '', ['beefy'] = 25 },
-	{ ['t'] = 6, ['d'] = 0, ['side'] = 2, ['x'] = 24, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Blob', ['default'] = '', ['gold'] = 12 },
-	{ ['t'] = 7, ['d'] = 0, ['side'] = 2, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Cadaver', ['default'] = '', ['gold'] = 30 },
-	{ ['t'] = 8, ['d'] = 0, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mrc_oracles_Darkmage', ['default'] = '', ['recruits'] = 'AE_mrc_Blight_Infected,AE_mrc_Blight_Parasite,AE_mrc_Blight_Microbe', ['default_recruits'] = '', ['r_lvls'] = '0,0,0', ['recruitment_gold'] = 30 },
+	{ ['t'] = 2, ['d'] = 0, ['side'] = 2, ['x'] = 19, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Infected', ['default'] = 'Walking Corpse', },
+	{ ['t'] = 3, ['d'] = 0, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Skeleton', ['default'] = 'Skeleton', ['item'] = true },
+	{ ['t'] = 5, ['d'] = 0, ['side'] = 2, ['x'] = 15, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Infected', ['default'] = 'Walking Corpse', ['beefy'] = 25 },
+	{ ['t'] = 6, ['d'] = 0, ['side'] = 2, ['x'] = 24, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Blob', ['default'] = 'Giant Rat', ['gold'] = 12 },
+	{ ['t'] = 7, ['d'] = 0, ['side'] = 2, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Cadaver', ['default'] = 'Ghoul', ['gold'] = 30 },
+	{ ['t'] = 8, ['d'] = 0, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mrc_oracles_Darkmage', ['default'] = 'Dark Adept', ['recruits'] = 'AE_mrc_Blight_Infected,AE_mrc_Blight_Parasite,AE_mrc_Blight_Microbe', ['default_recruits'] = 'Walking Corpse,Vampire Bat,Giant Rat', ['r_lvls'] = '0,0,0', ['recruitment_gold'] = 30 },
 	
-	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Infected', ['default'] = '', },
-	{ ['t'] = 7, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Infected', ['default'] = '', },
+	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Infected', ['default'] = 'Vampire Bat', },
+	{ ['t'] = 7, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Infected', ['default'] = 'Vampire Bat', },
 	
-	{ ['t'] = 6, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Cadaver', ['default'] = '', },
-	{ ['t'] = 7, ['d'] = 2, ['side'] = 2, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Host', ['default'] = '', },
+	{ ['t'] = 6, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Cadaver', ['default'] = 'Ghoul', },
+	{ ['t'] = 7, ['d'] = 2, ['side'] = 2, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Host', ['default'] = 'Skeleton Archer', },
 	
-	{ ['t'] = 5, ['d'] = 3, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Infected_Hound' },
+	{ ['t'] = 5, ['d'] = 3, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Infected_Hound', ['default'] = 'Ghost', },
 	
-	{ ['t'] = 7, ['d'] = 4, ['side'] = 2, ['x'] = 19, ['lvl'] = 0, ['type'] = 'Walking Corpse', ['default'] = '', },
+	{ ['t'] = 7, ['d'] = 4, ['side'] = 2, ['x'] = 19, ['lvl'] = 0, ['type'] = 'Walking Corpse', ['default'] = 'Walking Corpse', },
 	
-	{ ['t'] = 3, ['d'] = 5, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Slime', ['default'] = '', },
+	{ ['t'] = 3, ['d'] = 5, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Slime', ['default'] = 'Ghost', },
 	
 	-- 9 - 15 (mask y 161 - 155)
 	
-	{ ['t'] = 11, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Charred_Zombie', ['default'] = '', ['bulky'] = 30 },
-	{ ['t'] = 12, ['d'] = 0, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Parasite' },
-	{ ['t'] = 12, ['d'] = 0, ['side'] = 2, ['x'] = 15, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Parasite' },
-	{ ['t'] = 13, ['d'] = 0, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Water_Snake', ['default'] = '', },
-	{ ['t'] = 14, ['d'] = 0, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Tower_Servant', ['default'] = '', ['moves'] = 0, ['gold'] = 10, ['disallow_slash_unguardian'] = true },
-	{ ['t'] = 14, ['d'] = 0, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_myh_Water_Dryad', ['default'] = '', },
+	{ ['t'] = 11, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Charred_Zombie', ['default'] = 'Ghoul', ['bulky'] = 30 },
+	{ ['t'] = 12, ['d'] = 0, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Parasite', ['default'] = 'Vampire Bat' },
+	{ ['t'] = 12, ['d'] = 0, ['side'] = 2, ['x'] = 15, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Parasite', ['default'] = 'Vampire Bat' },
+	{ ['t'] = 13, ['d'] = 0, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Water_Snake', ['default'] = 'Naga Fighter', },
+	{ ['t'] = 14, ['d'] = 0, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Tower_Servant', ['default'] = 'Footpad', ['moves'] = 0, ['gold'] = 10, ['disallow_slash_unguardian'] = true },
+	{ ['t'] = 14, ['d'] = 0, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_myh_Water_Dryad', ['default'] = 'Mermaid Initiate', },
 	
-	{ ['t'] = 10, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Dark_Current', ['default'] = '', },
-	{ ['t'] = 15, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Tower_Dancer', ['default'] = '', ['calls_for_help'] = true },
+	{ ['t'] = 10, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Dark_Current', ['default'] = 'Fire Guardian', },
+	{ ['t'] = 15, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Tower_Dancer', ['default'] = 'Poacher', ['calls_for_help'] = true },
 	
-	{ ['t'] = 13, ['d'] = 2, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_rhy_ne_Skeleton_Horse', ['default'] = '', ['fast'] = 1 },
-	{ ['t'] = 15, ['d'] = 2, ['side'] = 3, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_chs_elementals_Undine', ['default'] = '', },
+	{ ['t'] = 13, ['d'] = 2, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_rhy_ne_Skeleton_Horse', ['default'] = 'Wolf', ['fast'] = 1 },
+	{ ['t'] = 15, ['d'] = 2, ['side'] = 3, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_chs_elementals_Undine', ['default'] = 'Great Seahorse', },
 	
-	{ ['t'] = 12, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Amoeba', ['default'] = '', },
+	{ ['t'] = 12, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Amoeba', ['default'] = 'Blood Bat', },
 	
-	{ ['t'] = 9, ['d'] = 4, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Fetid', ['default'] = '', },
+	{ ['t'] = 9, ['d'] = 4, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Fetid', ['default'] = 'Skeleton', },
 	
-	{ ['t'] = 10, ['d'] = 5, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mrc_Blight_Dismembered', ['default'] = '', ['gold'] = 15},
+	{ ['t'] = 10, ['d'] = 5, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mrc_Blight_Dismembered', ['default'] = 'Deathblade', ['gold'] = 15},
 	
 	-- 16 - 22 (mask y 154 - 148)
 	
-	{ ['t'] = 16, ['d'] = 0, ['side'] = 3, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Blue_Lizard', ['default'] = '', },
-	{ ['t'] = 17, ['d'] = 0, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_mrc_cult_Survivor', ['default'] = '', ['bulky'] = 50, ['beefy'] = 50, },
-	{ ['t'] = 18, ['d'] = 0, ['side'] = 3, ['x'] = 23, ['lvl'] = 0, ['type'] = 'AE_mrc_hive_Gnat', ['default'] = '', ['bulky'] = 120, },
-	{ ['t'] = 18, ['d'] = 0, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Headhunter', ['default'] = '', ['fast'] = 2, },
-	{ ['t'] = 19, ['d'] = 0, ['side'] = 3, ['x'] = 22, ['lvl'] = 0, ['type'] = 'AE_mrc_hive_Gnat', ['default'] = '', ['bulky'] = 40, },
-	{ ['t'] = 22, ['d'] = 0, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mrc_mercenaries_Brute', ['default'] = '', ['gold'] = 10, },
+	{ ['t'] = 16, ['d'] = 0, ['side'] = 3, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Blue_Lizard', ['default'] = 'Horned Scarab', },
+	{ ['t'] = 17, ['d'] = 0, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_mrc_cult_Survivor', ['default'] = 'Thug', ['bulky'] = 50, ['beefy'] = 50, },
+	{ ['t'] = 18, ['d'] = 0, ['side'] = 3, ['x'] = 23, ['lvl'] = 0, ['type'] = 'AE_mrc_hive_Gnat', ['default'] = 'Vampire Bat', ['bulky'] = 120, },
+	{ ['t'] = 18, ['d'] = 0, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Headhunter', ['default'] = 'Footpad', ['fast'] = 2, },
+	{ ['t'] = 19, ['d'] = 0, ['side'] = 3, ['x'] = 22, ['lvl'] = 0, ['type'] = 'AE_mrc_hive_Gnat', ['default'] = 'Vampire Bat', ['bulky'] = 40, },
+	{ ['t'] = 22, ['d'] = 0, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mrc_mercenaries_Brute', ['default'] = 'Thug', ['gold'] = 10, },
 	
-	{ ['t'] = 20, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_chs_wild_humans_Bandit_Fighter', ['default'] = '', },
-	{ ['t'] = 20, ['d'] = 1, ['side'] = 3, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_chs_wild_humans_Bandit_Fighter', ['default'] = '', },
+	{ ['t'] = 20, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_chs_wild_humans_Bandit_Fighter', ['default'] = 'Thug', },
+	{ ['t'] = 20, ['d'] = 1, ['side'] = 3, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_chs_wild_humans_Bandit_Fighter', ['default'] = 'Thug', },
 	
-	{ ['t'] = 21, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_chs_wild_humans_Rogue_Mage', ['default'] = '', ['beefy'] = 30, },
-	{ ['t'] = 21, ['d'] = 2, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Drone', ['default'] = '', },
+	{ ['t'] = 21, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_chs_wild_humans_Rogue_Mage', ['default'] = 'Dark Adept', ['beefy'] = 30, },
+	{ ['t'] = 21, ['d'] = 2, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Drone', ['default'] = 'Woodland Boar', },
 	
-	{ ['t'] = 18, ['d'] = 3, ['side'] = 3, ['x'] = 20, ['lvl'] = 1, ['type'] = 'Thug', ['default'] = '', ['armored'] = 8 },
-	{ ['t'] = 20, ['d'] = 3, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Fly', ['default'] = '', },
+	{ ['t'] = 18, ['d'] = 3, ['side'] = 3, ['x'] = 20, ['lvl'] = 1, ['type'] = 'Thug', ['default'] = 'Thug', ['armored'] = 8 },
+	{ ['t'] = 20, ['d'] = 3, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Fly', ['default'] = 'Blood Bat', },
 	
-	{ ['t'] = 19, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_ext_outlaws_Brigand', ['default'] = '', },
+	{ ['t'] = 19, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_ext_outlaws_Brigand', ['default'] = 'Wolf Rider', },
 	
-	{ ['t'] = 18, ['d'] = 5, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_imp_Marauders_Sailor', ['default'] = '', ['race_guard_off'] = true, ['gold'] = 10 },
+	{ ['t'] = 18, ['d'] = 5, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_imp_Marauders_Sailor', ['default'] = 'Naga Ophidian', ['race_guard_off'] = true, ['gold'] = 10 },
 	
 	-- 23 - 29 (mask y 147 - 141)
 	
