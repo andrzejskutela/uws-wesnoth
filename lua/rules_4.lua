@@ -106,81 +106,81 @@ return {
 	
 	-- 23 - 29 (mask y 147 - 141)
 	
-	{ ['t'] = 24, ['d'] = 0, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_ext_orcs_Naga_Hunter', ['default'] = '', },
-	{ ['t'] = 25, ['d'] = 0, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_ext_orcs_Naga_Hunter', ['default'] = '', },
-	{ ['t'] = 27, ['d'] = 0, ['side'] = 4, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_mag_Roc_Rider', ['default'] = '', },
-	{ ['t'] = 28, ['d'] = 0, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Sniper', ['default'] = '', ['moves'] = 0, ['gold'] = 10, },
-	{ ['t'] = 28, ['d'] = 0, ['side'] = 4, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mag_Roc_Master', ['default'] = '', ['allow_random'] = false },
-	{ ['t'] = 29, ['d'] = 0, ['side'] = 4, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Shaman', ['default'] = '', },
+	{ ['t'] = 24, ['d'] = 0, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_ext_orcs_Naga_Hunter', ['default'] = 'Naga Dirkfang', },
+	{ ['t'] = 25, ['d'] = 0, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_ext_orcs_Naga_Hunter', ['default'] = 'Naga Dirkfang', },
+	{ ['t'] = 27, ['d'] = 0, ['side'] = 4, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_mag_Roc_Rider', ['default'] = 'Elder Falcon', },
+	{ ['t'] = 28, ['d'] = 0, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Sniper', ['default'] = 'Orcish Crossbowman', ['moves'] = 0, ['gold'] = 10, },
+	{ ['t'] = 28, ['d'] = 0, ['side'] = 4, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mag_Roc_Master', ['default'] = 'Roc', ['allow_random'] = false },
+	{ ['t'] = 29, ['d'] = 0, ['side'] = 4, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Shaman', ['default'] = 'Goblin Impaler', },
 	
-	{ ['t'] = 26, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Assassin', ['default'] = '', },
-	{ ['t'] = 29, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Hunter', ['default'] = '', },
+	{ ['t'] = 26, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Assassin', ['default'] = 'Naga Warrior', },
+	{ ['t'] = 29, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Hunter', ['default'] = 'Goblin Impaler', },
 	
-	{ ['t'] = 23, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_ext_orcs_Goblin_Cavalryman', ['default'] = '', },
-	{ ['t'] = 28, ['d'] = 2, ['side'] = 4, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Warrior', ['default'] = '', ['beefy'] = 40, },
+	{ ['t'] = 23, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_ext_orcs_Goblin_Cavalryman', ['default'] = 'Wolf Rider', },
+	{ ['t'] = 28, ['d'] = 2, ['side'] = 4, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Warrior', ['default'] = 'Orcish Warrior', ['beefy'] = 40, },
 	
-	{ ['t'] = 24, ['d'] = 3, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_chs_wild_humans_Dread_Wolf', ['default'] = '', },
+	{ ['t'] = 24, ['d'] = 3, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_chs_wild_humans_Dread_Wolf', ['default'] = 'Goblin Rouser', },
 	
-	{ ['t'] = 25, ['d'] = 4, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Warden', ['default'] = '', ['buff'] = 'A31:B30:C17', ['gold'] = 20, ['item'] = true, },
+	{ ['t'] = 25, ['d'] = 4, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Warden', ['default'] = 'Naga Shield Guard', ['buff'] = 'A31:B30:C17', ['gold'] = 20, ['item'] = true, },
 	
-	{ ['t'] = 28, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_mag_Goblin_Invader', ['default'] = '', ['race_guard_off'] = true, ['gold'] = 12 },
-	{ ['t'] = 29, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = '', ['race_guard_off'] = true, ['allow_random'] = false, ['bulky'] = 64, ['beefy'] = 64 },
+	{ ['t'] = 28, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_mag_Goblin_Invader', ['default'] = 'Orcish Nightblade', ['race_guard_off'] = true, ['gold'] = 12 },
+	{ ['t'] = 29, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['race_guard_off'] = true, ['allow_random'] = false, ['bulky'] = 64, ['beefy'] = 64 },
 	
 	-- 30 - 36 (mask y 140 - 134)
 	
-	{ ['t'] = 30, ['d'] = 0, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Warrior', ['default'] = '', ['disallow_slash_unguardian'] = true },
-	{ ['t'] = 30, ['d'] = 0, ['side'] = 4, ['x'] = 19, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Runt', ['default'] = '', },
-	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Grand_Crocodile', ['default'] = '', ['allow_random'] = false },
-	{ ['t'] = 31, ['d'] = 0, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Hunter', ['default'] = '', },
-	{ ['t'] = 31, ['d'] = 0, ['side'] = 4, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Assassin', ['default'] = '', ['recruits'] = 'AE_mag_Goblin_Hunter,AE_mag_Goblin_Warrior,AE_mag_Goblin_Archer,AE_mag_Goblin_Shaman', ['default_recruits'] = '', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 75 },
-	{ ['t'] = 32, ['d'] = 0, ['side'] = 4, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = '', ['race_guard_off'] = true, ['allow_random'] = false },
-	{ ['t'] = 34, ['d'] = 0, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_arc_orcs_Frost_Goblin', ['default'] = '', },
-	{ ['t'] = 35, ['d'] = 0, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_arc_orcs_Goblin_Drummer', ['default'] = '', },
+	{ ['t'] = 30, ['d'] = 0, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Warrior', ['default'] = 'Orcish Assassin', ['disallow_slash_unguardian'] = true },
+	{ ['t'] = 30, ['d'] = 0, ['side'] = 4, ['x'] = 19, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Runt', ['default'] = 'Goblin Spearman', },
+	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Grand_Crocodile', ['default'] = 'Water Serpent', ['allow_random'] = false },
+	{ ['t'] = 31, ['d'] = 0, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Hunter', ['default'] = 'Orcish Archer', },
+	{ ['t'] = 31, ['d'] = 0, ['side'] = 4, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Assassin', ['default'] = 'Orcish Ruler', ['recruits'] = 'AE_mag_Goblin_Hunter,AE_mag_Goblin_Warrior,AE_mag_Goblin_Archer,AE_mag_Goblin_Shaman', ['default_recruits'] = 'Orcish Grunt,Orcish Archer,Orcish Assassin,Young Ogre', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 75 },
+	{ ['t'] = 32, ['d'] = 0, ['side'] = 4, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['race_guard_off'] = true, ['allow_random'] = false },
+	{ ['t'] = 34, ['d'] = 0, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_arc_orcs_Frost_Goblin', ['default'] = 'Goblin Rouser', },
+	{ ['t'] = 35, ['d'] = 0, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_arc_orcs_Goblin_Drummer', ['default'] = 'Young Ogre', },
 	
-	{ ['t'] = 30, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_mag_Roc_Rider', ['default'] = '', ['allow_random'] = false, },
+	{ ['t'] = 30, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_mag_Roc_Rider', ['default'] = 'Naga Guard', ['allow_random'] = false, },
 	
-	{ ['t'] = 32, ['d'] = 2, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Druid', ['default'] = '', },
+	{ ['t'] = 32, ['d'] = 2, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Druid', ['default'] = 'Orcish Crossbowman', },
 	
-	{ ['t'] = 34, ['d'] = 3, ['side'] = 4, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Wizard', ['default'] = '', },
+	{ ['t'] = 34, ['d'] = 3, ['side'] = 4, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Wizard', ['default'] = 'Ogre', },
 	
-	{ ['t'] = 34, ['d'] = 4, ['side'] = 4, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Warbanner', ['default'] = '', },
+	{ ['t'] = 34, ['d'] = 4, ['side'] = 4, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Warbanner', ['default'] = 'Orcish Slayer', },
 	
-	{ ['t'] = 34, ['d'] = 5, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Archer', ['default'] = '', },
+	{ ['t'] = 34, ['d'] = 5, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Archer', ['default'] = 'Orcish Archer', },
 	
 	-- 37 - 43 (mask y 133 - 127)
 	
-	{ ['t'] = 38, ['d'] = 0, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_mrc_highlanders_Warrior_Spirit', ['default'] = '', ['armored'] = 10, ['beefy'] = 20, ['race_guard_off'] = true },
-	{ ['t'] = 39, ['d'] = 0, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mag_Troll_Warbanner', ['default'] = '', ['bulky'] = 50, ['gold'] = 80, ['recruits'] = 'AE_mag_Troll_Fire_Wizard,Troll Shaman,Troll,Troll Rocklobber', ['default_recruits'] = '', ['r_lvls'] = '2,2,2,2', ['recruitment_gold'] = 120 },
-	{ ['t'] = 41, ['d'] = 0, ['side'] = 2, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Wolf', ['default'] = '', },
-	{ ['t'] = 43, ['d'] = 0, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_myh_Rabid_Wolf', ['default'] = '', ['buff'] = 'A26:B19:C30', ['race_guard_off'] = true },
+	{ ['t'] = 38, ['d'] = 0, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_mrc_highlanders_Warrior_Spirit', ['default'] = 'Ghost', ['armored'] = 10, ['beefy'] = 20, ['race_guard_off'] = true },
+	{ ['t'] = 39, ['d'] = 0, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mag_Troll_Warbanner', ['default'] = 'Troll Shaman', ['bulky'] = 50, ['gold'] = 80, ['recruits'] = 'AE_mag_Troll_Fire_Wizard,Troll Shaman,Troll,Troll Rocklobber', ['default_recruits'] = 'Troll Hero,Troll,Troll Rocklobber,Ogre', ['r_lvls'] = '2,2,2,2', ['recruitment_gold'] = 120 },
+	{ ['t'] = 41, ['d'] = 0, ['side'] = 2, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Wolf', ['default'] = 'Wolf', },
+	{ ['t'] = 43, ['d'] = 0, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_myh_Rabid_Wolf', ['default'] = 'Goblin Pillager', ['buff'] = 'A26:B19:C30', ['race_guard_off'] = true },
 	
-	{ ['t'] = 41, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Wolf', ['default'] = '', },
+	{ ['t'] = 39, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_mag_Troll_Warlock', ['default'] = 'Great Troll', ['disallow_slash_unguardian'] = true, ['guard'] = true },
+	{ ['t'] = 41, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Wolf', ['default'] = 'Wolf', },
 	
-	{ ['t'] = 42, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_ext_monsters_Great_Wolf', ['default'] = '', },
+	{ ['t'] = 42, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_ext_monsters_Great_Wolf', ['default'] = 'Great Wolf', },
 	
-	{ ['t'] = 42, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Roc', ['default'] = '', ['disallow_slash_unguardian'] = true },
+	{ ['t'] = 42, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Roc', ['default'] = 'Shadow', ['disallow_slash_unguardian'] = true },
 	
-	{ ['t'] = 37, ['d'] = 4, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_efm_freemen_Great_Roc', ['default'] = '', ['disallow_slash_unguardian'] = true, ['agile'] = 8, },
+	{ ['t'] = 37, ['d'] = 4, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_efm_freemen_Great_Roc', ['default'] = 'Wild Wyvern', ['disallow_slash_unguardian'] = true, ['agile'] = 8, },
 	
-	{ ['t'] = 39, ['d'] = 5, ['side'] = 2, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_mag_Troll_Warlock', ['default'] = '', ['disallow_slash_unguardian'] = true },
-	{ ['t'] = 39, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_imp_Sidhe_Ice_Bear', ['default'] = '', ['bulky'] = 60, ['beefy'] = 20 },
+	{ ['t'] = 39, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_imp_Sidhe_Ice_Bear', ['default'] = 'Cave Bear', ['bulky'] = 60, ['beefy'] = 20 },
 	
 	-- 44 - 50 (mask y 126 - 120)
 	
-	{ ['t'] = 44, ['d'] = 0, ['side'] = 2, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_arc_ukians_Ukian_Iceblade_Seal', ['default'] = '', },
-	{ ['t'] = 46, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_mrc_highlanders_Behemoth', ['default'] = '', ['armored'] = 16, ['bulky'] = 40 },
-	{ ['t'] = 47, ['d'] = 0, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Balloon', ['default'] = '', ['race_guard_off'] = true },
+	{ ['t'] = 44, ['d'] = 0, ['side'] = 2, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_arc_ukians_Ukian_Iceblade_Seal', ['default'] = 'Great Icemonax', },
+	{ ['t'] = 46, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_mrc_highlanders_Behemoth', ['default'] = 'Troll Warrior', ['armored'] = 16, ['bulky'] = 40 },
+	{ ['t'] = 47, ['d'] = 0, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Balloon', ['default'] = 'Roc', ['race_guard_off'] = true },
 	
-	{ ['t'] = 48, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Balloon', ['default'] = '', ['race_guard_off'] = true },
-	{ ['t'] = 48, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 4, ['type'] = 'QQ_bear_gatekeeper', ['default'] = '', ['buff'] = 'A29:B31:C31', ['guard'] = true, ['calls_for_help'] = true, ['item'] = true, },
+	{ ['t'] = 48, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Balloon', ['default'] = 'Roc', ['race_guard_off'] = true },
+	{ ['t'] = 48, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 4, ['type'] = 'QQ_bear_gatekeeper', ['default'] = 'QQ_bear_gatekeeper', ['buff'] = 'A29:B31:C31', ['guard'] = true, ['calls_for_help'] = true, ['item'] = true, },
 	
-	{ ['t'] = 44, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_ext_dark_elves_Boreal_Wyrm', ['default'] = '', },
+	{ ['t'] = 44, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_ext_dark_elves_Boreal_Wyrm', ['default'] = 'Orcish Sovereign', },
 	
-	{ ['t'] = 50, ['d'] = 3, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mag_Mechanical_Dragon', ['default'] = '', ['armored'] = 12, ['race_guard_off'] = true },
+	{ ['t'] = 50, ['d'] = 3, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mag_Mechanical_Dragon', ['default'] = 'Nightgaunt', ['armored'] = 12, ['race_guard_off'] = true },
 	
-	{ ['t'] = 45, ['d'] = 4, ['side'] = 2, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_ext_monsters_Giant_Yeti', ['default'] = '', ['race_guard_off'] = true, ['bulky'] = 60, ['event'] = 'tsw_yeti', },
+	{ ['t'] = 45, ['d'] = 4, ['side'] = 2, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_ext_monsters_Giant_Yeti', ['default'] = 'Yeti', ['race_guard_off'] = true, ['bulky'] = 60, ['event'] = 'tsw_yeti', },
 	
-	{ ['t'] = 48, ['d'] = 5, ['side'] = 2, ['x'] = 23, ['lvl'] = 5, ['type'] = 'QQ_ice_mammoth', ['default'] = '', },
+	{ ['t'] = 48, ['d'] = 5, ['side'] = 2, ['x'] = 23, ['lvl'] = 5, ['type'] = 'QQ_ice_mammoth', ['default'] = 'QQ_ice_mammoth', },
 	
 	-- 51 - 57 (mask y 119 - 113)
 	
