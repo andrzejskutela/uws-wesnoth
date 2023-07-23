@@ -64,7 +64,7 @@ return {
 	{ ['t'] = 9, ['d'] = 0, ['side'] = 3, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Sea_Beast', ['default'] = 'Water Serpent', ['item'] = true, ['guard'] = true, ['gold'] = 20, ['allow_random'] = false },
 	{ ['t'] = 11, ['d'] = 0, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Light_Scout', ['default'] = 'Dune Rider', ['race_guard_off'] = true },
 	{ ['t'] = 13, ['d'] = 0, ['side'] = 2, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Sea_Monster', ['default'] = 'Tentacle of the Deep', ['bulky'] = 40, ['gold'] = 40, ['guard'] = true, ['allow_random'] = false, },
-	{ ['t'] = 14, ['d'] = 0, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Arcane_Warrior', ['default'] = 'Lieutenant', ['recruits'] = 'AE_FL_altaris_Sword_Brother,AE_FL_altaris_Golem,AE_FL_altaris_Mage_of_Earth', ['default_recruits'] = 'Spearman,Bowman,Mage', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 55 },
+	{ ['t'] = 14, ['d'] = 0, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Arcane_Warrior', ['default'] = 'Lieutenant', ['recruits'] = 'AE_FL_altaris_Sword_Brother,AE_FL_altaris_Golem,AE_FL_altaris_Mage_of_Earth', ['default_recruits'] = 'Spearman,Bowman,Mage', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 40 },
 	
 	{ ['t'] = 12, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Sword_Brother', ['default'] = 'Spearman', },
 	
@@ -74,7 +74,6 @@ return {
 	
 	{ ['t'] = 15, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Master_at_Arms', ['default'] = 'Outlaw', ['race_guard_off'] = true, },
 	
-	{ ['t'] = 9, ['d'] = 5, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Shooter', ['default'] = 'Trapper', ['guard'] = true },
 	{ ['t'] = 15, ['d'] = 5, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Sword_Brother', ['default'] = 'Thug', ['buff'] = 'A21:B52:C48:C1' },
 	
 	

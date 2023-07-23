@@ -105,7 +105,7 @@ local function process_spawn_table(spawn_table)
 	local used_items_list = wesnoth.get_variable('used_items_list')
 	
 	local type = nil
-	local diff_gold_factor = { [1] = 1, [2] = 1, [3] = 1, [4] = 0.95, [5] = 0.9, [6] = 0.85 }
+	local diff_gold_factor = { [1] = 1, [2] = 1, [3] = 1, [4] = 1, [5] = 0.95, [6] = 0.85 }
 	local copy_fields = { 'side', 'x', 'guard', 'moves', 'buff', 'second_buff', 'quiet_buff', 'item', 'gold', 'recruits', 'recruitment_gold', 'bulky', 'beefy', 'damaged', 'final_boss', 'event', 'second_random', 'name', 'second_name', 'disallow_slash_unguardian', 'calls_for_help', 'armored', 'recruit_armored', 'recruit_minion', 'title', 'fast', 'agile',  'story_message', 'story_response', 'race_points_value' }
 	local copy_object_fields = { 'x', 'y', 'cat', 'image', 'type', 'message', 'amount', 'name', 'set', 'color', 'tooltip', 'event', 'new_unit_special_id', 'render', }
 	local rules = {}
