@@ -44,16 +44,16 @@ end
 local function get_unit_translation(unit_type, unit_level)
 	local second_unit = unit_type .. '^'
 	
-	if not awss_translation_table[unit_type] then
+	if not uws_translation_table[unit_type] then
 		if not available_units[unit_level] then
 			available_units[unit_level] = wesnoth.get_variable('random_pool.level_' .. tostring(unit_level))
 		end
 		
-		awss_translation_table[unit_type] = mathx.random_choice(available_units[unit_level])
-		awss_translation_table[second_unit] = mathx.random_choice(available_units[unit_level])
+		uws_translation_table[unit_type] = mathx.random_choice(available_units[unit_level])
+		uws_translation_table[second_unit] = mathx.random_choice(available_units[unit_level])
 	end
 	
-	return awss_translation_table[unit_type], awss_translation_table[second_unit]
+	return uws_translation_table[unit_type], uws_translation_table[second_unit]
 end
 
 local function get_unit_random_recruit_list(recruit_lvls)
