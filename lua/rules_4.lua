@@ -247,40 +247,40 @@ return {
 	
 	-- 72 - 78 (mask y 98 - 92)
 	
-	{ ['t'] = 73, ['d'] = 0, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_mrc_fanatics_Sandskulker', ['default'] = '', ['moves'] = 0, ['beefy'] = 20, ['quiet_buff'] = 'Q3', ['gold'] = 25, ['allow_random'] = false, ['disallow_slash_unguardian'] = true, },
-	{ ['t'] = 75, ['d'] = 0, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Guardsman', ['default'] = '', ['guard'] = true },
-	{ ['t'] = 75, ['d'] = 0, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_efm_freemen_Immortal', ['default'] = '', ['armored'] = 20, ['gold'] = 50, ['recruits'] = 'AE_efm_freemen_Derwish,AE_efm_freemen_Howler,AE_efm_freemen_Sand_Rider,AE_efm_freemen_Amir,AE_efm_freemen_Nomad,AE_efm_freemen_Mehariste', ['default_recruits'] = '', ['r_lvls'] = '2,2,2,2,2,2', ['recruitment_gold'] = 220 },
-	{ ['t'] = 75, ['d'] = 0, ['side'] = 4, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Mufti', ['default'] = '', ['gold'] = 30 },
+	{ ['t'] = 73, ['d'] = 0, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_mrc_fanatics_Sandskulker', ['default'] = 'Dune Sky Hunter', ['moves'] = 0, ['beefy'] = 20, ['quiet_buff'] = 'Q3', ['gold'] = 25, ['allow_random'] = false, ['disallow_slash_unguardian'] = true, },
+	{ ['t'] = 75, ['d'] = 0, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Guardsman', ['default'] = 'Dune Spearguard', ['guard'] = true },
+	{ ['t'] = 75, ['d'] = 0, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_efm_freemen_Immortal', ['default'] = 'Dune Warmaster', ['armored'] = 20, ['gold'] = 50, ['recruits'] = 'AE_efm_freemen_Derwish,AE_efm_freemen_Howler,AE_efm_freemen_Sand_Rider,AE_efm_freemen_Amir,AE_efm_freemen_Nomad,AE_efm_freemen_Mehariste', ['default_recruits'] = 'Dune Scorcher,Dune Alchemist,Dune Apothecary,Dune Horse Archer,Dune Raider,Dune Sunderer', ['r_lvls'] = '2,2,2,2,2,2', ['recruitment_gold'] = 220 },
+	{ ['t'] = 75, ['d'] = 0, ['side'] = 4, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Mufti', ['default'] = 'Dune Explorer', ['gold'] = 30 },
 	
-	{ ['t'] = 74, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mrc_fanatics_Martyr', ['default'] = '', ['allow_random'] = false, ['race_guard_off'] = true, },
+	{ ['t'] = 74, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mrc_fanatics_Martyr', ['default'] = 'Dune Swordsman', ['allow_random'] = false, ['race_guard_off'] = true, },
 	
-	{ ['t'] = 75, ['d'] = 2, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Ensnarer', ['default'] = '', ['gold'] = 25, },
+	{ ['t'] = 75, ['d'] = 2, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Ensnarer', ['default'] = 'Dune Strider', ['gold'] = 25, },
 	
-	{ ['t'] = 76, ['d'] = 3, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_efm_freemen_Mullah', ['default'] = '', ['gold'] = 20, },
+	{ ['t'] = 76, ['d'] = 3, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_efm_freemen_Mullah', ['default'] = 'Dune Luminary', ['gold'] = 20, },
 	
-	{ ['t'] = 77, ['d'] = 4, ['side'] = 4, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_efm_freemen_Adventurer', ['default'] = '', ['race_guard_off'] = true, ['gold'] = 15 },
-	{ ['t'] = 77, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Howler', ['default'] = '', ['beefy'] = 20 },
+	{ ['t'] = 77, ['d'] = 4, ['side'] = 4, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_efm_freemen_Adventurer', ['default'] = 'Dune Marauder', ['race_guard_off'] = true, ['gold'] = 15 },
+	{ ['t'] = 77, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Howler', ['default'] = 'Dune Falconer', ['beefy'] = 20 },
 	
-	{ ['t'] = 75, ['d'] = 5, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mrc_fanatics_Martyr', ['default'] = '', ['beefy'] = 20, },
-	{ ['t'] = 78, ['d'] = 5, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Guardsman', ['default'] = '', ['gold'] = 20 },
+	{ ['t'] = 75, ['d'] = 5, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mrc_fanatics_Martyr', ['default'] = 'Dune Captain', ['beefy'] = 20, },
+	{ ['t'] = 78, ['d'] = 5, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Guardsman', ['default'] = 'Dune Sunderer', ['gold'] = 20 },
 	
 	-- 79 - 85 (mask y 91 - 85)
 	
-	{ ['t'] = 80, ['d'] = 0, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Great_Jinn', ['default'] = '', },
-	{ ['t'] = 81, ['d'] = 0, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_mag_Rhami', ['default'] = '', },
-	{ ['t'] = 81, ['d'] = 0, ['side'] = 4, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_mag_Banisher', ['default'] = '', ['gold'] = 20, ['armored'] = 8, ['calls_for_help'] = true },
-	{ ['t'] = 83, ['d'] = 0, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mag_Air_Avatar', ['default'] = '', ['guard'] = true, },
-	{ ['t'] = 84, ['d'] = 0, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = '', ['buff'] = 'A34:B15:C34:A41', ['race_guard_off'] = true },
+	{ ['t'] = 80, ['d'] = 0, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Great_Jinn', ['default'] = 'Dune Horse Archer', },
+	{ ['t'] = 81, ['d'] = 0, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_mag_Rhami', ['default'] = 'Dune Rover', },
+	{ ['t'] = 81, ['d'] = 0, ['side'] = 4, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_mag_Banisher', ['default'] = 'Dune Windbolt', ['gold'] = 20, ['armored'] = 8, ['calls_for_help'] = true },
+	{ ['t'] = 83, ['d'] = 0, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mag_Air_Avatar', ['default'] = 'Dune Explorer', ['guard'] = true, },
+	{ ['t'] = 84, ['d'] = 0, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A34:B15:C34:A41', ['race_guard_off'] = true },
 	
-	{ ['t'] = 80, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mag_Dimensional_Gate_II', ['default'] = '', ['buff'] = 'A36:B35:C35:C5', ['item'] = true },
+	{ ['t'] = 80, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mag_Dimensional_Gate_II', ['default'] = 'Ghost', ['buff'] = 'A36:B35:C35:C5', ['item'] = true },
 	
-	{ ['t'] = 79, ['d'] = 2, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_RhamiDatu', ['default'] = '', ['guard'] = true, },
+	{ ['t'] = 79, ['d'] = 2, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_RhamiDatu', ['default'] = 'Jinn', ['guard'] = true, },
 	
-	{ ['t'] = 82, ['d'] = 3, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mag_Summoner', ['default'] = '', },
+	{ ['t'] = 82, ['d'] = 3, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mag_Summoner', ['default'] = 'Jinn', },
 	
-	{ ['t'] = 82, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mag_Carpet_Master', ['default'] = '', ['fast'] = 2, ['agile'] = 8 },
+	{ ['t'] = 82, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'Jinn', ['default'] = '', ['fast'] = 2, ['agile'] = 8 },
 	
-	{ ['t'] = 85, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_mag_Novice_Summoner', ['default'] = '', ['gold'] = 12, },
+	{ ['t'] = 85, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 1, ['type'] = 'Horned Scarab', ['default'] = '', ['gold'] = 12, },
 	
 	-- 86 - 92 (mask y 84 - 78)
 	
