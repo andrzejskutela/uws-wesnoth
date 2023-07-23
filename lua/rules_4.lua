@@ -278,76 +278,76 @@ return {
 	
 	{ ['t'] = 82, ['d'] = 3, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mag_Summoner', ['default'] = 'Jinn', },
 	
-	{ ['t'] = 82, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'Jinn', ['default'] = '', ['fast'] = 2, ['agile'] = 8 },
+	{ ['t'] = 82, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mag_Carpet_Master', ['default'] = 'Jinn', ['fast'] = 2, ['agile'] = 8 },
 	
-	{ ['t'] = 85, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 1, ['type'] = 'Horned Scarab', ['default'] = '', ['gold'] = 12, },
+	{ ['t'] = 85, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_mag_Novice_Summoner', ['default'] = 'Horned Scarab', ['gold'] = 12, },
 	
 	-- 86 - 92 (mask y 84 - 78)
 	
-	{ ['t'] = 88, ['d'] = 0, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Naga Guard', ['default'] = '', },
-	{ ['t'] = 89, ['d'] = 0, ['side'] = 2, ['x'] = 20, ['lvl'] = 6, ['type'] = 'QQ_naga_grand_priest', ['default'] = '', ['gold'] = 120, ['recruits'] = 'Naga Sicarius,Naga Zephyr,Naga Myrmidon,Naga High Guard,Sea Serpent', ['default_recruits'] = '', ['r_lvls'] = '3,3,3,3,3', ['recruitment_gold'] = 300, ['event'] = 'von_naga_ghosts' },
-	{ ['t'] = 90, ['d'] = 0, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = '', ['allow_random'] = false },
-	{ ['t'] = 90, ['d'] = 0, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = '', ['allow_random'] = false },
-	{ ['t'] = 91, ['d'] = 0, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = '', ['allow_random'] = false },
-	{ ['t'] = 92, ['d'] = 0, ['side'] = 2, ['x'] = 24, ['lvl'] = 5, ['type'] = 'QQ_naga_royal_executioner', ['default'] = '', ['buff'] = 'A16:B36:C36' },
-	{ ['t'] = 92, ['d'] = 0, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Swamp Lizard', ['default'] = '', ['guard'] = true, ['disallow_slash_unguardian'] = true },
+	{ ['t'] = 88, ['d'] = 0, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Naga Guard', ['default'] = 'Naga Guard', },
+	{ ['t'] = 89, ['d'] = 0, ['side'] = 2, ['x'] = 20, ['lvl'] = 6, ['type'] = 'QQ_naga_grand_priest', ['default'] = 'QQ_naga_grand_priest', ['gold'] = 120, ['recruits'] = 'Naga Sicarius,Naga Zephyr,Naga Myrmidon,Naga High Guard,Sea Serpent', ['default_recruits'] = 'Hurricane Drake,Drake Blademaster,Drake Enforcer,Inferno Drake', ['r_lvls'] = '3,3,3,3,3', ['recruitment_gold'] = 300, ['event'] = 'von_naga_ghosts' },
+	{ ['t'] = 90, ['d'] = 0, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
+	{ ['t'] = 90, ['d'] = 0, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
+	{ ['t'] = 91, ['d'] = 0, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
+	{ ['t'] = 92, ['d'] = 0, ['side'] = 2, ['x'] = 24, ['lvl'] = 5, ['type'] = 'QQ_naga_royal_executioner', ['default'] = 'QQ_naga_royal_executioner', ['buff'] = 'A16:B36:C36' },
+	{ ['t'] = 92, ['d'] = 0, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Swamp Lizard', ['default'] = 'Swamp Lizard', ['guard'] = true, ['disallow_slash_unguardian'] = true },
 	
-	{ ['t'] = 90, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = '', ['allow_random'] = false },
+	{ ['t'] = 90, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
 	
-	{ ['t'] = 86, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'Naga Warrior', ['default'] = '', },
+	{ ['t'] = 86, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'Naga Warrior', ['default'] = 'Naga Warrior', },
 	
-	{ ['t'] = 89, ['d'] = 3, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Assassin', ['default'] = '', ['gold'] = 20 },
+	{ ['t'] = 89, ['d'] = 3, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Assassin', ['default'] = 'Naga Ringcaster', ['gold'] = 20 },
 	
-	{ ['t'] = 86, ['d'] = 4, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Abomination', ['default'] = '', ['beefy'] = 12, ['armored'] = 16, ['gold'] = 20 },
+	{ ['t'] = 86, ['d'] = 4, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Abomination', ['default'] = 'Naga Myrmidon', ['beefy'] = 12, ['armored'] = 16, ['gold'] = 20 },
 	
-	{ ['t'] = 90, ['d'] = 5, ['side'] = 2, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Abomination', ['default'] = '', ['bulky'] = 80, ['beefy'] = 24, ['gold'] = 35 },
+	{ ['t'] = 90, ['d'] = 5, ['side'] = 2, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Abomination', ['default'] = 'Naga Sicarius', ['bulky'] = 80, ['beefy'] = 24, ['gold'] = 35 },
 	
 	-- 93 - 99 (mask y 77 - 71)
 	
-	{ ['t'] = 93, ['d'] = 0, ['side'] = 4, ['x'] = 22, ['lvl'] = 5, ['type'] = 'AE_arc_khthon_Bellikakotaurus', ['default'] = '', ['bulky'] = 40, ['armored'] = 16, },
-	{ ['t'] = 97, ['d'] = 0, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
-	{ ['t'] = 97, ['d'] = 0, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
-	{ ['t'] = 98, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mrc_slavers_Harlot', ['default'] = '', ['calls_for_help'] = true },
-	{ ['t'] = 98, ['d'] = 0, ['side'] = 4, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_mrc_slavers_Elder_Hawk', ['default'] = '', },
-	{ ['t'] = 99, ['d'] = 0, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
+	{ ['t'] = 93, ['d'] = 0, ['side'] = 4, ['x'] = 22, ['lvl'] = 5, ['type'] = 'AE_arc_khthon_Bellikakotaurus', ['default'] = 'QQ_Archwitch', ['bulky'] = 40, ['armored'] = 16, },
+	{ ['t'] = 97, ['d'] = 0, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Marksman', },
+	{ ['t'] = 97, ['d'] = 0, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Marksman', },
+	{ ['t'] = 98, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mrc_slavers_Harlot', ['default'] = 'Elvish Hero', ['calls_for_help'] = true },
+	{ ['t'] = 98, ['d'] = 0, ['side'] = 4, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_mrc_slavers_Elder_Hawk', ['default'] = 'Elder Falcon', },
+	{ ['t'] = 99, ['d'] = 0, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Marksman', },
 	
-	{ ['t'] = 93, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_mrc_cult_Sewer_Slider', ['default'] = '', },
-	{ ['t'] = 97, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
+	{ ['t'] = 93, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_mrc_cult_Sewer_Slider', ['default'] = 'Gryphon', },
+	{ ['t'] = 97, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Ranger', },
 	
-	{ ['t'] = 94, ['d'] = 2, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'AE_mrc_cult_Inhuman', ['default'] = '', ['armored'] = 8 },
+	{ ['t'] = 94, ['d'] = 2, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'AE_mrc_cult_Inhuman', ['default'] = 'Wyvern Rider', ['armored'] = 8 },
 	
-	{ ['t'] = 99, ['d'] = 3, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
+	{ ['t'] = 99, ['d'] = 3, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Ranger', },
 	
-	{ ['t'] = 99, ['d'] = 4, ['side'] = 4, ['x'] = 11, ['lvl'] = 3, ['type'] = 'Cave Bear', ['default'] = '', ['bulky'] = 100 },
+	{ ['t'] = 99, ['d'] = 4, ['side'] = 4, ['x'] = 11, ['lvl'] = 3, ['type'] = 'Cave Bear', ['default'] = 'Wild Wyvern', ['bulky'] = 100 },
 	
-	{ ['t'] = 94, ['d'] = 5, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_arc_khthon_Ophis_Magnum', ['default'] = '', },
+	{ ['t'] = 94, ['d'] = 5, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_arc_khthon_Ophis_Magnum', ['default'] = 'Ancient Wose', },
 	
 	-- 100 - 106 (mask y 70 - 64)
 	
-	{ ['t'] = 100, ['d'] = 0, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', ['fast'] = 1 },
-	{ ['t'] = 100, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
-	{ ['t'] = 101, ['d'] = 0, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
-	{ ['t'] = 101, ['d'] = 0, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
-	{ ['t'] = 103, ['d'] = 0, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_agl_yokai_Leshi', ['default'] = '', ['guard'] = true },
-	{ ['t'] = 103, ['d'] = 0, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mrc_equestrians_Bull', ['default'] = '', },
-	{ ['t'] = 104, ['d'] = 0, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_mrc_holy_order_Peacekeeper', ['default'] = '', ['buff'] = 'A37:B21:C19:C22', },
-	{ ['t'] = 104, ['d'] = 0, ['side'] = 4, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_agl_yokai_Faerie', ['default'] = '', },
-	{ ['t'] = 105, ['d'] = 0, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
-	{ ['t'] = 106, ['d'] = 0, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_chs_sylvians_Wose_Shaman', ['default'] = '', ['bulky'] = 180 },
+	{ ['t'] = 100, ['d'] = 0, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Marksman', ['fast'] = 1 },
+	{ ['t'] = 100, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Ranger', },
+	{ ['t'] = 101, ['d'] = 0, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Hero', },
+	{ ['t'] = 101, ['d'] = 0, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Hero', },
+	{ ['t'] = 103, ['d'] = 0, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_agl_yokai_Leshi', ['default'] = 'Wose Shaman', ['guard'] = true },
+	{ ['t'] = 103, ['d'] = 0, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mrc_equestrians_Bull', ['default'] = 'Great Horse', },
+	{ ['t'] = 104, ['d'] = 0, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_mrc_holy_order_Peacekeeper', ['default'] = 'Elvish Champion', ['buff'] = 'A37:B21:C19:C22', },
+	{ ['t'] = 104, ['d'] = 0, ['side'] = 4, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_agl_yokai_Faerie', ['default'] = 'Fire Ant', },
+	{ ['t'] = 105, ['d'] = 0, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Rider', },
+	{ ['t'] = 106, ['d'] = 0, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_chs_sylvians_Wose_Shaman', ['default'] = 'Fire Wraith', ['bulky'] = 180 },
 	
-	{ ['t'] = 100, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', ['agile'] = 8 },
+	{ ['t'] = 100, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Lord', ['agile'] = 8 },
 	
-	{ ['t'] = 101, ['d'] = 2, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
-	{ ['t'] = 102, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
-	{ ['t'] = 105, ['d'] = 2, ['side'] = 2, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
+	{ ['t'] = 101, ['d'] = 2, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Sorceress', },
+	{ ['t'] = 102, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Sorceress', },
+	{ ['t'] = 105, ['d'] = 2, ['side'] = 2, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Druid', },
 	
-	{ ['t'] = 100, ['d'] = 3, ['side'] = 2, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
-	{ ['t'] = 101, ['d'] = 3, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_ext_outlaws_Witch', ['default'] = '', },
-	{ ['t'] = 106, ['d'] = 3, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', },
+	{ ['t'] = 100, ['d'] = 3, ['side'] = 2, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Druid', },
+	{ ['t'] = 101, ['d'] = 3, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_ext_outlaws_Witch', ['default'] = 'Black Horse', },
+	{ ['t'] = 106, ['d'] = 3, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Rider', },
 	
-	{ ['t'] = 104, ['d'] = 4, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = '', ['beefy'] = 28, },
+	{ ['t'] = 104, ['d'] = 4, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Captain', ['beefy'] = 28, },
 	
-	{ ['t'] = 102, ['d'] = 5, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_ankylosaurus', ['default'] = '', ['race_guard_off'] = true, ['buff'] = 'A7:B12:C4:A8', ['calls_for_help'] = true },
+	{ ['t'] = 102, ['d'] = 5, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_ankylosaurus', ['default'] = 'QQ_ankylosaurus', ['race_guard_off'] = true, ['buff'] = 'A7:B12:C4:A8', ['calls_for_help'] = true },
 	
 	-- 107 - 113 (mask y 63 - 57)
 	
