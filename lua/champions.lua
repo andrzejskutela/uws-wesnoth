@@ -124,7 +124,7 @@ function wesnoth.wml_actions.qquws_champion_buff_to_name(cfg)
 end
 
 function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
-	local wave_index = wesnoth.get_variable('penalty_wave_index')
+	local wave_index = wesnoth.get_variable('bonus_strength_kval')
 	local buff_a_var_name = cfg.var_buff_a or 'champion_a_key'
 	local buff_b_var_name = cfg.var_buff_b or 'champion_b_key'
 	local buff_c_var_name = cfg.var_buff_c or 'champion_c_key'
