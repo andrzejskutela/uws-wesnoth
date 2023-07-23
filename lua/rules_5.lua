@@ -175,7 +175,7 @@ return {
 	{ ['t'] = 48, ['d'] = 2, ['side'] = 2, ['x'] = 11, ['lvl'] = 3, ['type'] = 'Mermaid Diviner', },
 	{ ['t'] = 50, ['d'] = 2, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Naga Warrior', },
 	
-	{ ['t'] = 48, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'Dwarvish Sentinel', ['bulky'] = 32, ['item'] = true, ['armored'] = 5, },
+	{ ['t'] = 48, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'Dwarvish Sentinel', ['bulky'] = 32, ['armored'] = 5, },
 	
 	{ ['t'] = 45, ['d'] = 4, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Wraith', ['beefy'] = 60, ['fast'] = 2, ['calls_for_help'] = true },
 	

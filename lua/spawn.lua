@@ -6,7 +6,7 @@ function build_spawn_rules_row(data)
 		['quiet_buff'] = '', ['event'] = '', ['beefy'] = 0, ['second_random'] = '', ['name'] = '', ['race_guard_off'] = false,
 		['allow_random'] = true, ['allow_random_recruits'] = true, ['disallow_slash_unguardian'] = false, ['calls_for_help'] = false,
 		['armored'] = 0, ['recruit_armored'] = 0, ['recruit_minion'] = '', ['title'] = '', ['fast'] = 0, ['agile'] = 0, ['story_message'] = '',
-		['story_response'] = '', ['race_points_value'] = -1,
+		['story_response'] = '', ['race_points_value'] = -1, ['second_item'] = '',
 	}
 	
 	for k,v in pairs(data) do
@@ -106,7 +106,7 @@ local function process_spawn_table(spawn_table)
 	
 	local type = nil
 	local diff_gold_factor = { [1] = 1, [2] = 1, [3] = 1, [4] = 1, [5] = 0.95, [6] = 0.85 }
-	local copy_fields = { 'side', 'x', 'guard', 'moves', 'buff', 'second_buff', 'quiet_buff', 'item', 'gold', 'recruits', 'recruitment_gold', 'bulky', 'beefy', 'damaged', 'final_boss', 'event', 'second_random', 'name', 'second_name', 'disallow_slash_unguardian', 'calls_for_help', 'armored', 'recruit_armored', 'recruit_minion', 'title', 'fast', 'agile',  'story_message', 'story_response', 'race_points_value' }
+	local copy_fields = { 'side', 'x', 'guard', 'moves', 'buff', 'second_buff', 'quiet_buff', 'item', 'second_item', 'gold', 'recruits', 'recruitment_gold', 'bulky', 'beefy', 'damaged', 'final_boss', 'event', 'second_random', 'name', 'second_name', 'disallow_slash_unguardian', 'calls_for_help', 'armored', 'recruit_armored', 'recruit_minion', 'title', 'fast', 'agile',  'story_message', 'story_response', 'race_points_value' }
 	local copy_object_fields = { 'x', 'y', 'cat', 'image', 'type', 'message', 'amount', 'name', 'set', 'color', 'tooltip', 'event', 'new_unit_special_id', 'render', }
 	local rules = {}
 	local row = {}
@@ -186,8 +186,16 @@ local function process_spawn_table(spawn_table)
 			if rules['item'] == true then
 				local available_items = get_available_items({'magic_res','cold_res','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura'}, used_items_table)
 				rules['item'] = mathx.random_choice(available_items)
+				
+				if game_mode == 'race' then
+					rules['second_item'] = mathx.random_choice(available_items)
+					table.insert(used_items_table, rules['second_item'])
+				else
+					rules['second_item'] = rules['item']
+				end
 			end
 			
+			-- separate in case an item is predefined in spawn table, and if predefined then 'second_item' should also be predefined
 			if rules['item'] ~= '' then
 				table.insert(used_items_table, rules['item'])
 			end
