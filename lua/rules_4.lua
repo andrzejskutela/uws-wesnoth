@@ -351,54 +351,54 @@ return {
 	
 	-- 107 - 113 (mask y 63 - 57)
 	
-	{ ['t'] = 107, ['d'] = 0, ['side'] = 4, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Wasp', ['default'] = '', },
-	{ ['t'] = 108, ['d'] = 0, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_mrc_refugees_Envoy', ['default'] = '', ['calls_for_help'] = true },
-	{ ['t'] = 109, ['d'] = 0, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mrc_refugees_Arsonist', ['default'] = '', },
-	{ ['t'] = 109, ['d'] = 0, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = '', ['moves'] = 0, ['gold'] = 10 },
-	{ ['t'] = 109, ['d'] = 0, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = '', ['moves'] = 0, ['gold'] = 10 },
-	{ ['t'] = 113, ['d'] = 0, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Condottiero', ['default'] = '', ['moves'] = 0, ['gold'] = 15 },
-	{ ['t'] = 113, ['d'] = 0, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Condottiero', ['default'] = '', ['moves'] = 0, ['gold'] = 15 },
+	{ ['t'] = 107, ['d'] = 0, ['side'] = 4, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Wasp', ['default'] = 'Roc', },
+	{ ['t'] = 108, ['d'] = 0, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_mrc_refugees_Envoy', ['default'] = 'Elvish Outrider', ['calls_for_help'] = true },
+	{ ['t'] = 109, ['d'] = 0, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mrc_refugees_Arsonist', ['default'] = 'Elvish Sorceress', },
+	{ ['t'] = 109, ['d'] = 0, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = 'Pikeman', ['moves'] = 0, ['gold'] = 10 },
+	{ ['t'] = 109, ['d'] = 0, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = 'Pikeman', ['moves'] = 0, ['gold'] = 10 },
+	{ ['t'] = 113, ['d'] = 0, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Condottiero', ['default'] = 'Pikeman', ['moves'] = 0, ['gold'] = 15 },
+	{ ['t'] = 113, ['d'] = 0, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Condottiero', ['default'] = 'Pikeman', ['moves'] = 0, ['gold'] = 15 },
 	
-	{ ['t'] = 107, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_mrc_hive_Tick', ['default'] = '', ['beefy'] = 80, ['bulky'] = 40 },
-	{ ['t'] = 107, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_imp_Arendians_Horse_Master', ['default'] = '', ['fast'] = 2, },
+	{ ['t'] = 107, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_mrc_hive_Tick', ['default'] = 'Giant Spider', ['beefy'] = 80, ['bulky'] = 40 },
+	{ ['t'] = 107, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_imp_Arendians_Horse_Master', ['default'] = 'Cavalier', ['fast'] = 2, },
 	
-	{ ['t'] = 109, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mrc_refugees_Arsonist', ['default'] = '', },
+	{ ['t'] = 109, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mrc_refugees_Arsonist', ['default'] = 'Duelist', },
 	
-	{ ['t'] = 109, ['d'] = 3, ['side'] = 4, ['x'] = 21, ['lvl'] = 5, ['type'] = 'QQ_abyssal_fungoid', ['default'] = '', ['buff'] = 'A19:B13:C2:B51', },
+	{ ['t'] = 109, ['d'] = 3, ['side'] = 4, ['x'] = 21, ['lvl'] = 5, ['type'] = 'QQ_abyssal_fungoid', ['default'] = 'QQ_abyssal_fungoid', ['buff'] = 'A19:B13:C2:B51', },
 	
-	{ ['t'] = 112, ['d'] = 4, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_feu_ceresians_Knight_Commander', ['default'] = '', ['bulky'] = 60, ['beefy'] = 40, },
+	{ ['t'] = 112, ['d'] = 4, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_feu_ceresians_Knight_Commander', ['default'] = 'Grand Knight', ['bulky'] = 60, ['beefy'] = 40, },
 	
-	{ ['t'] = 110, ['d'] = 5, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Arbalestier', ['default'] = '', ['agile'] = 12 },
-	{ ['t'] = 110, ['d'] = 5, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Arbalestier', ['default'] = '', ['armored'] = 16 },
-	{ ['t'] = 112, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Mounted_Infantryman', ['default'] = '', ['fast'] = 1 },
-	{ ['t'] = 113, ['d'] = 5, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Mounted_Crossbowman', ['default'] = '', ['beefy'] = 20 },
+	{ ['t'] = 110, ['d'] = 5, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Arbalestier', ['default'] = 'Longbowman', ['agile'] = 12 },
+	{ ['t'] = 110, ['d'] = 5, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Arbalestier', ['default'] = 'Longbowman', ['armored'] = 16 },
+	{ ['t'] = 112, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Mounted_Infantryman', ['default'] = 'Lancer', ['fast'] = 1 },
+	{ ['t'] = 113, ['d'] = 5, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Mounted_Crossbowman', ['default'] = 'Red Mage', ['beefy'] = 20 },
 	
 	-- 114 - 120 (mask y 56 - 50)
 	
-	{ ['t'] = 115, ['d'] = 0, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Ballista', ['default'] = '', ['moves'] = 0, ['gold'] = 30, ['bulky'] = 200, ['armored'] = 32 },
-	{ ['t'] = 115, ['d'] = 0, ['side'] = 3, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Ballista', ['default'] = '', ['moves'] = 0, ['gold'] = 30, ['bulky'] = 200, ['armored'] = 32 },
-	{ ['t'] = 116, ['d'] = 0, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Man_at_Arms', ['default'] = '', },
-	{ ['t'] = 116, ['d'] = 0, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = '', ['armored'] = 8 },
-	{ ['t'] = 117, ['d'] = 0, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_rhy_dr_Trireme', ['default'] = '', ['guard'] = true },
-	{ ['t'] = 117, ['d'] = 0, ['side'] = 3, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_rhy_dr_Trireme', ['default'] = '', ['guard'] = true },
-	{ ['t'] = 117, ['d'] = 0, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mag_Protector', ['default'] = '', ['beefy'] = 40, ['armored'] = 8 },
-	{ ['t'] = 118, ['d'] = 0, ['side'] = 3, ['x'] = 17, ['lvl'] = 4, ['type'] = 'AE_feu_ceresians_Metropolitan', ['default'] = '', ['item'] = true, ['disallow_slash_unguardian'] = true, },
-	{ ['t'] = 119, ['d'] = 0, ['side'] = 3, ['x'] = 15, ['lvl'] = 5, ['type'] = 'QQ_dragon_rider', ['default'] = '', ['gold'] = 120, ['bulky'] = 72, ['recruits'] = 'AE_rhy_ce_Swordsman,AE_rhy_ce_Townguard,AE_rhy_ce_Armored_Horseman,AE_rhy_ce_Healer,AE_rhy_ce_Heavy_Crossbowman', ['default_recruits'] = '', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 330, ['recruit_armored'] = 12 },
-	{ ['t'] = 120, ['d'] = 0, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'Spearman', ['default'] = '', },
+	{ ['t'] = 115, ['d'] = 0, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Ballista', ['default'] = 'Bowman', ['moves'] = 0, ['gold'] = 30, ['bulky'] = 200, ['armored'] = 32 },
+	{ ['t'] = 115, ['d'] = 0, ['side'] = 3, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Ballista', ['default'] = 'Bowman', ['moves'] = 0, ['gold'] = 30, ['bulky'] = 200, ['armored'] = 32 },
+	{ ['t'] = 116, ['d'] = 0, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Man_at_Arms', ['default'] = 'Swordsman', },
+	{ ['t'] = 116, ['d'] = 0, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = 'Javelineer', ['armored'] = 8 },
+	{ ['t'] = 117, ['d'] = 0, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_rhy_dr_Trireme', ['default'] = 'Merman Warrior', ['guard'] = true },
+	{ ['t'] = 117, ['d'] = 0, ['side'] = 3, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_rhy_dr_Trireme', ['default'] = 'Merman Spearman', ['guard'] = true },
+	{ ['t'] = 117, ['d'] = 0, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mag_Protector', ['default'] = 'Shock Trooper', ['beefy'] = 40, ['armored'] = 8 },
+	{ ['t'] = 118, ['d'] = 0, ['side'] = 3, ['x'] = 17, ['lvl'] = 4, ['type'] = 'AE_feu_ceresians_Metropolitan', ['default'] = 'QQ_destroyer', ['item'] = true, ['disallow_slash_unguardian'] = true, },
+	{ ['t'] = 119, ['d'] = 0, ['side'] = 3, ['x'] = 15, ['lvl'] = 5, ['type'] = 'QQ_dragon_rider', ['default'] = 'QQ_dragon_rider', ['gold'] = 120, ['bulky'] = 72, ['recruits'] = 'AE_rhy_ce_Swordsman,AE_rhy_ce_Townguard,AE_rhy_ce_Armored_Horseman,AE_rhy_ce_Healer,AE_rhy_ce_Heavy_Crossbowman', ['default_recruits'] = 'White Mage,Shock Trooper,Duelist,Dragoon,Swordsman', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 330, ['recruit_armored'] = 12 },
+	{ ['t'] = 120, ['d'] = 0, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'Spearman', ['default'] = 'Spearman', },
 	
-	{ ['t'] = 116, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Man_at_Arms', ['default'] = '', ['armored'] = 12 },
-	{ ['t'] = 118, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Sergeant', ['default'] = '', },
+	{ ['t'] = 116, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Man_at_Arms', ['default'] = 'Duelist', ['armored'] = 12 },
+	{ ['t'] = 118, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Sergeant', ['default'] = 'Sergeant', },
 	
-	{ ['t'] = 116, ['d'] = 2, ['side'] = 3, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = '', },
-	{ ['t'] = 119, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'Swordsman', ['default'] = '', ['armored'] = 8 },
+	{ ['t'] = 116, ['d'] = 2, ['side'] = 3, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = 'Longbowman', },
+	{ ['t'] = 119, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'Swordsman', ['default'] = 'Swordsman', ['armored'] = 8 },
 	
-	{ ['t'] = 119, ['d'] = 3, ['side'] = 3, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Spearman', ['default'] = '', ['armored'] = 8 },
-	{ ['t'] = 119, ['d'] = 3, ['side'] = 3, ['x'] = 9, ['lvl'] = 3, ['type'] = 'Iron Mauler', ['default'] = '', ['beefy'] = 80, ['armored'] = 12, ['calls_for_help'] = true },
+	{ ['t'] = 119, ['d'] = 3, ['side'] = 3, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Spearman', ['default'] = 'Spearman', ['armored'] = 8 },
+	{ ['t'] = 119, ['d'] = 3, ['side'] = 3, ['x'] = 9, ['lvl'] = 3, ['type'] = 'Iron Mauler', ['default'] = 'Iron Mauler', ['beefy'] = 80, ['armored'] = 12, ['calls_for_help'] = true },
 	
-	{ ['t'] = 119, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_rhy_ce_Grand_Marshal', ['default'] = '', ['disallow_slash_unguardian'] = true, },
-	{ ['t'] = 120, ['d'] = 4, ['side'] = 3, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_rhy_ce_Greatsword', ['default'] = '', ['buff'] = 'A7:B4:C27', ['disallow_slash_unguardian'] = true, },
+	{ ['t'] = 119, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 4, ['type'] = 'AE_rhy_ce_Grand_Marshal', ['default'] = 'Grand Marshal', ['disallow_slash_unguardian'] = true, },
+	{ ['t'] = 120, ['d'] = 4, ['side'] = 3, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_rhy_ce_Greatsword', ['default'] = 'Royal Warrior', ['buff'] = 'A7:B4:C27', ['disallow_slash_unguardian'] = true, },
 	
-	{ ['t'] = 120, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 4, ['type'] = 'AE_mrc_enchanters_Excalibur', ['default'] = '', ['buff'] = 'A36:B37:C1', ['disallow_slash_unguardian'] = true, },
+	{ ['t'] = 120, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 4, ['type'] = 'AE_mrc_enchanters_Excalibur', ['default'] = 'Great Mage', ['buff'] = 'A36:B37:C1', ['disallow_slash_unguardian'] = true, },
 	
 	-- 121 - 127 (mask y 49 - 43)
 	
