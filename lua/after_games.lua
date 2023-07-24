@@ -28,7 +28,7 @@ local west_items_table = {}
 local copy_unit_counter = 0
 
 local find_vacant_location = function(around_x, around_y, map_edge, from_side)
-	if from_side == 8 then
+	if from_side == 1 then
 		wesnoth.set_variable('after_spawn_x', map_edge - around_x)
 	else
 		wesnoth.set_variable('after_spawn_x', around_x)
@@ -191,6 +191,6 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 		name='prepare_after_games_remove_placeholders'
 	})
 	
-	copy_all_units(8, 5, after_classic_locations[key], map_edge, drop_gold, east_item)
-	copy_all_units(9, 2, after_classic_locations[key], map_edge, drop_gold, west_item)
+	copy_all_units(1, 4, after_classic_locations[key], map_edge, drop_gold, east_item)
+	copy_all_units(3, 2, after_classic_locations[key], map_edge, drop_gold, west_item)
 end
