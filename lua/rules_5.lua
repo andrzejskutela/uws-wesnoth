@@ -25,24 +25,25 @@ return {
 	
 	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 11, ['y'] = 8, ['lvl'] = 1, ['type'] = 'Troll Whelp', ['moves'] = 4, ['guard'] = true, },
 	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 13, ['y'] = 6, ['lvl'] = 1, ['type'] = 'Troll Whelp', ['moves'] = 4, },
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 16, ['y'] = 4, ['lvl'] = 1, ['type'] = 'Orcish Grunt', ['moves'] = 4, },
 	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['y'] = 4, ['lvl'] = 1, ['type'] = 'Poacher', },
 	
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['y'] = 6, ['lvl'] = 1, ['type'] = 'Orcish Grunt', ['guard'] = true },
 	
 	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 15, ['y'] = 4, ['lvl'] = 1, ['type'] = 'Wolf Rider', ['guard'] = true },
 	
+	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 16, ['y'] = 4, ['lvl'] = 1, ['type'] = 'Orcish Grunt', ['moves'] = 4, },
+	
 	-- 2 - 8 (mask y 60 - 54)
 	
 	{ ['t'] = 3, ['d'] = 0, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Wose', ['guard'] = true },
 	{ ['t'] = 6, ['d'] = 0, ['side'] = 3, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Elvish Fighter', },
-	{ ['t'] = 7, ['d'] = 0, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Elvish Fighter', },
 	{ ['t'] = 8, ['d'] = 0, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Elvish Archer', },
 	
 	{ ['t'] = 7, ['d'] = 1, ['side'] = 4, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Water Serpent', ['guard'] = true },
 	
 	{ ['t'] = 3, ['d'] = 2, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Wose', ['guard'] = true },
 	
+	{ ['t'] = 7, ['d'] = 3, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Elvish Fighter', },
 	{ ['t'] = 8, ['d'] = 3, ['side'] = 3, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Elvish Archer', },
 	
 	{ ['t'] = 4, ['d'] = 4, ['side'] = 4, ['x'] = 15, ['lvl'] = 0, ['type'] = 'Piglet', ['bulky'] = 200 },
@@ -51,7 +52,6 @@ return {
 	
 	-- 9 - 15 (mask y 53 - 47)
 	
-	{ ['t'] = 10, ['d'] = 0, ['side'] = 2, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', },
 	{ ['t'] = 10, ['d'] = 0, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Orcish Crossbowman', ['guard'] = true },
 	{ ['t'] = 11, ['d'] = 0, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', ['bulky'] = 20 },
 	{ ['t'] = 14, ['d'] = 0, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Rogue', },
@@ -63,6 +63,7 @@ return {
 	
 	{ ['t'] = 15, ['d'] = 2, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Blood Bat', ['guard'] = true, ['agile'] = 8 },
 	
+	{ ['t'] = 10, ['d'] = 3, ['side'] = 2, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', },
 	{ ['t'] = 11, ['d'] = 3, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Dwarvish Stalwart', },
 	
 	{ ['t'] = 15, ['d'] = 4, ['side'] = 2, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Rock Scorpion', ['buff'] = 'A25:B25:C25', },
@@ -73,7 +74,6 @@ return {
 	
 	{ ['t'] = 16, ['d'] = 0, ['side'] = 2, ['x'] = 5, ['lvl'] = 1, ['type'] = 'Dwarvish Thunderer', },
 	{ ['t'] = 19, ['d'] = 0, ['side'] = 2, ['x'] = 6, ['lvl'] = 1, ['type'] = 'Dark Adept', },
-	{ ['t'] = 20, ['d'] = 0, ['side'] = 2, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
 	{ ['t'] = 21, ['d'] = 0, ['side'] = 2, ['x'] = 8, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
 	{ ['t'] = 21, ['d'] = 0, ['side'] = 2, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Dwarvish Ulfserker', },
 	{ ['t'] = 22, ['d'] = 0, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Merman Fighter', ['guard'] = true },
@@ -84,6 +84,7 @@ return {
 	{ ['t'] = 20, ['d'] = 2, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Merman Fighter', ['guard'] = true },
 	
 	{ ['t'] = 16, ['d'] = 3, ['side'] = 2, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', ['calls_for_help'] = true, ['allow_random'] = false },
+	{ ['t'] = 20, ['d'] = 3, ['side'] = 2, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
 	
 	{ ['t'] = 16, ['d'] = 4, ['side'] = 2, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Horned Scarab', ['bulky'] = 60, ['beefy'] = 20 },
 	
@@ -119,10 +120,8 @@ return {
 	{ ['t'] = 31, ['d'] = 0, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Goblin Rouser', ['gold'] = 12 },
 	{ ['t'] = 31, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Orcish Ruler', ['gold'] = 20, ['recruits'] = 'Orcish Grunt,Orcish Assassin,Orcish Archer,AE_ext_orcs_Orcish_Shaman', ['default_recruits'] = 'Orcish Grunt,Orcish Assassin,Orcish Archer', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 85, ['armored'] = 20, ['recruit_armored'] = 12 },
 	{ ['t'] = 33, ['d'] = 0, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Wose', ['guard'] = true },
-	{ ['t'] = 33, ['d'] = 0, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Orcish Assassin', },
 	{ ['t'] = 34, ['d'] = 0, ['side'] = 2, ['x'] = 4, ['lvl'] = 2, ['type'] = 'Ogre', ['guard'] = true },
 	{ ['t'] = 34, ['d'] = 0, ['side'] = 2, ['x'] = 7, ['lvl'] = 2, ['type'] = 'Ogre', ['guard'] = true },
-	{ ['t'] = 35, ['d'] = 0, ['side'] = 3, ['x'] = 6, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
 	{ ['t'] = 36, ['d'] = 0, ['side'] = 3, ['x'] = 4, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
 	{ ['t'] = 36, ['d'] = 0, ['side'] = 3, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Naga Fighter', ['guard'] = true },
 	
@@ -132,8 +131,10 @@ return {
 	{ ['t'] = 32, ['d'] = 2, ['side'] = 2, ['x'] = 6, ['lvl'] = 1, ['type'] = 'Young Ogre', },
 	
 	{ ['t'] = 32, ['d'] = 3, ['side'] = 2, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Orcish Grunt', ['beefy'] = 30, ['gold'] = 12,  },
+	{ ['t'] = 33, ['d'] = 3, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Orcish Assassin', },
 	
 	{ ['t'] = 31, ['d'] = 4, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Goblin Rouser', ['beefy'] = 24, ['gold'] = 12, },
+	{ ['t'] = 35, ['d'] = 4, ['side'] = 3, ['x'] = 6, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
 	
 	{ ['t'] = 34, ['d'] = 5, ['side'] = 2, ['x'] = 6, ['lvl'] = 3, ['type'] = 'Orcish Nightblade', ['buff'] = 'A26:B26:C26', ['gold'] = 12, },
 	
@@ -163,7 +164,6 @@ return {
 	{ ['t'] = 44, ['d'] = 0, ['side'] = 4, ['x'] = 13, ['lvl'] = 0, ['type'] = 'Walking Corpse', },
 	{ ['t'] = 44, ['d'] = 0, ['side'] = 4, ['x'] = 15, ['lvl'] = 0, ['type'] = 'Walking Corpse', },
 	{ ['t'] = 45, ['d'] = 0, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'Dark Sorcerer', },
-	{ ['t'] = 47, ['d'] = 0, ['side'] = 2, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Cuttle Fish', },
 	{ ['t'] = 48, ['d'] = 0, ['side'] = 2, ['x'] = 19, ['lvl'] = 5, ['type'] = 'Elder Mage', ['quiet_buff'] = 'Q5', ['allow_random'] = false, ['item'] = true },
 	{ ['t'] = 49, ['d'] = 0, ['side'] = 2, ['x'] = 14, ['lvl'] = 2, ['type'] = 'Dwarvish Thunderguard', },
 	{ ['t'] = 50, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'Ancient Wose', ['guard'] = true },
@@ -175,6 +175,7 @@ return {
 	{ ['t'] = 48, ['d'] = 2, ['side'] = 2, ['x'] = 11, ['lvl'] = 3, ['type'] = 'Mermaid Diviner', },
 	{ ['t'] = 50, ['d'] = 2, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Naga Warrior', },
 	
+	{ ['t'] = 47, ['d'] = 3, ['side'] = 2, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Cuttle Fish', },
 	{ ['t'] = 48, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'Dwarvish Sentinel', ['bulky'] = 32, ['armored'] = 5, },
 	
 	{ ['t'] = 45, ['d'] = 4, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Wraith', ['beefy'] = 60, ['fast'] = 2, ['calls_for_help'] = true },
