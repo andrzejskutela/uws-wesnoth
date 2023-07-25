@@ -96,7 +96,15 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 		clone.status.slowed = false
 		clone.status.poisoned = false
 		clone.status.petrified = false
+		clone.status.invulnerable = true
 		clone.variables.items_picked_up = ''
+		
+		wesnoth.add_modification(clone, "object", {
+			id = "qquws_after_games_invulnerable",
+			T.effect { apply_to = "image_mod", add="GS()" },
+			T.effect { apply_to = "zoc", value = false },
+		})
+		
 		wesnoth.set_variable('new_unit_spawn_id', clone.id)
 		wesnoth.set_variable('after_games_copy_unit_type', clone.type)
 		wesnoth.set_variable('after_games_gold_value', give_gold)
@@ -132,7 +140,6 @@ end
 
 function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 	local turn_number = cfg.turn
-	local is_prepare_turn = false
 	local is_spawn_turn = false
 	
 	for k,v in ipairs(after_games_settings) do
@@ -144,28 +151,10 @@ function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 			wesnoth.set_variable('after_games_colour', v['colour'])
 			wesnoth.set_variable('after_games_info_text', v['info'])
 			break
-		elseif v['turn'] == turn_number + 1 then
-			is_prepare_turn = true
-			break
 		end
 	end
 	
-	wesnoth.set_variable('after_games_is_prepare_turn', is_prepare_turn)
 	wesnoth.set_variable('after_games_is_spawn_turn', is_spawn_turn)
-end
-
-function wesnoth.wml_actions.qquws_prepare_new_after_spawn(cfg)
-	local map_id = cfg.map_id
-	local key = 'map_' .. tostring(map_id)
-	
-	for k,v in ipairs(after_classic_locations[key]) do
-		wesnoth.set_variable('after_spawn_x', v['x'])
-		wesnoth.set_variable('after_spawn_y', v['y'])
-	
-		wml.fire('fire_event', {
-			name='prepare_after_games_spawn'
-		})
-	end
 end
 
 function wesnoth.wml_actions.qquws_create_after_copies(cfg)
@@ -186,10 +175,6 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 		east_item = mathx.random_choice(available_items)
 		table.insert(east_items_table, east_item)
 	end
-	
-	wml.fire('fire_event', {
-		name='prepare_after_games_remove_placeholders'
-	})
 	
 	copy_all_units(1, 4, after_classic_locations[key], map_edge, drop_gold, east_item)
 	copy_all_units(3, 2, after_classic_locations[key], map_edge, drop_gold, west_item)
