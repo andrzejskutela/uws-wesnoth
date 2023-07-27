@@ -272,7 +272,7 @@ return {
 	{ ['t'] = 83, ['d'] = 0, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mag_Air_Avatar', ['default'] = 'Dune Explorer', ['guard'] = true, },
 	{ ['t'] = 84, ['d'] = 0, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A34:B15:C34:A41', ['race_guard_off'] = true },
 	
-	{ ['t'] = 80, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mag_Dimensional_Gate_II', ['default'] = 'Ghost', ['buff'] = 'A36:B35:C35:C5', ['item'] = true },
+	{ ['t'] = 80, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mag_Dimensional_Gate_II', ['default'] = 'Ghost', ['buff'] = 'A36:B35:C35:C5', ['item'] = true, ['allow_random'] = false },
 	
 	{ ['t'] = 79, ['d'] = 2, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_RhamiDatu', ['default'] = 'Jinn', ['guard'] = true, },
 	
@@ -347,7 +347,7 @@ return {
 	
 	{ ['t'] = 104, ['d'] = 4, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Captain', ['beefy'] = 28, },
 	
-	{ ['t'] = 102, ['d'] = 5, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_ankylosaurus', ['default'] = 'QQ_ankylosaurus', ['race_guard_off'] = true, ['buff'] = 'A7:B12:C4:A8', ['calls_for_help'] = true },
+	{ ['t'] = 102, ['d'] = 5, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_ankylosaurus', ['default'] = 'QQ_ankylosaurus', ['race_guard_off'] = true, ['buff'] = 'A7:B12:C4:A8', ['calls_for_help'] = true, ['allow_random'] = false },
 	
 	-- 107 - 113 (mask y 63 - 57)
 	
@@ -475,7 +475,7 @@ return {
 	
 	{ ['t'] = 151, ['d'] = 0, ['side'] = 4, ['x'] = 21, ['lvl'] = 4, ['type'] = 'AE_mag_Master_of_Darkness', ['default'] = 'Ancient Lich', ['guard'] = true, ['beefy'] = 20, ['calls_for_help'] = true },
 	{ ['t'] = 152, ['d'] = 0, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Lorekeeper', ['default'] = 'Nightgaunt', },
-	{ ['t'] = 154, ['d'] = 0, ['side'] = 4, ['x'] = 20, ['lvl'] = 7, ['type'] = 'QQ_grand_sultan_of_fire', ['default'] = 'QQ_grand_sultan_of_fire', ['buff'] = 'A40:B40:C40:C4', },
+	{ ['t'] = 154, ['d'] = 0, ['side'] = 4, ['x'] = 20, ['lvl'] = 7, ['type'] = 'QQ_grand_sultan_of_fire', ['default'] = 'QQ_grand_sultan_of_fire', ['buff'] = 'A40:B40:C40:C4', ['allow_random'] = false },
 	
 	{ ['t'] = 150, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Shieldmaster', ['default'] = 'Draug', ['moves'] = 0, },
 	
@@ -489,9 +489,9 @@ return {
 	
 	-- 156 - 162 (mask y 14 - 8)
 	
-	{ ['t'] = 157, ['d'] = 0, ['side'] = 4, ['x'] = 25, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A41:B9:C19', ['race_guard_off'] = true },
-	{ ['t'] = 158, ['d'] = 0, ['side'] = 4, ['x'] = 24, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A20:B41:C9', ['race_guard_off'] = true },
-	{ ['t'] = 158, ['d'] = 0, ['side'] = 4, ['x'] = 23, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A27:B41:C13', ['race_guard_off'] = true },
+	{ ['t'] = 157, ['d'] = 0, ['side'] = 4, ['x'] = 25, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A41:B9:C19', ['race_guard_off'] = true, ['allow_random'] = false },
+	{ ['t'] = 158, ['d'] = 0, ['side'] = 4, ['x'] = 24, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A20:B41:C9', ['race_guard_off'] = true, ['allow_random'] = false },
+	{ ['t'] = 158, ['d'] = 0, ['side'] = 4, ['x'] = 23, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A27:B41:C13', ['race_guard_off'] = true, ['allow_random'] = false },
 	{ ['t'] = 158, ['d'] = 0, ['side'] = 4, ['x'] = 25, ['lvl'] = 6, ['type'] = 'QQ_adjudicator', ['default'] = 'QQ_adjudicator', ['buff'] = 'A23:B7:C29', ['guard'] = true },
 	
 	{ ['t'] = 160, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_mrc_enchanters_Shadow_Blade', ['default'] = 'Spectre', ['beefy'] = 28, ['armored'] = 8 },
