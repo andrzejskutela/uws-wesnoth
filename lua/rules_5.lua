@@ -143,7 +143,7 @@ return {
 	{ ['t'] = 37, ['d'] = 0, ['side'] = 3, ['x'] = 5, ['lvl'] = 1, ['type'] = 'Young Ogre', },
 	{ ['t'] = 38, ['d'] = 0, ['side'] = 3, ['x'] = 8, ['lvl'] = 1, ['type'] = 'Naga Fighter', },
 	{ ['t'] = 38, ['d'] = 0, ['side'] = 3, ['x'] = 12, ['lvl'] = 3, ['type'] = 'Arch Mage', },
-	{ ['t'] = 39, ['d'] = 0, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Dwarvish Berserker', ['buff'] = 'A27:B27:C27:C20:C50', ['item'] = true, },
+	{ ['t'] = 39, ['d'] = 0, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Dwarvish Berserker', ['buff'] = 'A27:B55:C27:C20:C50:B27', ['item'] = true, },
 	{ ['t'] = 41, ['d'] = 0, ['side'] = 3, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Naga Fighter', ['fast'] = 1 },
 	
 	{ ['t'] = 39, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'Arch Mage', ['guard'] = true },
