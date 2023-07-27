@@ -178,7 +178,7 @@ return {
 	
 	{ ['t'] = 50, ['d'] = 3, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mag_Mechanical_Dragon', ['default'] = 'Nightgaunt', ['armored'] = 12, ['race_guard_off'] = true },
 	
-	{ ['t'] = 45, ['d'] = 4, ['side'] = 2, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_ext_monsters_Giant_Yeti', ['default'] = 'Yeti', ['race_guard_off'] = true, ['bulky'] = 60, ['event'] = 'tsw_yeti', },
+	{ ['t'] = 45, ['d'] = 4, ['side'] = 2, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_ext_monsters_Giant_Yeti', ['default'] = 'Yeti', ['race_guard_off'] = true, ['bulky'] = 60, ['event'] = 'tsw_yeti', ['allow_random'] = false },
 	
 	{ ['t'] = 48, ['d'] = 5, ['side'] = 2, ['x'] = 23, ['lvl'] = 5, ['type'] = 'QQ_ice_mammoth', ['default'] = 'QQ_ice_mammoth', },
 	
