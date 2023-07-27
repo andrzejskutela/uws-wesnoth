@@ -168,9 +168,9 @@ return {
 	-- 44 - 50 (mask y 126 - 120)
 	
 	{ ['t'] = 44, ['d'] = 0, ['side'] = 2, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_arc_ukians_Ukian_Iceblade_Seal', ['default'] = 'Great Icemonax', },
+	{ ['t'] = 45, ['d'] = 0, ['side'] = 2, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_ext_monsters_Giant_Yeti', ['default'] = 'Yeti', ['race_guard_off'] = true, ['bulky'] = 60, ['event'] = 'tsw_yeti', ['allow_random'] = false },
 	{ ['t'] = 46, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_mrc_highlanders_Behemoth', ['default'] = 'Troll Warrior', ['armored'] = 16, ['bulky'] = 40 },
-	{ ['t'] = 47, ['d'] = 0, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Balloon', ['default'] = 'Roc', ['race_guard_off'] = true },
-	
+
 	{ ['t'] = 48, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Balloon', ['default'] = 'Roc', ['race_guard_off'] = true },
 	{ ['t'] = 48, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 4, ['type'] = 'QQ_bear_gatekeeper', ['default'] = 'QQ_bear_gatekeeper', ['buff'] = 'A29:B31:C31', ['guard'] = true, ['calls_for_help'] = true, ['item'] = true, },
 	
@@ -178,7 +178,7 @@ return {
 	
 	{ ['t'] = 50, ['d'] = 3, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mag_Mechanical_Dragon', ['default'] = 'Nightgaunt', ['armored'] = 12, ['race_guard_off'] = true },
 	
-	{ ['t'] = 45, ['d'] = 4, ['side'] = 2, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_ext_monsters_Giant_Yeti', ['default'] = 'Yeti', ['race_guard_off'] = true, ['bulky'] = 60, ['event'] = 'tsw_yeti', ['allow_random'] = false },
+	{ ['t'] = 47, ['d'] = 4, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Balloon', ['default'] = 'Roc', ['race_guard_off'] = true },
 	
 	{ ['t'] = 48, ['d'] = 5, ['side'] = 2, ['x'] = 23, ['lvl'] = 5, ['type'] = 'QQ_ice_mammoth', ['default'] = 'QQ_ice_mammoth', },
 	
