@@ -165,10 +165,6 @@ local function process_spawn_table(spawn_table)
 				end
 			end
 			
-			if allow_ae == false and rules['allow_random'] == false then
-				rules['allow_random'] = true -- temporary fix todo remove once all waves are predefined for default
-			end
-			
 			if is_random and rules['allow_random'] == true then
 				type, rules['second_random'] = get_unit_translation(rules['type'], rules['lvl'])
 				
