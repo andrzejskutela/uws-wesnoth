@@ -6,7 +6,7 @@ function build_spawn_rules_row(data)
 		['quiet_buff'] = '', ['event'] = '', ['beefy'] = 0, ['second_random'] = '', ['name'] = '', ['race_guard_off'] = false,
 		['allow_random'] = true, ['allow_random_recruits'] = true, ['disallow_slash_unguardian'] = false, ['calls_for_help'] = false,
 		['armored'] = 0, ['recruit_armored'] = 0, ['recruit_minion'] = '', ['title'] = '', ['fast'] = 0, ['agile'] = 0, ['story_message'] = '',
-		['story_response'] = '', ['race_points_value'] = -1, ['second_item'] = '',
+		['story_response'] = '', ['race_points_value'] = -1, ['second_item'] = '', ['clear_boss_tile_overlay'] = false,
 	}
 	
 	for k,v in pairs(data) do
@@ -106,7 +106,7 @@ local function process_spawn_table(spawn_table)
 	
 	local type = nil
 	local diff_gold_factor = { [1] = 1, [2] = 1, [3] = 1, [4] = 1, [5] = 0.95, [6] = 0.85 }
-	local copy_fields = { 'side', 'x', 'guard', 'moves', 'buff', 'second_buff', 'quiet_buff', 'item', 'second_item', 'gold', 'recruits', 'recruitment_gold', 'bulky', 'beefy', 'damaged', 'final_boss', 'event', 'second_random', 'name', 'second_name', 'disallow_slash_unguardian', 'calls_for_help', 'armored', 'recruit_armored', 'recruit_minion', 'title', 'fast', 'agile',  'story_message', 'story_response', 'race_points_value' }
+	local copy_fields = { 'side', 'x', 'guard', 'moves', 'buff', 'second_buff', 'quiet_buff', 'item', 'second_item', 'gold', 'recruits', 'recruitment_gold', 'bulky', 'beefy', 'damaged', 'final_boss', 'event', 'second_random', 'name', 'second_name', 'disallow_slash_unguardian', 'calls_for_help', 'armored', 'recruit_armored', 'recruit_minion', 'title', 'fast', 'agile',  'story_message', 'story_response', 'race_points_value', 'clear_boss_tile_overlay', }
 	local copy_object_fields = { 'x', 'y', 'cat', 'image', 'type', 'message', 'amount', 'name', 'set', 'color', 'tooltip', 'event', 'new_unit_special_id', 'render', }
 	local rules = {}
 	local row = {}
@@ -219,6 +219,7 @@ local function process_spawn_table(spawn_table)
 				rules['final_boss'] = false
 				rules['buff'] = ''
 				rules['moves'] = 0
+				rules['clear_boss_tile_overlay'] = true
 			end
 			
 			if rules['calls_for_help'] and game_mode ~= 'race' and game_mode ~= 'slash' then
