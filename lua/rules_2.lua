@@ -94,8 +94,8 @@ return {
 	{ ['t'] = 10, ['d'] = 0, ['side'] = 1, ['x'] = 3, ['lvl'] = 2, ['type'] = 'AE_fut_brungar_Herbalist', ['default'] = 'Dune Apothecary', ['allow_random'] = false },
 	{ ['t'] = 11, ['d'] = 0, ['side'] = 2, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_myh_Water_Dryad', ['default'] = 'Mermaid Initiate', },
 	{ ['t'] = 13, ['d'] = 0, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Albatross', ['default'] = 'Elder Falcon', },
-	{ ['t'] = 15, ['d'] = 0, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_rhy_rg_Spearman', ['default'] = 'Spearman', ['gold'] = 8 },
-	{ ['t'] = 15, ['d'] = 0, ['side'] = 3, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_rhy_rg_Spearman', ['default'] = 'Spearman', ['gold'] = 8 },
+	{ ['t'] = 15, ['d'] = 0, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_rhy_de_Spearman', ['default'] = 'Spearman', ['gold'] = 8 },
+	{ ['t'] = 15, ['d'] = 0, ['side'] = 3, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_rhy_de_Spearman', ['default'] = 'Spearman', ['gold'] = 8 },
 	
 	{ ['t'] = 12, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Albatross', ['default'] = 'Elder Falcon', },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Seaman', ['default'] = 'Fencer', },
