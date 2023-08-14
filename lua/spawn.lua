@@ -332,12 +332,19 @@ local function process_spawn_table(spawn_table)
 			if rules['race_points_value'] == -1 then
 				if rules['x'] < middle_lane then
 					local race_points = 1
-					if rules['lvl'] == 0 then
-						race_points = 0
+					
+					if rules['lvl'] > 4 then
+						race_points = 4
+					elseif rules['lvl'] > 3 then
+						race_points = 3
+					elseif rules['lvl'] > 0 then
+						race_points = 2
+					else
+						race_point = 1
 					end
 					
 					if rules['buff'] ~= '' then
-						race_points = race_points + 2
+						race_points = race_points + 3
 					end
 					
 					if rules['bulky'] > 0 or rules['beefy'] > 0 then
@@ -345,7 +352,7 @@ local function process_spawn_table(spawn_table)
 					end
 					
 					if rules['recruits'] ~= false then
-						race_points = race_points + 3
+						race_points = race_points + 5
 					end
 					
 					rules['race_points_value'] = race_points
