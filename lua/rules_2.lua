@@ -247,7 +247,7 @@ return {
 	
 	{ ['t'] = 56, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_myh_Sangel', ['default'] = 'Banebow', ['beefy'] = 40, ['gold'] = 20, },
 	
-	{ ['t'] = 55, ['d'] = 5, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Deadwood', ['default'] = 'Necrophage', ['buff'] = 'A12:B2:C6', },
+	{ ['t'] = 55, ['d'] = 5, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Deadwood', ['default'] = 'Necrophage', ['buff'] = 'A51:B2:C6:A12', },
 	
 	-- 58 - 64 (mask y 23 - 17)
 	
