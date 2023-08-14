@@ -68,10 +68,9 @@ return {
 	
 	-- beginning
 	
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 19, ['y'] = 11, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Legionnaire', ['default'] = 'Goblin Impaler', ['moves'] = 0 },
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 19, ['y'] = 4, ['lvl'] = 0, ['type'] = 'AE_imp_Lavinians_Auxiliary', ['default'] = 'Goblin Spearman', ['moves'] = 4 },
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 11, ['y'] = 5, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Ballista', ['default'] = 'Soulless', ['moves'] = 0, ['gold'] = 20 },
-	
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['y'] = 11, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Legionnaire', ['default'] = 'Goblin Impaler', ['moves'] = 0 },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['y'] = 4, ['lvl'] = 0, ['type'] = 'AE_imp_Lavinians_Auxiliary', ['default'] = 'Goblin Spearman', ['moves'] = 4 },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['y'] = 5, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Ballista', ['default'] = 'Soulless', ['moves'] = 0, ['gold'] = 20 },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 13, ['y'] = 6, ['lvl'] = 1, ['type'] = 'AE_feu_khaganate_Shieldbearer', ['default'] = 'Heavy Infantryman', ['moves'] = 0 },
 	
 	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['y'] = 6, ['lvl'] = 0, ['type'] = 'AE_imp_Lavinians_Auxiliary', ['default'] = 'Goblin Spearman', ['moves'] = 5 },
@@ -84,12 +83,11 @@ return {
 	
 	-- 2 - 8 (mask y 36 - 30)
 	
-	{ ['t'] = 3, ['d'] = 0, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_imp_Lavinians_Bowman', ['default'] = 'Bowman', ['moves'] = 0 },
-	{ ['t'] = 3, ['d'] = 0, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_imp_Lavinians_Legionaire', ['default'] = 'Sergeant', ['recruits'] = 'AE_efm_imperialists_Legionnaire,AE_myh_Legionnaire,AE_imp_Lavinians_Bowman', ['default_recruits'] = 'Thug,Bowman,Spearman', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 40, ['gold'] = 40 },
-	{ ['t'] = 6, ['d'] = 0, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_feu_khaganate_Rigid', ['default'] = 'Swordsman', ['moves'] = 0 },
-	{ ['t'] = 6, ['d'] = 0, ['side'] = 1, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_stf_eventide_Eventide_Herbalist', ['default'] = 'Dune Herbalist', },
-	
+	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_imp_Lavinians_Bowman', ['default'] = 'Bowman', ['moves'] = 0 },
+	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_imp_Lavinians_Legionaire', ['default'] = 'Sergeant', ['recruits'] = 'AE_efm_imperialists_Legionnaire,AE_myh_Legionnaire,AE_imp_Lavinians_Bowman', ['default_recruits'] = 'Thug,Bowman,Spearman', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 40, ['gold'] = 40 },
 	{ ['t'] = 4, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 0, ['type'] = 'AE_imp_Lavinians_Auxiliary', ['default'] = 'Goblin Spearman', },
+	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_feu_khaganate_Rigid', ['default'] = 'Swordsman', ['moves'] = 0 },
+	{ ['t'] = 6, ['d'] = 1, ['side'] = 1, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_stf_eventide_Eventide_Herbalist', ['default'] = 'Dune Herbalist', },
 	
 	{ ['t'] = 8, ['d'] = 2, ['side'] = 2, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Legionnaire', ['default'] = 'Goblin Rouser', ['race_guard_off'] = true, ['calls_for_help'] = true },
 
@@ -101,12 +99,11 @@ return {
 	
 	-- 9 - 15 (mask y 29 - 23)
 	
-	{ ['t'] = 11, ['d'] = 0, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'Sergeant', ['default'] = 'Sergeant', },
-	{ ['t'] = 11, ['d'] = 0, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_feu_ceresians_Corporal', ['default'] = 'Sergeant', },
-	{ ['t'] = 11, ['d'] = 0, ['side'] = 2, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_feu_ceresians_Crossbowman', ['default'] = 'Bowman', },
-	{ ['t'] = 14, ['d'] = 0, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_imp_Lavinians_Field_Ballista', ['default'] = 'Longbowman', ['moves'] = 0, ['gold'] = 10 },
-	
 	{ ['t'] = 10, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_mrc_enchanters_Floating_Sword', ['default'] = 'Fencer', ['moves'] = 0 },
+	{ ['t'] = 11, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'Sergeant', ['default'] = 'Sergeant', },
+	{ ['t'] = 11, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_feu_ceresians_Corporal', ['default'] = 'Sergeant', },
+	{ ['t'] = 11, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_feu_ceresians_Crossbowman', ['default'] = 'Bowman', },
+	{ ['t'] = 14, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_imp_Lavinians_Field_Ballista', ['default'] = 'Longbowman', ['moves'] = 0, ['gold'] = 10 },
 	
 	{ ['t'] = 10, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'Bowman', ['default'] = 'Bowman', },
 	
@@ -119,13 +116,12 @@ return {
 	
 	-- 16 - 22 (mask y 22 - 16)
 	
-	{ ['t'] = 18, ['d'] = 0, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'Lieutenant', ['default'] = 'Lieutenant', ['recruits'] = 'AE_feu_ceresians_Yeoman,AE_feu_ceresians_Crossbowman', ['default_recruits'] = 'Bowman,Spearman', ['r_lvls'] = '1,1', ['recruitment_gold'] = 55, ['gold'] = 10 },
-	{ ['t'] = 21, ['d'] = 0, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_myh_Great_Wizard', ['default'] = 'White Mage', ['gold'] = 10, },
-	{ ['t'] = 22, ['d'] = 0, ['side'] = 3, ['x'] = 25, ['lvl'] = 2, ['type'] = 'AE_imp_Lavinians_Field_Ballista', ['default'] = 'Javelineer', ['moves'] = 0 },
-	{ ['t'] = 22, ['d'] = 0, ['side'] = 1, ['x'] = 11, ['lvl'] = 1, ['type'] = 'Elvish Shaman', ['default'] = 'Elvish Shaman', },
-	
+	{ ['t'] = 18, ['d'] = 1, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'Lieutenant', ['default'] = 'Lieutenant', ['recruits'] = 'AE_feu_ceresians_Yeoman,AE_feu_ceresians_Crossbowman', ['default_recruits'] = 'Bowman,Spearman', ['r_lvls'] = '1,1', ['recruitment_gold'] = 55, ['gold'] = 10 },
 	{ ['t'] = 19, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = 'Pikeman', ['guard'] = true, ['gold'] = 10, ['disallow_slash_unguardian'] = true, },
 	{ ['t'] = 21, ['d'] = 1, ['side'] = 3, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Spearman', ['default'] = 'Spearman', },
+	{ ['t'] = 21, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_myh_Great_Wizard', ['default'] = 'White Mage', ['gold'] = 10, },
+	{ ['t'] = 22, ['d'] = 1, ['side'] = 3, ['x'] = 25, ['lvl'] = 2, ['type'] = 'AE_imp_Lavinians_Field_Ballista', ['default'] = 'Javelineer', ['moves'] = 0 },
+	{ ['t'] = 22, ['d'] = 1, ['side'] = 1, ['x'] = 11, ['lvl'] = 1, ['type'] = 'Elvish Shaman', ['default'] = 'Elvish Shaman', },
 	
 	{ ['t'] = 17, ['d'] = 2, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'Ghost', ['default'] = 'Ghost', ['race_guard_off'] = true, },
 	{ ['t'] = 19, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = 'Pikeman', ['guard'] = true, ['gold'] = 10, ['disallow_slash_unguardian'] = true, },
@@ -140,15 +136,14 @@ return {
 	
 	-- 23 - 29 (mask y 15 - 9)
 	
-	{ ['t'] = 24, ['d'] = 0, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_imp_Lavinians_Velite', ['default'] = 'Duelist', },
-	{ ['t'] = 25, ['d'] = 0, ['side'] = 3, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_arc_menagerie_Earth_Daemon_2', ['default'] = 'Cave Bear', ['guard'] = true },
-	{ ['t'] = 25, ['d'] = 0, ['side'] = 3, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_imp_Lavinians_Propugnator', ['default'] = 'Shock Trooper', ['guard'] = true },
-	{ ['t'] = 26, ['d'] = 0, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_imp_Lavinians_Propugnator', ['default'] = 'Shock Trooper', ['guard'] = true },
-	{ ['t'] = 26, ['d'] = 0, ['side'] = 4, ['x'] = 9, ['lvl'] = 2, ['type'] = 'Wraith', ['default'] = 'Wraith', ['bulky'] = 32, ['fast'] = 1 },
-	{ ['t'] = 27, ['d'] = 0, ['side'] = 4, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_arc_khthon_Flying_Toad', ['default'] = 'Fire Ant', },
-	
 	{ ['t'] = 23, ['d'] = 1, ['side'] = 4, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_myh_Earth', ['default'] = 'Giant Scorpion', },
+	{ ['t'] = 24, ['d'] = 1, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_imp_Lavinians_Velite', ['default'] = 'Duelist', },
+	{ ['t'] = 25, ['d'] = 1, ['side'] = 3, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_arc_menagerie_Earth_Daemon_2', ['default'] = 'Cave Bear', ['guard'] = true },
+	{ ['t'] = 25, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_imp_Lavinians_Propugnator', ['default'] = 'Shock Trooper', ['guard'] = true },
+	{ ['t'] = 26, ['d'] = 1, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_imp_Lavinians_Propugnator', ['default'] = 'Shock Trooper', ['guard'] = true },
+	{ ['t'] = 26, ['d'] = 1, ['side'] = 4, ['x'] = 9, ['lvl'] = 2, ['type'] = 'Wraith', ['default'] = 'Wraith', ['bulky'] = 32, ['fast'] = 1 },
 	{ ['t'] = 26, ['d'] = 1, ['side'] = 4, ['x'] = 6, ['lvl'] = 1, ['type'] = 'Blood Bat', ['default'] = 'Blood Bat', },
+	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_arc_khthon_Flying_Toad', ['default'] = 'Fire Ant', },
 	
 	{ ['t'] = 24, ['d'] = 2, ['side'] = 4, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Lunar_Stinkbug', ['default'] = 'Giant Mudcrawler', ['race_guard_off'] = true, },
 	
@@ -162,11 +157,10 @@ return {
 	
 	-- 30 - 36 (mask y 8 - 2)
 	
-	{ ['t'] = 30, ['d'] = 0, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_efm_imperialists_Hoplite', ['default'] = 'Pikeman', ['bulky'] = 40, ['armored'] = 12 },
-	{ ['t'] = 30, ['d'] = 0, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Order_Knight', ['default'] = 'Dragoon', ['calls_for_help'] = true, ['race_guard_off'] = true },
-	{ ['t'] = 30, ['d'] = 0, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_stf_eltireans_Disciple_of_Eltire', ['default'] = 'Mage', },
-	{ ['t'] = 31, ['d'] = 0, ['side'] = 4, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_arc_menagerie_Blue_Machinist', ['default'] = 'Outlaw', ['recruits'] = 'AE_arc_menagerie_Cyborg,AE_arc_menagerie_Drone,AE_arc_menagerie_Mechanical_Seeker', ['default_recruits'] = 'Thief,Footpad,Thug', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 75, ['item'] = true },
-	
+	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_efm_imperialists_Hoplite', ['default'] = 'Pikeman', ['bulky'] = 40, ['armored'] = 12 },
+	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Order_Knight', ['default'] = 'Dragoon', ['calls_for_help'] = true, ['race_guard_off'] = true },
+	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_stf_eltireans_Disciple_of_Eltire', ['default'] = 'Mage', },
+	{ ['t'] = 31, ['d'] = 1, ['side'] = 4, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_arc_menagerie_Blue_Machinist', ['default'] = 'Outlaw', ['recruits'] = 'AE_arc_menagerie_Cyborg,AE_arc_menagerie_Drone,AE_arc_menagerie_Mechanical_Seeker', ['default_recruits'] = 'Thief,Footpad,Thug', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 75, ['item'] = true },
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_stf_eltireans_Patrol_Captain', ['default'] = 'Lieutenant', },
 	
 	{ ['t'] = 31, ['d'] = 2, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_efm_imperialists_Spiker', ['default'] = 'Swordsman', },
@@ -179,7 +173,7 @@ return {
 	
 	-- final boss 33 / mask y 5
 	
-	{ ['t'] = 33, ['d'] = 0, ['side'] = 2, ['x'] = 26, ['lvl'] = 2, ['type'] = 'AE_myh_Militant', ['default'] = 'Javelineer', ['buff'] = 'A28:B13:C21:C16', ['moves'] = 0, ['final_boss'] = true, ['story_message'] = 'The prisoners are escaping! Guards! After them!', ['story_response'] = 'I want the head of this filth!' },
+	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 2, ['type'] = 'AE_myh_Militant', ['default'] = 'Javelineer', ['buff'] = 'A28:B13:C21:C16', ['moves'] = 0, ['final_boss'] = true, ['story_message'] = 'The prisoners are escaping! Guards! After them!', ['story_response'] = 'I want the head of this filth!' },
 }
 
 

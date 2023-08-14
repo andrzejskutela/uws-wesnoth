@@ -103,11 +103,10 @@ return {
 	
 	-- beginning
 	
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 1, ['x'] = 24, ['y'] = 8, ['lvl'] = 1, ['type'] = 'AE_stf_eltireans_Disciple_of_Eltire', ['default'] = 'Elvish Shaman', ['allow_random'] = false },
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 14, ['y'] = 5, ['lvl'] = 1, ['type'] = 'AE_arc_phantom_Feather_Dancer', ['default'] = 'Soulless', ['moves'] = 4, ['guard'] = true },
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 21, ['y'] = 6, ['lvl'] = 2, ['type'] = 'AE_arc_phantom_Tomb_Shield_Guard', ['default'] = 'Revenant', ['moves'] = 3, ['guard'] = true },
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 6, ['y'] = 4, ['lvl'] = 2, ['type'] = 'Dread Bat', ['default'] = 'Dread Bat', ['moves'] = 5, ['guard'] = true },
-	
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 1, ['x'] = 24, ['y'] = 8, ['lvl'] = 1, ['type'] = 'AE_stf_eltireans_Disciple_of_Eltire', ['default'] = 'Elvish Shaman', ['allow_random'] = false },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['y'] = 5, ['lvl'] = 1, ['type'] = 'AE_arc_phantom_Feather_Dancer', ['default'] = 'Soulless', ['moves'] = 4, ['guard'] = true },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['y'] = 6, ['lvl'] = 2, ['type'] = 'AE_arc_phantom_Tomb_Shield_Guard', ['default'] = 'Revenant', ['moves'] = 3, ['guard'] = true },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 6, ['y'] = 4, ['lvl'] = 2, ['type'] = 'Dread Bat', ['default'] = 'Dread Bat', ['moves'] = 5, ['guard'] = true },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['y'] = 5, ['lvl'] = 2, ['type'] = 'Dread Bat', ['default'] = 'Dread Bat', ['moves'] = 4, ['guard'] = true },
 	
 	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 10, ['y'] = 4, ['lvl'] = 0, ['type'] = 'Vampire Bat', ['default'] = 'Vampire Bat', ['moves'] = 5, ['guard'] = true },
@@ -120,15 +119,14 @@ return {
 	
 	-- 2 - 8 (mask y 37 - 31)
 	
-	{ ['t'] = 2, ['d'] = 0, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_arc_phantom_Mummy', ['default'] = 'Walking Corpse', ['allow_random'] = false, ['moves'] = 3 },
-	{ ['t'] = 4, ['d'] = 0, ['side'] = 2, ['x'] = 6, ['lvl'] = 0, ['type'] = 'AE_arc_phantom_Spirit_Dove', ['default'] = 'Walking Corpse', ['allow_random'] = false, ['moves'] = 5, },
-	{ ['t'] = 5, ['d'] = 0, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'Blood Bat', ['default'] = 'Blood Bat', ['guard'] = true, ['moves'] = 5, ['allow_random'] = false },
-	{ ['t'] = 6, ['d'] = 0, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'AE_arc_phantom_Mummy_Pharo', ['default'] = 'Ancient Lich', ['recruits'] = 'AE_arc_phantom_Feather_Dancer,AE_arc_phantom_Huntress,AE_arc_phantom_Mummy_Unbound,AE_arc_phantom_Spirit_Jay,AE_arc_phantom_Tomb_Guard', ['default_recruits'] = 'Ghost,Ghoul,Skeleton,Skeleton Archer,Soulless', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 120, ['gold'] = 60, ['recruit_armored'] = 16, ['allow_random'] = false },
-	{ ['t'] = 8, ['d'] = 0, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_arc_phantom_Divine_Jay', ['default'] = 'Dread Bat', ['allow_random'] = false, ['moves'] = 6 },
-	
+	{ ['t'] = 2, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_arc_phantom_Mummy', ['default'] = 'Walking Corpse', ['allow_random'] = false, ['moves'] = 3 },
 	{ ['t'] = 2, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 0, ['type'] = 'AE_arc_phantom_Vapor_3', ['default'] = 'Walking Corpse', ['allow_random'] = false, ['moves'] = 4 },
 	{ ['t'] = 4, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_arc_phantom_Feather_Dancer', ['default'] = 'Soulless', ['allow_random'] = false, ['moves'] = 5 },
+	{ ['t'] = 4, ['d'] = 1, ['side'] = 2, ['x'] = 6, ['lvl'] = 0, ['type'] = 'AE_arc_phantom_Spirit_Dove', ['default'] = 'Walking Corpse', ['allow_random'] = false, ['moves'] = 5, },
+	{ ['t'] = 5, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'Blood Bat', ['default'] = 'Blood Bat', ['guard'] = true, ['moves'] = 5, ['allow_random'] = false },
 	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_arc_phantom_Vapor_1', ['default'] = 'Walking Corpse', ['armored'] = 16, ['allow_random'] = false, ['moves'] = 4 },
+	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'AE_arc_phantom_Mummy_Pharo', ['default'] = 'Ancient Lich', ['recruits'] = 'AE_arc_phantom_Feather_Dancer,AE_arc_phantom_Huntress,AE_arc_phantom_Mummy_Unbound,AE_arc_phantom_Spirit_Jay,AE_arc_phantom_Tomb_Guard', ['default_recruits'] = 'Ghost,Ghoul,Skeleton,Skeleton Archer,Soulless', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 120, ['gold'] = 60, ['recruit_armored'] = 16, ['allow_random'] = false },
+	{ ['t'] = 8, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_arc_phantom_Divine_Jay', ['default'] = 'Dread Bat', ['allow_random'] = false, ['moves'] = 6 },
 	
 	{ ['t'] = 3, ['d'] = 2, ['side'] = 2, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_arc_phantom_Mummy_Unbound', ['default'] = 'Ghoul', ['allow_random'] = false, ['moves'] = 3 },
 	
@@ -145,14 +143,13 @@ return {
 	
 	-- 9 - 15 (mask y 30 - 24)
 	
-	{ ['t'] = 9, ['d'] = 0, ['side'] = 2, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_stf_free_saurians_Tarantula', ['default'] = 'Fire Wraith', ['moves'] = 0, },
-	{ ['t'] = 11, ['d'] = 0, ['side'] = 2, ['x'] = 10, ['lvl'] = 2, ['type'] = 'Dread Bat', ['default'] = 'Dread Bat', ['bulky'] = 20, ['fast'] = 1, ['guard'] = true, },
-	{ ['t'] = 13, ['d'] = 0, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_chs_chaos_empire_Blood_Imp', ['default'] = 'Fire Drake', ['bulky'] = 60, ['race_guard_off'] = true, },
-	{ ['t'] = 14, ['d'] = 0, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Lesser_Mutation', ['default'] = 'Drake Fighter', ['race_guard_off'] = true, },
-	{ ['t'] = 15, ['d'] = 0, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_ext_chaos_Greater_Mutation', ['default'] = 'Drake Thrasher', ['guard'] = true },
-	
+	{ ['t'] = 9, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_stf_free_saurians_Tarantula', ['default'] = 'Fire Wraith', ['moves'] = 0, },
 	{ ['t'] = 9, ['d'] = 1, ['side'] = 2, ['x'] = 12, ['lvl'] = 0, ['type'] = 'AE_arc_phantom_Mummy', ['default'] = 'Walking Corpse', ['allow_random'] = false },
 	{ ['t'] = 11, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_chs_chaos_empire_Demon_Grunt', ['default'] = 'Drake Arbiter', ['guard'] = true },
+	{ ['t'] = 11, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 2, ['type'] = 'Dread Bat', ['default'] = 'Dread Bat', ['bulky'] = 20, ['fast'] = 1, ['guard'] = true, },
+	{ ['t'] = 13, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_chs_chaos_empire_Blood_Imp', ['default'] = 'Fire Drake', ['bulky'] = 60, ['race_guard_off'] = true, },
+	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Lesser_Mutation', ['default'] = 'Drake Fighter', ['race_guard_off'] = true, },
+	{ ['t'] = 15, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_ext_chaos_Greater_Mutation', ['default'] = 'Drake Thrasher', ['guard'] = true },
 	
 	{ ['t'] = 10, ['d'] = 2, ['side'] = 2, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_myh_Gargoyle', ['default'] = 'Giant Scorpion', ['armored'] = 12, ['guard'] = true },
 	{ ['t'] = 14, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Lesser_Daemon', ['default'] = 'Drake Burner', ['race_guard_off'] = true, },
@@ -166,14 +163,13 @@ return {
 	
 	-- 16 - 22 (mask y 23 - 17)
 	
-	{ ['t'] = 17, ['d'] = 0, ['side'] = 3, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_chs_chaos_empire_Demon_Lord', ['default'] = 'Armageddon Drake', ['recruits'] = 'AE_chs_chaos_empire_Blood_Imp,AE_chs_chaos_empire_Demonic_Hound,AE_chs_chaos_empire_Demon_Zephyr,AE_ext_chaos_Daemon,AE_ext_chaos_Doom_Guard', ['default_recruits'] = 'Drake Flare,Fire Drake,Drake Arbiter,Drake Thrasher,Drake Warrior', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 130, ['item'] = true, ['buff'] = 'A13:B14:C30' },
-	{ ['t'] = 17, ['d'] = 0, ['side'] = 4, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mrc_Blight_Blacktide', ['default'] = 'Jinn', ['armored'] = 20, ['guard'] = true, },
-	{ ['t'] = 19, ['d'] = 0, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Gutwrencher_Imp', ['default'] = 'Drake Enforcer', ['guard'] = true, ['disallow_slash_unguardian'] = true, ['bulky'] = 100 },
-	{ ['t'] = 21, ['d'] = 0, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_mag_Dark_Portal', ['default'] = 'Wraith', ['guard'] = true, ['fast'] = 1, ['agile'] = 12 },
-	{ ['t'] = 22, ['d'] = 0, ['side'] = 4, ['x'] = 7, ['lvl'] = 0, ['type'] = 'AE_myh_Sky_Shard', ['default'] = 'Ruffian', ['race_guard_off'] = true, ['calls_for_help'] = true, ['event'] = 'follow_players_race' },
-	
+	{ ['t'] = 17, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_chs_chaos_empire_Demon_Lord', ['default'] = 'Armageddon Drake', ['recruits'] = 'AE_chs_chaos_empire_Blood_Imp,AE_chs_chaos_empire_Demonic_Hound,AE_chs_chaos_empire_Demon_Zephyr,AE_ext_chaos_Daemon,AE_ext_chaos_Doom_Guard', ['default_recruits'] = 'Drake Flare,Fire Drake,Drake Arbiter,Drake Thrasher,Drake Warrior', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 130, ['item'] = true, ['buff'] = 'A13:B14:C30' },
+	{ ['t'] = 17, ['d'] = 1, ['side'] = 4, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mrc_Blight_Blacktide', ['default'] = 'Jinn', ['armored'] = 20, ['guard'] = true, },
 	{ ['t'] = 18, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_chs_chaos_empire_Demon_Shapeshifter', ['default'] = 'Drake Warrior', ['buff'] = 'A5:B45:C10:C9' },
+	{ ['t'] = 19, ['d'] = 1, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Gutwrencher_Imp', ['default'] = 'Drake Enforcer', ['guard'] = true, ['disallow_slash_unguardian'] = true, ['bulky'] = 100 },
+	{ ['t'] = 21, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_mag_Dark_Portal', ['default'] = 'Wraith', ['guard'] = true, ['fast'] = 1, ['agile'] = 12 },
 	{ ['t'] = 21, ['d'] = 1, ['side'] = 4, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_myh_Therian_Defender', ['default'] = 'Bandit', ['guard'] = true, ['gold'] = 15 },
+	{ ['t'] = 22, ['d'] = 1, ['side'] = 4, ['x'] = 7, ['lvl'] = 0, ['type'] = 'AE_myh_Sky_Shard', ['default'] = 'Ruffian', ['race_guard_off'] = true, ['calls_for_help'] = true, ['event'] = 'follow_players_race' },
 	
 	{ ['t'] = 16, ['d'] = 2, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_ext_chaos_Flesh_Hound', ['default'] = 'Drake Warrior', ['race_guard_off'] = true, ['bulky'] = 40 },
 	{ ['t'] = 20, ['d'] = 2, ['side'] = 4, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_Blight_Mutilated_Corpse', ['default'] = 'Deathblade', ['race_guard_off'] = true, ['beefy'] = 40 },
@@ -186,14 +182,13 @@ return {
 	
 	-- 23 - 29 (mask y 16 - 10)
 	
-	{ ['t'] = 24, ['d'] = 0, ['side'] = 4, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_myh_Therian_Mage', ['default'] = 'Trapper', ['beefy'] = 20 },
-	{ ['t'] = 25, ['d'] = 0, ['side'] = 4, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_myh_Therian_Monk', ['default'] = 'Thief', ['guard'] = true, },
-	{ ['t'] = 26, ['d'] = 0, ['side'] = 4, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_myh_Therian_Apprentice', ['default'] = 'Thief', },
-	{ ['t'] = 27, ['d'] = 0, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_myh_Therian_Shaman', ['default'] = 'Trapper', },
-	{ ['t'] = 28, ['d'] = 0, ['side'] = 4, ['x'] = 11, ['lvl'] = 4, ['type'] = 'AE_myh_Librarian', ['default'] = 'Grand Marshal', ['recruits'] = 'AE_myh_Aura_Monk,AE_myh_Therian_Tracker,AE_myh_Wildcat,AE_myh_Therian_Mage', ['default_recruits'] = 'Bandit,Outlaw,Rogue,Trapper', ['r_lvls'] = '2,2,2,2', ['recruitment_gold'] = 140, ['gold'] = 100 },
-	{ ['t'] = 28, ['d'] = 0, ['side'] = 4, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_myh_Therian_Ranger', ['default'] = 'Ranger', ['guard'] = true },
-	
 	{ ['t'] = 24, ['d'] = 1, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_myh_Cobra', ['default'] = 'Outlaw', ['guard'] = true },
+	{ ['t'] = 24, ['d'] = 1, ['side'] = 4, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_myh_Therian_Mage', ['default'] = 'Trapper', ['beefy'] = 20 },
+	{ ['t'] = 25, ['d'] = 1, ['side'] = 4, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_myh_Therian_Monk', ['default'] = 'Thief', ['guard'] = true, },
+	{ ['t'] = 26, ['d'] = 1, ['side'] = 4, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_myh_Therian_Apprentice', ['default'] = 'Thief', },
+	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_myh_Therian_Shaman', ['default'] = 'Trapper', },
+	{ ['t'] = 28, ['d'] = 1, ['side'] = 4, ['x'] = 11, ['lvl'] = 4, ['type'] = 'AE_myh_Librarian', ['default'] = 'Grand Marshal', ['recruits'] = 'AE_myh_Aura_Monk,AE_myh_Therian_Tracker,AE_myh_Wildcat,AE_myh_Therian_Mage', ['default_recruits'] = 'Bandit,Outlaw,Rogue,Trapper', ['r_lvls'] = '2,2,2,2', ['recruitment_gold'] = 140, ['gold'] = 100 },
+	{ ['t'] = 28, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_myh_Therian_Ranger', ['default'] = 'Ranger', ['guard'] = true },
 	
 	{ ['t'] = 23, ['d'] = 2, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_myh_Wildcat', ['default'] = 'Rogue', },
 	{ ['t'] = 27, ['d'] = 2, ['side'] = 4, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_myh_Aura_Master', ['default'] = 'Huntsman', },
@@ -206,8 +201,8 @@ return {
 	
 	-- 30 - 36 (mask y 9 - 3)
 	
-	{ ['t'] = 31, ['d'] = 0, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_rhy_ma_Night_Guard', ['default'] = 'Dune Spearguard', ['beefy'] = 56, ['guard'] = true },
-	{ ['t'] = 33, ['d'] = 0, ['side'] = 2, ['x'] = 22, ['lvl'] = 4, ['type'] = 'AE_mag_Master_of_Darkness', ['default'] = 'Dune Paragon', ['recruits'] = 'AE_rhy_ma_Spellblade,AE_rhy_ma_Sorcerer,AE_rhy_ma_Longbowman,AE_rhy_ma_Longsword,AE_rhy_ma_Seeker', ['default_recruits'] = 'Dune Scorcher,Dune Alchemist,Dune Explorer,Dune Strider,Dune Swordsman', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 150, ['recruit_minion'] = 'A29' },
+	{ ['t'] = 31, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_rhy_ma_Night_Guard', ['default'] = 'Dune Spearguard', ['beefy'] = 56, ['guard'] = true },
+	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 4, ['type'] = 'AE_mag_Master_of_Darkness', ['default'] = 'Dune Paragon', ['recruits'] = 'AE_rhy_ma_Spellblade,AE_rhy_ma_Sorcerer,AE_rhy_ma_Longbowman,AE_rhy_ma_Longsword,AE_rhy_ma_Seeker', ['default_recruits'] = 'Dune Scorcher,Dune Alchemist,Dune Explorer,Dune Strider,Dune Swordsman', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 150, ['recruit_minion'] = 'A29' },
 	
 	{ ['t'] = 32, ['d'] = 2, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_rhy_ma_Warmonk', ['default'] = 'Dune Strider', ['beefy'] = 24 },
 	
@@ -215,7 +210,7 @@ return {
 	
 	-- final boss 36 / mask y 3
 	
-	{ ['t'] = 36, ['d'] = 0, ['side'] = 2, ['x'] = 25, ['lvl'] = 5, ['type'] = 'QQ_Archwitch', ['default'] = 'QQ_Archwitch', ['moves'] = 0, ['final_boss'] = true, ['buff'] = 'A19:B15:C13:C16', ['allow_random'] = false, ['story_message'] = 'You have displayed a great deal of strength going through these tunnels. Now you will die!', ['story_response'] = 'Stay strong! Stay focused! We got her!', },
+	{ ['t'] = 36, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 5, ['type'] = 'QQ_Archwitch', ['default'] = 'QQ_Archwitch', ['moves'] = 0, ['final_boss'] = true, ['buff'] = 'A19:B15:C13:C16', ['allow_random'] = false, ['story_message'] = 'You have displayed a great deal of strength going through these tunnels. Now you will die!', ['story_response'] = 'Stay strong! Stay focused! We got her!', },
 }
 
 
