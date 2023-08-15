@@ -103,11 +103,15 @@ local function process_spawn_table(spawn_table)
 	local allow_ae = wesnoth.get_variable("random_pool.allow_ae")
 	local game_mode = wesnoth.get_variable('uws_game.mode')
 	local used_items_list = wesnoth.get_variable('used_items_list')
+	local copy_fields_list = wesnoth.get_variable('uws_spawn.copy_fields')
+	
+	local copy_fields = {}
+	local copy_object_fields = { 'x', 'y', 'cat', 'image', 'type', 'message', 'amount', 'name', 'set', 'color', 'tooltip', 'event', 'new_unit_special_id', 'render', }
+	for field in string.gmatch(copy_fields_list, '([^,]+)') do
+	    table.insert(copy_fields, field)
+	end
 	
 	local type = nil
-	local diff_gold_factor = { [1] = 1, [2] = 1, [3] = 1, [4] = 1, [5] = 0.95, [6] = 0.85 }
-	local copy_fields = { 'side', 'x', 'guard', 'moves', 'buff', 'second_buff', 'quiet_buff', 'item', 'second_item', 'gold', 'recruits', 'recruitment_gold', 'bulky', 'beefy', 'damaged', 'final_boss', 'event', 'second_random', 'name', 'second_name', 'disallow_slash_unguardian', 'calls_for_help', 'armored', 'recruit_armored', 'recruit_minion', 'title', 'fast', 'agile',  'story_message', 'story_response', 'race_points_value', 'clear_boss_tile_overlay', }
-	local copy_object_fields = { 'x', 'y', 'cat', 'image', 'type', 'message', 'amount', 'name', 'set', 'color', 'tooltip', 'event', 'new_unit_special_id', 'render', }
 	local rules = {}
 	local row = {}
 	local object_row = {}
@@ -118,6 +122,7 @@ local function process_spawn_table(spawn_table)
 	local predropped_items = {}
 	local used_items_table = {}
 	local process_object = true
+	local diff_gold_factor = { [1] = 1, [2] = 1, [3] = 1, [4] = 0.95, [5] = 0.9, [6] = 0.85 }
 	
 	for item_used in string.gmatch(used_items_list, '([^,]+)') do
 	    table.insert(used_items_table, item_used)
@@ -367,11 +372,11 @@ local function process_spawn_table(spawn_table)
 					rules['y'] = rules['y'] + map_scroll_length
 				end
 				
-				wesnoth.set_variable("spawn_type", type)
-				wesnoth.set_variable("spawn_y", rules['y'])
+				wesnoth.set_variable("uws_spawn.type", type)
+				wesnoth.set_variable("uws_spawn.y", rules['y'])
 				
 				for _,field in ipairs(copy_fields) do
-					wesnoth.set_variable("spawn_" .. field, rules[field])
+					wesnoth.set_variable("uws_spawn." .. field, rules[field])
 				end
 				
 				wml.fire('fire_event', {
