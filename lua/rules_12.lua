@@ -26,11 +26,10 @@ return {
 
 	-- beginning
 	
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 24, ['y'] = 16, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Acrobat', ['default'] = 'Dune Rover', ['moves'] = 6 },
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 18, ['y'] = 16, ['lvl'] = 0, ['type'] = 'AE_FL_natives_Tribesman', ['default'] = 'Giant Scorpling', ['moves'] = 5 },
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 25, ['y'] = 17, ['lvl'] = 0, ['type'] = 'AE_FL_natives_Tribesman', ['default'] = 'Giant Scorpling', ['moves'] = 5, },
-	{ ['t'] = 1, ['d'] = 0, ['side'] = 2, ['x'] = 22, ['y'] = 12, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Elder_Falcon', ['default'] = 'Elder Falcon', ['moves'] = 6, ['guard'] = true, ['allow_random'] = false },
-	
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['y'] = 16, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Acrobat', ['default'] = 'Dune Rover', ['moves'] = 6 },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['y'] = 16, ['lvl'] = 0, ['type'] = 'AE_FL_natives_Tribesman', ['default'] = 'Giant Scorpling', ['moves'] = 5 },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['y'] = 17, ['lvl'] = 0, ['type'] = 'AE_FL_natives_Tribesman', ['default'] = 'Giant Scorpling', ['moves'] = 5, },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['y'] = 12, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Elder_Falcon', ['default'] = 'Elder Falcon', ['moves'] = 6, ['guard'] = true, ['allow_random'] = false },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['y'] = 6, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Crocodile', ['default'] = 'Horned Scarab', ['moves'] = 5, ['guard'] = true },
 	
 	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['y'] = 10, ['lvl'] = 1, ['type'] = 'AE_FL_bloodelf_Dark_Lizard', ['default'] = 'Rock Scorpion', ['moves'] = 5, ['guard'] = true, ['agile'] = 12 },
@@ -44,12 +43,11 @@ return {
 	
 	-- 2 - 8 (mask y 26 - 20)
 	
-	{ ['t'] = 3, ['d'] = 0, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Fishman', ['default'] = 'Naga Dirkfang', ['moves'] = 6, ['allow_random'] = false },
-	{ ['t'] = 5, ['d'] = 0, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Sailor', ['default'] = 'Dune Skirmisher', ['gold'] = 12 },
-	{ ['t'] = 7, ['d'] = 0, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mrc_mercenaries_Seafarer', ['default'] = 'Dune Falconer', ['recruits'] = 'AE_FL_pirates_Buccaneer,AE_FL_pirates_Sailor,AE_FL_pirates_Fishman', ['default_recruits'] = 'Dune Burner,Dune Soldier,Dune Herbalist', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 40, },
-	{ ['t'] = 8, ['d'] = 0, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Elder_Falcon', ['default'] = 'Elder Falcon', ['guard'] = true, ['allow_random'] = false },
-	
+	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Fishman', ['default'] = 'Naga Dirkfang', ['moves'] = 6, ['allow_random'] = false },
+	{ ['t'] = 5, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Sailor', ['default'] = 'Dune Skirmisher', ['gold'] = 12 },
 	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Sailor', ['default'] = 'Dune Rover', },
+	{ ['t'] = 7, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mrc_mercenaries_Seafarer', ['default'] = 'Dune Falconer', ['recruits'] = 'AE_FL_pirates_Buccaneer,AE_FL_pirates_Sailor,AE_FL_pirates_Fishman', ['default_recruits'] = 'Dune Burner,Dune Soldier,Dune Herbalist', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 40, },
+	{ ['t'] = 8, ['d'] = 1, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Elder_Falcon', ['default'] = 'Elder Falcon', ['guard'] = true, ['allow_random'] = false },
 	
 	{ ['t'] = 3, ['d'] = 2, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Pirate', ['default'] = 'Dune Strider', ['guard'] = true },
 	
@@ -61,12 +59,11 @@ return {
 	
 	-- 9 - 15 (mask y 19 - 13)
 	
-	{ ['t'] = 9, ['d'] = 0, ['side'] = 3, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Sea_Beast', ['default'] = 'Water Serpent', ['item'] = true, ['guard'] = true, ['gold'] = 20, ['allow_random'] = false },
-	{ ['t'] = 11, ['d'] = 0, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Light_Scout', ['default'] = 'Dune Rider', ['race_guard_off'] = true },
-	{ ['t'] = 13, ['d'] = 0, ['side'] = 2, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Sea_Monster', ['default'] = 'Tentacle of the Deep', ['bulky'] = 40, ['gold'] = 40, ['guard'] = true, ['allow_random'] = false, },
-	{ ['t'] = 14, ['d'] = 0, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Arcane_Warrior', ['default'] = 'Lieutenant', },
-	
+	{ ['t'] = 9, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Sea_Beast', ['default'] = 'Water Serpent', ['item'] = true, ['guard'] = true, ['gold'] = 20, ['allow_random'] = false },
+	{ ['t'] = 11, ['d'] = 1, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Light_Scout', ['default'] = 'Dune Rider', ['race_guard_off'] = true },
 	{ ['t'] = 12, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Sword_Brother', ['default'] = 'Spearman', },
+	{ ['t'] = 13, ['d'] = 1, ['side'] = 2, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Sea_Monster', ['default'] = 'Tentacle of the Deep', ['bulky'] = 40, ['gold'] = 40, ['guard'] = true, ['allow_random'] = false, },
+	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Arcane_Warrior', ['default'] = 'Lieutenant', },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Golem', ['default'] = 'Mage', },
 	
 	{ ['t'] = 11, ['d'] = 2, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Chosen', ['default'] = 'Fencer', },
@@ -80,10 +77,9 @@ return {
 	
 	-- 16 - 22 (mask y 12 - 6)
 	
-	{ ['t'] = 16, ['d'] = 0, ['side'] = 2, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Thunder_Serpent', ['default'] = 'Cuttle Fish', ['guard'] = true, ['gold'] = 40, ['beefy'] = 24, ['allow_random'] = false },
-	{ ['t'] = 18, ['d'] = 0, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_FL_amazon_Harpy', ['default'] = 'Ghost', },
-	{ ['t'] = 19, ['d'] = 0, ['side'] = 4, ['x'] = 12, ['lvl'] = 3, ['type'] = 'AE_FL_bloodelf_Fire_Warrior', ['default'] = 'Drake Flameheart', ['recruits'] = 'AE_FL_bloodelf_Phoenix_Hatchling,AE_FL_bloodelf_Mage_of_Fire,AE_FL_amazon_Harpy', ['default_recruits'] = 'Drake Burner,Drake Clasher,Drake Fighter', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 75 },
-	
+	{ ['t'] = 16, ['d'] = 1, ['side'] = 2, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Thunder_Serpent', ['default'] = 'Cuttle Fish', ['guard'] = true, ['gold'] = 40, ['beefy'] = 24, ['allow_random'] = false },
+	{ ['t'] = 18, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_FL_amazon_Harpy', ['default'] = 'Ghost', },
+	{ ['t'] = 19, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 3, ['type'] = 'AE_FL_bloodelf_Fire_Warrior', ['default'] = 'Drake Flameheart', ['recruits'] = 'AE_FL_bloodelf_Phoenix_Hatchling,AE_FL_bloodelf_Mage_of_Fire,AE_FL_amazon_Harpy', ['default_recruits'] = 'Drake Burner,Drake Clasher,Drake Fighter', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 75 },
 	{ ['t'] = 20, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_FL_amazon_Harpy', ['default'] = 'Ghost', },
 	
 	{ ['t'] = 18, ['d'] = 2, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_FL_amazon_Giant_Creeper', ['default'] = 'Wose Shaman', ['moves'] = 0, },
@@ -97,7 +93,7 @@ return {
 	
 	-- 22 / final boss
 	
-	{ ['t'] = 22, ['d'] = 0, ['side'] = 2, ['x'] = 26, ['lvl'] = 3, ['type'] = 'AE_FL_pirates_Deputy_Captain', ['default'] = 'Fugitive', ['buff'] = 'A28:B16:C45', ['moves'] = 0, ['final_boss'] = true },
+	{ ['t'] = 22, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 3, ['type'] = 'AE_FL_pirates_Deputy_Captain', ['default'] = 'Fugitive', ['buff'] = 'A28:B16:C45', ['moves'] = 0, ['final_boss'] = true },
 }
 
 
