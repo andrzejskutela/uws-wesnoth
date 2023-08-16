@@ -1,20 +1,20 @@
 local after_games_settings = { 
-	{ ['turn'] = 1, ['index'] = 1, ['percentage'] = 33, ['colour'] = '#fafafa', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 3 Wave 2 (36%)", },
-	{ ['turn'] = 3, ['index'] = 2, ['percentage'] = 36, ['colour'] = '#f3f5e4', ['item'] = false, ['gold'] = 3, ['info'] = "Turn 5 Wave 3 (40%)", },
-	{ ['turn'] = 5, ['index'] = 3, ['percentage'] = 40, ['colour'] = '#ebedce', ['item'] = false, ['gold'] = 6, ['info'] = "Turn 7 Wave 4 (44%)", },
-	{ ['turn'] = 7, ['index'] = 4, ['percentage'] = 44, ['colour'] = '#e4e8ac', ['item'] = false, ['gold'] = 9, ['info'] = "Turn 9 Wave 5 (48%)", },
-	{ ['turn'] = 9, ['index'] = 5, ['percentage'] = 48, ['colour'] = '#e3e19a', ['item'] = false, ['gold'] = 12, ['info'] = "Turn 11 Wave 6 (52%)", },
-	{ ['turn'] = 11, ['index'] = 6, ['percentage'] = 52, ['colour'] = '#dbcf81', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 13 Wave 7 (56%)", },
-	{ ['turn'] = 13, ['index'] = 7, ['percentage'] = 56, ['colour'] = '#dec276', ['item'] = false, ['gold'] = 15, ['info'] = "Turn 15 Wave 8 (60%)", },
-	{ ['turn'] = 15, ['index'] = 8, ['percentage'] = 60, ['colour'] = '#dea866', ['item'] = false, ['gold'] = 20, ['info'] = "Turn 18 Wave 9 (65%)", },
-	{ ['turn'] = 18, ['index'] = 9, ['percentage'] = 65, ['colour'] = '#e09d5a', ['item'] = false, ['gold'] = 25, ['info'] = "Turn 21 Wave 10 (70%)", },
-	{ ['turn'] = 21, ['index'] = 10, ['percentage'] = 70, ['colour'] = '#e39152', ['item'] = false, ['gold'] = 30, ['info'] = "Turn 24 Wave 11 (75%)", },
-	{ ['turn'] = 24, ['index'] = 11, ['percentage'] = 75, ['colour'] = '#e37944', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 27 Wave 12 (80%)", },
-	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['colour'] = '#e36236', ['item'] = false, ['gold'] = 35, ['info'] = "Turn 31 Wave 13 (85%)", },
-	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 85, ['colour'] = '#e34627', ['item'] = false, ['gold'] = 50, ['info'] = "Turn 35 Wave 14 (90%)", },
-	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 90, ['colour'] = '#de301d', ['item'] = false, ['gold'] = 65, ['info'] = "Turn 40 Wave 15 (95%)", },
-	{ ['turn'] = 40, ['index'] = 15, ['percentage'] = 95, ['colour'] = '#d11111', ['item'] = false, ['gold'] = 80, ['info'] = "Turn 45 The Gates Open", },
-	{ ['turn'] = 45, ['index'] = 16, ['percentage'] = 1000, ['colour'] = '#800000', ['item'] = false, ['gold'] = 0, ['info'] = "", },
+	{ ['turn'] = 1, ['index'] = 1, ['percentage'] = 33, ['colour'] = '#fafafa', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 3 Wave 2 (36%)", ['gates'] = false, },
+	{ ['turn'] = 3, ['index'] = 2, ['percentage'] = 36, ['colour'] = '#f3f5e4', ['item'] = false, ['gold'] = 3, ['info'] = "Turn 5 Wave 3 (40%)", ['gates'] = false, },
+	{ ['turn'] = 5, ['index'] = 3, ['percentage'] = 40, ['colour'] = '#ebedce', ['item'] = false, ['gold'] = 5, ['info'] = "Turn 7 Wave 4 (44%)", ['gates'] = false, },
+	{ ['turn'] = 7, ['index'] = 4, ['percentage'] = 44, ['colour'] = '#e4e8ac', ['item'] = false, ['gold'] = 7, ['info'] = "Turn 9 Wave 5 (48%)", ['gates'] = false, },
+	{ ['turn'] = 9, ['index'] = 5, ['percentage'] = 48, ['colour'] = '#e3e19a', ['item'] = false, ['gold'] = 9, ['info'] = "Turn 11 Wave 6 (52%)", ['gates'] = false, },
+	{ ['turn'] = 11, ['index'] = 6, ['percentage'] = 52, ['colour'] = '#dbcf81', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 13 Wave 7 (56%)", ['gates'] = false, },
+	{ ['turn'] = 13, ['index'] = 7, ['percentage'] = 56, ['colour'] = '#dec276', ['item'] = false, ['gold'] = 12, ['info'] = "Turn 15 Wave 8 (60%)", ['gates'] = false, },
+	{ ['turn'] = 15, ['index'] = 8, ['percentage'] = 60, ['colour'] = '#dea866', ['item'] = false, ['gold'] = 15, ['info'] = "Turn 18 Wave 9 (65%)", ['gates'] = false, },
+	{ ['turn'] = 18, ['index'] = 9, ['percentage'] = 65, ['colour'] = '#e09d5a', ['item'] = false, ['gold'] = 18, ['info'] = "Turn 21 Wave 10 (70%)", ['gates'] = false, },
+	{ ['turn'] = 21, ['index'] = 10, ['percentage'] = 70, ['colour'] = '#e39152', ['item'] = false, ['gold'] = 21, ['info'] = "Turn 24 Wave 11 (75%)", ['gates'] = false, },
+	{ ['turn'] = 24, ['index'] = 11, ['percentage'] = 75, ['colour'] = '#e37944', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 27 Wave 12 (80%)", ['gates'] = false, },
+	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['colour'] = '#e36236', ['item'] = false, ['gold'] = 25, ['info'] = "Turn 31 Wave 13 (85%)", ['gates'] = false, },
+	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 85, ['colour'] = '#e34627', ['item'] = false, ['gold'] = 30, ['info'] = "Turn 35 Wave 14 (90%)", ['gates'] = false, },
+	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 90, ['colour'] = '#de301d', ['item'] = false, ['gold'] = 35, ['info'] = "Turn 40 Wave 15 (95%)", ['gates'] = false, },
+	{ ['turn'] = 40, ['index'] = 15, ['percentage'] = 95, ['colour'] = '#d11111', ['item'] = false, ['gold'] = 40, ['info'] = "Turn 45 The Gates Open", ['gates'] = false, },
+	{ ['turn'] = 45, ['index'] = 16, ['percentage'] = 100, ['colour'] = '#800000', ['item'] = false, ['gold'] = 0, ['info'] = "", ['gates'] = true, },
 }
 
 local after_classic_locations = {
@@ -150,6 +150,7 @@ function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 			wesnoth.set_variable('after_games_wave_index', v['index'])
 			wesnoth.set_variable('after_games_colour', v['colour'])
 			wesnoth.set_variable('after_games_info_text', v['info'])
+			wesnoth.set_variable('after_games_open_gates', v['gates'])
 			break
 		end
 	end
