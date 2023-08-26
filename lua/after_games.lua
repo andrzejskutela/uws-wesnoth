@@ -109,6 +109,7 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 		wesnoth.set_variable('after_games_copy_unit_type', clone.type)
 		wesnoth.set_variable('after_games_gold_value', give_gold)
 		wesnoth.set_variable('after_games_drop_item', has_item)
+		wesnoth.set_variable('after_games_item_id', item)
 		
 		wml.fire('fire_event', {
 			name='after_games_apply_copy_modifications'
