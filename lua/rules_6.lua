@@ -58,9 +58,9 @@ return {
 	{ ['row'] = 'object', ['t'] = 1, ['x'] = 10, ['y'] = 11, ['image'] = 'items/bones.png', ['cat'] = 'decorative', },
 	
 	{ ['row'] = 'object', ['t'] = 1, ['x'] = 19, ['y'] = 10, ['cat'] = 'heal', ['image'] = 'scenery/leanto.png', ['name'] = "Medic's tent", ['amount'] = 4 },
-	{ ['row'] = 'object', ['t'] = 1, ['x'] = 10, ['y'] = 4, ['cat'] = 'heal', ['image'] = 'items/box.png', ['name'] = "Medicine box", ['amount'] = 8 },
+	{ ['row'] = 'object', ['t'] = 1, ['x'] = 10, ['y'] = 4, ['cat'] = 'heal', ['image'] = 'items/box.png', ['name'] = "Medicine box", ['amount'] = 6 },
 	{ ['row'] = 'object', ['t'] = 3, ['x'] = 21, ['cat'] = 'heal', ['image'] = 'scenery/leanto.png', ['name'] = "Medic's tent", ['amount'] = 8 },
-	{ ['row'] = 'object', ['t'] = 6, ['x'] = 16, ['cat'] = 'heal', ['image'] = 'scenery/leanto.png', ['name'] = "Medic's tent", ['amount'] = 12 },
+	{ ['row'] = 'object', ['t'] = 6, ['x'] = 16, ['cat'] = 'heal', ['image'] = 'scenery/leanto.png', ['name'] = "Medic's tent", ['amount'] = 10 },
 	{ ['row'] = 'object', ['t'] = 6, ['x'] = 25, ['cat'] = 'heal', ['image'] = 'items/ornate1.png', ['name'] = "Wine bottle" },
 	{ ['row'] = 'object', ['t'] = 18, ['x'] = 25, ['cat'] = 'heal', ['image'] = 'scenery/leanto.png', ['name'] = "Medic's tent" },
 	
