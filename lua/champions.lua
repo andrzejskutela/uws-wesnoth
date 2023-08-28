@@ -216,7 +216,8 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 		{ ['ranged_dmg'] = 0, ['ranged_strikes'] = 0, ['ranged_accuracy'] = 0, ['ranged_parry'] = 0, },
 		{ ['mp'] = 0 },
 		{ ['arcane'] = 0, ['blade'] = 0, ['cold'] = 0, ['fire'] = 0, ['impact'] = 0, ['pierce'] = 0 },
-		{ ['flat'] = 0, ['frozen'] = 0, ['forest'] = 0, ['village'] = 0, ['swamp_water'] = 0, ['cave'] = 0, ['reef'] = 0, ['shallow_water'] = 0, ['deep_water'] = 0, ['fungus'] = 0, ['mountains'] = 0, ['hills'] = 0, ['castle'] = 0, ['sand'] = 0  }
+		{ ['flat'] = 0, ['frozen'] = 0, ['forest'] = 0, ['village'] = 0, ['swamp_water'] = 0, ['cave'] = 0, ['reef'] = 0, ['shallow_water'] = 0, ['deep_water'] = 0, ['fungus'] = 0, ['mountains'] = 0, ['hills'] = 0, ['castle'] = 0, ['sand'] = 0  },
+		{ ['movement_cost'] = 0 }
 	}
 	
 	local settings_table = {
@@ -232,6 +233,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 		{ ['input_key'] = 'ranged_accuracy', ['output_index'] = 4, ['prefix'] = 'Ranged Accuracy +', ['suffix'] = '', ['round_f'] = 1, },
 		{ ['input_key'] = 'ranged_parry', ['output_index'] = 4, ['prefix'] = 'Ranged Parry +', ['suffix'] = '', ['round_f'] = 1, },
 		{ ['input_key'] = 'mp', ['output_index'] = 5, ['prefix'] = 'Movement Points +', ['suffix'] = '', ['round_f'] = 1, },
+		{ ['input_key'] = 'movement_cost', ['output_index'] = 8, ['prefix'] = 'Movement costs -', ['suffix'] = '', ['round_f'] = 1}
 	}
 	
 	local resistance_table = {}
