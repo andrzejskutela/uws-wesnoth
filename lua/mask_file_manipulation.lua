@@ -98,6 +98,6 @@ function wesnoth.wml_actions.qquws_generate_new_mask_data(cfg)
 	local sliced_old = slice_into_table(current_mask_data, middle_tile_x)
 	local sliced_combined = combine_slices(sliced_old, sliced_partial, mask_manipulation_mode, insert_at, partial_length)
 	local combined_mask = concatenate_sliced_mask(sliced_combined)
-	wesnoth.set_variable(new_mask_var_name, combined_mask)
+	wml.variables[new_mask_var_name] = combined_mask
 end
 

@@ -30,18 +30,18 @@ local copy_unit_counter = 0
 
 local find_vacant_location = function(around_x, around_y, map_edge, from_side)
 	if from_side == 1 then
-		wesnoth.set_variable('after_spawn_x', map_edge - around_x)
+		wml.variables['after_spawn_x'] = map_edge - around_x
 	else
-		wesnoth.set_variable('after_spawn_x', around_x)
+		wml.variables['after_spawn_x'] = around_x
 	end
 	
-	wesnoth.set_variable('after_spawn_y', around_y)
+	wml.variables['after_spawn_y'] = around_y
 	
 	wml.fire('fire_event', {
 		name='find_vacant_after_games_spawn'
 	})
 	
-	return { ['x'] = wesnoth.get_variable('available_location_x'), ['y'] = wesnoth.get_variable('available_location_y') }
+	return { ['x'] = wml.variables['available_location_x'], ['y'] = wml.variables['available_location_y'] }
 end
 
 local unit_deep_copy = function(unit, x, y)
@@ -50,7 +50,7 @@ local unit_deep_copy = function(unit, x, y)
 		variable = "wml_copy_unit",
 	}
 	
-	local deep_copy = wesnoth.get_variable("wml_copy_unit")
+	local deep_copy = wml.variables["wml_copy_unit"]
 	local id = "uws_copy_" .. tostring(copy_unit_counter)
 	copy_unit_counter = copy_unit_counter + 1
 	deep_copy.id = id
@@ -58,11 +58,11 @@ local unit_deep_copy = function(unit, x, y)
 	deep_copy.canrecruit = false
 	deep_copy.x = x
 	deep_copy.y = y
-	wesnoth.set_variable("wml_copy_unit", deep_copy)
+	wml.variables["wml_copy_unit"] = deep_copy
 	wesnoth.wml_actions.unstore_unit {
 		variable = "wml_copy_unit",
 	}
-	wesnoth.set_variable("wml_copy_unit", nil)
+	wml.variables["wml_copy_unit"] = nil
 	
 	return id
 end
@@ -71,7 +71,7 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 	local enemy_units = wesnoth.get_units { side = from_side }
 	local give_gold = 0
 	local has_item = false
-	wesnoth.set_variable('after_games_copied_from_side', from_side)
+	wml.variables['after_games_copied_from_side'] = from_side
 	
 	for k,u in ipairs(enemy_units) do
 		give_gold = 0
@@ -106,11 +106,11 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 			T.effect { apply_to = "zoc", value = false },
 		})
 		
-		wesnoth.set_variable('new_unit_spawn_id', clone.id)
-		wesnoth.set_variable('after_games_copy_unit_type', clone.type)
-		wesnoth.set_variable('after_games_gold_value', give_gold)
-		wesnoth.set_variable('after_games_drop_item', has_item)
-		wesnoth.set_variable('after_games_item_id', item)
+		wml.variables['new_unit_spawn_id'] = clone.id
+		wml.variables['after_games_copy_unit_type'] = clone.type
+		wml.variables['after_games_gold_value'] = give_gold
+		wml.variables['after_games_drop_item'] = has_item
+		wml.variables['after_games_item_id'] = item
 		
 		wml.fire('fire_event', {
 			name='after_games_apply_copy_modifications'
@@ -147,24 +147,24 @@ function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 	for k,v in ipairs(after_games_settings) do
 		if v['turn'] == turn_number then
 			is_spawn_turn = true
-			wesnoth.set_variable('after_games_percentage', v['percentage'] - 100)
-			wesnoth.set_variable('after_games_copy_info', v['percentage'])
-			wesnoth.set_variable('after_games_wave_index', v['index'])
-			wesnoth.set_variable('after_games_colour', v['colour'])
-			wesnoth.set_variable('after_games_info_text', v['info'])
-			wesnoth.set_variable('after_games_open_gates', v['gates'])
+			wml.variables['after_games_percentage'] = v['percentage'] - 100
+			wml.variables['after_games_copy_info'] = v['percentage']
+			wml.variables['after_games_wave_index'] = v['index']
+			wml.variables['after_games_colour'] = v['colour']
+			wml.variables['after_games_info_text'] = v['info']
+			wml.variables['after_games_open_gates'] = v['gates']
 			break
 		end
 	end
 	
-	wesnoth.set_variable('after_games_is_spawn_turn', is_spawn_turn)
+	wml.variables['after_games_is_spawn_turn'] = is_spawn_turn
 end
 
 function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	local map_id = cfg.map_id
 	local key = 'map_' .. tostring(map_id)
-	local map_edge = wesnoth.get_variable("uws_game.edge")
-	local wave_index = wesnoth.get_variable('after_games_wave_index')
+	local map_edge = wml.variables["uws_game.edge"]
+	local wave_index = wml.variables['after_games_wave_index']
 	local available_items = {}
 	local west_item = ''
 	local east_item = ''

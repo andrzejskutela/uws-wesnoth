@@ -30,7 +30,7 @@ function build_object_row(data)
 end
 
 local function get_spawn_table()
-	local map_id = wesnoth.get_variable('uws_game.map_id')
+	local map_id = wml.variables['uws_game.map_id']
 	local filepath = '~add-ons/QQ_Ultimate_Wesnoth_Survival/lua/rules_' .. tostring(map_id) .. '.lua'
 	if filesystem.have_file(filepath, true) then
 		return wesnoth.dofile(filepath)
@@ -46,7 +46,7 @@ local function get_unit_translation(unit_type, unit_level)
 	
 	if not uws_translation_table[unit_type] then
 		if not available_units[unit_level] then
-			available_units[unit_level] = wesnoth.get_variable('random_pool.level_' .. tostring(unit_level))
+			available_units[unit_level] = wml.variables['random_pool.level_' .. tostring(unit_level)]
 		end
 		
 		uws_translation_table[unit_type] = mathx.random_choice(available_units[unit_level])
@@ -62,7 +62,7 @@ local function get_unit_random_recruit_list(recruit_lvls)
 	for lvl_str in string.gmatch(recruit_lvls, '([^,]+)') do
 		unit_level = tonumber(lvl_str)
 		if not available_units[unit_level] then
-			available_units[unit_level] = wesnoth.get_variable('random_pool.level_' .. tostring(unit_level))
+			available_units[unit_level] = wml.variables['random_pool.level_' .. tostring(unit_level)]
 		end
 		
 		table.insert(list, mathx.random_choice(available_units[unit_level]))
@@ -94,16 +94,16 @@ local function get_available_items(pool, used_items)
 end
 
 local function process_spawn_table(spawn_table)
-	local difficulty = wesnoth.get_variable('uws_game.difficulty')
-	local is_random = wesnoth.get_variable("uws_game.random_enemies")
-	local is_full_random = wesnoth.get_variable("uws_game.full_random")
-	local map_scroll_length = wesnoth.get_variable("uws_game.scroll_rounds")
-	local map_edge = wesnoth.get_variable("uws_game.edge")
-	local middle_lane = wesnoth.get_variable("uws_game.middle")
-	local allow_ae = wesnoth.get_variable("random_pool.allow_ae")
-	local game_mode = wesnoth.get_variable('uws_game.mode')
-	local used_items_list = wesnoth.get_variable('used_items_list')
-	local copy_fields_list = wesnoth.get_variable('uws_spawn.copy_fields')
+	local difficulty = wml.variables['uws_game.difficulty']
+	local is_random = wml.variables["uws_game.random_enemies"]
+	local is_full_random = wml.variables["uws_game.full_random"]
+	local map_scroll_length = wml.variables["uws_game.scroll_rounds"]
+	local map_edge = wml.variables["uws_game.edge"]
+	local middle_lane = wml.variables["uws_game.middle"]
+	local allow_ae = wml.variables["random_pool.allow_ae"]
+	local game_mode = wml.variables['uws_game.mode']
+	local used_items_list = wml.variables['used_items_list']
+	local copy_fields_list = wml.variables['uws_spawn.copy_fields']
 	
 	local copy_fields = {}
 	local copy_object_fields = { 'x', 'y', 'cat', 'image', 'type', 'message', 'amount', 'name', 'set', 'color', 'tooltip', 'event', 'new_unit_special_id', 'render', }
@@ -286,12 +286,12 @@ local function process_spawn_table(spawn_table)
 					second_buff[3] = 'rand'
 				end
 				
-				wesnoth.set_variable("prespawn_champion_type", type)
-				wesnoth.set_variable("prespawn_moves", prespawn_moves)
-				wesnoth.set_variable("prespawn_buff_a", buff[1])
-				wesnoth.set_variable("prespawn_buff_b", buff[2])
-				wesnoth.set_variable("prespawn_buff_c", buff[3])
-				wesnoth.set_variable("prespawn_full_buff", rules['buff'])
+				wml.variables["prespawn_champion_type"] = type
+				wml.variables["prespawn_moves"] = prespawn_moves
+				wml.variables["prespawn_buff_a"] = buff[1]
+				wml.variables["prespawn_buff_b"] = buff[2]
+				wml.variables["prespawn_buff_c"] = buff[3]
+				wml.variables["prespawn_full_buff"] = rules['buff']
 				
 				for k,v in ipairs(buff) do
 					-- even without random enemies one buff or more can be rand
@@ -300,37 +300,37 @@ local function process_spawn_table(spawn_table)
 					end
 				end
 				
-				wesnoth.set_variable("is_single_buff_random", is_single_buff_random)
+				wml.variables["is_single_buff_random"] = is_single_buff_random
 				
 				wml.fire('fire_event', {
 					name='generate_champion_data'
 				})
 				
-				buff[1] = wesnoth.get_variable("prespawn_buff_a")
-				buff[2] = wesnoth.get_variable("prespawn_buff_b")
-				buff[3] = wesnoth.get_variable("prespawn_buff_c")
+				buff[1] = wml.variables["prespawn_buff_a"]
+				buff[2] = wml.variables["prespawn_buff_b"]
+				buff[3] = wml.variables["prespawn_buff_c"]
 				rules['buff'] = table.concat(buff, ':')
 				
-				rules['name'] = wesnoth.get_variable("prespawn_buff_name")
+				rules['name'] = wml.variables["prespawn_buff_name"]
 				rules['second_name'] = rules['name']
 				rules['second_buff'] = rules['buff']
 				
 				if rules['second_random'] ~= type then
-					wesnoth.set_variable("prespawn_champion_type", rules['second_random'])
-					wesnoth.set_variable("prespawn_moves", prespawn_moves)
-					wesnoth.set_variable("prespawn_buff_a", second_buff[1])
-					wesnoth.set_variable("prespawn_buff_b", second_buff[2])
-					wesnoth.set_variable("prespawn_buff_c", second_buff[3])
+					wml.variables["prespawn_champion_type"] = rules['second_random']
+					wml.variables["prespawn_moves"] = prespawn_moves
+					wml.variables["prespawn_buff_a"] = second_buff[1]
+					wml.variables["prespawn_buff_b"] = second_buff[2]
+					wml.variables["prespawn_buff_c"] = second_buff[3]
 					
 					wml.fire('fire_event', {
 						name='generate_champion_data'
 					})
 					
-					second_buff[1] = wesnoth.get_variable("prespawn_buff_a")
-					second_buff[2] = wesnoth.get_variable("prespawn_buff_b")
-					second_buff[3] = wesnoth.get_variable("prespawn_buff_c")
+					second_buff[1] = wml.variables["prespawn_buff_a"]
+					second_buff[2] = wml.variables["prespawn_buff_b"]
+					second_buff[3] = wml.variables["prespawn_buff_c"]
 					rules['second_buff'] = table.concat(second_buff, ':')
-					rules['second_name'] = wesnoth.get_variable("prespawn_buff_name")
+					rules['second_name'] = wml.variables["prespawn_buff_name"]
 				end
 			end
 			
@@ -372,11 +372,11 @@ local function process_spawn_table(spawn_table)
 					rules['y'] = rules['y'] + map_scroll_length
 				end
 				
-				wesnoth.set_variable("uws_spawn.type", type)
-				wesnoth.set_variable("uws_spawn.y", rules['y'])
+				wml.variables["uws_spawn.type"] = type
+				wml.variables["uws_spawn.y"] = rules['y']
 				
 				for _,field in ipairs(copy_fields) do
-					wesnoth.set_variable("uws_spawn." .. field, rules[field])
+					wml.variables["uws_spawn." .. field] = rules[field]
 				end
 				
 				wml.fire('fire_event', {
@@ -437,8 +437,8 @@ local function process_spawn_table(spawn_table)
 			table.insert(object_queue, object_row)
 			
 			if object_row['event'] ~= '' then
-				wesnoth.set_variable("register_event_id", object_row['event'] .. '_left')
-				wesnoth.set_variable("register_event_name", object_row['event'])
+				wml.variables["register_event_id"] = object_row['event'] .. '_left'
+				wml.variables["register_event_name"] = object_row['event']
 				
 				wml.fire('fire_event', {
 					name='register_new_location_event'
@@ -457,8 +457,8 @@ local function process_spawn_table(spawn_table)
 				end
 				
 				if object_row['event'] ~= '' and object_row['x'] ~= east_item_x then
-					wesnoth.set_variable("register_event_id", object_row['event'] .. '_right')
-					wesnoth.set_variable("register_event_name", object_row['event'])
+					wml.variables["register_event_id"] = object_row['event'] .. '_right'
+					wml.variables["register_event_name"] = object_row['event']
 					
 					wml.fire('fire_event', {
 						name='register_new_location_event'
@@ -518,21 +518,21 @@ local function process_spawn_table(spawn_table)
 	
 	wml.array_access.set("spawn_queue", queue)
 	wml.array_access.set("scrollable_items", object_queue)
-	wesnoth.set_variable("race_total_enemies", race_enemy_count)
+	wml.variables["race_total_enemies"] = race_enemy_count
 	
 	for _,item_data in ipairs(predropped_items) do
-		wesnoth.set_variable("render_new_item", item_data['render'])
-		wesnoth.set_variable("item_x", item_data['x'])
-		wesnoth.set_variable("item_y", item_data['y'])
-		wesnoth.set_variable("item_type_id", item_data['item'])
-		wesnoth.set_variable("overwrite_item_image", item_data['overwrite_image'])
+		wml.variables["render_new_item"] = item_data['render']
+		wml.variables["item_x"] = item_data['x']
+		wml.variables["item_y"] = item_data['y']
+		wml.variables["item_type_id"] = item_data['item']
+		wml.variables["overwrite_item_image"] = item_data['overwrite_image']
 		
 		wml.fire('fire_event', {
 			name='drop_new_item'
 		})
 	end
 	
-	wesnoth.set_variable('used_items_list', table.concat(used_items_table, ','))
+	wml.variables['used_items_list'] = table.concat(used_items_table, ',')
 end
 
 local spawn_rules = get_spawn_table()

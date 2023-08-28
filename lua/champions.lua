@@ -124,11 +124,11 @@ function wesnoth.wml_actions.qquws_champion_buff_to_name(cfg)
 	}
 	
 	local name = names[key_a] .. ' ' .. names[key_b] .. ' ' .. names[key_c]
-	wesnoth.set_variable(set_name_var, name)
+	wml.variables[set_name_var] = name
 end
 
 function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
-	local wave_index = wesnoth.get_variable('bonus_strength_kval')
+	local wave_index = wml.variables['bonus_strength_kval']
 	local buff_a_var_name = cfg.var_buff_a or 'champion_a_key'
 	local buff_b_var_name = cfg.var_buff_b or 'champion_b_key'
 	local buff_c_var_name = cfg.var_buff_c or 'champion_c_key'
@@ -148,20 +148,20 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 	local pool_c = { 'C1','C2','C3','C4','C9','C13','C16','C17','C18','C21','C22','C29','C33','C35','C38','C43','C44','C45','C46','C50', }
 	
 	local pool_settings = {
-		['has_ranged'] = wesnoth.get_variable("qquws_champion_data.has_ranged_attack"),
-		['has_melee'] = wesnoth.get_variable("qquws_champion_data.has_melee_attack"),
-		['has_magical_ranged'] = wesnoth.get_variable("qquws_champion_data.has_magical_ranged"),
-		['has_magical_melee'] = wesnoth.get_variable("qquws_champion_data.has_magical_melee"),
-		['is_static'] = wesnoth.get_variable("qquws_champion_data.is_static"),
-		['has_melee_pierce'] = wesnoth.get_variable("qquws_champion_data.has_melee_pierce"),
-		['has_melee_charge'] = wesnoth.get_variable("qquws_champion_data.has_melee_charge"),
-		['has_physical_resistances'] = wesnoth.get_variable("qquws_champion_data.has_physical_resistances"),
-		['has_berserk'] = wesnoth.get_variable("qquws_champion_data.has_berserk"),
-		['is_high_level'] = wesnoth.get_variable("qquws_champion_data.is_high_level"),
-		['has_strong_melee_blade'] = wesnoth.get_variable("qquws_champion_data.has_strong_melee_blade"),
-		['has_strong_impact'] = wesnoth.get_variable("qquws_champion_data.has_strong_impact"),
-		['has_overwhelming_melee_blade'] = wesnoth.get_variable("qquws_champion_data.has_overwhelming_melee_blade"),
-		['has_poison'] = wesnoth.get_variable("qquws_champion_data.has_poison"),
+		['has_ranged'] = wml.variables["qquws_champion_data.has_ranged_attack"],
+		['has_melee'] = wml.variables["qquws_champion_data.has_melee_attack"],
+		['has_magical_ranged'] = wml.variables["qquws_champion_data.has_magical_ranged"],
+		['has_magical_melee'] = wml.variables["qquws_champion_data.has_magical_melee"],
+		['is_static'] = wml.variables["qquws_champion_data.is_static"],
+		['has_melee_pierce'] = wml.variables["qquws_champion_data.has_melee_pierce"],
+		['has_melee_charge'] = wml.variables["qquws_champion_data.has_melee_charge"],
+		['has_physical_resistances'] = wml.variables["qquws_champion_data.has_physical_resistances"],
+		['has_berserk'] = wml.variables["qquws_champion_data.has_berserk"],
+		['is_high_level'] = wml.variables["qquws_champion_data.is_high_level"],
+		['has_strong_melee_blade'] = wml.variables["qquws_champion_data.has_strong_melee_blade"],
+		['has_strong_impact'] = wml.variables["qquws_champion_data.has_strong_impact"],
+		['has_overwhelming_melee_blade'] = wml.variables["qquws_champion_data.has_overwhelming_melee_blade"],
+		['has_poison'] = wml.variables["qquws_champion_data.has_poison"],
 	}
 	
 	local segregation_pool = find_conditional_buffs(pool_settings)
@@ -188,25 +188,25 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 		pool_c = exclude_buffs(pool_c, exclude_from_pool)
 	end
 	
-	local buff_a = wesnoth.get_variable(buff_a_var_name)
-	local buff_b = wesnoth.get_variable(buff_b_var_name)
-	local buff_c = wesnoth.get_variable(buff_c_var_name)
+	local buff_a = wml.variables[buff_a_var_name]
+	local buff_b = wml.variables[buff_b_var_name]
+	local buff_c = wml.variables[buff_c_var_name]
 	
 	if buff_a == 'rand' then
-		wesnoth.set_variable(buff_a_var_name, mathx.random_choice(pool_a))
+		wml.variables[buff_a_var_name] = mathx.random_choice(pool_a)
 	end
 	
 	if buff_b == 'rand' then
-		wesnoth.set_variable(buff_b_var_name, mathx.random_choice(pool_b))
+		wml.variables[buff_b_var_name] = mathx.random_choice(pool_b)
 	end
 	
 	if buff_c == 'rand' then
-		wesnoth.set_variable(buff_c_var_name, mathx.random_choice(pool_c))
+		wml.variables[buff_c_var_name] = mathx.random_choice(pool_c)
 	end
 end
 
 function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
-	local buff_modifier = wesnoth.get_variable('uws_game.buff_modifier')
+	local buff_modifier = wml.variables['uws_game.buff_modifier']
 	
 	-- {hp}, {all attacks}, {melee attacks}, {ranged attacks}, {mp}, {resistance}, {defense}
 	local params = {
@@ -377,7 +377,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 		description = description .. string.sub(c.abilities_list, 2)
 	end
 	
-	wesnoth.set_variable(cfg.description_var, description)
+	wml.variables[cfg.description_var] = description
 	wml.array_access.set(cfg.var, params)
 end
 
