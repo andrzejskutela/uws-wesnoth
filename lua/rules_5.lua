@@ -26,9 +26,9 @@ return {
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['y'] = 8, ['lvl'] = 1, ['type'] = 'Troll Whelp', ['moves'] = 4, ['guard'] = true, },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 13, ['y'] = 6, ['lvl'] = 1, ['type'] = 'Troll Whelp', ['moves'] = 4, },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['y'] = 4, ['lvl'] = 1, ['type'] = 'Poacher', },
-	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['y'] = 6, ['lvl'] = 1, ['type'] = 'Orcish Grunt', ['guard'] = true },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['y'] = 6, ['lvl'] = 1, ['type'] = 'Orcish Grunt', ['guard'] = true, },
 	
-	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 15, ['y'] = 4, ['lvl'] = 1, ['type'] = 'Wolf Rider', ['guard'] = true },
+	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 15, ['y'] = 4, ['lvl'] = 1, ['type'] = 'Wolf Rider', ['guard'] = true, },
 	
 	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 16, ['y'] = 4, ['lvl'] = 1, ['type'] = 'Orcish Grunt', ['moves'] = 4, },
 	

@@ -221,19 +221,19 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	}
 	
 	local settings_table = {
-		{ ['input_key'] = 'hp', ['output_index'] = 1, ['prefix'] = 'Hitpoints +', ['suffix'] = '%', ['round_f'] = 10, },
-		{ ['input_key'] = 'dmg', ['output_index'] = 2, ['prefix'] = 'Damage +', ['suffix'] = '%', ['round_f'] = 10, },
-		{ ['input_key'] = 'strikes', ['output_index'] = 2, ['prefix'] = 'Strikes +', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'melee_dmg', ['output_index'] = 3, ['prefix'] = 'Melee Damage +', ['suffix'] = '%', ['round_f'] = 10, },
-		{ ['input_key'] = 'melee_strikes', ['output_index'] = 3, ['prefix'] = 'Melee Strikes +', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'melee_accuracy', ['output_index'] = 3, ['prefix'] = 'Melee Accuracy +', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'melee_parry', ['output_index'] = 3, ['prefix'] = 'Melee Parry +', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'ranged_dmg', ['output_index'] = 4, ['prefix'] = 'Ranged Damage +', ['suffix'] = '%', ['round_f'] = 10, },
-		{ ['input_key'] = 'ranged_strikes', ['output_index'] = 4, ['prefix'] = 'Ranged Strikes +', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'ranged_accuracy', ['output_index'] = 4, ['prefix'] = 'Ranged Accuracy +', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'ranged_parry', ['output_index'] = 4, ['prefix'] = 'Ranged Parry +', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'mp', ['output_index'] = 5, ['prefix'] = 'Movement Points +', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'movement_cost', ['output_index'] = 8, ['prefix'] = 'Movement costs -', ['suffix'] = '', ['round_f'] = 1}
+		{ ['input_key'] = 'hp', ['output_index'] = 1, ['name'] = 'Hitpoints ', ['prefix'] = '+', ['suffix'] = '%', ['round_f'] = 10, },
+		{ ['input_key'] = 'dmg', ['output_index'] = 2, ['name'] = 'Damage ', ['prefix'] = '+', ['suffix'] = '%', ['round_f'] = 10, },
+		{ ['input_key'] = 'strikes', ['output_index'] = 2, ['name'] = 'Strikes ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
+		{ ['input_key'] = 'melee_dmg', ['output_index'] = 3, ['name'] = 'Melee Damage ', ['prefix'] = '+', ['suffix'] = '%', ['round_f'] = 10, },
+		{ ['input_key'] = 'melee_strikes', ['output_index'] = 3, ['name'] = 'Melee Strikes ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
+		{ ['input_key'] = 'melee_accuracy', ['output_index'] = 3, ['name'] = 'Melee Accuracy ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
+		{ ['input_key'] = 'melee_parry', ['output_index'] = 3, ['name'] = 'Melee Parry ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
+		{ ['input_key'] = 'ranged_dmg', ['output_index'] = 4, ['name'] = 'Ranged Damage ', ['prefix'] = '+', ['suffix'] = '%', ['round_f'] = 10, },
+		{ ['input_key'] = 'ranged_strikes', ['output_index'] = 4, ['name'] = 'Ranged Strikes ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
+		{ ['input_key'] = 'ranged_accuracy', ['output_index'] = 4, ['name'] = 'Ranged Accuracy ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
+		{ ['input_key'] = 'ranged_parry', ['output_index'] = 4, ['name'] = 'Ranged Parry ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
+		{ ['input_key'] = 'mp', ['output_index'] = 5, ['name'] = 'Movement Points ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
+		{ ['input_key'] = 'movement_cost', ['output_index'] = 8, ['name'] = 'Movement costs ', ['prefix'] = '-', ['suffix'] = '', ['round_f'] = 1}
 	}
 	
 	local resistance_table = {}
@@ -257,7 +257,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 			
 			params[v.output_index][v.input_key] = params[v.output_index][v.input_key] + value
 			params[v.output_index]['exists'] = true
-			description = description .. v.prefix .. value .. v.suffix .. "\n"
+			description = description .. v.name .. "<span color='#61ab64'>" .. v.prefix .. value .. v.suffix .. "</span>\n"
 		end
 	end
 	
@@ -268,7 +268,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 			params[6][v] = params[6][v] + value
 		end
 		
-		description = description .. 'Resistance (all) +' .. value .. "\n"
+		description = description .. 'Resistance (all) <span color="#61ab64">+' .. value .. "%</span>\n"
 	end
 	
 	if c.physical > 0 then
@@ -278,7 +278,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 			params[6][v] = params[6][v] + value
 		end
 		
-		description = description .. 'Resistance (physical) +' .. value .. "\n"
+		description = description .. 'Resistance (physical) <span color="#61ab64">+' .. value .. "%</span>\n"
 	end
 	
 	if c.magical > 0 then
@@ -288,7 +288,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 			params[6][v] = params[6][v] + value
 		end
 		
-		description = description .. 'Resistance (magical) +' .. value .. "\n"
+		description = description .. 'Resistance (magical) <span color="#61ab64">+' .. value .. "%</span>\n"
 	end
 	
 	for k,v in ipairs(all_resistances) do
@@ -324,7 +324,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 		table.sort(tmp_table, sort_fn)
 		
 		for k,v in ipairs(tmp_table) do
-			description = description .. "Resistance (" .. table.concat(v.types, ',') .. ") +" .. v.value .. "\n"
+			description = description .. "Resistance (" .. table.concat(v.types, ',') .. ") <span color='#61ab64'>+" .. v.value .. "%</span>\n"
 		end	
 	end
 	
@@ -335,7 +335,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 			params[7][v] = params[7][v] + value
 		end
 		
-		description = description .. 'Defense (everywhere) +' .. value .. "\n"
+		description = description .. 'Defense (everywhere) <span color="#61ab64">+' .. value .. "%</span>\n"
 	end
 	
 	for k,v in ipairs(all_terrains) do
@@ -371,7 +371,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 		table.sort(tmp_table, sort_fn)
 		
 		for k,v in ipairs(tmp_table) do
-			description = description .. "Defense (" .. table.concat(v.types, ',') .. ") +" .. v.value .. "\n"
+			description = description .. "Defense (" .. table.concat(v.types, ',') .. ") <span color='#61ab64'>+" .. v.value .. "%</span>\n"
 		end	
 	end
 	
