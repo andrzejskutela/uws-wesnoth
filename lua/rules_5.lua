@@ -36,7 +36,7 @@ return {
 	
 	{ ['t'] = 3, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Wose', ['guard'] = true },
 	{ ['t'] = 6, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Elvish Fighter', },
-	{ ['t'] = 7, ['d'] = 1, ['side'] = 4, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Water Serpent', ['guard'] = true },
+	{ ['t'] = 7, ['d'] = 1, ['side'] = 4, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Water Serpent', ['guard'] = true, },
 	{ ['t'] = 8, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Elvish Archer', },
 	
 	{ ['t'] = 3, ['d'] = 2, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Wose', ['guard'] = true },
