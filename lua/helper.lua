@@ -61,3 +61,23 @@ function wesnoth.wml_actions.qquws_calculate_buff_list(cfg)
 		wml.variables[save_list_var_name] = new_list
 	end
 end
+
+function wesnoth.wml_actions.qquws_pad_text(cfg)
+	local initial_text = cfg.text
+	local pad_string = cfg.pad
+	local desired_length = cfg.length
+	local pad_direction = cfg.direction
+	local final_text = ''
+	local output_text_var = cfg.output_var
+	local str_length = string.len(initial_text)
+
+	if str_length < desired_length then
+		if pad_direction == 'r' then
+			final_text = initial_text .. string.rep(pad_string, desired_length - str_length)
+		end
+	else
+		final_text = initial_text
+	end
+
+	wml.variables[output_text_var] = final_text
+end
