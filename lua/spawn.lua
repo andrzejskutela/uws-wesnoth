@@ -292,6 +292,7 @@ local function process_spawn_table(spawn_table)
 				wml.variables["prespawn_buff_b"] = buff[2]
 				wml.variables["prespawn_buff_c"] = buff[3]
 				wml.variables["prespawn_full_buff"] = rules['buff']
+				wml.variables['champion_unit_already_exists'] = false
 				
 				for k,v in ipairs(buff) do
 					-- even without random enemies one buff or more can be rand

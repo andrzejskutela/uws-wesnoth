@@ -1,19 +1,19 @@
 local after_games_settings = { 
-	{ ['turn'] = 1, ['index'] = 1, ['percentage'] = 32, ['colour'] = '#fafafa', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 3 Wave 2 (36%)", ['gates'] = false, },
-	{ ['turn'] = 3, ['index'] = 2, ['percentage'] = 36, ['colour'] = '#f3f5e4', ['item'] = false, ['gold'] = 1, ['info'] = "Turn 5 Wave 3 (40%)", ['gates'] = false, },
-	{ ['turn'] = 5, ['index'] = 3, ['percentage'] = 40, ['colour'] = '#ebedce', ['item'] = false, ['gold'] = 3, ['info'] = "Turn 7 Wave 4 (44%)", ['gates'] = false, },
-	{ ['turn'] = 7, ['index'] = 4, ['percentage'] = 44, ['colour'] = '#e4e8ac', ['item'] = false, ['gold'] = 5, ['info'] = "Turn 9 Wave 5 (48%)", ['gates'] = false, },
-	{ ['turn'] = 9, ['index'] = 5, ['percentage'] = 48, ['colour'] = '#e3e19a', ['item'] = false, ['gold'] = 7, ['info'] = "Turn 11 Wave 6 (52%)", ['gates'] = false, },
-	{ ['turn'] = 11, ['index'] = 6, ['percentage'] = 52, ['colour'] = '#dbcf81', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 13 Wave 7 (56%)", ['gates'] = false, },
-	{ ['turn'] = 13, ['index'] = 7, ['percentage'] = 56, ['colour'] = '#dec276', ['item'] = false, ['gold'] = 9, ['info'] = "Turn 15 Wave 8 (60%)", ['gates'] = false, },
-	{ ['turn'] = 15, ['index'] = 8, ['percentage'] = 60, ['colour'] = '#dea866', ['item'] = false, ['gold'] = 12, ['info'] = "Turn 18 Wave 9 (65%)", ['gates'] = false, },
-	{ ['turn'] = 18, ['index'] = 9, ['percentage'] = 65, ['colour'] = '#e09d5a', ['item'] = false, ['gold'] = 15, ['info'] = "Turn 21 Wave 10 (70%)", ['gates'] = false, },
-	{ ['turn'] = 21, ['index'] = 10, ['percentage'] = 70, ['colour'] = '#e39152', ['item'] = false, ['gold'] = 18, ['info'] = "Turn 24 Wave 11 (75%)", ['gates'] = false, },
-	{ ['turn'] = 24, ['index'] = 11, ['percentage'] = 75, ['colour'] = '#e37944', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 27 Wave 12 (80%)", ['gates'] = false, },
-	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['colour'] = '#e36236', ['item'] = false, ['gold'] = 24, ['info'] = "Turn 31 Wave 13 (86%)", ['gates'] = false, },
-	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 86, ['colour'] = '#e34627', ['item'] = false, ['gold'] = 33, ['info'] = "Turn 35 Wave 14 (92%)", ['gates'] = false, },
-	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 92, ['colour'] = '#de301d', ['item'] = false, ['gold'] = 99, ['info'] = "Turn 40 The Gates Open", ['gates'] = false, },
-	{ ['turn'] = 40, ['index'] = 15, ['percentage'] = 100, ['colour'] = '#d11111', ['item'] = false, ['gold'] = 0, ['info'] = "", ['gates'] = true, },
+	{ ['turn'] = 1, ['index'] = 1, ['percentage'] = 32, ['colour'] = '#fafafa', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 3 Wave 2 (36%)", ['gates'] = false, ['max_steal'] = 0, },
+	{ ['turn'] = 3, ['index'] = 2, ['percentage'] = 36, ['colour'] = '#f3f5e4', ['item'] = false, ['gold'] = 1, ['info'] = "Turn 5 Wave 3 (40%)", ['gates'] = false, ['max_steal'] = 10, },
+	{ ['turn'] = 5, ['index'] = 3, ['percentage'] = 40, ['colour'] = '#ebedce', ['item'] = false, ['gold'] = 3, ['info'] = "Turn 7 Wave 4 (44%)", ['gates'] = false, ['max_steal'] = 15, },
+	{ ['turn'] = 7, ['index'] = 4, ['percentage'] = 44, ['colour'] = '#e4e8ac', ['item'] = false, ['gold'] = 5, ['info'] = "Turn 9 Wave 5 (48%)", ['gates'] = false, ['max_steal'] = 20, },
+	{ ['turn'] = 9, ['index'] = 5, ['percentage'] = 48, ['colour'] = '#e3e19a', ['item'] = false, ['gold'] = 7, ['info'] = "Turn 11 Wave 6 (52%)", ['gates'] = false, ['max_steal'] = 25, },
+	{ ['turn'] = 11, ['index'] = 6, ['percentage'] = 52, ['colour'] = '#dbcf81', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 13 Wave 7 (56%)", ['gates'] = false, ['max_steal'] = 30, },
+	{ ['turn'] = 13, ['index'] = 7, ['percentage'] = 56, ['colour'] = '#dec276', ['item'] = false, ['gold'] = 9, ['info'] = "Turn 15 Wave 8 (60%)", ['gates'] = false, ['max_steal'] = 35, },
+	{ ['turn'] = 15, ['index'] = 8, ['percentage'] = 60, ['colour'] = '#dea866', ['item'] = false, ['gold'] = 12, ['info'] = "Turn 18 Wave 9 (65%)", ['gates'] = false, ['max_steal'] = 40, },
+	{ ['turn'] = 18, ['index'] = 9, ['percentage'] = 65, ['colour'] = '#e09d5a', ['item'] = false, ['gold'] = 15, ['info'] = "Turn 21 Wave 10 (70%)", ['gates'] = false, ['max_steal'] = 50, },
+	{ ['turn'] = 21, ['index'] = 10, ['percentage'] = 70, ['colour'] = '#e39152', ['item'] = false, ['gold'] = 18, ['info'] = "Turn 24 Wave 11 (75%)", ['gates'] = false, ['max_steal'] = 60, },
+	{ ['turn'] = 24, ['index'] = 11, ['percentage'] = 75, ['colour'] = '#e37944', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 27 Wave 12 (80%)", ['gates'] = false, ['max_steal'] = 70, },
+	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['colour'] = '#e36236', ['item'] = false, ['gold'] = 24, ['info'] = "Turn 31 Wave 13 (86%)", ['gates'] = false, ['max_steal'] = 80, },
+	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 86, ['colour'] = '#e34627', ['item'] = false, ['gold'] = 33, ['info'] = "Turn 35 Wave 14 (92%)", ['gates'] = false, ['max_steal'] = 90, },
+	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 92, ['colour'] = '#de301d', ['item'] = false, ['gold'] = 99, ['info'] = "Turn 40 The Gates Open", ['gates'] = false, ['max_steal'] = 100, },
+	{ ['turn'] = 40, ['index'] = 15, ['percentage'] = 100, ['colour'] = '#d11111', ['item'] = false, ['gold'] = 0, ['info'] = "", ['gates'] = true, ['max_steal'] = 100, },
 }
 
 local after_classic_locations = {
@@ -66,22 +66,54 @@ local unit_deep_copy = function(unit, x, y)
 	return id
 end
 
-local copy_all_units = function(from_side, to_side, locations, map_edge, gold_amount, item)
+local copy_all_units = function(from_side, to_side, locations, map_edge, gold_amount, item, extra_buff)
 	local enemy_units = wesnoth.get_units { side = from_side }
 	local give_gold = 0
 	local has_item = false
+	local extra_percentage_buff = 0
+	local extra_bulky_buff = 0
+	local extra_armored_buff = 0
+	local is_champion = false
+	local is_side_leader_copy = false
 	wml.variables['after_games_copied_from_side'] = from_side
+
+	if extra_buff == 'boost10' then
+		extra_percentage_buff = 10
+	elseif extra_buff == 'boost20' then
+		extra_percentage_buff = 20
+	end
 	
 	for k,u in ipairs(enemy_units) do
+		extra_bulky_buff = 0
+		extra_armored_buff = 0
 		give_gold = 0
+		is_champion = false
 		has_item = false
+		is_side_leader_copy = false
 		
 		local loc = locations[mathx.random(1, #locations)]
 		local new_loc = find_vacant_location(loc['x'], loc['y'], map_edge, from_side)
 		local new_id = unit_deep_copy(u, new_loc.x, new_loc.y)
 		local clone = wesnoth.get_units { id = new_id }[1]
+
+		if extra_buff == 'bulky' then
+			if u.canrecruit then
+				extra_bulky_buff = 50
+			else
+				extra_bulky_buff = 25
+			end
+		elseif extra_buff == 'armored' then
+			if u.canrecruit then
+				extra_armored_buff = 30
+			else
+				extra_armored_buff = 15
+			end
+		elseif u.canrecruit and extra_buff == 'champion' then
+			is_champion = true
+		end
 		
 		if u.canrecruit then
+			is_side_leader_copy = true
 			give_gold = gold_amount
 			has_item = item ~= ''
 			clone.variables.gold_amount = gold_amount
@@ -110,6 +142,12 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 		wml.variables['after_games_gold_value'] = give_gold
 		wml.variables['after_games_drop_item'] = has_item
 		wml.variables['after_games_item_id'] = item
+		wml.variables['after_games_extra_copy_buff'] = extra_percentage_buff
+		wml.variables['after_games_extra_bulky_buff'] = extra_bulky_buff
+		wml.variables['after_games_extra_armored_buff'] = extra_armored_buff
+		wml.variables['after_games_generate_champion'] = is_champion
+		wml.variables['after_games_copy_level'] = clone.level
+		wml.variables['after_games_side_leader'] = is_side_leader_copy
 		
 		wml.fire('fire_event', {
 			name='after_games_apply_copy_modifications'
@@ -142,6 +180,7 @@ end
 function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 	local turn_number = cfg.turn
 	local is_spawn_turn = false
+	local is_preparation_turn = false
 	
 	for k,v in ipairs(after_games_settings) do
 		if v['turn'] == turn_number then
@@ -153,10 +192,15 @@ function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 			wml.variables['after_games_info_text'] = v['info']
 			wml.variables['after_games_open_gates'] = v['gates']
 			break
+		elseif v['turn'] == turn_number + 1 then
+			wml.variables['after_games_max_steal'] = v['max_steal']
+			wml.variables['after_games_preparation_wave_index'] = v['index']
+			is_preparation_turn = true
 		end
 	end
 	
 	wml.variables['after_games_is_spawn_turn'] = is_spawn_turn
+	wml.variables['after_games_is_preparation_turn'] = is_preparation_turn
 end
 
 function wesnoth.wml_actions.qquws_create_after_copies(cfg)
@@ -164,6 +208,8 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	local key = 'map_' .. tostring(map_id)
 	local map_edge = wml.variables["uws_game.edge"]
 	local wave_index = wml.variables['after_games_wave_index']
+	local extra_copy_buff_east = cfg.east_buff
+	local extra_copy_buff_west = cfg.west_buff
 	local available_items = {}
 	local west_item = ''
 	local east_item = ''
@@ -178,6 +224,6 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 		table.insert(east_items_table, east_item)
 	end
 	
-	copy_all_units(1, 4, after_classic_locations[key], map_edge, drop_gold, east_item)
-	copy_all_units(3, 2, after_classic_locations[key], map_edge, drop_gold, west_item)
+	copy_all_units(1, 4, after_classic_locations[key], map_edge, drop_gold, east_item, extra_copy_buff_east)
+	copy_all_units(3, 2, after_classic_locations[key], map_edge, drop_gold, west_item, extra_copy_buff_west)
 end
