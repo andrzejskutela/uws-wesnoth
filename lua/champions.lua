@@ -376,7 +376,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	end
 	
 	if c.abilities_list ~= '' then
-		description = description .. string.sub(c.abilities_list, 2)
+		description = description .. string.sub(c.abilities_list, 2) .. "\n"
 	end
 	
 	wml.variables[cfg.description_var] = description
