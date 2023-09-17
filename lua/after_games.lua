@@ -317,8 +317,6 @@ function wesnoth.wml_actions.qquws_generate_random_boosts_table(cfg)
 		boosts_table[new_item] = true
 	end
 
-	boosts_table['drunk_opponent'] = true
-
 	for k,v in pairs(boosts_table) do
 		wml.variables[wml_table_name .. '.' .. k .. '_available'] = v
 	end
