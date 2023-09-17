@@ -13,7 +13,7 @@ local after_games_settings = {
 	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['colour'] = '#e36236', ['item'] = false, ['gold'] = 24, ['info'] = "Turn 31 Wave 13 (86%)", ['gates'] = false, ['max_steal'] = 80, },
 	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 86, ['colour'] = '#e34627', ['item'] = false, ['gold'] = 33, ['info'] = "Turn 35 Wave 14 (92%)", ['gates'] = false, ['max_steal'] = 90, },
 	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 92, ['colour'] = '#de301d', ['item'] = false, ['gold'] = 99, ['info'] = "Turn 40 The Gates Open", ['gates'] = false, ['max_steal'] = 100, },
-	{ ['turn'] = 40, ['index'] = 15, ['percentage'] = 100, ['colour'] = '#d11111', ['item'] = false, ['gold'] = 0, ['info'] = "", ['gates'] = true, ['max_steal'] = 100, },
+	{ ['turn'] = 40, ['index'] = 15, ['percentage'] = 100, ['colour'] = '#d11111', ['item'] = false, ['gold'] = 0, ['info'] = "", ['gates'] = true, ['max_steal'] = 0, },
 }
 
 local after_classic_locations = {
@@ -66,13 +66,16 @@ local unit_deep_copy = function(unit, x, y)
 	return id
 end
 
-local copy_all_units = function(from_side, to_side, locations, map_edge, gold_amount, item, extra_buff)
+local copy_all_units = function(from_side, to_side, locations, map_edge, gold_amount, item, extra_buff, own_buff)
 	local enemy_units = wesnoth.get_units { side = from_side }
 	local give_gold = 0
 	local has_item = false
 	local extra_percentage_buff = 0
 	local extra_bulky_buff = 0
+	local extra_beefy_buff = 0
 	local extra_armored_buff = 0
+	local extra_fast_buff = 0
+	local extra_agile_buff = 0
 	local is_champion = false
 	local is_side_leader_copy = false
 	wml.variables['after_games_copied_from_side'] = from_side
@@ -82,10 +85,17 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 	elseif extra_buff == 'boost20' then
 		extra_percentage_buff = 20
 	end
+
+	if own_buff == 'weaker15' then
+		extra_percentage_buff = extra_percentage_buff - 15
+	end
 	
 	for k,u in ipairs(enemy_units) do
 		extra_bulky_buff = 0
+		extra_beefy_buff = 0
 		extra_armored_buff = 0
+		extra_fast_buff = 0
+		extra_agile_buff = 0
 		give_gold = 0
 		is_champion = false
 		has_item = false
@@ -102,11 +112,29 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 			else
 				extra_bulky_buff = 25
 			end
+		elseif extra_buff == 'beefy' then
+			if u.canrecruit then
+				extra_beefy_buff = 25
+			else
+				extra_beefy_buff = 15
+			end
 		elseif extra_buff == 'armored' then
 			if u.canrecruit then
-				extra_armored_buff = 30
+				extra_armored_buff = 25
 			else
 				extra_armored_buff = 15
+			end
+		elseif extra_buff == 'fast' then
+			if u.canrecruit then
+				extra_fast_buff = 3
+			else
+				extra_fast_buff = 2
+			end
+		elseif extra_buff == 'agile' then
+			if u.canrecruit then
+				extra_agile_buff = 15
+			else
+				extra_agile_buff = 10
 			end
 		elseif u.canrecruit and extra_buff == 'champion' then
 			is_champion = true
@@ -144,7 +172,10 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 		wml.variables['after_games_item_id'] = item
 		wml.variables['after_games_extra_copy_buff'] = extra_percentage_buff
 		wml.variables['after_games_extra_bulky_buff'] = extra_bulky_buff
+		wml.variables['after_games_extra_beefy_buff'] = extra_beefy_buff
 		wml.variables['after_games_extra_armored_buff'] = extra_armored_buff
+		wml.variables['after_games_extra_fast_buff'] = extra_fast_buff
+		wml.variables['after_games_extra_agile_buff'] = extra_agile_buff
 		wml.variables['after_games_generate_champion'] = is_champion
 		wml.variables['after_games_copy_level'] = clone.level
 		wml.variables['after_games_side_leader'] = is_side_leader_copy
@@ -177,6 +208,17 @@ local function get_available_items(pool, used_items)
 	return ret
 end
 
+local function get_unused_items(boosts_table)
+	local ret = {}
+	for k,v in pairs(boosts_table) do
+		if not v then
+			table.insert(ret, k)
+		end
+	end
+
+	return ret
+end
+
 function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 	local turn_number = cfg.turn
 	local is_spawn_turn = false
@@ -192,7 +234,7 @@ function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 			wml.variables['after_games_info_text'] = v['info']
 			wml.variables['after_games_open_gates'] = v['gates']
 			break
-		elseif v['turn'] == turn_number + 1 then
+		elseif v['turn'] == turn_number + 1 and not v['gates'] then
 			wml.variables['after_games_max_steal'] = v['max_steal']
 			wml.variables['after_games_preparation_wave_index'] = v['index']
 			is_preparation_turn = true
@@ -210,6 +252,8 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	local wave_index = wml.variables['after_games_wave_index']
 	local extra_copy_buff_east = cfg.east_buff
 	local extra_copy_buff_west = cfg.west_buff
+	local east_debuff = ''
+	local west_debuff = ''
 	local available_items = {}
 	local west_item = ''
 	local east_item = ''
@@ -223,7 +267,59 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 		east_item = mathx.random_choice(available_items)
 		table.insert(east_items_table, east_item)
 	end
+
+	if extra_copy_buff_east == 'cancelation' then
+		extra_copy_buff_west = ''
+		extra_copy_buff_east = ''
+	elseif extra_copy_buff_west == 'cancelation' then
+		extra_copy_buff_east = ''
+		extra_copy_buff_west = ''
+	end
 	
-	copy_all_units(1, 4, after_classic_locations[key], map_edge, drop_gold, east_item, extra_copy_buff_east)
-	copy_all_units(3, 2, after_classic_locations[key], map_edge, drop_gold, west_item, extra_copy_buff_west)
+
+	if extra_copy_buff_east == 'mirror' and extra_copy_buff_west == 'mirror' then
+		extra_copy_buff_east = ''
+		extra_copy_buff_west = ''
+	elseif extra_copy_buff_east == 'mirror' then
+		extra_copy_buff_east = extra_copy_buff_west
+		extra_copy_buff_west = ''
+	elseif extra_copy_buff_west == 'mirror' then
+		extra_copy_buff_west = extra_copy_buff_east
+		extra_copy_buff_east = ''
+	end
+
+	if extra_copy_buff_east == 'weaker15' then
+		west_debuff = 'weaker15'
+	end
+
+	if extra_copy_buff_west == 'weaker15' then
+		east_debuff = 'weaker15'
+	end
+	
+	copy_all_units(1, 4, after_classic_locations[key], map_edge, drop_gold, east_item, extra_copy_buff_east, east_debuff)
+	copy_all_units(3, 2, after_classic_locations[key], map_edge, drop_gold, west_item, extra_copy_buff_west, west_debuff)
+end
+
+function wesnoth.wml_actions.qquws_generate_random_boosts_table(cfg)
+	local wml_table_name = cfg.var
+
+	local all_boosts = { 'boost10', 'boost20', 'bulky', 'beefy', 'armored', 'fast', 'agile', 'champion', 'slow', 'steal', 'improved_damage', 'reheal_own', 'deboost15', 'slow_wave', 'mirror', 'cancel', 'turtle_up', 'poison', 'damage_armor', 'drunk_opponent' }
+	local boosts_table = {}
+	local new_item = ''
+
+	for k,v in ipairs(all_boosts) do
+		boosts_table[v] = false
+	end
+
+	for i=1,6 do
+		local difference = get_unused_items(boosts_table)
+		new_item = mathx.random_choice(difference)
+		boosts_table[new_item] = true
+	end
+
+	boosts_table['drunk_opponent'] = true
+
+	for k,v in pairs(boosts_table) do
+		wml.variables[wml_table_name .. '.' .. k .. '_available'] = v
+	end
 end
