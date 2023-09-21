@@ -10,9 +10,9 @@ local after_games_settings = {
 	{ ['turn'] = 18, ['index'] = 9, ['percentage'] = 65, ['colour'] = '#e09d5a', ['item'] = false, ['gold'] = 15, ['info'] = "Turn 21 Wave 10 (70%)", ['gates'] = false, ['max_steal'] = 50, },
 	{ ['turn'] = 21, ['index'] = 10, ['percentage'] = 70, ['colour'] = '#e39152', ['item'] = false, ['gold'] = 18, ['info'] = "Turn 24 Wave 11 (75%)", ['gates'] = false, ['max_steal'] = 60, },
 	{ ['turn'] = 24, ['index'] = 11, ['percentage'] = 75, ['colour'] = '#e37944', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 27 Wave 12 (80%)", ['gates'] = false, ['max_steal'] = 70, },
-	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['colour'] = '#e36236', ['item'] = false, ['gold'] = 24, ['info'] = "Turn 31 Wave 13 (86%)", ['gates'] = false, ['max_steal'] = 80, },
-	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 86, ['colour'] = '#e34627', ['item'] = false, ['gold'] = 33, ['info'] = "Turn 35 Wave 14 (92%)", ['gates'] = false, ['max_steal'] = 90, },
-	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 92, ['colour'] = '#de301d', ['item'] = false, ['gold'] = 99, ['info'] = "Turn 40 The Gates Open", ['gates'] = false, ['max_steal'] = 100, },
+	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['colour'] = '#e36236', ['item'] = false, ['gold'] = 30, ['info'] = "Turn 31 Wave 13 (86%)", ['gates'] = false, ['max_steal'] = 80, },
+	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 86, ['colour'] = '#e34627', ['item'] = false, ['gold'] = 75, ['info'] = "Turn 35 Wave 14 (92%)", ['gates'] = false, ['max_steal'] = 90, },
+	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 92, ['colour'] = '#de301d', ['item'] = false, ['gold'] = 200, ['info'] = "Turn 40 The Gates Open", ['gates'] = false, ['max_steal'] = 100, },
 	{ ['turn'] = 40, ['index'] = 15, ['percentage'] = 100, ['colour'] = '#d11111', ['item'] = false, ['gold'] = 0, ['info'] = "", ['gates'] = true, ['max_steal'] = 0, },
 }
 
