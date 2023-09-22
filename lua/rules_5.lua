@@ -53,7 +53,6 @@ return {
 	{ ['t'] = 9, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Elvish Scout', ['fast'] = 1 },
 	{ ['t'] = 10, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Orcish Crossbowman', ['guard'] = true },
 	{ ['t'] = 11, ['d'] = 1, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', ['bulky'] = 20 },
-	{ ['t'] = 14, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Rogue', },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Tentacle of the Deep', ['guard'] = true },
 	{ ['t'] = 15, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Ghost', ['guard'] = true },
 	{ ['t'] = 15, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'Vampire Bat', ['guard'] = true },
@@ -62,6 +61,7 @@ return {
 	
 	{ ['t'] = 10, ['d'] = 3, ['side'] = 2, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', },
 	{ ['t'] = 11, ['d'] = 3, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Dwarvish Stalwart', },
+	{ ['t'] = 14, ['d'] = 3, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Rogue', },
 	
 	{ ['t'] = 15, ['d'] = 4, ['side'] = 2, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Rock Scorpion', ['buff'] = 'A25:B25:C25', },
 	
@@ -176,12 +176,13 @@ return {
 	
 	-- 51 - 57 (mask y 11 - 5)
 	{ ['t'] = 52, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 0, ['type'] = 'Peasant', ['agile'] = 15 },
-	{ ['t'] = 52, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'Elvish Sylph', ['guard'] = true },
 	{ ['t'] = 53, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 0, ['type'] = 'Peasant', },
-	{ ['t'] = 54, ['d'] = 1, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'Dread Bat', ['allow_random'] = false },
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'Drake Fighter', },
 	
 	{ ['t'] = 52, ['d'] = 2, ['side'] = 2, ['x'] = 19, ['lvl'] = 4, ['type'] = 'Grand Marshal', ['event'] = 'dimaga_joining_unit' },
+
+	{ ['t'] = 52, ['d'] = 3, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'Elvish Sylph', ['guard'] = true },
+	{ ['t'] = 54, ['d'] = 3, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'Dread Bat', ['allow_random'] = false },
 	
 	{ ['t'] = 51, ['d'] = 4, ['side'] = 2, ['x'] = 14, ['lvl'] = 2, ['type'] = 'Roc', ['race_guard_off'] = true, },
 	
