@@ -5,21 +5,33 @@ local find_conditional_buffs = function(pool_settings)
 		for k,v in ipairs({ 'A28','A35','A38','A39','A48','A50', 'B3','B7','B28', 'C8', }) do segregation_pool[#segregation_pool + 1] = v end
 		
 		if pool_settings['has_magical_ranged'] then
-			for k,v in ipairs({ 'A42','A43','A44','B51','B51','B54', 'C28','C37','C47', }) do segregation_pool[#segregation_pool + 1] = v end
+			for k,v in ipairs({ 'A42','A43','A44','B51','B51', 'C28','C37','C47', }) do segregation_pool[#segregation_pool + 1] = v end
+
+			if not pool_settings['has_astral_imprisonment'] then
+				segregation_pool[#segregation_pool + 1] = 'B54'
+			end
+
+			if not pool_settings['has_endurance'] then
+				for k,v in ipairs({ 'A52','A52',  }) do segregation_pool[#segregation_pool + 1] = v end
+			end
 		else
 			for k,v in ipairs({ 'B13','B39','C15','C26', }) do segregation_pool[#segregation_pool + 1] = v end
 		end
 	elseif pool_settings['has_melee'] then
-		for k,v in ipairs({ 'A4','B20','B34','C48','C48', }) do segregation_pool[#segregation_pool + 1] = v end
+		for k,v in ipairs({ 'A4','A54','A54','B20','B34','C48','C48', }) do segregation_pool[#segregation_pool + 1] = v end
 	end
 	
 	if pool_settings['has_melee'] then
-		for k,v in ipairs({ 'A2','A6','A21','A31','A33','A34','A41','A47','A49', 'B2','B4','B6','B9','B27','B30','B33','B41', 'C7','C10','C14','C20','C25','C39', }) do segregation_pool[#segregation_pool + 1] = v end
+		for k,v in ipairs({ 'A2','A6','A21','A31','A33','A34','A41','A47','A49','A54', 'B2','B4','B6','B9','B27','B30','B33','B41', 'C7','C10','C14','C20','C25','C39', }) do segregation_pool[#segregation_pool + 1] = v end
 		
 		if pool_settings['has_magical_melee'] then
 			for k,v in ipairs({ 'A45','A45','A46','A46', 'B38','B38','B38', }) do segregation_pool[#segregation_pool + 1] = v end
+
+			if not pool_settings['has_endurance'] then
+				for k,v in ipairs({ 'A51','A51',  }) do segregation_pool[#segregation_pool + 1] = v end
+			end
 		else
-			for k,v in ipairs({ 'A9','A15','A20','A24','A30', 'B23','B55','B55', 'C5','C6','C12','C19','C23','C27','C30','C41', }) do segregation_pool[#segregation_pool + 1] = v end
+			for k,v in ipairs({ 'A9','A15','A20','A24','A30','A54', 'B23','B55','B55', 'C5','C6','C12','C19','C23','C27','C30','C41', }) do segregation_pool[#segregation_pool + 1] = v end
 		end
 		
 		if pool_settings['has_melee_pierce'] then
@@ -43,6 +55,10 @@ local find_conditional_buffs = function(pool_settings)
 	
 	if pool_settings['has_physical_resistances'] then
 		for k,v in ipairs({ 'A25','C31','C32',  }) do segregation_pool[#segregation_pool + 1] = v end
+
+		if not pool_settings['has_endurance'] then
+			for k,v in ipairs({ 'A51','A51',  }) do segregation_pool[#segregation_pool + 1] = v end
+		end
 	end
 	
 	if pool_settings['has_berserk'] then
@@ -52,6 +68,12 @@ local find_conditional_buffs = function(pool_settings)
 	
 	if pool_settings['is_high_level'] then
 		for k,v in ipairs({ 'B36','B36','B36','A37','A37','B37','B40','C49','C49', }) do segregation_pool[#segregation_pool + 1] = v end
+
+		if pool_settings['is_chaotic'] and not pool_settings['has_dark_pact'] then
+			for k,v in ipairs({ 'A55','A55','A55','A55' }) do segregation_pool[#segregation_pool + 1] = v end
+		end
+	elseif pool_settings['is_chaotic'] then
+		for k,v in ipairs({ 'A53','A53','A53', }) do segregation_pool[#segregation_pool + 1] = v end
 	end
 	
 	if pool_settings['has_strong_melee_blade'] then
@@ -66,15 +88,15 @@ local find_conditional_buffs = function(pool_settings)
 		for k,v in ipairs({ 'A40','A40','A40','A40','A40','A40','A40','A40','A40',  }) do segregation_pool[#segregation_pool + 1] = v end
 	end
 	
-	if pool_settings['has_poison'] then
+	if pool_settings['has_poison'] and not pool_settings['has_sickness'] then
 		for k,v in ipairs({ 'B53','B53','B53',  }) do segregation_pool[#segregation_pool + 1] = v end
 	end
-	
+
 	return segregation_pool
 end
 
 local early_allowed_buffs_table = { 
-	'A1','A3','A6','A7','A8','A9','A11','A12','A13','A15','A16','A18','A19','A22','A23','A24','A25','A28','A29','A31','A39','A47','A48','A49','A50','A51','A52',
+	'A1','A3','A6','A7','A8','A9','A11','A12','A13','A15','A16','A18','A19','A22','A23','A24','A25','A28','A29','A31','A39','A47','A48','A49','A50','A51','A52','A53','A54',
 	'B1','B6','B11','B12','B13','B17','B19','B21','B23','B24','B25','B26','B27','B28','B39','B45','B46','B47','B48','B49','B50','B52',
 	'C1','C2','C3','C7','C8','C9','C11','C12','C13','C14','C15','C17','C20','C21','C22','C23','C24','C25','C26','C27','C39','C43','C44','C48','C50',
 }
@@ -118,7 +140,7 @@ function wesnoth.wml_actions.qquws_champion_buff_to_name(cfg)
 	local set_name_var = cfg.name_var
 	
 	local names = { 
-		['A1'] = 'Wrathful',['A2'] = 'Dreadful',['A3']='Abominable',['A4']='Atrocious',['A5']='Frightful',['A6']='Grim',['A7']='Hideous',['A8']='Rotten',['A9']='Terrible',['A10']='Corrupted',['A11']='Putrid',['A12']='Rancid',['A13']='Rotting',['A14']='Infected',['A15']='Dark',['A16']='Black',['A17']='Grim',['A18']='Barbarous',['A19']='Ferocious',['A20']='Heartless',['A21']='Sinister',['A22']='Infernal',['A23']='Wicked',['A24']='Accursed',['A25']='Malicious',['A26']='Dead',['A27']='Merciless',['A28']='Festering',['A29']='Faceless',['A30']='Wicked',['A31']='Viscious',['A32']='Cruel',['A33']='Vile',['A34']='Sinful',['A35']='Depraved',['A36']='Filthy',['A37']='Reeking',['A38']='Repugnant',['A39']='Degraded',['A40']='Violent',['A41']='Raging',['A42']='Defiled',['A43']='Blind',['A44']='Insufferable',['A45']='Frantic',['A46']='Hopeless',['A47']='Bloodless',['A48']='Frozen',['A49']='Unbearable',['A50']='Deformed',['A51']='Unstoppable',['A52']='Unforgiving',['A53']='Immortal',['A54']='Rabid',['A55']='Delirious',['A56']='Furious',['A57']='Demented',
+		['A1'] = 'Wrathful',['A2'] = 'Dreadful',['A3']='Abominable',['A4']='Atrocious',['A5']='Frightful',['A6']='Grim',['A7']='Hideous',['A8']='Rotten',['A9']='Terrible',['A10']='Corrupted',['A11']='Putrid',['A12']='Rancid',['A13']='Rotting',['A14']='Infected',['A15']='Dark',['A16']='Black',['A17']='Grim',['A18']='Barbarous',['A19']='Ferocious',['A20']='Heartless',['A21']='Sinister',['A22']='Infernal',['A23']='Wicked',['A24']='Accursed',['A25']='Malicious',['A26']='Dead',['A27']='Merciless',['A28']='Festering',['A29']='Faceless',['A30']='Wicked',['A31']='Viscious',['A32']='Cruel',['A33']='Vile',['A34']='Sinful',['A35']='Depraved',['A36']='Filthy',['A37']='Reeking',['A38']='Repugnant',['A39']='Degraded',['A40']='Violent',['A41']='Raging',['A42']='Defiled',['A43']='Blind',['A44']='Insufferable',['A45']='Frantic',['A46']='Hopeless',['A47']='Bloodless',['A48']='Frozen',['A49']='Unbearable',['A50']='Deformed',['A51']='Unstoppable',['A52']='Unforgiving',['A53']='Immortal',['A54']='Rabid',['A55']='Demented',['A56']='Furious',
 		['B1'] = 'Apparition',['B2'] = 'Swamplord',['B3']='Demon',['B4']='Minion',['B5']='Shadow',['B6']='Vampire',['B7']='Banshee',['B8']='Soul',['B9']='Wraith',['B10']='Maggot',['B11']='Worm',['B12']='Puke',['B13']='Rot',['B14']='Skin',['B15']='Protector',['B16']='Guardian',['B17']='Angel',['B18']='King',['B19']='Emperor',['B20']='Sultan',['B21']='Baron',['B22']='Herald',['B23']='Overlord',['B24']='Prince',['B25']='Master',['B26']='Lord',['B27']='Dragon',['B28']='WitchKing',['B29']='Ruler',['B30']='Trickster',['B31']='Beast',['B32']='Archangel',['B33']='Doom',['B34']='Destiny',['B35']='Downfall',['B36']='Condemnation',['B37']='Inferno',['B38']='Flame',['B39']='Smoke',['B40']='Sewer',['B41']='Spirit',['B42']='Excrement',['B43']='Abomination',['B44']='Archer',['B45']='Blade',['B46']='Insanity',['B47']='Terror',['B48']='Horror',['B49']='Fury',['B50']='Judgment',['B51']='Bane',['B52']='Glory',['B53']='Venom',['B54']='Harbinger',['B55']='Burden',['B56']='Failure',['B57']='Triumph',['B58']='Poison',['B59']='Pity',['B60']='Havoc',['B61']='Virus',
 		['C1'] = "of Barlad'ur",['C2'] = "of Isshagh'Azar",['C3']='of Death',['C4']='of Pain',['C5']='of Fire',['C6']='of Fever',['C7']='of Misery',['C8']='of Torment',['C9']='of Agony',['C10']='of Convulsion',['C11']='of Silence',['C12']='of Heavens',['C13']='of Suffering',['C14']='of Decay',['C15']='of Regret',['C16']='of Deception',['C17']='of Deceit',['C18']='of Truth',['C19']='of Abyss',['C20']='of Despair',['C21']='of Doom',['C22']='of Annihilation',['C23']='of Destruction',['C24']='of Dissolution',['C25']='of Humiliation',['C26']='of Mutilation',['C27']='of Corruption',['C28']='of Abandonment',['C29']='of Indifference',['C30']='of Badazar',['C31']='of Olmadar',['C32']='of Verama',['C33']='of Tiremaza',['C34']='of Shassagoth',['C35']='of Fate',['C36']='of Blasphemy',['C37']='of Darkness',['C38']='of Ignorance',['C39']='of Chaos',['C40']='of Disgust',['C41']='of Contempt',['C42']='of Hatred',['C43']='of Sorrow',['C44']='of Extinction',['C45']='of Sickness',['C46']='of Derangement',['C47']='of Delusion',['C48']='of Betrayal',['C49']='of Infidelity',['C50']='of Perversion',['C51']='of Revenge',
 	}
@@ -143,7 +165,7 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 		end
 	end
 	
-	local pool_a = { 'A1','A3','A5','A7','A8','A10','A11','A12','A16','A18','A19','A22','A23','A26','A29','A32','A36','A51','A52' }
+	local pool_a = { 'A1','A3','A5','A7','A8','A10','A11','A12','A16','A18','A19','A22','A23','A26','A29','A32','A36', }
 	local pool_b = { 'B1','B10','B11','B12','B14','B15','B16','B18','B19','B21','B22','B24','B25','B29','B32','B35','B45','B46','B47','B48','B49','B50','B52', }
 	local pool_c = { 'C1','C2','C3','C4','C9','C13','C16','C17','C18','C21','C22','C29','C33','C35','C38','C43','C44','C45','C46','C50', }
 	
@@ -162,6 +184,11 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 		['has_strong_impact'] = wml.variables["qquws_champion_data.has_strong_impact"],
 		['has_overwhelming_melee_blade'] = wml.variables["qquws_champion_data.has_overwhelming_melee_blade"],
 		['has_poison'] = wml.variables["qquws_champion_data.has_poison"],
+		['has_astral_imprisonment'] = wml.variables['qquws_champion_data.has_astral_imprisonment'],
+		['has_sickness'] = wml.variables['qquws_champion_data.has_sickness'],
+		['has_endurance'] = wml.variables['qquws_champion_data.has_endurance'],
+		['is_chaotic'] = wml.variables['qquws_champion_data.is_chaotic'],
+		['has_dark_pact'] = wml.variables['qquws_champion_data.has_dark_pact'],
 	}
 	
 	local segregation_pool = find_conditional_buffs(pool_settings)
