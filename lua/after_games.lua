@@ -24,6 +24,11 @@ local after_classic_locations = {
 	['map_17'] = { { ['x'] = 4, ['y'] = 1 } },
 }
 
+local all_boosts_table = {
+	'boost10', 'boost20', 'bulky', 'beefy', 'armored', 'fast', 'agile', 'champion', 'slow', 'steal', 'improved_damage',
+	'reheal_own', 'deboost15', 'slow_wave', 'mirror', 'cancel', 'turtle_up', 'poison', 'damage_armor', 'drunk_opponent'
+}
+
 local east_items_table = {}
 local west_items_table = {}
 local copy_unit_counter = 0
@@ -211,9 +216,9 @@ end
 
 local function get_unused_items(boosts_table)
 	local ret = {}
-	for k,v in pairs(boosts_table) do
-		if not v then
-			table.insert(ret, k)
+	for k,v in ipairs(all_boosts_table) do
+		if not boosts_table[v] then
+			table.insert(ret, v)
 		end
 	end
 
@@ -303,12 +308,10 @@ end
 
 function wesnoth.wml_actions.qquws_generate_random_boosts_table(cfg)
 	local wml_table_name = cfg.var
-
-	local all_boosts = { 'boost10', 'boost20', 'bulky', 'beefy', 'armored', 'fast', 'agile', 'champion', 'slow', 'steal', 'improved_damage', 'reheal_own', 'deboost15', 'slow_wave', 'mirror', 'cancel', 'turtle_up', 'poison', 'damage_armor', 'drunk_opponent' }
 	local boosts_table = {}
 	local new_item = ''
 
-	for k,v in ipairs(all_boosts) do
+	for k,v in ipairs(all_boosts_table) do
 		boosts_table[v] = false
 	end
 
