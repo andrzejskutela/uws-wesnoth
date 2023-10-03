@@ -63,10 +63,54 @@ local find_amla_buffs = function(amla_settings)
 
 	if amla_settings['is_undead'] then
 		allowed_amlas[#allowed_amlas + 1] = 'ARCANE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_DMG'
 	end
 
 	if amla_settings['is_elemental'] then
 		allowed_amlas[#allowed_amlas + 1] = 'ELEM_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'ELEM_HEAL_ON_HIT'
+	end
+
+	if amla_settings['is_human'] then
+		allowed_amlas[#allowed_amlas + 1] = 'VIL_CASTLE_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'HUMAN_ARMOR'
+	end
+
+	if amla_settings['is_elf'] then
+		allowed_amlas[#allowed_amlas + 1] = 'FOREST_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'ELF_R_ACC'
+	end
+
+	if amla_settings['is_dwarf'] then
+		allowed_amlas[#allowed_amlas + 1] = 'CAVE_MOUNT_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'DWARF_DMG'
+	end
+
+	if amla_settings['is_troll'] then
+		allowed_amlas[#allowed_amlas + 1] = 'CAVE_HILLS_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'TROLL_DMG'
+		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_RES'
+	end
+
+	if amla_settings['is_wose'] then
+		allowed_amlas[#allowed_amlas + 1] = 'BLADE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_PIERCE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'WOSE_DMG'
+	end
+
+	if amla_settings['is_drake'] then
+		allowed_amlas[#allowed_amlas + 1] = 'SAND_CASTLE_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'PIERCE_RES'
+	end
+
+	if amla_settings['is_saurian'] then
+		allowed_amlas[#allowed_amlas + 1] = 'SWAMP_FLAT_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'COLD_RES'
+	end
+
+	if amla_settings['is_orc'] then
+		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_STRIKE'
+		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_MP'
 	end
 	
 	return allowed_amlas
@@ -92,6 +136,7 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 		['is_undead'] = wml.variables["qquws_amla_data.is_undead"],
 		['is_mechanical'] = wml.variables["qquws_amla_data.is_mechanical"],
 		['is_elemental'] = wml.variables["qquws_amla_data.is_elemental"],
+		['is_human'] = wml.variables["qquws_amla_data.is_human"],
 	}
 
 	local allowed_amlas = find_amla_buffs(amla_settings)
