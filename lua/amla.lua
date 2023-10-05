@@ -117,6 +117,38 @@ local find_amla_buffs = function(amla_settings)
 		allowed_amlas[#allowed_amlas + 1] = 'WATER_DEF'
 		allowed_amlas[#allowed_amlas + 1] = 'FISH_FLAT_DEF'
 	end
+
+	if amla_settings['is_goblin'] then
+		allowed_amlas[#allowed_amlas + 1] = 'HILLS_MOUNT_DEF'
+	end
+
+	if amla_settings['is_centaur'] then
+		
+	end
+
+	if amla_settings['is_allien'] then
+		
+	end
+
+	if amla_settings['is_demon'] then
+		
+	end
+
+	if amla_settings['is_dark_elf'] then
+		
+	end
+
+	if amla_settings['is_animal'] then
+		
+	end
+
+	if amla_settings['is_aerial'] then
+		
+	end
+
+	if amla_settings['is_insect'] then
+		
+	end
 	
 	return allowed_amlas
 end
