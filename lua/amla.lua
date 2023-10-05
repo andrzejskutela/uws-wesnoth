@@ -175,6 +175,22 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 		['is_mechanical'] = wml.variables["qquws_amla_data.is_mechanical"],
 		['is_elemental'] = wml.variables["qquws_amla_data.is_elemental"],
 		['is_human'] = wml.variables["qquws_amla_data.is_human"],
+		['is_elf'] = wml.variables["qquws_amla_data.is_elf"],
+		['is_dwarf'] = wml.variables["qquws_amla_data.is_dwarf"],
+		['is_troll'] = wml.variables["qquws_amla_data.is_troll"],
+		['is_wose'] = wml.variables["qquws_amla_data.is_wose"],
+		['is_drake'] = wml.variables["qquws_amla_data.is_drake"],
+		['is_saurian'] = wml.variables["qquws_amla_data.is_saurian"],
+		['is_orc'] = wml.variables["qquws_amla_data.is_orc"],
+		['is_fish'] = wml.variables["qquws_amla_data.is_fish"],
+		['is_goblin'] = wml.variables["qquws_amla_data.is_goblin"],
+		['is_centaur'] = wml.variables["qquws_amla_data.is_centaur"],
+		['is_allien'] = wml.variables["qquws_amla_data.is_allien"],
+		['is_demon'] = wml.variables["qquws_amla_data.is_demon"],
+		['is_dark_elf'] = wml.variables["qquws_amla_data.is_dark_elf"],
+		['is_animal'] = wml.variables["qquws_amla_data.is_animal"],
+		['is_aerial'] = wml.variables["qquws_amla_data.is_aerial"],
+		['is_insect'] = wml.variables["qquws_amla_data.is_insect"],
 	}
 
 	local allowed_amlas = find_amla_buffs(amla_settings)
