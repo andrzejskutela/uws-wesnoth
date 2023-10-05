@@ -57,7 +57,7 @@ local find_amla_buffs = function(amla_settings)
 		allowed_amlas[#allowed_amlas + 1] = 'LOW_XP'
 	end
 
-	if amla_settings['is_resilient'] or amla_settings['is_mechanical'] then
+	if amla_settings['is_resilient'] or amla_settings['is_mechanical'] or amla_settings['has_steadfast'] then
 		allowed_amlas[#allowed_amlas + 1] = 'PHYS_RES'
 	end
 
@@ -112,6 +112,11 @@ local find_amla_buffs = function(amla_settings)
 		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_STRIKE'
 		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_MP'
 	end
+
+	if amla_settings['is_fish'] then
+		allowed_amlas[#allowed_amlas + 1] = 'WATER_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'FISH_FLAT_DEF'
+	end
 	
 	return allowed_amlas
 end
@@ -126,6 +131,7 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 		['has_melee'] = wml.variables["qquws_amla_data.has_melee_attack"],
 		['has_magical_ranged'] = wml.variables["qquws_amla_data.has_magical_ranged"],
 		['has_magical_melee'] = wml.variables["qquws_amla_data.has_magical_melee"],
+		['has_steadfast'] = wml.variables["qquws_amla_data.has_steadfast"],
 		['is_fast'] = wml.variables["qquws_amla_data.is_fast"],
 		['is_strong'] = wml.variables["qquws_amla_data.is_strong"],
 		['is_dextrous'] = wml.variables["qquws_amla_data.is_dextrous"],
