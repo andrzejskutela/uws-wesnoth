@@ -123,15 +123,26 @@ local find_amla_buffs = function(amla_settings)
 	end
 
 	if amla_settings['is_centaur'] then
-		
+		allowed_amlas[#allowed_amlas + 1] = 'FLAT_HILLS_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'R_HIT_AND_RUN_1'
 	end
 
 	if amla_settings['is_allien'] then
-		
+		allowed_amlas[#allowed_amlas + 1] = 'ARCANE_SECRET_RES'
+
+		if not amla_settings['has_ranged'] and not amla_settings['has_cth_special'] then
+			allowed_amlas[#allowed_amlas + 1] = 'M_CTH_SKILLED'
+		elseif if amla_settings['has_ranged'] and not amla_settings['has_cth_special'] then
+			allowed_amlas[#allowed_amlas + 1] = 'M_CTH_SKILLED'
+		end
 	end
 
 	if amla_settings['is_demon'] then
-		
+		allowed_amlas[#allowed_amlas + 1] = 'COLD_ARCANE_RES'
+
+		if not amla_settings['has_bloodlust'] then
+			allowed_amlas[#allowed_amlas + 1] = 'BLOODLUST'
+		end
 	end
 
 	if amla_settings['is_dark_elf'] then
@@ -147,6 +158,10 @@ local find_amla_buffs = function(amla_settings)
 	end
 
 	if amla_settings['is_insect'] then
+		
+	end
+
+	if amla_settings['is_warg'] then
 		
 	end
 	
@@ -191,6 +206,7 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 		['is_animal'] = wml.variables["qquws_amla_data.is_animal"],
 		['is_aerial'] = wml.variables["qquws_amla_data.is_aerial"],
 		['is_insect'] = wml.variables["qquws_amla_data.is_insect"],
+		['has_cth_special'] = wml.variables["qquws_amla_data.has_cth_special"],
 	}
 
 	local allowed_amlas = find_amla_buffs(amla_settings)
