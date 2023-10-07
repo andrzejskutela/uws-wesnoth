@@ -135,7 +135,7 @@ local find_amla_buffs = function(amla_settings)
 
 		if not amla_settings['has_ranged'] and not amla_settings['has_cth_special'] then
 			allowed_amlas[#allowed_amlas + 1] = 'M_CTH_SKILLED'
-		elseif if amla_settings['has_ranged'] and not amla_settings['has_cth_special'] then
+		elseif amla_settings['has_ranged'] and not amla_settings['has_cth_special'] then
 			allowed_amlas[#allowed_amlas + 1] = 'M_CTH_SKILLED'
 		end
 	end
