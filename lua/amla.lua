@@ -61,7 +61,7 @@ local find_amla_buffs = function(amla_settings)
 		allowed_amlas[#allowed_amlas + 1] = 'PHYS_RES'
 	end
 
-	if amla_settings['is_undead'] then
+	if amla_settings['is_undead'] or amla_settings['is_dark_elf'] then
 		allowed_amlas[#allowed_amlas + 1] = 'ARCANE_RES'
 		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_DMG'
 	end
@@ -78,57 +78,60 @@ local find_amla_buffs = function(amla_settings)
 
 	if amla_settings['is_elf'] then
 		allowed_amlas[#allowed_amlas + 1] = 'FOREST_DEF'
-		allowed_amlas[#allowed_amlas + 1] = 'ELF_R_ACC'
+
+		if amla_settings['has_ranged'] and not amla_settings['has_magical_ranged'] then
+			allowed_amlas[#allowed_amlas + 1] = 'ELF_R_ACC'
+		end
 	end
 
 	if amla_settings['is_dwarf'] then
-		allowed_amlas[#allowed_amlas + 1] = 'CAVE_MOUNT_DEF'
-		allowed_amlas[#allowed_amlas + 1] = 'DWARF_DMG'
+		allowed_amlas[#allowed_amlas + 1] = 'CAVE_MOUNT_DEF' -- 5 (40% xp increase)
+		allowed_amlas[#allowed_amlas + 1] = 'DWARF_DMG' -- 20% (80% xp increase)
 	end
 
 	if amla_settings['is_troll'] then
-		allowed_amlas[#allowed_amlas + 1] = 'CAVE_HILLS_DEF'
-		allowed_amlas[#allowed_amlas + 1] = 'TROLL_DMG'
-		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'CAVE_HILLS_DEF' -- 5 / 10
+		allowed_amlas[#allowed_amlas + 1] = 'TROLL_DMG' -- 8%/12%/16%
+		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_RES' -- 10/20
 	end
 
 	if amla_settings['is_wose'] then
-		allowed_amlas[#allowed_amlas + 1] = 'BLADE_RES'
-		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_PIERCE_RES'
-		allowed_amlas[#allowed_amlas + 1] = 'WOSE_DMG'
+		allowed_amlas[#allowed_amlas + 1] = 'BLADE_RES' -- 10/20
+		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_PIERCE_RES' -- 7/15
+		allowed_amlas[#allowed_amlas + 1] = 'WOSE_DMG' -- 12%/12%
 	end
 
 	if amla_settings['is_drake'] then
-		allowed_amlas[#allowed_amlas + 1] = 'SAND_CASTLE_DEF'
-		allowed_amlas[#allowed_amlas + 1] = 'PIERCE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'SAND_CASTLE_DEF' -- s2 c2 / s5 c5 / s10 c10
+		allowed_amlas[#allowed_amlas + 1] = 'PIERCE_RES' -- 10/20
 	end
 
 	if amla_settings['is_saurian'] then
-		allowed_amlas[#allowed_amlas + 1] = 'SWAMP_FLAT_DEF'
-		allowed_amlas[#allowed_amlas + 1] = 'COLD_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'SWAMP_FLAT_DEF' -- s5 f2 / s10 f5
+		allowed_amlas[#allowed_amlas + 1] = 'COLD_RES' -- 10/20
 	end
 
 	if amla_settings['is_orc'] then
-		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_STRIKE'
-		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_MP'
+		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_STRIKE' -- +1 offense only
+		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_MP' -- +1
 	end
 
 	if amla_settings['is_fish'] then
-		allowed_amlas[#allowed_amlas + 1] = 'WATER_DEF'
-		allowed_amlas[#allowed_amlas + 1] = 'FISH_FLAT_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'WATER_DEF'  -- 5
+		allowed_amlas[#allowed_amlas + 1] = 'FISH_FLAT_DEF' -- 5
 	end
 
 	if amla_settings['is_goblin'] then
-		allowed_amlas[#allowed_amlas + 1] = 'HILLS_MOUNT_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'HILLS_MOUNT_DEF' -- h2 m2 / h5 m5
 	end
 
 	if amla_settings['is_centaur'] then
-		allowed_amlas[#allowed_amlas + 1] = 'FLAT_HILLS_DEF'
-		allowed_amlas[#allowed_amlas + 1] = 'R_HIT_AND_RUN_1'
+		allowed_amlas[#allowed_amlas + 1] = 'FLAT_HILLS_DEF' -- f2 h5 / f5 h10
+		allowed_amlas[#allowed_amlas + 1] = 'R_HIT_AND_RUN_1' -- ranged only
 	end
 
 	if amla_settings['is_allien'] then
-		allowed_amlas[#allowed_amlas + 1] = 'ARCANE_SECRET_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'ARCANE_SECRET_RES' -- 7/15
 
 		if not amla_settings['has_ranged'] and not amla_settings['has_cth_special'] then
 			allowed_amlas[#allowed_amlas + 1] = 'M_CTH_SKILLED'
@@ -138,31 +141,29 @@ local find_amla_buffs = function(amla_settings)
 	end
 
 	if amla_settings['is_demon'] then
-		allowed_amlas[#allowed_amlas + 1] = 'COLD_ARCANE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'COLD_ARCANE_RES' -- 7/15
 
 		if not amla_settings['has_bloodlust'] then
-			allowed_amlas[#allowed_amlas + 1] = 'BLOODLUST'
+			allowed_amlas[#allowed_amlas + 1] = 'BLOODLUST' -- 3hp/6hp
 		end
 	end
 
-	if amla_settings['is_dark_elf'] then
-		
-	end
-
 	if amla_settings['is_animal'] then
-		
+		allowed_amlas[#allowed_amlas + 1] = 'BIG_HITPOINTS' -- 12% twice
 	end
 
 	if amla_settings['is_aerial'] then
-		
+		allowed_amlas[#allowed_amlas + 1] = 'MINI_DEF_EVERYWHERE' -- 1/3/5
 	end
 
 	if amla_settings['is_insect'] then
-		
+		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_RES' -- 10/20
+		allowed_amlas[#allowed_amlas + 1] = 'FIRE_RES' -- 10/20
 	end
 
 	if amla_settings['is_warg'] then
-		
+		allowed_amlas[#allowed_amlas + 1] = 'EXTRA_STRIKE' -- offense only
+		allowed_amlas[#allowed_amlas + 1] = 'RABID_ATTACK' -- increased damage the more wounded the unit is
 	end
 	
 	return allowed_amlas
