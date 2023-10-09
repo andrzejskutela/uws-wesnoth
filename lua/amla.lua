@@ -85,20 +85,20 @@ local find_amla_buffs = function(amla_settings)
 	end
 
 	if amla_settings['is_dwarf'] then
-		allowed_amlas[#allowed_amlas + 1] = 'CAVE_MOUNT_DEF' -- 5 (40% xp increase)
-		allowed_amlas[#allowed_amlas + 1] = 'DWARF_DMG' -- 20% (80% xp increase)
+		allowed_amlas[#allowed_amlas + 1] = 'CAVE_MOUNT_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'DWARF_DMG'
 	end
 
 	if amla_settings['is_troll'] then
-		allowed_amlas[#allowed_amlas + 1] = 'CAVE_HILLS_DEF' -- 5 / 10
-		allowed_amlas[#allowed_amlas + 1] = 'TROLL_DMG' -- 8%/12%/16%
-		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_RES' -- 10/20
+		allowed_amlas[#allowed_amlas + 1] = 'CAVE_HILLS_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'TROLL_DMG'
+		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_RES'
 	end
 
 	if amla_settings['is_wose'] then
-		allowed_amlas[#allowed_amlas + 1] = 'BLADE_RES' -- 10/20
-		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_PIERCE_RES' -- 7/15
-		allowed_amlas[#allowed_amlas + 1] = 'WOSE_DMG' -- 12%/12%
+		allowed_amlas[#allowed_amlas + 1] = 'BLADE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_PIERCE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'WOSE_DMG'
 	end
 
 	if amla_settings['is_drake'] then
