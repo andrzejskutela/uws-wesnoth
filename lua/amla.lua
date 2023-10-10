@@ -102,18 +102,18 @@ local find_amla_buffs = function(amla_settings)
 	end
 
 	if amla_settings['is_drake'] then
-		allowed_amlas[#allowed_amlas + 1] = 'SAND_CASTLE_DEF' -- s2 c2 / s5 c5 / s10 c10
-		allowed_amlas[#allowed_amlas + 1] = 'PIERCE_RES' -- 10/20
+		allowed_amlas[#allowed_amlas + 1] = 'SAND_CASTLE_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'PIERCE_RES'
 	end
 
 	if amla_settings['is_saurian'] then
-		allowed_amlas[#allowed_amlas + 1] = 'SWAMP_FLAT_DEF' -- s5 f2 / s10 f5
-		allowed_amlas[#allowed_amlas + 1] = 'COLD_RES' -- 10/20
+		allowed_amlas[#allowed_amlas + 1] = 'SWAMP_FLAT_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'COLD_RES'
 	end
 
 	if amla_settings['is_orc'] then
-		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_STRIKE' -- +1 offense only
-		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_MP' -- +1
+		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_STRIKE'
+		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_MP'
 	end
 
 	if amla_settings['is_fish'] then
