@@ -122,7 +122,7 @@ local function process_spawn_table(spawn_table)
 	local predropped_items = {}
 	local used_items_table = {}
 	local process_object = true
-	local diff_gold_factor = { [1] = 1, [2] = 1, [3] = 1, [4] = 0.95, [5] = 0.9, [6] = 0.85 }
+	local diff_gold_factor = { [1] = 1, [2] = 1, [3] = 0.95, [4] = 0.95, [5] = 0.9, [6] = 0.9, [7] = 0.85 }
 	
 	for item_used in string.gmatch(used_items_list, '([^,]+)') do
 	    table.insert(used_items_table, item_used)

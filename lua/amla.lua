@@ -162,7 +162,7 @@ local find_amla_buffs = function(amla_settings)
 	end
 
 	if amla_settings['is_warg'] then
-		allowed_amlas[#allowed_amlas + 1] = 'EXTRA_STRIKE' -- offense only
+		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_STRIKE' -- nighttime offense only / already done
 		allowed_amlas[#allowed_amlas + 1] = 'RABID_ATTACK' -- increased damage the more wounded the unit is
 	end
 	
