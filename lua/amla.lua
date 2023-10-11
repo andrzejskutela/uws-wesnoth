@@ -117,12 +117,12 @@ local find_amla_buffs = function(amla_settings)
 	end
 
 	if amla_settings['is_fish'] then
-		allowed_amlas[#allowed_amlas + 1] = 'WATER_DEF'  -- 5
-		allowed_amlas[#allowed_amlas + 1] = 'FISH_FLAT_DEF' -- 5
+		allowed_amlas[#allowed_amlas + 1] = 'WATER_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'FISH_FLAT_DEF'
 	end
 
 	if amla_settings['is_goblin'] then
-		allowed_amlas[#allowed_amlas + 1] = 'HILLS_MOUNT_DEF' -- h2 m2 / h5 m5
+		allowed_amlas[#allowed_amlas + 1] = 'HILLS_MOUNT_DEF'
 	end
 
 	if amla_settings['is_centaur'] then
@@ -136,7 +136,7 @@ local find_amla_buffs = function(amla_settings)
 		if not amla_settings['has_ranged'] and not amla_settings['has_cth_special'] then
 			allowed_amlas[#allowed_amlas + 1] = 'M_CTH_SKILLED'
 		elseif amla_settings['has_ranged'] and not amla_settings['has_cth_special'] then
-			allowed_amlas[#allowed_amlas + 1] = 'M_CTH_SKILLED'
+			allowed_amlas[#allowed_amlas + 1] = 'R_CTH_SKILLED'
 		end
 	end
 
