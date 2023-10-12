@@ -134,25 +134,27 @@ local find_amla_buffs = function(amla_settings)
 	end
 
 	if amla_settings['is_allien'] then
-		allowed_amlas[#allowed_amlas + 1] = 'ARCANE_SECRET_RES' -- 7/15
+		allowed_amlas[#allowed_amlas + 1] = 'ARCANE_SECRET_RES'
 
 		if not amla_settings['has_ranged'] and not amla_settings['has_cth_special'] then
-			allowed_amlas[#allowed_amlas + 1] = 'M_CTH_SKILLED'
+			allowed_amlas[#allowed_amlas + 1] = 'M_CTH_MARKSMAN'
 		elseif amla_settings['has_ranged'] and not amla_settings['has_cth_special'] then
-			allowed_amlas[#allowed_amlas + 1] = 'R_CTH_SKILLED'
+			allowed_amlas[#allowed_amlas + 1] = 'R_CTH_MARKSMAN'
 		end
 	end
 
 	if amla_settings['is_demon'] then
-		allowed_amlas[#allowed_amlas + 1] = 'COLD_ARCANE_RES' -- 7/15
+		allowed_amlas[#allowed_amlas + 1] = 'COLD_ARCANE_RES'
 
-		if not amla_settings['has_bloodlust'] then
-			allowed_amlas[#allowed_amlas + 1] = 'BLOODLUST' -- 3hp/6hp
+		if amla_settings['has_bloodlust'] then
+			allowed_amlas[#allowed_amlas + 1] = 'BIG_BLOODLUST'
+		else
+			allowed_amlas[#allowed_amlas + 1] = 'BLOODLUST'
 		end
 	end
 
 	if amla_settings['is_animal'] then
-		allowed_amlas[#allowed_amlas + 1] = 'BIG_HITPOINTS' -- 12% twice
+		allowed_amlas[#allowed_amlas + 1] = 'BIG_HITPOINTS'
 	end
 
 	if amla_settings['is_aerial'] then
