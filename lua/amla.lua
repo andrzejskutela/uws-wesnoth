@@ -126,8 +126,11 @@ local find_amla_buffs = function(amla_settings)
 	end
 
 	if amla_settings['is_centaur'] then
-		allowed_amlas[#allowed_amlas + 1] = 'FLAT_HILLS_DEF' -- f2 h5 / f5 h10
-		allowed_amlas[#allowed_amlas + 1] = 'R_HIT_AND_RUN_1' -- ranged only
+		allowed_amlas[#allowed_amlas + 1] = 'FLAT_HILLS_DEF'
+
+		if amla_settings['has_ranged'] then
+			allowed_amlas[#allowed_amlas + 1] = 'R_HIT_AND_RUN_1'
+		end
 	end
 
 	if amla_settings['is_allien'] then
