@@ -189,12 +189,8 @@ local function process_spawn_table(spawn_table)
 				rules['item'] = mathx.random_choice(available_items)
 				table.insert(used_items_table, rules['item'])
 				
-				if game_mode == 'race' then
-					rules['second_item'] = mathx.random_choice(available_items)
-					table.insert(used_items_table, rules['second_item'])
-				else
-					rules['second_item'] = rules['item']
-				end
+				rules['second_item'] = mathx.random_choice(available_items)
+				table.insert(used_items_table, rules['second_item'])
 			elseif rules['item'] ~= '' then
 				rules['second_item'] = rules['item']
 				table.insert(used_items_table, rules['item'])
