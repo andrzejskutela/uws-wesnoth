@@ -158,17 +158,20 @@ local find_amla_buffs = function(amla_settings)
 	end
 
 	if amla_settings['is_aerial'] then
-		allowed_amlas[#allowed_amlas + 1] = 'MINI_DEF_EVERYWHERE' -- 1/3/5
+		allowed_amlas[#allowed_amlas + 1] = 'MINI_DEF_EVERYWHERE'
 	end
 
 	if amla_settings['is_insect'] then
-		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_RES' -- 10/20
-		allowed_amlas[#allowed_amlas + 1] = 'FIRE_RES' -- 10/20
+		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'FIRE_RES'
 	end
 
 	if amla_settings['is_warg'] then
-		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_STRIKE' -- nighttime offense only / already done
-		allowed_amlas[#allowed_amlas + 1] = 'RABID_ATTACK' -- increased damage the more wounded the unit is
+		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_STRIKE'
+
+		if amla_settings['has_melee'] then
+			allowed_amlas[#allowed_amlas + 1] = 'M_RABID_ATTACK'
+		end
 	end
 	
 	return allowed_amlas
