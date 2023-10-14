@@ -102,8 +102,14 @@ local function process_spawn_table(spawn_table)
 	local middle_lane = wml.variables["uws_game.middle"]
 	local allow_ae = wml.variables["random_pool.allow_ae"]
 	local game_mode = wml.variables['uws_game.mode']
+	local is_single_side_hns = wml.variables['uws_game.hns_single_side']
 	local used_items_list = wml.variables['used_items_list']
 	local copy_fields_list = wml.variables['uws_spawn.copy_fields']
+	local is_single_side_game = false
+
+	if game_mode == 'slash' and is_single_side_hns == true then
+		is_single_side_game = true
+	end
 	
 	local copy_fields = {}
 	local copy_object_fields = { 'x', 'y', 'cat', 'image', 'type', 'message', 'amount', 'name', 'set', 'color', 'tooltip', 'event', 'new_unit_special_id', 'render', }
@@ -442,7 +448,7 @@ local function process_spawn_table(spawn_table)
 				})
 			end
 			
-			if game_mode ~= 'slash' then
+			if is_single_side_game == false then
 				local east_item_x = map_edge - object_row['x']
 				object_row = {}
 				for _,field in ipairs(copy_object_fields) do
@@ -501,7 +507,7 @@ local function process_spawn_table(spawn_table)
 			
 			table.insert(predropped_items, { ['x'] = table_row['x'], ['y'] = y, ['item'] = item, ['render'] = render_new_item, ['overwrite_image'] = item_image })
 		
-			if game_mode ~= 'slash' then
+			if is_single_side_game == false then
 				if table_row['asymmetric'] then
 					available_items = get_available_items(table_row['pool'], used_items_table)
 					item = mathx.random_choice(available_items)
