@@ -92,7 +92,7 @@ return {
 	{ ['row'] = 'object', ['t'] = 12, ['x'] = 22, ['cat'] = 'rune', ['image'] = 'scenery/uws/energy_vortex.png', ['amount'] = 3, ['name'] = 'Rune', ['set'] = 'R9,R10,R11', ['color'] = '#b366ed', ['tooltip'] = '+2 melee parry (33%)\
 +2 melee accuracy (33% - no effect on magical)\
 +2 melee damage (33%)' },
-	{ ['row'] = 'object', ['t'] = 14, ['x'] = 6, ['image'] = 'scenery/uws/trigger_device.png', ['cat'] = 'event', ['event'] = 'rfc_4a_room', },
+	{ ['row'] = 'object', ['t'] = 20, ['x'] = 15, ['image'] = 'scenery/uws/trigger_device.png', ['cat'] = 'event', ['event'] = 'rfc_4a_room', },
 	{ ['row'] = 'object', ['t'] = 22, ['x'] = 19, ['image'] = 'scenery/uws/bookshelf-sw.png', ['mirror_image'] = 'scenery/uws/bookshelf.png', ['cat'] = 'decorative', ['render'] = false, ['id'] = 'bookshelf_1' },
 	{ ['row'] = 'object', ['t'] = 22, ['x'] = 20, ['image'] = 'scenery/uws/bookshelf-sw.png', ['mirror_image'] = 'scenery/uws/bookshelf.png', ['cat'] = 'decorative', ['render'] = false, ['id'] = 'bookshelf_2' },
 	{ ['row'] = 'object', ['t'] = 21, ['x'] = 21, ['image'] = 'scenery/uws/bookshelf-sw.png', ['mirror_image'] = 'scenery/uws/bookshelf.png', ['cat'] = 'decorative', ['render'] = false, ['id'] = 'bookshelf_3' },
