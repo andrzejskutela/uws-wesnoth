@@ -29,19 +29,19 @@ return {
 	
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['y'] = 17, ['lvl'] = 2, ['type'] = 'AE_efm_imperialists_Stalwart', ['default'] = 'Swordsman', ['moves'] = 5 },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['y'] = 17, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Legionnaire', ['default'] = 'Spearman', ['moves'] = 5 },
-	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['y'] = 9, ['lvl'] = 1, ['type'] = 'AE_mie_vampire_bounty_hunter', ['default'] = 'Footpad', ['moves'] = 5, },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['y'] = 6, ['lvl'] = 0, ['type'] = 'AE_rhy_fh_Beaver', ['default'] = 'Mudcrawler', ['moves'] = 4, ['guard'] = true },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['y'] = 11, ['lvl'] = 0, ['type'] = 'Giant Ant', ['default'] = 'Giant Ant', ['guard'] = true, ['moves'] = 4 },
 	
-	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 10, ['y'] = 17, ['lvl'] = 1, ['type'] = 'AE_imp_Lavinians_Legionaire', ['default'] = 'Spearman', ['moves'] = 4 },
+	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 25, ['y'] = 9, ['lvl'] = 1, ['type'] = 'AE_mie_vampire_bounty_hunter', ['default'] = 'Footpad', ['moves'] = 5, },
 	
 	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 15, ['y'] = 11, ['lvl'] = 0, ['type'] = 'Giant Ant', ['default'] = 'Giant Ant', ['guard'] = true, ['moves'] = 4 },
 	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['y'] = 5, ['lvl'] = 1, ['type'] = 'AE_rhy_fh_bear_cub', ['default'] = 'Fire Ant', ['guard'] = true, ['moves'] = 4 },
 	
 	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 16, ['y'] = 10, ['lvl'] = 1, ['type'] = 'Fire Ant', ['default'] = 'Fire Ant', ['moves'] = 4 },
-	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 22, ['y'] = 7, ['lvl'] = 1, ['type'] = 'AE_rhy_fh_Archer', ['default'] = 'Poacher', ['guard'] = true, ['moves'] = 5, ['gold'] = 30, },
+	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 22, ['y'] = 7, ['lvl'] = 1, ['type'] = 'AE_rhy_fh_Archer', ['default'] = 'Poacher', ['guard'] = true, ['moves'] = 5, },
+	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 10, ['y'] = 17, ['lvl'] = 1, ['type'] = 'AE_imp_Lavinians_Legionaire', ['default'] = 'Spearman', ['moves'] = 4 },
 	
-	{ ['t'] = 1, ['d'] = 5, ['side'] = 2, ['x'] = 24, ['y'] = 5, ['lvl'] = 1, ['type'] = 'AE_rhy_fh_Young_Wolf', ['default'] = 'Wolf', ['guard'] = true, ['moves'] = 6 },
+	{ ['t'] = 1, ['d'] = 6, ['side'] = 2, ['x'] = 24, ['y'] = 5, ['lvl'] = 1, ['type'] = 'AE_rhy_fh_Young_Wolf', ['default'] = 'Wolf', ['guard'] = true, ['moves'] = 6 },
 	
 	-- 2 - 8 (mask y 31 - 25)
 	
@@ -54,17 +54,16 @@ return {
 	
 	{ ['t'] = 7, ['d'] = 3, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_rhy_fd_Giant', ['default'] = 'Young Ogre', ['race_guard_off'] = true, ['bulky'] = 40 },
 	
-	{ ['t'] = 4, ['d'] = 4, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_rhy_fd_Gnome_Rider', ['default'] = 'Elder Falcon', ['gold'] = 20, },
+	{ ['t'] = 4, ['d'] = 4, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_rhy_fd_Gnome_Rider', ['default'] = 'Elder Falcon', },
 	
-	{ ['t'] = 5, ['d'] = 5, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Firefly', ['default'] = 'Naga Guard', },
+	{ ['t'] = 5, ['d'] = 6, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Firefly', ['default'] = 'Naga Guard', },
 	
 	-- 9 - 15 (mask y 24 - 18)
 	
-	{ ['t'] = 9, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_agl_yokai_Leshi', ['default'] = 'Elvish Druid', },
+	{ ['t'] = 9, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_agl_yokai_Leshi', ['default'] = 'Elvish Druid', ['gold'] = 20, },
 	{ ['t'] = 9, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Water_Snake', ['default'] = 'Naga Fighter', },
 	{ ['t'] = 10, ['d'] = 1, ['side'] = 3, ['x'] = 7, ['lvl'] = 0, ['type'] = 'AE_mrc_hive_Gnat', ['default'] = 'Giant Rat', ['race_guard_off'] = true, },
 	{ ['t'] = 11, ['d'] = 1, ['side'] = 3, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Queen', ['default'] = 'Naga Warrior', ['recruits'] = 'AE_mrc_hive_Beetle,AE_mrc_hive_Mosquito,AE_mrc_hive_Swarm', ['default_recruits'] = 'Naga Dirkfang,Naga Fighter,Naga Guard', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 90, ['item'] = true },
-	{ ['t'] = 13, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_rhy_ey_Nymph', ['default'] = 'Water Serpent', ['guard'] = true, },
 	{ ['t'] = 13, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', ['guard'] = true, },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_agl_yokai_Kodama', ['default'] = 'Wose Shaman', ['guard'] = true, },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', ['guard'] = true, },
@@ -72,12 +71,13 @@ return {
 	{ ['t'] = 10, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_bem_wood_warriors_Carnivore_Plant', ['default'] = 'Elvish Fighter', ['race_guard_off'] = true, },
 	
 	{ ['t'] = 12, ['d'] = 3, ['side'] = 2, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_rhy_ey_Waterpixie', ['default'] = 'Elder Falcon', },
-	{ ['t'] = 15, ['d'] = 3, ['side'] = 2, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Earth_Daemon_1', ['default'] = 'Troll Whelp', ['guard'] = true, ['gold'] = 10 },
+	{ ['t'] = 15, ['d'] = 3, ['side'] = 2, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Earth_Daemon_1', ['default'] = 'Troll Whelp', ['guard'] = true, ['gold'] = 15 },
 	
 	{ ['t'] = 10, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Drone', ['default'] = 'Naga Fighter', ['agile'] = 8 },
+	{ ['t'] = 13, ['d'] = 4, ['side'] = 3, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_rhy_ey_Nymph', ['default'] = 'Water Serpent', ['guard'] = true, },
 	
-	{ ['t'] = 9, ['d'] = 5, ['side'] = 3, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_efm_pygmies_Crocodile', ['default'] = 'Naga Guard', ['beefy'] = 24, ['gold'] = 12 },
-	{ ['t'] = 15, ['d'] = 5, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_bem_wood_warriors_Fatal_Tangle', ['default'] = 'Swamp Lizard', ['buff'] = 'A29:B15:C43:C21', },
+	{ ['t'] = 9, ['d'] = 6, ['side'] = 3, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_efm_pygmies_Crocodile', ['default'] = 'Naga Guard', ['beefy'] = 24, },
+	{ ['t'] = 15, ['d'] = 6, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_bem_wood_warriors_Fatal_Tangle', ['default'] = 'Swamp Lizard', ['buff'] = 'A29:B15:C43:C21', },
 	
 	-- 16 - 22 (mask y 17 - 11)
 	
@@ -96,7 +96,7 @@ return {
 	
 	{ ['t'] = 16, ['d'] = 4, ['side'] = 2, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_myh_Water', ['default'] = 'Elder Falcon', },
 	
-	{ ['t'] = 21, ['d'] = 5, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_thelian_chieftain', ['default'] = 'Elvish Captain', ['bulky'] = 32, ['beefy'] = 20, ['disallow_slash_unguardian'] = true, },
+	{ ['t'] = 21, ['d'] = 6, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_thelian_chieftain', ['default'] = 'Elvish Captain', ['bulky'] = 32, ['beefy'] = 20, ['disallow_slash_unguardian'] = true, },
 	
 	-- 23 - 29 (mask y 10 - 4)
 	
@@ -107,17 +107,17 @@ return {
 	{ ['t'] = 28, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', },
 	
 	{ ['t'] = 23, ['d'] = 2, ['side'] = 4, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_mie_thelian_spirit', ['default'] = 'Elvish Scout', ['disallow_slash_unguardian'] = true, },
-	{ ['t'] = 26, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_warrior', ['default'] = 'Dwarvish Stalwart', ['guard'] = true },
 	{ ['t'] = 29, ['d'] = 2, ['side'] = 2, ['x'] = 8, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', },
 	
 	{ ['t'] = 24, ['d'] = 3, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_thelian_deerstalker', ['default'] = 'Elvish Ranger', ['disallow_slash_unguardian'] = true, },
 	{ ['t'] = 27, ['d'] = 3, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', },
 	
+	{ ['t'] = 26, ['d'] = 4, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_warrior', ['default'] = 'Dwarvish Stalwart', ['guard'] = true },
 	{ ['t'] = 24, ['d'] = 4, ['side'] = 4, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_mie_thelian_wolf', ['default'] = 'Bay Horse', },
 	{ ['t'] = 28, ['d'] = 4, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'Great Wolf', ['default'] = 'Great Wolf', },
 	
-	{ ['t'] = 25, ['d'] = 5, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_berserker_golem', ['default'] = 'Dwarvish Berserker', },
-	{ ['t'] = 29, ['d'] = 4, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'Great Wolf', ['default'] = 'Great Wolf', },
+	{ ['t'] = 25, ['d'] = 6, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_berserker_golem', ['default'] = 'Dwarvish Berserker', },
+	{ ['t'] = 29, ['d'] = 6, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'Great Wolf', ['default'] = 'Great Wolf', ['fast'] = 1 },
 	
 	-- final boss 27 / mask y 6
 	
