@@ -94,7 +94,7 @@ return {
 	{ ['t'] = 20, ['d'] = 3, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_feu_clockwork_dwarves_Iron_Golem_Soldier', ['default'] = 'Dwarvish Stalwart', ['moves'] = 0, },
 	{ ['t'] = 21, ['d'] = 3, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_feu_clockwork_dwarves_Iron_Golem_Soldier', ['default'] = 'Dwarvish Stalwart', ['moves'] = 0, },
 	
-	{ ['t'] = 22, ['d'] = 5, ['side'] = 3, ['x'] = 8, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', ['guard'] = true, ['armored'] = 12 },
+	{ ['t'] = 22, ['d'] = 5, ['side'] = 3, ['x'] = 8, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', ['guard'] = true, ['armored'] = 10 },
 	
 	{ ['t'] = 21, ['d'] = 6, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_feu_clockwork_dwarves_Soldier', ['default'] = 'Dwarvish Fighter', ['beefy'] = 16, ['gold'] = 18 },
 	
@@ -118,24 +118,24 @@ return {
 	{ ['t'] = 23, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mag_Technologist', ['default'] = 'Dwarvish Thunderguard', ['beefy'] = 16, ['gold'] = 9 },
 	{ ['t'] = 28, ['d'] = 5, ['side'] = 3, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_stf_triththa_Armorer', ['default'] = 'Saurian Ambusher', ['guard'] = true },
 
-	{ ['t'] = 25, ['d'] = 6, ['side'] = 3, ['x'] = 5, ['lvl'] = 2, ['type'] = 'AE_rhy_dw_Engineer', ['default'] = 'Dwarvish Steelclad', ['armored'] = 12, },
+	{ ['t'] = 25, ['d'] = 6, ['side'] = 3, ['x'] = 5, ['lvl'] = 2, ['type'] = 'AE_rhy_dw_Engineer', ['default'] = 'Dwarvish Steelclad', ['armored'] = 15, },
 	
 	-- 30 - 35 (mask y 19 - 14)
 	
 	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Dwarvish Stalwart', ['moves'] = 0, ['gold'] = 12 },
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Brown_Rat', ['default'] = 'Goblin Rouser', },
 	{ ['t'] = 32, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'Naga Ophidian', ['guard'] = true },
-	{ ['t'] = 32, ['d'] = 1, ['side'] = 4, ['x'] = 23, ['lvl'] = 3, ['type'] = 'Naga High Guard', ['default'] = 'Naga High Guard', ['recruits'] = 'Naga Ringcaster,Naga Warrior,AE_ext_orcs_Naga_Warden,AE_ext_orcs_Naga_Assassin,Dread Bat', ['default_recruits'] = 'Naga Ringcaster,Naga Warrior,Naga Ophidian,Naga Shield Guard,Dread Bat', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 105, ['buff'] = 'A8:B8:C9', ['recruit_armored'] = 16 },
+	{ ['t'] = 32, ['d'] = 1, ['side'] = 4, ['x'] = 23, ['lvl'] = 3, ['type'] = 'Naga High Guard', ['default'] = 'Naga High Guard', ['recruits'] = 'Naga Ringcaster,Naga Warrior,AE_ext_orcs_Naga_Warden,AE_ext_orcs_Naga_Assassin,Dread Bat', ['default_recruits'] = 'Naga Ringcaster,Naga Warrior,Naga Ophidian,Naga Shield Guard,Dread Bat', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 105, ['buff'] = 'A8:B8:C9', ['recruit_armored'] = 15 },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_mag_Goblin_Invader', ['default'] = 'Naga Myrmidon', ['buff'] = 'A6:B6:C7:B21' },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Goblin Impaler', },
 	
-	{ ['t'] = 31, ['d'] = 2, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_agl_dark_legion_Sentry_Drone', ['default'] = 'Naga Ringcaster', ['armored'] = 12, ['fast'] = 1 },
+	{ ['t'] = 31, ['d'] = 2, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_agl_dark_legion_Sentry_Drone', ['default'] = 'Naga Ringcaster', ['armored'] = 10, ['fast'] = 1 },
 	
 	{ ['t'] = 32, ['d'] = 4, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'Orcish Slurbow', ['default'] = 'Dune Wayfarer', ['beefy'] = 20, },
 	{ ['t'] = 35, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_agl_dark_legion_Protector_Drone', ['default'] = 'Dune Scorcher', ['buff'] = 'A7:B7:C8', },
 	{ ['t'] = 35, ['d'] = 4, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Orcish_Elder', ['default'] = 'Dune Spearguard', ['guard'] = true, ['gold'] = 10 },
 	
-	{ ['t'] = 34, ['d'] = 6, ['side'] = 4, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_efm_imperialists_Tank', ['default'] = 'Dune Marauder', ['beefy'] = 20, ['bulky'] = 108, ['armored'] = 16 },
+	{ ['t'] = 34, ['d'] = 6, ['side'] = 4, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_efm_imperialists_Tank', ['default'] = 'Dune Marauder', ['beefy'] = 20, ['bulky'] = 108, ['armored'] = 15 },
 	
 	-- 36 - 42 (mask y 13 - 7)
 	

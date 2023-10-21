@@ -40,7 +40,7 @@ return {
 	-- 2 - 8 (mask y 74 - 68)
 	
 	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'Mage', },
-	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'Naga Warrior', ['recruits'] = 'Naga Fighter,Saurian Augur', ['r_lvls'] = '1,1', ['recruitment_gold'] = 35, ['gold'] = 50, ['recruit_armored'] = 12, },
+	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'Naga Warrior', ['recruits'] = 'Naga Fighter,Saurian Augur', ['r_lvls'] = '1,1', ['recruitment_gold'] = 35, ['gold'] = 50, ['recruit_armored'] = 10, },
 	{ ['t'] = 5, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'Troll Whelp', },
 	{ ['t'] = 8, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'Troll Whelp', },
 	{ ['t'] = 8, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'Poacher', },
@@ -138,7 +138,7 @@ return {
 	{ ['t'] = 34, ['d'] = 4, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'Sky Drake', },
 
 	{ ['t'] = 35, ['d'] = 6, ['side'] = 4, ['x'] = 21, ['lvl'] = 3, ['type'] = 'Hurricane Drake', ['buff'] = 'A13:B13:C12:B17', },
-	{ ['t'] = 32, ['d'] = 6, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'Drake Thrasher', ['bulky'] = 60, ['armored'] = 16 },
+	{ ['t'] = 32, ['d'] = 6, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'Drake Thrasher', ['bulky'] = 60, ['armored'] = 10 },
 	{ ['t'] = 34, ['d'] = 6, ['side'] = 3, ['x'] = 10, ['lvl'] = 2, ['type'] = 'Swamp Lizard', ['beefy'] = 40, ['disallow_slash_unguardian'] = true, },
 	
 	-- 37 - 43 (mask y 39 - 33)
@@ -157,7 +157,7 @@ return {
 	{ ['t'] = 40, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 0, ['type'] = 'Peasant', ['gold'] = 8, },
 	{ ['t'] = 42, ['d'] = 1, ['side'] = 2, ['x'] = 9, ['lvl'] = 0, ['type'] = 'Peasant', ['event'] = 'follow_players_race', ['gold'] = 11 },
 	
-	{ ['t'] = 38, ['d'] = 2, ['side'] = 2, ['x'] = 9, ['lvl'] = 3, ['type'] = 'Merman Hoplite', ['armored'] = 8 },
+	{ ['t'] = 38, ['d'] = 2, ['side'] = 2, ['x'] = 9, ['lvl'] = 3, ['type'] = 'Merman Hoplite', ['armored'] = 5 },
 	{ ['t'] = 39, ['d'] = 2, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Red Mage' },
 	{ ['t'] = 41, ['d'] = 2, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'Mage of Light', },
 	
@@ -192,7 +192,6 @@ return {
 	{ ['t'] = 49, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 4, ['type'] = 'Yeti', ['moves'] = 0, ['event'] = 'tsw_yeti', ['allow_random'] = false },
 	{ ['t'] = 50, ['d'] = 1, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'Dark Sorcerer', },
 	{ ['t'] = 50, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Gryphon', },
-	{ ['t'] = 50, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Gryphon', },
 	
 	{ ['t'] = 45, ['d'] = 2, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Soulless', ['race_guard_off'] = true, ['beefy'] = 24, ['gold'] = 12 },
 	{ ['t'] = 46, ['d'] = 2, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'Soulless', ['race_guard_off'] = true, ['calls_for_help'] = true, },
@@ -210,7 +209,8 @@ return {
 	{ ['t'] = 50, ['d'] = 4, ['side'] = 3, ['x'] = 25, ['lvl'] = 2, ['type'] = 'Dark Sorcerer', },
 
 	{ ['t'] = 46, ['d'] = 5, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'Soulless', ['bulky'] = 540, ['beefy'] = 40, ['moves'] = 6, ['name'] = 'Timmy', ['race_guard_off'] = true, ['gold'] = 17 },
-	
+	{ ['t'] = 50, ['d'] = 5, ['side'] = 3, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Gryphon', },
+
 	{ ['t'] = 46, ['d'] = 6, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Soulless', ['beefy'] = 20, ['fast'] = 1, ['race_guard_off'] = true, ['gold'] = 8 },
 	{ ['t'] = 48, ['d'] = 6, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'Necromancer', },
 	{ ['t'] = 49, ['d'] = 6, ['side'] = 3, ['x'] = 15, ['lvl'] = 4, ['type'] = 'Skeletal Dragon', ['beefy'] = 20, ['bulky'] = 180, ['race_guard_off'] = true, ['item'] = true },
@@ -234,7 +234,7 @@ return {
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Orcish Warrior', ['moves'] = 0, ['gold'] = 20 },
 	{ ['t'] = 56, ['d'] = 1, ['side'] = 4, ['x'] = 6, ['lvl'] = 0, ['type'] = 'Goblin Spearman', },
 	{ ['t'] = 56, ['d'] = 1, ['side'] = 4, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Goblin Rouser', ['gold'] = 20 },
-	{ ['t'] = 56, ['d'] = 1, ['side'] = 4, ['x'] = 11, ['lvl'] = 3, ['type'] = 'Orcish Sovereign', ['recruits'] = 'Orcish Warrior,Orcish Slayer,Orcish Crossbowman', ['r_lvls'] = '2,2,2', ['recruitment_gold'] = 250, ['gold'] = 50, ['recruit_armored'] = 20 },
+	{ ['t'] = 56, ['d'] = 1, ['side'] = 4, ['x'] = 11, ['lvl'] = 3, ['type'] = 'Orcish Sovereign', ['recruits'] = 'Orcish Warrior,Orcish Slayer,Orcish Crossbowman', ['r_lvls'] = '2,2,2', ['recruitment_gold'] = 250, ['gold'] = 50, ['recruit_armored'] = 10 },
 	{ ['t'] = 56, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'Orcish Warrior', ['moves'] = 0, ['gold'] = 20 },
 	{ ['t'] = 56, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'Orcish Crossbowman', ['moves'] = 0, ['gold'] = 20 },
 	{ ['t'] = 56, ['d'] = 1, ['side'] = 4, ['x'] = 8, ['lvl'] = 0, ['type'] = 'Goblin Spearman', },

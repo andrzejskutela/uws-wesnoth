@@ -52,12 +52,12 @@ return {
 	{ ['t'] = 4, ['d'] = 1, ['side'] = 2, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_efm_pygmies_Swamp_Witch', ['default'] = 'Giant Scorpion', ['allow_random'] = false, },
 	{ ['t'] = 4, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 0, ['type'] = 'AE_mrc_hive_Gnat', ['default'] = 'Giant Rat', ['allow_random'] = false, },
 	{ ['t'] = 5, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_efm_pygmies_Puma', ['default'] = 'Saurian Augur', ['guard'] = true, ['moves'] = 6, ['allow_random'] = false },
-	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 4, ['type'] = 'AE_chs_chaos_empire_Armageddon_Imp', ['default'] = 'Wyvern Rider', ['recruits'] = 'AE_mrc_hive_Drone,AE_mrc_hive_Mosquito,AE_mrc_hive_Swarm,AE_mrc_hive_Spider,AE_mrc_hive_Hopper', ['default_recruits'] = 'Saurian Augur,Saurian Skirmisher,Giant Scorpion,Giant Mudcrawler', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 120, ['gold'] = 60, ['recruit_armored'] = 16, ['allow_random'] = false },
-	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'Giant Rat', ['armored'] = 16, ['allow_random'] = false },
+	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 4, ['type'] = 'AE_chs_chaos_empire_Armageddon_Imp', ['default'] = 'Wyvern Rider', ['recruits'] = 'AE_mrc_hive_Drone,AE_mrc_hive_Mosquito,AE_mrc_hive_Swarm,AE_mrc_hive_Spider,AE_mrc_hive_Hopper', ['default_recruits'] = 'Saurian Augur,Saurian Skirmisher,Giant Scorpion,Giant Mudcrawler', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 120, ['gold'] = 60, ['recruit_armored'] = 15, ['allow_random'] = false },
+	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'Giant Rat', ['armored'] = 10, ['allow_random'] = false },
 	
 	{ ['t'] = 3, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_efm_pygmies_Fly', ['default'] = 'Rock Scorpion', ['allow_random'] = false, },
 	
-	{ ['t'] = 5, ['d'] = 3, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Infest', ['default'] = 'Swamp Lizard', ['guard'] = true, ['agile'] = 8, ['moves'] = 7, ['allow_random'] = false },
+	{ ['t'] = 5, ['d'] = 3, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Infest', ['default'] = 'Swamp Lizard', ['guard'] = true, ['agile'] = 10, ['moves'] = 7, ['allow_random'] = false },
 	{ ['t'] = 6, ['d'] = 3, ['side'] = 2, ['x'] = 23, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'Giant Rat', ['allow_random'] = false, },
 	{ ['t'] = 6, ['d'] = 3, ['side'] = 2, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Toad_Breath', ['default'] = 'Saurian Oracle', ['allow_random'] = false, },
 	
@@ -78,7 +78,7 @@ return {
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mag_Toad', ['default'] = 'Naga Dirkfang', ['race_guard_off'] = true, },
 	{ ['t'] = 15, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mag_Yellow_Salamander', ['default'] = 'Naga Shield Guard', ['guard'] = true },
 	
-	{ ['t'] = 10, ['d'] = 2, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mag_Wyvern', ['default'] = 'Giant Scorpion', ['armored'] = 12, ['guard'] = true },
+	{ ['t'] = 10, ['d'] = 2, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mag_Wyvern', ['default'] = 'Giant Scorpion', ['armored'] = 10, ['guard'] = true },
 	{ ['t'] = 14, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mag_Salamander', ['default'] = 'Naga Guard', ['race_guard_off'] = true, },
 	
 	{ ['t'] = 12, ['d'] = 3, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_efm_pygmies_Lizard_Eye', ['default'] = 'Saurian Flanker', ['guard'] = true, ['bulky'] = 80, ['beefy'] = 48, ['allow_random'] = false },
@@ -86,7 +86,7 @@ return {
 	{ ['t'] = 11, ['d'] = 4, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_efm_pygmies_Sorceress', ['default'] = 'Wild Wyvern', },
 	{ ['t'] = 15, ['d'] = 4, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_mag_Toad', ['default'] = 'Naga Fighter', },
 	
-	{ ['t'] = 13, ['d'] = 6, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Shamanistic_Toad', ['default'] = 'Naga Ringcaster', ['agile'] = 12, ['race_guard_off'] = true, },
+	{ ['t'] = 13, ['d'] = 6, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Shamanistic_Toad', ['default'] = 'Naga Ringcaster', ['agile'] = 10, ['race_guard_off'] = true, },
 	
 	-- 16 - 22 (mask y 23 - 17)
 	
@@ -100,10 +100,10 @@ return {
 	{ ['t'] = 16, ['d'] = 2, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mag_Great_Wyvern', ['default'] = 'Naga Warrior', ['race_guard_off'] = true, ['bulky'] = 40 },
 	{ ['t'] = 20, ['d'] = 2, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mie_treefolk_ghastbark', ['default'] = 'Elvish Ranger', ['race_guard_off'] = true, ['beefy'] = 40 },
 	
-	{ ['t'] = 19, ['d'] = 3, ['side'] = 4, ['x'] = 7, ['lvl'] = 1, ['type'] = 'AE_mie_spirit_thorn_witch', ['default'] = 'Elvish Shaman', ['armored'] = 40, ['race_guard_off'] = true },
-	{ ['t'] = 21, ['d'] = 3, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mie_sylvan_faerie', ['default'] = 'Elvish Rider', ['guard'] = true, ['fast'] = 1, ['agile'] = 12 },
+	{ ['t'] = 19, ['d'] = 3, ['side'] = 4, ['x'] = 7, ['lvl'] = 1, ['type'] = 'AE_mie_spirit_thorn_witch', ['default'] = 'Elvish Shaman', ['armored'] = 25, ['race_guard_off'] = true },
+	{ ['t'] = 21, ['d'] = 3, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mie_sylvan_faerie', ['default'] = 'Elvish Rider', ['guard'] = true, ['fast'] = 1, ['agile'] = 10 },
 	
-	{ ['t'] = 16, ['d'] = 4, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Toad', ['default'] = 'Naga Warrior', ['armored'] = 20, ['bulky'] = 180 },
+	{ ['t'] = 16, ['d'] = 4, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Toad', ['default'] = 'Naga Warrior', ['armored'] = 15, ['bulky'] = 180 },
 	
 	{ ['t'] = 18, ['d'] = 6, ['side'] = 3, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Mosquito', ['default'] = 'Naga Dirkfang', },
 	
@@ -124,7 +124,7 @@ return {
 	{ ['t'] = 23, ['d'] = 4, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_treefolk_bark_elder', ['default'] = 'Elder Wose', },
 	{ ['t'] = 25, ['d'] = 4, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_rhy_fh_bear', ['default'] = 'Roc', ['fast'] = 1 },
 	
-	{ ['t'] = 26, ['d'] = 6, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_myh_Vine_Tiger', ['default'] = 'Elvish Sorceress', ['armored'] = 20 },
+	{ ['t'] = 26, ['d'] = 6, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_myh_Vine_Tiger', ['default'] = 'Elvish Sorceress', ['armored'] = 15 },
 	
 	-- 30 - 36 (mask y 9 - 3)
 	
@@ -133,7 +133,7 @@ return {
 	
 	{ ['t'] = 32, ['d'] = 2, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_rhy_ma_Warmonk', ['default'] = 'Dune Strider', ['beefy'] = 24 },
 	
-	{ ['t'] = 35, ['d'] = 4, ['side'] = 2, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_rhy_ma_General', ['default'] = 'Dune Warmaster', ['armored'] = 12 },
+	{ ['t'] = 35, ['d'] = 4, ['side'] = 2, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_rhy_ma_General', ['default'] = 'Dune Warmaster', ['armored'] = 10 },
 
 	{ ['t'] = 36, ['d'] = 6, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Deadwood', ['default'] = 'Cave Bear', ['buff'] = 'A54:B22:C14:C21:A11' },
 	

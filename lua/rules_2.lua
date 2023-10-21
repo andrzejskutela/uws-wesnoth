@@ -102,7 +102,7 @@ return {
 	{ ['t'] = 13, ['d'] = 3, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Albatross', ['default'] = 'Elder Falcon', ['fast'] = 1, },
 
 	{ ['t'] = 14, ['d'] = 4, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Seaman', ['default'] = 'Fencer', },
-	{ ['t'] = 14, ['d'] = 4, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Whirlwind', ['default'] = 'Pikeman', ['armored'] = 12, ['gold'] = 18 },
+	{ ['t'] = 14, ['d'] = 4, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Whirlwind', ['default'] = 'Pikeman', ['armored'] = 10, ['gold'] = 18 },
 	
 	{ ['t'] = 13, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Greater_Albatross', ['default'] = 'Roc', ['bulky'] = 40 },
 
@@ -127,7 +127,7 @@ return {
 	
 	{ ['t'] = 21, ['d'] = 3, ['side'] = 3, ['x'] = 27, ['lvl'] = 1, ['type'] = 'AE_mag_Carpet_Rider', ['default'] = 'Merman Hunter', },
 	
-	{ ['t'] = 17, ['d'] = 5, ['side'] = 3, ['x'] = 27, ['lvl'] = 2, ['type'] = 'AE_fut_brungar_Overgrown_Crab', ['default'] = 'Cuttle Fish', ['armored'] = 8, ['disallow_slash_unguardian'] = true },
+	{ ['t'] = 17, ['d'] = 5, ['side'] = 3, ['x'] = 27, ['lvl'] = 2, ['type'] = 'AE_fut_brungar_Overgrown_Crab', ['default'] = 'Cuttle Fish', ['armored'] = 5, ['disallow_slash_unguardian'] = true },
 	
 	{ ['t'] = 20, ['d'] = 6, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Able_Seaman', ['default'] = 'Merman Spearman', ['beefy'] = 24, ['bulky'] = 24, },
 	
@@ -138,7 +138,7 @@ return {
 	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_mag_Cyclops_Breaker', ['default'] = 'Dune Spearguard', ['gold'] = 12 },
 	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Mudcrawler', ['default'] = 'Giant Mudcrawler', ['race_guard_off'] = true, ['allow_random'] = false },
 	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Mudcrawler', ['default'] = 'Giant Mudcrawler', ['race_guard_off'] = true, ['allow_random'] = false },
-	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_mag_Fire_Cyclops', ['default'] = 'Dune Alchemist', ['recruits'] = 'AE_mag_Cyclops', ['default_recruits'] = 'Dune Burner,Dune Rider,Dune Soldier', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 75, ['recruit_armored'] = 12 },
+	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_mag_Fire_Cyclops', ['default'] = 'Dune Alchemist', ['recruits'] = 'AE_mag_Cyclops', ['default_recruits'] = 'Dune Burner,Dune Rider,Dune Soldier', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 75, ['recruit_armored'] = 15 },
 	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_mag_Fire_Elemental', ['default'] = 'Dune Burner', },
 	{ ['t'] = 28, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Mudcrawler', ['default'] = 'Giant Mudcrawler', ['race_guard_off'] = true, ['allow_random'] = false },
 	{ ['t'] = 28, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_mag_Blood_Warrior', ['default'] = 'Dune Sunderer', },
@@ -173,7 +173,7 @@ return {
 	{ ['t'] = 35, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Miner', ['default'] = 'Rogue', ['guard'] = true },
 	{ ['t'] = 36, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Minotaur', ['default'] = 'Cave Bear', ['beefy'] = 40 },
 	
-	{ ['t'] = 31, ['d'] = 2, ['side'] = 2, ['x'] = 10, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['armored'] = 24 },
+	{ ['t'] = 31, ['d'] = 2, ['side'] = 2, ['x'] = 10, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['armored'] = 25 },
 	{ ['t'] = 32, ['d'] = 2, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Miner', ['default'] = 'Rogue', ['guard'] = true },
 	
 	{ ['t'] = 32, ['d'] = 3, ['side'] = 2, ['x'] = 9, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['buff'] = 'A11:B10:C9', ['allow_random'] = false, ['gold'] = 15 },
@@ -195,7 +195,7 @@ return {
 	{ ['t'] = 40, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_ext_chaos_Doom_Guard', ['default'] = 'Orcish Warrior', ['moves'] = 0 },
 	{ ['t'] = 41, ['d'] = 1, ['side'] = 3, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_arc_khthon_Bone_Snapper', ['default'] = 'Giant Scorpion', ['bulky'] = 30, ['race_guard_off'] = true },
 	{ ['t'] = 42, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_mrc_infernai_Demon_Dog', ['default'] = 'Orcish Grunt', },
-	{ ['t'] = 43, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Hell_Guardian', ['default'] = 'Highwayman', ['guard'] = true, ['item'] = true, ['armored'] = 20 },
+	{ ['t'] = 43, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Hell_Guardian', ['default'] = 'Highwayman', ['guard'] = true, ['item'] = true, ['armored'] = 15 },
 	
 	{ ['t'] = 38, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_ext_chaos_Flesh_Hound', ['default'] = 'Ogre', },
 	{ ['t'] = 42, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mrc_infernai_Archfiend', ['default'] = 'Troll Hero', ['guard'] = true },
@@ -235,7 +235,7 @@ return {
 	
 	{ ['t'] = 51, ['d'] = 1, ['side'] = 3, ['x'] = 25, ['lvl'] = 2, ['type'] = 'AE_rhy_dw_Wraith', ['default'] = 'Troll Shaman', ['bulky'] = 30, ['guard'] = true },
 	{ ['t'] = 51, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Hellhound', ['default'] = 'Direwolf Rider', ['guard'] = true },
-	{ ['t'] = 53, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['armored'] = 24, ['gold'] = 9, },
+	{ ['t'] = 53, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['armored'] = 20, ['gold'] = 9, },
 	{ ['t'] = 54, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['gold'] = 5 },
 	{ ['t'] = 54, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Spiderpriest', ['default'] = 'Dark Sorcerer', ['recruits'] = 'AE_stf_free_saurians_Spider,AE_ext_monsters_Little_Spider,AE_rhy_de_Small_Spider', ['default_recruits'] = 'Ghost,Ghoul,Skeleton Archer', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 80, ['gold'] = 40, },
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 4, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_myh_Gargoyle', ['default'] = 'Wolf Rider', ['gold'] = 4 },
@@ -244,7 +244,7 @@ return {
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 3, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_rhy_dw_Ghost', ['default'] = 'Troll Whelp', ['guard'] = true, },
 	{ ['t'] = 57, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_myh_Blood_Manipulator', ['default'] = 'Jinn', ['gold'] = 12, },
 	
-	{ ['t'] = 54, ['d'] = 2, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['gold'] = 7, ['armored'] = 28 },
+	{ ['t'] = 54, ['d'] = 2, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['gold'] = 7, ['armored'] = 30 },
 	{ ['t'] = 57, ['d'] = 2, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Hound', ['default'] = 'Woodland Boar', },
 	
 	{ ['t'] = 57, ['d'] = 3, ['side'] = 4, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Deadwood', ['default'] = 'Revenant', ['beefy'] = 60, },
@@ -276,11 +276,11 @@ return {
 	
 	-- 65 - 69 (mask y 16 - 12)
 	
-	{ ['t'] = 66, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_mag_Heavy_Summoner', ['default'] = 'Mage of Light', ['armored'] = 12, ['guard'] = true, ['event'] = 'grw_spam_dimensional_gates', ['allow_random'] = false, },
+	{ ['t'] = 66, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_mag_Heavy_Summoner', ['default'] = 'Mage of Light', ['armored'] = 10, ['guard'] = true, ['event'] = 'grw_spam_dimensional_gates', ['allow_random'] = false, },
 	{ ['t'] = 68, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 3, ['type'] = 'AE_mag_DharmaRhami', ['default'] = 'Master at Arms', ['guard'] = true, },
 	{ ['t'] = 68, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_rhy_tr_Nova', ['default'] = 'Mermaid Siren', ['event'] = 'follow_players_race' },
 	
-	{ ['t'] = 67, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Abomination', ['default'] = 'General', ['recruits'] = 'AE_ext_orcs_Naga_Depthstalker,AE_ext_orcs_Naga_Assassin,Naga Myrmidon,Naga Zephyr,Naga Sicarius', ['default_recruits'] = 'Wild Wyvern,Water Serpent,Sea Serpent,Naga Zephyr,Naga Sicarius', ['r_lvls'] = '3,2,3,3,3', ['recruitment_gold'] = 250, ['gold'] = 50, ['recruit_armored'] = 8 },
+	{ ['t'] = 67, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Abomination', ['default'] = 'General', ['recruits'] = 'AE_ext_orcs_Naga_Depthstalker,AE_ext_orcs_Naga_Assassin,Naga Myrmidon,Naga Zephyr,Naga Sicarius', ['default_recruits'] = 'Wild Wyvern,Water Serpent,Sea Serpent,Naga Zephyr,Naga Sicarius', ['r_lvls'] = '3,2,3,3,3', ['recruitment_gold'] = 250, ['gold'] = 50, ['recruit_armored'] = 5 },
 	
 	{ ['t'] = 67, ['d'] = 3, ['side'] = 2, ['x'] = 27, ['lvl'] = 3, ['type'] = 'AE_mag_Sky_Guardian', ['default'] = 'Merman Hoplite', },
 	

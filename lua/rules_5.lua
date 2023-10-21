@@ -57,7 +57,7 @@ return {
 	{ ['t'] = 15, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Ghost', ['guard'] = true },
 	{ ['t'] = 15, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'Vampire Bat', ['guard'] = true },
 	
-	{ ['t'] = 15, ['d'] = 2, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Blood Bat', ['guard'] = true, ['agile'] = 8 },
+	{ ['t'] = 15, ['d'] = 2, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Blood Bat', ['guard'] = true, ['agile'] = 5 },
 
 	{ ['t'] = 10, ['d'] = 3, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Orcish Crossbowman', ['guard'] = true },
 	{ ['t'] = 10, ['d'] = 3, ['side'] = 2, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', },
@@ -71,7 +71,7 @@ return {
 	-- 16 - 22 (mask y 46 - 40)
 	
 	{ ['t'] = 16, ['d'] = 1, ['side'] = 2, ['x'] = 5, ['lvl'] = 1, ['type'] = 'Dwarvish Thunderer', },
-	{ ['t'] = 17, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Thug', ['armored'] = 8 },
+	{ ['t'] = 17, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Thug', ['armored'] = 5 },
 	{ ['t'] = 19, ['d'] = 1, ['side'] = 2, ['x'] = 6, ['lvl'] = 1, ['type'] = 'Dark Adept', },
 	{ ['t'] = 21, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
 	{ ['t'] = 21, ['d'] = 1, ['side'] = 2, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Dwarvish Ulfserker', },
@@ -114,7 +114,7 @@ return {
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 2, ['x'] = 12, ['lvl'] = 0, ['type'] = 'Goblin Spearman', },
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'Goblin Spearman', ['gold'] = 12 },
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Goblin Rouser', ['gold'] = 12 },
-	{ ['t'] = 31, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Orcish Ruler', ['gold'] = 20, ['recruits'] = 'Orcish Grunt,Orcish Assassin,Orcish Archer,AE_ext_orcs_Orcish_Shaman', ['default_recruits'] = 'Orcish Grunt,Orcish Assassin,Orcish Archer', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 85, ['armored'] = 20, ['recruit_armored'] = 12 },
+	{ ['t'] = 31, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Orcish Ruler', ['gold'] = 20, ['recruits'] = 'Orcish Grunt,Orcish Assassin,Orcish Archer,AE_ext_orcs_Orcish_Shaman', ['default_recruits'] = 'Orcish Grunt,Orcish Assassin,Orcish Archer', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 85, ['armored'] = 20, ['recruit_armored'] = 10 },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Wose', ['guard'] = true },
 	{ ['t'] = 34, ['d'] = 1, ['side'] = 2, ['x'] = 4, ['lvl'] = 2, ['type'] = 'Ogre', ['guard'] = true },
 	{ ['t'] = 34, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 2, ['type'] = 'Ogre', ['guard'] = true },
@@ -175,7 +175,7 @@ return {
 
 	{ ['t'] = 50, ['d'] = 5, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Naga Warrior', },
 	
-	{ ['t'] = 50, ['d'] = 6, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Shock Trooper', ['beefy'] = 32, ['bulky'] = 56, ['armored'] = 12, ['race_guard_off'] = true },
+	{ ['t'] = 50, ['d'] = 6, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Shock Trooper', ['beefy'] = 32, ['bulky'] = 56, ['armored'] = 10, ['race_guard_off'] = true },
 	
 	-- 51 - 57 (mask y 11 - 5)
 	{ ['t'] = 52, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 0, ['type'] = 'Peasant', ['agile'] = 15 },

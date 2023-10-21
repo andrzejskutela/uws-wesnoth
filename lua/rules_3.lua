@@ -40,11 +40,13 @@ return {
 	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'Ruffian', ['default'] = 'Ruffian', },
 	{ ['t'] = 5, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_bem_wood_warriors_Young_Bigfoot', ['default'] = 'Troll Whelp', },
 	{ ['t'] = 5, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_ext_outlaws_Rogue_Mage', ['default'] = 'Dark Adept', },
-	{ ['t'] = 7, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_imp_Marauders_Boatsman', ['default'] = 'Wolf Rider', },
 	{ ['t'] = 8, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_ext_outlaws_Princess', ['default'] = 'Trapper', ['recruits'] = 'AE_mrc_cult_Cultist,AE_mrc_cult_Exile,AE_imp_Lavinians_Slinger', ['default_recruits'] = 'Wolf Rider,Young Ogre,Naga Fighter', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 45, ['gold'] = 55, ['item'] = true },
 	
+	{ ['t'] = 6, ['d'] = 2, ['side'] = 2, ['x'] = 15, ['lvl'] = 0, ['type'] = 'Ruffian', ['default'] = 'Ruffian' },
+
 	{ ['t'] = 3, ['d'] = 3, ['side'] = 2, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_imp_Marauders_Scout', ['default'] = 'Footpad', },
-	{ ['t'] = 6, ['d'] = 3, ['side'] = 2, ['x'] = 15, ['lvl'] = 0, ['type'] = 'Ruffian', ['default'] = 'Ruffian' },
+	
+	{ ['t'] = 7, ['d'] = 4, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_imp_Marauders_Boatsman', ['default'] = 'Wolf Rider', },
 	
 	{ ['t'] = 8, ['d'] = 5, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_imp_Marauders_Fay', ['default'] = 'Mage' },
 	
@@ -77,7 +79,7 @@ return {
 	{ ['t'] = 16, ['d'] = 1, ['side'] = 3, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_mag_Runeadept', ['default'] = 'Dwarvish Thunderer', },
 	{ ['t'] = 18, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_mrc_infernai_Lost_Soul', ['default'] = 'Ghost', },
 	{ ['t'] = 18, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_feu_clockwork_dwarves_Gunner', ['default'] = 'Dwarvish Thunderguard', ['moves'] = 0, },
-	{ ['t'] = 18, ['d'] = 1, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_stf_triththa_Smith', ['default'] = 'Dwarvish Scout', ['armored'] = 8, },
+	{ ['t'] = 18, ['d'] = 1, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_stf_triththa_Smith', ['default'] = 'Dwarvish Scout', ['armored'] = 5, },
 	{ ['t'] = 18, ['d'] = 1, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mag_Runesmith', ['default'] = 'Dwarvish Runesmith', ['recruits'] = 'Dwarvish Fighter,Dwarvish Thunderer', ['default_recruits'] = 'Dwarvish Fighter,Dwarvish Thunderer', ['r_lvls'] = '1,1', ['recruitment_gold'] = 60, ['gold'] = 32 },
 	{ ['t'] = 19, ['d'] = 1, ['side'] = 1, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_fut_brungar_Herbalist', ['default'] = 'Dune Apothecary', ['allow_random'] = false, },
 	{ ['t'] = 21, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Dwarvish Ulfserker', ['default'] = 'Dwarvish Ulfserker' },
@@ -102,7 +104,7 @@ return {
 	{ ['t'] = 26, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'Dwarvish Berserker', ['default'] = 'Dwarvish Berserker', ['gold'] = 15, },
 	{ ['t'] = 28, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_feu_clockwork_dwarves_Triggerman', ['default'] = 'Dwarvish Thunderer', ['quiet_buff'] = 'Q3', ['allow_random'] = false, ['guard'] = true, },
 	
-	{ ['t'] = 23, ['d'] = 2, ['side'] = 4, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Dwarvish Steelclad', ['default'] = 'Dwarvish Steelclad', ['armored'] = 12, },
+	{ ['t'] = 23, ['d'] = 2, ['side'] = 4, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Dwarvish Steelclad', ['default'] = 'Dwarvish Steelclad', ['armored'] = 10, },
 	
 	{ ['t'] = 27, ['d'] = 3, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_feu_clockwork_dwarves_Miasmist', ['default'] = 'Dwarvish Stalwart', },
 	
@@ -121,7 +123,7 @@ return {
 	{ ['t'] = 34, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'Elvish Archer', ['default'] = 'Elvish Archer', ['calls_for_help'] = true },
 	{ ['t'] = 35, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_chs_sylvians_Forest_Spirit', ['default'] = 'Wild Wyvern' },
 	{ ['t'] = 36, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_chs_sylvians_Night_Nymph', ['default'] = 'Swamp Lizard' },
-	{ ['t'] = 36, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 3, ['type'] = 'Merman Hoplite', ['default'] = 'Merman Hoplite', ['armored'] = 12, ['bulky'] = 28, ['item'] = true },
+	{ ['t'] = 36, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 3, ['type'] = 'Merman Hoplite', ['default'] = 'Merman Hoplite', ['armored'] = 10, ['bulky'] = 28, ['item'] = true },
 	
 	{ ['t'] = 33, ['d'] = 2, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_chs_sylvians_Wose_Shaman', ['default'] = 'Wose Shaman', },
 	{ ['t'] = 33, ['d'] = 2, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_chs_quenoth_Quenoth_Moon_Enchantress', ['default'] = 'Elvish Sorceress', },
@@ -131,7 +133,7 @@ return {
 
 	{ ['t'] = 35, ['d'] = 4, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Elder Wose', ['default'] = 'Elder Wose', },
 	
-	{ ['t'] = 34, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'Elvish Champion', ['default'] = 'Elvish Champion', ['armored'] = 20 },
+	{ ['t'] = 34, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'Elvish Champion', ['default'] = 'Elvish Champion', ['armored'] = 5 },
 	
 	{ ['t'] = 33, ['d'] = 6, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Lanterbug', ['default'] = 'Gryphon Master', ['agile'] = 15 },
 	
@@ -142,16 +144,16 @@ return {
 	{ ['t'] = 41, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_feu_high_elves_Captain', ['default'] = 'Elvish Lord', ['gold'] = 12 },
 	{ ['t'] = 42, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'AE_mrc_hive_Tick', ['default'] = 'Giant Spider', ['buff'] = 'A23:B12:C23:C21', },
 	{ ['t'] = 42, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Queen', ['default'] = 'Roc', },
-	{ ['t'] = 42, ['d'] = 1, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Glider', ['default'] = 'Fire Wraith', ['agile'] = 8 },
+	{ ['t'] = 42, ['d'] = 1, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Glider', ['default'] = 'Fire Wraith', ['agile'] = 10 },
 	{ ['t'] = 42, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mag_Kharosian_Bulwark', ['default'] = '', ['guard'] = true },
 	{ ['t'] = 43, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Fire_Ant', ['default'] = 'Jinn', },
 	
 	{ ['t'] = 42, ['d'] = 2, ['side'] = 3, ['x'] = 9, ['lvl'] = 3, ['type'] = 'AE_mrc_hive_Bull_Ant', ['default'] = 'Direwolf', ['bulky'] = 56,  },
 	
 	{ ['t'] = 41, ['d'] = 3, ['side'] = 3, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Wasp', ['default'] = 'Gryphon', ['fast'] = 1 },
-	{ ['t'] = 43, ['d'] = 3, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mag_Protector', ['default'] = 'Drake Thrasher', ['armored'] = 8, },
+	{ ['t'] = 43, ['d'] = 3, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mag_Protector', ['default'] = 'Drake Thrasher', ['armored'] = 5, },
 
-	{ ['t'] = 43, ['d'] = 4, ['side'] = 2, ['x'] = 25, ['lvl'] = 3, ['type'] = 'AE_mag_Platinum_Warrior', ['default'] = 'Drake Warden', ['armored'] = 16 },
+	{ ['t'] = 43, ['d'] = 4, ['side'] = 2, ['x'] = 25, ['lvl'] = 3, ['type'] = 'AE_mag_Platinum_Warrior', ['default'] = 'Drake Warden', ['armored'] = 10 },
 	
 	{ ['t'] = 40, ['d'] = 5, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_feu_high_elves_Shieldbearer', ['default'] = 'Elvish Hero', },
 	
@@ -159,7 +161,7 @@ return {
 	
 	-- 44 - 50 (mask y 14 - 8)
 	
-	{ ['t'] = 44, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'AE_mrc_hive_Hercules', ['default'] = 'Royal Warrior', ['race_guard_off'] = true, ['calls_for_help'] = true, ['armored'] = 8, ['bulky'] = 68, ['beefy'] = 12 },
+	{ ['t'] = 44, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'AE_mrc_hive_Hercules', ['default'] = 'Royal Warrior', ['race_guard_off'] = true, ['calls_for_help'] = true, ['armored'] = 10, ['bulky'] = 68, ['beefy'] = 12 },
 	{ ['t'] = 47, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 3, ['type'] = 'AE_mag_Sun_Guardian', ['default'] = 'Inferno Drake', ['guard'] = true, },
 	
 	{ ['t'] = 44, ['d'] = 2, ['side'] = 2, ['x'] = 25, ['lvl'] = 2, ['type'] = 'AE_mag_Inspired', ['default'] = 'Drake Flare', },
@@ -168,7 +170,7 @@ return {
 
 	{ ['t'] = 44, ['d'] = 4, ['side'] = 2, ['x'] = 23, ['lvl'] = 4, ['type'] = 'AE_mag_Master_of_Sun', ['default'] = 'Wyvern Rider', ['guard'] = true, },
 	
-	{ ['t'] = 46, ['d'] = 5, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Fanatic', ['default'] = 'Drake Warrior', ['beefy'] = 32, ['armored'] = 15 },
+	{ ['t'] = 46, ['d'] = 5, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Fanatic', ['default'] = 'Drake Warrior', ['beefy'] = 32, ['armored'] = 10 },
 	
 	{ ['t'] = 44, ['d'] = 6, ['side'] = 3, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Termite_Soldier', ['default'] = 'Dread Bat', ['bulky'] = 20, ['beefy'] = 28 },
 	

@@ -34,7 +34,7 @@ return {
 	
 	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 20, ['y'] = 4, ['lvl'] = 2, ['type'] = 'AE_bem_calydonians_Dioian_Veteran', ['default'] = 'Bandit', ['moves'] = 4 },
 	
-	{ ['t'] = 1, ['d'] = 6, ['side'] = 2, ['x'] = 21, ['y'] = 4, ['lvl'] = 3, ['type'] = 'AE_bem_calydonians_Strategos', ['default'] = 'Royal Guard', ['moves'] = 4, ['beefy'] = 40, ['armored'] = 20, ['calls_for_help'] = true },
+	{ ['t'] = 1, ['d'] = 6, ['side'] = 2, ['x'] = 21, ['y'] = 4, ['lvl'] = 3, ['type'] = 'AE_bem_calydonians_Strategos', ['default'] = 'Royal Guard', ['moves'] = 4, ['beefy'] = 40, ['armored'] = 15, ['calls_for_help'] = true },
 	
 	-- 2 - 8 (mask y 48 - 42)
 	
@@ -76,7 +76,7 @@ return {
 	{ ['t'] = 19, ['d'] = 1, ['side'] = 4, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mag_Golem_Boss', ['default'] = 'Orcish Crossbowman', },
 	{ ['t'] = 20, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mag_Mage_of_Air', ['default'] = 'Orcish Warrior', ['calls_for_help'] = true },
 	{ ['t'] = 20, ['d'] = 1, ['side'] = 4, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_mag_Golem', ['default'] = 'Young Ogre', },
-	{ ['t'] = 21, ['d'] = 1, ['side'] = 4, ['x'] = 5, ['lvl'] = 3, ['type'] = 'AE_mag_Mirrorshield', ['default'] = 'Great Troll', ['beefy'] = 28, ['armored'] = 12 },
+	{ ['t'] = 21, ['d'] = 1, ['side'] = 4, ['x'] = 5, ['lvl'] = 3, ['type'] = 'AE_mag_Mirrorshield', ['default'] = 'Great Troll', ['beefy'] = 28, ['armored'] = 10 },
 	
 	{ ['t'] = 22, ['d'] = 2, ['side'] = 4, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_mag_Um', ['default'] = 'Orcish Warlord', ['bulky'] = 300 },
 	
@@ -87,7 +87,7 @@ return {
 	{ ['t'] = 21, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_mag_Shadowmage', ['default'] = 'Orcish Slurbow', ['buff'] = 'A35:B52:C19:B13' },
 	
 	{ ['t'] = 16, ['d'] = 6, ['side'] = 3, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_stf_eltireans_Sky_Lord', ['default'] = 'Dune Paragon', },
-	{ ['t'] = 19, ['d'] = 6, ['side'] = 4, ['x'] = 4, ['lvl'] = 1, ['type'] = 'AE_mag_Hidden_Face', ['default'] = 'Orcish Assassin', ['agile'] = 8, },
+	{ ['t'] = 19, ['d'] = 6, ['side'] = 4, ['x'] = 4, ['lvl'] = 1, ['type'] = 'AE_mag_Hidden_Face', ['default'] = 'Orcish Assassin', ['agile'] = 10, },
 	
 	-- 23 - 29 (mask y 27 - 21)
 	
@@ -113,7 +113,7 @@ return {
 	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Inquisitor', ['default'] = 'Assassin', ['beefy'] = 24, ['guard'] = true },
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_ele_Fallen_Infiltrator', ['default'] = 'Bandit', ['race_guard_off'] = true, },
 	{ ['t'] = 32, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 4, ['type'] = 'AE_ele_Fallen_Dragon_Rider', ['default'] = 'Yeti', ['guard'] = true, ['buff'] = 'A40:B47:C14', ['disallow_slash_unguardian'] = true },
-	{ ['t'] = 33, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 5, ['type'] = 'AE_ele_Fallen_Supreme_Lord', ['default'] = 'Fire Dragon', ['recruits'] = 'AE_ele_Fallen_Inquisitor,AE_ele_Fallen_Liquidator,AE_ele_Fallen_Purgator', ['default_recruits'] = 'Fugitive,Huntsman,Assassin', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 140, ['recruit_armored'] = 16 },
+	{ ['t'] = 33, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 5, ['type'] = 'AE_ele_Fallen_Supreme_Lord', ['default'] = 'Fire Dragon', ['recruits'] = 'AE_ele_Fallen_Inquisitor,AE_ele_Fallen_Liquidator,AE_ele_Fallen_Purgator', ['default_recruits'] = 'Fugitive,Huntsman,Assassin', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 140, ['recruit_armored'] = 10 },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_ele_Fallen_Shieldbearer', ['default'] = 'Trapper', ['race_guard_off'] = true },
 	{ ['t'] = 36, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 6, ['type'] = 'QQ_blackness', ['default'] = 'QQ_blackness', ['buff'] = 'A37:B37:C46' },
 	
@@ -139,7 +139,7 @@ return {
 	{ ['t'] = 38, ['d'] = 3, ['side'] = 4, ['x'] = 10, ['lvl'] = 3, ['type'] = 'AE_mag_Crimson_Atokpi', ['default'] = 'Banebow', },
 	{ ['t'] = 42, ['d'] = 3, ['side'] = 5, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_myh_Harbinger', ['default'] = 'Dwarvish Runemaster', ['beefy'] = 40 },
 	
-	{ ['t'] = 42, ['d'] = 4, ['side'] = 5, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_myh_Dreadnought', ['default'] = 'Naga Sicarius', ['armored'] = 16, },
+	{ ['t'] = 42, ['d'] = 4, ['side'] = 5, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_myh_Dreadnought', ['default'] = 'Naga Sicarius', ['armored'] = 10, },
 	
 	{ ['t'] = 37, ['d'] = 6, ['side'] = 4, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_mag_Moloch', ['default'] = 'Nightgaunt', ['race_guard_off'] = true, ['bulky'] = 72, },
 	

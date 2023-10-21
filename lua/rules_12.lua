@@ -32,7 +32,7 @@ return {
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['y'] = 12, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Elder_Falcon', ['default'] = 'Elder Falcon', ['moves'] = 6, ['guard'] = true, ['allow_random'] = false },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['y'] = 6, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Crocodile', ['default'] = 'Horned Scarab', ['moves'] = 5, ['guard'] = true },
 	
-	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['y'] = 10, ['lvl'] = 1, ['type'] = 'AE_FL_bloodelf_Dark_Lizard', ['default'] = 'Rock Scorpion', ['moves'] = 5, ['guard'] = true, ['agile'] = 12 },
+	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['y'] = 10, ['lvl'] = 1, ['type'] = 'AE_FL_bloodelf_Dark_Lizard', ['default'] = 'Rock Scorpion', ['moves'] = 5, ['guard'] = true, ['agile'] = 10 },
 	
 	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 22, ['y'] = 16, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Shaman', ['default'] = 'Dune Herbalist', ['moves'] = 5 },
 	
@@ -68,7 +68,7 @@ return {
 	
 	{ ['t'] = 11, ['d'] = 2, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Chosen', ['default'] = 'Fencer', },
 	
-	{ ['t'] = 13, ['d'] = 3, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Sword_Brother', ['default'] = 'Spearman', ['armored'] = 16 },
+	{ ['t'] = 13, ['d'] = 3, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Sword_Brother', ['default'] = 'Spearman', ['armored'] = 15 },
 	
 	{ ['t'] = 15, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Master_at_Arms', ['default'] = 'Outlaw', },
 	
