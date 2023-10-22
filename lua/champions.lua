@@ -17,6 +17,10 @@ local find_conditional_buffs = function(pool_settings)
 		else
 			for k,v in ipairs({ 'B13','B39','C15','C26', }) do segregation_pool[#segregation_pool + 1] = v end
 		end
+
+		if pool_settings['has_ranged_slow'] then
+			for k,v in ipairs({ 'C52','C52',  }) do segregation_pool[#segregation_pool + 1] = v end
+		end
 	elseif pool_settings['has_melee'] then
 		for k,v in ipairs({ 'A4','A54','A54','B20','B34','C48','C48', }) do segregation_pool[#segregation_pool + 1] = v end
 	end
