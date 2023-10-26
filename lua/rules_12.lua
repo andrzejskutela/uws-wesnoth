@@ -37,15 +37,15 @@ return {
 	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 22, ['y'] = 16, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Shaman', ['default'] = 'Dune Herbalist', ['moves'] = 5 },
 	
 	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 6, ['y'] = 4, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Serpent', ['default'] = 'Great Seahorse', ['guard'] = true, ['moves'] = 5, ['allow_random'] = false, },
-	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 3, ['y'] = 4, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Albatross', ['default'] = 'Elder Falcon', ['moves'] = 5, ['allow_random'] = false },
 	
-	{ ['t'] = 1, ['d'] = 5, ['side'] = 2, ['x'] = 17, ['y'] = 13, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Quicksand_Golem', ['default'] = 'Ogre', ['guard'] = true, ['moves'] = 4, ['gold'] = 20, ['buff'] = 'A49:B12:C46', ['allow_random'] = false },
+	{ ['t'] = 1, ['d'] = 5, ['side'] = 2, ['x'] = 3, ['y'] = 4, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Albatross', ['default'] = 'Elder Falcon', ['moves'] = 5, ['allow_random'] = false },
+	
+	{ ['t'] = 1, ['d'] = 6, ['side'] = 2, ['x'] = 17, ['y'] = 13, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Quicksand_Golem', ['default'] = 'Ogre', ['guard'] = true, ['moves'] = 4, ['gold'] = 20, ['buff'] = 'A49:B12:C46', ['allow_random'] = false },
 	
 	-- 2 - 8 (mask y 26 - 20)
 	
 	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Fishman', ['default'] = 'Naga Dirkfang', ['moves'] = 6, ['allow_random'] = false },
 	{ ['t'] = 5, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Sailor', ['default'] = 'Dune Skirmisher', ['gold'] = 12 },
-	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Sailor', ['default'] = 'Dune Rover', },
 	{ ['t'] = 7, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mrc_mercenaries_Seafarer', ['default'] = 'Dune Falconer', ['recruits'] = 'AE_FL_pirates_Buccaneer,AE_FL_pirates_Sailor,AE_FL_pirates_Fishman', ['default_recruits'] = 'Dune Burner,Dune Soldier,Dune Herbalist', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 40, },
 	{ ['t'] = 8, ['d'] = 1, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_FL_natives_Elder_Falcon', ['default'] = 'Elder Falcon', ['guard'] = true, ['allow_random'] = false },
 	
@@ -53,9 +53,10 @@ return {
 	
 	{ ['t'] = 6, ['d'] = 3, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Buccaneer', ['default'] = 'Dune Burner', ['guard'] = true, },
 	
+	{ ['t'] = 6, ['d'] = 4, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Sailor', ['default'] = 'Dune Rover', },
 	{ ['t'] = 8, ['d'] = 4, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_FL_pirates_Novice_Enchanter', ['default'] = 'Dune Herbalist', },
 	
-	{ ['t'] = 6, ['d'] = 5, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Fishman_Fighter', ['default'] = 'Naga Ophidian', ['guard'] = true },
+	{ ['t'] = 6, ['d'] = 6, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Fishman_Fighter', ['default'] = 'Naga Ophidian', ['guard'] = true },
 	
 	-- 9 - 15 (mask y 19 - 13)
 	
@@ -72,7 +73,7 @@ return {
 	
 	{ ['t'] = 15, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Master_at_Arms', ['default'] = 'Outlaw', },
 	
-	{ ['t'] = 15, ['d'] = 5, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Sword_Brother', ['default'] = 'Thug', ['buff'] = 'A21:B52:C48:C1' },
+	{ ['t'] = 15, ['d'] = 6, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_FL_altaris_Sword_Brother', ['default'] = 'Thug', ['buff'] = 'A21:B52:C48:C1' },
 	
 	
 	-- 16 - 22 (mask y 12 - 6)
@@ -80,16 +81,17 @@ return {
 	{ ['t'] = 16, ['d'] = 1, ['side'] = 2, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_FL_pirates_Thunder_Serpent', ['default'] = 'Cuttle Fish', ['guard'] = true, ['gold'] = 40, ['beefy'] = 24, ['allow_random'] = false },
 	{ ['t'] = 18, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_FL_amazon_Harpy', ['default'] = 'Ghost', },
 	{ ['t'] = 19, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 3, ['type'] = 'AE_FL_bloodelf_Fire_Warrior', ['default'] = 'Drake Flameheart', ['recruits'] = 'AE_FL_bloodelf_Phoenix_Hatchling,AE_FL_bloodelf_Mage_of_Fire,AE_FL_amazon_Harpy', ['default_recruits'] = 'Drake Burner,Drake Clasher,Drake Fighter', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 75 },
-	{ ['t'] = 20, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_FL_amazon_Harpy', ['default'] = 'Ghost', },
 	
 	{ ['t'] = 18, ['d'] = 2, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_FL_amazon_Giant_Creeper', ['default'] = 'Wose Shaman', ['moves'] = 0, },
+	{ ['t'] = 20, ['d'] = 2, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_FL_amazon_Harpy', ['default'] = 'Ghost', },
 	
 	{ ['t'] = 20, ['d'] = 3, ['side'] = 2, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_FL_bloodelf_Phoenix', ['default'] = 'Inferno Drake', ['fast'] = 2, ['guard'] = true },
 	
 	{ ['t'] = 18, ['d'] = 4, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_FL_bloodelf_Minotaur_Warlord', ['default'] = 'Draug', ['guard'] = true },
 	
 	{ ['t'] = 19, ['d'] = 5, ['side'] = 4, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_FL_amazon_Harpy_Glider', ['default'] = 'Wraith', ['calls_for_help'] = true, ['race_guard_off'] = true },
-	{ ['t'] = 21, ['d'] = 5, ['side'] = 2, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_FL_natives_Skullbreaker', ['default'] = 'Great Troll', ['beefy'] = 40, ['guard'] = true },
+
+	{ ['t'] = 21, ['d'] = 6, ['side'] = 2, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_FL_natives_Skullbreaker', ['default'] = 'Great Troll', ['beefy'] = 40, },
 	
 	-- 22 / final boss
 	
