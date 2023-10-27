@@ -108,13 +108,17 @@ local find_conditional_buffs = function(pool_settings)
 		for k,v in ipairs({ 'C53','C53',  }) do segregation_pool[#segregation_pool + 1] = v end
 	end
 
+	if pool_settings['has_cold_attack'] and not pool_settings['has_strong_cold_ability'] then
+		for k,v in ipairs({ 'C54','C54',  }) do segregation_pool[#segregation_pool + 1] = v end
+	end
+
 	return segregation_pool
 end
 
 local early_allowed_buffs_table = { 
 	'A1','A3','A6','A7','A8','A9','A11','A12','A13','A15','A16','A18','A19','A22','A23','A24','A25','A28','A29','A31','A39','A47','A48','A49','A50','A51','A52','A53','A54',
 	'B1','B6','B11','B12','B13','B17','B19','B21','B23','B24','B25','B26','B27','B28','B39','B45','B46','B47','B48','B49','B50','B52',
-	'C1','C2','C3','C7','C8','C9','C11','C12','C13','C14','C15','C17','C20','C21','C22','C23','C24','C25','C26','C27','C39','C43','C44','C48','C50','C53',
+	'C1','C2','C3','C7','C8','C9','C11','C12','C13','C14','C15','C17','C20','C21','C22','C23','C24','C25','C26','C27','C39','C43','C44','C48','C50','C53','C54',
 }
 
 local restrict_op_buffs = function(pool)
@@ -208,7 +212,9 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 		['has_protected_by_darkness'] = wml.variables['qquws_champion_data.has_protected_by_darkness'],
 		['has_heavy_stun'] = wml.variables['qquws_champion_data.has_heavy_stun'],
 		['has_fire_attack'] = wml.variables['qquws_champion_data.has_fire_attack'],
-		['has_area_attack'] = wml.variables['qquws_champion_data.has_area_attack']
+		['has_cold_attack'] = wml.variables['qquws_champion_data.has_cold_attack'],
+		['has_area_attack'] = wml.variables['qquws_champion_data.has_area_attack'],
+		['has_strong_cold_ability'] = wml.variables['qquws_champion_data.has_strong_cold_ability'],
 	}
 	
 	local segregation_pool = find_conditional_buffs(pool_settings)
