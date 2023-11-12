@@ -16,6 +16,29 @@ local after_games_settings = {
 	{ ['turn'] = 40, ['index'] = 15, ['percentage'] = 100, ['colour'] = '#d11111', ['item'] = false, ['gold'] = 0, ['info'] = "", ['gates'] = true, ['max_steal'] = 0, },
 }
 
+local after_games_progression = {}
+
+local wave_space_settings = {
+	{ ['threshold'] = 80, ['space'] = 4 },
+	{ ['threshold'] = 60, ['space'] = 3 },
+	{ ['threshold'] = 30, ['space'] = 2 }
+}
+
+local wave_strength_colour_settings = {
+	{ ['threshold'] = 105, ['colour'] = '#850000' },
+	{ ['threshold'] = 90, ['colour'] = '#d11111' },
+	{ ['threshold'] = 82, ['colour'] = '#e34627' },
+	{ ['threshold'] = 76, ['colour'] = '#e36236' },
+	{ ['threshold'] = 70, ['colour'] = '#e37944' },
+	{ ['threshold'] = 64, ['colour'] = '#e39152' },
+	{ ['threshold'] = 58, ['colour'] = '#e09d5a' },
+	{ ['threshold'] = 52, ['colour'] = '#dea866' },
+	{ ['threshold'] = 46, ['colour'] = '#dec276' },
+	{ ['threshold'] = 40, ['colour'] = '#e3e19a' },
+	{ ['threshold'] = 34, ['colour'] = '#f3f5e4' },
+	{ ['threshold'] = 28, ['colour'] = '#cedbc3' },
+}
+
 local after_classic_locations = {
 	['map_13'] = { { ['x'] = 5, ['y'] = 4 }, { ['x'] = 11, ['y'] = 4 } },
 	['map_14'] = { { ['x'] = 4, ['y'] = 3 }, { ['x'] = 10, ['y'] = 3 } },
@@ -32,6 +55,49 @@ local all_boosts_table = {
 local east_items_table = {}
 local west_items_table = {}
 local copy_unit_counter = 0
+
+local get_fighting_space_length = function(percentage)
+	for k,v in ipairs(wave_space_settings) do
+		if percentage >= v['threshold'] then
+			return v['space']
+		end
+	end
+
+	return 2 -- must be 2 or higher so that mercenaries / boosts can be chosen
+end
+
+local get_enemy_strength_colour = function(percentage)
+	for k,v in ipairs(wave_strength_colour_settings) do
+		if percentage >= v['threshold'] then
+			return v['colour']
+		end
+	end
+
+	return '#a4ba91'
+end
+
+local get_settings_line = function(index, settings_key, previous_turn, previous_percentage, overwrite_percentage)
+	local next_turn = previous_turn + get_fighting_space_length(previous_percentage)
+	local next_percentage = after_games_settings[settings_key]['percentage']
+
+	if overwrite_percentage ~= nil then
+		next_percentage = overwrite_percentage
+	end
+
+	local ret = {
+		['turn'] = next_turn,
+		['index'] = index,
+		['percentage'] = next_percentage,
+		['colour'] = get_enemy_strength_colour(next_percentage),
+		['item'] = after_games_settings[settings_key]['item'],
+		['gold'] = after_games_settings[settings_key]['gold'],
+		['gates'] = false,
+		['max_steal'] = after_games_settings[index]['max_steal'],
+		['no_items_gold'] = after_games_settings[settings_key]['no_items_gold'],
+	}
+
+	return ret
+end
 
 local find_vacant_location = function(around_x, around_y, map_edge, from_side)
 	if from_side == 1 then
@@ -230,7 +296,7 @@ function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 	local is_spawn_turn = false
 	local is_preparation_turn = false
 	
-	for k,v in ipairs(after_games_settings) do
+	for k,v in ipairs(after_games_progression) do
 		if v['turn'] == turn_number then
 			is_spawn_turn = true
 			wml.variables['after_games_percentage'] = v['percentage'] - 100
@@ -264,9 +330,9 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	local available_items = {}
 	local west_item = ''
 	local east_item = ''
-	local drop_gold = after_games_settings[wave_index]['gold']
+	local drop_gold = after_games_progression[wave_index]['gold']
 	
-	if after_games_settings[wave_index]['item'] then
+	if after_games_progression[wave_index]['item'] then
 		if allow_items then
 			available_items = get_available_items({'magic_res','cold_res','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura'}, west_items_table)
 			west_item = mathx.random_choice(available_items)
@@ -276,7 +342,7 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 			east_item = mathx.random_choice(available_items)
 			table.insert(east_items_table, east_item)
 		else
-			drop_gold = after_games_settings[wave_index]['no_items_gold']
+			drop_gold = after_games_progression[wave_index]['no_items_gold']
 		end
 	end
 
@@ -330,4 +396,69 @@ function wesnoth.wml_actions.qquws_generate_random_boosts_table(cfg)
 	for k,v in pairs(boosts_table) do
 		wml.variables[wml_table_name .. '.' .. k .. '_available'] = v
 	end
+end
+
+function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
+	local style = cfg.style
+	local previous_turn = after_games_settings[1]['turn']
+	local previous_percentage = after_games_settings[1]['percentage']
+	local generated_key = 1
+	local shuffleable_keys = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 }
+	local recalculate_info_labels = false
+
+	if style == 'classic' then
+		after_games_progression = after_games_settings
+	elseif style == 'shuffled' then
+		after_games_progression[1] = after_games_settings[1]
+		mathx.shuffle(shuffleable_keys)
+		for k,key in ipairs(shuffleable_keys) do
+			generated_key = k + 1
+			after_games_progression[generated_key] = get_settings_line(generated_key, key, previous_turn, previous_percentage, nil)
+			previous_turn = after_games_progression[generated_key]['turn']
+			previous_percentage = after_games_progression[generated_key]['percentage']
+		end
+
+		after_games_progression[15] = after_games_settings[15]
+		after_games_progression[15]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
+		recalculate_info_labels = true
+	elseif style == 'mirrored' then
+		local next_random_group = 0
+		local next_random_percentage = 0
+		after_games_progression[1] = after_games_settings[1]
+		mathx.shuffle(shuffleable_keys)
+		for k,key in ipairs(shuffleable_keys) do
+			generated_key = k + 1
+			next_random_group = mathx.random_choice({ 'vlow', 'low', 'med', 'med', 'high', 'vhigh'})
+			if next_random_group == 'vlow' then
+				next_random_percentage = mathx.random(16, 28)
+			elseif next_random_group == 'low' then
+				next_random_percentage = mathx.random(28, 40)
+			elseif next_random_group == 'med' then
+				next_random_percentage = mathx.random(40, 80)
+			elseif next_random_group == 'high' then
+				next_random_percentage = mathx.random(80, 100)
+			else
+				next_random_percentage = mathx.random(100, 120)
+			end
+
+			after_games_progression[generated_key] = get_settings_line(generated_key, key, previous_turn, previous_percentage, next_random_percentage)
+			previous_turn = after_games_progression[generated_key]['turn']
+			previous_percentage = after_games_progression[generated_key]['percentage']
+		end
+
+		after_games_progression[15] = after_games_settings[15]
+		after_games_progression[15]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
+		recalculate_info_labels = true		
+	end
+
+	if recalculate_info_labels then
+		after_games_progression[14]['info'] = "Turn " .. tostring(after_games_progression[15]['turn']) .. " The Gates Open"
+
+		for k=13,1,-1 do
+			after_games_progression[k]['info'] = "Turn " .. tostring(after_games_progression[k + 1]['turn']) .. " Wave " .. tostring(k + 1) .. " (" .. tostring(after_games_progression[k + 1]['percentage']) .. "%)"
+		end
+	end
+
+	wesnoth.log('warn', wesnoth.as_text(after_games_progression), true)
+	wesnoth.interface.add_chat_message('asdf', 'asdffcds')
 end
