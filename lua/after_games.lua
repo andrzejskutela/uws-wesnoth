@@ -1,19 +1,19 @@
 local after_games_settings = { 
-	{ ['turn'] = 1, ['index'] = 1, ['percentage'] = 32, ['colour'] = '#fafafa', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 3 Wave 2 (36%)", ['gates'] = false, ['max_steal'] = 0, ['no_items_gold'] = 0, },
-	{ ['turn'] = 3, ['index'] = 2, ['percentage'] = 36, ['colour'] = '#f3f5e4', ['item'] = false, ['gold'] = 1, ['info'] = "Turn 5 Wave 3 (40%)", ['gates'] = false, ['max_steal'] = 10, },
-	{ ['turn'] = 5, ['index'] = 3, ['percentage'] = 40, ['colour'] = '#ebedce', ['item'] = false, ['gold'] = 3, ['info'] = "Turn 7 Wave 4 (44%)", ['gates'] = false, ['max_steal'] = 15, },
-	{ ['turn'] = 7, ['index'] = 4, ['percentage'] = 44, ['colour'] = '#e4e8ac', ['item'] = false, ['gold'] = 5, ['info'] = "Turn 9 Wave 5 (48%)", ['gates'] = false, ['max_steal'] = 20, },
-	{ ['turn'] = 9, ['index'] = 5, ['percentage'] = 48, ['colour'] = '#e3e19a', ['item'] = false, ['gold'] = 7, ['info'] = "Turn 11 Wave 6 (52%)", ['gates'] = false, ['max_steal'] = 25, },
-	{ ['turn'] = 11, ['index'] = 6, ['percentage'] = 52, ['colour'] = '#dbcf81', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 13 Wave 7 (56%)", ['gates'] = false, ['max_steal'] = 30, ['no_items_gold'] = 9, },
-	{ ['turn'] = 13, ['index'] = 7, ['percentage'] = 56, ['colour'] = '#dec276', ['item'] = false, ['gold'] = 12, ['info'] = "Turn 15 Wave 8 (60%)", ['gates'] = false, ['max_steal'] = 35, },
-	{ ['turn'] = 15, ['index'] = 8, ['percentage'] = 60, ['colour'] = '#dea866', ['item'] = false, ['gold'] = 15, ['info'] = "Turn 18 Wave 9 (65%)", ['gates'] = false, ['max_steal'] = 40, },
-	{ ['turn'] = 18, ['index'] = 9, ['percentage'] = 65, ['colour'] = '#e09d5a', ['item'] = false, ['gold'] = 18, ['info'] = "Turn 21 Wave 10 (70%)", ['gates'] = false, ['max_steal'] = 50, },
-	{ ['turn'] = 21, ['index'] = 10, ['percentage'] = 70, ['colour'] = '#e39152', ['item'] = false, ['gold'] = 21, ['info'] = "Turn 24 Wave 11 (75%)", ['gates'] = false, ['max_steal'] = 60, },
-	{ ['turn'] = 24, ['index'] = 11, ['percentage'] = 75, ['colour'] = '#e37944', ['item'] = true, ['gold'] = 0, ['info'] = "Turn 27 Wave 12 (80%)", ['gates'] = false, ['max_steal'] = 70, ['no_items_gold'] = 25, },
-	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['colour'] = '#e36236', ['item'] = false, ['gold'] = 30, ['info'] = "Turn 31 Wave 13 (86%)", ['gates'] = false, ['max_steal'] = 80, },
-	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 86, ['colour'] = '#e34627', ['item'] = false, ['gold'] = 75, ['info'] = "Turn 35 Wave 14 (92%)", ['gates'] = false, ['max_steal'] = 90, },
-	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 92, ['colour'] = '#de301d', ['item'] = false, ['gold'] = 200, ['info'] = "Turn 40 The Gates Open", ['gates'] = false, ['max_steal'] = 100, },
-	{ ['turn'] = 40, ['index'] = 15, ['percentage'] = 100, ['colour'] = '#d11111', ['item'] = false, ['gold'] = 0, ['info'] = "", ['gates'] = true, ['max_steal'] = 0, },
+	{ ['turn'] = 1, ['index'] = 1, ['percentage'] = 32, ['item'] = true, ['gold'] = 0, ['info'] = "Turn 3 Wave 2 (36%)", ['gates'] = false, ['max_steal'] = 0, ['no_items_gold'] = 0, },
+	{ ['turn'] = 3, ['index'] = 2, ['percentage'] = 36, ['item'] = false, ['gold'] = 1, ['info'] = "Turn 5 Wave 3 (40%)", ['gates'] = false, ['max_steal'] = 10, },
+	{ ['turn'] = 5, ['index'] = 3, ['percentage'] = 40, ['item'] = false, ['gold'] = 3, ['info'] = "Turn 7 Wave 4 (44%)", ['gates'] = false, ['max_steal'] = 15, },
+	{ ['turn'] = 7, ['index'] = 4, ['percentage'] = 44, ['item'] = false, ['gold'] = 5, ['info'] = "Turn 9 Wave 5 (48%)", ['gates'] = false, ['max_steal'] = 20, },
+	{ ['turn'] = 9, ['index'] = 5, ['percentage'] = 48, ['item'] = false, ['gold'] = 7, ['info'] = "Turn 11 Wave 6 (52%)", ['gates'] = false, ['max_steal'] = 25, },
+	{ ['turn'] = 11, ['index'] = 6, ['percentage'] = 52, ['item'] = true, ['gold'] = 0, ['info'] = "Turn 13 Wave 7 (56%)", ['gates'] = false, ['max_steal'] = 30, ['no_items_gold'] = 9, },
+	{ ['turn'] = 13, ['index'] = 7, ['percentage'] = 56, ['item'] = false, ['gold'] = 12, ['info'] = "Turn 15 Wave 8 (60%)", ['gates'] = false, ['max_steal'] = 35, },
+	{ ['turn'] = 15, ['index'] = 8, ['percentage'] = 60, ['item'] = false, ['gold'] = 15, ['info'] = "Turn 18 Wave 9 (65%)", ['gates'] = false, ['max_steal'] = 40, },
+	{ ['turn'] = 18, ['index'] = 9, ['percentage'] = 65, ['item'] = false, ['gold'] = 18, ['info'] = "Turn 21 Wave 10 (70%)", ['gates'] = false, ['max_steal'] = 50, },
+	{ ['turn'] = 21, ['index'] = 10, ['percentage'] = 70, ['item'] = false, ['gold'] = 21, ['info'] = "Turn 24 Wave 11 (75%)", ['gates'] = false, ['max_steal'] = 60, },
+	{ ['turn'] = 24, ['index'] = 11, ['percentage'] = 75, ['item'] = true, ['gold'] = 0, ['info'] = "Turn 27 Wave 12 (80%)", ['gates'] = false, ['max_steal'] = 70, ['no_items_gold'] = 25, },
+	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['item'] = false, ['gold'] = 30, ['info'] = "Turn 31 Wave 13 (86%)", ['gates'] = false, ['max_steal'] = 80, },
+	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 86, ['item'] = false, ['gold'] = 75, ['info'] = "Turn 35 Wave 14 (92%)", ['gates'] = false, ['max_steal'] = 90, },
+	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 92, ['item'] = false, ['gold'] = 200, ['info'] = "Turn 40 The Gates Open", ['gates'] = false, ['max_steal'] = 100, },
+	{ ['turn'] = 40, ['index'] = 15, ['percentage'] = 100, ['item'] = false, ['gold'] = 0, ['info'] = "", ['gates'] = true, ['max_steal'] = 0, },
 }
 
 local after_games_progression = {}
@@ -22,21 +22,6 @@ local wave_space_settings = {
 	{ ['threshold'] = 80, ['space'] = 4 },
 	{ ['threshold'] = 60, ['space'] = 3 },
 	{ ['threshold'] = 30, ['space'] = 2 }
-}
-
-local wave_strength_colour_settings = {
-	{ ['threshold'] = 105, ['colour'] = '#850000' },
-	{ ['threshold'] = 90, ['colour'] = '#d11111' },
-	{ ['threshold'] = 82, ['colour'] = '#e34627' },
-	{ ['threshold'] = 76, ['colour'] = '#e36236' },
-	{ ['threshold'] = 70, ['colour'] = '#e37944' },
-	{ ['threshold'] = 64, ['colour'] = '#e39152' },
-	{ ['threshold'] = 58, ['colour'] = '#e09d5a' },
-	{ ['threshold'] = 52, ['colour'] = '#dea866' },
-	{ ['threshold'] = 46, ['colour'] = '#dec276' },
-	{ ['threshold'] = 40, ['colour'] = '#e3e19a' },
-	{ ['threshold'] = 34, ['colour'] = '#f3f5e4' },
-	{ ['threshold'] = 28, ['colour'] = '#cedbc3' },
 }
 
 local after_classic_locations = {
@@ -66,29 +51,31 @@ local get_fighting_space_length = function(percentage)
 	return 2 -- must be 2 or higher so that mercenaries / boosts can be chosen
 end
 
-local get_enemy_strength_colour = function(percentage)
-	for k,v in ipairs(wave_strength_colour_settings) do
-		if percentage >= v['threshold'] then
-			return v['colour']
-		end
-	end
-
-	return '#a4ba91'
-end
-
 local get_settings_line = function(index, settings_key, previous_turn, previous_percentage, overwrite_percentage)
 	local next_turn = previous_turn + get_fighting_space_length(previous_percentage)
 	local next_percentage = after_games_settings[settings_key]['percentage']
+	local next_percentage_east = 0
+	local next_percentage_west = 0
 
 	if overwrite_percentage ~= nil then
 		next_percentage = overwrite_percentage
+	end
+
+	if type(next_percentage) == 'table' then
+		next_percentage_east = next_percentage[1]
+		next_percentage_west = next_percentage[2]
+		next_percentage = math.floor((next_percentage[1] + next_percentage[2]) / 2)
+	else
+		next_percentage_east = next_percentage
+		next_percentage_west = next_percentage
 	end
 
 	local ret = {
 		['turn'] = next_turn,
 		['index'] = index,
 		['percentage'] = next_percentage,
-		['colour'] = get_enemy_strength_colour(next_percentage),
+		['percentage_east'] = next_percentage_east,
+		['percentage_west'] = next_percentage_west,
 		['item'] = after_games_settings[settings_key]['item'],
 		['gold'] = after_games_settings[settings_key]['gold'],
 		['gates'] = false,
@@ -138,7 +125,7 @@ local unit_deep_copy = function(unit, x, y)
 	return id
 end
 
-local copy_all_units = function(from_side, to_side, locations, map_edge, gold_amount, item, extra_buff, own_buff)
+local copy_all_units = function(from_side, to_side, locations, map_edge, gold_amount, item, extra_buff, own_buff, base_percentage)
 	local enemy_units = wesnoth.get_units { side = from_side }
 	local give_gold = 0
 	local has_item = false
@@ -150,7 +137,9 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 	local extra_agile_buff = 0
 	local is_champion = false
 	local is_side_leader_copy = false
+
 	wml.variables['after_games_copied_from_side'] = from_side
+	wml.variables['after_games_base_percentage'] = base_percentage
 
 	if extra_buff == 'boost10' then
 		extra_percentage_buff = 10
@@ -374,8 +363,8 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 		east_debuff = 'weaker15'
 	end
 	
-	copy_all_units(1, 4, after_classic_locations[key], map_edge, drop_gold, east_item, extra_copy_buff_east, east_debuff)
-	copy_all_units(3, 2, after_classic_locations[key], map_edge, drop_gold, west_item, extra_copy_buff_west, west_debuff)
+	copy_all_units(1, 4, after_classic_locations[key], map_edge, drop_gold, east_item, extra_copy_buff_east, east_debuff, after_games_progression[wave_index]['percentage_east'])
+	copy_all_units(3, 2, after_classic_locations[key], map_edge, drop_gold, west_item, extra_copy_buff_west, west_debuff, after_games_progression[wave_index]['percentage_west'])
 end
 
 function wesnoth.wml_actions.qquws_generate_random_boosts_table(cfg)
@@ -400,6 +389,7 @@ end
 
 function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 	local style = cfg.style
+	local is_info_hidden = cfg.is_hidden
 	local previous_turn = after_games_settings[1]['turn']
 	local previous_percentage = after_games_settings[1]['percentage']
 	local generated_key = 1
@@ -449,16 +439,55 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 		after_games_progression[15] = after_games_settings[15]
 		after_games_progression[15]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
 		recalculate_info_labels = true		
+	elseif style == 'random' then
+		local next_random_group = 0
+		local random_percentage_values_east = {}
+		local random_percentage_values_west = {}
+		after_games_progression[1] = after_games_settings[1]
+		after_games_progression[1]['percentage_east'] = after_games_progression[1]['percentage']
+		after_games_progression[1]['percentage_west'] = after_games_progression[1]['percentage']
+
+		mathx.shuffle(shuffleable_keys)
+		for k,key in ipairs(shuffleable_keys) do
+			
+			random_percentage_values_east[k] = mathx.random(16, 120)
+			random_percentage_values_west[k] = random_percentage_values_east[k]
+		end
+
+		mathx.shuffle(random_percentage_values_west)
+
+		for k,key in ipairs(shuffleable_keys) do
+			generated_key = k + 1
+			after_games_progression[generated_key] = get_settings_line(generated_key, key, previous_turn, previous_percentage, { random_percentage_values_east[k], random_percentage_values_west[k] })
+			previous_turn = after_games_progression[generated_key]['turn']
+			previous_percentage = after_games_progression[generated_key]['percentage']
+		end
+
+		after_games_progression[15] = after_games_settings[15]
+		after_games_progression[15]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
+		recalculate_info_labels = true		
 	end
 
 	if recalculate_info_labels then
 		after_games_progression[14]['info'] = "Turn " .. tostring(after_games_progression[15]['turn']) .. " The Gates Open"
+		local progression_value = 0
 
 		for k=13,1,-1 do
-			after_games_progression[k]['info'] = "Turn " .. tostring(after_games_progression[k + 1]['turn']) .. " Wave " .. tostring(k + 1) .. " (" .. tostring(after_games_progression[k + 1]['percentage']) .. "%)"
+			progression_value = tostring(after_games_progression[k + 1]['percentage'])
+			if is_info_hidden then
+				progression_value = '?'
+			end
+
+			after_games_progression[k]['info'] = "Turn " .. tostring(after_games_progression[k + 1]['turn']) .. " Wave " .. tostring(k + 1) .. " (" .. progression_value .. ")"
+		end
+	end
+
+	if after_games_progression[1]['percentage_east'] == nil then
+		for k=1,15,1 do
+			after_games_progression[k]['percentage_east'] = after_games_progression[k]['percentage']
+			after_games_progression[k]['percentage_west'] = after_games_progression[k]['percentage']
 		end
 	end
 
 	wesnoth.log('warn', wesnoth.as_text(after_games_progression), true)
-	wesnoth.interface.add_chat_message('asdf', 'asdffcds')
 end
