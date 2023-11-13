@@ -387,7 +387,7 @@ return {
 	{ ['t'] = 116, ['d'] = 2, ['side'] = 3, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = 'Longbowman', },
 	{ ['t'] = 119, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'Swordsman', ['default'] = 'Swordsman', ['armored'] = 5 },
 	
-	{ ['t'] = 119, ['d'] = 3, ['side'] = 3, ['x'] = 9, ['lvl'] = 3, ['type'] = 'Iron Mauler', ['default'] = 'Iron Mauler', ['beefy'] = 80, ['armored'] = 10, ['calls_for_help'] = true },
+	{ ['t'] = 119, ['d'] = 3, ['side'] = 3, ['x'] = 9, ['lvl'] = 4, ['type'] = 'QQ_destroyer', ['default'] = 'QQ_destroyer', ['beefy'] = 80, ['armored'] = 10, ['calls_for_help'] = true },
 	
 	{ ['t'] = 119, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 4, ['type'] = 'AE_rhy_ce_Grand_Marshal', ['default'] = 'Grand Marshal', ['disallow_slash_unguardian'] = true, },
 

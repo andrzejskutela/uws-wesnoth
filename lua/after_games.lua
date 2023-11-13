@@ -12,13 +12,14 @@ local after_games_settings = {
 	{ ['turn'] = 24, ['index'] = 11, ['percentage'] = 75, ['item'] = true, ['gold'] = 0, ['info'] = "Turn 27 Wave 12 (80%)", ['gates'] = false, ['max_steal'] = 70, ['no_items_gold'] = 25, },
 	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['item'] = false, ['gold'] = 30, ['info'] = "Turn 31 Wave 13 (86%)", ['gates'] = false, ['max_steal'] = 80, },
 	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 86, ['item'] = false, ['gold'] = 75, ['info'] = "Turn 35 Wave 14 (92%)", ['gates'] = false, ['max_steal'] = 90, },
-	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 92, ['item'] = false, ['gold'] = 200, ['info'] = "Turn 40 The Gates Open", ['gates'] = false, ['max_steal'] = 100, },
+	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 92, ['item'] = false, ['gold'] = 125, ['info'] = "Turn 40 The Gates Open", ['gates'] = false, ['max_steal'] = 100, },
 	{ ['turn'] = 40, ['index'] = 15, ['percentage'] = 100, ['item'] = false, ['gold'] = 0, ['info'] = "", ['gates'] = true, ['max_steal'] = 0, },
 }
 
 local after_games_progression = {}
 
 local wave_space_settings = {
+	{ ['threshold'] = 100, ['space'] = 5 },
 	{ ['threshold'] = 80, ['space'] = 4 },
 	{ ['threshold'] = 60, ['space'] = 3 },
 	{ ['threshold'] = 30, ['space'] = 2 }
@@ -56,15 +57,44 @@ local get_settings_line = function(index, settings_key, previous_turn, previous_
 	local next_percentage = after_games_settings[settings_key]['percentage']
 	local next_percentage_east = 0
 	local next_percentage_west = 0
+	local copy_style = 'value_per_player'
 
 	if overwrite_percentage ~= nil then
 		next_percentage = overwrite_percentage
 	end
 
 	if type(next_percentage) == 'table' then
-		next_percentage_east = next_percentage[1]
-		next_percentage_west = next_percentage[2]
-		next_percentage = math.floor((next_percentage[1] + next_percentage[2]) / 2)
+		if next_percentage['type'] == 'per_player' then
+			next_percentage_east = next_percentage['east']
+			next_percentage_west = next_percentage['west']
+			next_percentage = math.floor((next_percentage['east'] + next_percentage['west']) / 2)
+		elseif next_percentage['type'] == 'per_unit' then
+			next_percentage_east = next_percentage['values']
+			next_percentage_west = next_percentage['values']
+
+			local total = 0
+			local no_of_keys = 0
+			for k,v in ipairs(next_percentage['values']) do
+				total = total + v
+				no_of_keys = no_of_keys + 1
+			end
+
+			next_percentage = math.floor(total / no_of_keys)
+			copy_style = 'value_per_unit'
+		elseif next_percentage['type'] == 'per_player_unit' then
+			next_percentage_east = next_percentage['east']
+			next_percentage_west = next_percentage['west']
+
+			local total = 0
+			local no_of_keys = 0
+			for k,v in ipairs(next_percentage['east']) do
+				total = total + v + next_percentage['west'][k]
+				no_of_keys = no_of_keys + 2
+			end
+
+			next_percentage = math.floor(total / no_of_keys)
+			copy_style = 'value_per_unit'
+		end
 	else
 		next_percentage_east = next_percentage
 		next_percentage_west = next_percentage
@@ -81,6 +111,7 @@ local get_settings_line = function(index, settings_key, previous_turn, previous_
 		['gates'] = false,
 		['max_steal'] = after_games_settings[index]['max_steal'],
 		['no_items_gold'] = after_games_settings[settings_key]['no_items_gold'],
+		['copy_style'] = copy_style,
 	}
 
 	return ret
@@ -125,7 +156,7 @@ local unit_deep_copy = function(unit, x, y)
 	return id
 end
 
-local copy_all_units = function(from_side, to_side, locations, map_edge, gold_amount, item, extra_buff, own_buff, base_percentage)
+local copy_all_units = function(from_side, to_side, locations, map_edge, gold_amount, item, extra_buff, own_buff, base_percentage, copy_style)
 	local enemy_units = wesnoth.get_units { side = from_side }
 	local give_gold = 0
 	local has_item = false
@@ -139,7 +170,9 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 	local is_side_leader_copy = false
 
 	wml.variables['after_games_copied_from_side'] = from_side
-	wml.variables['after_games_base_percentage'] = base_percentage
+	if copy_style == 'value_per_player' then
+		wml.variables['after_games_base_percentage'] = base_percentage
+	end
 
 	if extra_buff == 'boost10' then
 		extra_percentage_buff = 10
@@ -199,6 +232,10 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 			end
 		elseif u.canrecruit and extra_buff == 'champion' then
 			is_champion = true
+		end
+
+		if copy_style == 'value_per_unit' then
+			wml.variables['after_games_base_percentage'] = base_percentage[(k % #base_percentage) + 1]
 		end
 		
 		if u.canrecruit then
@@ -363,8 +400,8 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 		east_debuff = 'weaker15'
 	end
 	
-	copy_all_units(1, 4, after_classic_locations[key], map_edge, drop_gold, east_item, extra_copy_buff_east, east_debuff, after_games_progression[wave_index]['percentage_east'])
-	copy_all_units(3, 2, after_classic_locations[key], map_edge, drop_gold, west_item, extra_copy_buff_west, west_debuff, after_games_progression[wave_index]['percentage_west'])
+	copy_all_units(1, 4, after_classic_locations[key], map_edge, drop_gold, east_item, extra_copy_buff_east, east_debuff, after_games_progression[wave_index]['percentage_east'], after_games_progression[wave_index]['copy_style'])
+	copy_all_units(3, 2, after_classic_locations[key], map_edge, drop_gold, west_item, extra_copy_buff_west, west_debuff, after_games_progression[wave_index]['percentage_west'], after_games_progression[wave_index]['copy_style'])
 end
 
 function wesnoth.wml_actions.qquws_generate_random_boosts_table(cfg)
@@ -395,6 +432,7 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 	local generated_key = 1
 	local shuffleable_keys = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 }
 	local recalculate_info_labels = false
+	local number_of_per_player_random_values = 7
 
 	if style == 'classic' then
 		after_games_progression = after_games_settings
@@ -440,7 +478,6 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 		after_games_progression[15]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
 		recalculate_info_labels = true		
 	elseif style == 'random' then
-		local next_random_group = 0
 		local random_percentage_values_east = {}
 		local random_percentage_values_west = {}
 		after_games_progression[1] = after_games_settings[1]
@@ -458,14 +495,97 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 
 		for k,key in ipairs(shuffleable_keys) do
 			generated_key = k + 1
-			after_games_progression[generated_key] = get_settings_line(generated_key, key, previous_turn, previous_percentage, { random_percentage_values_east[k], random_percentage_values_west[k] })
+			after_games_progression[generated_key] = get_settings_line(generated_key, key, previous_turn, previous_percentage, { ['type'] = 'per_player', ['east'] = random_percentage_values_east[k], ['west'] = random_percentage_values_west[k] })
 			previous_turn = after_games_progression[generated_key]['turn']
 			previous_percentage = after_games_progression[generated_key]['percentage']
 		end
 
 		after_games_progression[15] = after_games_settings[15]
 		after_games_progression[15]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
-		recalculate_info_labels = true		
+		recalculate_info_labels = true
+	elseif style == 'chaos' then
+		local next_random_group = 0
+		local random_percentage_values = {}
+		after_games_progression[1] = after_games_settings[1]
+		after_games_progression[1]['percentage_east'] = after_games_progression[1]['percentage']
+		after_games_progression[1]['percentage_west'] = after_games_progression[1]['percentage']
+		after_games_progression[1]['copy_style'] = 'value_per_player' 
+
+		mathx.shuffle(shuffleable_keys)
+
+		for k,key in ipairs(shuffleable_keys) do
+			generated_key = k + 1
+			random_percentage_values = {}
+			for wave_k=1,number_of_per_player_random_values,1 do
+				next_random_group = mathx.random_choice({ 'vlow', 'low', 'low', 'med', 'med', 'med', 'high', 'vhigh'})
+				if next_random_group == 'vlow' then
+					random_percentage_values[wave_k] = mathx.random(16, 28)
+				elseif next_random_group == 'low' then
+					random_percentage_values[wave_k] = mathx.random(28, 40)
+				elseif next_random_group == 'med' then
+					random_percentage_values[wave_k] = mathx.random(40, 80)
+				elseif next_random_group == 'high' then
+					random_percentage_values[wave_k] = mathx.random(80, 100)
+				else
+					random_percentage_values[wave_k] = mathx.random(100, 120)
+				end
+			end
+
+			after_games_progression[generated_key] = get_settings_line(generated_key, key, previous_turn, previous_percentage, { ['type'] = 'per_unit', ['values'] = random_percentage_values })
+			previous_turn = after_games_progression[generated_key]['turn']
+			previous_percentage = after_games_progression[generated_key]['percentage']
+		end
+
+		after_games_progression[15] = after_games_settings[15]
+		after_games_progression[15]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
+		recalculate_info_labels = true
+	elseif style == 'total_chaos' then
+		local next_random_group = 0
+		local random_percentage_values_east = {}
+		local random_percentage_values_west = {}
+		after_games_progression[1] = after_games_settings[1]
+		after_games_progression[1]['percentage_east'] = after_games_progression[1]['percentage']
+		after_games_progression[1]['percentage_west'] = after_games_progression[1]['percentage']
+		after_games_progression[1]['copy_style'] = 'value_per_player' 
+
+		mathx.shuffle(shuffleable_keys)
+
+		for k,key in ipairs(shuffleable_keys) do
+			generated_key = k + 1
+			random_percentage_values_east = {}
+			random_percentage_values_west = { 99 }
+
+			for wave_k=1,number_of_per_player_random_values,1 do
+				next_random_group = mathx.random_choice({ 'vlow', 'low', 'low', 'med', 'med', 'med', 'high', 'vhigh', 'wide'})
+				if next_random_group == 'vlow' then
+					random_percentage_values_east[wave_k] = mathx.random(16, 45)
+					random_percentage_values_west[(wave_k % number_of_per_player_random_values) + 1] = mathx.random(16, 45)
+				elseif next_random_group == 'low' then
+					random_percentage_values_east[wave_k] = mathx.random(32, 58)
+					random_percentage_values_west[(wave_k % number_of_per_player_random_values) + 1] = mathx.random(32, 58)
+				elseif next_random_group == 'med' then
+					random_percentage_values_east[wave_k] = mathx.random(44, 77)
+					random_percentage_values_west[(wave_k % number_of_per_player_random_values) + 1] = mathx.random(44, 77)
+				elseif next_random_group == 'high' then
+					random_percentage_values_east[wave_k] = mathx.random(69, 95)
+					random_percentage_values_west[(wave_k % number_of_per_player_random_values) + 1] = mathx.random(69, 95)
+				elseif next_random_group == 'vhigh' then
+					random_percentage_values_east[wave_k] = mathx.random(90, 120)
+					random_percentage_values_west[(wave_k % number_of_per_player_random_values) + 1] = mathx.random(90, 120)
+				elseif next_random_group == 'wide' then
+					random_percentage_values_east[wave_k] = mathx.random(15, 150)
+					random_percentage_values_west[(wave_k % number_of_per_player_random_values) + 1] = mathx.random(15, 150)
+				end
+			end
+
+			after_games_progression[generated_key] = get_settings_line(generated_key, key, previous_turn, previous_percentage, { ['type'] = 'per_player_unit', ['east'] = random_percentage_values_east, ['west'] = random_percentage_values_west })
+			previous_turn = after_games_progression[generated_key]['turn']
+			previous_percentage = after_games_progression[generated_key]['percentage']
+		end
+
+		after_games_progression[15] = after_games_settings[15]
+		after_games_progression[15]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
+		recalculate_info_labels = true
 	end
 
 	if recalculate_info_labels then
@@ -486,6 +606,7 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 		for k=1,15,1 do
 			after_games_progression[k]['percentage_east'] = after_games_progression[k]['percentage']
 			after_games_progression[k]['percentage_west'] = after_games_progression[k]['percentage']
+			after_games_progression[k]['copy_style'] = 'value_per_player' 
 		end
 	end
 
