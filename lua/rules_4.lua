@@ -478,7 +478,7 @@ return {
 	
 	{ ['t'] = 157, ['d'] = 1, ['side'] = 4, ['x'] = 25, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A41:B9:C19', ['race_guard_off'] = true, ['allow_random'] = false },
 	{ ['t'] = 158, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A20:B41:C9', ['race_guard_off'] = true, ['allow_random'] = false },
-	{ ['t'] = 158, ['d'] = 1, ['side'] = 4, ['x'] = 23, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A27:B41:C13', ['race_guard_off'] = true, ['allow_random'] = false },
+	{ ['t'] = 158, ['d'] = 1, ['side'] = 4, ['x'] = 23, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A30:B41:C13', ['race_guard_off'] = true, ['allow_random'] = false },
 	{ ['t'] = 158, ['d'] = 1, ['side'] = 4, ['x'] = 25, ['lvl'] = 6, ['type'] = 'QQ_adjudicator', ['default'] = 'QQ_adjudicator', ['buff'] = 'A23:B7:C29', ['guard'] = true },
 
 	{ ['t'] = 160, ['d'] = 2, ['side'] = 4, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_mrc_enchanters_Shadow_Blade', ['default'] = 'Spectre', ['beefy'] = 28, ['armored'] = 5 },

@@ -593,12 +593,12 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 		local progression_value = 0
 
 		for k=13,1,-1 do
-			progression_value = tostring(after_games_progression[k + 1]['percentage'])
+			progression_value = " (" .. tostring(after_games_progression[k + 1]['percentage']) .. '%)'
 			if is_info_hidden then
-				progression_value = '?'
+				progression_value = ''
 			end
 
-			after_games_progression[k]['info'] = "Turn " .. tostring(after_games_progression[k + 1]['turn']) .. " Wave " .. tostring(k + 1) .. " (" .. progression_value .. ")"
+			after_games_progression[k]['info'] = "Turn " .. tostring(after_games_progression[k + 1]['turn']) .. " Wave " .. tostring(k + 1) ..  progression_value 
 		end
 	end
 
@@ -609,6 +609,4 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 			after_games_progression[k]['copy_style'] = 'value_per_player' 
 		end
 	end
-
-	wesnoth.log('warn', wesnoth.as_text(after_games_progression), true)
 end
