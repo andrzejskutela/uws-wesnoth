@@ -402,6 +402,8 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	
 	copy_all_units(1, 4, after_classic_locations[key], map_edge, drop_gold, east_item, extra_copy_buff_east, east_debuff, after_games_progression[wave_index]['percentage_east'], after_games_progression[wave_index]['copy_style'])
 	copy_all_units(3, 2, after_classic_locations[key], map_edge, drop_gold, west_item, extra_copy_buff_west, west_debuff, after_games_progression[wave_index]['percentage_west'], after_games_progression[wave_index]['copy_style'])
+	wml.variables['after_games_3_wave_boost'] = extra_copy_buff_west
+	wml.variables['after_games_1_wave_boost'] = extra_copy_buff_east
 end
 
 function wesnoth.wml_actions.qquws_generate_random_boosts_table(cfg)
