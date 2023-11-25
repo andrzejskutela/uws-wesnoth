@@ -485,6 +485,7 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 		after_games_progression[1] = after_games_settings[1]
 		after_games_progression[1]['percentage_east'] = after_games_progression[1]['percentage']
 		after_games_progression[1]['percentage_west'] = after_games_progression[1]['percentage']
+		after_games_progression[1]['copy_style'] = 'value_per_player' 
 
 		mathx.shuffle(shuffleable_keys)
 		for k,key in ipairs(shuffleable_keys) do
