@@ -15,7 +15,7 @@ local find_amla_buffs = function(amla_settings)
 		end
 		
 		if amla_settings['has_magical_ranged'] then
-			if amla_settings['is_intelligent'] then
+			if amla_settings['is_intelligent'] and not amla_settings['has_op_magical_ranged'] then
 				allowed_amlas[#allowed_amlas + 1] = 'R_MAG_ACC'
 			end
 		else
@@ -186,6 +186,7 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 		['has_ranged'] = wml.variables["qquws_amla_data.has_ranged_attack"],
 		['has_melee'] = wml.variables["qquws_amla_data.has_melee_attack"],
 		['has_magical_ranged'] = wml.variables["qquws_amla_data.has_magical_ranged"],
+		['has_op_magical_ranged'] = wml.variables["qquws_amla_data.has_op_magical_ranged"],
 		['has_magical_melee'] = wml.variables["qquws_amla_data.has_magical_melee"],
 		['has_steadfast'] = wml.variables["qquws_amla_data.has_steadfast"],
 		['is_fast'] = wml.variables["qquws_amla_data.is_fast"],
