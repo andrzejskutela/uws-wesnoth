@@ -464,7 +464,7 @@ return {
 	
 	{ ['t'] = 150, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Shieldmaster', ['default'] = 'Draug', ['moves'] = 0, },
 	{ ['t'] = 151, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 4, ['type'] = 'AE_mag_Master_of_Darkness', ['default'] = 'Ancient Lich', ['guard'] = true, ['beefy'] = 20, ['calls_for_help'] = true },
-	{ ['t'] = 154, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 7, ['type'] = 'QQ_grand_sultan_of_fire', ['default'] = 'QQ_grand_sultan_of_fire', ['buff'] = 'A40:B40:C40:C4', ['allow_random'] = false },
+	{ ['t'] = 154, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 7, ['type'] = 'QQ_grand_sultan_of_fire', ['default'] = 'QQ_grand_sultan_of_fire', ['buff'] = 'A40:B40:C40:C1', ['allow_random'] = false },
 	
 	{ ['t'] = 153, ['d'] = 2, ['side'] = 4, ['x'] = 21, ['lvl'] = 4, ['type'] = 'AE_ext_chaos_Overlord', ['default'] = 'Yeti', ['race_guard_off'] = true, ['armored'] = 10 },
 
