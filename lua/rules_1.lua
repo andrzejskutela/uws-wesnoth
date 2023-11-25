@@ -52,17 +52,16 @@ return {
 	-- 9 - 15 (mask y 67 - 61)
 	
 	{ ['t'] = 10, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'Dwarvish Thunderer', },
-	
 	{ ['t'] = 13, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'Dwarvish Steelclad', ['recruits'] = 'Dwarvish Fighter,Dwarvish Thunderer', ['r_lvls'] = '1,1', ['recruitment_gold'] = 50, ['gold'] = 60 },
 	{ ['t'] = 13, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Thug', },
 	{ ['t'] = 13, ['d'] = 1, ['side'] = 4, ['x'] = 25, ['lvl'] = 2, ['type'] = 'Trapper', ['recruits'] = 'Poacher,Footpad,Thug,Thief', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 40, ['item'] = true },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', ['moves'] = 0, },
-	{ ['t'] = 15, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'Dwarvish Ulfserker', ['allow_random'] = false },
 	{ ['t'] = 15, ['d'] = 1, ['side'] = 1, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Elvish Druid', ['allow_random'] = false },
 	
 	{ ['t'] = 12, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'Gryphon Rider', },
 	
 	{ ['t'] = 11, ['d'] = 3, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'Dwarvish Fighter', },
+	{ ['t'] = 15, ['d'] = 3, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'Dwarvish Ulfserker', ['allow_random'] = false },
 
 	{ ['t'] = 13, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'Dwarvish Ulfserker', ['bulky'] = 60, },
 	{ ['t'] = 14, ['d'] = 4, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'Dwarvish Scout', ['fast'] = 1 },
@@ -99,7 +98,6 @@ return {
 	{ ['t'] = 25, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 2, ['type'] = 'Troll Rocklobber', ['moves'] = 0, ['item'] = true },
 	{ ['t'] = 25, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 1, ['type'] = 'Elvish Archer', },
 	{ ['t'] = 25, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'Elvish Archer', },
-	{ ['t'] = 26, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'Naga Warrior', },
 	{ ['t'] = 29, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'Saurian Augur', },
 	
 	{ ['t'] = 23, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 3, ['type'] = 'Elvish Enchantress', },
@@ -107,6 +105,7 @@ return {
 	
 	{ ['t'] = 25, ['d'] = 3, ['side'] = 2, ['x'] = 5, ['lvl'] = 1, ['type'] = 'Troll Whelp', },
 	{ ['t'] = 24, ['d'] = 3, ['side'] = 2, ['x'] = 25, ['lvl'] = 3, ['type'] = 'Elvish Marshal', ['gold'] = 10 },
+	{ ['t'] = 26, ['d'] = 3, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'Naga Warrior', },
 
 	{ ['t'] = 24, ['d'] = 4, ['side'] = 2, ['x'] = 24, ['lvl'] = 1, ['type'] = 'Elvish Fighter', },
 	{ ['t'] = 26, ['d'] = 4, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'Naga Warrior', },

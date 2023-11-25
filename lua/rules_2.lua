@@ -113,7 +113,6 @@ return {
 	{ ['t'] = 16, ['d'] = 1, ['side'] = 3, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_rhy_rg_Frigate', ['default'] = 'Pirate Galleon', },
 	{ ['t'] = 16, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_mag_Water_Elemental', ['default'] = 'Great Seahorse', },
 	{ ['t'] = 16, ['d'] = 1, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_rhy_rg_Noble_Fighter', ['default'] = 'Sergeant', },
-	{ ['t'] = 17, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_rhy_rg_Frigate', ['default'] = 'Pirate Galleon', },
 	{ ['t'] = 17, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_fut_brungar_Crab', ['default'] = 'Rock Scorpion', },
 	{ ['t'] = 17, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_stf_triththa_Squid', ['default'] = 'Merman Hunter', ['bulky'] = 32, ['gold'] = 15, ['guard'] = true, ['disallow_slash_unguardian'] = true },
 	{ ['t'] = 18, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Diver', ['default'] = 'Merman Netcaster', ['item'] = true },
@@ -129,6 +128,7 @@ return {
 	
 	{ ['t'] = 17, ['d'] = 5, ['side'] = 3, ['x'] = 27, ['lvl'] = 2, ['type'] = 'AE_fut_brungar_Overgrown_Crab', ['default'] = 'Cuttle Fish', ['armored'] = 5, ['disallow_slash_unguardian'] = true },
 	
+	{ ['t'] = 17, ['d'] = 6, ['side'] = 3, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_rhy_rg_Frigate', ['default'] = 'Pirate Galleon', },
 	{ ['t'] = 20, ['d'] = 6, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Able_Seaman', ['default'] = 'Merman Spearman', ['beefy'] = 24, ['bulky'] = 24, },
 	
 	-- 23 - 29 (mask y 58 - 52)
@@ -194,7 +194,6 @@ return {
 	{ ['t'] = 38, ['d'] = 1, ['side'] = 3, ['x'] = 5, ['lvl'] = 2, ['type'] = 'AE_arc_khthon_Ophis', ['default'] = 'Orcish Slayer', ['guard'] = true, ['race_guard_off'] = true },
 	{ ['t'] = 40, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_ext_chaos_Doom_Guard', ['default'] = 'Orcish Warrior', ['moves'] = 0 },
 	{ ['t'] = 41, ['d'] = 1, ['side'] = 3, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_arc_khthon_Bone_Snapper', ['default'] = 'Giant Scorpion', ['bulky'] = 30, ['race_guard_off'] = true },
-	{ ['t'] = 42, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_mrc_infernai_Demon_Dog', ['default'] = 'Orcish Grunt', },
 	{ ['t'] = 43, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Hell_Guardian', ['default'] = 'Highwayman', ['guard'] = true, ['item'] = true, ['armored'] = 15 },
 	
 	{ ['t'] = 38, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_ext_chaos_Flesh_Hound', ['default'] = 'Ogre', },
@@ -207,7 +206,8 @@ return {
 	{ ['t'] = 41, ['d'] = 4, ['side'] = 3, ['x'] = 28, ['lvl'] = 2, ['type'] = 'AE_mrc_infernai_Troglodyte', ['default'] = 'Saurian Ambusher', ['buff'] = 'A17:B17:C17:C16', },
 
 	{ ['t'] = 41, ['d'] = 5, ['side'] = 3, ['x'] = 27, ['lvl'] = 2, ['type'] = 'AE_mrc_infernai_Troglodyte', ['default'] = 'Saurian Ambusher', },
-	
+	{ ['t'] = 42, ['d'] = 5, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_mrc_infernai_Demon_Dog', ['default'] = 'Orcish Grunt', },
+
 	{ ['t'] = 40, ['d'] = 6, ['side'] = 3, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_mag_Black_Portal', ['default'] = 'Ghast', ['allow_random'] = false, ['race_guard_off'] = true, ['buff'] = 'A18:B18:C18:C2', ['calls_for_help'] = true },
 	
 	-- 44 - 50 (mask y 37 - 31)
@@ -258,9 +258,8 @@ return {
 	{ ['t'] = 58, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_rhy_de_Elvish_Boat', ['default'] = 'Pirate Galleon', ['gold'] = 10 },
 	{ ['t'] = 59, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_fut_welkin_Flurry', ['default'] = 'Elder Falcon', ['gold'] = 6 },
 	{ ['t'] = 59, ['d'] = 1, ['side'] = 2, ['x'] = 12, ['lvl'] = 3, ['type'] = 'AE_mag_Neutral_Summoner', ['default'] = 'Elvish Avenger', ['gold'] = 16, ['event'] = 'follow_players_race' },
-	{ ['t'] = 60, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_mag_Hidden_Face', ['default'] = 'Elvish Archer', ['gold'] = 5, },
+	{ ['t'] = 60, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_mag_Hidden_Face', ['default'] = 'Elvish Archer', ['gold'] = 13, },
 	{ ['t'] = 61, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_fut_welkin_Luna_Protector', ['default'] = 'Elvish Fighter', ['bulky'] = 30, ['guard'] = true },
-	{ ['t'] = 62, ['d'] = 1, ['side'] = 2, ['x'] = 28, ['lvl'] = 1, ['type'] = 'AE_chs_aragwaith_Eagle_Rider', ['default'] = 'Drake Glider', ['gold'] = 8 },
 	{ ['t'] = 63, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_fut_welkin_Sentinel_of_the_Moon', ['default'] = 'Drake Thrasher', ['gold'] = 7, ['guard'] = true },
 	{ ['t'] = 63, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_rhy_tr_Luna', ['default'] = 'Elvish Lady', ['item'] = true },
 	{ ['t'] = 64, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_rhy_aq_Newmoonmage', ['default'] = 'Elvish High Lord', ['recruits'] = 'AE_rhy_aq_Hoplite,AE_rhy_aq_Tank,Mermaid Siren,Merman Hoplite,Merman Triton,Merman Javelineer,Merman Entangler,AE_rhy_aq_Master_Bowman', ['default_recruits'] = 'Elvish Sharpshooter,Elvish Outrider,Elvish Enchantress,Mermaid Diviner,Merman Triton,Merman Entangler', ['r_lvls'] = '3,3,3,3,3,3', ['recruitment_gold'] = 250 },
@@ -273,6 +272,7 @@ return {
 	{ ['t'] = 58, ['d'] = 5, ['side'] = 4, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Black_Spider', ['default'] = 'Drake Warrior', },
 	
 	{ ['t'] = 62, ['d'] = 6, ['side'] = 2, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_chs_aragwaith_Eagle_Rider', ['default'] = 'Drake Glider', },
+	{ ['t'] = 62, ['d'] = 6, ['side'] = 2, ['x'] = 28, ['lvl'] = 1, ['type'] = 'AE_chs_aragwaith_Eagle_Rider', ['default'] = 'Drake Glider', },
 	
 	-- 65 - 69 (mask y 16 - 12)
 	

@@ -54,7 +54,6 @@ return {
 	{ ['t'] = 9, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Elvish Scout', ['fast'] = 1 },
 	{ ['t'] = 11, ['d'] = 1, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', ['bulky'] = 20 },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Tentacle of the Deep', ['guard'] = true },
-	{ ['t'] = 15, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Ghost', ['guard'] = true },
 	{ ['t'] = 15, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'Vampire Bat', ['guard'] = true },
 	
 	{ ['t'] = 10, ['d'] = 2, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Orcish Crossbowman', ['guard'] = true },
@@ -64,6 +63,8 @@ return {
 
 	{ ['t'] = 11, ['d'] = 4, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Dwarvish Stalwart', },
 	{ ['t'] = 14, ['d'] = 4, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Rogue', },
+
+	{ ['t'] = 15, ['d'] = 5, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Ghost', ['guard'] = true },
 	
 	{ ['t'] = 9, ['d'] = 6, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Great Horse', ['bulky'] = 40, },
 	{ ['t'] = 15, ['d'] = 6, ['side'] = 2, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Rock Scorpion', ['buff'] = 'A25:B25:C25', },
