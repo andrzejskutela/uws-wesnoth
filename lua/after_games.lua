@@ -35,7 +35,8 @@ local after_classic_locations = {
 
 local all_boosts_table = {
 	'boost10', 'boost20', 'bulky', 'beefy', 'armored', 'fast', 'agile', 'champion', 'slow', 'steal', 'improved_damage',
-	'reheal_own', 'deboost15', 'slow_wave', 'mirror', 'cancel', 'turtle_up', 'poison', 'damage_armor', 'drunk_opponent'
+	'reheal_own', 'deboost15', 'slow_wave', 'mirror', 'cancel', 'turtle_up', 'poison', 'damage_armor', 'drunk_opponent',
+	'boost15', 'minions', 'strong_leader', 'dragon_heart', 'freeze_leader', 'easy_targets', 'payback', 'remove_specials',
 }
 
 local east_items_table = {}
@@ -168,6 +169,8 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 	local extra_agile_buff = 0
 	local is_champion = false
 	local is_side_leader_copy = false
+	local use_minion_type_code = ''
+	local minion_type = ''
 
 	wml.variables['after_games_copied_from_side'] = from_side
 	if copy_style == 'value_per_player' then
@@ -176,8 +179,12 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 
 	if extra_buff == 'boost10' then
 		extra_percentage_buff = 10
+	elseif extra_buff == 'boost15' then
+		extra_percentage_buff = 15
 	elseif extra_buff == 'boost20' then
 		extra_percentage_buff = 20
+	elseif extra_buff == 'minions' then
+		minion_type = mathx.random_choice({ 'A3','A4','A10','A12','A13','A23','A29','A30','A34','A47','A49','A50','B2','B5','B6','B7','B9','B15','B26','B30','B55','C4','C6','C16','C31','C32','C34','C37','C39','D1' })
 	end
 
 	if own_buff == 'weaker15' then
@@ -202,19 +209,19 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 
 		if extra_buff == 'bulky' then
 			if u.canrecruit then
-				extra_bulky_buff = 50
+				extra_bulky_buff = 75
 			else
-				extra_bulky_buff = 25
+				extra_bulky_buff = 35
 			end
 		elseif extra_buff == 'beefy' then
 			if u.canrecruit then
-				extra_beefy_buff = 25
+				extra_beefy_buff = 40
 			else
-				extra_beefy_buff = 15
+				extra_beefy_buff = 20
 			end
 		elseif extra_buff == 'armored' then
 			if u.canrecruit then
-				extra_armored_buff = 25
+				extra_armored_buff = 30
 			else
 				extra_armored_buff = 15
 			end
@@ -230,8 +237,25 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 			else
 				extra_agile_buff = 10
 			end
-		elseif u.canrecruit and extra_buff == 'champion' then
+		elseif extra_buff == 'champion' and u.canrecruit then
 			is_champion = true
+		elseif extra_buff == 'strong_leader' and u.canrecruit then
+			local improvements = { 'bulky', 'beefy', 'armored', 'fast', 'agile' }
+			mathx.shuffle(improvements)
+
+			for imp_i=1,2,1 do
+				if improvements[imp_i] == 'bulky' then
+					extra_bulky_buff = 75
+				elseif improvements[imp_i] == 'beefy' then
+					extra_beefy_buff = 40
+				elseif improvements[imp_i] == 'armored' then
+					extra_armored_buff = 30
+				elseif improvements[imp_i] == 'fast' then
+					extra_fast_buff = 3
+				elseif improvements[imp_i] == 'agile' then
+					extra_agile_buff = 15
+				end
+			end
 		end
 
 		if copy_style == 'value_per_unit' then
@@ -246,6 +270,9 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 			clone.variables.has_gold = gold_amount > 0
 			clone.variables.has_item = item ~= ''
 			clone.variables.item_id = item
+			use_minion_type_code = ''
+		else
+			use_minion_type_code = minion_type
 		end
 		
 		clone.side = to_side
@@ -277,6 +304,7 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 		wml.variables['after_games_generate_champion'] = is_champion
 		wml.variables['after_games_copy_level'] = clone.level
 		wml.variables['after_games_side_leader'] = is_side_leader_copy
+		wml.variables['after_games_spawn_minion'] = use_minion_type_code
 		
 		wml.fire('fire_event', {
 			name='after_games_apply_copy_modifications'
@@ -379,7 +407,14 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 		extra_copy_buff_east = ''
 		extra_copy_buff_west = ''
 	end
-	
+
+	if extra_copy_buff_east == 'payback' and extra_copy_buff_west == '' then
+		extra_copy_buff_east = ''
+	end
+
+	if extra_copy_buff_west == 'payback' and extra_copy_buff_east == '' then
+		extra_copy_buff_west = ''
+	end
 
 	if extra_copy_buff_east == 'mirror' and extra_copy_buff_west == 'mirror' then
 		extra_copy_buff_east = ''
