@@ -10,10 +10,9 @@ local after_games_settings = {
 	{ ['turn'] = 18, ['index'] = 9, ['percentage'] = 65, ['item'] = false, ['gold'] = 18, ['info'] = "Turn 21 Wave 10 (70%)", ['gates'] = false, ['max_steal'] = 50, },
 	{ ['turn'] = 21, ['index'] = 10, ['percentage'] = 70, ['item'] = false, ['gold'] = 21, ['info'] = "Turn 24 Wave 11 (75%)", ['gates'] = false, ['max_steal'] = 60, },
 	{ ['turn'] = 24, ['index'] = 11, ['percentage'] = 75, ['item'] = true, ['gold'] = 0, ['info'] = "Turn 27 Wave 12 (80%)", ['gates'] = false, ['max_steal'] = 70, ['no_items_gold'] = 25, },
-	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['item'] = false, ['gold'] = 30, ['info'] = "Turn 31 Wave 13 (86%)", ['gates'] = false, ['max_steal'] = 80, },
-	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 86, ['item'] = false, ['gold'] = 75, ['info'] = "Turn 35 Wave 14 (92%)", ['gates'] = false, ['max_steal'] = 90, },
-	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 92, ['item'] = false, ['gold'] = 125, ['info'] = "Turn 40 The Gates Open", ['gates'] = false, ['max_steal'] = 100, },
-	{ ['turn'] = 40, ['index'] = 15, ['percentage'] = 100, ['item'] = false, ['gold'] = 0, ['info'] = "", ['gates'] = true, ['max_steal'] = 0, },
+	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['item'] = false, ['gold'] = 30, ['info'] = "Turn 31 Wave 13 (90%)", ['gates'] = false, ['max_steal'] = 80, },
+	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 90, ['item'] = false, ['gold'] = 75, ['info'] = "Turn 35 The Gates Open", ['gates'] = false, ['max_steal'] = 90, },
+	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 100, ['item'] = false, ['gold'] = 0, ['info'] = "", ['gates'] = true, ['max_steal'] = 0, },
 }
 
 local after_games_progression = {}
@@ -38,6 +37,13 @@ local all_boosts_table = {
 	'reheal_own', 'deboost15', 'slow_wave', 'mirror', 'cancel', 'turtle_up', 'poison', 'damage_armor', 'drunk_opponent',
 	'boost15', 'minions', 'strong_leader', 'dragon_heart', 'freeze_leader', 'easy_targets', 'payback', 'remove_specials',
 }
+
+local offensive_boosts_list = {
+	'boost10', 'boost20', 'bulky', 'beefy', 'armored', 'fast', 'agile', 'champion', 'slow', 'steal', 'mirror',
+	'poison', 'damage_armor', 'drunk_opponent', 'boost15', 'minions', 'strong_leader', 'freeze_leader', 'payback', 'remove_specials'
+}
+
+local defensive_boosts_list = { 'improved_damage', 'reheal_own', 'deboost15', 'slow_wave', 'turtle_up', 'dragon_heart', 'easy_targets', }
 
 local east_items_table = {}
 local west_items_table = {}
@@ -209,9 +215,9 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 
 		if extra_buff == 'bulky' then
 			if u.canrecruit then
-				extra_bulky_buff = 75
+				extra_bulky_buff = 65
 			else
-				extra_bulky_buff = 35
+				extra_bulky_buff = 30
 			end
 		elseif extra_buff == 'beefy' then
 			if u.canrecruit then
@@ -345,6 +351,40 @@ local function get_unused_items(boosts_table)
 	return ret
 end
 
+local function get_payback_damage_value(east_boost, west_boost)
+	if east_boost == 'payback' and west_boost == 'payback' then
+		return 24
+	elseif east_boost == 'payback' then
+		for k,v in ipairs(offensive_boosts_list) do
+			if west_boost == v then
+				return 24
+			end
+		end
+
+		for k,v in ipairs(defensive_boosts_list) do
+			if west_boost == v then
+				return 8
+			end
+		end
+	elseif west_boost == 'payback' then
+		for k,v in ipairs(offensive_boosts_list) do
+			if east_boost == v then
+				return 24
+			end
+		end
+
+		for k,v in ipairs(defensive_boosts_list) do
+			if east_boost == v then
+				return 8
+			end
+		end
+	else
+		return 0
+	end
+
+	return 0
+end
+
 function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 	local turn_number = cfg.turn
 	local is_spawn_turn = false
@@ -385,6 +425,7 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	local west_item = ''
 	local east_item = ''
 	local drop_gold = after_games_progression[wave_index]['gold']
+	local payback_damage = 0
 	
 	if after_games_progression[wave_index]['item'] then
 		if allow_items then
@@ -421,10 +462,10 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 		extra_copy_buff_west = ''
 	elseif extra_copy_buff_east == 'mirror' then
 		extra_copy_buff_east = extra_copy_buff_west
-		extra_copy_buff_west = ''
+		extra_copy_buff_west = 'mirror'
 	elseif extra_copy_buff_west == 'mirror' then
 		extra_copy_buff_west = extra_copy_buff_east
-		extra_copy_buff_east = ''
+		extra_copy_buff_east = 'mirror'
 	end
 
 	if extra_copy_buff_east == 'weaker15' then
@@ -439,6 +480,12 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	copy_all_units(3, 2, after_classic_locations[key], map_edge, drop_gold, west_item, extra_copy_buff_west, west_debuff, after_games_progression[wave_index]['percentage_west'], after_games_progression[wave_index]['copy_style'])
 	wml.variables['after_games_3_wave_boost'] = extra_copy_buff_west
 	wml.variables['after_games_1_wave_boost'] = extra_copy_buff_east
+
+	if extra_copy_buff_east == 'payback' or extra_copy_buff_west == 'payback' then
+		payback_damage = get_payback_damage_value(extra_copy_buff_east, extra_copy_buff_west)
+	end
+
+	wml.variables['after_games_payback_damage'] = payback_damage
 end
 
 function wesnoth.wml_actions.qquws_generate_random_boosts_table(cfg)
@@ -467,7 +514,7 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 	local previous_turn = after_games_settings[1]['turn']
 	local previous_percentage = after_games_settings[1]['percentage']
 	local generated_key = 1
-	local shuffleable_keys = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 }
+	local shuffleable_keys = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 }
 	local recalculate_info_labels = false
 	local number_of_per_player_random_values = 7
 
@@ -483,8 +530,8 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 			previous_percentage = after_games_progression[generated_key]['percentage']
 		end
 
-		after_games_progression[15] = after_games_settings[15]
-		after_games_progression[15]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
+		after_games_progression[14] = after_games_settings[14]
+		after_games_progression[14]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
 		recalculate_info_labels = true
 	elseif style == 'mirrored' then
 		local next_random_group = 0
@@ -511,8 +558,8 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 			previous_percentage = after_games_progression[generated_key]['percentage']
 		end
 
-		after_games_progression[15] = after_games_settings[15]
-		after_games_progression[15]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
+		after_games_progression[14] = after_games_settings[14]
+		after_games_progression[14]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
 		recalculate_info_labels = true		
 	elseif style == 'random' then
 		local random_percentage_values_east = {}
@@ -538,8 +585,8 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 			previous_percentage = after_games_progression[generated_key]['percentage']
 		end
 
-		after_games_progression[15] = after_games_settings[15]
-		after_games_progression[15]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
+		after_games_progression[14] = after_games_settings[14]
+		after_games_progression[14]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
 		recalculate_info_labels = true
 	elseif style == 'chaos' then
 		local next_random_group = 0
@@ -574,8 +621,8 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 			previous_percentage = after_games_progression[generated_key]['percentage']
 		end
 
-		after_games_progression[15] = after_games_settings[15]
-		after_games_progression[15]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
+		after_games_progression[14] = after_games_settings[14]
+		after_games_progression[14]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
 		recalculate_info_labels = true
 	elseif style == 'total_chaos' then
 		local next_random_group = 0
@@ -621,16 +668,16 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 			previous_percentage = after_games_progression[generated_key]['percentage']
 		end
 
-		after_games_progression[15] = after_games_settings[15]
-		after_games_progression[15]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
+		after_games_progression[14] = after_games_settings[14]
+		after_games_progression[14]['turn'] = previous_turn + get_fighting_space_length(previous_percentage) + 1
 		recalculate_info_labels = true
 	end
 
 	if recalculate_info_labels then
-		after_games_progression[14]['info'] = "Turn " .. tostring(after_games_progression[15]['turn']) .. " The Gates Open"
+		after_games_progression[13]['info'] = "Turn " .. tostring(after_games_progression[14]['turn']) .. " The Gates Open"
 		local progression_value = 0
 
-		for k=13,1,-1 do
+		for k=12,1,-1 do
 			progression_value = " (" .. tostring(after_games_progression[k + 1]['percentage']) .. '%)'
 			if is_info_hidden then
 				progression_value = ''
@@ -641,7 +688,7 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 	end
 
 	if after_games_progression[1]['percentage_east'] == nil then
-		for k=1,15,1 do
+		for k=1,14,1 do
 			after_games_progression[k]['percentage_east'] = after_games_progression[k]['percentage']
 			after_games_progression[k]['percentage_west'] = after_games_progression[k]['percentage']
 			after_games_progression[k]['copy_style'] = 'value_per_player' 
