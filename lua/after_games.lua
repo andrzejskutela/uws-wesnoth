@@ -43,7 +43,7 @@ local offensive_boosts_list = {
 	'poison', 'damage_armor', 'drunk_opponent', 'boost15', 'minions', 'strong_leader', 'freeze_leader', 'payback', 'remove_specials'
 }
 
-local defensive_boosts_list = { 'improved_damage', 'reheal_own', 'deboost15', 'slow_wave', 'turtle_up', 'dragon_heart', 'easy_targets', }
+local defensive_boosts_list = { 'improved_damage', 'reheal_own', 'weaker15', 'slow_wave', 'turtle_up', 'dragon_heart', 'easy_targets', }
 
 local east_items_table = {}
 local west_items_table = {}
