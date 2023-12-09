@@ -9,9 +9,9 @@ local after_games_settings = {
 	{ ['turn'] = 15, ['index'] = 8, ['percentage'] = 60, ['item'] = false, ['gold'] = 15, ['info'] = "Turn 18 Wave 9 (65%)", ['gates'] = false, ['max_steal'] = 40, },
 	{ ['turn'] = 18, ['index'] = 9, ['percentage'] = 65, ['item'] = false, ['gold'] = 18, ['info'] = "Turn 21 Wave 10 (70%)", ['gates'] = false, ['max_steal'] = 50, },
 	{ ['turn'] = 21, ['index'] = 10, ['percentage'] = 70, ['item'] = false, ['gold'] = 21, ['info'] = "Turn 24 Wave 11 (75%)", ['gates'] = false, ['max_steal'] = 60, },
-	{ ['turn'] = 24, ['index'] = 11, ['percentage'] = 75, ['item'] = true, ['gold'] = 0, ['info'] = "Turn 27 Wave 12 (80%)", ['gates'] = false, ['max_steal'] = 70, ['no_items_gold'] = 25, },
-	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['item'] = false, ['gold'] = 30, ['info'] = "Turn 31 Wave 13 (90%)", ['gates'] = false, ['max_steal'] = 80, },
-	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 90, ['item'] = false, ['gold'] = 75, ['info'] = "Turn 35 The Gates Open", ['gates'] = false, ['max_steal'] = 90, },
+	{ ['turn'] = 24, ['index'] = 11, ['percentage'] = 75, ['item'] = true, ['gold'] = 0, ['info'] = "Turn 27 Wave 12 (80%)", ['gates'] = false, ['max_steal'] = 70, ['no_items_gold'] = 30, },
+	{ ['turn'] = 27, ['index'] = 12, ['percentage'] = 80, ['item'] = false, ['gold'] = 60, ['info'] = "Turn 31 Wave 13 (90%)", ['gates'] = false, ['max_steal'] = 80, },
+	{ ['turn'] = 31, ['index'] = 13, ['percentage'] = 90, ['item'] = false, ['gold'] = 90, ['info'] = "Turn 35 The Gates Open", ['gates'] = false, ['max_steal'] = 90, },
 	{ ['turn'] = 35, ['index'] = 14, ['percentage'] = 100, ['item'] = false, ['gold'] = 0, ['info'] = "", ['gates'] = true, ['max_steal'] = 0, },
 }
 
@@ -417,6 +417,7 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	local map_edge = wml.variables["uws_game.edge"]
 	local wave_index = wml.variables['after_games_wave_index']
 	local allow_items = wml.variables['after_games.allow_items']
+	local allow_gold = wml.variables['after_games.allow_gold']
 	local extra_copy_buff_east = cfg.east_buff
 	local extra_copy_buff_west = cfg.west_buff
 	local east_debuff = ''
@@ -439,6 +440,10 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 		else
 			drop_gold = after_games_progression[wave_index]['no_items_gold']
 		end
+	end
+
+	if not allow_gold then
+		drop_gold = 0
 	end
 
 	if extra_copy_buff_east == 'cancelation' then
