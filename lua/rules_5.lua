@@ -129,18 +129,18 @@ return {
 	{ ['t'] = 30, ['d'] = 4, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Giant Scorpion', },
 	{ ['t'] = 31, ['d'] = 4, ['side'] = 3, ['x'] = 8, ['lvl'] = 1, ['type'] = 'Wose', ['guard'] = true },
 	{ ['t'] = 31, ['d'] = 4, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Goblin Rouser', ['beefy'] = 24, ['gold'] = 12, },
-	{ ['t'] = 35, ['d'] = 4, ['side'] = 3, ['x'] = 6, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
-	{ ['t'] = 36, ['d'] = 4, ['side'] = 3, ['x'] = 4, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
+	{ ['t'] = 35, ['d'] = 4, ['side'] = 2, ['x'] = 6, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
+	{ ['t'] = 36, ['d'] = 4, ['side'] = 2, ['x'] = 4, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
 	
 	{ ['t'] = 34, ['d'] = 6, ['side'] = 2, ['x'] = 6, ['lvl'] = 3, ['type'] = 'Orcish Nightblade', ['buff'] = 'A26:B26:C26', ['gold'] = 12, },
 	
 	-- 37 - 43 (mask y 25 - 19)
 	
-	{ ['t'] = 37, ['d'] = 1, ['side'] = 3, ['x'] = 5, ['lvl'] = 1, ['type'] = 'Young Ogre', },
-	{ ['t'] = 38, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 1, ['type'] = 'Naga Fighter', },
+	{ ['t'] = 37, ['d'] = 1, ['side'] = 2, ['x'] = 5, ['lvl'] = 1, ['type'] = 'Young Ogre', },
+	{ ['t'] = 38, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 1, ['type'] = 'Naga Fighter', },
 	{ ['t'] = 39, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Dwarvish Berserker', ['buff'] = 'A27:B55:C27:C20:C50:B27', ['item'] = true, },
 	{ ['t'] = 39, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'Arch Mage', ['guard'] = true },
-	{ ['t'] = 41, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Naga Fighter', ['fast'] = 1 },
+	{ ['t'] = 41, ['d'] = 1, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Naga Fighter', ['fast'] = 1 },
 	
 	{ ['t'] = 43, ['d'] = 2, ['side'] = 4, ['x'] = 13, ['lvl'] = 0, ['type'] = 'Walking Corpse', },
 	{ ['t'] = 43, ['d'] = 2, ['side'] = 4, ['x'] = 15, ['lvl'] = 0, ['type'] = 'Walking Corpse' },
