@@ -334,7 +334,7 @@ local function get_available_items(pool, used_items)
 	end
 	
 	if #ret == 0 then
-		ret = { 'hp_low','hp_med','melee_dmg','ranged_dmg' }
+		ret = { 'melee_dmg','ranged_dmg' }
 	end
 	
 	return ret

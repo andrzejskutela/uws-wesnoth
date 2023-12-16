@@ -64,9 +64,9 @@ return {
 	{ ['t'] = 11, ['d'] = 4, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Dwarvish Stalwart', },
 	{ ['t'] = 14, ['d'] = 4, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Rogue', },
 
+	{ ['t'] = 9, ['d'] = 5, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Red Mage', },
 	{ ['t'] = 15, ['d'] = 5, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Ghost', ['guard'] = true },
 	
-	{ ['t'] = 9, ['d'] = 6, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Great Horse', ['bulky'] = 40, },
 	{ ['t'] = 15, ['d'] = 6, ['side'] = 2, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Rock Scorpion', ['buff'] = 'A25:B25:C25', },
 	
 	-- 16 - 22 (mask y 46 - 40)
@@ -103,7 +103,7 @@ return {
 	{ ['t'] = 23, ['d'] = 4, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Ghoul', },
 	{ ['t'] = 25, ['d'] = 4, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Pikeman', },
 	
-	{ ['t'] = 25, ['d'] = 5, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Pikeman', },
+	{ ['t'] = 28, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'Orcish Slurbow', },
 
 	{ ['t'] = 26, ['d'] = 6, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Spearman', },
 	
@@ -151,7 +151,7 @@ return {
 	
 	{ ['t'] = 41, ['d'] = 5, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Jinn', ['buff'] = 'A28:B28:C49', ['race_guard_off'] = true, ['calls_for_help'] = true },
 	
-	{ ['t'] = 40, ['d'] = 6, ['side'] = 3, ['x'] = 12, ['lvl'] = 5, ['type'] = 'QQ_ankylosaurus', ['race_guard_off'] = true },
+	{ ['t'] = 40, ['d'] = 6, ['side'] = 3, ['x'] = 12, ['lvl'] = 5, ['type'] = 'QQ_ankylosaurus', },
 	
 	-- 44 - 50 (mask y 18 - 12)
 	
@@ -176,7 +176,7 @@ return {
 
 	{ ['t'] = 50, ['d'] = 5, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Naga Warrior', },
 	
-	{ ['t'] = 50, ['d'] = 6, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Shock Trooper', ['beefy'] = 32, ['bulky'] = 56, ['armored'] = 10, ['race_guard_off'] = true },
+	{ ['t'] = 50, ['d'] = 6, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Shock Trooper', ['beefy'] = 40, ['armored'] = 10, ['race_guard_off'] = true },
 	
 	-- 51 - 57 (mask y 11 - 5)
 	{ ['t'] = 52, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 0, ['type'] = 'Peasant', ['agile'] = 15 },
