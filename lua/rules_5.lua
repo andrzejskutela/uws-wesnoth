@@ -103,7 +103,7 @@ return {
 	{ ['t'] = 23, ['d'] = 4, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Ghoul', },
 	{ ['t'] = 25, ['d'] = 4, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Pikeman', },
 	
-	{ ['t'] = 28, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'Orcish Slurbow', },
+	{ ['t'] = 26, ['d'] = 5, ['side'] = 2, ['x'] = 10, ['lvl'] = 2, ['type'] = 'White Mage', },
 
 	{ ['t'] = 26, ['d'] = 6, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Spearman', },
 	
@@ -131,6 +131,8 @@ return {
 	{ ['t'] = 31, ['d'] = 4, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Goblin Rouser', ['beefy'] = 24, ['gold'] = 12, },
 	{ ['t'] = 35, ['d'] = 4, ['side'] = 2, ['x'] = 6, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
 	{ ['t'] = 36, ['d'] = 4, ['side'] = 2, ['x'] = 4, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
+
+	{ ['t'] = 31, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'Orcish Slurbow', ['race_guard_off'] = true, },
 	
 	{ ['t'] = 34, ['d'] = 6, ['side'] = 2, ['x'] = 6, ['lvl'] = 3, ['type'] = 'Orcish Nightblade', ['buff'] = 'A26:B26:C26', ['gold'] = 12, },
 	
@@ -140,7 +142,7 @@ return {
 	{ ['t'] = 38, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 1, ['type'] = 'Naga Fighter', },
 	{ ['t'] = 39, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Dwarvish Berserker', ['buff'] = 'A27:B55:C27:C20:C50:B27', ['item'] = true, },
 	{ ['t'] = 39, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'Arch Mage', ['guard'] = true },
-	{ ['t'] = 41, ['d'] = 1, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Naga Fighter', ['fast'] = 1 },
+	{ ['t'] = 41, ['d'] = 1, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Naga Fighter', ['fast'] = 1, ['race_guard_off'] = true },
 	
 	{ ['t'] = 43, ['d'] = 2, ['side'] = 4, ['x'] = 13, ['lvl'] = 0, ['type'] = 'Walking Corpse', },
 	{ ['t'] = 43, ['d'] = 2, ['side'] = 4, ['x'] = 15, ['lvl'] = 0, ['type'] = 'Walking Corpse' },
