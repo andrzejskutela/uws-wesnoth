@@ -142,7 +142,7 @@ end
 
 local unit_deep_copy = function(unit, x, y)
 	wesnoth.wml_actions.store_unit {
-		T.filter { id = unit.id },
+		wml.tag.filter { id = unit.id },
 		variable = "wml_copy_unit",
 	}
 	
@@ -292,8 +292,8 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 		
 		wesnoth.add_modification(clone, "object", {
 			id = "qquws_after_games_invulnerable",
-			T.effect { apply_to = "image_mod", add="GS()" },
-			T.effect { apply_to = "zoc", value = false },
+			wml.tag.effect { apply_to = "image_mod", add="GS()" },
+			wml.tag.effect { apply_to = "zoc", value = false },
 		})
 		
 		wml.variables['new_unit_spawn_id'] = clone.id
