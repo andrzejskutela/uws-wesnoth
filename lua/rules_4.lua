@@ -143,7 +143,7 @@ return {
 	{ ['t'] = 33, ['d'] = 5, ['side'] = 4, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Warbanner', ['default'] = 'Orcish Slayer', },
 	
 	{ ['t'] = 34, ['d'] = 6, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Archer', ['default'] = 'Orcish Archer', },
-	{ ['t'] = 35, ['d'] = 6, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_arc_orcs_Goblin_Drummer', ['default'] = 'Young Ogre', },
+	{ ['t'] = 34, ['d'] = 6, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_arc_orcs_Goblin_Drummer', ['default'] = 'Young Ogre', },
 	
 	-- 37 - 43 (mask y 133 - 127)
 	
