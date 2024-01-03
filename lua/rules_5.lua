@@ -189,7 +189,6 @@ return {
 
 	{ ['t'] = 52, ['d'] = 3, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'Elvish Sylph', ['guard'] = true },
 	
-	{ ['t'] = 51, ['d'] = 4, ['side'] = 2, ['x'] = 14, ['lvl'] = 2, ['type'] = 'Roc', ['race_guard_off'] = true, },
 	{ ['t'] = 54, ['d'] = 4, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'Dread Bat', ['allow_random'] = false },
 	
 	{ ['t'] = 53, ['d'] = 6, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'Dwarvish Arcanister', ['race_guard_off'] = true, },
