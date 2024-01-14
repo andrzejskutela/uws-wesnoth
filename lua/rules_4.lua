@@ -402,7 +402,7 @@ return {
 	{ ['t'] = 120, ['d'] = 5, ['side'] = 3, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_rhy_ce_Greatsword', ['default'] = 'Royal Warrior', ['buff'] = 'A7:B4:C27', ['disallow_slash_unguardian'] = true, },
 	
 	{ ['t'] = 120, ['d'] = 6, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'Spearman', ['default'] = 'Spearman', },
-	{ ['t'] = 120, ['d'] = 6, ['side'] = 4, ['x'] = 20, ['lvl'] = 4, ['type'] = 'AE_mrc_enchanters_Excalibur', ['default'] = 'Great Mage', ['buff'] = 'A36:B37:C1', ['disallow_slash_unguardian'] = true, },
+	{ ['t'] = 120, ['d'] = 6, ['side'] = 4, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_mrc_enchanters_Excalibur', ['default'] = 'Great Mage', ['buff'] = 'A36:B37:C1', ['disallow_slash_unguardian'] = true, },
 	
 	-- 121 - 127 (mask y 49 - 43)
 	
@@ -425,7 +425,7 @@ return {
 	{ ['t'] = 128, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_ext_chaos_Flesh_Hound', ['default'] = 'Rogue', ['race_guard_off'] = true, },
 	{ ['t'] = 130, ['d'] = 1, ['side'] = 4, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_rhy_de_Summoner', ['default'] = 'Necromancer', },
 	{ ['t'] = 131, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Demonologist', ['default'] = 'Ghast', },
-	{ ['t'] = 132, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 5, ['type'] = 'QQ_boneblade_terror', ['default'] = 'QQ_boneblade_terror', ['race_guard_off'] = true, ['armored'] = 15 },
+	{ ['t'] = 132, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 5, ['type'] = 'QQ_boneblade_terror', ['default'] = 'QQ_boneblade_terror', ['race_guard_off'] = true, ['armored'] = 25 },
 	{ ['t'] = 134, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 3, ['type'] = 'Lich', ['default'] = 'Lich', },
 	
 	{ ['t'] = 130, ['d'] = 2, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Blood_Knight', ['default'] = 'Death Knight', },
