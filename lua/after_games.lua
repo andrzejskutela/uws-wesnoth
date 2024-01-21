@@ -680,6 +680,7 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 
 	if recalculate_info_labels then
 		after_games_progression[13]['info'] = "Turn " .. tostring(after_games_progression[14]['turn']) .. " The Gates Open"
+		after_games_progression[14]['gates'] = true
 		local progression_value = 0
 
 		for k=12,1,-1 do
