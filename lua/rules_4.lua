@@ -170,7 +170,7 @@ return {
 	
 	{ ['t'] = 44, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_ext_dark_elves_Boreal_Wyrm', ['default'] = 'Orcish Sovereign', },
 	
-	{ ['t'] = 50, ['d'] = 3, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mag_Mechanical_Dragon', ['default'] = 'Nightgaunt', ['armored'] = 10, ['race_guard_off'] = true, ['calls_for_help'] = true, },
+	{ ['t'] = 50, ['d'] = 3, ['side'] = 3, ['x'] = 22, ['lvl'] = 4, ['type'] = 'AE_mag_Mechanical_Dragon', ['default'] = 'Nightgaunt', ['armored'] = 10, ['race_guard_off'] = true, ['calls_for_help'] = true, },
 	
 	{ ['t'] = 46, ['d'] = 4, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_mrc_highlanders_Behemoth', ['default'] = 'Troll Warrior', ['armored'] = 15, ['bulky'] = 40 },
 

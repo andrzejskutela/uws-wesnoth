@@ -36,14 +36,19 @@ local all_boosts_table = {
 	'boost10', 'boost20', 'bulky', 'beefy', 'armored', 'fast', 'agile', 'champion', 'slow', 'steal', 'improved_damage',
 	'reheal_own', 'deboost15', 'slow_wave', 'mirror', 'cancel', 'turtle_up', 'poison', 'damage_armor', 'drunk_opponent',
 	'boost15', 'minions', 'strong_leader', 'dragon_heart', 'freeze_leader', 'easy_targets', 'payback', 'remove_specials',
+	'remove_zoc', 'leader30', 'lower_damage', 'flat_defense', 'insurance', 'weak_minions',
 }
 
 local offensive_boosts_list = {
 	'boost10', 'boost20', 'bulky', 'beefy', 'armored', 'fast', 'agile', 'champion', 'slow', 'steal', 'mirror',
-	'poison', 'damage_armor', 'drunk_opponent', 'boost15', 'minions', 'strong_leader', 'freeze_leader', 'payback', 'remove_specials'
+	'poison', 'damage_armor', 'drunk_opponent', 'boost15', 'minions', 'strong_leader', 'freeze_leader', 'payback', 'remove_specials',
+	'remove_zoc', 'leader30', 'lower_damage', 'flat_defense',
 }
 
-local defensive_boosts_list = { 'improved_damage', 'reheal_own', 'weaker15', 'slow_wave', 'turtle_up', 'dragon_heart', 'easy_targets', }
+local defensive_boosts_list = { 
+	'improved_damage', 'reheal_own', 'weaker15', 'slow_wave', 'turtle_up', 'dragon_heart', 'easy_targets', 'insurance',
+	'weak_minions', 
+}
 
 local east_items_table = {}
 local west_items_table = {}
@@ -168,6 +173,7 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 	local give_gold = 0
 	local has_item = false
 	local extra_percentage_buff = 0
+	local send_extra_percentage_buff = 0
 	local extra_bulky_buff = 0
 	local extra_beefy_buff = 0
 	local extra_armored_buff = 0
@@ -198,6 +204,7 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 	end
 	
 	for k,u in ipairs(enemy_units) do
+		send_extra_percentage_buff = extra_percentage_buff
 		extra_bulky_buff = 0
 		extra_beefy_buff = 0
 		extra_armored_buff = 0
@@ -215,21 +222,21 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 
 		if extra_buff == 'bulky' then
 			if u.canrecruit then
-				extra_bulky_buff = 65
+				extra_bulky_buff = 70
 			else
-				extra_bulky_buff = 30
+				extra_bulky_buff = 35
 			end
 		elseif extra_buff == 'beefy' then
 			if u.canrecruit then
-				extra_beefy_buff = 40
+				extra_beefy_buff = 50
 			else
-				extra_beefy_buff = 20
+				extra_beefy_buff = 25
 			end
 		elseif extra_buff == 'armored' then
 			if u.canrecruit then
-				extra_armored_buff = 30
+				extra_armored_buff = 35
 			else
-				extra_armored_buff = 15
+				extra_armored_buff = 20
 			end
 		elseif extra_buff == 'fast' then
 			if u.canrecruit then
@@ -239,7 +246,7 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 			end
 		elseif extra_buff == 'agile' then
 			if u.canrecruit then
-				extra_agile_buff = 15
+				extra_agile_buff = 20
 			else
 				extra_agile_buff = 10
 			end
@@ -251,17 +258,23 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 
 			for imp_i=1,2,1 do
 				if improvements[imp_i] == 'bulky' then
-					extra_bulky_buff = 75
+					extra_bulky_buff = 70
 				elseif improvements[imp_i] == 'beefy' then
-					extra_beefy_buff = 40
+					extra_beefy_buff = 50
 				elseif improvements[imp_i] == 'armored' then
-					extra_armored_buff = 30
+					extra_armored_buff = 35
 				elseif improvements[imp_i] == 'fast' then
 					extra_fast_buff = 3
 				elseif improvements[imp_i] == 'agile' then
-					extra_agile_buff = 15
+					extra_agile_buff = 20
 				end
 			end
+		elseif extra_buff == 'leader30' and u.canrecruit then
+			send_extra_percentage_buff = send_extra_percentage_buff + 30
+		end
+
+		if own_buff == 'weak_minions' and not u.canrecruit then
+			send_extra_percentage_buff = send_extra_percentage_buff - 25
 		end
 
 		if copy_style == 'value_per_unit' then
@@ -301,7 +314,7 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 		wml.variables['after_games_gold_value'] = give_gold
 		wml.variables['after_games_drop_item'] = has_item
 		wml.variables['after_games_item_id'] = item
-		wml.variables['after_games_extra_copy_buff'] = extra_percentage_buff
+		wml.variables['after_games_extra_copy_buff'] = send_extra_percentage_buff
 		wml.variables['after_games_extra_bulky_buff'] = extra_bulky_buff
 		wml.variables['after_games_extra_beefy_buff'] = extra_beefy_buff
 		wml.variables['after_games_extra_armored_buff'] = extra_armored_buff
@@ -475,10 +488,14 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 
 	if extra_copy_buff_east == 'weaker15' then
 		west_debuff = 'weaker15'
+	elseif extra_copy_buff_east == 'weak_minions' then
+		west_debuff = 'weak_minions'
 	end
 
 	if extra_copy_buff_west == 'weaker15' then
 		east_debuff = 'weaker15'
+	elseif extra_copy_buff_west == 'weak_minions' then
+		east_debuff = 'weak_minions'
 	end
 	
 	copy_all_units(1, 4, after_classic_locations[key], map_edge, drop_gold, east_item, extra_copy_buff_east, east_debuff, after_games_progression[wave_index]['percentage_east'], after_games_progression[wave_index]['copy_style'])
