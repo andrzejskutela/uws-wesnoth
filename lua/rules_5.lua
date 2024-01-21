@@ -185,7 +185,7 @@ return {
 	{ ['t'] = 53, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 0, ['type'] = 'Peasant', },
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'Drake Fighter', },
 	
-	{ ['t'] = 52, ['d'] = 2, ['side'] = 2, ['x'] = 19, ['lvl'] = 4, ['type'] = 'Grand Marshal', ['event'] = 'dimaga_joining_unit' },
+	{ ['t'] = 52, ['d'] = 2, ['side'] = 2, ['x'] = 19, ['lvl'] = 4, ['type'] = 'Grand Marshal', },
 
 	{ ['t'] = 52, ['d'] = 3, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'Elvish Sylph', ['guard'] = true },
 	
