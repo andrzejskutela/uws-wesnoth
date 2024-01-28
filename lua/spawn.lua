@@ -6,7 +6,7 @@ function build_spawn_rules_row(data)
 		['quiet_buff'] = '', ['event'] = '', ['beefy'] = 0, ['second_random'] = '', ['name'] = '', ['race_guard_off'] = false,
 		['allow_random'] = true, ['allow_random_recruits'] = true, ['disallow_slash_unguardian'] = false, ['calls_for_help'] = false,
 		['armored'] = 0, ['recruit_armored'] = 0, ['recruit_minion'] = '', ['title'] = '', ['fast'] = 0, ['agile'] = 0, ['story_message'] = '',
-		['story_response'] = '', ['race_points_value'] = -1, ['second_item'] = '', ['clear_boss_tile_overlay'] = false,
+		['story_response'] = '', ['race_points_value'] = -1, ['second_item'] = '', ['clear_boss_tile_overlay'] = false, ['count'] = 1,
 	}
 	
 	for k,v in pairs(data) do
@@ -371,7 +371,7 @@ local function process_spawn_table(spawn_table)
 				end
 			end
 			
-			if rules['t'] == 1 then
+			if rules['t'] == 1 and game_mode ~= 'pillagers' then
 				if game_mode == 'race' or game_mode == 'slash' then
 					rules['y'] = rules['y'] + map_scroll_length
 				end
@@ -400,6 +400,9 @@ local function process_spawn_table(spawn_table)
 					if rules['race_guard_off'] == false then
 						row['guard'] = true
 					end
+				elseif game_mode == 'pillagers' then
+					row['y'] = rules['y']
+					row['turn'] = rules['t']
 				else
 					row['turn'] = rules['t']
 				end
@@ -449,7 +452,7 @@ local function process_spawn_table(spawn_table)
 				})
 			end
 			
-			if is_single_side_game == false then
+			if is_single_side_game == false and game_mode ~= 'pillagers' then
 				local east_item_x = map_edge - object_row['x']
 				object_row = {}
 				for _,field in ipairs(copy_object_fields) do

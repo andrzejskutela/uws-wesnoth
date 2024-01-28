@@ -119,7 +119,7 @@ return {
 	{ ['t'] = 24, ['d'] = 3, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_chs_wild_humans_Dread_Wolf', ['default'] = 'Goblin Rouser', },
 	
 	{ ['t'] = 25, ['d'] = 4, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Warden', ['default'] = 'Naga Shield Guard', ['buff'] = 'A31:B30:C17', ['gold'] = 20, ['item'] = true, },
-	{ ['t'] = 28, ['d'] = 4, ['side'] = 4, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mag_Roc_Master', ['default'] = 'Roc', ['allow_random'] = false },
+	{ ['t'] = 28, ['d'] = 4, ['side'] = 4, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_mag_Roc_Master', ['default'] = 'Roc', ['allow_random'] = false },
 
 	{ ['t'] = 29, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['race_guard_off'] = true, ['allow_random'] = false, ['bulky'] = 64, ['beefy'] = 64 },
 	
