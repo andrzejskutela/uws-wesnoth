@@ -7,6 +7,7 @@ function build_spawn_rules_row(data)
 		['allow_random'] = true, ['allow_random_recruits'] = true, ['disallow_slash_unguardian'] = false, ['calls_for_help'] = false,
 		['armored'] = 0, ['recruit_armored'] = 0, ['recruit_minion'] = '', ['title'] = '', ['fast'] = 0, ['agile'] = 0, ['story_message'] = '',
 		['story_response'] = '', ['race_points_value'] = -1, ['second_item'] = '', ['clear_boss_tile_overlay'] = false, ['count'] = 1,
+		['delayed'] = -1,
 	}
 	
 	for k,v in pairs(data) do
@@ -156,6 +157,9 @@ local function process_spawn_table(spawn_table)
 				table_row['y'] = 5 - table_row['t']
 				table_row['t'] = 1
 			end
+		elseif game_mode == 'arena' then
+			table_row['d'] = 1
+			table_row['side'] = 5
 		end
 		
 		row_type = 'unit'
@@ -400,7 +404,7 @@ local function process_spawn_table(spawn_table)
 					if rules['race_guard_off'] == false then
 						row['guard'] = true
 					end
-				elseif game_mode == 'pillagers' then
+				elseif game_mode == 'pillagers' or game_mode == 'arena' then
 					row['y'] = rules['y']
 					row['turn'] = rules['t']
 				else

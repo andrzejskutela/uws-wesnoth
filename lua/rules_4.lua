@@ -186,7 +186,7 @@ return {
 	{ ['t'] = 53, ['d'] = 1, ['side'] = 3, ['x'] = 20, ['lvl'] = 1, ['type'] = 'Dwarvish Fighter', ['default'] = 'Dwarvish Fighter', },
 	{ ['t'] = 54, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Red_Ulfserker', ['default'] = 'Dwarvish Berserker', ['beefy'] = 40, ['race_guard_off'] = true },
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mag_Steam_Berserker', ['default'] = 'Dwarvish Berserker', ['race_guard_off'] = true },
-	{ ['t'] = 56, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mag_Technician', ['default'] = 'Dwarvish Runesmith', ['beefy'] = 30, ['gold'] = 20 },
+	{ ['t'] = 56, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mag_Technician', ['default'] = 'Dwarvish Runesmith', ['beefy'] = 30, },
 	{ ['t'] = 57, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Technician', ['default'] = 'Dwarvish Runesmith', },
 	
 	{ ['t'] = 54, ['d'] = 2, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mag_Red_Ulfserker', ['default'] = 'Dwarvish Berserker', ['bulky'] = 40, ['race_guard_off'] = true },
@@ -228,7 +228,7 @@ return {
 	{ ['t'] = 66, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_arc_menagerie_Lunar_Mouth', ['default'] = 'Saurian Oracle', },
 	{ ['t'] = 67, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Lunar_Stinkbug', ['default'] = 'Saurian Skirmisher', },
 	{ ['t'] = 69, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_arc_menagerie_Lunar_Ripper', ['default'] = 'Saurian Ambusher', ['race_guard_off'] = true, ['calls_for_help'] = true, ['fast'] = 1 },
-	{ ['t'] = 71, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'Dwarvish Sentinel', ['default'] = 'Dwarvish Sentinel', ['moves'] = 0, ['gold'] = 20 },
+	{ ['t'] = 71, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'Dwarvish Sentinel', ['default'] = 'Dwarvish Sentinel', ['moves'] = 0, },
 	
 	{ ['t'] = 67, ['d'] = 2, ['side'] = 2, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Lunar_Black_Slime', ['default'] = 'Blood Bat', ['guard'] = true, },
 	{ ['t'] = 71, ['d'] = 2, ['side'] = 3, ['x'] = 20, ['lvl'] = 4, ['type'] = 'AE_rhy_dw_Ballista', ['default'] = 'Dwarvish Arcanister', ['moves'] = 0, },
@@ -246,12 +246,12 @@ return {
 	{ ['t'] = 73, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_mrc_fanatics_Sandskulker', ['default'] = 'Dune Sky Hunter', ['moves'] = 0, ['beefy'] = 20, ['quiet_buff'] = 'Q3', ['gold'] = 25, ['allow_random'] = false, ['disallow_slash_unguardian'] = true, },
 	{ ['t'] = 74, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mrc_fanatics_Martyr', ['default'] = 'Dune Swordsman', ['allow_random'] = false, ['race_guard_off'] = true, },
 	{ ['t'] = 75, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Guardsman', ['default'] = 'Dune Spearguard', ['guard'] = true },
-	{ ['t'] = 75, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_efm_freemen_Immortal', ['default'] = 'Dune Warmaster', ['armored'] = 25, ['gold'] = 50, ['recruits'] = 'AE_efm_freemen_Derwish,AE_efm_freemen_Howler,AE_efm_freemen_Sand_Rider,AE_efm_freemen_Amir,AE_efm_freemen_Nomad,AE_efm_freemen_Mehariste', ['default_recruits'] = 'Dune Scorcher,Dune Alchemist,Dune Apothecary,Dune Horse Archer,Dune Raider,Dune Sunderer', ['r_lvls'] = '2,2,2,2,2,2', ['recruitment_gold'] = 220 },
+	{ ['t'] = 75, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_efm_freemen_Immortal', ['default'] = 'Dune Warmaster', ['armored'] = 25, ['gold'] = 40, ['recruits'] = 'AE_efm_freemen_Derwish,AE_efm_freemen_Howler,AE_efm_freemen_Sand_Rider,AE_efm_freemen_Amir,AE_efm_freemen_Nomad,AE_efm_freemen_Mehariste', ['default_recruits'] = 'Dune Scorcher,Dune Alchemist,Dune Apothecary,Dune Horse Archer,Dune Raider,Dune Sunderer', ['r_lvls'] = '2,2,2,2,2,2', ['recruitment_gold'] = 220 },
 	{ ['t'] = 75, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Mufti', ['default'] = 'Dune Explorer', ['gold'] = 30 },
 	
 	{ ['t'] = 75, ['d'] = 2, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Ensnarer', ['default'] = 'Dune Strider', ['gold'] = 25, },
 	
-	{ ['t'] = 76, ['d'] = 3, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_efm_freemen_Mullah', ['default'] = 'Dune Luminary', ['gold'] = 20, },
+	{ ['t'] = 76, ['d'] = 3, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_efm_freemen_Mullah', ['default'] = 'Dune Luminary', },
 	
 	{ ['t'] = 77, ['d'] = 4, ['side'] = 4, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_efm_freemen_Adventurer', ['default'] = 'Dune Marauder', ['race_guard_off'] = true, },
 
@@ -264,7 +264,7 @@ return {
 	
 	{ ['t'] = 80, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mag_Dimensional_Gate_II', ['default'] = 'Ghost', ['buff'] = 'A36:B35:C35:C5:A52', ['item'] = true, ['allow_random'] = false, ['calls_for_help'] = true, ['race_guard_off'] = true },
 	{ ['t'] = 80, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Great_Jinn', ['default'] = 'Dune Horse Archer', },
-	{ ['t'] = 81, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_mag_Banisher', ['default'] = 'Dune Windbolt', ['gold'] = 20, ['armored'] = 5, },
+	{ ['t'] = 81, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_mag_Banisher', ['default'] = 'Dune Windbolt', ['armored'] = 5, },
 	{ ['t'] = 84, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A34:B15:C34:A41', ['race_guard_off'] = true },
 	
 	{ ['t'] = 79, ['d'] = 2, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_RhamiDatu', ['default'] = 'Jinn', ['guard'] = true, },
@@ -286,7 +286,8 @@ return {
 	{ ['t'] = 90, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
 	
 	{ ['t'] = 86, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'Naga Warrior', ['default'] = 'Naga Warrior', },
-	{ ['t'] = 89, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Assassin', ['default'] = 'Naga Ringcaster', ['gold'] = 20 },
+	{ ['t'] = 89, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Assassin', ['default'] = 'Naga Ringcaster', },
+	{ ['t'] = 89, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', ['fast'] = 1 },
 
 	{ ['t'] = 91, ['d'] = 3, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
 	{ ['t'] = 92, ['d'] = 3, ['side'] = 2, ['x'] = 24, ['lvl'] = 5, ['type'] = 'QQ_naga_royal_executioner', ['default'] = 'QQ_naga_royal_executioner', ['buff'] = 'A16:B36:C36' },
@@ -299,7 +300,6 @@ return {
 	{ ['t'] = 92, ['d'] = 5, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'Naga Sicarius', ['default'] = 'Naga Sicarius', ['armored'] = 15, ['fast'] = 2 },
 
 	{ ['t'] = 86, ['d'] = 6, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Abomination', ['default'] = 'Naga Myrmidon', ['beefy'] = 24, ['armored'] = 20, ['gold'] = 20 },
-	{ ['t'] = 89, ['d'] = 6, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', ['fast'] = 1 },
 	{ ['t'] = 90, ['d'] = 6, ['side'] = 2, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Abomination', ['default'] = 'Naga Sicarius', ['bulky'] = 80, ['beefy'] = 60, },
 	{ ['t'] = 92, ['d'] = 6, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'Naga Zephyr', ['default'] = 'Naga Zephyr', ['agile'] = 10, ['beefy'] = 32, },
 	{ ['t'] = 92, ['d'] = 6, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', },
@@ -313,11 +313,11 @@ return {
 	{ ['t'] = 98, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mrc_slavers_Harlot', ['default'] = 'Elvish Hero', ['calls_for_help'] = true },
 	{ ['t'] = 98, ['d'] = 1, ['side'] = 4, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_mrc_slavers_Elder_Hawk', ['default'] = 'Elder Falcon', },
 	{ ['t'] = 99, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Marksman', },
-	
+	{ ['t'] = 99, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Ranger', },
+
 	{ ['t'] = 94, ['d'] = 2, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'AE_mrc_cult_Inhuman', ['default'] = 'Wyvern Rider', ['armored'] = 30 },
 	
 	{ ['t'] = 93, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_mrc_cult_Sewer_Slider', ['default'] = 'Gryphon', },
-	{ ['t'] = 99, ['d'] = 3, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Ranger', },
 	
 	{ ['t'] = 99, ['d'] = 4, ['side'] = 4, ['x'] = 11, ['lvl'] = 3, ['type'] = 'Cave Bear', ['default'] = 'Wild Wyvern', ['bulky'] = 100 },
 
@@ -341,6 +341,7 @@ return {
 	
 	{ ['t'] = 101, ['d'] = 2, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Sorceress', },
 	{ ['t'] = 102, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Sorceress', },
+	{ ['t'] = 104, ['d'] = 2, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Captain', ['beefy'] = 28, },
 	{ ['t'] = 105, ['d'] = 2, ['side'] = 2, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Druid', },
 	
 	{ ['t'] = 100, ['d'] = 3, ['side'] = 2, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Druid', },
@@ -348,8 +349,7 @@ return {
 	{ ['t'] = 106, ['d'] = 3, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Rider', },
 	
 	{ ['t'] = 101, ['d'] = 4, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_ext_outlaws_Witch', ['default'] = 'Black Horse', },
-	{ ['t'] = 104, ['d'] = 4, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Captain', ['beefy'] = 28, },
-
+	
 	{ ['t'] = 102, ['d'] = 5, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Mithril_Golem', ['default'] = 'Fire Wraith', ['armored'] = 20, },
 
 	{ ['t'] = 102, ['d'] = 6, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_ankylosaurus', ['default'] = 'QQ_ankylosaurus', ['race_guard_off'] = true, ['buff'] = 'A7:B12:C4:A8', ['calls_for_help'] = true, ['allow_random'] = false },
@@ -367,14 +367,14 @@ return {
 	{ ['t'] = 113, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Condottiero', ['default'] = 'Pikeman', ['moves'] = 0, ['gold'] = 15 },
 	
 	{ ['t'] = 109, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mrc_refugees_Arsonist', ['default'] = 'Duelist', },
+	{ ['t'] = 110, ['d'] = 2, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Arbalestier', ['default'] = 'Longbowman', },
 	
 	{ ['t'] = 109, ['d'] = 3, ['side'] = 4, ['x'] = 21, ['lvl'] = 5, ['type'] = 'QQ_abyssal_fungoid', ['default'] = 'QQ_abyssal_fungoid', ['buff'] = 'A19:B13:C2:B51', },
 	
 	{ ['t'] = 112, ['d'] = 4, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_feu_ceresians_Knight_Commander', ['default'] = 'Grand Knight', ['bulky'] = 60, ['beefy'] = 40, },
 	
 	{ ['t'] = 110, ['d'] = 5, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Arbalestier', ['default'] = 'Longbowman', },
-	{ ['t'] = 110, ['d'] = 5, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Arbalestier', ['default'] = 'Longbowman', },
-
+	
 	{ ['t'] = 112, ['d'] = 6, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Mounted_Infantryman', ['default'] = 'Lancer', },
 	{ ['t'] = 113, ['d'] = 6, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Mounted_Crossbowman', ['default'] = 'Red Mage', },
 	
