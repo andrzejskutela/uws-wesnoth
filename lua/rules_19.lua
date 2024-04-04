@@ -23,5 +23,16 @@ if arena_mode == 'instructors' then
 		{ ['t'] = 6, ['x'] = 11, ['y'] = 5, ['lvl'] = 0, ['type'] = 'AE_FL_natives_Falcon', ['default'] = 'Merman Citizen', ['delayed'] = 2 },
 		{ ['t'] = 6, ['x'] = 16, ['y'] = 4, ['lvl'] = 1, ['type'] = 'AE_mrc_avians_Grounded', ['default'] = 'Merman Fighter', ['delayed'] = 2 },
 		{ ['t'] = 6, ['x'] = 10, ['y'] = 3, ['lvl'] = 1, ['type'] = 'AE_mrc_avians_Mother', ['default'] = 'Dark Omen', ['delayed'] = 2, ['quiet_buff'] = 'arena_boss' },
+
+		-- wave 3
+
+		{ ['t'] = 12, ['x'] = 13, ['y'] = 5, ['lvl'] = 0, ['type'] = 'QQUWS_surprise', ['allow_random'] = false, ['delayed'] = 0, },
+		{ ['t'] = 12, ['x'] = 8, ['y'] = 7, ['lvl'] = 1, ['type'] = 'Wolf Rider', ['default'] = 'Wolf Rider', ['buff'] = 'A9:B30:C39', ['delayed'] = 0 },
+		{ ['t'] = 12, ['x'] = 10, ['y'] = 8, ['lvl'] = 1, ['type'] = 'AE_arc_khthon_Flying_Toad', ['default'] = 'Sand Scuttler', ['delayed'] = 0, },
+		{ ['t'] = 12, ['x'] = 18, ['y'] = 10, ['lvl'] = 1, ['type'] = 'AE_agl_yokai_Rebel_Swarm', ['default'] = 'Woodland Boar', ['delayed'] = 0, },
+		{ ['t'] = 12, ['x'] = 14, ['y'] = 4, ['lvl'] = 1, ['type'] = 'AE_mag_Air_Elemental', ['default'] = 'Soulless', ['delayed'] = 0, },
+		{ ['t'] = 12, ['x'] = 10, ['y'] = 3, ['lvl'] = 2, ['type'] = 'Firebomb Ant', ['default'] = 'Firebomb Ant', ['delayed'] = 2 },
+		{ ['t'] = 12, ['x'] = 8, ['y'] = 5, ['lvl'] = 0, ['type'] = 'Frost Stoat', ['default'] = 'Frost Stoat', ['delayed'] = 2 },
+		{ ['t'] = 12, ['x'] = 11, ['y'] = 3, ['lvl'] = 2, ['type'] = 'Grand Dragonfly', ['default'] = 'Grand Dragonfly', ['delayed'] = 2, ['quiet_buff'] = 'arena_boss' },
 	}
 end
