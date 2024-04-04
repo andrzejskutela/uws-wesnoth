@@ -401,6 +401,7 @@ function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 	local turn_number = cfg.turn
 	local is_spawn_turn = false
 	local is_preparation_turn = false
+	local clear_bonuses_turn = false
 	
 	for k,v in ipairs(after_games_progression) do
 		if v['turn'] == turn_number then
@@ -412,15 +413,20 @@ function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 			wml.variables['after_games_info_text'] = v['info']
 			wml.variables['after_games_open_gates'] = v['gates']
 			break
-		elseif v['turn'] == turn_number + 1 and not v['gates'] then
-			wml.variables['after_games_max_steal'] = v['max_steal']
-			wml.variables['after_games_preparation_wave_index'] = v['index']
-			is_preparation_turn = true
+		elseif v['turn'] == turn_number + 1  then
+			clear_bonuses_turn = true
+
+			if not v['gates'] then
+				wml.variables['after_games_max_steal'] = v['max_steal']
+				wml.variables['after_games_preparation_wave_index'] = v['index']
+				is_preparation_turn = true
+			end
 		end
 	end
 	
 	wml.variables['after_games_is_spawn_turn'] = is_spawn_turn
 	wml.variables['after_games_is_preparation_turn'] = is_preparation_turn
+	wml.variables['after_games_clear_bonuses_turn'] = clear_bonuses_turn
 end
 
 function wesnoth.wml_actions.qquws_create_after_copies(cfg)
