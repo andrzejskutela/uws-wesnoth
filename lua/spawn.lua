@@ -512,6 +512,10 @@ local function process_spawn_table(spawn_table)
 			if table_row['overwrite_image'] ~= nil then
 				item_image = table_row['overwrite_image']
 			end
+
+			if table_row['render'] == false then
+				render_new_item = false
+			end
 			
 			table.insert(predropped_items, { ['x'] = table_row['x'], ['y'] = y, ['item'] = item, ['render'] = render_new_item, ['overwrite_image'] = item_image })
 		
