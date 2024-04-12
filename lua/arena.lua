@@ -1,23 +1,23 @@
 local arena_waves = {
-	{ ['turn'] = 1, ['index'] = 1, ['surprise_level'] = 0, ['boss_title'] = 'Arena Instructor', ['random_name'] = 'Wesnoth Bandits', },
-	{ ['turn'] = 6, ['index'] = 2, ['surprise_level'] = 1, ['boss_title'] = 'Arena Instructor', ['random_name'] = 'Dark Riders', },
-	{ ['turn'] = 12, ['index'] = 3, ['surprise_level'] = 1, ['boss_title'] = 'Arena Instructor', ['random_name'] = 'First Wave of Suffering', },
-	{ ['turn'] = 17, ['index'] = 4, ['surprise_level'] = 1, ['boss_title'] = 'Arena Guardian', ['random_name'] = 'Unknown Ones', },
-	{ ['turn'] = 23, ['index'] = 5, ['surprise_level'] = 1, ['boss_title'] = 'Arena Guardian', ['random_name'] = 'Silent Creepers', },
-	{ ['turn'] = 28, ['index'] = 6, ['surprise_level'] = 1, ['boss_title'] = 'Arena Guardian', ['random_name'] = 'Destroyers of all Remaining Hope', },
-	{ ['turn'] = 34, ['index'] = 7, ['surprise_level'] = 2, ['boss_title'] = 'Arena Guardian', ['random_name'] = 'Masters of Silence', },
-	{ ['turn'] = 40, ['index'] = 8, ['surprise_level'] = 2, ['boss_title'] = 'Arena Master', ['random_name'] = "Followers of Magh'adal", },
-	{ ['turn'] = 46, ['index'] = 9, ['surprise_level'] = 2, ['boss_title'] = 'Arena Master', ['random_name'] = 'Devoted Ones', },
-	{ ['turn'] = 52, ['index'] = 10, ['surprise_level'] = 2, ['boss_title'] = 'Arena Master', ['random_name'] = 'Guardians of the Night', },
-	{ ['turn'] = 58, ['index'] = 11, ['surprise_level'] = 3, ['boss_title'] = 'Arena Master', ['random_name'] = 'Forgotten Ones', },
-	{ ['turn'] = 64, ['index'] = 12, ['surprise_level'] = 3, ['boss_title'] = 'Arena Overlord', ['random_name'] = 'Destroyers of Eternal Fire', },
-	{ ['turn'] = 70, ['index'] = 13, ['surprise_level'] = 3, ['boss_title'] = 'Arena Overlord', ['random_name'] = 'Worshippers of the Hidden Eye', },
-	{ ['turn'] = 77, ['index'] = 14, ['surprise_level'] = 3, ['boss_title'] = 'Arena Overlord', ['random_name'] = 'Order of Decaying Flesh', },
-	{ ['turn'] = 84, ['index'] = 15, ['surprise_level'] = 4, ['boss_title'] = 'Arena Overlord', ['random_name'] = 'Lords of the Undying Flame', },
-	{ ['turn'] = 91, ['index'] = 16, ['surprise_level'] = 4, ['boss_title'] = 'Arena God', ['random_name'] = 'Demigods of Pain and Sorrow', },
-	{ ['turn'] = 98, ['index'] = 17, ['surprise_level'] = 4, ['boss_title'] = 'Arena God', ['random_name'] = 'Oathkeepers', },
-	{ ['turn'] = 105, ['index'] = 18, ['surprise_level'] = 4, ['boss_title'] = 'Arena God', ['random_name'] = 'Guardians of the Crimson Chest', },
-	{ ['turn'] = 112, ['index'] = 19, ['surprise_level'] = 5, ['boss_title'] = 'Arena God', ['random_name'] = 'The Immortal Ones', },
+	{ ['turn'] = 1, ['index'] = 1, ['surprise_pool'] = 'arena_wave_1', ['boss_title'] = 'Arena Instructor', ['random_name'] = 'Wesnoth Bandits', },
+	{ ['turn'] = 6, ['index'] = 2, ['surprise_pool'] = 'arena_wave_2', ['boss_title'] = 'Arena Instructor', ['random_name'] = 'Dark Riders', },
+	{ ['turn'] = 12, ['index'] = 3, ['surprise_pool'] = 'level_1', ['boss_title'] = 'Arena Instructor', ['random_name'] = 'First Wave of Suffering', },
+	{ ['turn'] = 17, ['index'] = 4, ['surprise_pool'] = 'level_1', ['boss_title'] = 'Arena Guardian', ['random_name'] = 'Unknown Ones', },
+	{ ['turn'] = 23, ['index'] = 5, ['surprise_pool'] = 'level_1', ['boss_title'] = 'Arena Guardian', ['random_name'] = 'Silent Creepers', },
+	{ ['turn'] = 28, ['index'] = 6, ['surprise_pool'] = 'level_1', ['boss_title'] = 'Arena Guardian', ['random_name'] = 'Destroyers of all Remaining Hope', },
+	{ ['turn'] = 34, ['index'] = 7, ['surprise_pool'] = 'level_2', ['boss_title'] = 'Arena Guardian', ['random_name'] = 'Masters of Silence', },
+	{ ['turn'] = 40, ['index'] = 8, ['surprise_pool'] = 'level_2', ['boss_title'] = 'Arena Master', ['random_name'] = "Followers of Magh'adal", },
+	{ ['turn'] = 46, ['index'] = 9, ['surprise_pool'] = 'level_2', ['boss_title'] = 'Arena Master', ['random_name'] = 'Devoted Ones', },
+	{ ['turn'] = 52, ['index'] = 10, ['surprise_pool'] = 'level_2', ['boss_title'] = 'Arena Master', ['random_name'] = 'Guardians of the Night', },
+	{ ['turn'] = 58, ['index'] = 11, ['surprise_pool'] = 'level_3', ['boss_title'] = 'Arena Master', ['random_name'] = 'Forgotten Ones', },
+	{ ['turn'] = 64, ['index'] = 12, ['surprise_pool'] = 'level_3', ['boss_title'] = 'Arena Overlord', ['random_name'] = 'Destroyers of Eternal Fire', },
+	{ ['turn'] = 70, ['index'] = 13, ['surprise_pool'] = 'level_3', ['boss_title'] = 'Arena Overlord', ['random_name'] = 'Worshippers of the Hidden Eye', },
+	{ ['turn'] = 77, ['index'] = 14, ['surprise_pool'] = 'level_3', ['boss_title'] = 'Arena Overlord', ['random_name'] = 'Order of Decaying Flesh', },
+	{ ['turn'] = 84, ['index'] = 15, ['surprise_pool'] = 'level_4', ['boss_title'] = 'Arena Overlord', ['random_name'] = 'Lords of the Undying Flame', },
+	{ ['turn'] = 91, ['index'] = 16, ['surprise_pool'] = 'level_4', ['boss_title'] = 'Arena God', ['random_name'] = 'Demigods of Pain and Sorrow', },
+	{ ['turn'] = 98, ['index'] = 17, ['surprise_pool'] = 'level_4', ['boss_title'] = 'Arena God', ['random_name'] = 'Oathkeepers', },
+	{ ['turn'] = 105, ['index'] = 18, ['surprise_pool'] = 'level_4', ['boss_title'] = 'Arena God', ['random_name'] = 'Guardians of the Crimson Chest', },
+	{ ['turn'] = 112, ['index'] = 19, ['surprise_pool'] = 'level_5', ['boss_title'] = 'Arena God', ['random_name'] = 'The Immortal Ones', },
 	{ ['turn'] = 120, ['index'] = 20, ['gates'] = true, },
 }
 
@@ -71,6 +71,7 @@ function wesnoth.wml_actions.qquws_arena_prepare_data(cfg)
 			wml.variables['arena_wave_info'] = generate_wave_info(v['index'], is_random, arena_wave_mode, spawn_key)
 			wml.variables['arena_nextwave_info'] = generate_wave_info(v['index'] + 1, is_random, arena_wave_mode, spawn_key)
 			wml.variables['arena_open_gates'] = v['gates']
+			wml.variables['arena_surprise_pool'] = v['surprise_pool']
 			break
 		end
 	end
