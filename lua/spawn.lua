@@ -503,7 +503,6 @@ local function process_spawn_table(spawn_table)
 			else
 				if table_row['t'] > 1 then
 					y = 5 - table_row['t']
-					render_new_item = false
 				else
 					y = table_row['y']
 				end
