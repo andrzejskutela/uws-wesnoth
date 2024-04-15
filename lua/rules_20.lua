@@ -117,7 +117,7 @@ return {
 	-- 30 - 36 (mask y 14 - 8)
 
 	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Fire Wraith', ['guard'] = true, ['beefy'] = 100 },
-	{ ['t'] = 31, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'Kraken', ['item'] = true, ['buff'] = 'A13:B17:C7:C6:B24' },
+	{ ['t'] = 31, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'Kraken', ['item'] = true, ['buff'] = 'A13:B17:C55:C7:B24' },
 
 	{ ['t'] = 32, ['d'] = 2, ['side'] = 3, ['x'] = 15, ['lvl'] = 4, ['type'] = 'QQ_terror_hulk', },
 	

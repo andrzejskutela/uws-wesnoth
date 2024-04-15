@@ -117,7 +117,7 @@ local find_conditional_buffs = function(pool_settings)
 	end
 
 	if not pool_settings['has_steadfast'] then
-		for k,v in ipairs({ 'C55','C55',  }) do segregation_pool[#segregation_pool + 1] = v end
+		for k,v in ipairs({ 'C55','C55','C57','C57',  }) do segregation_pool[#segregation_pool + 1] = v end
 	end
 
 	return segregation_pool
