@@ -35,4 +35,40 @@ if arena_mode == 'instructors' then
 		{ ['t'] = 12, ['x'] = 8, ['y'] = 5, ['lvl'] = 0, ['type'] = 'Frost Stoat', ['default'] = 'Frost Stoat', ['delayed'] = 2 },
 		{ ['t'] = 12, ['x'] = 11, ['y'] = 3, ['lvl'] = 2, ['type'] = 'Grand Dragonfly', ['default'] = 'Grand Dragonfly', ['delayed'] = 2, ['quiet_buff'] = 'arena_boss' },
 	}
+
+elseif arena_mode == 'guardians' then
+	return {
+		-- wave 1
+
+		{ ['t'] = 1, ['x'] = 18, ['y'] = 8, ['lvl'] = 0, ['type'] = 'QQUWS_surprise', ['allow_random'] = false, ['delayed'] = 0, },
+		{ ['t'] = 1, ['x'] = 8, ['y'] = 4, ['lvl'] = 0, ['type'] = '', ['default'] = '', ['buff'] = '::', ['delayed'] = 0 },
+		{ ['t'] = 1, ['x'] = 9, ['y'] = 4, ['lvl'] = 0, ['type'] = '', ['default'] = '', ['delayed'] = 0, },
+		{ ['t'] = 1, ['x'] = 17, ['y'] = 4, ['lvl'] = 1, ['type'] = '', ['default'] = '', ['delayed'] = 0, },
+		{ ['t'] = 1, ['x'] = 13, ['y'] = 6, ['lvl'] = 1, ['type'] = '', ['default'] = '', ['delayed'] = 0, },
+		{ ['t'] = 1, ['x'] = 11, ['y'] = 5, ['lvl'] = 0, ['type'] = '', ['default'] = '', ['delayed'] = 2 },
+		{ ['t'] = 1, ['x'] = 16, ['y'] = 4, ['lvl'] = 1, ['type'] = '', ['default'] = '', ['delayed'] = 2 },
+		{ ['t'] = 1, ['x'] = 10, ['y'] = 3, ['lvl'] = 1, ['type'] = '', ['default'] = '', ['delayed'] = 2, ['item'] = true, ['quiet_buff'] = 'arena_boss' },
+
+		-- wave 2
+
+		{ ['t'] = 6, ['x'] = 18, ['y'] = 8, ['lvl'] = 0, ['type'] = 'QQUWS_surprise', ['allow_random'] = false, ['delayed'] = 0, },
+		{ ['t'] = 6, ['x'] = 8, ['y'] = 4, ['lvl'] = 0, ['type'] = '', ['default'] = '', ['buff'] = '::', ['delayed'] = 0 },
+		{ ['t'] = 6, ['x'] = 9, ['y'] = 4, ['lvl'] = 1, ['type'] = '', ['default'] = '', ['delayed'] = 0, },
+		{ ['t'] = 6, ['x'] = 17, ['y'] = 4, ['lvl'] = 1, ['type'] = '', ['default'] = '', ['delayed'] = 0, },
+		{ ['t'] = 6, ['x'] = 13, ['y'] = 6, ['lvl'] = 1, ['type'] = '', ['default'] = '', ['delayed'] = 0, },
+		{ ['t'] = 6, ['x'] = 11, ['y'] = 5, ['lvl'] = 0, ['type'] = '', ['default'] = '', ['delayed'] = 2 },
+		{ ['t'] = 6, ['x'] = 16, ['y'] = 4, ['lvl'] = 1, ['type'] = '', ['default'] = '', ['delayed'] = 2 },
+		{ ['t'] = 6, ['x'] = 10, ['y'] = 3, ['lvl'] = 1, ['type'] = '', ['default'] = '', ['delayed'] = 2, ['quiet_buff'] = 'arena_boss' },
+
+		-- wave 3
+
+		{ ['t'] = 12, ['x'] = 13, ['y'] = 5, ['lvl'] = 0, ['type'] = 'QQUWS_surprise', ['allow_random'] = false, ['delayed'] = 0, },
+		{ ['t'] = 12, ['x'] = 8, ['y'] = 7, ['lvl'] = 1, ['type'] = '', ['default'] = '', ['buff'] = '::', ['delayed'] = 0 },
+		{ ['t'] = 12, ['x'] = 10, ['y'] = 8, ['lvl'] = 1, ['type'] = '', ['default'] = '', ['delayed'] = 0, },
+		{ ['t'] = 12, ['x'] = 18, ['y'] = 10, ['lvl'] = 1, ['type'] = '', ['default'] = '', ['delayed'] = 0, },
+		{ ['t'] = 12, ['x'] = 14, ['y'] = 4, ['lvl'] = 1, ['type'] = '', ['default'] = '', ['delayed'] = 0, },
+		{ ['t'] = 12, ['x'] = 10, ['y'] = 3, ['lvl'] = 2, ['type'] = '', ['default'] = '', ['delayed'] = 2 },
+		{ ['t'] = 12, ['x'] = 8, ['y'] = 5, ['lvl'] = 0, ['type'] = '', ['default'] = '', ['delayed'] = 2 },
+		{ ['t'] = 12, ['x'] = 11, ['y'] = 3, ['lvl'] = 2, ['type'] = '', ['default'] = '', ['delayed'] = 2, ['quiet_buff'] = 'arena_boss' },
+	}
 end
