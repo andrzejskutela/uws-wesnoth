@@ -110,14 +110,14 @@ return {
 	{ ['t'] = 28, ['d'] = 4, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Soldier Ant', },
 	{ ['t'] = 24, ['d'] = 4, ['side'] = 2, ['x'] = 12, ['lvl'] = 3, ['type'] = 'Shadow Jumping Spider', ['fast'] = 2 },
 	
-	{ ['t'] = 27, ['d'] = 5, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Death Squire', ['buff'] = 'A5:B22:C19:A41:A3:C48', ['allow_random'] = false },
+	{ ['t'] = 27, ['d'] = 5, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Death Squire', ['buff'] = 'A5:B57:C19:A41:A3:C48', ['allow_random'] = false },
 	
 	{ ['t'] = 28, ['d'] = 6, ['side'] = 3, ['x'] = 5, ['lvl'] = 3, ['type'] = 'Ghast', ['bulky'] = 100 },
 	
 	-- 30 - 36 (mask y 14 - 8)
 
 	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Fire Wraith', ['guard'] = true, ['beefy'] = 100 },
-	{ ['t'] = 31, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'Kraken', ['item'] = true, ['buff'] = 'A13:B17:C55:C7:B24' },
+	{ ['t'] = 31, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'Kraken', ['item'] = true, ['buff'] = 'A13:B17:C55:C7:C56' },
 
 	{ ['t'] = 32, ['d'] = 2, ['side'] = 3, ['x'] = 15, ['lvl'] = 4, ['type'] = 'QQ_terror_hulk', },
 	
@@ -138,7 +138,7 @@ return {
 
 	-- final boss 37 / mask y 7
 	
-	{ ['t'] = 37, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'Fire Ant Queen', ['buff'] = 'A26:B12:C13:B18', ['moves'] = 0, ['final_boss'] = true },
+	{ ['t'] = 37, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'Fire Ant Queen', ['buff'] = 'A26:B12:C57:C13:B18', ['moves'] = 0, ['final_boss'] = true },
 }
 
 
