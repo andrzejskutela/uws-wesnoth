@@ -85,7 +85,11 @@ local find_conditional_buffs = function(pool_settings)
 	end
 
 	if pool_settings['is_chaotic'] then
-		for k,v in ipairs({ 'C56','C56', }) do segregation_pool[#segregation_pool + 1] = v end
+		for k,v in ipairs({ 'C56','C56','A57','A57' }) do segregation_pool[#segregation_pool + 1] = v end
+	end
+
+	if pool_settings['is_lawful'] then
+		for k,v in ipairs({ 'A58','A58' }) do segregation_pool[#segregation_pool + 1] = v end
 	end
 	
 	if pool_settings['has_strong_melee_blade'] then
@@ -124,7 +128,7 @@ local find_conditional_buffs = function(pool_settings)
 end
 
 local early_allowed_buffs_table = { 
-	'A1','A3','A6','A7','A8','A9','A11','A12','A13','A15','A16','A18','A19','A22','A23','A24','A25','A28','A29','A31','A39','A47','A48','A49','A50','A51','A52','A53','A54',
+	'A1','A3','A6','A7','A8','A9','A11','A12','A13','A15','A16','A18','A19','A22','A23','A24','A25','A28','A29','A31','A39','A47','A48','A49','A50','A51','A52','A53','A54','A57','A58',
 	'B1','B6','B11','B12','B13','B17','B19','B21','B23','B24','B25','B26','B27','B28','B39','B45','B46','B47','B48','B49','B50','B52','B56','B57',
 	'C1','C2','C3','C7','C8','C9','C11','C12','C13','C14','C15','C17','C20','C21','C22','C23','C24','C25','C26','C27','C39','C43','C44','C48','C50','C53','C54','C55',
 }
@@ -168,7 +172,7 @@ function wesnoth.wml_actions.qquws_champion_buff_to_name(cfg)
 	local set_name_var = cfg.name_var
 	
 	local names = { 
-		['A1'] = 'Wrathful',['A2'] = 'Dreadful',['A3']='Abominable',['A4']='Atrocious',['A5']='Frightful',['A6']='Grim',['A7']='Hideous',['A8']='Rotten',['A9']='Terrible',['A10']='Corrupted',['A11']='Putrid',['A12']='Rancid',['A13']='Rotting',['A14']='Infected',['A15']='Dark',['A16']='Black',['A17']='Wretched',['A18']='Barbarous',['A19']='Ferocious',['A20']='Heartless',['A21']='Sinister',['A22']='Infernal',['A23']='Wicked',['A24']='Accursed',['A25']='Malicious',['A26']='Dead',['A27']='Merciless',['A28']='Festering',['A29']='Faceless',['A30']='Wicked',['A31']='Viscious',['A32']='Cruel',['A33']='Vile',['A34']='Sinful',['A35']='Depraved',['A36']='Filthy',['A37']='Reeking',['A38']='Repugnant',['A39']='Degraded',['A40']='Violent',['A41']='Raging',['A42']='Defiled',['A43']='Blind',['A44']='Insufferable',['A45']='Frantic',['A46']='Hopeless',['A47']='Bloodless',['A48']='Frozen',['A49']='Unbearable',['A50']='Deformed',['A51']='Unstoppable',['A52']='Unforgiving',['A53']='Immortal',['A54']='Rabid',['A55']='Demented',['A56']='Furious',['A57']='Brutal',['A58']='Scornful',['A59']='Inferior',['A60']='Abhorrent',['A61']='Unholy',
+		['A1'] = 'Wrathful',['A2'] = 'Dreadful',['A3']='Abominable',['A4']='Atrocious',['A5']='Frightful',['A6']='Grim',['A7']='Hideous',['A8']='Rotten',['A9']='Terrible',['A10']='Corrupted',['A11']='Putrid',['A12']='Rancid',['A13']='Rotting',['A14']='Infected',['A15']='Dark',['A16']='Black',['A17']='Wretched',['A18']='Barbarous',['A19']='Ferocious',['A20']='Heartless',['A21']='Sinister',['A22']='Infernal',['A23']='Wicked',['A24']='Accursed',['A25']='Malicious',['A26']='Dead',['A27']='Merciless',['A28']='Festering',['A29']='Faceless',['A30']='Wicked',['A31']='Viscious',['A32']='Cruel',['A33']='Vile',['A34']='Sinful',['A35']='Depraved',['A36']='Filthy',['A37']='Reeking',['A38']='Repugnant',['A39']='Degraded',['A40']='Violent',['A41']='Raging',['A42']='Defiled',['A43']='Blind',['A44']='Insufferable',['A45']='Frantic',['A46']='Hopeless',['A47']='Bloodless',['A48']='Frozen',['A49']='Unbearable',['A50']='Deformed',['A51']='Unstoppable',['A52']='Unforgiving',['A53']='Immortal',['A54']='Rabid',['A55']='Demented',['A56']='Scornful',['A57']='Unholy',['A58']='Furious',['A59']='Inferior',['A60']='Abhorrent',['A61']='Brutal',
 		['B1'] = 'Apparition',['B2'] = 'Swamplord',['B3']='Demon',['B4']='Minion',['B5']='Shadow',['B6']='Vampire',['B7']='Banshee',['B8']='Soul',['B9']='Wraith',['B10']='Maggot',['B11']='Worm',['B12']='Puke',['B13']='Rot',['B14']='Skin',['B15']='Protector',['B16']='Guardian',['B17']='Angel',['B18']='King',['B19']='Emperor',['B20']='Sultan',['B21']='Baron',['B22']='Herald',['B23']='Overlord',['B24']='Prince',['B25']='Master',['B26']='Lord',['B27']='Dragon',['B28']='WitchKing',['B29']='Ruler',['B30']='Trickster',['B31']='Beast',['B32']='Archangel',['B33']='Doom',['B34']='Destiny',['B35']='Downfall',['B36']='Condemnation',['B37']='Inferno',['B38']='Flame',['B39']='Smoke',['B40']='Sewer',['B41']='Spirit',['B42']='Excrement',['B43']='Abomination',['B44']='Archer',['B45']='Blade',['B46']='Insanity',['B47']='Terror',['B48']='Horror',['B49']='Fury',['B50']='Judgment',['B51']='Bane',['B52']='Glory',['B53']='Venom',['B54']='Harbinger',['B55']='Burden',['B56']='Failure',['B57']='Triumph',['B58']='Poison',['B59']='Pity',['B60']='Havoc',['B61']='Virus',['B62']='Essence',['B63']='Core',['B64']='Gravedigger',
 		['C1'] = "of Barlad'ur",['C2'] = "of Isshagh'Azar",['C3']='of Death',['C4']='of Pain',['C5']='of Fire',['C6']='of Fever',['C7']='of Misery',['C8']='of Torment',['C9']='of Agony',['C10']='of Convulsion',['C11']='of Silence',['C12']='of Heavens',['C13']='of Suffering',['C14']='of Decay',['C15']='of Regret',['C16']='of Deception',['C17']='of Deceit',['C18']='of Truth',['C19']='of Abyss',['C20']='of Despair',['C21']='of Doom',['C22']='of Annihilation',['C23']='of Destruction',['C24']='of Dissolution',['C25']='of Humiliation',['C26']='of Mutilation',['C27']='of Corruption',['C28']='of Abandonment',['C29']='of Indifference',['C30']='of Badazar',['C31']='of Olmadar',['C32']='of Verama',['C33']='of Tiremaza',['C34']='of Shassagoth',['C35']='of Fate',['C36']='of Blasphemy',['C37']='of Darkness',['C38']='of Ignorance',['C39']='of Chaos',['C40']='of Disgust',['C41']='of Contempt',['C42']='of Hatred',['C43']='of Sorrow',['C44']='of Extinction',['C45']='of Sickness',['C46']='of Derangement',['C47']='of Delusion',['C48']='of Betrayal',['C49']='of Infidelity',['C50']='of Perversion',['C51']='of Oblivion',['C52']='of Revenge',['C53']='of Damnation',['C54']='of Starvation',['C55']='of Perdition',['C56']='of Anguish',['C57']='of Persecution',['C58']='of Laceration',['C59']='of Doubt',['C60']='of Disorder',['C61']='of Obliteration',['C62']='of Annihilation',
 	}
@@ -216,6 +220,7 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 		['has_sickness'] = wml.variables['qquws_champion_data.has_sickness'],
 		['has_endurance'] = wml.variables['qquws_champion_data.has_endurance'],
 		['is_chaotic'] = wml.variables['qquws_champion_data.is_chaotic'],
+		['is_lawful'] = wml.variables['qquws_champion_data.is_lawful'],
 		['has_dark_pact'] = wml.variables['qquws_champion_data.has_dark_pact'],
 		['has_protected_by_darkness'] = wml.variables['qquws_champion_data.has_protected_by_darkness'],
 		['has_heavy_stun'] = wml.variables['qquws_champion_data.has_heavy_stun'],

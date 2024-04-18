@@ -445,14 +445,15 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	local east_item = ''
 	local drop_gold = after_games_progression[wave_index]['gold']
 	local payback_damage = 0
+	local all_available_items = {'magic_res','cold_res','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura','book','dragon_protection'}
 	
 	if after_games_progression[wave_index]['item'] then
 		if allow_items then
-			available_items = get_available_items({'magic_res','cold_res','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura'}, after_games_items_table)
+			available_items = get_available_items(all_available_items, after_games_items_table)
 			west_item = mathx.random_choice(available_items)
 			table.insert(after_games_items_table, west_item)
 			
-			available_items = get_available_items({'magic_res','cold_res','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura'}, after_games_items_table)
+			available_items = get_available_items(all_available_items, after_games_items_table)
 			east_item = mathx.random_choice(available_items)
 			table.insert(after_games_items_table, east_item)
 		else

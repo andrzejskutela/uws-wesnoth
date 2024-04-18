@@ -107,6 +107,12 @@ local function process_spawn_table(spawn_table)
 	local used_items_list = wml.variables['used_items_list']
 	local copy_fields_list = wml.variables['uws_spawn.copy_fields']
 	local is_single_side_game = false
+	local is_campaign = wml.variables['uws_game.is_campaign']
+	local all_available_items = {'magic_res','cold_res','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura','book'}
+	if not is_campaign then
+		all_available_items[#all_available_items + 1] = 'hp_low'
+		all_available_items[#all_available_items + 1] = 'dragon_protection'
+	end
 
 	if game_mode == 'slash' and is_single_side_hns == true then
 		is_single_side_game = true
@@ -195,11 +201,11 @@ local function process_spawn_table(spawn_table)
 			end
 			
 			if rules['item'] == true then
-				local available_items = get_available_items({'magic_res','cold_res','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura'}, used_items_table)
+				local available_items = get_available_items(all_available_items, used_items_table)
 				rules['item'] = mathx.random_choice(available_items)
 				table.insert(used_items_table, rules['item'])
 				
-				available_items = get_available_items({'magic_res','cold_res','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura'}, used_items_table)
+				available_items = get_available_items(all_available_items, used_items_table)
 				rules['second_item'] = mathx.random_choice(available_items)
 				table.insert(used_items_table, rules['second_item'])
 			elseif rules['item'] ~= '' then
@@ -516,7 +522,7 @@ local function process_spawn_table(spawn_table)
 				render_new_item = false
 			end
 			
-			table.insert(predropped_items, { ['x'] = table_row['x'], ['y'] = y, ['item'] = item, ['render'] = render_new_item, ['overwrite_image'] = item_image })
+			table.insert(predropped_items, { ['x'] = table_row['x'], ['y'] = y, ['item'] = item, ['render'] = render_new_item, ['overwrite_image'] = item_image, ['drop_id'] = tostring(table_row['id']) .. '_left' })
 		
 			if is_single_side_game == false then
 				if table_row['asymmetric'] then
@@ -525,7 +531,7 @@ local function process_spawn_table(spawn_table)
 					table.insert(used_items_table, item)
 				end
 				
-				table.insert(predropped_items, { ['x'] = map_edge - table_row['x'], ['y'] = y, ['item'] = item, ['render'] = render_new_item, ['overwrite_image'] = item_image })
+				table.insert(predropped_items, { ['x'] = map_edge - table_row['x'], ['y'] = y, ['item'] = item, ['render'] = render_new_item, ['overwrite_image'] = item_image, ['drop_id'] = tostring(table_row['id']) .. '_right' })
 			end
 		end
 	end
@@ -540,6 +546,7 @@ local function process_spawn_table(spawn_table)
 		wml.variables["item_y"] = item_data['y']
 		wml.variables["item_type_id"] = item_data['item']
 		wml.variables["overwrite_item_image"] = item_data['overwrite_image']
+		wml.variables["drop_object_id"] = item_data['drop_id']
 		
 		wml.fire('fire_event', {
 			name='drop_new_item'
