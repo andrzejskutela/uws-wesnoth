@@ -124,12 +124,6 @@ local find_conditional_buffs = function(pool_settings)
 		for k,v in ipairs({ 'C55','C55','C57','C57',  }) do segregation_pool[#segregation_pool + 1] = v end
 	end
 
-	-- check champions.cfg B58 for more info
-	--
-	-- if pool_settings['has_strong_arcane'] then
-	-- 	for k,v in ipairs({ 'B58','B58',  }) do segregation_pool[#segregation_pool + 1] = v end
-	-- end
-
 	return segregation_pool
 end
 
@@ -234,7 +228,6 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 		['has_cold_attack'] = wml.variables['qquws_champion_data.has_cold_attack'],
 		['has_area_attack'] = wml.variables['qquws_champion_data.has_area_attack'],
 		['has_strong_cold_ability'] = wml.variables['qquws_champion_data.has_strong_cold_ability'],
-		['has_strong_arcane'] = wml.variables['qquws_champion_data.has_strong_arcane'],
 		['has_steadfast'] = wml.variables['qquws_champion_data.has_steadfast'],
 	}
 	
