@@ -20,7 +20,7 @@ return {
 	
 	{ ['row'] = 'object', ['t'] = 2, ['x'] = 6, ['cat'] = 'hidden_unit', ['type'] = 'Elvish Shaman', ['type_default'] = 'Elvish Shaman', ['message'] = '¿Hola, cómo estás? ¿qué? ¿No hablas español? ¡no hay problema! cacemos algunos orcos, ¿de acuerdo? ¿aún no lo entiendes? lo que sea, ¡Vamos!', ['new_unit_special_id'] = 'key_holder'},
 	{ ['row'] = 'item', ['t'] = 1, ['x'] = 11, ['y'] = 8, ['asymmetric'] = true, ['pool'] = { 'steadfast','melee_poison','freezing_gem','rat_pack','magic_res','phys_res' }, ['overwrite_image'] = 'items/chest-plain-closed.png' },
-	{ ['row'] = 'object', ['t'] = 1, ['x'] = 6, ['y'] = 13, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 20 },
+	{ ['row'] = 'object', ['t'] = 1, ['x'] = 6, ['y'] = 13, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 25 },
 	{ ['row'] = 'object', ['t'] = 23, ['x'] = 6, ['cat'] = 'event', ['event'] = 'race_open_catacombs', },
 	{ ['row'] = 'object', ['t'] = 26, ['x'] = 5, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 60, ['render'] = false, ['id'] = 'fr_hidden_gold' },
 	{ ['row'] = 'item', ['t'] = 25, ['x'] = 3, ['asymmetric'] = true, ['pool'] = { 'cold_res','impact_res','fire_res','arcane_res','blade_res','pierce_res' }, ['render'] = false, ['id'] = 'fr_hidden_item' },
@@ -65,7 +65,6 @@ return {
 	{ ['t'] = 9, ['d'] = 1, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Elvish Fighter', },
 	{ ['t'] = 10, ['d'] = 1, ['side'] = 4, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Dwarvish Scout', },
 	{ ['t'] = 10, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'Bay Horse', ['guard'] = true },
-	{ ['t'] = 12, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Elvish Rider', ['guard'] = true },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Sergeant', ['default'] = 'Sergeant', ['recruits'] = 'Thief,Poacher,Merman Brawler,Caribe', ['default_recruits'] = 'Thief,Poacher,Merman Brawler,Caribe', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 56, ['armored'] = 20, },
 	
 	{ ['t'] = 11, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Mermaid Initiate', ['guard'] = true },
@@ -74,16 +73,16 @@ return {
 	{ ['t'] = 11, ['d'] = 3, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Naga Guard', },
 	{ ['t'] = 13, ['d'] = 3, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Merman Hunter', },
 
-	{ ['t'] = 12, ['d'] = 4, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'War Harbinger', ['calls_for_help'] = true, ['race_guard_off'] = true },
+	{ ['t'] = 12, ['d'] = 4, ['side'] = 4, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Elvish Scout', ['calls_for_help'] = true, ['race_guard_off'] = true },
 	{ ['t'] = 10, ['d'] = 4, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Grand Dragonfly', },
-	{ ['t'] = 12, ['d'] = 4, ['side'] = 4, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Cave Bear', },
 	{ ['t'] = 14, ['d'] = 4, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Ogre', },
-	{ ['t'] = 15, ['d'] = 4, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Naga Warrior', ['buff'] = 'A57:B56:C32:C33' },
-
+	
 	{ ['t'] = 14, ['d'] = 5, ['side'] = 4, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Water Serpent', ['agile'] = 10 },
 	{ ['t'] = 15, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Thug', },
 	
+	{ ['t'] = 12, ['d'] = 6, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'War Harbinger', ['race_guard_off'] = true },
 	{ ['t'] = 14, ['d'] = 6, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'Footpad', ['agile'] = 5 },
+	{ ['t'] = 15, ['d'] = 6, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Naga Warrior', ['buff'] = 'A57:B56:C32:C33' },
 	{ ['t'] = 15, ['d'] = 6, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Dark Adept', },
 	
 	-- 16 - 22 (mask y 28 - 22)
@@ -126,7 +125,7 @@ return {
 	-- 30 - 36 (mask y 14 - 8)
 
 	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Fire Wraith', ['guard'] = true, ['beefy'] = 100 },
-	{ ['t'] = 31, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'Kraken', ['item'] = true, ['buff'] = 'A13:B32:C55:C7:C56' },
+	{ ['t'] = 31, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'Kraken', ['item'] = true, ['buff'] = 'A13:B32:C55:C7:C56', ['allow_random'] = false },
 
 	{ ['t'] = 32, ['d'] = 2, ['side'] = 3, ['x'] = 15, ['lvl'] = 4, ['type'] = 'QQ_terror_hulk', },
 	
