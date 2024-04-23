@@ -18,28 +18,29 @@
 return {
 	-- objects
 	
-	{ ['row'] = 'object', ['t'] = 2, ['x'] = 6, ['cat'] = 'hidden_unit', ['type'] = 'Elvish Shaman', ['type_default'] = 'Elvish Shaman', ['message'] = '¿Hola, cómo estás? ¿qué? ¿No hablas español? ¡no hay problema! cacemos algunos orcos, ¿de acuerdo? ¿aún no lo entiendes? lo que sea, ¡Vamos!', ['new_unit_special_id'] = 'key_holder'},
-	{ ['row'] = 'item', ['t'] = 1, ['x'] = 11, ['y'] = 8, ['asymmetric'] = true, ['pool'] = { 'steadfast','melee_poison','freezing_gem','rat_pack','magic_res','phys_res' }, ['overwrite_image'] = 'items/chest-plain-closed.png' },
+	{ ['row'] = 'object', ['t'] = 2, ['x'] = 6, ['cat'] = 'hidden_unit', ['type'] = 'Elvish Shaman', ['type_default'] = 'Elvish Shaman', ['message'] = 'Howdy! Are you travelling North by any chance? Have you heard about the secret chamber that can be found there? I can open the secret gate if you get me there.', ['new_unit_special_id'] = 'key_holder'},
+	{ ['row'] = 'item', ['t'] = 1, ['x'] = 11, ['y'] = 8, ['asymmetric'] = true, ['pool'] = { 'melee_poison','freezing_gem','rat_pack','book','hp_low','hp_med','hp_high' }, ['overwrite_image'] = 'items/chest-plain-closed.png' },
 	{ ['row'] = 'object', ['t'] = 1, ['x'] = 6, ['y'] = 13, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 25 },
+	{ ['row'] = 'object', ['t'] = 1, ['x'] = 7, ['y'] = 10, ['cat'] = 'heal', ['image'] = 'scenery/well.png', ['name'] = 'Well', ['amount'] = 4 },
 	{ ['row'] = 'object', ['t'] = 23, ['x'] = 6, ['cat'] = 'event', ['event'] = 'race_open_catacombs', },
 	{ ['row'] = 'object', ['t'] = 26, ['x'] = 5, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 60, ['render'] = false, ['id'] = 'fr_hidden_gold' },
-	{ ['row'] = 'item', ['t'] = 25, ['x'] = 3, ['asymmetric'] = true, ['pool'] = { 'cold_res','impact_res','fire_res','arcane_res','blade_res','pierce_res' }, ['render'] = false, ['id'] = 'fr_hidden_item' },
+	{ ['row'] = 'item', ['t'] = 25, ['x'] = 3, ['asymmetric'] = true, ['pool'] = { 'leadership','feeding','drain','regen','heal','dragon_protection' }, ['render'] = false, ['id'] = 'fr_hidden_item' },
 
 	-- beginning
 	
-	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['y'] = 14, ['lvl'] = 1, ['type'] = 'Wolf', ['moves'] = 6, ['guard'] = true, },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['y'] = 14, ['lvl'] = 1, ['type'] = 'Wolf', ['moves'] = 5, ['guard'] = true, },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['y'] = 7, ['lvl'] = 0, ['type'] = 'Wose Sapling', ['moves'] = 4, ['guard'] = true },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['y'] = 9, ['lvl'] = 0, ['type'] = 'Wose Sapling', ['moves'] = 4, ['guard'] = true },
-	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 6, ['y'] = 8, ['lvl'] = 1, ['type'] = 'Saurian Augur', ['moves'] = 5, },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 6, ['y'] = 8, ['lvl'] = 1, ['type'] = 'Saurian Augur', ['moves'] = 4, },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['y'] = 7, ['lvl'] = 1, ['type'] = 'Orcish Grunt', ['moves'] = 0, ['gold'] = 10 },
 
 	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 6, ['y'] = 7, ['lvl'] = 1, ['type'] = 'Heavy Infantryman', ['moves'] = 0, },
 	
-	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 5, ['y'] = 12, ['lvl'] = 1, ['type'] = 'Young Ogre', ['moves'] = 4, },
+	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 5, ['y'] = 12, ['lvl'] = 1, ['type'] = 'Young Ogre', ['moves'] = 3, },
 	
 	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 13, ['y'] = 6, ['lvl'] = 1, ['type'] = 'Wolf', ['moves'] = 4, },
 
-	{ ['t'] = 1, ['d'] = 6, ['side'] = 2, ['x'] = 7, ['y'] = 9, ['lvl'] = 1, ['type'] = 'Fire Ant', ['moves'] = 5, },
+	{ ['t'] = 1, ['d'] = 6, ['side'] = 2, ['x'] = 7, ['y'] = 9, ['lvl'] = 1, ['type'] = 'Fire Ant', ['moves'] = 4, },
 	
 	-- 2 - 8 (mask y 42 - 36)
 	
@@ -54,7 +55,7 @@ return {
 	{ ['t'] = 7, ['d'] = 3, ['side'] = 3, ['x'] = 6, ['lvl'] = 1, ['type'] = 'Naga Dirkfang', },
 
 	{ ['t'] = 8, ['d'] = 4, ['side'] = 3, ['x'] = 6, ['lvl'] = 2, ['type'] = 'Swamp Lizard', ['bulky'] = 40 },
-	{ ['t'] = 8, ['d'] = 4, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Cave Bear', },
+	{ ['t'] = 8, ['d'] = 4, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Cave Bear', ['race_guard_off'] = true, },
 	
 	{ ['t'] = 7, ['d'] = 5, ['side'] = 3, ['x'] = 6, ['lvl'] = 0, ['type'] = 'Nibbler', },
 	
@@ -64,7 +65,6 @@ return {
 	
 	{ ['t'] = 9, ['d'] = 1, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Elvish Fighter', },
 	{ ['t'] = 10, ['d'] = 1, ['side'] = 4, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Dwarvish Scout', },
-	{ ['t'] = 10, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'Bay Horse', ['guard'] = true },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Sergeant', ['default'] = 'Sergeant', ['recruits'] = 'Thief,Poacher,Merman Brawler,Caribe', ['default_recruits'] = 'Thief,Poacher,Merman Brawler,Caribe', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 56, ['armored'] = 20, },
 	
 	{ ['t'] = 11, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Mermaid Initiate', ['guard'] = true },
@@ -77,7 +77,7 @@ return {
 	{ ['t'] = 10, ['d'] = 4, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Grand Dragonfly', },
 	{ ['t'] = 14, ['d'] = 4, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Ogre', },
 	
-	{ ['t'] = 14, ['d'] = 5, ['side'] = 4, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Water Serpent', ['agile'] = 10 },
+	{ ['t'] = 14, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Water Serpent', ['agile'] = 10 },
 	{ ['t'] = 15, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Thug', },
 	
 	{ ['t'] = 12, ['d'] = 6, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'War Harbinger', ['race_guard_off'] = true },
