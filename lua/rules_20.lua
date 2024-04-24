@@ -66,24 +66,24 @@ return {
 	{ ['t'] = 9, ['d'] = 1, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Elvish Fighter', },
 	{ ['t'] = 10, ['d'] = 1, ['side'] = 4, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Dwarvish Scout', },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Sergeant', ['default'] = 'Sergeant', ['recruits'] = 'Thief,Poacher,Merman Brawler,Caribe', ['default_recruits'] = 'Thief,Poacher,Merman Brawler,Caribe', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 56, ['armored'] = 20, },
-	
-	{ ['t'] = 11, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Mermaid Initiate', ['guard'] = true },
-	{ ['t'] = 15, ['d'] = 2, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Firebomb Ant', ['buff'] = 'A13:B52:C26' },
+	{ ['t'] = 15, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Dark Adept', },
 
+	{ ['t'] = 11, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Mermaid Initiate', ['guard'] = true },
+	{ ['t'] = 15, ['d'] = 2, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Naga Warrior', ['buff'] = 'A57:B56:C32:C33' },
+	
 	{ ['t'] = 11, ['d'] = 3, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Naga Guard', },
 	{ ['t'] = 13, ['d'] = 3, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Merman Hunter', },
 
 	{ ['t'] = 12, ['d'] = 4, ['side'] = 4, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Elvish Scout', ['calls_for_help'] = true, ['race_guard_off'] = true },
 	{ ['t'] = 10, ['d'] = 4, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Grand Dragonfly', },
 	{ ['t'] = 14, ['d'] = 4, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Ogre', },
+	{ ['t'] = 14, ['d'] = 4, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'Footpad', ['agile'] = 5 },
 	
 	{ ['t'] = 14, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Water Serpent', ['agile'] = 10 },
 	{ ['t'] = 15, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Thug', },
 	
 	{ ['t'] = 12, ['d'] = 6, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'War Harbinger', ['race_guard_off'] = true },
-	{ ['t'] = 14, ['d'] = 6, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'Footpad', ['agile'] = 5 },
-	{ ['t'] = 15, ['d'] = 6, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Naga Warrior', ['buff'] = 'A57:B56:C32:C33' },
-	{ ['t'] = 15, ['d'] = 6, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Dark Adept', },
+	{ ['t'] = 15, ['d'] = 6, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Firebomb Ant', ['buff'] = 'A13:B52:C26' },
 	
 	-- 16 - 22 (mask y 28 - 22)
 	
@@ -114,11 +114,10 @@ return {
 	{ ['t'] = 28, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Dune Alchemist', },
 	
 	{ ['t'] = 25, ['d'] = 3, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Dune Scorcher', },
+	{ ['t'] = 27, ['d'] = 3, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Death Squire', ['buff'] = 'A5:B57:C19:A41:A3:C48', ['allow_random'] = false },
 
 	{ ['t'] = 28, ['d'] = 4, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Soldier Ant', },
 	{ ['t'] = 24, ['d'] = 4, ['side'] = 2, ['x'] = 12, ['lvl'] = 3, ['type'] = 'Shadow Jumping Spider', ['fast'] = 2 },
-	
-	{ ['t'] = 27, ['d'] = 5, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Death Squire', ['buff'] = 'A5:B57:C19:A41:A3:C48', ['allow_random'] = false },
 	
 	{ ['t'] = 28, ['d'] = 6, ['side'] = 3, ['x'] = 5, ['lvl'] = 3, ['type'] = 'Ghast', ['bulky'] = 100 },
 	
