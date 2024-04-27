@@ -64,9 +64,10 @@ return {
 	{ ['t'] = 15, ['d'] = 3, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'Dwarvish Ulfserker', ['allow_random'] = false },
 
 	{ ['t'] = 13, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'Dwarvish Ulfserker', ['bulky'] = 60, },
-	{ ['t'] = 14, ['d'] = 4, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'Dwarvish Scout', ['fast'] = 1 },
 	
-	{ ['t'] = 14, ['d'] = 5, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', ['buff'] = 'A11:B11:C10', ['gold'] = 10 },
+	{ ['t'] = 15, ['d'] = 5, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', ['buff'] = 'A11:B11:C10', ['gold'] = 10 },
+
+	{ ['t'] = 14, ['d'] = 6, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'Dwarvish Scout', ['fast'] = 1 },
 	
 	-- 16 - 22 (mask y 60 - 54)
 	
@@ -112,7 +113,7 @@ return {
 	{ ['t'] = 27, ['d'] = 4, ['side'] = 2, ['x'] = 6, ['lvl'] = 2, ['type'] = 'Troll Shaman', },
 	
 	{ ['t'] = 23, ['d'] = 5, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Blood Bat', ['beefy'] = 28, },
-	{ ['t'] = 24, ['d'] = 5, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'Dread Bat', ['buff'] = 'A12:B12:C11' },
+	{ ['t'] = 24, ['d'] = 5, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'Dread Bat', ['buff'] = 'A47:B12:C11' },
 
 	{ ['t'] = 27, ['d'] = 6, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', ['race_guard_off'] = true, ['gold'] = 10 },
 	
@@ -274,7 +275,7 @@ return {
 	{ ['t'] = 60, ['d'] = 4, ['side'] = 3, ['x'] = 25, ['lvl'] = 3, ['type'] = 'Drake Warden', ['race_guard_off'] = true },
 	{ ['t'] = 60, ['d'] = 4, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'Giant Spider', },
 	
-	{ ['t'] = 59, ['d'] = 5, ['side'] = 3, ['x'] = 17, ['lvl'] = 4, ['type'] = 'Armageddon Drake', ['race_guard_off'] = true, ['bulky'] = 140, },
+	{ ['t'] = 59, ['d'] = 5, ['side'] = 3, ['x'] = 17, ['lvl'] = 4, ['type'] = 'Armageddon Drake', ['race_guard_off'] = true, ['bulky'] = 40, },
 
 	{ ['t'] = 60, ['d'] = 6, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'Giant Spider', },
 	
