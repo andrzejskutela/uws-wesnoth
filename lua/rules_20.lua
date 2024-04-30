@@ -76,13 +76,11 @@ return {
 
 	{ ['t'] = 12, ['d'] = 4, ['side'] = 4, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Elvish Scout', ['calls_for_help'] = true, ['race_guard_off'] = true },
 	{ ['t'] = 10, ['d'] = 4, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Grand Dragonfly', },
-	{ ['t'] = 14, ['d'] = 4, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Ogre', },
 	
 	{ ['t'] = 14, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Water Serpent', ['agile'] = 10 },
 	{ ['t'] = 15, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Thug', },
 	
 	{ ['t'] = 12, ['d'] = 6, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'War Harbinger', ['race_guard_off'] = true },
-	{ ['t'] = 15, ['d'] = 6, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Firebomb Ant', ['buff'] = 'A13:B52:C26' },
 	
 	-- 16 - 22 (mask y 28 - 22)
 	
