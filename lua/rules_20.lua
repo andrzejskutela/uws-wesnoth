@@ -65,17 +65,17 @@ return {
 	
 	{ ['t'] = 9, ['d'] = 1, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Elvish Fighter', },
 	{ ['t'] = 10, ['d'] = 1, ['side'] = 4, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Dwarvish Scout', },
+	{ ['t'] = 10, ['d'] = 1, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Grand Dragonfly', },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Sergeant', ['default'] = 'Sergeant', ['recruits'] = 'Thief,Poacher,Merman Brawler,Caribe', ['default_recruits'] = 'Thief,Poacher,Merman Brawler,Caribe', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 56, ['armored'] = 20, },
 	{ ['t'] = 15, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Dark Adept', },
+	{ ['t'] = 15, ['d'] = 1, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Naga Warrior', ['buff'] = 'A57:B56:C33' },
 
 	{ ['t'] = 11, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Mermaid Initiate', ['guard'] = true },
-	{ ['t'] = 15, ['d'] = 2, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Naga Warrior', ['buff'] = 'A57:B56:C33' },
 	
 	{ ['t'] = 11, ['d'] = 3, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Naga Guard', },
 	{ ['t'] = 13, ['d'] = 3, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Merman Hunter', },
 
 	{ ['t'] = 12, ['d'] = 4, ['side'] = 4, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Elvish Scout', ['calls_for_help'] = true, ['race_guard_off'] = true },
-	{ ['t'] = 10, ['d'] = 4, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Grand Dragonfly', },
 	
 	{ ['t'] = 14, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Water Serpent', ['agile'] = 10 },
 	{ ['t'] = 15, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Thug', },
@@ -86,6 +86,7 @@ return {
 	
 	{ ['t'] = 17, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Drake Clasher', ['guard'] = true },
 	{ ['t'] = 17, ['d'] = 1, ['side'] = 2, ['x'] = 6, ['lvl'] = 2, ['type'] = 'Saurian Spearthrower', ['guard'] = true },
+	{ ['t'] = 18, ['d'] = 1, ['side'] = 2, ['x'] = 6, ['lvl'] = 2, ['type'] = 'Drake Thrasher', },
 	{ ['t'] = 19, ['d'] = 1, ['side'] = 2, ['x'] = 6, ['lvl'] = 1, ['type'] = 'Drake Burner', },
 	{ ['t'] = 20, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Dwarvish Runesmith', ['beefy'] = 20 },
 	{ ['t'] = 22, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Swordsman', ['guard'] = true },
@@ -94,7 +95,6 @@ return {
 	
 	{ ['t'] = 17, ['d'] = 3, ['side'] = 3, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Shadow', ['allow_random'] = false, ['fast'] = 2 },
 	
-	{ ['t'] = 18, ['d'] = 4, ['side'] = 2, ['x'] = 6, ['lvl'] = 2, ['type'] = 'Drake Thrasher', },
 	{ ['t'] = 19, ['d'] = 4, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Dune Horse Archer', ['calls_for_help'] = true },
 
 	{ ['t'] = 22, ['d'] = 5, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Dwarvish Miner', },
@@ -105,16 +105,17 @@ return {
 	
 	{ ['t'] = 23, ['d'] = 1, ['side'] = 3, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Dune Soldier', },
 	{ ['t'] = 24, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Dune Strider', ['calls_for_help'] = true, },
+	{ ['t'] = 24, ['d'] = 1, ['side'] = 2, ['x'] = 12, ['lvl'] = 3, ['type'] = 'Shadow Jumping Spider', ['fast'] = 2 },
 	{ ['t'] = 26, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'Dune Falconer', ['agile'] = 5 },
 	{ ['t'] = 27, ['d'] = 1, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Dune Spearguard', },
 
 	{ ['t'] = 28, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Dune Alchemist', },
 	
-	{ ['t'] = 25, ['d'] = 3, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Dune Scorcher', },
 	{ ['t'] = 27, ['d'] = 3, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Death Squire', ['buff'] = 'A5:B57:C19:A41:A3:C48', ['allow_random'] = false },
 
 	{ ['t'] = 28, ['d'] = 4, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Soldier Ant', },
-	{ ['t'] = 24, ['d'] = 4, ['side'] = 2, ['x'] = 12, ['lvl'] = 3, ['type'] = 'Shadow Jumping Spider', ['fast'] = 2 },
+
+	{ ['t'] = 25, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Dune Scorcher', },
 	
 	{ ['t'] = 28, ['d'] = 6, ['side'] = 3, ['x'] = 5, ['lvl'] = 3, ['type'] = 'Ghast', ['bulky'] = 100 },
 	
@@ -122,6 +123,7 @@ return {
 
 	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Fire Wraith', ['guard'] = true, ['beefy'] = 100 },
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'Kraken', ['item'] = true, ['buff'] = 'A13:B32:C55:C7:C56', ['allow_random'] = false },
+	{ ['t'] = 32, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'Great Troll', ['race_guard_off'] = true, ['beefy'] = 40 },
 
 	{ ['t'] = 32, ['d'] = 2, ['side'] = 3, ['x'] = 15, ['lvl'] = 4, ['type'] = 'QQ_terror_hulk', },
 	
@@ -131,7 +133,6 @@ return {
 	
 	{ ['t'] = 35, ['d'] = 5, ['side'] = 3, ['x'] = 17, ['lvl'] = 1, ['type'] = 'Giant Mudcrawler', ['armored'] = 30, },
 	
-	{ ['t'] = 32, ['d'] = 6, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'Great Troll', ['race_guard_off'] = true, ['beefy'] = 40 },
 	{ ['t'] = 36, ['d'] = 6, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'Paladin', ['buff'] = 'A58:B2:C47:B16' },
 
 	-- final boss 37 / mask y 7
