@@ -1,0 +1,8 @@
+<span color='#46a380'>v2.5.8</span> (date):
+- Changelog handling improvements
+
+<span color='#5990b3'>v2.5.7</span> (01/05/2024):
+- Simple changelog visible for players under uws game info -> changelog
+- Fixed issue of enemies not attacking in certain situations in hack'n slash games
+- Torch of the Secret Fire item buffed slighlty on higher ranks
+- Black Gorge map balancing
