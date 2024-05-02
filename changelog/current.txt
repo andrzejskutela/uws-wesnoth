@@ -1,2 +1,4 @@
 <span color='#46a380'>v2.5.8</span> (date):
 - Changelog handling improvements
+- Small balancing changes to Valley of the Necromancer map
+- Compatibility changes to reflect the new releases of EoMa and AE

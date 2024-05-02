@@ -48,7 +48,6 @@ return {
 	{ ['t'] = 5, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Infected', ['default'] = 'Walking Corpse', ['beefy'] = 25 },
 	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Blob', ['default'] = 'Giant Rat', ['gold'] = 12 },
 	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Infected', ['default'] = 'Vampire Bat', },
-	{ ['t'] = 7, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Infected', ['default'] = 'Vampire Bat', },
 	{ ['t'] = 7, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Cadaver', ['default'] = 'Ghoul', ['gold'] = 30 },
 	{ ['t'] = 8, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mrc_oracles_Darkmage', ['default'] = 'Dark Adept', ['recruits'] = 'AE_mrc_Blight_Infected,AE_mrc_Blight_Parasite,AE_mrc_Blight_Microbe', ['default_recruits'] = 'Walking Corpse,Vampire Bat,Giant Rat', ['r_lvls'] = '0,0,0', ['recruitment_gold'] = 30 },
 	
@@ -78,7 +77,7 @@ return {
 	
 	{ ['t'] = 11, ['d'] = 3, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Amoeba', ['default'] = 'Blood Bat', ['gold'] = 15, },
 	
-	{ ['t'] = 9, ['d'] = 5, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Fetid', ['default'] = 'Skeleton', },
+	{ ['t'] = 9, ['d'] = 5, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Fetid', ['default'] = 'Skeleton', ['gold'] = 15, },
 	
 	{ ['t'] = 10, ['d'] = 6, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mrc_Blight_Dismembered', ['default'] = 'Deathblade' },
 	
