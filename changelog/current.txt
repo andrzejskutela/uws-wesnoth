@@ -1,4 +1,5 @@
-<span color='#46a380'>v2.5.8</span> (date):
+<span color='#46a380'>v2.5.8</span> (04/05/2024):
+- Compatibility changes to handle the new breaking changes in EoMa and AE
 - Changelog handling improvements
 - Small balancing changes to Valley of the Necromancer map
-- Compatibility changes to reflect the new releases of EoMa and AE
+- Single resistance artifacts changed from 10/20/30/40/60/85 % buff to 10/20/35/50/65/85 %
