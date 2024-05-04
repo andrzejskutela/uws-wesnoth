@@ -73,8 +73,8 @@ return {
 	
 	{ ['t'] = 16, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_stf_eltireans_Archbishop_of_Eltire', ['default'] = 'Dune Sky Hunter', ['recruits'] = 'AE_stf_eltireans_Frostwalker,AE_stf_eltireans_Destroyer,AE_stf_eltireans_Guardian_of_the_Sun,AE_stf_eltireans_Raging_Mistress,AE_stf_eltireans_Siren', ['default_recruits'] = 'Dune Firetrooper,Dune Luminary,Dune Wayfarer,Dune Harrier,Dune Blademaster', ['r_lvls'] = '3,3,3,3,3', ['recruitment_gold'] = 135, ['recruit_minion'] = 'C31' },
 	{ ['t'] = 18, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_stf_eltireans_Elementalist', ['default'] = 'Dune Soldier', },
-	{ ['t'] = 19, ['d'] = 1, ['side'] = 4, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mag_Golem_Boss', ['default'] = 'Orcish Crossbowman', },
-	{ ['t'] = 20, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mag_Mage_of_Air', ['default'] = 'Orcish Warrior', ['calls_for_help'] = true },
+	{ ['t'] = 19, ['d'] = 1, ['side'] = 4, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mag_War_Golem', ['default'] = 'Orcish Crossbowman', },
+	{ ['t'] = 20, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mag_Aeromancer', ['default'] = 'Orcish Warrior', ['calls_for_help'] = true },
 	{ ['t'] = 20, ['d'] = 1, ['side'] = 4, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_mag_Golem', ['default'] = 'Young Ogre', },
 	{ ['t'] = 21, ['d'] = 1, ['side'] = 4, ['x'] = 5, ['lvl'] = 3, ['type'] = 'AE_mag_Mirrorshield', ['default'] = 'Great Troll', ['beefy'] = 28, ['armored'] = 10 },
 	
@@ -84,7 +84,7 @@ return {
 	{ ['t'] = 20, ['d'] = 3, ['side'] = 3, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_mag_War_Mage', ['default'] = 'Troll Shaman', },
 	
 	{ ['t'] = 19, ['d'] = 4, ['side'] = 4, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mag_Mystic_Warrior', ['default'] = 'Orcish Slayer', },,
-	{ ['t'] = 21, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_mag_Shadowmage', ['default'] = 'Orcish Slurbow', ['buff'] = 'A35:B52:C19:B13' },
+	{ ['t'] = 21, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_mag_Shadow_Mage', ['default'] = 'Orcish Slurbow', ['buff'] = 'A35:B52:C19:B13' },
 	
 	{ ['t'] = 16, ['d'] = 6, ['side'] = 3, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_stf_eltireans_Sky_Lord', ['default'] = 'Dune Paragon', },
 	{ ['t'] = 19, ['d'] = 6, ['side'] = 4, ['x'] = 4, ['lvl'] = 1, ['type'] = 'AE_mag_Hidden_Face', ['default'] = 'Orcish Assassin', ['agile'] = 10, },
@@ -134,7 +134,7 @@ return {
 	{ ['t'] = 41, ['d'] = 1, ['side'] = 5, ['x'] = 15, ['lvl'] = 4, ['type'] = 'AE_myh_Librarian', ['default'] = 'Dwarvish Arcanister', ['recruits'] = 'AE_myh_Oathkeeper,AE_myh_Runeforger,AE_myh_Stormbringer', ['default_recruits'] = 'Dwarvish Lord,Dwarvish Dragonguard,Dwarvish Sentinel', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 140, ['recruit_minion'] = 'A3' },
 	{ ['t'] = 43, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 5, ['type'] = 'QQ_atronachs', ['default'] = 'QQ_atronachs', ['buff'] = 'A33:B30:C30' },
 	
-	{ ['t'] = 40, ['d'] = 2, ['side'] = 4, ['x'] = 14, ['lvl'] = 4, ['type'] = 'AE_mag_DarkApostle', ['default'] = 'Skeletal Dragon', },
+	{ ['t'] = 40, ['d'] = 2, ['side'] = 4, ['x'] = 14, ['lvl'] = 4, ['type'] = 'AE_mag_Dark_Apostle', ['default'] = 'Skeletal Dragon', },
 	
 	{ ['t'] = 38, ['d'] = 3, ['side'] = 4, ['x'] = 10, ['lvl'] = 3, ['type'] = 'AE_mag_Crimson_Atokpi', ['default'] = 'Banebow', },
 	{ ['t'] = 42, ['d'] = 3, ['side'] = 5, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_myh_Harbinger', ['default'] = 'Dwarvish Runemaster', ['beefy'] = 40 },

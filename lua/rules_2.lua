@@ -138,7 +138,7 @@ return {
 	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_mag_Cyclops_Breaker', ['default'] = 'Dune Spearguard', ['gold'] = 12 },
 	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Mudcrawler', ['default'] = 'Giant Mudcrawler', ['race_guard_off'] = true, ['allow_random'] = false },
 	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Mudcrawler', ['default'] = 'Giant Mudcrawler', ['race_guard_off'] = true, ['allow_random'] = false },
-	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_mag_Fire_Cyclops', ['default'] = 'Dune Alchemist', ['recruits'] = 'AE_mag_Cyclops', ['default_recruits'] = 'Dune Burner,Dune Rider,Dune Soldier', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 75, ['recruit_armored'] = 15 },
+	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_mag_Cyclops_Noble', ['default'] = 'Dune Alchemist', ['recruits'] = 'AE_mag_Cyclops', ['default_recruits'] = 'Dune Burner,Dune Rider,Dune Soldier', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 75, ['recruit_armored'] = 15 },
 	{ ['t'] = 27, ['d'] = 1, ['side'] = 4, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_mag_Fire_Elemental', ['default'] = 'Dune Burner', },
 	{ ['t'] = 28, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Mudcrawler', ['default'] = 'Giant Mudcrawler', ['race_guard_off'] = true, ['allow_random'] = false },
 	{ ['t'] = 28, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_mag_Blood_Warrior', ['default'] = 'Dune Sunderer', },
@@ -156,7 +156,7 @@ return {
 	
 	{ ['t'] = 25, ['d'] = 5, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'AE_fut_brungar_Giant_Crab', ['default'] = 'Dune Firetrooper', ['buff'] = 'A15:B7:C14', ['disallow_slash_unguardian'] = true },
 	
-	{ ['t'] = 28, ['d'] = 6, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_mag_Mighty_Cyclops', ['default'] = 'Dune Captain', ['bulky'] = 36, ['beefy'] = 24, },
+	{ ['t'] = 28, ['d'] = 6, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_mag_Cyclops_Brute', ['default'] = 'Dune Captain', ['bulky'] = 36, ['beefy'] = 24, },
 	
 	-- 30 - 36 (mask y 51 - 45)
 	
@@ -166,7 +166,7 @@ return {
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['gold'] = 15 },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Hell_Guardian', ['default'] = 'Highwayman', ['moves'] = 0 },
-	{ ['t'] = 33, ['d'] = 1, ['side'] = 3, ['x'] = 27, ['lvl'] = 2, ['type'] = 'AE_mag_Wyvern_Tamer', ['default'] = 'Cuttle Fish', ['race_guard_off'] = true },
+	{ ['t'] = 33, ['d'] = 1, ['side'] = 3, ['x'] = 27, ['lvl'] = 2, ['type'] = 'AE_mag_Wyvern_Knight', ['default'] = 'Cuttle Fish', ['race_guard_off'] = true },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Overseer', ['default'] = 'Outlaw', ['recruits'] = 'AE_mag_Goblin_Kamikaze', ['default_recruits'] = 'QQ_Kamikaze', ['r_lvls'] = '0', ['recruitment_gold'] = 90, ['gold'] = 30, ['allow_random_recruits'] = false, },
 	{ ['t'] = 34, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_mrc_slavers_Worker', ['default'] = 'QQ_Kamikaze', ['guard'] = true },
 	{ ['t'] = 35, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['bulky'] = 50, ['beefy'] = 50, ['allow_random'] = false },
@@ -277,7 +277,7 @@ return {
 	-- 65 - 69 (mask y 16 - 12)
 	
 	{ ['t'] = 66, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_mag_Heavy_Summoner', ['default'] = 'Mage of Light', ['armored'] = 10, ['guard'] = true, ['event'] = 'grw_spam_dimensional_gates', ['allow_random'] = false, },
-	{ ['t'] = 68, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 3, ['type'] = 'AE_mag_DharmaRhami', ['default'] = 'Master at Arms', ['guard'] = true, },
+	{ ['t'] = 68, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 3, ['type'] = 'AE_mag_Dharma_rhami', ['default'] = 'Master at Arms', ['guard'] = true, },
 	{ ['t'] = 68, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_rhy_tr_Nova', ['default'] = 'Mermaid Siren', ['event'] = 'follow_players_race' },
 	
 	{ ['t'] = 67, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Abomination', ['default'] = 'General', ['recruits'] = 'AE_ext_orcs_Naga_Depthstalker,AE_ext_orcs_Naga_Assassin,Naga Myrmidon,Naga Zephyr,Naga Sicarius', ['default_recruits'] = 'Wild Wyvern,Water Serpent,Sea Serpent,Naga Zephyr,Naga Sicarius', ['r_lvls'] = '3,2,3,3,3', ['recruitment_gold'] = 250, ['gold'] = 50, ['recruit_armored'] = 5 },

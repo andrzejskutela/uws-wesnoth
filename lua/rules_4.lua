@@ -23,7 +23,7 @@ return {
 	{ ['row'] = 'object', ['t'] = 37, ['x'] = 23, ['cat'] = 'rune', ['image'] = 'scenery/rune3-glow.png', ['amount'] = 2, ['name'] = 'Rune', ['set'] = 'R6,R7', ['color'] = '#e3974b', ['tooltip'] = '+10% forest defense (50%)\
 +10% hills defense (50%)' },
 	{ ['row'] = 'object', ['t'] = 66, ['x'] = 23, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 60 },
-	{ ['row'] = 'object', ['t'] = 92, ['x'] = 24, ['cat'] = 'hidden_unit', ['type'] = 'AE_mag_Toad', ['type_default'] = 'Mage', ['message'] = "These pesky nagas imprisoned me here for their entertainment! So good the breath the fresh air again. I owe you for this one!" },
+	{ ['row'] = 'object', ['t'] = 92, ['x'] = 24, ['cat'] = 'hidden_unit', ['type'] = 'AE_mag_Toad_Rider', ['type_default'] = 'Mage', ['message'] = "These pesky nagas imprisoned me here for their entertainment! So good the breath the fresh air again. I owe you for this one!" },
 	{ ['row'] = 'object', ['t'] = 120, ['x'] = 21, ['cat'] = 'heal', ['image'] = 'scenery/well.png', ['name'] = 'Well', ['amount'] = 12, },
 
 	-- beginning
@@ -180,15 +180,15 @@ return {
 	
 	-- 51 - 57 (mask y 119 - 113)
 	
-	{ ['t'] = 51, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_mag_Dwarvish_Rune_Warrior', ['default'] = 'Dwarvish Sentinel', ['moves'] = 0, ['disallow_slash_unguardian'] = true },
+	{ ['t'] = 51, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_mag_Dwarvish_Runic_Warrior', ['default'] = 'Dwarvish Sentinel', ['moves'] = 0, ['disallow_slash_unguardian'] = true },
 	{ ['t'] = 53, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'Dwarvish Fighter', ['default'] = 'Dwarvish Fighter', },
 	{ ['t'] = 53, ['d'] = 1, ['side'] = 3, ['x'] = 20, ['lvl'] = 1, ['type'] = 'Dwarvish Fighter', ['default'] = 'Dwarvish Fighter', },
-	{ ['t'] = 54, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Red_Ulfserker', ['default'] = 'Dwarvish Berserker', ['beefy'] = 40, ['race_guard_off'] = true },
+	{ ['t'] = 54, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Red_Steam_Ulfserker', ['default'] = 'Dwarvish Berserker', ['beefy'] = 40, ['race_guard_off'] = true },
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mag_Steam_Berserker', ['default'] = 'Dwarvish Berserker', ['race_guard_off'] = true },
 	{ ['t'] = 56, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mag_Technician', ['default'] = 'Dwarvish Runesmith', ['beefy'] = 30, },
 	{ ['t'] = 57, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Technician', ['default'] = 'Dwarvish Runesmith', },
 	
-	{ ['t'] = 54, ['d'] = 2, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mag_Red_Ulfserker', ['default'] = 'Dwarvish Berserker', ['bulky'] = 40, ['race_guard_off'] = true },
+	{ ['t'] = 54, ['d'] = 2, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mag_Red_Steam_Ulfserker', ['default'] = 'Dwarvish Berserker', ['bulky'] = 40, ['race_guard_off'] = true },
 	
 	{ ['t'] = 53, ['d'] = 3, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_feu_clockwork_dwarves_Miasmist', ['default'] = 'Dwarvish Steelclad', },
 	{ ['t'] = 56, ['d'] = 3, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mag_Steam_Berserker', ['default'] = 'Dwarvish Berserker', ['race_guard_off'] = true },
@@ -203,7 +203,7 @@ return {
 	{ ['t'] = 58, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'Dwarvish Stalwart', ['default'] = 'Dwarvish Stalwart', ['moves'] = 0, ['gold'] = 20 },
 	{ ['t'] = 60, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_mag_Runesmith', ['default'] = 'Dwarvish Runesmith', },
 	{ ['t'] = 61, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_arc_menagerie_Earth_Daemon_2', ['default'] = 'Cave Bear', ['guard'] = true, ['beefy'] = 20, ['armored'] = 20 },
-	{ ['t'] = 61, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 3, ['type'] = 'AE_mag_Rune_Artist', ['default'] = 'Dwarvish Runemaster', ['recruits'] = 'AE_mag_Runeadept,AE_mag_Dwarvish_Warrior,AE_mag_Dwarvish_Gunner,AE_stf_triththa_Rusher,AE_rhy_dw_Ghost,AE_rhy_dw_Runeadept', ['default_recruits'] = 'Dwarvish Fighter,Dwarvish Guardsman,Dwarvish Scout,Dwarvish Thunderer,Giant Mudcrawler', ['r_lvls'] = '1,1,1,1,1,1', ['recruitment_gold'] = 170, ['recruit_armored'] = 10 },
+	{ ['t'] = 61, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 3, ['type'] = 'AE_mag_Rune_Artist', ['default'] = 'Dwarvish Runemaster', ['recruits'] = 'AE_mag_Rune_Adept,AE_mag_Dwarvish_Warrior,AE_mag_Dwarvish_Gunner,AE_stf_triththa_Rusher,AE_rhy_dw_Ghost,AE_rhy_dw_Runeadept', ['default_recruits'] = 'Dwarvish Fighter,Dwarvish Guardsman,Dwarvish Scout,Dwarvish Thunderer,Giant Mudcrawler', ['r_lvls'] = '1,1,1,1,1,1', ['recruitment_gold'] = 170, ['recruit_armored'] = 10 },
 	{ ['t'] = 64, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 0, ['type'] = 'AE_mag_Drone', ['default'] = 'Giant Rat', },
 	{ ['t'] = 64, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Lunar_Eye', ['default'] = 'Saurian Skirmisher', ['guard'] = true, ['beefy'] = 60 },
 	
@@ -266,7 +266,7 @@ return {
 	{ ['t'] = 81, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_mag_Banisher', ['default'] = 'Dune Windbolt', ['armored'] = 5, },
 	{ ['t'] = 84, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A34:B15:C34:A41', ['race_guard_off'] = true },
 	
-	{ ['t'] = 79, ['d'] = 2, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_RhamiDatu', ['default'] = 'Jinn', ['guard'] = true, },
+	{ ['t'] = 79, ['d'] = 2, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Rhami_datu', ['default'] = 'Jinn', ['guard'] = true, },
 	
 	{ ['t'] = 82, ['d'] = 3, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mag_Summoner', ['default'] = 'Jinn', },
 	{ ['t'] = 83, ['d'] = 3, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mag_Air_Avatar', ['default'] = 'Dune Explorer', ['guard'] = true, },
@@ -386,7 +386,7 @@ return {
 	{ ['t'] = 116, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Man_at_Arms', ['default'] = 'Duelist', ['armored'] = 10 },
 	{ ['t'] = 117, ['d'] = 1, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_rhy_dr_Trireme', ['default'] = 'Merman Warrior', ['guard'] = true },
 	{ ['t'] = 117, ['d'] = 1, ['side'] = 3, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_rhy_dr_Trireme', ['default'] = 'Merman Spearman', ['guard'] = true },
-	{ ['t'] = 117, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mag_Protector', ['default'] = 'Shock Trooper', ['beefy'] = 40, ['armored'] = 5 },
+	{ ['t'] = 117, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mag_Hoplite', ['default'] = 'Shock Trooper', ['beefy'] = 40, ['armored'] = 5 },
 	{ ['t'] = 118, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 4, ['type'] = 'AE_feu_ceresians_Metropolitan', ['default'] = 'QQ_destroyer', ['item'] = true, ['disallow_slash_unguardian'] = true, },
 	{ ['t'] = 118, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Sergeant', ['default'] = 'Sergeant', },
 	{ ['t'] = 119, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 5, ['type'] = 'QQ_dragon_rider', ['default'] = 'QQ_dragon_rider', ['gold'] = 120, ['bulky'] = 72, ['recruits'] = 'AE_rhy_ce_Swordsman,AE_rhy_ce_Townguard,AE_rhy_ce_Armored_Horseman,AE_rhy_ce_Healer,AE_rhy_ce_Heavy_Crossbowman', ['default_recruits'] = 'White Mage,Shock Trooper,Duelist,Dragoon,Swordsman', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 330, ['recruit_armored'] = 5 },
@@ -494,7 +494,7 @@ return {
 
 	{ ['t'] = 157, ['d'] = 4, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mag_Pain_Mistress', ['default'] = 'Wraith', ['beefy'] = 48, },
 	
-	{ ['t'] = 156, ['d'] = 5, ['side'] = 4, ['x'] = 24, ['lvl'] = 4, ['type'] = 'AE_mag_DarkApostle', ['default'] = 'QQ_dark_witness', ['bulky'] = 40, },
+	{ ['t'] = 156, ['d'] = 5, ['side'] = 4, ['x'] = 24, ['lvl'] = 4, ['type'] = 'AE_mag_Dark_Apostle', ['default'] = 'QQ_dark_witness', ['bulky'] = 40, },
 
 	{ ['t'] = 159, ['d'] = 6, ['side'] = 4, ['x'] = 23, ['lvl'] = 6, ['type'] = 'QQ_death', ['default'] = 'QQ_death', ['buff'] = 'A21:B41:C17', },
 	

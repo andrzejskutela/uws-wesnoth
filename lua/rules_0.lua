@@ -104,7 +104,7 @@ return {
 	{ ['t'] = 24, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_rhy_dw_Miner', ['default'] = 'Dwarvish Guardsman', ['guard'] = true, },
 	{ ['t'] = 25, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_rhy_dw_Miner', ['default'] = 'Dwarvish Guardsman', ['guard'] = true, },
 	{ ['t'] = 25, ['d'] = 1, ['side'] = 3, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_rhy_dw_Ghost', ['default'] = 'Ghost', ['guard'] = true, ['bulky'] = 40, ['quiet_buff'] = 'Q1', ['calls_for_help'] = true, ['disallow_slash_unguardian'] = true, ['allow_random'] = false },
-	{ ['t'] = 28, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mag_Red_Ulfserker', ['default'] = 'Dwarvish Berserker', ['beefy'] = 32, ['gold'] = 9 },
+	{ ['t'] = 28, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mag_Red_Steam_Ulfserker', ['default'] = 'Dwarvish Berserker', ['beefy'] = 32, ['gold'] = 9 },
 	{ ['t'] = 28, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_stf_triththa_Giant_Squid', ['default'] = 'Cuttle Fish', ['guard'] = true, ['buff'] = 'A5:B5:C2', ['item'] = true },
 	
 	{ ['t'] = 23, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_rhy_dw_Miner', ['default'] = 'Dwarvish Guardsman', },
