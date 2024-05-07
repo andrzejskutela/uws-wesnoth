@@ -1,3 +1,6 @@
+<span color='#db9a3d'>v2.5.9</span> (date):
+- Fixed permanent hit and run bug that happened when some centaur units reached their max lvl
+
 <span color='#46a380'>v2.5.8</span> (04/05/2024):
 - Compatibility changes to handle the new breaking changes in EoMa and AE
 - Changelog handling improvements
