@@ -121,7 +121,7 @@ return {
 	
 	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher' },
 	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Saurian Augur', },
-	{ ['t'] = 31, ['d'] = 1, ['side'] = 3, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Saurian Oracle', ['item'] = true },
+	{ ['t'] = 31, ['d'] = 1, ['side'] = 3, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Saurian Oracle', },
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 3, ['type'] = 'Saurian Flanker', ['recruits'] = 'Saurian Skirmisher,Saurian Augur', ['r_lvls'] = '1,1', ['recruitment_gold'] = 60, ['gold'] = 20 },
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 4, ['x'] = 25, ['lvl'] = 3, ['type'] = 'Drake Flameheart', ['recruits'] = 'Drake Burner,Drake Fighter', ['r_lvls'] = '1,1', ['recruitment_gold'] = 90, ['gold'] = 80 },
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 1, ['type'] = 'Drake Burner', },
