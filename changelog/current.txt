@@ -1,2 +1,4 @@
 <span color='#db9a3d'>v2.5.9</span> (date):
 - Fixed permanent hit and run bug that happened when some centaur units reached their max lvl
+- Elven Ring of Accuracy item was redesigned
+- Added a few new champion buffs to the pool
