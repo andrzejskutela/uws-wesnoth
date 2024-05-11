@@ -3,3 +3,4 @@
 - Elven Ring of Accuracy item redesigned
 - Rodent Breeder item redesigned
 - Added a few new champion buffs to the pool
+- Fixed a bug in scroll games where items are not rendered after they are dropped
