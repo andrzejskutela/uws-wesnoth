@@ -104,7 +104,7 @@ return {
 	{ ['t'] = 29, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_mrc_avians_Raven', ['default'] = 'Drake Blademaster', ['calls_for_help'] = true },
 	
 	{ ['t'] = 26, ['d'] = 4, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mrc_avians_Hummingbird', ['default'] = 'Drake Thrasher', ['race_guard_off'] = true },
-	{ ['t'] = 28, ['d'] = 4, ['side'] = 2, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_mrc_avians_Armorpiercer', ['default'] = 'Roc', ['buff'] = 'A45:B20:C36' },
+	{ ['t'] = 28, ['d'] = 4, ['side'] = 2, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_mrc_avians_Armorpiercer', ['default'] = 'War Harbinger', ['buff'] = 'A45:B20:C36' },
 	
 	{ ['t'] = 27, ['d'] = 6, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_mrc_avians_Nightwing', ['default'] = 'Inferno Drake', },
 	

@@ -104,7 +104,7 @@ return {
 	{ ['t'] = 14, ['d'] = 4, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Seaman', ['default'] = 'Fencer', },
 	{ ['t'] = 14, ['d'] = 4, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Whirlwind', ['default'] = 'Pikeman', ['armored'] = 10, ['gold'] = 18 },
 	
-	{ ['t'] = 13, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Greater_Albatross', ['default'] = 'Roc', ['bulky'] = 40 },
+	{ ['t'] = 13, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Greater_Albatross', ['default'] = 'Gryphon', ['bulky'] = 40 },
 
 	{ ['t'] = 15, ['d'] = 6, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_rhy_rg_Bowman', ['default'] = 'Bowman', ['beefy'] = 20, ['quiet_buff'] = 'Q3', },
 	
@@ -122,7 +122,7 @@ return {
 	
 	{ ['t'] = 18, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_fut_brungar_Crab', ['default'] = 'Rock Scorpion', },
 	{ ['t'] = 19, ['d'] = 2, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Water_Snake', ['default'] = 'Merman Fighter', ['agile'] = 5 },
-	{ ['t'] = 22, ['d'] = 2, ['side'] = 4, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_holy_order_Twilight', ['default'] = 'Roc', ['guard'] = true, ['disallow_slash_unguardian'] = true },
+	{ ['t'] = 22, ['d'] = 2, ['side'] = 4, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_holy_order_Twilight', ['default'] = 'Gryphon Master', ['guard'] = true, ['disallow_slash_unguardian'] = true },
 	
 	{ ['t'] = 21, ['d'] = 3, ['side'] = 3, ['x'] = 27, ['lvl'] = 1, ['type'] = 'AE_mag_Carpet_Rider', ['default'] = 'Merman Hunter', },
 	

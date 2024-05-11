@@ -69,7 +69,7 @@ return {
 
 	{ ['t'] = 12, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 0, ['type'] = 'AE_arc_south_seas_Breeze', ['default'] = 'Falcon', ['buff'] = 'A3:B3:C3:B11', ['allow_random'] = false, },
 	
-	{ ['t'] = 13, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Greater_Albatross', ['default'] = 'Roc', ['disallow_slash_unguardian'] = true },
+	{ ['t'] = 13, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Greater_Albatross', ['default'] = 'Gryphon', ['disallow_slash_unguardian'] = true },
 	
 	{ ['t'] = 9, ['d'] = 4, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Gale', ['default'] = 'Water Serpent', ['fast'] = 1, },
 	{ ['t'] = 10, ['d'] = 4, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_myh_Water_Dryad', ['default'] = 'Merman Hunter', },

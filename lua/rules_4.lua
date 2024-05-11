@@ -173,9 +173,9 @@ return {
 	
 	{ ['t'] = 46, ['d'] = 4, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_mrc_highlanders_Behemoth', ['default'] = 'Troll Warrior', ['armored'] = 15, ['bulky'] = 40 },
 
-	{ ['t'] = 48, ['d'] = 5, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Balloon', ['default'] = 'Roc', ['race_guard_off'] = true },
+	{ ['t'] = 48, ['d'] = 5, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Balloon', ['default'] = 'War Harbinger', ['race_guard_off'] = true },
 
-	{ ['t'] = 47, ['d'] = 6, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Balloon', ['default'] = 'Roc', ['race_guard_off'] = true },
+	{ ['t'] = 47, ['d'] = 6, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Balloon', ['default'] = 'War Harbinger', ['race_guard_off'] = true },
 	{ ['t'] = 48, ['d'] = 6, ['side'] = 2, ['x'] = 23, ['lvl'] = 5, ['type'] = 'QQ_ice_mammoth', ['default'] = 'QQ_ice_mammoth', },
 	
 	-- 51 - 57 (mask y 119 - 113)
@@ -357,7 +357,7 @@ return {
 	
 	{ ['t'] = 107, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_mrc_hive_Tick', ['default'] = 'Giant Spider', ['beefy'] = 80, ['bulky'] = 40 },
 	{ ['t'] = 107, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_imp_Arendians_Horse_Master', ['default'] = 'Cavalier', ['fast'] = 2, },
-	{ ['t'] = 107, ['d'] = 1, ['side'] = 4, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Wasp', ['default'] = 'Roc', },
+	{ ['t'] = 107, ['d'] = 1, ['side'] = 4, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Wasp', ['default'] = 'Black Horse', },
 	{ ['t'] = 108, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_mrc_refugees_Envoy', ['default'] = 'Elvish Outrider', ['calls_for_help'] = true },
 	{ ['t'] = 109, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mrc_refugees_Arsonist', ['default'] = 'Elvish Sorceress', },
 	{ ['t'] = 109, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = 'Pikeman', ['moves'] = 0, ['gold'] = 10 },

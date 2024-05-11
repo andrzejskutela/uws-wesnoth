@@ -26,6 +26,7 @@ return {
 	{ ['row'] = 'object', ['t'] = 25, ['x'] = 25, ['cat'] = 'heal', ['image'] = 'halo/elven/druid-healing1.png', },
 	{ ['row'] = 'object', ['t'] = 25, ['x'] = 24, ['cat'] = 'heal', ['image'] = 'halo/elven/druid-healing1.png', },
 	{ ['row'] = 'object', ['t'] = 25, ['x'] = 4, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 75 },
+	{ ['row'] = 'object', ['t'] = 45, ['x'] = 23, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 50 },
 	
 	-- beginning
 	
@@ -177,7 +178,7 @@ return {
 	{ ['t'] = 45, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Soulless', ['gold'] = 8 },
 	{ ['t'] = 45, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 1, ['type'] = 'Soulless', },
 	{ ['t'] = 45, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'Soulless', },
-	{ ['t'] = 45, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 3, ['type'] = 'Banebow', ['moves'] = 0, ['item'] = true },
+	{ ['t'] = 45, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 3, ['type'] = 'Banebow', ['moves'] = 0, },
 	{ ['t'] = 45, ['d'] = 1, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'Soulless', },
 	{ ['t'] = 46, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'Soulless', ['gold'] = 8 },
 	{ ['t'] = 46, ['d'] = 1, ['side'] = 3, ['x'] = 11, ['lvl'] = 2, ['type'] = 'Dread Bat', ['agile'] = 10 },

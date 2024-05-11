@@ -143,7 +143,7 @@ return {
 	{ ['t'] = 39, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Elvish Fighter', ['default'] = 'Elvish Fighter', },
 	{ ['t'] = 41, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_feu_high_elves_Captain', ['default'] = 'Elvish Lord', ['gold'] = 12 },
 	{ ['t'] = 42, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'AE_mrc_hive_Tick', ['default'] = 'Giant Spider', ['buff'] = 'A23:B12:C23:C21', },
-	{ ['t'] = 42, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Queen', ['default'] = 'Roc', },
+	{ ['t'] = 42, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Queen', ['default'] = 'Grand Dragonfly', },
 	{ ['t'] = 42, ['d'] = 1, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Glider', ['default'] = 'Fire Wraith', ['agile'] = 10 },
 	{ ['t'] = 42, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mag_Kharosian_Bulwark', ['default'] = 'Drake Enforcer', ['guard'] = true },
 	{ ['t'] = 43, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Fire_Ant', ['default'] = 'Jinn', },

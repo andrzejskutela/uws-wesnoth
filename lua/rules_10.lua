@@ -122,7 +122,7 @@ return {
 	{ ['t'] = 25, ['d'] = 3, ['side'] = 4, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_mie_treefolk_assailant', ['default'] = 'Elvish Archer', },
 	
 	{ ['t'] = 23, ['d'] = 4, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_treefolk_bark_elder', ['default'] = 'Elder Wose', },
-	{ ['t'] = 25, ['d'] = 4, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_rhy_fh_bear', ['default'] = 'Roc', ['fast'] = 1 },
+	{ ['t'] = 25, ['d'] = 4, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_rhy_fh_bear', ['default'] = 'Grand Dragonfly', ['fast'] = 1 },
 	
 	{ ['t'] = 26, ['d'] = 6, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_myh_Vine_Tiger', ['default'] = 'Elvish Sorceress', ['armored'] = 15 },
 	
