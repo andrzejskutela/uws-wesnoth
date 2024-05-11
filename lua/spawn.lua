@@ -275,6 +275,10 @@ local function process_spawn_table(spawn_table)
 				
 				rules['title'] = table.concat(titles, ' ') .. ' '
 			end
+
+			if rules['title'] ~= '' then
+				rules['title_lc'] = string.lower(rules['title'])
+			end
 			
 			if rules['buff'] ~= '' then
 				local prespawn_moves = 5 -- arbitrary number

@@ -67,7 +67,7 @@ return {
 	{ ['t'] = 12, ['d'] = 1, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_mrc_cult_Freak', ['default'] = 'Heavy Infantryman', ['bulky'] = 40, ['disallow_slash_unguardian'] = true },
 	{ ['t'] = 15, ['d'] = 1, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_mrc_cult_Sentry', ['default'] = 'Longbowman', ['recruits'] = 'AE_mrc_cult_Recruit,AE_mrc_cult_Sewer_Swimmer,AE_mrc_cult_Waiter,AE_mrc_Blight_Bacterium', ['default_recruits'] = 'Bowman,Spearman,Thug,Mermaid Initiate', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 65, ['gold'] = 25 },
 
-	{ ['t'] = 12, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 0, ['type'] = 'AE_arc_south_seas_Breeze', ['default'] = 'Falcon', ['buff'] = 'A3:B3:C3:B11', ['allow_random'] = false, },
+	{ ['t'] = 12, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 0, ['type'] = 'AE_arc_south_seas_Breeze', ['default'] = 'Mudcrawler', ['buff'] = 'A3:B3:C3:B11', ['allow_random'] = false, },
 	
 	{ ['t'] = 13, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Greater_Albatross', ['default'] = 'Gryphon', ['disallow_slash_unguardian'] = true },
 	

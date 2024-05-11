@@ -118,14 +118,14 @@ return {
 	
 	{ ['t'] = 18, ['d'] = 1, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'Lieutenant', ['default'] = 'Lieutenant', ['recruits'] = 'AE_feu_ceresians_Yeoman,AE_feu_ceresians_Crossbowman', ['default_recruits'] = 'Bowman,Spearman', ['r_lvls'] = '1,1', ['recruitment_gold'] = 55, ['gold'] = 10 },
 	{ ['t'] = 19, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = 'Pikeman', ['guard'] = true, ['gold'] = 10, ['disallow_slash_unguardian'] = true, },
-	{ ['t'] = 21, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_myh_Great_Wizard', ['default'] = 'White Mage', ['gold'] = 10, },
 	{ ['t'] = 22, ['d'] = 1, ['side'] = 3, ['x'] = 25, ['lvl'] = 2, ['type'] = 'AE_imp_Lavinians_Field_Ballista', ['default'] = 'Javelineer', ['moves'] = 0 },
 	{ ['t'] = 22, ['d'] = 1, ['side'] = 1, ['x'] = 11, ['lvl'] = 1, ['type'] = 'Elvish Shaman', ['default'] = 'Elvish Shaman', ['allow_random'] = false },
 	
 	{ ['t'] = 19, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = 'Pikeman', ['guard'] = true, ['gold'] = 10, ['disallow_slash_unguardian'] = true, },
-	
+	{ ['t'] = 20, ['d'] = 2, ['side'] = 3, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_feu_ceresians_Squire', ['default'] = 'Spearman', },
+
 	{ ['t'] = 20, ['d'] = 3, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Shadow', ['default'] = 'Shadow', },
-	{ ['t'] = 20, ['d'] = 3, ['side'] = 3, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_feu_ceresians_Squire', ['default'] = 'Spearman', },
+	{ ['t'] = 21, ['d'] = 3, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_myh_Great_Wizard', ['default'] = 'White Mage', },
 	
 	{ ['t'] = 16, ['d'] = 4, ['side'] = 3, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mrc_enchanters_Titan', ['default'] = 'Pikeman', ['beefy'] = 40 },
 	{ ['t'] = 17, ['d'] = 4, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'Ghost', ['default'] = 'Ghost', ['race_guard_off'] = true, },
