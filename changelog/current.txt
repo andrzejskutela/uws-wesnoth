@@ -1,10 +1,2 @@
-<span color='#db9a3d'>v2.5.9</span> (11/05/2024):
-- Fixed global hit and run bug when centaur units reach their max lvl
-- Elven Ring of Accuracy item redesigned
-- Rodent Breeder item redesigned
-- Added a few new champion buffs to the pool
-- Fixed a bug in scroll games where items are not rendered after they are dropped
-- Some balancing in various maps
-- Incoming enemy labels in scroll games now indicate champion or strong units coming if lvl-only option is chosen
-- All map files updated to remove terrain types deprecated in 1.18
-- Fixed bug in campaign where the game misreads xp modifier settings
+<span color='#db9a3d'>v2.5.10</span> (date):
+- Fixed Fight Recovery champion bonuse not working
