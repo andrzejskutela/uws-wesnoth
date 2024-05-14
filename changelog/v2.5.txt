@@ -1,5 +1,6 @@
 <span color='#db9a3d'>v2.5.10</span> (date):
 - Fixed Fight Recovery champion bonuse not working
+- Small Fungoid and Enslaved Soul units nerfed a bit
 
 <span color='#db9a3d'>v2.5.9</span> (11/05/2024):
 - Fixed global hit and run bug when centaur units reach their max lvl
