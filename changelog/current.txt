@@ -1,3 +1,4 @@
 <span color='#db9a3d'>v2.5.10</span> (date):
 - Fixed Fight Recovery champion bonuse not working
 - Small Fungoid and Enslaved Soul units nerfed a bit
+- Added a few new champion specials
