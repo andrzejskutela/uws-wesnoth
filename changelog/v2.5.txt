@@ -5,6 +5,7 @@
 - Small balancing of the Valley of the Necromancer map
 - Fixed bloodline ability not working when a unit reaches significant rank
 - Fixed some global buffs not working in pvp games
+- Amulet of Devotion item redesigned
 - Talisman of Protection, Gem of Hoarfrost and The Scythe items buffed on higher ranks
 - Celestial Hammer nerfed on lower ranks
 - Fixed Leviathan's Call removing all traits from the hit unit
