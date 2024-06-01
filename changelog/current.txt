@@ -4,3 +4,4 @@
 - Added a few new champion specials
 - Small balancing to Valley of the Necromancer map
 - Fix bloodline ability not working when a unit reaches significant rank
+- Gem of Hoarfrost and The Scythe items buffed on higher ranks

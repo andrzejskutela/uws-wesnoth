@@ -4,6 +4,7 @@
 - Added a few new champion specials
 - Small balancing to Valley of the Necromancer map
 - Fix bloodline ability not working when a unit reaches significant rank
+- Gem of Hoarfrost and The Scythe items buffed on higher ranks
 
 <span color='#db9a3d'>v2.5.9</span> (11/05/2024):
 - Fixed global hit and run bug when centaur units reach their max lvl
