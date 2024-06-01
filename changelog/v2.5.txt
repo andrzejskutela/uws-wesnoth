@@ -1,12 +1,13 @@
-<span color='#db9a3d'>v2.5.10</span> (date):
-- Fixed Fight Recovery champion bonus not working
+<span color='#db9a3d'>v2.5.10</span> (01/06/2024):
+- Fight Recovery champion bonus now works correctly
 - Small Fungoid and Enslaved Soul units nerfed a bit
 - Added a few new champion specials
-- Small balancing to Valley of the Necromancer map
-- Fix bloodline ability not working when a unit reaches significant rank
-- Fix some global buffs not working in pvp games
+- Small balancing of the Valley of the Necromancer map
+- Fixed bloodline ability not working when a unit reaches significant rank
+- Fixed some global buffs not working in pvp games
 - Gem of Hoarfrost and The Scythe items buffed on higher ranks
-- Fix Leviathan's Call removing all traits from the hit unit
+- Fixed Leviathan's Call removing all traits from the hit unit
+- Fixed White Book of Wesnoth extra xp on adjacent units on higher ranks
 
 <span color='#db9a3d'>v2.5.9</span> (11/05/2024):
 - Fixed global hit and run bug when centaur units reach their max lvl
