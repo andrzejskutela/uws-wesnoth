@@ -8,6 +8,7 @@
 - Gem of Hoarfrost and The Scythe items buffed on higher ranks
 - Fixed Leviathan's Call removing all traits from the hit unit
 - Fixed White Book of Wesnoth extra xp on adjacent units on higher ranks
+- Fixed Necronomicon summoned units spawning sometimes on impassable tiles
 
 <span color='#db9a3d'>v2.5.9</span> (11/05/2024):
 - Fixed global hit and run bug when centaur units reach their max lvl
