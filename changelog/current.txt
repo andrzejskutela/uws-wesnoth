@@ -1,7 +1,8 @@
 <span color='#db9a3d'>v2.5.10</span> (date):
-- Fixed Fight Recovery champion bonuse not working
+- Fixed Fight Recovery champion bonus not working
 - Small Fungoid and Enslaved Soul units nerfed a bit
 - Added a few new champion specials
 - Small balancing to Valley of the Necromancer map
 - Fix bloodline ability not working when a unit reaches significant rank
 - Gem of Hoarfrost and The Scythe items buffed on higher ranks
+- Fix Leviathan's Call removing all traits from the hit unit
