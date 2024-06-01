@@ -1,4 +1,4 @@
-<span color='#db9a3d'>v2.5.10</span> (01/06/2024):
+<span color='#76ba43'>v2.5.10</span> (01/06/2024):
 - Fight Recovery champion bonus now works correctly
 - Small Fungoid and Enslaved Soul units nerfed a bit
 - Added a few new champion specials
