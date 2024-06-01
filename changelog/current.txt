@@ -5,7 +5,8 @@
 - Small balancing of the Valley of the Necromancer map
 - Fixed bloodline ability not working when a unit reaches significant rank
 - Fixed some global buffs not working in pvp games
-- Gem of Hoarfrost and The Scythe items buffed on higher ranks
+- Talisman of Protection, Gem of Hoarfrost and The Scythe items buffed on higher ranks
+- Celestial Hammer nerfed on lower ranks
 - Fixed Leviathan's Call removing all traits from the hit unit
 - Fixed White Book of Wesnoth extra xp on adjacent units on higher ranks
 - Fixed Necronomicon summoned units spawning sometimes on impassable tiles
