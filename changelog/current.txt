@@ -1,13 +1,8 @@
-<span color='#76ba43'>v2.5.10</span> (01/06/2024):
-- Fight Recovery champion bonus now works correctly
-- Small Fungoid and Enslaved Soul units nerfed a bit
-- Added a few new champion specials
+<span color='#9474cc'>v2.5.11</span> (date):
+- When Rat Pack item is picked up then spawn the first rat already on next turn
+- Small buff to pedigree rats
+- Rat ambassador ability now available on significant rank
+- Enslaved Soul nerfed slightly
+- Spawn penalty for low experience modifier is lowered
+- Shield Master ability's chance to block increased a tiny bit
 - Small balancing of the Valley of the Necromancer map
-- Fixed bloodline ability not working when a unit reaches significant rank
-- Fixed some global buffs not working in pvp games
-- Amulet of Devotion item redesigned
-- Talisman of Protection, Gem of Hoarfrost and The Scythe items buffed on higher ranks
-- Celestial Hammer nerfed on lower ranks
-- Fixed Leviathan's Call removing all traits from the hit unit
-- Fixed White Book of Wesnoth extra xp on adjacent units on higher ranks
-- Fixed Necronomicon summoned units spawning sometimes on impassable tiles
