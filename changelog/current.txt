@@ -7,3 +7,5 @@
 - Spawn penalty for low experience modifier is lowered
 - Shield Master ability's chance to block increased a tiny bit
 - Small balancing of the Valley of the Necromancer map
+- Chronomancer's Staff, stillness aura replaced with cold aura
+- Potion of Health renamed Flask of the Alchemist
