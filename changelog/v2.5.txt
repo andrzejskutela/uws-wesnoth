@@ -1,8 +1,9 @@
 <span color='#9474cc'>v2.5.11</span> (date):
+- Necronomicon summons ability now produces more random units
 - When Rat Pack item is picked up then spawn the first rat already on next turn
 - Small buff to pedigree rats
 - Rat ambassador ability now available on significant rank
-- Enslaved Soul nerfed slightly
+- Enslaved Soul nerfed
 - Spawn penalty for low experience modifier is lowered
 - Shield Master ability's chance to block increased a tiny bit
 - Small balancing of the Valley of the Necromancer map
