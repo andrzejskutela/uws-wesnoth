@@ -10,7 +10,8 @@
 - Small balancing of the Valley of the Necromancer map
 - Chronomancer's Staff, stillness aura replaced with cold aura
 - Potion of Health renamed Flask of the Alchemist
-- A new unique lvl5 unit added - Wereworm
+- Added new uws unique lvl5 unit added - Wereworm
+- Fixed Charm of Regeneration wrong item description on higher ranks
 
 <span color='#76ba43'>v2.5.10</span> (01/06/2024):
 - Fight Recovery champion bonus now works correctly
