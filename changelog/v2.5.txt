@@ -1,5 +1,6 @@
 <span color='#9474cc'>v2.5.11</span> (date):
 - Necronomicon summons ability now produces more random units
+- Necronomicon feeding is now available on significant+ only
 - When Rat Pack item is picked up then spawn the first rat already on next turn
 - Small buff to pedigree rats
 - Rat ambassador ability now available on significant rank
@@ -7,6 +8,9 @@
 - Spawn penalty for low experience modifier is lowered
 - Shield Master ability's chance to block increased a tiny bit
 - Small balancing of the Valley of the Necromancer map
+- Chronomancer's Staff, stillness aura replaced with cold aura
+- Potion of Health renamed Flask of the Alchemist
+- A new unique lvl5 unit added - Wereworm
 
 <span color='#76ba43'>v2.5.10</span> (01/06/2024):
 - Fight Recovery champion bonus now works correctly
