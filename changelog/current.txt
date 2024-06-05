@@ -12,3 +12,4 @@
 - Potion of Health renamed Flask of the Alchemist
 - Added new uws unique lvl5 unit added - Wereworm
 - Fixed Charm of Regeneration wrong item description on higher ranks
+- Fixed global auras not being applied correctly when a unit advances rank during ai turn
