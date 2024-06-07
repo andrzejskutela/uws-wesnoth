@@ -4,13 +4,13 @@
 - When Rat Pack item is picked up then spawn the first rat already on next turn
 - Small buff to pedigree rats
 - Rat ambassador ability now available on significant rank
-- Enslaved Soul nerfed
 - Spawn penalty for low experience modifier is lowered
 - Shield Master ability's chance to block increased a tiny bit
 - Small balancing of the Valley of the Necromancer map
 - Chronomancer's Staff, stillness aura replaced with cold aura
 - Potion of Health renamed Flask of the Alchemist
 - Added two new uws unique units - lvl4 Elder Tunturi Shaman and lvl5 Wereworm
+- Enslaved Soul and Ankylosaurus slightly nerfed
 - Fixed Charm of Regeneration wrong item description on higher ranks
 - Fixed global auras not being applied correctly when a unit advances rank during ai turn
 - Costs of all uws unique untis were readjusted
