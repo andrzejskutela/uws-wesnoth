@@ -10,6 +10,7 @@
 - Small balancing of the Valley of the Necromancer map
 - Chronomancer's Staff, stillness aura replaced with cold aura
 - Potion of Health renamed Flask of the Alchemist
-- Added new uws unique lvl5 unit added - Wereworm
+- Added two new uws unique units - lvl4 Elder Tunturi Shaman and lvl5 Wereworm
 - Fixed Charm of Regeneration wrong item description on higher ranks
 - Fixed global auras not being applied correctly when a unit advances rank during ai turn
+- Costs of all uws unique untis were readjusted
