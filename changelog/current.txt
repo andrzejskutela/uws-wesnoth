@@ -4,10 +4,12 @@
 - When Rat Pack item is picked up then spawn the first rat already on next turn
 - Small buff to pedigree rats
 - Rat ambassador ability now available on significant rank
+- Fix rats buggy behaviour when unplaguable unit is killed by an inbred rat
 - Spawn penalty for low experience modifier is lowered
 - Shield Master ability's chance to block increased a tiny bit
-- Small balancing of the Valley of the Necromancer map
+- Small balancing of the Black Gorge and Valley of the Necromancer maps
 - Chronomancer's Staff, stillness aura replaced with cold aura
+- Gem of Hoarfrost, lowest defense limit changed from 15% to 10%
 - Potion of Health renamed Flask of the Alchemist
 - Added two new uws unique units - lvl4 Elder Tunturi Shaman and lvl5 Wereworm
 - Enslaved Soul and Ankylosaurus slightly nerfed

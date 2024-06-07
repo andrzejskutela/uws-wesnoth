@@ -65,9 +65,8 @@ return {
 	
 	{ ['t'] = 9, ['d'] = 1, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Elvish Fighter', },
 	{ ['t'] = 10, ['d'] = 1, ['side'] = 4, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Dwarvish Scout', },
-	{ ['t'] = 10, ['d'] = 1, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Grand Dragonfly', },
+	{ ['t'] = 10, ['d'] = 1, ['side'] = 4, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Dragonfly', },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Sergeant', ['default'] = 'Sergeant', ['recruits'] = 'Thief,Poacher,Merman Brawler,Caribe', ['default_recruits'] = 'Thief,Poacher,Merman Brawler,Caribe', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 56, ['armored'] = 20, },
-	{ ['t'] = 15, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Dark Adept', },
 	{ ['t'] = 15, ['d'] = 1, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Naga Warrior', ['buff'] = 'A57:B56:C33' },
 
 	{ ['t'] = 11, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Mermaid Initiate', ['guard'] = true },
