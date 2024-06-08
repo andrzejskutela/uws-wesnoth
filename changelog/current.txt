@@ -10,7 +10,7 @@
 - Small balancing of the Black Gorge and Valley of the Necromancer maps
 - Chronomancer's Staff, stillness aura replaced with cold aura
 - Gem of Hoarfrost, lowest defense limit changed from 15% to 10%
-- Potion of Health renamed Flask of the Alchemist
+- Potion of Health renamed Flask of the Alchemist and buffed a lot
 - Added two new uws unique units - lvl4 Elder Tunturi Shaman and lvl5 Wereworm
 - Enslaved Soul and Ankylosaurus slightly nerfed
 - Fixed Charm of Regeneration wrong item description on higher ranks
