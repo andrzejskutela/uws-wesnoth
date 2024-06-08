@@ -12,7 +12,7 @@
 - Fixed Charm of Regeneration wrong item description on higher ranks
 - Fixed global auras not being applied correctly when a unit advances rank during ai turn
 - Added two new uws unique units - lvl4 Elder Tunturi Shaman and lvl5 Wereworm
-- Enslaved Soul and Ankylosaurus nerfed
+- Enslaved Soul, Ankylosaurus and Death nerfed
 - Costs of all uws unique units were readjusted
 - Small balancing of several maps
 - Spawn penalty for low experience modifier is lowered
