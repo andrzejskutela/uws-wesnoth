@@ -1,18 +1,2 @@
-<span color='#9474cc'>v2.5.11</span> (08/06/2024):
-- Necronomicon summons ability now produces more random units
-- Necronomicon feeding is now available on significant+ only
-- When Rat Pack item is picked up then spawn the first rat already on next turn
-- Small buff to pedigree rats
-- Rat ambassador ability now available on significant rank
-- Fix rats buggy behaviour when unplaguable unit is killed by an inbred rat
-- Shield Master ability's chance to block increased a tiny bit
-- Chronomancer's Staff, stillness aura replaced with cold aura
-- Gem of Hoarfrost, lower defense limit changed from 15% to 10%
-- Potion of Health renamed Flask of the Alchemist and buffed a lot
-- Fixed Charm of Regeneration wrong item description on higher ranks
-- Fixed global auras not being applied correctly when a unit advances rank during ai turn
-- Added two new uws unique units - lvl4 Elder Tunturi Shaman and lvl5 Wereworm
-- Enslaved Soul, Ankylosaurus and Death nerfed
-- Costs of all uws unique units were readjusted
-- Small balancing of several maps
-- Spawn penalty for low experience modifier is lowered
+<span color='#b9c21b'>v2.5.12</span> (date):
+- Unstable concoction damage is now based on the current turn number
