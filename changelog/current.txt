@@ -1,3 +1,4 @@
 <span color='#b9c21b'>v2.5.12</span> (date):
 - Unstable concoction damage is now based on the current turn number
 - Added a new uws unique unit - lvl6 Empty Shadow
+- Epic rank now requires 60 kills instead of 65 on smaller maps
