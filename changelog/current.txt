@@ -1,7 +1,8 @@
 <span color='#b9c21b'>v2.5.12</span> (date):
 - Unstable concoction damage is now based on the current turn number
-- Added two new uws unique unit - lvl6 Empty Shadow and lvl5 Elite Protector
+- Added two new uws unique units - lvl6 Empty Shadow and lvl5 Elite Protector
+- Naga Royal Executioner now natively has armour destruction special
 - Epic rank now requires 60 kills instead of 65 on smaller maps
 - The Scythe and Gem of Hoarfrost new abilities on higher ranks
-- Dragon's Protection changed so now the determining factor is enemy's level
+- Dragon's Protection changed the determining factor now to be enemy's level
 - War Sword, fury ability slightly buffed
