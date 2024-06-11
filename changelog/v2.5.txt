@@ -2,6 +2,7 @@
 - Unstable concoction damage is now based on the current turn number
 - Added two new uws unique unit - lvl6 Empty Shadow and lvl5 Elite Protector
 - Epic rank now requires 60 kills instead of 65 on smaller maps
+- The Scythe massive improvements on higher ranks
 
 <span color='#9474cc'>v2.5.11</span> (08/06/2024):
 - Necronomicon summons ability now produces more random units
