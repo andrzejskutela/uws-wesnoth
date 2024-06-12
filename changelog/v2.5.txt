@@ -7,6 +7,7 @@
 - Dragon's Protection changed the determining factor now to be enemy's level
 - War Sword, fury ability slightly buffed
 - Ring of Endurance now gains aoe drains ability on higher ranks
+- UWS player info now provides info on xp mod used
 - UWS player info unit xp is now colour coded
 
 <span color='#9474cc'>v2.5.11</span> (08/06/2024):
