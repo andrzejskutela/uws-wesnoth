@@ -11,6 +11,7 @@
 - UWS player info now provides info on xp mod used
 - UWS player info unit xp is now colour coded
 - Hack'n Slash now has an option for a both sided game with a wall in the middle
+- Black Gorge map, delay lava by two turns in race and hns games
 
 <span color='#9474cc'>v2.5.11</span> (08/06/2024):
 - Necronomicon summons ability now produces more random units
