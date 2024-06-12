@@ -6,3 +6,4 @@
 - The Scythe and Gem of Hoarfrost new abilities on higher ranks
 - Dragon's Protection changed the determining factor now to be enemy's level
 - War Sword, fury ability slightly buffed
+- Ring of Endurance now gains aoe drains ability on higher ranks
