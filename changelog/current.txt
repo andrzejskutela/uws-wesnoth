@@ -8,6 +8,7 @@
 - War Sword, fury ability slightly buffed
 - Ring of Endurance now gains aoe drains ability on higher ranks
 - Hitman's Cloak redesigned on higher ranks
+- Ceremonial Spear's preemptive strike and initiative are now active against champions
 - Assassin's Dagger increased accuracy on higher ranks
 - Talisman of Protection's defensive wall and impenetrable wall now affects the item keeper too
 - UWS player info now provides info on xp mod used
