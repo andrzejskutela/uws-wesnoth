@@ -1,3 +1,6 @@
+<span color='#e0876e'>v2.5.13</span> (date):
+- after-classic has now a new game option available - mirrored random boosts
+
 <span color='#b9c21b'>v2.5.12</span> (13/06/2024):
 - Unstable concoction damage is now based on the current turn number
 - Added two new uws unique units - lvl6 Empty Shadow and lvl5 Elite Protector
