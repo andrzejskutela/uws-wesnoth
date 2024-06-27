@@ -25,6 +25,7 @@ return {
 	{ ['row'] = 'object', ['t'] = 66, ['x'] = 23, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 60 },
 	{ ['row'] = 'object', ['t'] = 92, ['x'] = 24, ['cat'] = 'hidden_unit', ['type'] = 'AE_mag_Toad_Rider', ['type_default'] = 'Mage', ['message'] = "These pesky nagas imprisoned me here for their entertainment! So good the breath the fresh air again. I owe you for this one!" },
 	{ ['row'] = 'object', ['t'] = 120, ['x'] = 21, ['cat'] = 'heal', ['image'] = 'scenery/well.png', ['name'] = 'Well', ['amount'] = 12, },
+	{ ['row'] = 'object', ['t'] = 137, ['x'] = 23, ['cat'] = 'rune', ['image'] = 'scenery/uws/energy_vortex_alt.png', ['amount'] = 1, ['name'] = 'Energy Vortex', ['set'] = 'R15', ['color'] = '#4cd4cb', ['tooltip'] = '+10% arcane and secret resistance (100%)' },
 
 	-- beginning
 	
@@ -335,7 +336,7 @@ return {
 	{ ['t'] = 104, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_mrc_holy_order_Peacekeeper', ['default'] = 'Elvish Champion', ['buff'] = 'A37:B21:C19:C22', },
 	{ ['t'] = 104, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_agl_yokai_Faerie', ['default'] = 'Fire Ant', },
 	{ ['t'] = 105, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Rider', },
-	{ ['t'] = 106, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_chs_sylvians_Wose_Shaman', ['default'] = 'Fire Wraith', ['bulky'] = 180 },
+	{ ['t'] = 106, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_chs_sylvians_Wose_Shaman', ['default'] = 'Wose Shaman', ['bulky'] = 88 },
 	
 	{ ['t'] = 101, ['d'] = 2, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Sorceress', },
 	{ ['t'] = 102, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Sorceress', },
@@ -344,6 +345,7 @@ return {
 	
 	{ ['t'] = 100, ['d'] = 3, ['side'] = 2, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Druid', },
 	
+	{ ['t'] = 106, ['d'] = 6, ['side'] = 4, ['x'] = 21, ['lvl'] = 4, ['type'] = 'QQ_wose_destroyer', ['default'] = 'QQ_wose_destroyer', ['bulky'] = 112, },
 	{ ['t'] = 106, ['d'] = 3, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Rider', },
 	
 	{ ['t'] = 101, ['d'] = 4, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_ext_outlaws_Witch', ['default'] = 'Black Horse', },
@@ -418,7 +420,7 @@ return {
 	{ ['t'] = 125, ['d'] = 4, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_chs_chaos_empire_Marksman', ['default'] = 'Bandit', },
 	{ ['t'] = 126, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_chs_chaos_empire_Demonic_Hound', ['default'] = 'Outlaw', },
 
-	{ ['t'] = 121, ['d'] = 5, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_rhy_ce_Doctor', ['default'] = 'Mage of Light', ['buff'] = 'A13:B59:C37', ['event'] = 'follow_players_race', ['item'] = true, },
+	{ ['t'] = 121, ['d'] = 5, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_rhy_ce_Doctor', ['default'] = 'Mage of Light', ['buff'] = 'A13:B59:C37', ['event'] = 'follow_players_race', ['item'] = true, ['allow_random'] = false, },
 	
 	{ ['t'] = 122, ['d'] = 6, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_mrc_enchanters_Sellsoul', ['default'] = 'Fugitive', ['beefy'] = 100, ['calls_for_help'] = true },
 	{ ['t'] = 127, ['d'] = 6, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Soulhunter', ['default'] = 'Huntsman', },
@@ -432,11 +434,13 @@ return {
 	{ ['t'] = 134, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 3, ['type'] = 'Lich', ['default'] = 'Lich', },
 	
 	{ ['t'] = 130, ['d'] = 2, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Blood_Knight', ['default'] = 'Death Knight', },
+	{ ['t'] = 134, ['d'] = 2, ['side'] = 4, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Inquisitor', ['default'] = 'Draug', ['calls_for_help'] = true, ['race_guard_off'] = true, },
 
 	{ ['t'] = 132, ['d'] = 3, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'Spectre', ['default'] = 'Spectre', ['buff'] = 'A20:B38:C47', },
 	
 	{ ['t'] = 131, ['d'] = 4, ['side'] = 4, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Soulhunter', ['default'] = 'Nightgaunt', },
 	{ ['t'] = 130, ['d'] = 4, ['side'] = 4, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Demon_Stormtide', ['default'] = 'Draug', },
+	{ ['t'] = 134, ['d'] = 4, ['side'] = 4, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_ele_Skeletal_Corpse_Inferno', ['default'] = 'Banebow', },
 	
 	{ ['t'] = 130, ['d'] = 5, ['side'] = 4, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_mag_Atokpi_Master', ['default'] = 'Ancient Lich' },
 
@@ -447,11 +451,16 @@ return {
 	{ ['t'] = 135, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'Shadow', ['default'] = 'Shadow', },
 	{ ['t'] = 136, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_mag_Matriarch_of_Darkness', ['default'] = 'Necromancer', },
 	{ ['t'] = 139, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_mie_vampire_grandmaster', ['default'] = 'Lich', },
-	{ ['t'] = 141, ['d'] = 1, ['side'] = 4, ['x'] = 23, ['lvl'] = 6, ['type'] = 'QQ_bone_horror', ['default'] = 'QQ_bone_horror', ['guard'] = true, ['buff'] = 'A38:B39:C25' },
+	{ ['t'] = 140, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 6, ['type'] = 'QQ_bone_horror', ['default'] = 'QQ_bone_horror', ['guard'] = true, ['buff'] = 'A38:B39:C25' },
 	
 	{ ['t'] = 135, ['d'] = 2, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_mag_Infernal_Vortex', ['default'] = 'Drake Warden', ['bulky'] = 160 },
+
+	{ ['t'] = 137, ['d'] = 3, ['side'] = 4, ['x'] = 23, ['lvl'] = 4, ['type'] = 'QQ_terror_hulk', ['default'] = 'QQ_terror_hulk', ['beefy'] = 60 },
+
+	{ ['t'] = 138, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_mag_Matriarch_of_Emptiness', ['default'] = 'Necromancer', },
 	
 	{ ['t'] = 138, ['d'] = 5, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Dark_Slayer', ['default'] = 'Drake Warrior', },
+	{ ['t'] = 139, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 5, ['type'] = 'QQ_enflamed_spirit', ['default'] = 'QQ_enflamed_spirit', },
 	
 	{ ['t'] = 135, ['d'] = 6, ['side'] = 4, ['x'] = 15, ['lvl'] = 4, ['type'] = 'AE_mag_Moloch', ['default'] = 'Armageddon Drake', ['armored'] = 20 },
 	
@@ -469,6 +478,8 @@ return {
 	{ ['t'] = 147, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 5, ['type'] = 'AE_ele_Fallen_Supreme_Lord', ['default'] = 'Fire Dragon', },
 	
 	{ ['t'] = 145, ['d'] = 5, ['side'] = 4, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_mag_Doom_Bringer', ['default'] = 'Orcish Nightblade', ['beefy'] = 40, ['bulky'] = 40 },
+
+	{ ['t'] = 143, ['d'] = 6, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mag_Pain_Sphere', ['default'] = 'Fire Wraith', ['fast'] = 3, ['agile'] = 15 },
 	
 	-- 149 - 155 (mask y 21 - 15)
 	

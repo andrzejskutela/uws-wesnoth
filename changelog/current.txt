@@ -1,2 +1,4 @@
 <span color='#e0876e'>v2.5.13</span> (date):
-- after-classic has now a new game option available - mirrored random boosts
+- After-classic has now a new game option available - mirrored random boosts
+- Valley of the Necromancer map final section is slightly redesigned
+- Added new lvl5 uws unique unit - Enflamed Spirit

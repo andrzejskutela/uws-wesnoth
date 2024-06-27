@@ -1,5 +1,7 @@
 <span color='#e0876e'>v2.5.13</span> (date):
-- after-classic has now a new game option available - mirrored random boosts
+- After-classic has now a new game option available - mirrored random boosts
+- Valley of the Necromancer map final section is slightly redesigned
+- Added new lvl5 uws unique unit - Enflamed Spirit
 
 <span color='#b9c21b'>v2.5.12</span> (13/06/2024):
 - Unstable concoction damage is now based on the current turn number
