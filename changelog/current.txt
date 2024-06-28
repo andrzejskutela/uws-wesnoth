@@ -7,3 +7,4 @@
 - Dragon's Protection item nerfed on lower ranks and fixed wrong item description
 - War Sword Battle Fury slightly nerfed on notable and significant ranks
 - Battle Gauntlets item redesigned
+- Added kamikaze special visuals

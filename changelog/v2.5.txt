@@ -7,6 +7,7 @@
 - Dragon's Protection item nerfed on lower ranks and fixed wrong item description
 - War Sword Battle Fury slightly nerfed on notable and significant ranks
 - Battle Gauntlets item redesigned
+- Added kamikaze special visuals
 
 <span color='#b9c21b'>v2.5.12</span> (13/06/2024):
 - Unstable concoction damage is now based on the current turn number

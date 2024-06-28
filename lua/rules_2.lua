@@ -162,26 +162,26 @@ return {
 	
 	{ ['t'] = 30, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 0, ['type'] = 'AE_ext_monsters_Baby_Mudcrawler', ['default'] = 'Mudcrawler', ['race_guard_off'] = true, ['allow_random'] = false },
 	{ ['t'] = 30, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Mudcrawler', ['default'] = 'Giant Mudcrawler', ['race_guard_off'] = true, ['allow_random'] = false },
-	{ ['t'] = 31, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['fast'] = 1 },
-	{ ['t'] = 31, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
-	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['gold'] = 15 },
+	{ ['t'] = 31, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['fast'] = 1 },
+	{ ['t'] = 31, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
+	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['gold'] = 15 },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Hell_Guardian', ['default'] = 'Highwayman', ['moves'] = 0 },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 3, ['x'] = 27, ['lvl'] = 2, ['type'] = 'AE_mag_Wyvern_Knight', ['default'] = 'Cuttle Fish', ['race_guard_off'] = true },
-	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Overseer', ['default'] = 'Outlaw', ['recruits'] = 'AE_mag_Goblin_Kamikaze', ['default_recruits'] = 'QQ_Kamikaze', ['r_lvls'] = '0', ['recruitment_gold'] = 90, ['gold'] = 30, ['allow_random_recruits'] = false, },
+	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Overseer', ['default'] = 'Outlaw', ['recruits'] = 'QQ_Kamikaze', ['default_recruits'] = 'QQ_Kamikaze', ['r_lvls'] = '0', ['recruitment_gold'] = 90, ['gold'] = 30, ['allow_random_recruits'] = false, },
 	{ ['t'] = 34, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_mrc_slavers_Worker', ['default'] = 'QQ_Kamikaze', ['guard'] = true },
-	{ ['t'] = 35, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['bulky'] = 50, ['beefy'] = 50, ['allow_random'] = false },
+	{ ['t'] = 35, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['bulky'] = 50, ['beefy'] = 50, ['allow_random'] = false },
 	{ ['t'] = 35, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Miner', ['default'] = 'Rogue', ['guard'] = true },
 	{ ['t'] = 36, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Minotaur', ['default'] = 'Cave Bear', ['beefy'] = 40 },
 	
-	{ ['t'] = 31, ['d'] = 2, ['side'] = 2, ['x'] = 10, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['armored'] = 25 },
+	{ ['t'] = 31, ['d'] = 2, ['side'] = 2, ['x'] = 10, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['armored'] = 25 },
 	{ ['t'] = 32, ['d'] = 2, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Miner', ['default'] = 'Rogue', ['guard'] = true },
 	
-	{ ['t'] = 32, ['d'] = 3, ['side'] = 2, ['x'] = 9, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['buff'] = 'A11:B10:C9', ['allow_random'] = false, ['gold'] = 15 },
+	{ ['t'] = 32, ['d'] = 3, ['side'] = 2, ['x'] = 9, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['buff'] = 'A11:B10:C9', ['allow_random'] = false, ['gold'] = 15 },
 	
 	{ ['t'] = 33, ['d'] = 4, ['side'] = 2, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Miner', ['default'] = 'Rogue', ['guard'] = true, ['gold'] = 15 },
-	{ ['t'] = 34, ['d'] = 4, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
+	{ ['t'] = 34, ['d'] = 4, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
 
-	{ ['t'] = 34, ['d'] = 5, ['side'] = 2, ['x'] = 8, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
+	{ ['t'] = 34, ['d'] = 5, ['side'] = 2, ['x'] = 8, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
 	
 	{ ['t'] = 34, ['d'] = 6, ['side'] = 3, ['x'] = 28, ['lvl'] = 3, ['type'] = 'AE_mag_Chaos_Wyvern', ['default'] = 'Sea Serpent', ['race_guard_off'] = true, ['bulky'] = 52, },
 	
