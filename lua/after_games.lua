@@ -514,6 +514,8 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	end
 
 	wml.variables['after_games_payback_damage'] = payback_damage
+	wml.variables['after_games.unit_counter'] = copy_unit_counter
+	wml.variables['after_games.used_items_list'] = table.concat(after_games_items_table, ',')
 end
 
 function wesnoth.wml_actions.qquws_generate_random_boosts_table(cfg)
@@ -722,5 +724,18 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 			after_games_progression[k]['percentage_west'] = after_games_progression[k]['percentage']
 			after_games_progression[k]['copy_style'] = 'value_per_player' 
 		end
+	end
+
+	wml.array_access.set('after_games_progression_data', after_games_progression)
+	wml.variables['after_games.is_defined'] = true
+end
+
+function wesnoth.wml_actions.qquws_reload_progression_table(cfg)
+	after_games_progression = wml.array_access.get('after_games_progression_data')
+	copy_unit_counter = wml.variables['after_games.unit_counter']
+	local used_items_list = wml.variables['after_games.used_items_list']
+	after_games_items_table = {}
+	for item_used in string.gmatch(used_items_list, '([^,]+)') do
+	    table.insert(after_games_items_table, item_used)
 	end
 end

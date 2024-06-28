@@ -1,5 +1,6 @@
 <span color='#e0876e'>v2.5.13</span> (date):
 - After-classic has now a new game option available - mirrored random boosts
+- After-classic fixed bug that prevented the game from working after reloading from a save
 - Valley of the Necromancer map final section is slightly redesigned
 - Added new lvl5 uws unique unit - Enflamed Spirit
 - Gem of Hoarfrost and The Scythe very slighlty nerfed on high ranks
