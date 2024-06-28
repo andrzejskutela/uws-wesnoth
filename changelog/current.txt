@@ -2,3 +2,5 @@
 - After-classic has now a new game option available - mirrored random boosts
 - Valley of the Necromancer map final section is slightly redesigned
 - Added new lvl5 uws unique unit - Enflamed Spirit
+- Gem of Hoarfrost and The Scythe very slighlty nerfed on high ranks
+- Dragon's Protection item nerfed on lower ranks and fixed wrong item description
