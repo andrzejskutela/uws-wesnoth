@@ -1,4 +1,4 @@
-<span color='#e0876e'>v2.5.13</span> (date):
+<span color='#e0876e'>v2.5.13</span> (28/06/2024):
 - After-classic has now a new game option available - mirrored random boosts
 - After-classic fixed bug that prevented the game from working after reloading from a save
 - Valley of the Necromancer map final section is slightly redesigned
