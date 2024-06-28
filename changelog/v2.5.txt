@@ -4,6 +4,8 @@
 - Added new lvl5 uws unique unit - Enflamed Spirit
 - Gem of Hoarfrost and The Scythe very slighlty nerfed on high ranks
 - Dragon's Protection item nerfed on lower ranks and fixed wrong item description
+- War Sword Battle Fury slightly nerfed on notable and significant ranks
+- Battle Gauntlets item redesigned
 
 <span color='#b9c21b'>v2.5.12</span> (13/06/2024):
 - Unstable concoction damage is now based on the current turn number
