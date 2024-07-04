@@ -121,7 +121,7 @@ return {
 	{ ['t'] = 25, ['d'] = 4, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Warden', ['default'] = 'Naga Shield Guard', ['buff'] = 'A31:B30:C17', ['gold'] = 20, ['item'] = true, },
 	{ ['t'] = 28, ['d'] = 4, ['side'] = 4, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_mag_Roc_Master', ['default'] = 'Roc', ['allow_random'] = false },
 
-	{ ['t'] = 29, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['race_guard_off'] = true, ['allow_random'] = false, ['bulky'] = 64, ['beefy'] = 64 },
+	{ ['t'] = 29, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['race_guard_off'] = true, ['allow_random'] = false, ['bulky'] = 64, ['beefy'] = 64 },
 	
 	{ ['t'] = 28, ['d'] = 6, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_mag_Goblin_Invader', ['default'] = 'Orcish Nightblade', ['race_guard_off'] = true, },
 	
@@ -133,7 +133,7 @@ return {
 	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Grand_Crocodile', ['default'] = 'Water Serpent', ['allow_random'] = false },
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Hunter', ['default'] = 'Orcish Archer', },
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Assassin', ['default'] = 'Orcish Ruler', ['recruits'] = 'AE_mag_Goblin_Hunter,AE_mag_Goblin_Warrior,AE_mag_Goblin_Archer,AE_mag_Goblin_Shaman', ['default_recruits'] = 'Orcish Grunt,Orcish Archer,Orcish Assassin,Young Ogre', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 75 },
-	{ ['t'] = 32, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_mag_Goblin_Kamikaze', ['default'] = 'QQ_Kamikaze', ['race_guard_off'] = true, ['allow_random'] = false },
+	{ ['t'] = 32, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['race_guard_off'] = true, ['allow_random'] = false },
 	{ ['t'] = 34, ['d'] = 1, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_arc_orcs_Frost_Goblin', ['default'] = 'Goblin Rouser', },
 	
 	{ ['t'] = 32, ['d'] = 2, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Druid', ['default'] = 'Orcish Crossbowman', },
