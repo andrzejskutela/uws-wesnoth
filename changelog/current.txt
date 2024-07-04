@@ -1,3 +1,4 @@
 <span color='#4287f5'>v2.5.14</span> (date):
 - Hack'n Slash games, new menu item allowing to gift units to the other player
 - Fix Battle Gauntlets not working properly after notable rank
+- Charm of Regeneration's after fight regen nerfed

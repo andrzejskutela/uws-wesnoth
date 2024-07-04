@@ -1,6 +1,7 @@
 <span color='#4287f5'>v2.5.14</span> (date):
 - Hack'n Slash games, new menu item allowing to gift units to the other player
 - Fix Battle Gauntlets not working properly after notable rank
+- Charm of Regeneration's after fight regen nerfed
 
 <span color='#e0876e'>v2.5.13</span> (28/06/2024):
 - After-classic has now a new game option available - mirrored random boosts
