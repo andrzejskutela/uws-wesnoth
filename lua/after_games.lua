@@ -739,3 +739,34 @@ function wesnoth.wml_actions.qquws_reload_progression_table(cfg)
 	    table.insert(after_games_items_table, item_used)
 	end
 end
+
+function wesnoth.wml_actions.qquws_generate_after_race_spawn_table(cfg)
+	local spawn_count = tonumber(cfg.count)
+	local start_y = tonumber(cfg.race_start_y)
+	local end_y = tonumber(cfg.race_finish_y)
+	local is_info_hidden = cfg.is_hidden
+	local spawn_table = {}
+	local info = ''
+	
+	for i=2,spawn_count,1 do
+		if is_info_hidden then
+			info = '--- ??? ---'
+		else
+			info = '--- ' .. after_games_progression[i]['percentage'] .. '% ---'
+		end
+
+
+		table.insert(spawn_table, {
+			['index'] = i,
+			['y'] = start_y - math.floor( ((i - 2) * (start_y - end_y)) / (spawn_count - 2) + 0.4 ),
+			['label_east'] = info,
+			['label_west'] = info,
+			['spawned_east'] = false,
+			['spawned_west'] = false,
+			['buff_east'] = '',
+			['buff_west'] = ''
+		})
+	end
+
+	wml.array_access.set('after_race_spawn_table', spawn_table)
+end

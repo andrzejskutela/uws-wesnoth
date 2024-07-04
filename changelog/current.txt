@@ -1,10 +1,1 @@
-<span color='#e0876e'>v2.5.13</span> (28/06/2024):
-- After-classic has now a new game option available - mirrored random boosts
-- After-classic fixed bug that prevented the game from working after reloading from a save
-- Valley of the Necromancer map final section is slightly redesigned
-- Added new lvl5 uws unique unit - Enflamed Spirit
-- Gem of Hoarfrost and The Scythe very slighlty nerfed on high ranks
-- Dragon's Protection item nerfed on lower ranks and fixed wrong item description
-- War Sword Battle Fury slightly nerfed on notable and significant ranks
-- Battle Gauntlets item redesigned
-- Added kamikaze special visuals
+<span color='#e0876e'>v2.5.14</span> (date):
