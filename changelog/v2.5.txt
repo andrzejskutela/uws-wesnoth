@@ -1,3 +1,6 @@
+<span color='#4287f5'>v2.5.14</span> (date):
+- Fix Battle Gauntlets not working properly after notable rank
+
 <span color='#e0876e'>v2.5.13</span> (28/06/2024):
 - After-classic has now a new game option available - mirrored random boosts
 - After-classic fixed bug that prevented the game from working after reloading from a save

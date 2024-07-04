@@ -1,1 +1,2 @@
-<span color='#e0876e'>v2.5.14</span> (date):
+<span color='#4287f5'>v2.5.14</span> (date):
+- Fix Battle Gauntlets not working properly after notable rank
