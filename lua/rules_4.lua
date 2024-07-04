@@ -287,7 +287,7 @@ return {
 	
 	{ ['t'] = 86, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'Naga Warrior', ['default'] = 'Naga Warrior', },
 	{ ['t'] = 89, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Assassin', ['default'] = 'Naga Ringcaster', },
-	{ ['t'] = 89, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', ['fast'] = 1 },
+	{ ['t'] = 89, ['d'] = 2, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', ['fast'] = 1 },
 
 	{ ['t'] = 91, ['d'] = 3, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
 	{ ['t'] = 92, ['d'] = 3, ['side'] = 2, ['x'] = 24, ['lvl'] = 5, ['type'] = 'QQ_naga_royal_executioner', ['default'] = 'QQ_naga_royal_executioner', ['buff'] = 'A16:B36:C48' },
