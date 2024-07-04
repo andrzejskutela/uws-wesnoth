@@ -96,7 +96,7 @@ return {
 	{ ['t'] = 23, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'Elvish Rider', },
 	{ ['t'] = 23, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'Elvish Fighter', },
 	{ ['t'] = 24, ['d'] = 1, ['side'] = 2, ['x'] = 5, ['lvl'] = 2, ['type'] = 'Troll', ['bulky'] = 24 },
-	{ ['t'] = 24, ['d'] = 1, ['side'] = 2, ['x'] = 4, ['lvl'] = 2, ['type'] = 'Troll Hero', ['recruits'] = 'Troll,Troll Whelp', ['r_lvls'] = '2,1', ['recruitment_gold'] = 40, ['buff'] = 'A7:B6:rand' },
+	{ ['t'] = 24, ['d'] = 1, ['side'] = 2, ['x'] = 4, ['lvl'] = 2, ['type'] = 'Troll Hero', ['recruits'] = 'Troll,Troll Whelp', ['r_lvls'] = '2,1', ['recruitment_gold'] = 40, ['buff'] = 'A7:B6:C58' },
 	{ ['t'] = 25, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 2, ['type'] = 'Troll Rocklobber', ['moves'] = 0, ['item'] = true },
 	{ ['t'] = 25, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 1, ['type'] = 'Elvish Archer', },
 	{ ['t'] = 25, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'Elvish Archer', },

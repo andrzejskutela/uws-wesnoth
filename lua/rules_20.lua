@@ -54,7 +54,7 @@ return {
 	{ ['t'] = 5, ['d'] = 3, ['side'] = 3, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Wose', ['guard'] = true },
 	{ ['t'] = 7, ['d'] = 3, ['side'] = 3, ['x'] = 5, ['lvl'] = 1, ['type'] = 'Naga Dirkfang', },
 
-	{ ['t'] = 8, ['d'] = 4, ['side'] = 3, ['x'] = 6, ['lvl'] = 2, ['type'] = 'Swamp Lizard', ['bulky'] = 40 },
+	{ ['t'] = 8, ['d'] = 4, ['side'] = 3, ['x'] = 6, ['lvl'] = 2, ['type'] = 'Swamp Lizard', },
 	{ ['t'] = 8, ['d'] = 4, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Cave Bear', ['race_guard_off'] = true, },
 	
 	{ ['t'] = 7, ['d'] = 5, ['side'] = 3, ['x'] = 6, ['lvl'] = 0, ['type'] = 'Nibbler', },
