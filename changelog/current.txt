@@ -9,4 +9,5 @@
 - Naga Royal Executioner's armor destruction buffed
 - Buffs and debuffs affecting 'defense everywhere' now affect unwalkable locations as well
 - Unification of how champion bonuses are calculated across all UWS
+- Fix Hack'n Slash final boss' call to arms not affecting units on the right hand side of the map
 - Plenty of code preparation for the upcoming 2.6.x line
