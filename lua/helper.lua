@@ -81,3 +81,66 @@ function wesnoth.wml_actions.qquws_pad_text(cfg)
 
 	wml.variables[output_text_var] = final_text
 end
+
+local repeat_key = function(key, length)
+	if #key >= length then
+		return key:sub(1, length)
+	end
+
+	local times = math.floor(length / #key)
+	local remain = length % #key
+	local result = ''
+
+	for i = 1, times do
+		result = result .. key
+	end
+
+	if remain > 0 then
+		result = result .. key:sub(1, remain)
+	end
+
+	return result
+end
+
+local encode = function(message, key)
+	local rkey = repeat_key(key, #message)
+	local result = ''
+	local k_char = ''
+	local m_char = ''
+	local k_byte = 0
+	local m_byte = 0
+	local xor_byte = 0
+	local xor_char = ''
+
+	for i = 1, #message do
+		k_char = rkey:sub(i, i)
+		m_char = message:sub(i, i)
+
+		k_byte = k_char:byte()
+		m_byte = m_char:byte()
+
+		xor_byte = m_byte ~ k_byte
+		xor_char = string.char(xor_byte)
+
+		result = result .. xor_char
+	end
+
+	return result
+end
+
+function wesnoth.wml_actions.qquws_decode_secret(cfg)
+	local message = cfg.message
+	local key = cfg.key
+	local var_name = cfg.var_name
+	local i = 1
+	local sub = ''
+	local result = ''
+	
+	while i < #message do
+	   sub = message:sub(i, i + 1)
+	   result = result .. string.char(tonumber(sub, 16))
+	   i = i + 2
+	end
+
+	wml.variables[var_name] = encode(result, key)
+end

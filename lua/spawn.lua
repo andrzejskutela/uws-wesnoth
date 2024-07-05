@@ -7,7 +7,7 @@ function build_spawn_rules_row(data)
 		['allow_random'] = true, ['allow_random_recruits'] = true, ['disallow_slash_unguardian'] = false, ['calls_for_help'] = false,
 		['armored'] = 0, ['recruit_armored'] = 0, ['recruit_minion'] = '', ['title'] = '', ['fast'] = 0, ['agile'] = 0, ['story_message'] = '',
 		['story_response'] = '', ['race_points_value'] = -1, ['second_item'] = '', ['clear_boss_tile_overlay'] = false, ['count'] = 1,
-		['delayed'] = -1,
+		['delayed'] = -1, ['ai_add_gold'] = 0
 	}
 	
 	for k,v in pairs(data) do
@@ -135,7 +135,7 @@ local function process_spawn_table(spawn_table)
 	local predropped_items = {}
 	local used_items_table = {}
 	local process_object = true
-	local diff_gold_factor = { [1] = 1, [2] = 1, [3] = 0.95, [4] = 0.95, [5] = 0.9, [6] = 0.9, [7] = 0.85 }
+	local diff_gold_factor = { [1] = 1, [2] = 1, [3] = 0.95, [4] = 0.95, [5] = 0.9, [6] = 0.9, [7] = 0.85, [8] = 0.8 }
 	
 	for item_used in string.gmatch(used_items_list, '([^,]+)') do
 	    table.insert(used_items_table, item_used)

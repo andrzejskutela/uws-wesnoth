@@ -1,6 +1,7 @@
-<span color='#4287f5'>v2.5.14</span> (date):
+<span color='#4287f5'>v2.5.14</span> (05/07/2024):
 - After-classic has now a new game option available - mirrored random mercenaries
 - Hack'n Slash games, new menu item allowing to gift units to the other player
+- Hack'n Slash, new difficulty level is introduced for seasoned players
 - Fix Battle Gauntlets not working properly after notable rank
 - Charm of Regeneration's after fight regen nerfed
 - Flask of the Alchemist, fixed alcohol fumes incorrectly handling defense reduction
@@ -9,9 +10,10 @@
 - Naga Royal Executioner's armor destruction buffed
 - Buffs and debuffs affecting 'defense everywhere' now affect unwalkable locations as well
 - Unification of how champion bonuses are calculated across all UWS
+- Small changes to Valley of the Necromancer map
 - Fix Hack'n Slash final boss' call to arms not affecting units on the right hand side of the map
 - Black Gorge Race map temporarily removed from UWS
-- Plenty of code preparation for the upcoming 2.6.x line
+- Plenty of code changes in preparation for the upcoming 2.6.x line
 
 <span color='#e0876e'>v2.5.13</span> (28/06/2024):
 - After-classic has now a new game option available - mirrored random boosts
