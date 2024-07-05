@@ -293,7 +293,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 		{ ['ranged_dmg'] = 0, ['ranged_strikes'] = 0, ['ranged_accuracy'] = 0, ['ranged_parry'] = 0, },
 		{ ['mp'] = 0 },
 		{ ['arcane'] = 0, ['blade'] = 0, ['cold'] = 0, ['fire'] = 0, ['impact'] = 0, ['pierce'] = 0 },
-		{ ['flat'] = 0, ['frozen'] = 0, ['forest'] = 0, ['village'] = 0, ['swamp_water'] = 0, ['cave'] = 0, ['reef'] = 0, ['shallow_water'] = 0, ['deep_water'] = 0, ['fungus'] = 0, ['mountains'] = 0, ['hills'] = 0, ['castle'] = 0, ['sand'] = 0  },
+		{ ['flat'] = 0, ['frozen'] = 0, ['forest'] = 0, ['village'] = 0, ['swamp_water'] = 0, ['cave'] = 0, ['reef'] = 0, ['shallow_water'] = 0, ['deep_water'] = 0, ['fungus'] = 0, ['mountains'] = 0, ['hills'] = 0, ['castle'] = 0, ['sand'] = 0, ['unwalkable'] = 0 },
 		{ ['movement_cost'] = 0 }
 	}
 	
@@ -320,7 +320,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	local magical_resistances = { 'arcane', 'cold', 'fire' }
 	local special_resistances = false
 	local special_defense = false
-	local all_terrains = { 'flat', 'frozen', 'forest', 'village', 'swamp_water', 'cave', 'reef', 'shallow_water', 'fungus', 'mountains', 'castle', 'sand', 'hills', 'deep_water', }
+	local all_terrains = { 'flat', 'frozen', 'forest', 'village', 'swamp_water', 'cave', 'reef', 'shallow_water', 'fungus', 'mountains', 'castle', 'sand', 'hills', 'deep_water', 'unwalkable' }
 	local container = wml.array_variables[cfg.settings]
 	local c = container[1]
 	local description = ''
