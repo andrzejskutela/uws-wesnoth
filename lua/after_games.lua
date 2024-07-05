@@ -195,7 +195,7 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 	elseif extra_buff == 'boost20' then
 		extra_percentage_buff = 20
 	elseif extra_buff == 'minions' then
-		minion_type = mathx.random_choice({ 'A3','A4','A10','A12','A13','A23','A29','A30','A34','A47','A49','A50','B2','B5','B6','B7','B9','B15','B26','B30','B55','C4','C6','C16','C31','C32','C34','C37','C39','D1' })
+		minion_type = mathx.random_choice({ 'A3','A4','A10','A12','A13','A23','A29','A30','A34','A47','A49','A50','A61','B2','B5','B6','B7','B9','B15','B26','B30','B55','C4','C16','C31','C32','C34','C37','C39','C44','C46','D1' })
 	end
 
 	if own_buff == 'weaker15' then
