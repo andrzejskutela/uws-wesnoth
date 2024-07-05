@@ -8,4 +8,5 @@
 - Ice Mammoth unit buffed slightly and the slow aura bug is fixed
 - Naga Royal Executioner's armor destruction buffed
 - Buffs and debuffs affecting 'defense everywhere' now affect unwalkable locations as well
+- Unification of how champion bonuses are calculated across all UWS
 - Plenty of code preparation for the upcoming 2.6.x line

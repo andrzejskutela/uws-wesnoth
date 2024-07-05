@@ -284,6 +284,8 @@ end
 
 function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	local buff_modifier = wml.variables['uws_game.buff_modifier']
+	local small_modifier = wml.variables['uws_game.small_buff_bonus']
+	local micro_modifier = wml.variables['uws_game.micro_buff_bonus']
 	
 	-- {hp}, {all attacks}, {melee attacks}, {ranged attacks}, {mp}, {resistance}, {defense}
 	local params = {
@@ -298,19 +300,19 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	}
 	
 	local settings_table = {
-		{ ['input_key'] = 'hp', ['output_index'] = 1, ['name'] = 'Hitpoints ', ['prefix'] = '+', ['suffix'] = '%', ['round_f'] = 10, },
-		{ ['input_key'] = 'dmg', ['output_index'] = 2, ['name'] = 'Damage ', ['prefix'] = '+', ['suffix'] = '%', ['round_f'] = 10, },
-		{ ['input_key'] = 'strikes', ['output_index'] = 2, ['name'] = 'Strikes ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'melee_dmg', ['output_index'] = 3, ['name'] = 'Melee Damage ', ['prefix'] = '+', ['suffix'] = '%', ['round_f'] = 10, },
-		{ ['input_key'] = 'melee_strikes', ['output_index'] = 3, ['name'] = 'Melee Strikes ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'melee_accuracy', ['output_index'] = 3, ['name'] = 'Melee Accuracy ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'melee_parry', ['output_index'] = 3, ['name'] = 'Melee Parry ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'ranged_dmg', ['output_index'] = 4, ['name'] = 'Ranged Damage ', ['prefix'] = '+', ['suffix'] = '%', ['round_f'] = 10, },
-		{ ['input_key'] = 'ranged_strikes', ['output_index'] = 4, ['name'] = 'Ranged Strikes ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'ranged_accuracy', ['output_index'] = 4, ['name'] = 'Ranged Accuracy ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'ranged_parry', ['output_index'] = 4, ['name'] = 'Ranged Parry ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'mp', ['output_index'] = 5, ['name'] = 'Movement Points ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, },
-		{ ['input_key'] = 'movement_cost', ['output_index'] = 8, ['name'] = 'Movement costs ', ['prefix'] = '-', ['suffix'] = '', ['round_f'] = 1}
+		{ ['input_key'] = 'hp', ['output_index'] = 1, ['name'] = 'Hitpoints ', ['prefix'] = '+', ['suffix'] = '%', ['round_f'] = 10, ['modifier'] = 'std' },
+		{ ['input_key'] = 'dmg', ['output_index'] = 2, ['name'] = 'Damage ', ['prefix'] = '+', ['suffix'] = '%', ['round_f'] = 10, ['modifier'] = 'std', },
+		{ ['input_key'] = 'strikes', ['output_index'] = 2, ['name'] = 'Strikes ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, ['modifier'] = 'none', },
+		{ ['input_key'] = 'melee_dmg', ['output_index'] = 3, ['name'] = 'Melee Damage ', ['prefix'] = '+', ['suffix'] = '%', ['round_f'] = 10, ['modifier'] = 'std', },
+		{ ['input_key'] = 'melee_strikes', ['output_index'] = 3, ['name'] = 'Melee Strikes ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, ['modifier'] = 'none', },
+		{ ['input_key'] = 'melee_accuracy', ['output_index'] = 3, ['name'] = 'Melee Accuracy ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, ['modifier'] = 'micro', },
+		{ ['input_key'] = 'melee_parry', ['output_index'] = 3, ['name'] = 'Melee Parry ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, ['modifier'] = 'micro', },
+		{ ['input_key'] = 'ranged_dmg', ['output_index'] = 4, ['name'] = 'Ranged Damage ', ['prefix'] = '+', ['suffix'] = '%', ['round_f'] = 10, ['modifier'] = 'std', },
+		{ ['input_key'] = 'ranged_strikes', ['output_index'] = 4, ['name'] = 'Ranged Strikes ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, ['modifier'] = 'none', },
+		{ ['input_key'] = 'ranged_accuracy', ['output_index'] = 4, ['name'] = 'Ranged Accuracy ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, ['modifier'] = 'micro', },
+		{ ['input_key'] = 'ranged_parry', ['output_index'] = 4, ['name'] = 'Ranged Parry ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, ['modifier'] = 'micro', },
+		{ ['input_key'] = 'mp', ['output_index'] = 5, ['name'] = 'Movement Points ', ['prefix'] = '+', ['suffix'] = '', ['round_f'] = 1, ['modifier'] = 'none', },
+		{ ['input_key'] = 'movement_cost', ['output_index'] = 8, ['name'] = 'Movement costs ', ['prefix'] = '-', ['suffix'] = '', ['round_f'] = 1, ['modifier'] = 'none'}
 	}
 	
 	local resistance_table = {}
@@ -327,7 +329,15 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	
 	for k,v in ipairs(settings_table) do
 		if c[v.input_key] > 0 then
-			local value = mathx.round(v.round_f * c[v.input_key] * buff_modifier)
+			local value = mathx.round(v.round_f * c[v.input_key])
+			if v.modifier == 'std' then
+				value = mathx.round(value * buff_modifier)
+			elseif v.modifier == 'small' then
+				value = value + small_modifier
+			elseif v.modifier == 'micro' then
+				value = value + micro_modifier
+			end
+
 			if v.round_f ~= 1 then
 				value = value / v.round_f
 			end
@@ -339,7 +349,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	end
 	
 	if c.all_res > 0 then
-		local value = mathx.round(c.all_res * buff_modifier)
+		local value = c.all_res + small_modifier
 		params[6]['exists'] = true
 		for k,v in ipairs(all_resistances) do
 			params[6][v] = params[6][v] + value
@@ -349,7 +359,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	end
 	
 	if c.physical > 0 then
-		local value = mathx.round(c.physical * buff_modifier)
+		local value = c.physical + small_modifier
 		params[6]['exists'] = true
 		for k,v in ipairs(physical_resistances) do
 			params[6][v] = params[6][v] + value
@@ -359,7 +369,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	end
 	
 	if c.magical > 0 then
-		local value = mathx.round(c.magical * buff_modifier)
+		local value = c.magical + small_modifier
 		params[6]['exists'] = true
 		for k,v in ipairs(magical_resistances) do
 			params[6][v] = params[6][v] + value
@@ -372,7 +382,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 		if c[v] > 0 then
 			special_resistances = true
 			local key = 'r' .. c[v]
-			local value = mathx.round(c[v] * buff_modifier)
+			local value = c[v] + small_modifier
 			params[6]['exists'] = true
 			params[6][v] = params[6][v] + value
 			
@@ -406,7 +416,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	end
 	
 	if c.everywhere > 0 then
-		local value = mathx.round(c.everywhere * buff_modifier)
+		local value = c.everywhere + micro_modifier
 		for k,v in ipairs(all_terrains) do
 			params[7]['exists'] = true
 			params[7][v] = params[7][v] + value
@@ -419,7 +429,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 		if c[v] > 0 then
 			special_defense = true
 			local key = 'd' .. c[v]
-			local value = mathx.round(c[v] * buff_modifier)
+			local value = c[v] + micro_modifier
 			params[7]['exists'] = true
 			params[7][v] = params[7][v] + value
 			

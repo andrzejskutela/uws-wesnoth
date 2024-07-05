@@ -218,7 +218,7 @@ return {
 	{ ['t'] = 64, ['d'] = 5, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Lunar_Black_Slime', ['default'] = 'Saurian Augur', ['bulky'] = 40, ['armored'] = 15, },
 	
 	{ ['t'] = 58, ['d'] = 6, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', ['default'] = 'Dwarvish Guardsman', ['guard'] = true, ['amored'] = 5 },
-	{ ['t'] = 63, ['d'] = 6, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_chs_elementals_Stone_Titan', ['default'] = 'Giant Spider', ['buff'] = 'A16:B11:C6', },
+	{ ['t'] = 63, ['d'] = 6, ['side'] = 2, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_wereworm', ['default'] = 'QQ_wereworm', ['buff'] = 'A16:B11:C23', },
 	
 	-- 65 - 71 (mask y 105 - 99)
 	
