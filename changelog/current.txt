@@ -7,3 +7,4 @@
 - Flask of the Alchemist, poison aura will no longer affect invulnerable units (After-classic)
 - Ice Mammoth unit buffed slightly and the slow aura bug is fixed
 - Naga Royal Executioner's armor destruction buffed
+- Plenty of code preparation for the upcoming 2.6.x line

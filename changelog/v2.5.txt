@@ -7,6 +7,7 @@
 - Flask of the Alchemist, poison aura will no longer affect invulnerable units (After-classic)
 - Ice Mammoth unit buffed slightly and the slow aura bug is fixed
 - Naga Royal Executioner's armor destruction buffed
+- Plenty of code preparation for the upcoming 2.6.x line
 
 <span color='#e0876e'>v2.5.13</span> (28/06/2024):
 - After-classic has now a new game option available - mirrored random boosts

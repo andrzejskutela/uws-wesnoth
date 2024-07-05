@@ -17,6 +17,8 @@ local after_games_settings = {
 
 local after_games_progression = {}
 
+local after_race_table = {}
+
 local wave_space_settings = {
 	{ ['threshold'] = 100, ['space'] = 5 },
 	{ ['threshold'] = 80, ['space'] = 4 },
@@ -30,6 +32,13 @@ local after_classic_locations = {
 	['map_15'] = { { ['x'] = 2, ['y'] = 2 }, { ['x'] = 9, ['y'] = 2 } },
 	['map_16'] = { { ['x'] = 4, ['y'] = 1 } },
 	['map_17'] = { { ['x'] = 4, ['y'] = 1 } },
+}
+
+local all_available_items = {
+	'magic_res','cold_res','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high',
+	'steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership',
+	'drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption',
+	'armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura','book','dragon_protection'
 }
 
 local all_boosts_table = {
@@ -429,6 +438,39 @@ function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 	wml.variables['after_games_clear_bonuses_turn'] = clear_bonuses_turn
 end
 
+function wesnoth.wml_actions.qquws_handle_after_race_spawn(cfg)
+	local spawn_west = cfg.spawn_west
+	local spawn_east = cfg.spawn_east
+	local index = cfg.index
+	local east_debuff = ''
+	local west_debuff = ''
+	local extra_copy_buff_east = ''
+	local extra_copy_buff_west = ''
+	local map_edge = wml.variables["uws_game.edge"]
+	local drop_gold = after_games_progression[index]['gold']
+	local west_item = ''
+	local east_item = ''
+	local spawn_use_y = 1
+	local locations = {}
+
+	local iterator = {
+		{ ['spawn'] = spawn_west, ['from'] = 3, ['to'] = 2, ['index'] = index },
+		{ ['spawn'] = spawn_east, ['from'] = 1, ['to'] = 4, ['index'] = index },
+	}
+
+	for _,v in ipairs(iterator) do
+		if v.spawn then
+			spawn_use_y = after_race_table[index]['y'] - 6
+			if spawn_use_y < 1 then
+				spawn_use_y = 0
+			end
+
+			locations = { { ['y'] = spawn_use_y, ['x'] = math.floor(map_edge / 4) } }
+			copy_all_units(v.from, v.to, locations, map_edge, drop_gold, east_item, extra_copy_buff_east, east_debuff, after_games_progression[index]['percentage_east'], after_games_progression[index]['copy_style'])
+		end
+	end
+end
+
 function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	local map_id = cfg.map_id
 	local key = 'map_' .. tostring(map_id)
@@ -445,7 +487,6 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	local east_item = ''
 	local drop_gold = after_games_progression[wave_index]['gold']
 	local payback_damage = 0
-	local all_available_items = {'magic_res','cold_res','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura','book','dragon_protection'}
 	
 	if after_games_progression[wave_index]['item'] then
 		if allow_items then
@@ -744,10 +785,22 @@ function wesnoth.wml_actions.qquws_generate_after_race_spawn_table(cfg)
 	local spawn_count = tonumber(cfg.count)
 	local start_y = tonumber(cfg.race_start_y)
 	local end_y = tonumber(cfg.race_finish_y)
+	local first_wave_y = tonumber(cfg.race_first_wave_y)
 	local is_info_hidden = cfg.is_hidden
-	local spawn_table = {}
 	local info = ''
-	
+	local spawn_table = { {
+		['index'] = 1,
+		['y'] = first_wave_y,
+		['label_east'] = '',
+		['label_west'] = '',
+		['spawn_east'] = true,
+		['spawn_west'] = true,
+		['spawned_east'] = false,
+		['spawned_west'] = false,
+		['buff_east'] = '',
+		['buff_west'] = ''
+	} }
+
 	for i=2,spawn_count,1 do
 		if is_info_hidden then
 			info = '--- ??? ---'
@@ -761,6 +814,8 @@ function wesnoth.wml_actions.qquws_generate_after_race_spawn_table(cfg)
 			['y'] = start_y - math.floor( ((i - 2) * (start_y - end_y)) / (spawn_count - 2) + 0.4 ),
 			['label_east'] = info,
 			['label_west'] = info,
+			['spawn_east'] = false,
+			['spawn_west'] = false,
 			['spawned_east'] = false,
 			['spawned_west'] = false,
 			['buff_east'] = '',
@@ -768,5 +823,6 @@ function wesnoth.wml_actions.qquws_generate_after_race_spawn_table(cfg)
 		})
 	end
 
+	after_race_table = spawn_table
 	wml.array_access.set('after_race_spawn_table', spawn_table)
 end
