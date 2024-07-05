@@ -3,6 +3,8 @@
 - Hack'n Slash games, new menu item allowing to gift units to the other player
 - Fix Battle Gauntlets not working properly after notable rank
 - Charm of Regeneration's after fight regen nerfed
+- Flask of the Alchemist, fixed alcohol fumes incorrectly handling defense reduction
+- Flask of the Alchemist, poison aura will no longer affect invulnerable units (After-classic)
 - Ice Mammoth unit buffed slightly and the slow aura bug is fixed
 - Naga Royal Executioner's armor destruction buffed
 
