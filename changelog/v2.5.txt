@@ -10,6 +10,7 @@
 - Buffs and debuffs affecting 'defense everywhere' now affect unwalkable locations as well
 - Unification of how champion bonuses are calculated across all UWS
 - Fix Hack'n Slash final boss' call to arms not affecting units on the right hand side of the map
+- Black Gorge Race map temporarily removed from UWS
 - Plenty of code preparation for the upcoming 2.6.x line
 
 <span color='#e0876e'>v2.5.13</span> (28/06/2024):
