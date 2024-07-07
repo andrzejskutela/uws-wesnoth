@@ -406,6 +406,28 @@ local function get_payback_damage_value(east_boost, west_boost)
 	return 0
 end
 
+local function get_race_label_colour(copy_percentage, is_hidden)
+	if is_hidden then
+		return '#fafafa'
+	end
+
+	if copy_percentage <= 40 then
+		return '#fafafa'
+	elseif copy_percentage <= 52 then
+		return '#e3bc96'
+	elseif copy_percentage <= 64 then
+		return '#dea062'
+	elseif copy_percentage <= 76 then
+		return '#de7b49'
+	elseif copy_percentage <= 88 then
+		return '#e35c2d'
+	elseif copy_percentage <= 100 then
+		return '#d13719'
+	else
+		return '#db1414'
+	end
+end
+
 function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 	local turn_number = cfg.turn
 	local is_spawn_turn = false
@@ -447,26 +469,43 @@ function wesnoth.wml_actions.qquws_handle_after_race_spawn(cfg)
 	local extra_copy_buff_east = ''
 	local extra_copy_buff_west = ''
 	local map_edge = wml.variables["uws_game.edge"]
+	local allow_items = wml.variables['after_games.allow_items']
+	local allow_gold = wml.variables['after_games.allow_gold']
 	local drop_gold = after_games_progression[index]['gold']
-	local west_item = ''
-	local east_item = ''
+	local item = ''
 	local spawn_use_y = 1
 	local locations = {}
 
 	local iterator = {
-		{ ['spawn'] = spawn_west, ['from'] = 3, ['to'] = 2, ['index'] = index },
-		{ ['spawn'] = spawn_east, ['from'] = 1, ['to'] = 4, ['index'] = index },
+		{ ['spawn'] = spawn_west, ['from'] = 3, ['to'] = 2, ['index'] = index, ['debuff'] = west_debuff, ['extra_buff'] = extra_copy_buff_west }, -- debuff & extra_buff check what they do with create_after_copies
+		{ ['spawn'] = spawn_east, ['from'] = 1, ['to'] = 4, ['index'] = index, ['debuff'] = east_debuff, ['extra_buff'] = extra_copy_buff_east },
 	}
 
 	for _,v in ipairs(iterator) do
+		item = ''
+
 		if v.spawn then
+			if after_games_progression[index]['item'] then
+				if allow_items then
+					available_items = get_available_items(all_available_items, after_games_items_table)
+					item = mathx.random_choice(available_items)
+					table.insert(after_games_items_table, item)
+				else
+					drop_gold = after_games_progression[index]['no_items_gold']
+				end
+			end
+
+			if not allow_gold then
+				drop_gold = 0
+			end
+
 			spawn_use_y = after_race_table[index]['y'] - 6
 			if spawn_use_y < 1 then
 				spawn_use_y = 0
 			end
 
 			locations = { { ['y'] = spawn_use_y, ['x'] = math.floor(map_edge / 4) } }
-			copy_all_units(v.from, v.to, locations, map_edge, drop_gold, east_item, extra_copy_buff_east, east_debuff, after_games_progression[index]['percentage_east'], after_games_progression[index]['copy_style'])
+			copy_all_units(v.from, v.to, locations, map_edge, drop_gold, item, v.extra_buff, v.debuff, after_games_progression[index]['percentage_east'], after_games_progression[index]['copy_style'])
 		end
 	end
 end
@@ -798,7 +837,8 @@ function wesnoth.wml_actions.qquws_generate_after_race_spawn_table(cfg)
 		['spawned_east'] = false,
 		['spawned_west'] = false,
 		['buff_east'] = '',
-		['buff_west'] = ''
+		['buff_west'] = '',
+		['colour'] = '#fafafa',
 	} }
 
 	for i=2,spawn_count,1 do
@@ -807,7 +847,6 @@ function wesnoth.wml_actions.qquws_generate_after_race_spawn_table(cfg)
 		else
 			info = '--- ' .. after_games_progression[i]['percentage'] .. '% ---'
 		end
-
 
 		table.insert(spawn_table, {
 			['index'] = i,
@@ -819,7 +858,8 @@ function wesnoth.wml_actions.qquws_generate_after_race_spawn_table(cfg)
 			['spawned_east'] = false,
 			['spawned_west'] = false,
 			['buff_east'] = '',
-			['buff_west'] = ''
+			['buff_west'] = '',
+			['colour'] = get_race_label_colour(after_games_progression[i]['percentage'], is_info_hidden),
 		})
 	end
 
