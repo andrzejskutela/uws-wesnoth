@@ -391,7 +391,7 @@ return {
 	
 	{ ['t'] = 102, ['d'] = 5, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_FL_altaris_Mithril_Golem', ['default'] = 'Fire Wraith', ['armored'] = 20, },
 
-	{ ['t'] = 102, ['d'] = 6, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_ankylosaurus', ['default'] = 'QQ_ankylosaurus', ['race_guard_off'] = true, ['buff'] = 'A7:B12:C4:A8', ['calls_for_help'] = true, ['allow_random'] = false },
+	{ ['t'] = 102, ['d'] = 6, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_ankylosaurus', ['default'] = 'QQ_ankylosaurus', ['race_guard_off'] = true, ['buff'] = 'A7:B12:C4', ['calls_for_help'] = true, ['allow_random'] = false },
 	
 	{ ['t'] = 104, ['d'] = 7, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_Archwitch', ['default'] = 'QQ_Archwitch', ['calls_for_help'] = true, ['buff'] = 'A57:B57:C47', ['allow_random'] = false },
 
