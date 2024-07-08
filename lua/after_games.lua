@@ -48,15 +48,22 @@ local all_boosts_table = {
 	'remove_zoc', 'leader30', 'lower_damage', 'flat_defense', 'insurance', 'weak_minions',
 }
 
+local all_race_boosts_table = {
+	'boost10', 'boost20', 'bulky', 'beefy', 'armored', 'fast', 'agile', 'champion', 'slow', 'improved_damage',
+	'reheal_own', 'deboost15', 'slow_wave', 'cancel', 'turtle_up', 'poison', 'damage_armor', 'drunk_opponent',
+	'boost15', 'minions', 'strong_leader', 'dragon_heart', 'freeze_leader', 'easy_targets', 'payback', 'remove_specials',
+	'remove_zoc', 'leader30', 'lower_damage', 'flat_defense', 'insurance', 'weak_minions',
+}
+
 local offensive_boosts_list = {
-	'boost10', 'boost20', 'bulky', 'beefy', 'armored', 'fast', 'agile', 'champion', 'slow', 'steal', 'mirror',
-	'poison', 'damage_armor', 'drunk_opponent', 'boost15', 'minions', 'strong_leader', 'freeze_leader', 'payback', 'remove_specials',
+	'boost10', 'boost20', 'bulky', 'beefy', 'armored', 'fast', 'agile', 'champion', 'slow', 'steal',
+	'poison', 'damage_armor', 'drunk_opponent', 'boost15', 'minions', 'strong_leader', 'freeze_leader', 'remove_specials',
 	'remove_zoc', 'leader30', 'lower_damage', 'flat_defense',
 }
 
 local defensive_boosts_list = { 
 	'improved_damage', 'reheal_own', 'weaker15', 'slow_wave', 'turtle_up', 'dragon_heart', 'easy_targets', 'insurance',
-	'weak_minions', 
+	'weak_minions', 'mirror', 'payback', 'cancel'
 }
 
 local after_games_items_table = {}
@@ -361,9 +368,9 @@ local function get_available_items(pool, used_items)
 	return ret
 end
 
-local function get_unused_items(boosts_table)
+local function get_unused_boosts(boosts_table, all_table)
 	local ret = {}
-	for k,v in ipairs(all_boosts_table) do
+	for k,v in ipairs(all_table) do
 		if not boosts_table[v] then
 			table.insert(ret, v)
 		end
@@ -598,17 +605,26 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	wml.variables['after_games.used_items_list'] = table.concat(after_games_items_table, ',')
 end
 
+function wesnoth.wml_actions.qquws_generate_buff_lists(cfg)
+	wml.variables['after_games.offensive_boosts_list'] = table.concat(offensive_boosts_list, ',')
+	wml.variables['after_games.defensive_boosts_list'] = table.concat(defensive_boosts_list, ',')
+end
+
 function wesnoth.wml_actions.qquws_generate_random_boosts_table(cfg)
 	local wml_table_name = cfg.var
 	local boosts_table = {}
 	local new_item = ''
+	local all_table = all_boosts_table
+	if cfg.mode == 'after_race' then
+		all_table = all_race_boosts_table
+	end
 
 	for k,v in ipairs(all_boosts_table) do
 		boosts_table[v] = false
 	end
 
 	for i=1,6 do
-		local difference = get_unused_items(boosts_table)
+		local difference = get_unused_boosts(boosts_table, all_table)
 		new_item = mathx.random_choice(difference)
 		boosts_table[new_item] = true
 	end
