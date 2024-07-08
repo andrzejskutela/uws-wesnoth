@@ -1,5 +1,6 @@
 <span color='#eb5234'>v2.6.0</span> (08/07/2024):
 - New game mod - After Race
 - Royal and some special Rats buffed
-- Elven Royal Bow double attack, remove the attack restriction on turn end
+- Elven Royal Bow, weapon restriction is no longer active during ai turn
+- Insane mode added to The Great Waters map
 - Small balancing of Valley of the Necromancer and the Great Waters

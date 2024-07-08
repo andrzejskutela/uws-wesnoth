@@ -67,6 +67,9 @@ return {
 	{ ['t'] = 1, ['d'] = 5, ['side'] = 2, ['x'] = 28, ['y'] = 10, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Mosquito', ['default'] = 'Ghost', ['guard'] = true, ['moves'] = 6, },
 	
 	{ ['t'] = 1, ['d'] = 6, ['side'] = 2, ['x'] = 5, ['y'] = 4, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Mosquito', ['default'] = 'Ghost', ['guard'] = true, ['moves'] = 6, },
+
+	{ ['t'] = 1, ['d'] = 7, ['side'] = 2, ['x'] = 25, ['y'] = 13, ['lvl'] = 0, ['type'] = 'Dragonfly Naiad', ['default'] = 'Dragonfly Naiad', ['guard'] = true, ['moves'] = 6, },
+	{ ['t'] = 1, ['d'] = 7, ['side'] = 2, ['x'] = 26, ['y'] = 12, ['lvl'] = 0, ['type'] = 'Dragonfly Naiad', ['default'] = 'Dragonfly Naiad', ['guard'] = true, ['moves'] = 6, },
 	
 	-- 2 - 8 (mask y 79 - 73)
 	
@@ -85,6 +88,8 @@ return {
 	{ ['t'] = 8, ['d'] = 5, ['side'] = 2, ['x'] = 17, ['lvl'] = 0, ['type'] = 'AE_agl_yokai_Weaver_Maiden', ['default'] = 'Giant Scorpion', },
 	
 	{ ['t'] = 8, ['d'] = 6, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_arc_despair_Soldier', ['default'] = 'Wraith', },
+
+	{ ['t'] = 5, ['d'] = 7, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_arc_despair_Widow', ['default'] = 'Dragonfly', },
 	
 	-- 9 - 15 (mask y 72 - 66)
 	
@@ -107,6 +112,8 @@ return {
 	{ ['t'] = 13, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Greater_Albatross', ['default'] = 'Gryphon', ['bulky'] = 40 },
 
 	{ ['t'] = 15, ['d'] = 6, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_rhy_rg_Bowman', ['default'] = 'Bowman', ['beefy'] = 20, ['quiet_buff'] = 'Q3', },
+
+	{ ['t'] = 9, ['d'] = 7, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_rhy_ne_leviathan', ['default'] = 'Hunter Caribe', ['buff'] = 'A7:B2:C2' },
 	
 	-- 16 - 22 (mask y 65 - 59)
 	
@@ -130,6 +137,8 @@ return {
 	
 	{ ['t'] = 17, ['d'] = 6, ['side'] = 3, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_rhy_rg_Frigate', ['default'] = 'Pirate Galleon', },
 	{ ['t'] = 20, ['d'] = 6, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Able_Seaman', ['default'] = 'Merman Spearman', ['beefy'] = 24, ['bulky'] = 24, },
+
+	{ ['t'] = 21, ['d'] = 7, ['side'] = 3, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Lore_Caster', ['default'] = 'Sand Scuttler', ['ai_add_gold'] = 30 },
 	
 	-- 23 - 29 (mask y 58 - 52)
 	
@@ -167,23 +176,24 @@ return {
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['gold'] = 15 },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Hell_Guardian', ['default'] = 'Highwayman', ['moves'] = 0 },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 3, ['x'] = 27, ['lvl'] = 2, ['type'] = 'AE_mag_Wyvern_Knight', ['default'] = 'Cuttle Fish', ['race_guard_off'] = true },
-	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Overseer', ['default'] = 'Outlaw', ['recruits'] = 'QQ_Kamikaze', ['default_recruits'] = 'QQ_Kamikaze', ['r_lvls'] = '0', ['recruitment_gold'] = 90, ['gold'] = 30, ['allow_random_recruits'] = false, },
+	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Overseer', ['default'] = 'Outlaw', ['recruits'] = 'QQ_Kamikaze', ['default_recruits'] = 'QQ_Kamikaze', ['r_lvls'] = '0', ['recruitment_gold'] = 85, ['gold'] = 30, ['allow_random_recruits'] = false, },
 	{ ['t'] = 34, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_mrc_slavers_Worker', ['default'] = 'QQ_Kamikaze', ['guard'] = true },
 	{ ['t'] = 35, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['bulky'] = 50, ['beefy'] = 50, ['allow_random'] = false },
 	{ ['t'] = 35, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Miner', ['default'] = 'Rogue', ['guard'] = true },
 	{ ['t'] = 36, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Minotaur', ['default'] = 'Cave Bear', ['beefy'] = 40 },
 	
-	{ ['t'] = 31, ['d'] = 2, ['side'] = 2, ['x'] = 10, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['armored'] = 25 },
 	{ ['t'] = 32, ['d'] = 2, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Miner', ['default'] = 'Rogue', ['guard'] = true },
 	
 	{ ['t'] = 32, ['d'] = 3, ['side'] = 2, ['x'] = 9, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['buff'] = 'A11:B10:C9', ['allow_random'] = false, ['gold'] = 15 },
 	
 	{ ['t'] = 33, ['d'] = 4, ['side'] = 2, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Miner', ['default'] = 'Rogue', ['guard'] = true, ['gold'] = 15 },
-	{ ['t'] = 34, ['d'] = 4, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
-
+	
 	{ ['t'] = 34, ['d'] = 5, ['side'] = 2, ['x'] = 8, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
 	
 	{ ['t'] = 34, ['d'] = 6, ['side'] = 3, ['x'] = 28, ['lvl'] = 3, ['type'] = 'AE_mag_Chaos_Wyvern', ['default'] = 'Sea Serpent', ['race_guard_off'] = true, ['bulky'] = 52, },
+
+	{ ['t'] = 31, ['d'] = 7, ['side'] = 2, ['x'] = 10, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['armored'] = 40 },
+	{ ['t'] = 34, ['d'] = 7, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
 	
 	-- 37 - 43 (mask y 44 - 38)
 	
@@ -252,6 +262,8 @@ return {
 	{ ['t'] = 56, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_myh_Sangel', ['default'] = 'Banebow', ['beefy'] = 40, },
 	
 	{ ['t'] = 55, ['d'] = 6, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Deadwood', ['default'] = 'Necrophage', ['buff'] = 'A51:B2:C6:A12', },
+
+	{ ['t'] = 56, ['d'] = 7, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Black_Spider', ['default'] = 'Death Squire', ['ai_add_gold'] = 40 },
 	
 	-- 58 - 64 (mask y 23 - 17)
 	
@@ -273,6 +285,8 @@ return {
 	
 	{ ['t'] = 62, ['d'] = 6, ['side'] = 2, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_chs_aragwaith_Eagle_Rider', ['default'] = 'Drake Glider', },
 	{ ['t'] = 62, ['d'] = 6, ['side'] = 2, ['x'] = 28, ['lvl'] = 1, ['type'] = 'AE_chs_aragwaith_Eagle_Rider', ['default'] = 'Drake Glider', },
+
+	{ ['t'] = 64, ['d'] = 7, ['side'] = 2, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_rhy_aq_Tank', ['default'] = 'Drake Enforcer', ['ai_add_gold'] = 65, ['buff'] = 'A47:B60:C36' },
 	
 	-- 65 - 69 (mask y 16 - 12)
 	
@@ -289,6 +303,8 @@ return {
 	{ ['t'] = 65, ['d'] = 5, ['side'] = 2, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_mag_Banisher', ['default'] = 'Paladin', ['beefy'] = 48, },
 
 	{ ['t'] = 69, ['d'] = 6, ['side'] = 3, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_stf_triththa_Kraken', ['default'] = 'Naga Sicarius', ['buff'] = 'A21:B2:C4:C21:C2', },
+
+	{ ['t'] = 68, ['d'] = 7, ['side'] = 2, ['x'] = 13, ['lvl'] = 4, ['type'] = 'AE_mag_Master_Banisher', ['default'] = 'Dune Paragon', },
 	
 	-- 69 / final boss
 	
