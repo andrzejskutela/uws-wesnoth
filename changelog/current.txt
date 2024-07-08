@@ -1,3 +1,4 @@
-<span color='#eb5234'>v2.6.0</span> (date):
+<span color='#eb5234'>v2.6.0</span> (08/07/2024):
 - New game mod - After Race
 - Royal and some special Rats buffed
+- Small balancing of Valley of the Necromancer and the Great Waters
