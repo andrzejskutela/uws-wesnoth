@@ -11,7 +11,7 @@
 - Buffs and debuffs affecting 'defense everywhere' now affect unwalkable locations as well
 - Unification of how champion bonuses are calculated across all UWS
 - New side quest added to the Valley of the Necromancer map
-- Fix Hack'n Slash final boss' call to arms not affecting units on the right hand side of the map
+- Fix Hack'n Slash final boss' call to arms not affecting units on the west side of the map
 - Black Gorge Race map temporarily removed from UWS
 - Plenty of code changes in preparation for the upcoming 2.6.x line
 
