@@ -7,7 +7,6 @@ local split_string_by = function(input_str, sep)
         return ret
 end
 
-
 local slice_into_table = function(mask_data, middle_x)
 	local middle_x_lua = middle_x + 1
 	local ret = { ['left'] = {}, ['middle'] = {}, ['right'] = {} }
@@ -35,6 +34,17 @@ local slice_into_table = function(mask_data, middle_x)
 		table.insert(ret.left, split_line_left)
 		table.insert(ret.middle, split_hex_middle)
 		table.insert(ret.right, split_line_right)
+	end
+
+	return ret
+end
+
+local slice_into_single_table = function(mask_data)
+	local ret = {}
+	local lines = split_string_by(mask_data, "[^\n]+")
+	
+	for k,line in ipairs(lines) do
+		table.insert(ret, split_string_by(line, "[^,]+"))
 	end
 
 	return ret
@@ -85,6 +95,16 @@ local concatenate_sliced_mask = function(sliced_mask)
 	return ret
 end
 
+local concatenate_simple_mask = function(sliced_mask)
+	local ret = ""
+	
+	for k,line in ipairs(sliced_mask) do
+		ret = ret .. table.concat(line, ',') .. "\n"
+	end
+	
+	return ret
+end
+
 function wesnoth.wml_actions.qquws_generate_new_mask_data(cfg)
 	local partial_data = cfg.partial_data
 	local current_mask_data = cfg.current_mask_data
@@ -101,3 +121,28 @@ function wesnoth.wml_actions.qquws_generate_new_mask_data(cfg)
 	wml.variables[new_mask_var_name] = combined_mask
 end
 
+function wesnoth.wml_actions.qquws_change_single_tile(cfg)
+	local current_mask_data = cfg.current_mask_data
+	local x = tonumber(cfg.x) + 1
+	local y = tonumber(cfg.y) + 1
+	local new_mask_var_name = cfg.new_mask_var_name
+	local new_terrain = cfg.terrain
+	local new_overlay = cfg.overlay
+
+	local sliced = slice_into_single_table(current_mask_data)
+	local old_tile = split_string_by(sliced[y][x], "[^\\^]+")
+	local new_tile = old_tile[1]
+	if new_terrain then
+		new_tile = new_terrain
+	end
+
+	if new_overlay then
+		new_tile = new_tile .. new_overlay
+	elseif old_tile[2] then
+		new_tile = new_tile .. '^' .. old_tile[2]
+	end
+
+	sliced[y][x] = new_tile
+	local combined_mask = concatenate_simple_mask(sliced)
+	wml.variables[new_mask_var_name] = combined_mask
+end
