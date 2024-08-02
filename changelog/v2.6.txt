@@ -1,4 +1,6 @@
 <span color='#80ba3a'>v2.6.1</span> (date):
+- Gem of Hoarfrost icy shackles reduction factor changed from x1.5 to 1.5/1.6/1.7
+- Gem of Hoarfrost defense reduction nerfed on epic from -7 to -6
 - Kaboom craters now persist in scroll games
 
 <span color='#eb5234'>v2.6.0</span> (08/07/2024):
