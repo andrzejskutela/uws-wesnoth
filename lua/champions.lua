@@ -210,6 +210,7 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 	local pool_c = { 'C1','C2','C3','C4','C9','C13','C16','C17','C18','C21','C22','C29','C33','C35','C38','C43','C44','C45','C46','C50','C58','C59','C60' }
 	
 	local pool_settings = {
+		['human_player_restriction'] = wml.variables['qquws_champion_data.human_player_restriction'],
 		['has_ranged'] = wml.variables["qquws_champion_data.has_ranged_attack"],
 		['has_melee'] = wml.variables["qquws_champion_data.has_melee_attack"],
 		['has_magical_ranged'] = wml.variables["qquws_champion_data.has_magical_ranged"],
@@ -240,6 +241,10 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 		['has_multiple_str_melee'] = wml.variables['qquws_champion_data.has_multiple_str_melee'],
 		['has_multiple_str_ranged'] = wml.variables['qquws_champion_data.has_multiple_str_ranged'],
 	}
+
+	if pool_settings['human_player_restriction'] then
+		for k,v in ipairs({ 'A53','A55','B37','B40','B51','B53','B54','B57','B59','B60','C36','C49','C50','C51','C52','C54','C55','C56','C57','C59','C60','C61' }) do exclude_from_pool[#exclude_from_pool + 1] = v end
+	end
 	
 	local segregation_pool = find_conditional_buffs(pool_settings)
 	for k,v in ipairs(segregation_pool) do
