@@ -4,6 +4,7 @@
 - Gem of Hoarfrost defense reduction nerfed on epic from -7 to -6
 - Sorcerer's Battle Armor now gives the item keeper a nice halo to indicate an aura unit
 - Kaboom craters now persist in scroll games
+- Small visual improvements to custom UWS menuitems
 
 <span color='#eb5234'>v2.6.0</span> (08/07/2024):
 - New game mod - After Race
