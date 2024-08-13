@@ -245,7 +245,7 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 	if pool_settings['human_player_restriction'] then
 		for k,v in ipairs({ 'A53','A55','B37','B40','B51','B53','B54','B57','B59','B60','C36','C49','C50','C51','C52','C54','C55','C56','C57','C59','C60','C61' }) do exclude_from_pool[#exclude_from_pool + 1] = v end
 	end
-	
+
 	local segregation_pool = find_conditional_buffs(pool_settings)
 	for k,v in ipairs(segregation_pool) do
 		local c = string.sub(v, 1, 1)
@@ -263,13 +263,13 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 		pool_b = restrict_op_buffs(pool_b)
 		pool_c = restrict_op_buffs(pool_c)
 	end
-	
+
 	if #exclude_from_pool > 0 then
 		pool_a = exclude_buffs(pool_a, exclude_from_pool)
 		pool_b = exclude_buffs(pool_b, exclude_from_pool)
 		pool_c = exclude_buffs(pool_c, exclude_from_pool)
 	end
-	
+
 	local buff_a = wml.variables[buff_a_var_name]
 	local buff_b = wml.variables[buff_b_var_name]
 	local buff_c = wml.variables[buff_c_var_name]
