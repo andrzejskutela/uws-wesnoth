@@ -6,4 +6,5 @@
 - New uws unique lvl4 unit added - Sunrise Guardian
 - Fixed the issue with race and hack'n slash games where champions could die in lava
 - Kaboom craters now persist in scroll games
+- After-classic and After-race games now offer predefined mode
 - Small visual improvements to custom UWS menuitems

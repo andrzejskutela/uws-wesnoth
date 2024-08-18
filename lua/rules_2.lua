@@ -239,7 +239,7 @@ return {
 	
 	{ ['t'] = 46, ['d'] = 4, ['side'] = 3, ['x'] = 5, ['lvl'] = 2, ['type'] = 'AE_ext_chaos_Hell_Crab', ['default'] = 'Deathblade', ['bulky'] = 100, },
 	
-	{ ['t'] = 46, ['d'] = 5, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_mrc_infernai_Bloodbather', ['default'] = 'Orcish Warlord', ['bulky'] = 60, ['beefy'] = 24, },
+	{ ['t'] = 46, ['d'] = 5, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_mrc_infernai_Bloodbather', ['default'] = 'Orcish Warlord', ['bulky'] = 48, ['beefy'] = 12, },
 	
 	-- 51 - 57 (mask y 30 - 24)
 	

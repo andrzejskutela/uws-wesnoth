@@ -484,8 +484,8 @@ function wesnoth.wml_actions.qquws_handle_after_race_spawn(cfg)
 	local locations = {}
 
 	local iterator = {
-		{ ['spawn'] = spawn_west, ['from'] = 3, ['to'] = 2, ['index'] = index, ['debuff'] = west_debuff, ['extra_buff'] = extra_copy_buff_west }, -- debuff & extra_buff check what they do with create_after_copies
-		{ ['spawn'] = spawn_east, ['from'] = 1, ['to'] = 4, ['index'] = index, ['debuff'] = east_debuff, ['extra_buff'] = extra_copy_buff_east },
+		{ ['spawn'] = spawn_west, ['from'] = 3, ['to'] = 2, ['perc'] = after_games_progression[index]['percentage_west'], ['debuff'] = west_debuff, ['extra_buff'] = extra_copy_buff_west }, -- debuff & extra_buff check what they do with create_after_copies
+		{ ['spawn'] = spawn_east, ['from'] = 1, ['to'] = 4, ['perc'] = after_games_progression[index]['percentage_east'], ['debuff'] = east_debuff, ['extra_buff'] = extra_copy_buff_east },
 	}
 
 	for _,v in ipairs(iterator) do
@@ -512,7 +512,7 @@ function wesnoth.wml_actions.qquws_handle_after_race_spawn(cfg)
 			end
 
 			locations = { { ['y'] = spawn_use_y, ['x'] = math.floor(map_edge / 4) } }
-			copy_all_units(v.from, v.to, locations, map_edge, drop_gold, item, v.extra_buff, v.debuff, after_games_progression[index]['percentage_east'], after_games_progression[index]['copy_style'])
+			copy_all_units(v.from, v.to, locations, map_edge, drop_gold, item, v.extra_buff, v.debuff, v.perc, after_games_progression[index]['copy_style'])
 		end
 	end
 end
@@ -859,7 +859,7 @@ function wesnoth.wml_actions.qquws_generate_after_race_spawn_table(cfg)
 
 	for i=2,spawn_count,1 do
 		if is_info_hidden then
-			info = '--- ??? ---'
+			info = '--- rand ---'
 		else
 			info = '--- ' .. after_games_progression[i]['percentage'] .. '% ---'
 		end
