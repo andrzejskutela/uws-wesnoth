@@ -30,14 +30,16 @@ return {
 	
 	-- beginning
 	
-	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['y'] = 7, ['lvl'] = 1, ['type'] = 'Giant Mudcrawler', },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['y'] = 7, ['lvl'] = 1, ['type'] = 'Giant Mudcrawler', ['moves'] = 4, },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['y'] = 9, ['lvl'] = 1, ['type'] = 'Footpad', ['moves'] = 0, ['gold'] = 6, },
-	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['y'] = 8, ['lvl'] = 0, ['type'] = 'Mudcrawler', },
+	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['y'] = 8, ['lvl'] = 0, ['type'] = 'Mudcrawler', ['moves'] = 4, },
 
-	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 25, ['y'] = 7, ['lvl'] = 1, ['type'] = 'Giant Mudcrawler', },
+	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 25, ['y'] = 7, ['lvl'] = 1, ['type'] = 'Giant Mudcrawler', ['moves'] = 4 },
 	
 	{ ['t'] = 1, ['d'] = 5, ['side'] = 2, ['x'] = 21, ['y'] = 5, ['lvl'] = 1, ['type'] = 'Giant Mudcrawler', ['guard'] = true, ['buff'] = 'A3:B13:C16', ['quiet_buff'] = 'Q6', ['allow_random'] = false, ['disallow_slash_unguardian'] = true, },
 	
+	{ ['t'] = 1, ['d'] = 7, ['side'] = 2, ['x'] = 24, ['y'] = 4, ['lvl'] = 0, ['type'] = 'Sand Scuttler', ['moves'] = 4, },
+
 	-- 2 - 8 (mask y 74 - 68)
 	
 	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'Mage', },
@@ -49,6 +51,8 @@ return {
 	{ ['t'] = 6, ['d'] = 3, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Young Ogre', ['guard'] = true, },
 	
 	{ ['t'] = 4, ['d'] = 4, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Naga Fighter', ['bulky'] = 32, ['armored'] = 20 },
+
+	{ ['t'] = 5, ['d'] = 7, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'Naga Dirkfang', },
 	
 	-- 9 - 15 (mask y 67 - 61)
 	
@@ -75,7 +79,6 @@ return {
 	{ ['t'] = 16, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', ['moves'] = 0 },
 	{ ['t'] = 16, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Dwarvish Ulfserker'},
 	{ ['t'] = 19, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'Rogue', },
-	{ ['t'] = 19, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'Trapper', },
 	{ ['t'] = 20, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'Elvish Hero', ['moves'] = 0, ['item'] = true },
 	{ ['t'] = 21, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'Elvish Druid', ['moves'] = 0, ['gold'] = 30 },
 	{ ['t'] = 21, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'Elvish Marksman', ['moves'] = 0, ['gold'] = 30 },
@@ -84,12 +87,16 @@ return {
 	
 	{ ['t'] = 19, ['d'] = 2, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'Bandit', ['moves'] = 0, },
 
-	{ ['t'] = 21, ['d'] = 3, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Wose', ['guard'] = true, ['bulky'] = 60, },
+	{ ['t'] = 19, ['d'] = 2, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'Trapper', },
 	
 	{ ['t'] = 21, ['d'] = 4, ['side'] = 2, ['x'] = 8, ['lvl'] = 1, ['type'] = 'Troll Whelp', },
-	{ ['t'] = 21, ['d'] = 4, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Troll Whelp', ['beefy'] = 40, ['armored'] = 20 },
+
+	{ ['t'] = 21, ['d'] = 5, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Troll Whelp', ['beefy'] = 40, ['armored'] = 20 },
 	
 	{ ['t'] = 17, ['d'] = 6, ['side'] = 3, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Dwarvish Fighter', ['bulky'] = 32, },
+
+	{ ['t'] = 21, ['d'] = 7, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'Wose Shaman', ['guard'] = true, ['bulky'] = 60, },
+	{ ['t'] = 21, ['d'] = 7, ['side'] = 2, ['x'] = 24, ['lvl'] = 1, ['type'] = 'Wose', ['guard'] = true, },
 	
 	-- 23 - 29 (mask y 53 - 47)
 	
@@ -103,20 +110,22 @@ return {
 	{ ['t'] = 29, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'Saurian Augur', },
 	
 	{ ['t'] = 23, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 3, ['type'] = 'Elvish Enchantress', },
-	{ ['t'] = 23, ['d'] = 2, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'Vampire Bat', },
 	
 	{ ['t'] = 25, ['d'] = 3, ['side'] = 2, ['x'] = 5, ['lvl'] = 1, ['type'] = 'Troll Whelp', },
 	{ ['t'] = 24, ['d'] = 3, ['side'] = 2, ['x'] = 25, ['lvl'] = 3, ['type'] = 'Elvish Marshal', ['gold'] = 10 },
 	{ ['t'] = 26, ['d'] = 3, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'Naga Warrior', },
 
+	{ ['t'] = 23, ['d'] = 4, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'Vampire Bat', },
 	{ ['t'] = 24, ['d'] = 4, ['side'] = 2, ['x'] = 24, ['lvl'] = 1, ['type'] = 'Elvish Fighter', },
 	{ ['t'] = 26, ['d'] = 4, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'Naga Warrior', },
-	{ ['t'] = 27, ['d'] = 4, ['side'] = 2, ['x'] = 6, ['lvl'] = 2, ['type'] = 'Troll Shaman', },
 	
-	{ ['t'] = 23, ['d'] = 5, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Blood Bat', ['beefy'] = 28, },
 	{ ['t'] = 24, ['d'] = 5, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'Dread Bat', ['buff'] = 'A47:B12:C11' },
+	{ ['t'] = 27, ['d'] = 5, ['side'] = 2, ['x'] = 6, ['lvl'] = 2, ['type'] = 'Troll Shaman', },
 
 	{ ['t'] = 27, ['d'] = 6, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', ['race_guard_off'] = true, ['gold'] = 10 },
+
+	{ ['t'] = 23, ['d'] = 7, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Blood Bat', ['beefy'] = 28, },
+	{ ['t'] = 29, ['d'] = 7, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'Saurian Javelineer', ['buff'] = 'A35:B26:C26', },
 	
 	-- 30 - 36 (mask y 46 - 40)
 	
@@ -136,11 +145,15 @@ return {
 	{ ['t'] = 35, ['d'] = 3, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Merman Netcaster', },
 	
 	{ ['t'] = 30, ['d'] = 4, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
-	{ ['t'] = 34, ['d'] = 4, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'Sky Drake', },
+
+	{ ['t'] = 34, ['d'] = 5, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'Sky Drake', },
 
 	{ ['t'] = 35, ['d'] = 6, ['side'] = 4, ['x'] = 21, ['lvl'] = 3, ['type'] = 'Hurricane Drake', ['buff'] = 'A13:B13:C12:B17', },
 	{ ['t'] = 32, ['d'] = 6, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'Drake Thrasher', ['bulky'] = 60, ['armored'] = 10 },
 	{ ['t'] = 34, ['d'] = 6, ['side'] = 3, ['x'] = 10, ['lvl'] = 2, ['type'] = 'Swamp Lizard', ['beefy'] = 40, ['disallow_slash_unguardian'] = true, },
+
+	{ ['t'] = 33, ['d'] = 7, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'Saurian Seer', },
+	{ ['t'] = 33, ['d'] = 7, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Grand Dragonfly', ['disallow_slash_unguardian'] = true, ['agile'] = 5 },
 	
 	-- 37 - 43 (mask y 39 - 33)
 	
@@ -172,6 +185,8 @@ return {
 	
 	{ ['t'] = 41, ['d'] = 6, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'Iron Mauler', ['buff'] = 'A41:B16:C10', ['gold'] = 15 },
 	{ ['t'] = 43, ['d'] = 6, ['side'] = 2, ['x'] = 10, ['lvl'] = 3, ['type'] = 'Silver Mage', ['beefy'] = 20, ['bulky'] = 20, ['race_guard_off'] = true },
+
+	{ ['t'] = 42, ['d'] = 7, ['side'] = 2, ['x'] = 7, ['lvl'] = 3, ['type'] = 'Fugitive', ['fast'] = 2, ['agile'] = 10 },
 	
 	-- 44 - 50 (mask y 32 - 26)
 	
@@ -214,7 +229,9 @@ return {
 
 	{ ['t'] = 46, ['d'] = 6, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Soulless', ['beefy'] = 20, ['fast'] = 1, ['race_guard_off'] = true, ['gold'] = 8 },
 	{ ['t'] = 48, ['d'] = 6, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'Necromancer', },
-	{ ['t'] = 49, ['d'] = 6, ['side'] = 3, ['x'] = 15, ['lvl'] = 4, ['type'] = 'Skeletal Dragon', ['beefy'] = 20, ['bulky'] = 180, ['race_guard_off'] = true, ['item'] = true },
+	{ ['t'] = 49, ['d'] = 6, ['side'] = 3, ['x'] = 15, ['lvl'] = 4, ['type'] = 'Skeletal Dragon', ['beefy'] = 20, ['bulky'] = 180, ['race_guard_off'] = true, },
+
+	{ ['t'] = 50, ['d'] = 7, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'Bone Knight', ['buff'] = 'A46:B58:C43:C51', },
 	
 	-- 51 - 57 (mask y 25 - 19)
 	
