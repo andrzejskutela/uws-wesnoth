@@ -7,6 +7,7 @@
 - Fixed the issue with race and hack'n slash games where champions could die in lava
 - Kaboom craters now persist in scroll games
 - After-classic and After-race games now offer predefined mode
+- After-classic fix incorrect copy info in chaos progression when boosts were selected
 - Small visual improvements to custom UWS menuitems
 
 <span color='#eb5234'>v2.6.0</span> (08/07/2024):
