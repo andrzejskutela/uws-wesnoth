@@ -22,6 +22,7 @@ return {
 	{ ['row'] = 'object', ['t'] = 21, ['x'] = 11, ['cat'] = 'rune', ['image'] = 'scenery/rune2-glow.png', ['amount'] = 3, ['name'] = 'Rune', ['set'] = 'R6,R7,R8', ['color'] = '#b366ed', ['tooltip'] = '+10% forest defense (33%)\
 +10% hills defense (33%)\
 +1 damage (33%)' },
+	{ ['row'] = 'object', ['t'] = 26, ['x'] = 24, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 60 },
 	
 	-- beginning
 	
@@ -63,11 +64,11 @@ return {
 	
 	{ ['t'] = 14, ['d'] = 2, ['side'] = 2, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_bem_wood_warriors_Bigfoot', ['default'] = 'Troll', ['race_guard_off'] = true, },
 	
-	{ ['t'] = 10, ['d'] = 3, ['side'] = 2, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_imp_Marauders_Axeman', ['default'] = 'Thug', },
 	{ ['t'] = 14, ['d'] = 3, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_bem_wood_warriors_Amphibians_Rider', ['default'] = 'Saurian Ambusher', ['guard'] = true, },
 	
 	{ ['t'] = 12, ['d'] = 4, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Wolf', ['default'] = 'Wolf', ['race_guard_off'] = true, },
 
+	{ ['t'] = 10, ['d'] = 5, ['side'] = 2, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_imp_Marauders_Axeman', ['default'] = 'Thug', },
 	{ ['t'] = 13, ['d'] = 5, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Wolf', ['default'] = 'Wolf', ['race_guard_off'] = true, },
 	
 	{ ['t'] = 13, ['d'] = 6, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mrc_slavers_Mutt', ['default'] = 'Wolf', ['race_guard_off'] = true, },
@@ -100,7 +101,7 @@ return {
 	
 	{ ['t'] = 24, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_stf_triththa_Plainsrider', ['default'] = 'Gryphon Rider', ['quiet_buff'] = 'Q4', ['allow_random'] = false },
 	{ ['t'] = 25, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 1, ['type'] = 'Dwarvish Fighter', ['default'] = 'Dwarvish Fighter', },
-	{ ['t'] = 26, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_ext_dwarves_Dwarvish_Runesmith', ['default'] = 'Dwarvish Runesmith', ['recruits'] = 'Dwarvish Fighter,Dwarvish Thunderer,AE_mag_Dwarvish_Warrior', ['default_recruits'] = 'Dwarvish Fighter,Dwarvish Thunderer,Dwarvish Guardsman', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 70, ['gold'] = 60, },
+	{ ['t'] = 26, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_ext_dwarves_Dwarvish_Runesmith', ['default'] = 'Dwarvish Runesmith', ['recruits'] = 'Dwarvish Fighter,Dwarvish Thunderer,AE_mag_Dwarvish_Warrior', ['default_recruits'] = 'Dwarvish Fighter,Dwarvish Thunderer,Dwarvish Guardsman', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 70, },
 	{ ['t'] = 26, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'Dwarvish Berserker', ['default'] = 'Dwarvish Berserker', ['gold'] = 15, },
 	{ ['t'] = 28, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_feu_clockwork_dwarves_Triggerman', ['default'] = 'Dwarvish Thunderer', ['quiet_buff'] = 'Q3', ['allow_random'] = false, ['guard'] = true, },
 	
@@ -122,18 +123,18 @@ return {
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 3, ['type'] = 'Ancient Wose', ['default'] = 'Ancient Wose', },
 	{ ['t'] = 34, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'Elvish Archer', ['default'] = 'Elvish Archer', ['calls_for_help'] = true },
 	{ ['t'] = 35, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_chs_sylvians_Forest_Spirit', ['default'] = 'Wild Wyvern' },
-	{ ['t'] = 36, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_chs_sylvians_Night_Nymph', ['default'] = 'Swamp Lizard' },
 	{ ['t'] = 36, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 3, ['type'] = 'Merman Hoplite', ['default'] = 'Merman Hoplite', ['armored'] = 10, ['bulky'] = 28, ['item'] = true },
 	
 	{ ['t'] = 33, ['d'] = 2, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_chs_sylvians_Wose_Shaman', ['default'] = 'Wose Shaman', },
 	{ ['t'] = 33, ['d'] = 2, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_chs_quenoth_Quenoth_Moon_Enchantress', ['default'] = 'Elvish Sorceress', },
 	
 	{ ['t'] = 32, ['d'] = 3, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Drone', ['default'] = 'Gryphon Rider', },
-	{ ['t'] = 34, ['d'] = 3, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Elvish Marksman', ['default'] = 'Elvish Marksman', ['gold'] = 15 },
+	{ ['t'] = 36, ['d'] = 3, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_chs_sylvians_Night_Nymph', ['default'] = 'Swamp Lizard' },
 
 	{ ['t'] = 35, ['d'] = 4, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Elder Wose', ['default'] = 'Elder Wose', },
 	
 	{ ['t'] = 34, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'Elvish Champion', ['default'] = 'Elvish Champion', ['armored'] = 5 },
+	{ ['t'] = 34, ['d'] = 5, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Elvish Marksman', ['default'] = 'Elvish Marksman', },
 	
 	{ ['t'] = 33, ['d'] = 6, ['side'] = 2, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Lanterbug', ['default'] = 'Gryphon Master', ['agile'] = 15 },
 	

@@ -1,5 +1,6 @@
 <span color='#80ba3a'>v2.6.1</span> (date):
 - TSW map general balancing and insane mode added to H'nS version
+- Dwarvish Mountains map small balancing
 - Maximum number of items picked up by a single unit is now changed to 2 in hardcore games
 - Fire Mastery item redesigned
 - Gem of Hoarfrost icy shackles reduction factor changed from x1.5 to 1.5/1.65/1.8
