@@ -398,7 +398,7 @@ return {
 
 	{ ['t'] = 102, ['d'] = 6, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_ankylosaurus', ['default'] = 'QQ_ankylosaurus', ['race_guard_off'] = true, ['buff'] = 'A7:B12:C4', ['calls_for_help'] = true, ['allow_random'] = false },
 	
-	{ ['t'] = 104, ['d'] = 7, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_Archwitch', ['default'] = 'QQ_Archwitch', ['calls_for_help'] = true, ['buff'] = 'A57:B57:C47', ['allow_random'] = false },
+	{ ['t'] = 104, ['d'] = 7, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_Archwitch', ['default'] = 'QQ_Archwitch', ['calls_for_help'] = true, ['buff'] = 'A57:B53:C47', ['allow_random'] = false },
 
 	-- 107 - 113 (mask y 63 - 57)
 	
@@ -533,7 +533,7 @@ return {
 
 	{ ['t'] = 143, ['d'] = 6, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mag_Pain_Sphere', ['default'] = 'Fire Wraith', ['fast'] = 3, ['agile'] = 15 },
 
-	{ ['t'] = 148, ['d'] = 7, ['side'] = 4, ['x'] = 22, ['lvl'] = 6, ['type'] = 'QQ_empty_shadow', ['default'] = 'QQ_empty_shadow', ['buff'] = 'A38:B14:C56', ['allow_random'] = false },
+	{ ['t'] = 148, ['d'] = 7, ['side'] = 4, ['x'] = 22, ['lvl'] = 6, ['type'] = 'QQ_empty_shadow', ['default'] = 'QQ_empty_shadow', ['buff'] = 'A38:B57:C56', ['allow_random'] = false },
 	
 	-- 149 - 155 (mask y 21 - 15)
 	
