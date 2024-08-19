@@ -1,5 +1,5 @@
 <span color='#80ba3a'>v2.6.1</span> (date):
-- TSW map general balancing and insane mode added to H'nS version
+- TSW map general balancing and insane mode added to Hack'n Slash version
 - Valley of the Necromancer and Dwarvish Mountains maps balancing
 - Maximum number of items picked up by a single unit is now changed to 2 in hardcore games
 - Fire Mastery item redesigned
@@ -15,3 +15,4 @@
 - After-classic fix incorrect copy info in chaos progression when boosts were selected
 - Small visual improvements to custom UWS menuitems
 - Fixed bug with friendly units when one player claimed both west and east helpers on the same turn
+- Fixed infinite gold loops that happened in some Hack'n Slash games
