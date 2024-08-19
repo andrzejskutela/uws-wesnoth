@@ -6,6 +6,7 @@
 - Gem of Hoarfrost icy shackles reduction factor changed from x1.5 to 1.5/1.65/1.8
 - Gem of Hoarfrost defense reduction nerfed on epic from -7 to -6
 - Sorcerer's Battle Armor now gives the item keeper a nice halo to indicate an aura unit
+- Balancing of various champion bonuses
 - New uws unique lvl4 unit added - Sunrise Guardian
 - Added support to new XP mod power updates
 - Fixed the issue with race and hack'n slash games where champions could die in lava
