@@ -321,7 +321,7 @@ return {
 	-- 86 - 92 (mask y 84 - 78)
 	
 	{ ['t'] = 88, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Naga Guard', ['default'] = 'Naga Guard', },
-	{ ['t'] = 89, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 6, ['type'] = 'QQ_naga_grand_priest', ['default'] = 'QQ_naga_grand_priest', ['gold'] = 70, ['recruits'] = 'Naga Sicarius,Naga Zephyr,Naga Myrmidon,Naga High Guard', ['default_recruits'] = 'Hurricane Drake,Drake Blademaster,Drake Enforcer,Inferno Drake', ['r_lvls'] = '3,3,3,3,3', ['recruitment_gold'] = 370, ['event'] = 'von_naga_ghosts' },
+	{ ['t'] = 89, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 6, ['type'] = 'QQ_naga_grand_priest', ['default'] = 'QQ_naga_grand_priest', ['gold'] = 70, ['recruits'] = 'Naga Sicarius,Naga Zephyr,Naga Myrmidon,Naga High Guard', ['default_recruits'] = 'Hurricane Drake,Drake Blademaster,Drake Enforcer,Inferno Drake', ['r_lvls'] = '3,3,3,3,3', ['recruitment_gold'] = 370, ['quiet_buff'] = 'naga_ghosts', },
 	{ ['t'] = 90, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
 	{ ['t'] = 90, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
 	
