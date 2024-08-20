@@ -18,6 +18,7 @@
 - Fixed infinite gold loops that happened in some Hack'n Slash games
 - Fixed dark pact ability not working in 1.18
 - Fixed Chronomancer's Staff abilities incorrectly able to slow *unslowable* units
+- Fixed shield master ability incorrectly buffing surrounding enemy units
 
 <span color='#eb5234'>v2.6.0</span> (08/07/2024):
 - New game mod - After Race
