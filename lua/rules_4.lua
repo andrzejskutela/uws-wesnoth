@@ -224,7 +224,7 @@ return {
 	{ ['t'] = 51, ['d'] = 6, ['side'] = 3, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_mag_Battlecopter', ['default'] = 'Spectre', ['buff'] = 'A32:B32:C15', },
 	{ ['t'] = 55, ['d'] = 6, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_mag_Steam_Berserker', ['default'] = 'Dwarvish Berserker', ['race_guard_off'] = true },
 
-	{ ['t'] = 54, ['d'] = 7, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_mag_Pacificator', ['default'] = 'Dwarvish Lord',},
+	{ ['t'] = 54, ['d'] = 7, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_mag_Pacificator', ['default'] = 'Dwarvish Lord', ['armored'] = 10 },
 	{ ['t'] = 55, ['d'] = 7, ['side'] = 3, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_mag_Technocrat', ['default'] = 'Dwarvish Lord', ['buff'] = 'A13:B33:C45:B35'},
 	
 	-- 58 - 64 (mask y 112 - 106)
