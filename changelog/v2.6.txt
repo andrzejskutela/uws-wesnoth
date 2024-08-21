@@ -2,19 +2,19 @@
 - TSW map general balancing and insane mode added to Hack'n Slash version
 - Valley of the Necromancer and Dwarvish Mountains maps balancing
 - Maximum number of items picked up by a single unit is now limited to 2 in hardcore games
+- After-classic and After-race games now offer predefined mode
+- Added support to new XP mod power updates
 - Fire and Impact Mastery items replaced by two new items each
 - Gem of Hoarfrost icy shackles reduction factor changed from x1.5 to 1.5/1.65/1.8
 - Gem of Hoarfrost defense reduction nerfed on epic from -7 to -6
 - The Scythe nerfed a bit on higher ranks
-- New visuals added to indicate auras and other specials related to some items
-- Balancing of various champion bonuses
 - New uws unique lvl4 unit added - Sunrise Guardian
-- Added support to new XP mod power updates
-- Fixed the issue with race and hack'n slash games where champions could die in lava
-- Kaboom craters now persist in scroll games
-- After-classic and After-race games now offer predefined mode
-- After-classic fix incorrect copy info in chaos progression when boosts were selected
+- Balancing of various champion bonuses
+- New visuals added to indicate auras and other specials related to some items
 - Small visual improvements to custom UWS menuitems
+- Kaboom craters now persist in scroll games
+- Fixed the issue with race and hack'n slash games where champions could die in lava
+- Fixed After-classic incorrect copy info in chaos progression when boosts were selected
 - Fixed bug with friendly units disappearing when one player claimed both west and east helpers on the same turn
 - Fixed infinite gold loops that happened in some Hack'n Slash games
 - Fixed dark pact ability not working in 1.18
