@@ -11,7 +11,7 @@
 - New uws unique lvl4 unit added - Sunrise Guardian
 - Balancing of various champion bonuses
 - New visuals added to indicate auras and other specials related to some items
-- Small visual improvements to custom UWS menuitems
+- Small visual improvements to custom uws menuitems
 - Kaboom craters now persist in scroll games
 - Fixed the issue with race and hack'n slash games where champions could die in lava
 - Fixed After-classic incorrect copy info in chaos progression when boosts were selected
