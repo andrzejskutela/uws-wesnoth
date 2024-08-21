@@ -490,14 +490,14 @@ return {
 	{ ['t'] = 132, ['d'] = 3, ['side'] = 3, ['x'] = 20, ['lvl'] = 3, ['type'] = 'Spectre', ['default'] = 'Spectre', ['buff'] = 'A20:B38:C47', },
 	
 	{ ['t'] = 131, ['d'] = 4, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Soulhunter', ['default'] = 'Nightgaunt', },
-	{ ['t'] = 130, ['d'] = 4, ['side'] = 4, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Demon_Stormtide', ['default'] = 'Draug', },
-	{ ['t'] = 134, ['d'] = 4, ['side'] = 4, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_ele_Skeletal_Corpse_Inferno', ['default'] = 'Banebow', },
+	{ ['t'] = 130, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Demon_Stormtide', ['default'] = 'Draug', },
+	{ ['t'] = 134, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_ele_Skeletal_Corpse_Inferno', ['default'] = 'Banebow', },
 	
-	{ ['t'] = 130, ['d'] = 5, ['side'] = 4, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_mag_Atokpi_Master', ['default'] = 'Ancient Lich' },
+	{ ['t'] = 130, ['d'] = 5, ['side'] = 3, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_mag_Atokpi_Master', ['default'] = 'Ancient Lich' },
 
 	{ ['t'] = 132, ['d'] = 6, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_mrc_holy_order_Torturer', ['default'] = 'Highwayman', ['bulky'] = 60, },
 
-	{ ['t'] = 131, ['d'] = 7, ['side'] = 4, ['x'] = 13, ['lvl'] = 5, ['type'] = 'QQ_atronachs', ['default'] = 'QQ_atronachs', ['buff'] = 'A37:B15:C36' },
+	{ ['t'] = 131, ['d'] = 7, ['side'] = 3, ['x'] = 13, ['lvl'] = 5, ['type'] = 'QQ_atronachs', ['default'] = 'QQ_atronachs', ['buff'] = 'A37:B15:C36' },
 	
 	-- 135 - 141 (mask y 35 - 29)
 	
@@ -515,11 +515,11 @@ return {
 	{ ['t'] = 138, ['d'] = 5, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Dark_Slayer', ['default'] = 'Drake Warrior', },
 	{ ['t'] = 139, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 5, ['type'] = 'QQ_enflamed_spirit', ['default'] = 'QQ_enflamed_spirit', },
 	
-	{ ['t'] = 135, ['d'] = 6, ['side'] = 4, ['x'] = 15, ['lvl'] = 4, ['type'] = 'AE_mag_Moloch', ['default'] = 'Armageddon Drake', ['armored'] = 20 },
+	{ ['t'] = 135, ['d'] = 6, ['side'] = 4, ['x'] = 14, ['lvl'] = 4, ['type'] = 'AE_mag_Moloch', ['default'] = 'Armageddon Drake', ['armored'] = 20 },
 	
 	-- 142 - 148 (mask y 28 - 22)
 	
-	{ ['t'] = 142, ['d'] = 1, ['side'] = 4, ['x'] = 23, ['lvl'] = 3, ['type'] = 'Nightgaunt', ['default'] = 'Nightgaunt', ['agile'] = 10 },
+	{ ['t'] = 142, ['d'] = 1, ['side'] = 4, ['x'] = 23, ['lvl'] = 3, ['type'] = 'Nightgaunt', ['default'] = 'Nightgaunt', ['agile'] = 10, ['beefy'] = 120 },
 	{ ['t'] = 144, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 3, ['type'] = 'Draug', ['default'] = 'Draug', },
 	{ ['t'] = 145, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_ele_Skeletal_Fortress', ['default'] = 'Troll Warrior', ['guard'] = true },
 	{ ['t'] = 146, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 6, ['type'] = 'QQ_eternal_bones', ['default'] = 'QQ_eternal_bones', ['gold'] = 90, ['recruits'] = 'AE_ele_Fallen_Dragon_Rider,AE_mag_Titania,AE_mag_Abaddon,AE_rhy_ne_Black_Paladin', ['default_recruits'] = 'Skeletal Dragon,Great Mage,Dwarvish Arcanister,Dune Paragon,Armageddon Drake', ['r_lvls'] = '4,4,4,4', ['recruitment_gold'] = 420, },

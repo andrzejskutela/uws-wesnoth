@@ -2,7 +2,7 @@
 - TSW map general balancing and insane mode added to Hack'n Slash version
 - Valley of the Necromancer and Dwarvish Mountains maps balancing
 - Maximum number of items picked up by a single unit is now limited to 2 in hardcore games
-- Fire Mastery item replaced by two new items
+- Fire and Impact Mastery items replaced by two new items each
 - Gem of Hoarfrost icy shackles reduction factor changed from x1.5 to 1.5/1.65/1.8
 - Gem of Hoarfrost defense reduction nerfed on epic from -7 to -6
 - The Scythe nerfed a bit on higher ranks
