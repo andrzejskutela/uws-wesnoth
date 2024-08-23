@@ -125,7 +125,7 @@ return {
 	{ ['t'] = 27, ['d'] = 6, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', ['race_guard_off'] = true, ['gold'] = 10 },
 
 	{ ['t'] = 23, ['d'] = 7, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Blood Bat', ['beefy'] = 28, },
-	{ ['t'] = 29, ['d'] = 7, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'Saurian Javelineer', ['buff'] = 'A35:B26:C26', },
+	{ ['t'] = 29, ['d'] = 7, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'Saurian Javelineer', ['buff'] = 'A35:B26:C26:A39', ['allow_random'] = false, },
 	
 	-- 30 - 36 (mask y 46 - 40)
 	
