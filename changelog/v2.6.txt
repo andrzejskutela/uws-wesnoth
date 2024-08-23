@@ -16,6 +16,7 @@
 - Fixed the issue with race and hack'n slash games where champions could die in lava
 - Fixed After-classic incorrect copy info in chaos progression when boosts were selected
 - Fixed bug with friendly units disappearing when one player claimed both west and east helpers on the same turn
+- Fixed issue with static, non-movable units suddenly gaining mp in some games
 - Fixed infinite gold loops that happened in some Hack'n Slash games
 - Fixed dark pact ability not working in 1.18
 - Fixed Chronomancer's Staff abilities incorrectly able to slow *unslowable* units
