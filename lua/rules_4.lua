@@ -296,7 +296,7 @@ return {
 	{ ['t'] = 75, ['d'] = 6, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mrc_fanatics_Martyr', ['default'] = 'Dune Captain', ['beefy'] = 20, },
 	{ ['t'] = 78, ['d'] = 6, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Guardsman', ['default'] = 'Dune Sunderer', },
 
-	{ ['t'] = 76, ['d'] = 7, ['side'] = 4, ['x'] = 20, ['lvl'] = 4, ['type'] = 'QQ_sunrise_guard', ['default'] = 'QQ_sunrise_guard', ['ai_add_gold'] = 80 },
+	{ ['t'] = 76, ['d'] = 7, ['side'] = 4, ['x'] = 20, ['lvl'] = 4, ['type'] = 'QQ_sunrise_guard', ['default'] = 'QQ_sunrise_guard', ['ai_add_gold'] = 80, ['buff'] = 'A1:B38:C12:C4' },
 	
 	-- 79 - 85 (mask y 91 - 85)
 	
@@ -344,7 +344,7 @@ return {
 	{ ['t'] = 92, ['d'] = 6, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'Naga Zephyr', ['default'] = 'Naga Zephyr', ['agile'] = 10, ['beefy'] = 32, },
 	{ ['t'] = 92, ['d'] = 6, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, },
 
-	{ ['t'] = 88, ['d'] = 7, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Depthstalker', ['default'] = 'Naga Myrmidon', ['ai_add_gold'] = 250, ['buff'] = 'A9:B20:C34' },
+	{ ['t'] = 88, ['d'] = 7, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Depthstalker', ['default'] = 'Naga Myrmidon', ['ai_add_gold'] = 250, ['buff'] = 'A9:B20:C34:A16' },
 	{ ['t'] = 91, ['d'] = 7, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['agile'] = 10, ['allow_random'] = false },
 	{ ['t'] = 92, ['d'] = 7, ['side'] = 2, ['x'] = 14, ['lvl'] = 3, ['type'] = 'Naga Sicarius', ['default'] = 'Naga Sicarius', ['ai_add_gold'] = 500 },
 	
@@ -399,6 +399,7 @@ return {
 	{ ['t'] = 102, ['d'] = 6, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_ankylosaurus', ['default'] = 'QQ_ankylosaurus', ['race_guard_off'] = true, ['buff'] = 'A7:B12:C4', ['calls_for_help'] = true, ['allow_random'] = false },
 	
 	{ ['t'] = 104, ['d'] = 7, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_Archwitch', ['default'] = 'QQ_Archwitch', ['calls_for_help'] = true, ['buff'] = 'A57:B53:C47:C52', ['allow_random'] = false },
+	{ ['t'] = 106, ['d'] = 7, ['side'] = 4, ['x'] = 19, ['lvl'] = 4, ['type'] = 'QQ_abomination', ['default'] = 'QQ_abomination', ['bulky'] = 72, ['beefy'] = 32  },
 
 	-- 107 - 113 (mask y 63 - 57)
 	
@@ -475,6 +476,7 @@ return {
 
 	{ ['t'] = 121, ['d'] = 7, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'Paladin', ['default'] = 'Paladin', ['ai_add_gold'] = 250, ['armored'] = 10 },
 	{ ['t'] = 125, ['d'] = 7, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_agl_dark_legion_Deathmaster', ['default'] = 'Highwayman', ['buff'] = 'A54:B16:C10:C6' },
+	{ ['t'] = 127, ['d'] = 7, ['side'] = 3, ['x'] = 13, ['lvl'] = 5, ['type'] = 'QQ_atronachs', ['default'] = 'QQ_atronachs', },
 	
 	-- 128 - 134 (mask y 42 - 36)
 	
@@ -487,7 +489,7 @@ return {
 	{ ['t'] = 130, ['d'] = 2, ['side'] = 3, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Blood_Knight', ['default'] = 'Death Knight', ['calls_for_help'] = true, },
 	{ ['t'] = 134, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Inquisitor', ['default'] = 'Draug' },
 
-	{ ['t'] = 132, ['d'] = 3, ['side'] = 3, ['x'] = 20, ['lvl'] = 3, ['type'] = 'Spectre', ['default'] = 'Spectre', ['buff'] = 'A20:B38:C47', },
+	{ ['t'] = 132, ['d'] = 3, ['side'] = 3, ['x'] = 20, ['lvl'] = 3, ['type'] = 'Spectre', ['default'] = 'Spectre', ['buff'] = 'A20:B38:C47:C25', },
 	
 	{ ['t'] = 131, ['d'] = 4, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Soulhunter', ['default'] = 'Nightgaunt', },
 	{ ['t'] = 130, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Demon_Stormtide', ['default'] = 'Draug', },
@@ -497,7 +499,7 @@ return {
 
 	{ ['t'] = 132, ['d'] = 6, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_mrc_holy_order_Torturer', ['default'] = 'Highwayman', ['bulky'] = 60, },
 
-	{ ['t'] = 131, ['d'] = 7, ['side'] = 3, ['x'] = 13, ['lvl'] = 5, ['type'] = 'QQ_atronachs', ['default'] = 'QQ_atronachs', ['buff'] = 'A37:B15:C36' },
+	{ ['t'] = 131, ['d'] = 7, ['side'] = 3, ['x'] = 13, ['lvl'] = 6, ['type'] = 'QQ_Tormented_Horror', ['default'] = 'QQ_Tormented_Horror', ['buff'] = 'A26:B55:C46:C16' },
 	
 	-- 135 - 141 (mask y 35 - 29)
 	
@@ -534,6 +536,7 @@ return {
 
 	{ ['t'] = 143, ['d'] = 6, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mag_Pain_Sphere', ['default'] = 'Fire Wraith', ['fast'] = 3, ['agile'] = 15 },
 
+	{ ['t'] = 145, ['d'] = 7, ['side'] = 4, ['x'] = 20, ['lvl'] = 6, ['type'] = 'QQ_Ashagoth', ['default'] = 'QQ_Ashagoth', ['ai_add_gold'] = 400 },
 	{ ['t'] = 148, ['d'] = 7, ['side'] = 4, ['x'] = 22, ['lvl'] = 6, ['type'] = 'QQ_empty_shadow', ['default'] = 'QQ_empty_shadow', ['buff'] = 'A38:B57:C56', ['allow_random'] = false },
 	
 	-- 149 - 155 (mask y 21 - 15)
