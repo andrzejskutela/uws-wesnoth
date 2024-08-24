@@ -120,7 +120,7 @@ return {
 	
 	{ ['t'] = 24, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_ext_orcs_Naga_Hunter', ['default'] = 'Naga Dirkfang', },
 	{ ['t'] = 25, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_ext_orcs_Naga_Hunter', ['default'] = 'Naga Dirkfang', },
-	{ ['t'] = 25, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Warden', ['default'] = 'Naga Shield Guard', ['buff'] = 'A31:B30:C17', ['gold'] = 20, ['item'] = true, },
+	{ ['t'] = 25, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Warden', ['default'] = 'Naga Shield Guard', ['buff'] = 'A31:B30:C32', ['gold'] = 20, ['item'] = true, },
 	{ ['t'] = 26, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Assassin', ['default'] = 'Naga Warrior', },
 	{ ['t'] = 28, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Sniper', ['default'] = 'Orcish Crossbowman', ['moves'] = 0, ['gold'] = 10, },
 	{ ['t'] = 29, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Shaman', ['default'] = 'Goblin Impaler', },
@@ -164,6 +164,8 @@ return {
 	
 	{ ['t'] = 34, ['d'] = 6, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Archer', ['default'] = 'Orcish Archer', },
 	{ ['t'] = 34, ['d'] = 6, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_arc_orcs_Goblin_Drummer', ['default'] = 'Young Ogre', },
+
+	{ ['t'] = 31, ['d'] = 7, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Sniper', ['default'] = 'Orcish Slayer', ['buff'] = 'A39:B5:C28:C31' },
 	
 	-- 37 - 43 (mask y 133 - 127)
 	
@@ -183,6 +185,7 @@ return {
 	{ ['t'] = 39, ['d'] = 6, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_imp_Sidhe_Ice_Bear', ['default'] = 'Cave Bear', ['bulky'] = 60, ['beefy'] = 20 },
 
 	{ ['t'] = 37, ['d'] = 7, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'Great Troll', ['default'] = 'Great Troll', ['buff'] = 'A37:B32:C55:C25' },
+	{ ['t'] = 38, ['d'] = 7, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'Goblin Pillager', ['default'] = 'Goblin Pillager', },
 	
 	-- 44 - 50 (mask y 126 - 120)
 	
@@ -274,6 +277,7 @@ return {
 	
 	{ ['t'] = 66, ['d'] = 6, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_arc_menagerie_Green_Exterminator', ['default'] = 'Draug', },
 
+	{ ['t'] = 67, ['d'] = 7, ['side'] = 2, ['x'] = 20, ['lvl'] = 4, ['type'] = 'AE_arc_menagerie_Azure_Dragon', ['default'] = 'Skeletal Dragon', ['beefy'] = 40 },
 	{ ['t'] = 68, ['d'] = 7, ['side'] = 2, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_arc_menagerie_Green_Tank', ['default'] = 'Saurian Javelineer', ['armored'] = 15 },
 	{ ['t'] = 69, ['d'] = 7, ['side'] = 2, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_arc_menagerie_Green_Soldier', ['default'] = 'Firebomb Ant', ['buff'] = 'A61:B52:C61:B16' },
 	
@@ -345,6 +349,7 @@ return {
 	{ ['t'] = 92, ['d'] = 6, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, },
 
 	{ ['t'] = 88, ['d'] = 7, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Depthstalker', ['default'] = 'Naga Myrmidon', ['ai_add_gold'] = 250, ['buff'] = 'A9:B20:C34:A16' },
+	{ ['t'] = 90, ['d'] = 7, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Wisp_Mother', ['default'] = 'Wraith', ['buff'] = 'A13:B1:C13' },
 	{ ['t'] = 91, ['d'] = 7, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['agile'] = 10, ['allow_random'] = false },
 	{ ['t'] = 92, ['d'] = 7, ['side'] = 2, ['x'] = 14, ['lvl'] = 3, ['type'] = 'Naga Sicarius', ['default'] = 'Naga Sicarius', ['ai_add_gold'] = 500 },
 	
