@@ -277,7 +277,7 @@ return {
 	
 	{ ['t'] = 66, ['d'] = 6, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_arc_menagerie_Green_Exterminator', ['default'] = 'Draug', },
 
-	{ ['t'] = 67, ['d'] = 7, ['side'] = 2, ['x'] = 20, ['lvl'] = 4, ['type'] = 'AE_arc_menagerie_Azure_Dragon', ['default'] = 'Skeletal Dragon', ['beefy'] = 40 },
+	{ ['t'] = 68, ['d'] = 7, ['side'] = 2, ['x'] = 15, ['lvl'] = 4, ['type'] = 'AE_arc_menagerie_Azure_Dragon', ['default'] = 'Skeletal Dragon', ['beefy'] = 40 },
 	{ ['t'] = 68, ['d'] = 7, ['side'] = 2, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_arc_menagerie_Green_Tank', ['default'] = 'Saurian Javelineer', ['armored'] = 15 },
 	{ ['t'] = 69, ['d'] = 7, ['side'] = 2, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_arc_menagerie_Green_Soldier', ['default'] = 'Firebomb Ant', ['buff'] = 'A61:B52:C61:B16' },
 	
@@ -300,7 +300,7 @@ return {
 	{ ['t'] = 75, ['d'] = 6, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mrc_fanatics_Martyr', ['default'] = 'Dune Captain', ['beefy'] = 20, },
 	{ ['t'] = 78, ['d'] = 6, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_efm_freemen_Guardsman', ['default'] = 'Dune Sunderer', },
 
-	{ ['t'] = 76, ['d'] = 7, ['side'] = 4, ['x'] = 20, ['lvl'] = 4, ['type'] = 'QQ_sunrise_guard', ['default'] = 'QQ_sunrise_guard', ['ai_add_gold'] = 80, ['buff'] = 'A1:B38:C12:C4' },
+	{ ['t'] = 76, ['d'] = 7, ['side'] = 4, ['x'] = 20, ['lvl'] = 4, ['type'] = 'QQ_sunrise_guard', ['default'] = 'QQ_sunrise_guard', ['ai_add_gold'] = 80, ['buff'] = 'A1:B38:C12' },
 	
 	-- 79 - 85 (mask y 91 - 85)
 	
