@@ -563,7 +563,7 @@ return {
 	{ ['t'] = 161, ['d'] = 1, ['side'] = 4, ['x'] = 25, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['buff'] = 'A30:B41:C13', ['allow_random'] = false },
 	{ ['t'] = 158, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 6, ['type'] = 'QQ_adjudicator', ['default'] = 'QQ_adjudicator', ['buff'] = 'A23:B28:C13', ['guard'] = true },
 
-	{ ['t'] = 160, ['d'] = 2, ['side'] = 4, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_mrc_enchanters_Shadow_Blade', ['default'] = 'Spectre', ['beefy'] = 28, ['armored'] = 5 },
+	{ ['t'] = 159, ['d'] = 2, ['side'] = 4, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mrc_enchanters_Shadow_Blade', ['default'] = 'Spectre', ['beefy'] = 28, ['armored'] = 5 },
 	
 	{ ['t'] = 157, ['d'] = 3, ['side'] = 4, ['x'] = 24, ['lvl'] = 5, ['type'] = 'QQ_flying_nightmare', ['default'] = 'QQ_flying_nightmare', ['guard'] = true, ['bulky'] = 80 },
 
@@ -572,7 +572,6 @@ return {
 	{ ['t'] = 158, ['d'] = 4, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
 	{ ['t'] = 158, ['d'] = 4, ['side'] = 4, ['x'] = 23, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
 	{ ['t'] = 158, ['d'] = 4, ['side'] = 4, ['x'] = 24, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
-	{ ['t'] = 158, ['d'] = 4, ['side'] = 4, ['x'] = 25, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
 
 	{ ['t'] = 156, ['d'] = 5, ['side'] = 4, ['x'] = 24, ['lvl'] = 4, ['type'] = 'AE_mag_Dark_Apostle', ['default'] = 'QQ_dark_witness', ['bulky'] = 40, },
 	{ ['t'] = 156, ['d'] = 5, ['side'] = 4, ['x'] = 23, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
