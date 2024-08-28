@@ -1,24 +1,2 @@
-<span color='#80ba3a'>v2.6.1</span> (24/08/2024):
-- Full support to Ageless Era 4.36
-- TSW map general balancing and insane mode added to Hack'n Slash version
-- Valley of the Necromancer and Dwarvish Mountains maps balancing
-- Maximum number of items picked up by a single unit is now limited to 2 in hardcore games
-- After-classic and After-race games now offer predefined mode
-- Added support to new XP mod power updates
-- Fire and Impact Mastery items replaced by two new items each
-- Gem of Hoarfrost icy shackles reduction factor changed from x1.5 to 1.5/1.65/1.8
-- Gem of Hoarfrost defense reduction nerfed on epic from -7 to -6
-- The Scythe nerfed a bit on higher ranks
-- New uws unique lvl4 unit added - Sunrise Guardian
-- Balancing of various champion bonuses
-- New visuals added to indicate auras and other specials related to some items
-- Small visual improvements to custom uws menuitems
-- Kaboom craters now persist in scroll games
-- Fixed the issue with race and hack'n slash games where champions could die in lava
-- Fixed After-classic incorrect copy info in chaos progression when boosts were selected
-- Fixed bug with friendly units disappearing when one player claimed both west and east helpers on the same turn
-- Fixed issue with static, non-movable units suddenly gaining mp in some games
-- Fixed infinite gold loops that happened in some Hack'n Slash games
-- Fixed dark pact ability not working in 1.18
-- Fixed Chronomancer's Staff abilities incorrectly able to slow *unslowable* units
-- Fixed shield master ability incorrectly buffing surrounding enemy units
+<span color='#d94129'>v2.6.2</span> (29/08/2024):
+- Fixed a critical regression bug where in some games the enemies didn't attack

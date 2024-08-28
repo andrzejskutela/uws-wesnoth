@@ -1,3 +1,6 @@
+<span color='#80ba3a'>v2.6.2</span> (date):
+- Fixed a critical regression bug where in some games the enemies didn't attack
+
 <span color='#80ba3a'>v2.6.1</span> (24/08/2024):
 - Full support to Ageless Era 4.36
 - TSW map general balancing and insane mode added to Hack'n Slash version
