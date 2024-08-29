@@ -215,6 +215,9 @@ local function process_spawn_table(spawn_table)
 			
 			if rules['gold'] > 0 then
 				rules['gold'] = math.floor(rules['gold'] * diff_gold_factor[difficulty])
+				if rules['gold'] % 2 == 1 then
+					rules['gold'] = rules['gold'] + 1
+				end
 			end
 			
 			if rules['recruitment_gold'] > 0 then
