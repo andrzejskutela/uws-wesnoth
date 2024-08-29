@@ -1,6 +1,7 @@
 <span color='#d94129'>v2.6.2</span> (29/08/2024):
 - Fixed a critical regression bug where in some games the enemies didn't attack
 - Units carrying gold now show the correct amount in the trait info
+- Royal Rats buffed a bit
 
 <span color='#80ba3a'>v2.6.1</span> (24/08/2024):
 - Full support to Ageless Era 4.36
