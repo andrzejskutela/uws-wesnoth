@@ -7,7 +7,7 @@ function build_spawn_rules_row(data)
 		['allow_random'] = true, ['allow_random_recruits'] = true, ['disallow_slash_unguardian'] = false, ['calls_for_help'] = false,
 		['armored'] = 0, ['recruit_armored'] = 0, ['recruit_minion'] = '', ['title'] = '', ['fast'] = 0, ['agile'] = 0, ['story_message'] = '',
 		['story_response'] = '', ['race_points_value'] = -1, ['second_item'] = '', ['clear_boss_tile_overlay'] = false, ['count'] = 1,
-		['delayed'] = -1, ['ai_add_gold'] = 0
+		['delayed'] = -1, ['ai_add_gold'] = 0, ['aggressive'] = 0
 	}
 	
 	for k,v in pairs(data) do
@@ -254,7 +254,7 @@ local function process_spawn_table(spawn_table)
 				rules['story_message'] = 'YOU?! You want to kill ME?! You will kill NOTHING! I will squash you like a worm and show you what you are worth!'
 			end
 			
-			if rules['armored'] > 0 or rules['bulky'] > 0 or rules['beefy'] > 0 or rules['fast'] > 0 or rules['agile'] > 0 then
+			if rules['armored'] > 0 or rules['bulky'] > 0 or rules['beefy'] > 0 or rules['fast'] > 0 or rules['agile'] > 0 or rules['aggressive'] > 0 then
 				local titles = {}
 				if rules['agile'] > 0 then
 					titles[#titles + 1] = 'Agile'
@@ -270,6 +270,10 @@ local function process_spawn_table(spawn_table)
 				
 				if rules['bulky'] > 0 then
 					titles[#titles + 1] = 'Bulky'
+				end
+
+				if rules['aggressive'] > 0 then
+					titles[#titles + 1] = 'Aggressive'
 				end
 				
 				if rules['beefy'] > 0 then

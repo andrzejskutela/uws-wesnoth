@@ -102,7 +102,7 @@ return {
 	
 	{ ['t'] = 24, ['d'] = 1, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mag_Dwarvish_Tank', ['default'] = 'Fire Wraith', ['moves'] = 0, ['damaged'] = 0.6, ['beefy'] = 32, ['quiet_buff'] = 'Q2', ['event'] = 'inv_for_broken_tank', ['race_guard_off'] = true, ['allow_random'] = false },
 	{ ['t'] = 24, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_rhy_dw_Miner', ['default'] = 'Dwarvish Guardsman', ['guard'] = true, },
-	{ ['t'] = 25, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_rhy_dw_Miner', ['default'] = 'Dwarvish Guardsman', ['guard'] = true, },
+	{ ['t'] = 25, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_rhy_dw_Miner', ['default'] = 'Dwarvish Guardsman', ['guard'] = true, ['aggressive'] = 1 },
 	{ ['t'] = 25, ['d'] = 1, ['side'] = 3, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_rhy_dw_Ghost', ['default'] = 'Ghost', ['guard'] = true, ['bulky'] = 40, ['quiet_buff'] = 'Q1', ['calls_for_help'] = true, ['disallow_slash_unguardian'] = true, ['allow_random'] = false },
 	{ ['t'] = 28, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mag_Red_Steam_Ulfserker', ['default'] = 'Dwarvish Berserker', ['beefy'] = 32, ['gold'] = 9 },
 	{ ['t'] = 28, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_stf_triththa_Giant_Squid', ['default'] = 'Cuttle Fish', ['guard'] = true, ['buff'] = 'A5:B5:C2', ['item'] = true },
@@ -131,7 +131,7 @@ return {
 	
 	{ ['t'] = 31, ['d'] = 2, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_agl_dark_legion_Sentry_Drone', ['default'] = 'Naga Ringcaster', ['armored'] = 10, ['fast'] = 1 },
 	
-	{ ['t'] = 32, ['d'] = 4, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'Orcish Slurbow', ['default'] = 'Dune Wayfarer', ['beefy'] = 20, },
+	{ ['t'] = 32, ['d'] = 4, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'Orcish Slurbow', ['default'] = 'Dune Wayfarer', ['beefy'] = 20, ['aggressive'] = 1 },
 	{ ['t'] = 35, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_agl_dark_legion_Protector_Drone', ['default'] = 'Dune Scorcher', ['buff'] = 'A7:B7:C8', },
 	{ ['t'] = 35, ['d'] = 4, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Orcish_Elder', ['default'] = 'Dune Spearguard', ['guard'] = true, ['gold'] = 10 },
 	

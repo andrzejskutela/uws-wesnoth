@@ -107,7 +107,7 @@ return {
 	{ ['t'] = 21, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_chs_wild_humans_Rogue_Mage', ['default'] = 'Dark Adept', ['beefy'] = 30, },
 	
 	{ ['t'] = 18, ['d'] = 3, ['side'] = 3, ['x'] = 20, ['lvl'] = 1, ['type'] = 'Thug', ['default'] = 'Thug', ['armored'] = 5 },
-	{ ['t'] = 20, ['d'] = 3, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Fly', ['default'] = 'Blood Bat', },
+	{ ['t'] = 20, ['d'] = 3, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Fly', ['default'] = 'Blood Bat', ['aggressive'] = 1 },
 	
 	{ ['t'] = 19, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_ext_outlaws_Brigand', ['default'] = 'Wolf Rider', },
 	
@@ -222,7 +222,7 @@ return {
 	
 	{ ['t'] = 53, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'Dwarvish Fighter', ['default'] = 'Dwarvish Fighter', },
 
-	{ ['t'] = 56, ['d'] = 5, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Steam_Berserker', ['default'] = 'Dwarvish Berserker', },
+	{ ['t'] = 56, ['d'] = 5, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Steam_Berserker', ['default'] = 'Dwarvish Berserker', ['aggressive'] = 1 },
 	
 	{ ['t'] = 51, ['d'] = 6, ['side'] = 3, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_mag_Battlecopter', ['default'] = 'Spectre', ['buff'] = 'A32:B32:C15', },
 	{ ['t'] = 55, ['d'] = 6, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_mag_Steam_Berserker', ['default'] = 'Dwarvish Berserker', ['race_guard_off'] = true },
@@ -377,7 +377,7 @@ return {
 	
 	{ ['t'] = 100, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Lord', ['agile'] = 5 },
 	{ ['t'] = 100, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Marksman', ['fast'] = 1 },
-	{ ['t'] = 100, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Ranger', },
+	{ ['t'] = 100, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Ranger', ['aggressive'] = 1 },
 	{ ['t'] = 101, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Hero', },
 	{ ['t'] = 101, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Farmhand', ['default'] = 'Elvish Hero', },
 	{ ['t'] = 103, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_agl_yokai_Leshi', ['default'] = 'Wose Shaman', ['guard'] = true },
@@ -434,7 +434,7 @@ return {
 	
 	{ ['t'] = 115, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Ballista', ['default'] = 'Bowman', ['moves'] = 0, ['gold'] = 30, ['bulky'] = 200, ['armored'] = 30, ['allow_random'] = false },
 	{ ['t'] = 115, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Ballista', ['default'] = 'Bowman', ['moves'] = 0, ['gold'] = 30, ['bulky'] = 200, ['armored'] = 30, ['allow_random'] = false },
-	{ ['t'] = 116, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Man_at_Arms', ['default'] = 'Swordsman', },
+	{ ['t'] = 116, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Man_at_Arms', ['default'] = 'Swordsman', ['aggressive'] = 1 },
 	{ ['t'] = 116, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = 'Javelineer', ['armored'] = 5 },
 	{ ['t'] = 116, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Man_at_Arms', ['default'] = 'Duelist', ['armored'] = 10 },
 	{ ['t'] = 117, ['d'] = 1, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_rhy_dr_Trireme', ['default'] = 'Merman Warrior', ['guard'] = true },
@@ -533,7 +533,7 @@ return {
 	
 	{ ['t'] = 148, ['d'] = 2, ['side'] = 4, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Decapitator', ['default'] = 'Orcish Warlord', },
 	
-	{ ['t'] = 148, ['d'] = 3, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Inquisitor', ['default'] = 'Orcish Sovereign', },
+	{ ['t'] = 148, ['d'] = 3, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Inquisitor', ['default'] = 'Orcish Sovereign', ['aggressive'] = 1 },
 	
 	{ ['t'] = 147, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 5, ['type'] = 'AE_ele_Fallen_Supreme_Lord', ['default'] = 'Fire Dragon', },
 	

@@ -206,7 +206,7 @@ return {
 	{ ['t'] = 41, ['d'] = 1, ['side'] = 3, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_arc_khthon_Bone_Snapper', ['default'] = 'Giant Scorpion', ['bulky'] = 30, ['race_guard_off'] = true },
 	{ ['t'] = 43, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Hell_Guardian', ['default'] = 'Highwayman', ['guard'] = true, ['item'] = true, ['armored'] = 15 },
 	
-	{ ['t'] = 38, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_ext_chaos_Flesh_Hound', ['default'] = 'Ogre', },
+	{ ['t'] = 38, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_ext_chaos_Flesh_Hound', ['default'] = 'Ogre', ['aggressive'] = 1 },
 	{ ['t'] = 42, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mrc_infernai_Archfiend', ['default'] = 'Troll Hero', ['guard'] = true },
 	{ ['t'] = 43, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Lesser_Daemon', ['default'] = 'Orcish Archer', },
 	
@@ -226,7 +226,7 @@ return {
 	{ ['t'] = 45, ['d'] = 1, ['side'] = 3, ['x'] = 7, ['lvl'] = 1, ['type'] = 'AE_arc_despair_Fright', ['default'] = 'Ghost', },
 	{ ['t'] = 45, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_arc_despair_Fright', ['default'] = 'Ghost', },
 	{ ['t'] = 46, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'AE_mrc_holy_order_Pope', ['default'] = 'Orcish Sovereign', ['recruits'] = 'AE_mrc_infernai_Lost_Soul,AE_mrc_infernai_Controlled,AE_myh_Flappers,AE_myh_Cursers,AE_bem_anakes_Leech_Rider', ['default_recruits'] = 'Orcish Grunt,Orcish Assassin,Young Ogre,Saurian Skirmisher,Saurian Augur', ['r_lvls'] = '1,1,1,1,1', ['recruitment_gold'] = 155, ['item'] = true },
-	{ ['t'] = 47, ['d'] = 1, ['side'] = 3, ['x'] = 7, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Evil_Crab', ['default'] = 'Skeleton', },
+	{ ['t'] = 47, ['d'] = 1, ['side'] = 3, ['x'] = 7, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Evil_Crab', ['default'] = 'Skeleton', ['aggressive'] = 1 },
 	{ ['t'] = 48, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_myh_Fire_Sprite', ['default'] = 'Blood Bat', },
 	{ ['t'] = 49, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 0, ['type'] = 'AE_mag_Mu', ['default'] = 'Walking Corpse', },
 	{ ['t'] = 49, ['d'] = 1, ['side'] = 3, ['x'] = 7, ['lvl'] = 4, ['type'] = 'AE_mrc_cult_Primordial', ['default'] = 'Armageddon Drake', ['guard'] = true, ['fast'] = 1, ['disallow_slash_unguardian'] = true, },
@@ -246,7 +246,7 @@ return {
 	{ ['t'] = 51, ['d'] = 1, ['side'] = 3, ['x'] = 25, ['lvl'] = 2, ['type'] = 'AE_rhy_dw_Wraith', ['default'] = 'Troll Shaman', ['bulky'] = 30, ['guard'] = true },
 	{ ['t'] = 51, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Hellhound', ['default'] = 'Direwolf Rider', ['guard'] = true },
 	{ ['t'] = 53, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['armored'] = 20, ['gold'] = 9, },
-	{ ['t'] = 54, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['gold'] = 5 },
+	{ ['t'] = 54, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['gold'] = 5, ['aggressive'] = 1 },
 	{ ['t'] = 54, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Spiderpriest', ['default'] = 'Dark Sorcerer', ['recruits'] = 'AE_stf_free_saurians_Spider,AE_ext_monsters_Little_Spider,AE_rhy_de_Small_Spider', ['default_recruits'] = 'Ghost,Ghoul,Skeleton Archer', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 80, ['gold'] = 40, },
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 4, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_myh_Gargoyle', ['default'] = 'Wolf Rider', ['gold'] = 4 },
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_myh_Blood_Hulk', ['default'] = 'Chocobone', ['gold'] = 22, ['buff'] = 'A20:B20:C20:B21:C48' },

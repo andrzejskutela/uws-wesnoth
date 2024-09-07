@@ -46,25 +46,25 @@ local all_boosts_table = {
 	'boost10', 'boost20', 'bulky', 'beefy', 'armored', 'fast', 'agile', 'champion', 'slow', 'steal', 'improved_damage',
 	'reheal_own', 'deboost15', 'slow_wave', 'mirror', 'cancel', 'turtle_up', 'poison', 'damage_armor', 'drunk_opponent',
 	'boost15', 'minions', 'strong_leader', 'dragon_heart', 'freeze_leader', 'easy_targets', 'payback', 'remove_specials',
-	'remove_zoc', 'leader30', 'lower_damage', 'flat_defense', 'insurance', 'weak_minions',
+	'remove_zoc', 'leader30', 'lower_damage', 'flat_defense', 'insurance', 'weak_minions', 'aggressive', 'discouraged'
 }
 
 local all_race_boosts_table = {
 	'boost10', 'boost20', 'bulky', 'beefy', 'armored', 'fast', 'agile', 'champion', 'slow', 'improved_damage',
 	'reheal_own', 'deboost15', 'slow_wave', 'cancel', 'turtle_up', 'poison', 'damage_armor', 'drunk_opponent',
 	'boost15', 'minions', 'strong_leader', 'dragon_heart', 'freeze_leader', 'easy_targets', 'payback', 'remove_specials',
-	'remove_zoc', 'leader30', 'lower_damage', 'flat_defense', 'insurance', 'weak_minions',
+	'remove_zoc', 'leader30', 'lower_damage', 'flat_defense', 'insurance', 'weak_minions', 'aggressive', 'discouraged'
 }
 
 local offensive_boosts_list = {
 	'boost10', 'boost20', 'bulky', 'beefy', 'armored', 'fast', 'agile', 'champion', 'slow', 'steal',
 	'poison', 'damage_armor', 'drunk_opponent', 'boost15', 'minions', 'strong_leader', 'freeze_leader', 'remove_specials',
-	'remove_zoc', 'leader30', 'lower_damage', 'flat_defense',
+	'remove_zoc', 'leader30', 'lower_damage', 'flat_defense', 'aggressive'
 }
 
 local defensive_boosts_list = { 
 	'improved_damage', 'reheal_own', 'weaker15', 'slow_wave', 'turtle_up', 'dragon_heart', 'easy_targets', 'insurance',
-	'weak_minions', 'mirror', 'payback', 'cancel'
+	'weak_minions', 'mirror', 'payback', 'cancel', 'discouraged'
 }
 
 local after_games_items_table = {}
@@ -195,6 +195,7 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 	local extra_armored_buff = 0
 	local extra_fast_buff = 0
 	local extra_agile_buff = 0
+	local extra_aggressive_buff = 0
 	local is_champion = false
 	local is_side_leader_copy = false
 	local use_minion_type_code = ''
@@ -226,6 +227,7 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 		extra_armored_buff = 0
 		extra_fast_buff = 0
 		extra_agile_buff = 0
+		extra_aggressive_buff = 0
 		give_gold = 0
 		is_champion = false
 		has_item = false
@@ -266,10 +268,16 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 			else
 				extra_agile_buff = 10
 			end
+		elseif extra_buff == 'aggressive' then
+			if u.canrecruit then
+				extra_aggressive_buff = 2
+			else
+				extra_aggressive_buff = 1
+			end
 		elseif extra_buff == 'champion' and u.canrecruit then
 			is_champion = true
 		elseif extra_buff == 'strong_leader' and u.canrecruit then
-			local improvements = { 'bulky', 'beefy', 'armored', 'fast', 'agile' }
+			local improvements = { 'bulky', 'beefy', 'armored', 'fast', 'agile', 'aggressive' }
 			mathx.shuffle(improvements)
 
 			for imp_i=1,2,1 do
@@ -283,6 +291,8 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 					extra_fast_buff = 3
 				elseif improvements[imp_i] == 'agile' then
 					extra_agile_buff = 20
+				elseif improvements[imp_i] == 'aggressive' then
+					extra_aggressive_buff = 2
 				end
 			end
 		elseif extra_buff == 'leader30' and u.canrecruit then
@@ -336,6 +346,7 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 		wml.variables['after_games_extra_armored_buff'] = extra_armored_buff
 		wml.variables['after_games_extra_fast_buff'] = extra_fast_buff
 		wml.variables['after_games_extra_agile_buff'] = extra_agile_buff
+		wml.variables['after_games_extra_aggressive_buff'] = extra_aggressive_buff
 		wml.variables['after_games_generate_champion'] = is_champion
 		wml.variables['after_games_copy_level'] = clone.level
 		wml.variables['after_games_side_leader'] = is_side_leader_copy

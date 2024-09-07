@@ -191,7 +191,7 @@ return {
 	
 	{ ['t'] = 54, ['d'] = 4, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'Dread Bat', ['allow_random'] = false },
 	
-	{ ['t'] = 53, ['d'] = 6, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'Dwarvish Arcanister', ['race_guard_off'] = true, },
+	{ ['t'] = 53, ['d'] = 6, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'Dwarvish Arcanister', ['race_guard_off'] = true, ['aggressive'] = 1 },
 	
 	-- final boss 55 / mask y 7
 	

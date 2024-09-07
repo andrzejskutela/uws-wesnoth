@@ -147,7 +147,7 @@ return {
 	{ ['t'] = 42, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Queen', ['default'] = 'Grand Dragonfly', },
 	{ ['t'] = 42, ['d'] = 1, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Glider', ['default'] = 'Fire Wraith', ['agile'] = 10 },
 	{ ['t'] = 42, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mag_Kharosian_Bulwark', ['default'] = 'Drake Enforcer', ['guard'] = true },
-	{ ['t'] = 43, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Fire_Ant', ['default'] = 'Jinn', },
+	{ ['t'] = 43, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Fire_Ant', ['default'] = 'Jinn', ['aggressive'] = 1 },
 	
 	{ ['t'] = 42, ['d'] = 2, ['side'] = 3, ['x'] = 9, ['lvl'] = 3, ['type'] = 'AE_mrc_hive_Bull_Ant', ['default'] = 'Direwolf', ['bulky'] = 56,  },
 	

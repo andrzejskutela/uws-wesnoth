@@ -217,7 +217,7 @@ return {
 	{ ['t'] = 46, ['d'] = 3, ['side'] = 3, ['x'] = 25, ['lvl'] = 1, ['type'] = 'Soulless', },
 	{ ['t'] = 46, ['d'] = 3, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Dread Bat', ['fast'] = 2, },
 	
-	{ ['t'] = 47, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'Necrophage', },
+	{ ['t'] = 47, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'Necrophage', ['aggressive'] = 1 },
 	{ ['t'] = 48, ['d'] = 4, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'Direwolf', ['race_guard_off'] = true },
 	{ ['t'] = 49, ['d'] = 4, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'Nightgaunt', ['fast'] = 1 },
 	{ ['t'] = 50, ['d'] = 4, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'Gryphon', },
