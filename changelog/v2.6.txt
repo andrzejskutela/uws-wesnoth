@@ -1,6 +1,8 @@
 <span color='#6cd4bf'>v2.6.3</span> (date):
 - Arcane Mastery item replaced by two new items
 - Added a new lvl7 unit - Harbinger of Chaos
+- AMLA pool updated for the new AE factions
+- Soma AMLAs buffed
 
 <span color='#d94129'>v2.6.2</span> (29/08/2024):
 - Fixed a critical regression bug where in some games the enemies didn't attack

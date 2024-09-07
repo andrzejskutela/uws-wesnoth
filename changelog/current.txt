@@ -1,3 +1,5 @@
 <span color='#6cd4bf'>v2.6.3</span> (date):
 - Arcane Mastery item replaced by two new items
 - Added a new lvl7 unit - Harbinger of Chaos
+- AMLA pool updated for the new AE factions
+- Soma AMLAs buffed
