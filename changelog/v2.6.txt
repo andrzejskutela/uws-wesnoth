@@ -1,5 +1,6 @@
-<span color='#6cd4bf'>v2.6.4</span> (date):
+<span color='#c250d4'>v2.6.4</span> (date):
 - Blade Mastery item replaced by two new items
+- New unique uws unit added - lvl5 Arachna Queen
 
 <span color='#6cd4bf'>v2.6.3</span> (07/09/2024):
 - Arcane Mastery item replaced by two new items
