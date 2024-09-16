@@ -1,3 +1,4 @@
 <span color='#c250d4'>v2.6.4</span> (date):
 - Blade Mastery item replaced by two new items
 - New unique uws unit added - lvl5 Arachna Queen
+- Assassin's Dagger item changed on higher ranks
