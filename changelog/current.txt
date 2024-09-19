@@ -2,3 +2,4 @@
 - Blade Mastery item replaced by two new items
 - Two new uws unique units added - lvl5 Arachna Queen and lvl5 Decapitator
 - Assassin's Dagger item changed on higher ranks
+- Ancient Book of Artifacts slightly redesigned
