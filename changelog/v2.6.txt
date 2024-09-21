@@ -5,6 +5,7 @@
 - Assassin's Dagger item changed on higher ranks
 - Ancient Book of Artifacts redesigned
 - Fixed bug where in some ageless games players could obtain infinite gold
+- Fixed campaign bug that was making champions insanely op
 
 <span color='#6cd4bf'>v2.6.3</span> (07/09/2024):
 - Arcane Mastery item replaced by two new items

@@ -5,3 +5,4 @@
 - Assassin's Dagger item changed on higher ranks
 - Ancient Book of Artifacts redesigned
 - Fixed bug where in some ageless games players could obtain infinite gold
+- Fixed campaign bug that was making champions insanely op
