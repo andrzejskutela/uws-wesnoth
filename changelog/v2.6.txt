@@ -3,7 +3,8 @@
 - The final ability for the new resistance items is now available on significant and epic rank
 - Two new uws unique units added - lvl5 Arachna Queen and lvl5 Decapitator
 - Assassin's Dagger item changed on higher ranks
-- Necronomicon, chance to summon an undead very slightly lowered on sign and epic ranks
+- Necronomicon, chance to summon an undead very slightly lowered
+- Golden Armour, reflects ability buffed on melee attacks and nerfed on ranged
 - Ancient Book of Artifacts redesigned
 - Fixed bug where in some ageless games players could obtain infinite gold
 - Fixed campaign bug that was making champions insanely op
