@@ -481,7 +481,6 @@ return {
 
 	{ ['t'] = 121, ['d'] = 7, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'Paladin', ['default'] = 'Paladin', ['ai_add_gold'] = 250, ['armored'] = 10 },
 	{ ['t'] = 125, ['d'] = 7, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_agl_dark_legion_Deathmaster', ['default'] = 'Highwayman', ['buff'] = 'A54:B16:C10:C6' },
-	{ ['t'] = 127, ['d'] = 7, ['side'] = 3, ['x'] = 13, ['lvl'] = 5, ['type'] = 'QQ_atronachs', ['default'] = 'QQ_atronachs', },
 	
 	-- 128 - 134 (mask y 42 - 36)
 	
@@ -504,6 +503,7 @@ return {
 
 	{ ['t'] = 132, ['d'] = 6, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_mrc_holy_order_Torturer', ['default'] = 'Highwayman', ['bulky'] = 60, },
 
+	{ ['t'] = 129, ['d'] = 7, ['side'] = 3, ['x'] = 14, ['lvl'] = 5, ['type'] = 'QQ_atronachs', ['default'] = 'QQ_atronachs', },
 	{ ['t'] = 131, ['d'] = 7, ['side'] = 3, ['x'] = 13, ['lvl'] = 6, ['type'] = 'QQ_Tormented_Horror', ['default'] = 'QQ_Tormented_Horror', ['buff'] = 'A26:B55:C46:C16' },
 	
 	-- 135 - 141 (mask y 35 - 29)
