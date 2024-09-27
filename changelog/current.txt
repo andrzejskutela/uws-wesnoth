@@ -6,6 +6,7 @@
 - Necronomicon, chance to summon an undead very slightly lowered
 - Golden Armour, reflects ability buffed on melee attacks and nerfed on ranged
 - Amulet of Devotion, Shield Master chance to block slightly raised
+- Bred Rats and Summoned units no longer give xp when killed and increase the kill count for promo rank
 - IceLord's Protection aura now increases the damage the affected enemies receive on epic rank
 - Ancient Book of Artifacts redesigned
 - Fixed bug where in some ageless games players could obtain infinite gold
