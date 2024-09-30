@@ -9,6 +9,7 @@
 - Bred Rats and Summoned units no longer give xp or increase the kill count for promo rank when killed
 - Strength of the first spawned royal rat now depends on the promo rank of the item keeper
 - IceLord's Protection aura now increases the damage the affected enemies receive on epic rank
+- Celestial Hammer now visually indicates the units that benefit from leadership aura
 - Ancient Book of Artifacts redesigned
 - Fixed bug where in some ageless games players could obtain infinite gold
 - Fixed campaign bug that was making champions insanely op
