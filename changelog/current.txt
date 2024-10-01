@@ -14,3 +14,4 @@
 - Fixed bug where in some ageless games players could obtain infinite gold
 - Fixed campaign bug that was making champions insanely op
 - Elder Tunturi Shaman unit now always gains protected trait
+- Minor balancing of various maps

@@ -176,7 +176,6 @@ return {
 	{ ['t'] = 41, ['d'] = 2, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'Mage of Light', },
 	
 	{ ['t'] = 41, ['d'] = 3, ['side'] = 2, ['x'] = 25, ['lvl'] = 3, ['type'] = 'Paladin' },
-	{ ['t'] = 42, ['d'] = 3, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Pikeman', },
 
 	{ ['t'] = 38, ['d'] = 4, ['side'] = 2, ['x'] = 7, ['lvl'] = 3, ['type'] = 'Mermaid Siren', },
 	{ ['t'] = 41, ['d'] = 4, ['side'] = 2, ['x'] = 25, ['lvl'] = 2, ['type'] = 'Dragoon', },
@@ -187,6 +186,7 @@ return {
 	{ ['t'] = 43, ['d'] = 6, ['side'] = 2, ['x'] = 10, ['lvl'] = 3, ['type'] = 'Silver Mage', ['beefy'] = 20, ['bulky'] = 20, ['race_guard_off'] = true },
 
 	{ ['t'] = 42, ['d'] = 7, ['side'] = 2, ['x'] = 7, ['lvl'] = 3, ['type'] = 'Fugitive', ['fast'] = 2, ['agile'] = 10 },
+	{ ['t'] = 42, ['d'] = 7, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Pikeman', },
 	
 	-- 44 - 50 (mask y 32 - 26)
 	
@@ -218,9 +218,7 @@ return {
 	{ ['t'] = 46, ['d'] = 3, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Dread Bat', ['fast'] = 2, },
 	
 	{ ['t'] = 47, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'Necrophage', ['aggressive'] = 1 },
-	{ ['t'] = 48, ['d'] = 4, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'Direwolf', ['race_guard_off'] = true },
 	{ ['t'] = 49, ['d'] = 4, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'Nightgaunt', ['fast'] = 1 },
-	{ ['t'] = 50, ['d'] = 4, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'Gryphon', },
 	{ ['t'] = 50, ['d'] = 4, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'Skeleton', },
 	{ ['t'] = 50, ['d'] = 4, ['side'] = 3, ['x'] = 25, ['lvl'] = 2, ['type'] = 'Dark Sorcerer', },
 
@@ -229,9 +227,11 @@ return {
 
 	{ ['t'] = 46, ['d'] = 6, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Soulless', ['beefy'] = 20, ['fast'] = 1, ['race_guard_off'] = true, ['gold'] = 8 },
 	{ ['t'] = 48, ['d'] = 6, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'Necromancer', },
+	{ ['t'] = 48, ['d'] = 6, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'Direwolf', ['race_guard_off'] = true },
 	{ ['t'] = 49, ['d'] = 6, ['side'] = 3, ['x'] = 15, ['lvl'] = 4, ['type'] = 'Skeletal Dragon', ['beefy'] = 20, ['bulky'] = 180, ['race_guard_off'] = true, },
 
 	{ ['t'] = 50, ['d'] = 7, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'Bone Knight', ['buff'] = 'A46:B58:C43:C51', },
+	{ ['t'] = 50, ['d'] = 7, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'Gryphon', },
 	
 	-- 51 - 57 (mask y 25 - 19)
 	

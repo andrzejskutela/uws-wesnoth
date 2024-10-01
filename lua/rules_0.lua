@@ -31,7 +31,7 @@ return {
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 9, ['y'] = 6, ['lvl'] = 1, ['type'] = 'AE_agl_yokai_Nymph', ['default'] = 'Fire Ant', ['moves'] = 3, ['guard'] = true },
 	
 	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 18, ['y'] = 7, ['lvl'] = 0, ['type'] = 'AE_arc_khthon_Toad', ['default'] = 'Mudcrawler', ['moves'] = 4, ['guard'] = true, ['bulky'] = 80 },
-	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 25, ['y'] = 15, ['lvl'] = 1, ['type'] = 'AE_arc_khthon_Land_Tortoise', ['default'] = 'Fire Guardian', ['moves'] = 3, ['gold'] = 6 },
+	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 24, ['y'] = 13, ['lvl'] = 1, ['type'] = 'AE_arc_khthon_Land_Tortoise', ['default'] = 'Fire Guardian', ['moves'] = 3, ['gold'] = 6, ['guard'] = true },
 	
 	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 20, ['y'] = 6, ['lvl'] = 1, ['type'] = 'AE_arc_khthon_Giant_Toad', ['default'] = 'Giant Mudcrawler', ['moves'] = 3, ['guard'] = true, ['gold'] = 6 },
 	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 11, ['y'] = 7, ['lvl'] = 1, ['type'] = 'AE_agl_yokai_Nymph', ['default'] = 'Fire Ant', ['moves'] = 3, ['guard'] = true, },
