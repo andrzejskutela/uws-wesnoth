@@ -1,4 +1,4 @@
-<span color='#c250d4'>v2.6.4</span> (date):
+<span color='#c250d4'>v2.6.4</span> (04/10/2024):
 - Blade Mastery item replaced by two new items
 - The final ability for the new resistance items is now available on significant and epic rank
 - Two new uws unique units added - lvl5 Arachna Queen and lvl5 Decapitator
@@ -6,8 +6,8 @@
 - Necronomicon, chance to summon an undead very slightly lowered
 - Golden Armour, reflects ability buffed on melee attacks and nerfed on ranged
 - Amulet of Devotion, Shield Master chance to block slightly raised
-- Bred Rats and Summoned units no longer give xp or increase the kill count for promo rank when killed
-- Strength of the first spawned royal rat now depends on the promo rank of the item keeper
+- Bred Rats and summoned units no longer give xp or increase the kill count for promo rank when killed
+- Strength of the initial royal rat now depends on the promo rank of the item keeper
 - IceLord's Protection aura now increases the damage the affected enemies receive on epic rank
 - Celestial Hammer now visually indicates the units that benefit from leadership aura
 - Ancient Book of Artifacts redesigned
