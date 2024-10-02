@@ -2,7 +2,7 @@ local find_conditional_buffs = function(pool_settings)
 	local segregation_pool = {}
 	
 	if pool_settings['has_ranged'] then
-		for k,v in ipairs({ 'A28','A35','A38','A39','A42','A48','A50','A59','A59','A61', 'B3','B7','B28', 'C8', }) do segregation_pool[#segregation_pool + 1] = v end
+		for k,v in ipairs({ 'A35','A38','A39','A42','A48','A50','A59','A59','A61', 'B3','B7','B28', 'C8', }) do segregation_pool[#segregation_pool + 1] = v end
 		
 		if pool_settings['has_magical_ranged'] then
 			for k,v in ipairs({ 'A42','A43','A44','A61','B51','B51', 'C28','C37','C47', }) do segregation_pool[#segregation_pool + 1] = v end
@@ -34,7 +34,7 @@ local find_conditional_buffs = function(pool_settings)
 	end
 	
 	if pool_settings['has_melee'] then
-		for k,v in ipairs({ 'A2','A6','A21','A31','A33','A34','A41','A45','A47','A49','A54','A60','A60','A62', 'B2','B4','B6','B9','B27','B30','B33','B41', 'C7','C10','C14','C20','C25','C39', }) do segregation_pool[#segregation_pool + 1] = v end
+		for k,v in ipairs({ 'A2','A6','A21','A28','A28','A31','A33','A34','A41','A45','A47','A49','A54','A60','A60','A62', 'B2','B4','B6','B9','B27','B30','B33','B41', 'C7','C10','C14','C20','C25','C39', }) do segregation_pool[#segregation_pool + 1] = v end
 		
 		if pool_settings['has_magical_melee'] then
 			for k,v in ipairs({ 'A45','A46','A46', 'B38','B38','B38', }) do segregation_pool[#segregation_pool + 1] = v end

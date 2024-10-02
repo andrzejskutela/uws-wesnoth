@@ -11,6 +11,7 @@
 - IceLord's Protection aura now increases the damage the affected enemies receive on epic rank
 - Celestial Hammer now visually indicates the units that benefit from leadership aura
 - Ancient Book of Artifacts redesigned
+- New abilities added to the champion buff pool
 - Fixed bug where in some ageless games players could obtain infinite gold
 - Fixed Dark Pact bug where the sacrificed unit didn't drop items
 - Fixed campaign bug where the unit sacrificed on altar didn't drop items
