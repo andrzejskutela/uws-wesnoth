@@ -12,6 +12,8 @@
 - Celestial Hammer now visually indicates the units that benefit from leadership aura
 - Ancient Book of Artifacts redesigned
 - Fixed bug where in some ageless games players could obtain infinite gold
+- Fixed Dark Pact bug where the sacrificed unit didn't drop items
+- Fixed campaign bug where the unit sacrificed on altar didn't drop items
 - Fixed campaign bug that was making champions insanely op
 - Elder Tunturi Shaman unit now always gains protected trait
 - Minor balancing of various maps
