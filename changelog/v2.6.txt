@@ -1,3 +1,7 @@
+<span color='#b7c9ba'>v2.6.5</span> (date):
+- Improved support for Ageless Era Loader (default era games with ageless enemies)
+- Fixed the critical enemy layout bug in the campaign's final map
+
 <span color='#c250d4'>v2.6.4</span> (04/10/2024):
 - Blade Mastery item replaced by two new items
 - The final ability for the new resistance items is now available on significant and epic rank
