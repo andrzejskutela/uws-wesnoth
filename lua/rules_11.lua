@@ -80,10 +80,10 @@ return {
 	
 	{ ['t'] = 22, ['d'] = 2, ['side'] = 4, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_mag_Um', ['default'] = 'Orcish Warlord', ['bulky'] = 300 },
 	
-	{ ['t'] = 18, ['d'] = 3, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_stf_eltireans_Glory_Seeker', ['default'] = 'Dune Rider', }
+	{ ['t'] = 18, ['d'] = 3, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_stf_eltireans_Glory_Seeker', ['default'] = 'Dune Rider', },
 	{ ['t'] = 20, ['d'] = 3, ['side'] = 3, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_mag_War_Mage', ['default'] = 'Troll Shaman', },
 	
-	{ ['t'] = 19, ['d'] = 4, ['side'] = 4, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mag_Mystic_Warrior', ['default'] = 'Orcish Slayer', },,
+	{ ['t'] = 19, ['d'] = 4, ['side'] = 4, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mag_Mystic_Warrior', ['default'] = 'Orcish Slayer', },
 	{ ['t'] = 21, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_mag_Shadow_Mage', ['default'] = 'Orcish Slurbow', ['buff'] = 'A35:B52:C19:B13' },
 	
 	{ ['t'] = 16, ['d'] = 6, ['side'] = 3, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_stf_eltireans_Sky_Lord', ['default'] = 'Dune Paragon', },

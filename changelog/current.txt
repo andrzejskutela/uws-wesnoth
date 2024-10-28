@@ -1,20 +1,3 @@
-<span color='#c250d4'>v2.6.4</span> (04/10/2024):
-- Blade Mastery item replaced by two new items
-- The final ability for the new resistance items is now available on significant and epic rank
-- Two new uws unique units added - lvl5 Arachna Queen and lvl5 Decapitator
-- Assassin's Dagger item slightly changed on higher ranks
-- Necronomicon, chance to summon an undead very slightly lowered
-- Golden Armour, reflects ability buffed on melee attacks and nerfed on ranged
-- Amulet of Devotion, Shield Master chance to block slightly raised
-- Bred Rats and summoned units no longer give xp or increase the kill count for promo rank when killed
-- Strength of the initial royal rat now depends on the promo rank of the item keeper
-- IceLord's Protection aura now increases the damage the affected enemies receive on epic rank
-- Celestial Hammer now visually indicates the units that benefit from leadership aura
-- Ancient Book of Artifacts redesigned
-- New abilities added to the champion buff pool
-- Fixed bug where in some ageless games players could obtain infinite gold
-- Fixed Dark Pact bug where the sacrificed unit didn't drop items
-- Fixed campaign bug where the unit sacrificed on altar didn't drop items
-- Fixed campaign bug that was making champions insanely op
-- Elder Tunturi Shaman unit now always gains protected trait
-- Minor balancing of various maps
+<span color='#b7c9ba'>v2.6.5</span> (04/10/2024):
+- Fixed the critical enemy layout bug in the campaign's final map
+
