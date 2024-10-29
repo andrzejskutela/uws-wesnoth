@@ -3,3 +3,4 @@
 - All champions are now immune to petrification
 - Improved support for Ageless Era Loader (default era games with ageless enemies)
 - Fixed the critical enemy layout bug in the campaign's final map
+- Fixed the aggressive trait sometimes leaking into recruited units
