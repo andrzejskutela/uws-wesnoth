@@ -585,7 +585,7 @@ return {
 	{ ['t'] = 156, ['d'] = 5, ['side'] = 4, ['x'] = 23, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
 	{ ['t'] = 156, ['d'] = 5, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'QQ_enslaved_soul', ['default'] = 'QQ_enslaved_soul', ['allow_random'] = false },
 
-	{ ['t'] = 159, ['d'] = 6, ['side'] = 4, ['x'] = 23, ['lvl'] = 6, ['type'] = 'QQ_death', ['default'] = 'QQ_death', ['buff'] = 'A21:B41:C17', },
+	{ ['t'] = 159, ['d'] = 6, ['side'] = 4, ['x'] = 23, ['lvl'] = 6, ['type'] = 'QQ_death', ['default'] = 'QQ_death', },
 
 	{ ['t'] = 159, ['d'] = 7, ['side'] = 4, ['x'] = 24, ['lvl'] = 6, ['type'] = 'QQ_blackness', ['default'] = 'QQ_blackness', ['buff'] = 'A44:B18:C43' },
 	
