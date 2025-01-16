@@ -49,7 +49,7 @@ return {
 +10% magic resistance (50%)' },
 	{ ['row'] = 'object', ['t'] = 53, ['x'] = 11, ['cat'] = 'decorative', ['image'] = 'projectiles/web.png' },
 	{ ['row'] = 'object', ['t'] = 54, ['x'] = 14, ['cat'] = 'decorative', ['image'] = 'projectiles/web.png' },
-	{ ['row'] = 'object', ['t'] = 58, ['x'] = 28, ['cat'] = 'rune', ['image'] = 'items/ball-green.png', ['amount'] = 1, ['name'] = 'Emerald', ['set'] = 'R5', ['color'] = '#3c9644', ['tooltip'] = '+10% all resistance (100%)' },
+	{ ['row'] = 'object', ['t'] = 58, ['x'] = 29, ['cat'] = 'rune', ['image'] = 'items/ball-green.png', ['amount'] = 1, ['name'] = 'Emerald', ['set'] = 'R5', ['color'] = '#3c9644', ['tooltip'] = '+10% all resistance (100%)' },
 	{ ['row'] = 'object', ['t'] = 59, ['x'] = 12, ['cat'] = 'heal', ['image'] = 'scenery/monolith2.png', ['name'] = 'Monolith' },
 	
 	-- beginning

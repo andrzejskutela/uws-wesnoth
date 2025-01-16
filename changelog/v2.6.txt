@@ -6,7 +6,7 @@
 - Improved support for Ageless Era Loader (default era games with ageless enemies)
 - Fixed the critical enemy layout bug in the campaign's final map
 - Fixed the aggressive trait sometimes leaking into recruited units
-- Minor balancing of the Valley of the Necromancer map
+- Minor balancing of the Great Waters and Valley of the Necromancer maps
 
 <span color='#c250d4'>v2.6.4</span> (04/10/2024):
 - Blade Mastery item replaced by two new items
