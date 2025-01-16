@@ -1,6 +1,7 @@
 <span color='#b7c9ba'>v2.6.5</span> (date):
 - Rat Ambassador bonus distribution changed to buff early bonuses
 - All champions are now immune to petrification
+- Added new champion bonuses
 - Improved support for Ageless Era Loader (default era games with ageless enemies)
 - Fixed the critical enemy layout bug in the campaign's final map
 - Fixed the aggressive trait sometimes leaking into recruited units
