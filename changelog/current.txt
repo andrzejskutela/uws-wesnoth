@@ -5,6 +5,7 @@
 - All champions are now immune to petrification
 - Damage output of the item weapons is nerfed
 - Improved support for Ageless Era Loader (default era games with ageless enemies)
+- Magic and Physical Mastery items have different images and names
 - Fixed the critical enemy layout bug in the campaign's final map
 - Fixed the aggressive trait sometimes leaking into recruited units
 - Minor balancing of the Great Waters and Valley of the Necromancer maps
