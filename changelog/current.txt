@@ -7,6 +7,7 @@
 - Damage output of the item weapons is nerfed
 - Random unit pools updated to keep in sync with the newest Ageless Era
 - Improved support for Ageless Era Loader (default era games with ageless enemies)
+- Support for WotG restored
 - Fixed the critical enemy layout bug in the campaign's final map
 - Fixed the aggressive trait sometimes leaking into recruited units
-- Minor balancing of the Great Waters and Valley of the Necromancer maps
+- Minor balancing of Great Waters and Valley of the Necromancer maps

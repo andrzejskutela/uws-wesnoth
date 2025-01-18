@@ -7,9 +7,10 @@
 - Damage output of the item weapons is nerfed
 - Random unit pools updated to keep in sync with the newest Ageless Era
 - Improved support for Ageless Era Loader (default era games with ageless enemies)
+- Support for WotG restored
 - Fixed the critical enemy layout bug in the campaign's final map
 - Fixed the aggressive trait sometimes leaking into recruited units
-- Minor balancing of the Great Waters and Valley of the Necromancer maps
+- Minor balancing of Great Waters and Valley of the Necromancer maps
 
 <span color='#c250d4'>v2.6.4</span> (04/10/2024):
 - Blade Mastery item replaced by two new items
