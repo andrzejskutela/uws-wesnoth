@@ -1,4 +1,4 @@
-<span color='#b7c9ba'>v2.6.5</span> (18/01/2025):
+<span color='#f2c657'>v2.6.5</span> (18/01/2025):
 - Cold Mastery replaced with two new items
 - Magic and Physical Mastery items balanced and with new names and images
 - Rat Ambassador bonus distribution changed to buff early bonuses
