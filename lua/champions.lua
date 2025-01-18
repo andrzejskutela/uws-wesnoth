@@ -2,7 +2,7 @@ local find_conditional_buffs = function(pool_settings)
 	local segregation_pool = {}
 	
 	if pool_settings['has_ranged'] then
-		for k,v in ipairs({ 'A35','A38','A39','A42','A48','A50','A59','A59','A61', 'B3','B7','B28', 'C8', }) do segregation_pool[#segregation_pool + 1] = v end
+		for k,v in ipairs({ 'A35','A38','A39','A42','A48','A50','A59','A59','A61', 'B3','B7','B28','B63','B63', 'C8', }) do segregation_pool[#segregation_pool + 1] = v end
 		
 		if pool_settings['has_magical_ranged'] then
 			for k,v in ipairs({ 'A42','A43','A44','A61','B51','B51', 'C28','C37','C47', }) do segregation_pool[#segregation_pool + 1] = v end
@@ -137,7 +137,7 @@ end
 
 local early_allowed_buffs_table = { 
 	'A1','A3','A6','A7','A8','A9','A11','A12','A13','A15','A16','A18','A19','A22','A23','A24','A25','A28','A29','A31','A39','A47','A48','A49','A50','A51','A52','A53','A54','A57','A58','A59','A60','A61','A62','A63',
-	'B1','B6','B11','B12','B13','B17','B19','B21','B23','B24','B25','B26','B27','B28','B39','B45','B46','B47','B48','B49','B50','B52','B56','B57','B58','B60','B61','B62',
+	'B1','B6','B11','B12','B13','B17','B19','B21','B23','B24','B25','B26','B27','B28','B39','B45','B46','B47','B48','B49','B50','B52','B56','B57','B58','B60','B61','B62','B63',
 	'C1','C2','C3','C7','C8','C9','C11','C12','C13','C14','C15','C17','C20','C21','C22','C23','C24','C25','C26','C27','C39','C43','C44','C48','C50','C53','C54','C55','C58','C59','C62'
 }
 
