@@ -5,6 +5,7 @@
 - Added new champion bonuses
 - All champions are now immune to petrification
 - Damage output of the item weapons is nerfed
+- Random unit pools updated to keep in sync with the newest Ageless Era
 - Improved support for Ageless Era Loader (default era games with ageless enemies)
 - Fixed the critical enemy layout bug in the campaign's final map
 - Fixed the aggressive trait sometimes leaking into recruited units
