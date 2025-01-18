@@ -108,7 +108,7 @@ local function process_spawn_table(spawn_table)
 	local copy_fields_list = wml.variables['uws_spawn.copy_fields']
 	local is_single_side_game = false
 	local is_campaign = wml.variables['uws_game.is_campaign']
-	local all_available_items = {'magic_res','cold_res','phys_res','impact_res','impact_weapon','fire_res','fire_weapon','arcane_res','arcane_weapon','blade_res','blade_weapon','pierce_res','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura','book'}
+	local all_available_items = {'magic_res','cold_res','cold_weapon','phys_res','impact_res','impact_weapon','fire_res','fire_weapon','arcane_res','arcane_weapon','blade_res','blade_weapon','pierce_res','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura','book'}
 	if not is_campaign then
 		all_available_items[#all_available_items + 1] = 'hp_low'
 		all_available_items[#all_available_items + 1] = 'dragon_protection'

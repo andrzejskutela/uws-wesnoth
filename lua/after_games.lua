@@ -35,7 +35,7 @@ local after_classic_locations = {
 }
 
 local all_available_items = {
-	'magic_res','cold_res','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high',
+	'magic_res','cold_res','cold_weapon','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high',
 	'steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership',
 	'drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption',
 	'armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura','book','dragon_protection',

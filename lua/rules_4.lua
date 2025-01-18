@@ -168,7 +168,7 @@ return {
 	{ ['t'] = 34, ['d'] = 6, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Archer', ['default'] = 'Orcish Archer', },
 	{ ['t'] = 34, ['d'] = 6, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_arc_orcs_Goblin_Drummer', ['default'] = 'Young Ogre', },
 
-	{ ['t'] = 31, ['d'] = 7, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Sniper', ['default'] = 'Orcish Slayer', ['buff'] = 'A39:B5:C28:C31' },
+	{ ['t'] = 31, ['d'] = 7, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Sniper', ['default'] = 'Orcish Slayer', ['buff'] = 'A63:B5:C28:A39', ['allow_random'] = false },
 	
 	-- 37 - 43 (mask y 133 - 127)
 	
@@ -406,7 +406,7 @@ return {
 
 	{ ['t'] = 102, ['d'] = 6, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_ankylosaurus', ['default'] = 'QQ_ankylosaurus', ['race_guard_off'] = true, ['buff'] = 'A7:B12:C4', ['calls_for_help'] = true, ['allow_random'] = false },
 	
-	{ ['t'] = 104, ['d'] = 7, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_Archwitch', ['default'] = 'QQ_Archwitch', ['calls_for_help'] = true, ['buff'] = 'A57:B53:C47:C52:C39', ['allow_random'] = false },
+	{ ['t'] = 104, ['d'] = 7, ['side'] = 4, ['x'] = 19, ['lvl'] = 5, ['type'] = 'QQ_Archwitch', ['default'] = 'QQ_Archwitch', ['calls_for_help'] = true, ['buff'] = 'A57:B53:C47:C52:C39:A31', ['allow_random'] = false },
 	{ ['t'] = 106, ['d'] = 7, ['side'] = 4, ['x'] = 19, ['lvl'] = 4, ['type'] = 'QQ_abomination', ['default'] = 'QQ_abomination', ['bulky'] = 72, ['beefy'] = 32  },
 
 	-- 107 - 113 (mask y 63 - 57)
