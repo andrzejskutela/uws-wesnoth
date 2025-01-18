@@ -10,6 +10,7 @@
 - Support for WotG restored
 - Fixed the critical enemy layout bug in the campaign's final map
 - Fixed the aggressive trait sometimes leaking into recruited units
+- Fixed exploding units not dropping items properly
 - Minor balancing of Great Waters and Valley of the Necromancer maps
 
 <span color='#c250d4'>v2.6.4</span> (04/10/2024):
