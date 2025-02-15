@@ -1,3 +1,7 @@
+<span color='#57f2ce'>v2.6.6</span> (date):
+- Pierce Mastery replaced with two new items
+- Guardians of Mania and Concentrated blade nerfed
+
 <span color='#f2c657'>v2.6.5</span> (18/01/2025):
 - Cold Mastery replaced with two new items
 - Magic and Physical Mastery items balanced and with new names and images

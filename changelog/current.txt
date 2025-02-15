@@ -1,14 +1,3 @@
-<span color='#f2c657'>v2.6.5</span> (18/01/2025):
-- Cold Mastery replaced with two new items
-- Magic and Physical Mastery items balanced and with new names and images
-- Rat Ambassador bonus distribution changed to buff early bonuses
-- Added new champion bonuses
-- All champions are now immune to petrification
-- Damage output of the item weapons is nerfed
-- Random unit pools updated to keep in sync with the newest Ageless Era
-- Improved support for Ageless Era Loader (default era games with ageless enemies)
-- Support for WotG restored
-- Fixed the critical enemy layout bug in the campaign's final map
-- Fixed the aggressive trait sometimes leaking into recruited units
-- Fixed exploding units not dropping items properly
-- Minor balancing of Great Waters and Valley of the Necromancer maps
+<span color='#57f2ce'>v2.6.6</span> (date):
+- Pierce Mastery replaced with two new items
+- Guardians of Mania and Concentrated blade nerfed
