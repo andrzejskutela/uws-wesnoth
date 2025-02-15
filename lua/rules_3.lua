@@ -52,6 +52,8 @@ return {
 	{ ['t'] = 8, ['d'] = 5, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_imp_Marauders_Fay', ['default'] = 'Mage' },
 	
 	{ ['t'] = 5, ['d'] = 6, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Naga Fighter', ['default'] = 'Naga Fighter', ['race_guard_off'] = true, ['buff'] = 'A23:B23:C1' },
+
+	{ ['t'] = 5, ['d'] = 7, ['side'] = 2, ['x'] = 15, ['lvl'] = 0, ['type'] = 'AE_AoA_mauve_islands_federation_Villager', ['default'] = 'Woodsman' },
 	
 	-- 9 - 15 (mask y 49 - 43)
 	
@@ -96,6 +98,10 @@ return {
 
 	{ ['t'] = 18, ['d'] = 6, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Dwarvish Thunderguard', ['default'] = 'Dwarvish Thunderguard', ['quiet_buff'] = 'Q3', ['allow_random'] = false, ['gold'] = 18 },
 	{ ['t'] = 19, ['d'] = 6, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_mag_Dwarvish_Gunner', ['default'] = 'Dwarvish Scout', },
+
+	{ ['t'] = 17, ['d'] = 7, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_agl_harpies_Night_Harpy', ['default'] = 'Young Ogre' },
+	{ ['t'] = 18, ['d'] = 7, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_AoA_farengarian_dwarves_counties_Bombard', ['default'] = 'Dwarvish Stalwart', ['moves'] = 0, ['armored'] = 10 },
+	{ ['t'] = 20, ['d'] = 7, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Dwarvish Thunderguard', ['default'] = 'Dwarvish Thunderguard', ['buff'] = 'A29:B39:C26', ['ai_add_gold'] = 50 },
 	
 	-- 23 - 29 (mask y 35 - 29)
 	
@@ -115,6 +121,8 @@ return {
 	{ ['t'] = 25, ['d'] = 5, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_ext_dwarves_Dwarvish_Flamethrower', ['default'] = 'Dwarvish Steelclad' },
 
 	{ ['t'] = 29, ['d'] = 6, ['side'] = 4, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mag_Mobile_Defensive_Platform', ['default'] = 'Dwarvish Sentinel', ['buff'] = 'A14:B7:C22', },
+
+	{ ['t'] = 29, ['d'] = 7, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Dwarvish Guardsman', ['default'] = 'Dwarvish Guardsman', ['agile'] = 10 },
 	
 	-- 30 - 36 (mask y 28 - 22)
 	
@@ -159,6 +167,8 @@ return {
 	{ ['t'] = 40, ['d'] = 5, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_feu_high_elves_Shieldbearer', ['default'] = 'Elvish Hero', },
 	
 	{ ['t'] = 40, ['d'] = 6, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_feu_high_elves_Shieldbearer', ['default'] = 'Elder Wose', ['bulky'] = 72, ['beefy'] = 40, },
+
+	{ ['t'] = 39, ['d'] = 6, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_agl_harpies_Harpy_Raider', ['default'] = 'Elvish High Lord', ['aggressive'] = 1, },
 	
 	-- 44 - 50 (mask y 14 - 8)
 	
@@ -174,6 +184,8 @@ return {
 	{ ['t'] = 46, ['d'] = 5, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Fanatic', ['default'] = 'Drake Warrior', ['beefy'] = 32, ['armored'] = 10 },
 	
 	{ ['t'] = 44, ['d'] = 6, ['side'] = 3, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Termite_Soldier', ['default'] = 'Dread Bat', ['bulky'] = 20, ['beefy'] = 28 },
+
+	{ ['t'] = 44, ['d'] = 7, ['side'] = 3, ['x'] = 6, ['lvl'] = 2, ['type'] = 'Wose Shaman', ['default'] = 'Wose Shaman', ['buff'] = 'A58:B59:C43:B16', },
 	
 	-- 48 / final boss
 	
