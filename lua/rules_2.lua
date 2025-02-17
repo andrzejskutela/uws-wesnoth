@@ -273,7 +273,7 @@ return {
 	{ ['t'] = 60, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_mag_Hidden_Face', ['default'] = 'Elvish Archer', ['gold'] = 13, },
 	{ ['t'] = 61, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_fut_welkin_Luna_Protector', ['default'] = 'Elvish Fighter', ['bulky'] = 30, ['guard'] = true },
 	{ ['t'] = 63, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_fut_welkin_Sentinel_of_the_Moon', ['default'] = 'Drake Thrasher', ['gold'] = 7, ['guard'] = true },
-	{ ['t'] = 63, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_rhy_tr_Luna', ['default'] = 'Elvish Lady', ['item'] = true },
+	{ ['t'] = 63, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_rhy_tr_Luna', ['default'] = 'Elvish Lady', },
 	{ ['t'] = 64, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_rhy_aq_Newmoonmage', ['default'] = 'Elvish High Lord', ['recruits'] = 'AE_rhy_aq_Hoplite,AE_rhy_aq_Tank,Mermaid Siren,Merman Hoplite,Merman Triton,Merman Javelineer,Merman Entangler,AE_rhy_aq_Master_Bowman', ['default_recruits'] = 'Elvish Sharpshooter,Elvish Outrider,Elvish Enchantress,Mermaid Diviner,Merman Triton,Merman Entangler', ['r_lvls'] = '3,3,3,3,3,3', ['recruitment_gold'] = 250 },
 	
 	{ ['t'] = 61, ['d'] = 2, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_rhy_aq_General', ['default'] = 'Drake Flameheart', ['buff'] = 'A9:B21:C10', },

@@ -1,7 +1,9 @@
 <span color='#57f2ce'>v2.6.6</span> (date):
 - Pierce Mastery replaced with two new items
 - Guardians of Mania and Concentrated Blade nerfed
+- Icewind Aura and Treats Wounded now have visual auras
 - Insane mode added to Dwarvish Mountains map
+- Minor balancing of various maps
 
 <span color='#f2c657'>v2.6.5</span> (18/01/2025):
 - Cold Mastery replaced with two new items

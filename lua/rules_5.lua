@@ -151,7 +151,7 @@ return {
 
 	{ ['t'] = 43, ['d'] = 4, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Soulless', },
 	
-	{ ['t'] = 41, ['d'] = 5, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Jinn', ['buff'] = 'A28:B28:C49', ['race_guard_off'] = true, ['calls_for_help'] = true },
+	{ ['t'] = 41, ['d'] = 5, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'Jinn', ['buff'] = 'A13:B28:C49', ['race_guard_off'] = true, ['calls_for_help'] = true },
 	
 	{ ['t'] = 40, ['d'] = 6, ['side'] = 3, ['x'] = 12, ['lvl'] = 5, ['type'] = 'QQ_ankylosaurus', },
 	
