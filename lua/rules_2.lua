@@ -154,7 +154,7 @@ return {
 	{ ['t'] = 29, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 0, ['type'] = 'AE_ext_monsters_Baby_Mudcrawler', ['default'] = 'Mudcrawler', ['race_guard_off'] = true, ['allow_random'] = false },
 	{ ['t'] = 29, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 0, ['type'] = 'AE_ext_monsters_Baby_Mudcrawler', ['default'] = 'Mudcrawler', ['race_guard_off'] = true, ['allow_random'] = false },
 	
-	{ ['t'] = 25, ['d'] = 2, ['side'] = 4, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_mag_Cyclops', ['default'] = 'Dune Rover', },
+	{ ['t'] = 25, ['d'] = 2, ['side'] = 4, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_mag_Cyclops', ['default'] = 'Dune Rover', },
 	{ ['t'] = 25, ['d'] = 2, ['side'] = 4, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_mag_Cyclops', ['default'] = 'Dune Skirmisher', },
 	{ ['t'] = 25, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Water_Snake', ['default'] = 'Elder Falcon', },
 	

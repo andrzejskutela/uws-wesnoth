@@ -336,11 +336,11 @@ return {
 	{ ['t'] = 89, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Assassin', ['default'] = 'Naga Ringcaster', },
 
 	{ ['t'] = 91, ['d'] = 3, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
-	{ ['t'] = 92, ['d'] = 3, ['side'] = 2, ['x'] = 24, ['lvl'] = 5, ['type'] = 'QQ_naga_royal_executioner', ['default'] = 'QQ_naga_royal_executioner', ['buff'] = 'A16:B36:C48' },
+	{ ['t'] = 92, ['d'] = 3, ['side'] = 2, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['beefy'] = 40 },
 
 	{ ['t'] = 90, ['d'] = 4, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
-	{ ['t'] = 92, ['d'] = 4, ['side'] = 2, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['beefy'] = 40 },
-
+	{ ['t'] = 92, ['d'] = 4, ['side'] = 2, ['x'] = 24, ['lvl'] = 5, ['type'] = 'QQ_naga_royal_executioner', ['default'] = 'QQ_naga_royal_executioner', ['buff'] = 'A16:B36:C48' },
+	
 	{ ['t'] = 91, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'Sea Serpent', ['default'] = 'Sea Serpent', ['bulky'] = 200, ['beefy'] = 40 },
 	{ ['t'] = 92, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Swamp Lizard', ['default'] = 'Swamp Lizard', ['disallow_slash_unguardian'] = true },
 	{ ['t'] = 92, ['d'] = 5, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'Naga Sicarius', ['default'] = 'Naga Sicarius', ['armored'] = 15, ['fast'] = 2 },
@@ -421,10 +421,10 @@ return {
 	{ ['t'] = 113, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Condottiero', ['default'] = 'Pikeman', ['moves'] = 0, ['gold'] = 10 },
 	{ ['t'] = 113, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Condottiero', ['default'] = 'Pikeman', ['moves'] = 0, ['gold'] = 10 },
 	
+	{ ['t'] = 107, ['d'] = 2, ['side'] = 4, ['x'] = 20, ['lvl'] = 5, ['type'] = 'QQ_abyssal_fungoid', ['default'] = 'QQ_abyssal_fungoid', ['buff'] = 'A19:B13:C2:B51', },
 	{ ['t'] = 109, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mrc_refugees_Arsonist', ['default'] = 'Duelist', },
-	{ ['t'] = 110, ['d'] = 2, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Arbalestier', ['default'] = 'Longbowman', },
-	
-	{ ['t'] = 107, ['d'] = 3, ['side'] = 4, ['x'] = 20, ['lvl'] = 5, ['type'] = 'QQ_abyssal_fungoid', ['default'] = 'QQ_abyssal_fungoid', ['buff'] = 'A19:B13:C2:B51', },
+
+	{ ['t'] = 110, ['d'] = 3, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Arbalestier', ['default'] = 'Longbowman', },
 	
 	{ ['t'] = 112, ['d'] = 4, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_feu_ceresians_Knight_Commander', ['default'] = 'Grand Knight', ['bulky'] = 60, ['beefy'] = 40, },
 	

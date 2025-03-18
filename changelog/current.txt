@@ -3,4 +3,5 @@
 - Guardians of Mania and Concentrated Blade nerfed
 - Icewind Aura and Treats Wounded now have visual auras
 - Insane mode added to Dwarvish Mountains map
+- Bonus spam mod - copies of units that carry items keep their item bonuses, but cannot benefit beyond the bonus at the time of copying. They also no longer drop the items when dead, and cannot, themselves carry items.
 - Minor balancing of various maps
