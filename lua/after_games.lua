@@ -678,17 +678,30 @@ function wesnoth.wml_actions.qquws_generate_after_progression_table(cfg)
 		mathx.shuffle(shuffleable_keys)
 		for k,key in ipairs(shuffleable_keys) do
 			generated_key = k + 1
-			next_random_group = mathx.random_choice({ 'vlow', 'low', 'med', 'med', 'high', 'vhigh'})
-			if next_random_group == 'vlow' then
-				next_random_percentage = mathx.random(16, 28)
-			elseif next_random_group == 'low' then
-				next_random_percentage = mathx.random(28, 40)
-			elseif next_random_group == 'med' then
-				next_random_percentage = mathx.random(40, 80)
-			elseif next_random_group == 'high' then
-				next_random_percentage = mathx.random(80, 100)
+			if generated_key < 4 then
+				next_random_group = mathx.random_choice({ 'low' })
+			elseif generated_key < 6 then
+				next_random_group = mathx.random_choice({ 'vlow', 'med', 'med' })
+			elseif generated_key < 7 then
+				next_random_group = mathx.random_choice({ 'high', 'vhigh' })
+			elseif generated_key < 9 then
+				next_random_group = mathx.random_choice({ 'vlow', 'low', 'med', 'med' })
+			elseif generated_key < 10 then
+				next_random_group = mathx.random_choice({ 'high', 'vhigh' })
 			else
-				next_random_percentage = mathx.random(100, 120)
+				next_random_group = mathx.random_choice({ 'med', 'med', 'high' })
+			end
+
+			if next_random_group == 'vlow' then
+				next_random_percentage = 4 * mathx.random(5, 9)
+			elseif next_random_group == 'low' then
+				next_random_percentage = 5 * mathx.random(7, 11)
+			elseif next_random_group == 'med' then
+				next_random_percentage = 5 * mathx.random(9, 14)
+			elseif next_random_group == 'high' then
+				next_random_percentage = 5 * mathx.random(15, 19)
+			else
+				next_random_percentage = 5 * mathx.random(20, 25)
 			end
 
 			after_games_progression[generated_key] = get_settings_line(generated_key, key, previous_turn, previous_percentage, next_random_percentage)

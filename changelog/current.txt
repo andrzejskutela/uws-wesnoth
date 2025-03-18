@@ -6,5 +6,6 @@
 - Enemies in easy games now get -20% hp and -15% dmg and 75% bonus penalty, instead of previous -15% dmg and 0% bonus penalty
 - Champions slightly buffed in hardcore and insane games
 - Minor changes to some champion bonuses
+- After-Classic and After-Race - more balanced random progression
 - Bonus spam mod - copies of units that carry items keep their item bonuses, but cannot benefit beyond the bonus at the time of copying. They also no longer drop the items when dead, and cannot, themselves carry items.
 - Minor balancing of various maps
