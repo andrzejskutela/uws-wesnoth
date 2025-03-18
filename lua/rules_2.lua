@@ -44,6 +44,7 @@ return {
 	{ ['row'] = 'object', ['t'] = 29, ['x'] = 5, ['cat'] = 'heal', ['image'] = 'halo/elven/druid-healing6.png', ['name'] = 'Fresh water' },
 	{ ['row'] = 'object', ['t'] = 30, ['x'] = 5, ['cat'] = 'heal', ['image'] = 'halo/elven/druid-healing6.png', },
 	{ ['row'] = 'object', ['t'] = 33, ['x'] = 24, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 30 },
+	{ ['row'] = 'item', ['t'] = 40, ['x'] = 26, ['asymmetric'] = true, ['pool'] = { 'melee_dmg','ranged_dmg','ranged_acc','drain','melee_poison','golden_armor' }, },
 	{ ['row'] = 'object', ['t'] = 41, ['x'] = 21, ['cat'] = 'heal', ['image'] = 'scenery/well.png', ['name'] = 'Well' },
 	{ ['row'] = 'object', ['t'] = 49, ['x'] = 27, ['cat'] = 'rune', ['image'] = 'items/ball-magenta.png', ['amount'] = 2, ['name'] = 'Ruby', ['set'] = 'R2,R4', ['color'] = '#e65045', ['tooltip'] = '+10% physical resistance (50%)\
 +10% magic resistance (50%)' },

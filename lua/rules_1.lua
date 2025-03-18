@@ -261,7 +261,7 @@ return {
 	{ ['t'] = 57, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Giant Scorpion', },
 	
 	{ ['t'] = 51, ['d'] = 2, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'Bone Shooter', },
-	{ ['t'] = 52, ['d'] = 2, ['side'] = 3, ['x'] = 26, ['lvl'] = 4, ['type'] = 'Ancient Lich', ['recruits'] = 'Dark Sorcerer,Dread Bat,Chocobone,Deathblade,Wraith,Shadow,Necrophage,Bone Shooter', ['r_lvls'] = '2,2,2,2,2,2,2,2', ['recruitment_gold'] = 300, ['item'] = true },
+	{ ['t'] = 52, ['d'] = 2, ['side'] = 3, ['x'] = 26, ['lvl'] = 4, ['type'] = 'Ancient Lich', ['recruits'] = 'Dark Sorcerer,Dread Bat,Chocobone,Deathblade,Wraith,Shadow,Necrophage,Bone Shooter', ['r_lvls'] = '2,2,2,2,2,2,2,2', ['recruitment_gold'] = 300, },
 	{ ['t'] = 57, ['d'] = 2, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'Giant Scorpion', },
 
 	{ ['t'] = 54, ['d'] = 3, ['side'] = 4, ['x'] = 23, ['lvl'] = 3, ['type'] = 'Orcish Warlord', ['moves'] = 0, ['gold'] = 30 },
