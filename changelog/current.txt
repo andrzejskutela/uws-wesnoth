@@ -3,6 +3,7 @@
 - Guardians of Mania and Concentrated Blade nerfed
 - Icewind Aura and Treats Wounded now have visual auras
 - Badamar's Icicle - enemies give extra xp and kill count when frozen grip or prison is active
+- Shield Mastery and Pride of Drakes rebalanced
 - Insane mode added to Dwarvish Mountains map
 - Enemies in easy games now get -20% hp, -15% dmg and 75% bonus penalty
 - Champions slightly buffed in hardcore and insane games
