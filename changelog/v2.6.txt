@@ -8,6 +8,7 @@
 - Shield Mastery and Pride of Drakes rebalanced
 - Insane mode added to Dwarvish Mountains map
 - Enemies in easy games now get -20% hp, -15% dmg and 75% bonus penalty
+- Few new amlas added to the pool
 - Champions slightly buffed in hardcore and insane games
 - Minor changes to some champion bonuses
 - After-Classic and After-Race - more balanced random progression

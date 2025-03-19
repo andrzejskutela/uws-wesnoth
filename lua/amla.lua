@@ -73,7 +73,9 @@ local find_amla_buffs = function(amla_settings)
 
 	if amla_settings['is_human'] then
 		allowed_amlas[#allowed_amlas + 1] = 'VIL_CASTLE_DEF'
-		allowed_amlas[#allowed_amlas + 1] = 'HUMAN_ARMOR'
+		allowed_amlas[#allowed_amlas + 1] = 'BLADE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'PIERCE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'COLD_RES'
 	end
 
 	if amla_settings['is_elf'] then
@@ -81,6 +83,18 @@ local find_amla_buffs = function(amla_settings)
 
 		if amla_settings['has_ranged'] and not amla_settings['has_magical_ranged'] then
 			allowed_amlas[#allowed_amlas + 1] = 'ELF_R_ACC'
+			allowed_amlas[#allowed_amlas + 1] = 'ELF_R_PAR'
+			allowed_amlas[#allowed_amlas + 1] = 'EXTRA_MP'
+		end
+
+		if amla_settings['has_melee'] and not amla_settings['has_magical_melee'] then
+			allowed_amlas[#allowed_amlas + 1] = 'ELF_M_ACC'
+			allowed_amlas[#allowed_amlas + 1] = 'BLADE_RES'
+			allowed_amlas[#allowed_amlas + 1] = 'EXTRA_MP'
+		end
+
+		if amla_settings['has_magical_ranged'] then
+			allowed_amlas[#allowed_amlas + 1] = 'ARCANE_RES'
 		end
 	end
 
@@ -127,6 +141,7 @@ local find_amla_buffs = function(amla_settings)
 
 	if amla_settings['is_centaur'] then
 		allowed_amlas[#allowed_amlas + 1] = 'FLAT_HILLS_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'EXTRA_MP'
 
 		if amla_settings['has_ranged'] then
 			allowed_amlas[#allowed_amlas + 1] = 'R_HIT_AND_RUN_1'
@@ -159,6 +174,7 @@ local find_amla_buffs = function(amla_settings)
 
 	if amla_settings['is_aerial'] then
 		allowed_amlas[#allowed_amlas + 1] = 'MINI_DEF_EVERYWHERE'
+		allowed_amlas[#allowed_amlas + 1] = 'EXTRA_MP'
 	end
 
 	if amla_settings['is_insect'] then
