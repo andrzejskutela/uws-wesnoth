@@ -193,6 +193,7 @@ return {
 	
 	{ ['t'] = 34, ['d'] = 6, ['side'] = 3, ['x'] = 28, ['lvl'] = 3, ['type'] = 'AE_mag_Chaos_Wyvern', ['default'] = 'Sea Serpent', ['race_guard_off'] = true, ['bulky'] = 52, },
 
+	{ ['t'] = 30, ['d'] = 7, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Mudcrawler', ['default'] = 'Giant Mudcrawler', ['race_guard_off'] = true, ['allow_random'] = false, ['buff'] = 'A26:B29:C52:B5' },
 	{ ['t'] = 31, ['d'] = 7, ['side'] = 2, ['x'] = 10, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['armored'] = 40 },
 	{ ['t'] = 34, ['d'] = 7, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
 	
@@ -305,7 +306,7 @@ return {
 
 	{ ['t'] = 69, ['d'] = 6, ['side'] = 3, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_stf_triththa_Kraken', ['default'] = 'Naga Sicarius', ['buff'] = 'A21:B2:C4:C21:C2', },
 
-	{ ['t'] = 68, ['d'] = 7, ['side'] = 2, ['x'] = 13, ['lvl'] = 4, ['type'] = 'AE_mag_Master_Banisher', ['default'] = 'Dune Paragon', },
+	{ ['t'] = 68, ['d'] = 7, ['side'] = 2, ['x'] = 22, ['lvl'] = 4, ['type'] = 'AE_mag_Master_Banisher', ['default'] = 'Dune Paragon', },
 	
 	-- 69 / final boss
 	
