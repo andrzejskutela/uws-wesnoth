@@ -13,5 +13,5 @@
 - Minor changes to some champion bonuses
 - After-Classic and After-Race - more balanced random progression
 - Bonus spam mod - copies of units that carry items keep their item bonuses, but cannot improve on them. They also no longer drop items when dead, and cannot carry them.
-- Minor balancing of various maps
+- Minor balancing of various maps and units
 - Ageless Wars and WotG Multi Factions eras are now correctly recognised by UWS
