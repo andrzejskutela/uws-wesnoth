@@ -294,7 +294,7 @@ return {
 	
 	{ ['t'] = 66, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_mag_Heavy_Summoner', ['default'] = 'Mage of Light', ['armored'] = 10, ['guard'] = true, ['event'] = 'grw_spam_dimensional_gates', ['allow_random'] = false, },
 	{ ['t'] = 68, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 3, ['type'] = 'AE_mag_Dharma_rhami', ['default'] = 'Master at Arms', ['guard'] = true, },
-	{ ['t'] = 68, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_rhy_tr_Nova', ['default'] = 'Mermaid Siren', ['event'] = 'follow_players_race' },
+	{ ['t'] = 68, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 3, ['type'] = 'AE_rhy_tr_Nova', ['default'] = 'Mermaid Siren', ['event'] = 'follow_players_race', ['beefy'] = 32 },
 	
 	{ ['t'] = 67, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Abomination', ['default'] = 'General', ['recruits'] = 'AE_ext_orcs_Naga_Depthstalker,AE_ext_orcs_Naga_Assassin,Naga Myrmidon,Naga Zephyr,Naga Sicarius', ['default_recruits'] = 'Wild Wyvern,Water Serpent,Sea Serpent,Naga Zephyr,Naga Sicarius', ['r_lvls'] = '3,2,3,3,3', ['recruitment_gold'] = 250, ['gold'] = 50, ['recruit_armored'] = 5 },
 	
@@ -304,9 +304,9 @@ return {
 	
 	{ ['t'] = 65, ['d'] = 5, ['side'] = 2, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_mag_Banisher', ['default'] = 'Paladin', ['beefy'] = 48, },
 
-	{ ['t'] = 69, ['d'] = 6, ['side'] = 3, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_stf_triththa_Kraken', ['default'] = 'Naga Sicarius', ['buff'] = 'A21:B2:C4:C21:C2', },
+	{ ['t'] = 68, ['d'] = 6, ['side'] = 3, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_stf_triththa_Kraken', ['default'] = 'Naga Sicarius', ['buff'] = 'A21:B2:C4:C21:C2', },
 
-	{ ['t'] = 66, ['d'] = 7, ['side'] = 2, ['x'] = 22, ['lvl'] = 4, ['type'] = 'AE_mag_Master_Banisher', ['default'] = 'Dune Paragon', },
+	{ ['t'] = 66, ['d'] = 7, ['side'] = 3, ['x'] = 23, ['lvl'] = 4, ['type'] = 'AE_mag_Master_Banisher', ['default'] = 'Dune Paragon', ['aggressive'] = 1, ['fast'] = 1, ['ai_add_gold'] = 150 },
 	
 	-- 69 / final boss
 	
