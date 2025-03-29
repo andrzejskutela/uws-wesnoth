@@ -1,3 +1,7 @@
+<span color='#e4aef2'>v2.6.7</span> (date):
+- Original TSW map now spawns ageless units in predefined mode when ageless era is used
+- Minor balancing of various maps, units, and difficulty settings
+
 <span color='#57f2ce'>v2.6.6</span> (19/03/2025):
 - Pierce Mastery replaced with two new items
 - Guardians of Mania and Concentrated Blade nerfed

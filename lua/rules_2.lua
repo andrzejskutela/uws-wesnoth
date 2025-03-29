@@ -114,7 +114,7 @@ return {
 
 	{ ['t'] = 15, ['d'] = 6, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_rhy_rg_Bowman', ['default'] = 'Bowman', ['beefy'] = 20, ['quiet_buff'] = 'Q3', },
 
-	{ ['t'] = 9, ['d'] = 7, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_rhy_ne_leviathan', ['default'] = 'Hunter Caribe', ['buff'] = 'A7:B2:C2' },
+	{ ['t'] = 9, ['d'] = 7, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_rhy_ne_serpent', ['default'] = 'Caribe', ['buff'] = 'A7:B2:C2' },
 	
 	-- 16 - 22 (mask y 65 - 59)
 	
@@ -139,7 +139,7 @@ return {
 	{ ['t'] = 17, ['d'] = 6, ['side'] = 3, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_rhy_rg_Frigate', ['default'] = 'Pirate Galleon', },
 	{ ['t'] = 20, ['d'] = 6, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Able_Seaman', ['default'] = 'Merman Spearman', ['beefy'] = 24, ['bulky'] = 24, },
 
-	{ ['t'] = 21, ['d'] = 7, ['side'] = 3, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Lore_Caster', ['default'] = 'Sand Scuttler', ['ai_add_gold'] = 30 },
+	{ ['t'] = 21, ['d'] = 7, ['side'] = 3, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Lore_Caster', ['default'] = 'Sand Scuttler' },
 	
 	-- 23 - 29 (mask y 58 - 52)
 	
@@ -265,6 +265,7 @@ return {
 	
 	{ ['t'] = 55, ['d'] = 6, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Deadwood', ['default'] = 'Necrophage', ['buff'] = 'A51:B2:C6:A12', },
 
+	{ ['t'] = 52, ['d'] = 7, ['side'] = 4, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_ext_monsters_Overgrown_Spider', ['default'] = 'Necromancer', ['aggressive'] = 1 },
 	{ ['t'] = 56, ['d'] = 7, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Black_Spider', ['default'] = 'Death Squire', ['ai_add_gold'] = 40 },
 	
 	-- 58 - 64 (mask y 23 - 17)
@@ -288,7 +289,7 @@ return {
 	{ ['t'] = 62, ['d'] = 6, ['side'] = 2, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_chs_aragwaith_Eagle_Rider', ['default'] = 'Drake Glider', },
 	{ ['t'] = 62, ['d'] = 6, ['side'] = 2, ['x'] = 28, ['lvl'] = 1, ['type'] = 'AE_chs_aragwaith_Eagle_Rider', ['default'] = 'Drake Glider', },
 
-	{ ['t'] = 64, ['d'] = 7, ['side'] = 2, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_rhy_aq_Tank', ['default'] = 'Drake Enforcer', ['ai_add_gold'] = 65, ['buff'] = 'A47:B60:C36' },
+	{ ['t'] = 64, ['d'] = 7, ['side'] = 2, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_rhy_aq_Tank', ['default'] = 'Drake Enforcer', ['ai_add_gold'] = 60, ['buff'] = 'A47:B60:C36' },
 	
 	-- 65 - 69 (mask y 16 - 12)
 	
@@ -306,6 +307,7 @@ return {
 
 	{ ['t'] = 68, ['d'] = 6, ['side'] = 3, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_stf_triththa_Kraken', ['default'] = 'Naga Sicarius', ['buff'] = 'A21:B2:C4:C21:C2', },
 
+	{ ['t'] = 66, ['d'] = 7, ['side'] = 2, ['x'] = 25, ['lvl'] = 5, ['type'] = 'QQ_sunrise_guard', ['default'] = 'QQ_sunrise_guard', ['ai_add_gold'] = 60, ['agile'] = 10, ['beefy'] = 28 },
 	{ ['t'] = 66, ['d'] = 7, ['side'] = 3, ['x'] = 23, ['lvl'] = 4, ['type'] = 'AE_mag_Master_Banisher', ['default'] = 'Dune Paragon', ['aggressive'] = 1, ['fast'] = 1, ['ai_add_gold'] = 150 },
 	
 	-- 69 / final boss
