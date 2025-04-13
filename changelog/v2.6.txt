@@ -2,6 +2,7 @@
 - Potion of Agility - buffed defense on higher ranks
 - New AMLAs added to the pool
 - Max Hitpoints AMLA buffed to 10%
+- Insane mode added to Dimaga Beach map
 - Original TSW map now spawns ageless units in predefined mode when ageless era is used
 - Armored units and some champion bonuses now increase secret resistance as well
 - Minor balancing of various maps, units, buffs, and difficulty settings

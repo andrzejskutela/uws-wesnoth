@@ -31,6 +31,8 @@ return {
 	
 	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 15, ['y'] = 4, ['lvl'] = 1, ['type'] = 'Wolf Rider', ['guard'] = true, },
 	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 16, ['y'] = 4, ['lvl'] = 1, ['type'] = 'Orcish Grunt', ['moves'] = 4, },
+
+	{ ['t'] = 1, ['d'] = 7, ['side'] = 2, ['x'] = 9, ['y'] = 7, ['lvl'] = 1, ['type'] = 'Orcish Assassin', ['moves'] = 0, },
 	
 	-- 2 - 8 (mask y 60 - 54)
 	
@@ -87,6 +89,11 @@ return {
 	
 	{ ['t'] = 20, ['d'] = 6, ['side'] = 2, ['x'] = 12, ['lvl'] = 1, ['type'] = 'Saurian Skirmisher', },
 	{ ['t'] = 21, ['d'] = 6, ['side'] = 2, ['x'] = 10, ['lvl'] = 2, ['type'] = 'Saurian Oracle', ['beefy'] = 16, },
+
+	{ ['t'] = 17, ['d'] = 7, ['side'] = 2, ['x'] = 9, ['lvl'] = 2, ['type'] = 'Trapper', },
+	{ ['t'] = 20, ['d'] = 7, ['side'] = 2, ['x'] = 11, ['lvl'] = 3, ['type'] = 'Naga Myrmidon', ['aggressive'] = 1 },
+	{ ['t'] = 21, ['d'] = 7, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'Thief', ['allow_random'] = false, ['buff'] = 'A63:B1:C41:C34' },
+	{ ['t'] = 21, ['d'] = 7, ['side'] = 2, ['x'] = 11, ['lvl'] = 1, ['type'] = 'Footpad', },
 	
 	-- 23 - 29 (mask y 39 - 33)
 	
@@ -134,7 +141,9 @@ return {
 
 	{ ['t'] = 31, ['d'] = 5, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'Orcish Slurbow', ['race_guard_off'] = true, },
 	
-	{ ['t'] = 34, ['d'] = 6, ['side'] = 2, ['x'] = 6, ['lvl'] = 3, ['type'] = 'Orcish Nightblade', ['buff'] = 'A26:B26:C26', ['gold'] = 12, },
+	{ ['t'] = 34, ['d'] = 6, ['side'] = 2, ['x'] = 6, ['lvl'] = 3, ['type'] = 'Orcish Nightblade', ['buff'] = 'A26:B26:C26', },
+
+	{ ['t'] = 32, ['d'] = 7, ['side'] = 2, ['x'] = 12, ['lvl'] = 2, ['type'] = 'Troll Rocklobber', ['buff'] = 'A35:B15:C45' },
 	
 	-- 37 - 43 (mask y 25 - 19)
 	
@@ -179,6 +188,10 @@ return {
 	{ ['t'] = 50, ['d'] = 5, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Naga Warrior', },
 	
 	{ ['t'] = 50, ['d'] = 6, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Shock Trooper', ['beefy'] = 40, ['armored'] = 10, ['race_guard_off'] = true },
+
+	{ ['t'] = 45, ['d'] = 7, ['side'] = 4, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Shadow', ['agile'] = 15 },
+	{ ['t'] = 46, ['d'] = 7, ['side'] = 4, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Necrophage', ['armored'] = 25 },
+	{ ['t'] = 46, ['d'] = 7, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Soulless', ['buff'] = 'A47:B22:C62:C6:B40' },
 	
 	-- 51 - 57 (mask y 11 - 5)
 	{ ['t'] = 52, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 0, ['type'] = 'Peasant', ['agile'] = 15 },
