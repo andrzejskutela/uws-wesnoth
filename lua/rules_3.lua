@@ -96,12 +96,12 @@ return {
 
 	{ ['t'] = 20, ['d'] = 5, ['side'] = 3, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_mag_Dwarvish_Runic_Warrior', ['default'] = 'Dwarvish Explorer', ['race_guard_off'] = true, ['bulky'] = 24, ['item'] = true },
 
-	{ ['t'] = 18, ['d'] = 6, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Dwarvish Thunderguard', ['default'] = 'Dwarvish Thunderguard', ['quiet_buff'] = 'Q3', ['allow_random'] = false, ['gold'] = 18 },
+	{ ['t'] = 18, ['d'] = 6, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'Dwarvish Thunderguard', ['default'] = 'Dwarvish Thunderguard', ['quiet_buff'] = 'Q3', ['allow_random'] = false, ['gold'] = 22 },
 	{ ['t'] = 19, ['d'] = 6, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_mag_Dwarvish_Gunner', ['default'] = 'Dwarvish Scout', },
 
 	{ ['t'] = 17, ['d'] = 7, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_agl_harpies_Night_Harpy', ['default'] = 'Young Ogre' },
 	{ ['t'] = 18, ['d'] = 7, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_AoA_farengarian_dwarves_counties_Bombard', ['default'] = 'Dwarvish Stalwart', ['moves'] = 0, ['armored'] = 10 },
-	{ ['t'] = 20, ['d'] = 7, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Dwarvish Thunderguard', ['default'] = 'Dwarvish Thunderguard', ['buff'] = 'A29:B39:C26', ['ai_add_gold'] = 50 },
+	{ ['t'] = 21, ['d'] = 7, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'Dwarvish Thunderguard', ['default'] = 'Dwarvish Thunderguard', ['buff'] = 'A29:B39:C26', ['disallow_slash_unguardian'] = true },
 	
 	-- 23 - 29 (mask y 35 - 29)
 	

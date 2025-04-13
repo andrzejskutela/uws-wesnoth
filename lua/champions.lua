@@ -299,7 +299,7 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 		{ ['melee_dmg'] = 0, ['melee_strikes'] = 0, ['melee_accuracy'] = 0, ['melee_parry'] = 0, },
 		{ ['ranged_dmg'] = 0, ['ranged_strikes'] = 0, ['ranged_accuracy'] = 0, ['ranged_parry'] = 0, },
 		{ ['mp'] = 0 },
-		{ ['arcane'] = 0, ['blade'] = 0, ['cold'] = 0, ['fire'] = 0, ['impact'] = 0, ['pierce'] = 0 },
+		{ ['arcane'] = 0, ['blade'] = 0, ['cold'] = 0, ['fire'] = 0, ['impact'] = 0, ['pierce'] = 0, ['secret'] = 0 },
 		{ ['flat'] = 0, ['frozen'] = 0, ['forest'] = 0, ['village'] = 0, ['swamp_water'] = 0, ['cave'] = 0, ['reef'] = 0, ['shallow_water'] = 0, ['deep_water'] = 0, ['fungus'] = 0, ['mountains'] = 0, ['hills'] = 0, ['castle'] = 0, ['sand'] = 0, ['unwalkable'] = 0 },
 		{ ['movement_cost'] = 0 }
 	}
@@ -322,9 +322,9 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 	
 	local resistance_table = {}
 	local defense_table = {}
-	local all_resistances = { 'arcane', 'blade', 'cold', 'fire', 'impact', 'pierce' }
+	local all_resistances = { 'arcane', 'blade', 'cold', 'fire', 'impact', 'pierce', 'secret' }
 	local physical_resistances = { 'blade', 'impact', 'pierce' }
-	local magical_resistances = { 'arcane', 'cold', 'fire' }
+	local magical_resistances = { 'arcane', 'cold', 'fire', 'secret' }
 	local special_resistances = false
 	local special_defense = false
 	local all_terrains = { 'flat', 'frozen', 'forest', 'village', 'swamp_water', 'cave', 'reef', 'shallow_water', 'fungus', 'mountains', 'castle', 'sand', 'hills', 'deep_water', 'unwalkable' }
@@ -357,7 +357,11 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 		local value = c.all_res + small_modifier
 		params[6]['exists'] = true
 		for k,v in ipairs(all_resistances) do
-			params[6][v] = params[6][v] + value
+			if v == 'secret' then
+				params[6][v] = params[6][v] + math.ceil( 0.65 * value)
+			else
+				params[6][v] = params[6][v] + value
+			end
 		end
 		
 		description = description .. 'Resistance (all) <span color="#61ab64">+' .. value .. "%</span>\n"
@@ -377,7 +381,11 @@ function wesnoth.wml_actions.qquws_generate_champion_params(cfg)
 		local value = c.magical + small_modifier
 		params[6]['exists'] = true
 		for k,v in ipairs(magical_resistances) do
-			params[6][v] = params[6][v] + value
+			if v == 'secret' then
+				params[6][v] = params[6][v] + math.ceil( 1.65 * value)
+			else
+				params[6][v] = params[6][v] + value
+			end
 		end
 		
 		description = description .. 'Resistance (magical) <span color="#61ab64">+' .. value .. "%</span>\n"

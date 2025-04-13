@@ -1,3 +1,4 @@
 <span color='#e4aef2'>v2.6.7</span> (date):
 - Original TSW map now spawns ageless units in predefined mode when ageless era is used
+- Armored units and some champion bonuses now increase secret resistance as well
 - Minor balancing of various maps, units, and difficulty settings
