@@ -35,9 +35,9 @@ local find_amla_buffs = function(amla_settings)
 		end
 		
 		if amla_settings['has_magical_melee'] then
-			if amla_settings['is_strong'] then
-				allowed_amlas[#allowed_amlas + 1] = 'M_MAG_ACC'
-			end
+			allowed_amlas[#allowed_amlas + 1] = 'M_MAG_ACC'
+		elseif amla_settings['has_ranged'] then
+			allowed_amlas[#allowed_amlas + 1] = 'M_PAR'
 		else
 			allowed_amlas[#allowed_amlas + 1] = 'M_ACC'
 
@@ -61,7 +61,18 @@ local find_amla_buffs = function(amla_settings)
 		allowed_amlas[#allowed_amlas + 1] = 'PHYS_RES'
 	end
 
-	if amla_settings['is_undead'] or amla_settings['is_dark_elf'] then
+	if amla_settings['is_undead'] then
+		allowed_amlas[#allowed_amlas + 1] = 'ARCANE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'PIERCE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'BLADE_FIRE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_DMG'
+
+		if not amla_settings['has_drains'] then
+			allowed_amlas[#allowed_amlas + 1] = 'SMALL_DRAINS'
+		end
+	end
+
+	if amla_settings['is_dark_elf'] then
 		allowed_amlas[#allowed_amlas + 1] = 'ARCANE_RES'
 		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_DMG'
 	end
@@ -76,6 +87,10 @@ local find_amla_buffs = function(amla_settings)
 		allowed_amlas[#allowed_amlas + 1] = 'BLADE_RES'
 		allowed_amlas[#allowed_amlas + 1] = 'PIERCE_RES'
 		allowed_amlas[#allowed_amlas + 1] = 'COLD_RES'
+
+		if not amla_settings['has_ranged'] then
+			allowed_amlas[#allowed_amlas + 1] = 'MELEE_DUEL'
+		end
 	end
 
 	if amla_settings['is_elf'] then
@@ -89,30 +104,40 @@ local find_amla_buffs = function(amla_settings)
 
 		if amla_settings['has_melee'] and not amla_settings['has_magical_melee'] then
 			allowed_amlas[#allowed_amlas + 1] = 'ELF_M_ACC'
-			allowed_amlas[#allowed_amlas + 1] = 'BLADE_RES'
 			allowed_amlas[#allowed_amlas + 1] = 'EXTRA_MP'
 		end
 
 		if amla_settings['has_magical_ranged'] then
 			allowed_amlas[#allowed_amlas + 1] = 'ARCANE_RES'
+			allowed_amlas[#allowed_amlas + 1] = 'SLOW_IMMUNE'
 		end
 	end
 
 	if amla_settings['is_dwarf'] then
 		allowed_amlas[#allowed_amlas + 1] = 'CAVE_MOUNT_DEF'
 		allowed_amlas[#allowed_amlas + 1] = 'DWARF_DMG'
+
+		if not amla_settings['has_steadfast'] then
+			allowed_amlas[#allowed_amlas + 1] = 'DWARF_DEFENSIVE_STANCE'
+		end
 	end
 
 	if amla_settings['is_troll'] then
 		allowed_amlas[#allowed_amlas + 1] = 'CAVE_HILLS_DEF'
 		allowed_amlas[#allowed_amlas + 1] = 'TROLL_DMG'
 		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_RES'
+
+		if not amla_settings['has_ranged'] then
+			allowed_amlas[#allowed_amlas + 1] = 'MELEE_VISCIOUS'
+			allowed_amlas[#allowed_amlas + 1] = 'ATTACK_OFFENSIVE_STANCE'
+		end
 	end
 
 	if amla_settings['is_wose'] then
 		allowed_amlas[#allowed_amlas + 1] = 'BLADE_RES'
 		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_PIERCE_RES'
 		allowed_amlas[#allowed_amlas + 1] = 'WOSE_DMG'
+		allowed_amlas[#allowed_amlas + 1] = 'QUICK_FIGHT_RECOVERY'
 	end
 
 	if amla_settings['is_drake'] then
@@ -128,11 +153,16 @@ local find_amla_buffs = function(amla_settings)
 	if amla_settings['is_orc'] then
 		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_STRIKE'
 		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_MP'
+
+		if amla_settings['has_ranged'] then
+			allowed_amlas[#allowed_amlas + 1] = 'BACKSTAB_RANGED'
+		end
 	end
 
 	if amla_settings['is_fish'] then
 		allowed_amlas[#allowed_amlas + 1] = 'WATER_DEF'
 		allowed_amlas[#allowed_amlas + 1] = 'FISH_FLAT_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'SLOW_IMMUNE'
 	end
 
 	if amla_settings['is_goblin'] then
@@ -189,6 +219,10 @@ local find_amla_buffs = function(amla_settings)
 			allowed_amlas[#allowed_amlas + 1] = 'M_RABID_ATTACK'
 		end
 	end
+
+	if amla_settings['has_poison'] then
+		allowed_amlas[#allowed_amlas + 1] = 'STRONG_POISON'
+	end
 	
 	return allowed_amlas
 end
@@ -205,6 +239,8 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 		['has_op_magical_ranged'] = wml.variables["qquws_amla_data.has_op_magical_ranged"],
 		['has_magical_melee'] = wml.variables["qquws_amla_data.has_magical_melee"],
 		['has_steadfast'] = wml.variables["qquws_amla_data.has_steadfast"],
+		['has_poison'] = wml.variables["qquws_amla_data.has_poison"],
+		['has_drains'] = wml.variables["qquws_amla_data.has_drains"],
 		['is_fast'] = wml.variables["qquws_amla_data.is_fast"],
 		['is_strong'] = wml.variables["qquws_amla_data.is_strong"],
 		['is_dextrous'] = wml.variables["qquws_amla_data.is_dextrous"],
