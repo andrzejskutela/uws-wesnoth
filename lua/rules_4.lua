@@ -258,6 +258,7 @@ return {
 	{ ['t'] = 63, ['d'] = 7, ['side'] = 3, ['x'] = 7, ['lvl'] = 3, ['type'] = 'Dwarvish Sentinel', ['default'] = 'Dwarvish Sentinel', },
 	{ ['t'] = 63, ['d'] = 7, ['side'] = 3, ['x'] = 8, ['lvl'] = 3, ['type'] = 'Dwarvish Sentinel', ['default'] = 'Dwarvish Sentinel', },
 	{ ['t'] = 63, ['d'] = 7, ['side'] = 3, ['x'] = 9, ['lvl'] = 3, ['type'] = 'Dwarvish Sentinel', ['default'] = 'Dwarvish Sentinel', },
+	{ ['t'] = 64, ['d'] = 7, ['side'] = 3, ['x'] = 9, ['lvl'] = 5, ['type'] = 'QQ_thundercrown', ['default'] = 'QQ_thundercrown', ['buff'] = 'A61:B31:C37' },
 	
 	-- 65 - 71 (mask y 105 - 99)
 	

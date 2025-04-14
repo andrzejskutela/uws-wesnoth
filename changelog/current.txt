@@ -5,5 +5,6 @@
 - Insane mode added to Dimaga Beach map
 - Original TSW map now spawns ageless units in predefined mode when ageless era is used
 - Armored units and some champion bonuses now increase secret resistance as well
+- New lvl5 uws unique unit added - Dwarvish ThunderCrown
 - Fixed Hack'n Slash bug where some enemies did not receive xp mod buff
 - Minor balancing of various maps, units, buffs, and difficulty settings
