@@ -25,6 +25,10 @@ local find_amla_buffs = function(amla_settings)
 				allowed_amlas[#allowed_amlas + 1] = 'R_PAR'
 			end
 		end
+
+		if amla_settings['has_thrown_weapon'] then
+			allowed_amlas[#allowed_amlas + 1] = 'R_CRIT_DAMAGE'
+		end
 	end
 	
 	if amla_settings['has_melee'] then
@@ -99,6 +103,8 @@ local find_amla_buffs = function(amla_settings)
 
 		if amla_settings['alignment'] == 'lawful' then
 			allowed_amlas[#allowed_amlas + 1] = 'ATT_LAWFUL'
+		elseif amla_settings['alignment'] == 'chaotic' and amla_settings['has_cold_attack'] then
+			allowed_amlas[#allowed_amlas + 1] = 'COLD_DEATH_VOODOO'
 		end
 	end
 
@@ -139,7 +145,10 @@ local find_amla_buffs = function(amla_settings)
 
 		if not amla_settings['has_ranged'] then
 			allowed_amlas[#allowed_amlas + 1] = 'MELEE_VISCIOUS'
-			allowed_amlas[#allowed_amlas + 1] = 'ATTACK_OFFENSIVE_STANCE'
+
+			if amla_settings['is_strong'] then
+				allowed_amlas[#allowed_amlas + 1] = 'M_CRITICAL_DAMAGE'
+			end
 		end
 	end
 
@@ -153,12 +162,26 @@ local find_amla_buffs = function(amla_settings)
 	if amla_settings['is_drake'] then
 		allowed_amlas[#allowed_amlas + 1] = 'SAND_CASTLE_DEF'
 		allowed_amlas[#allowed_amlas + 1] = 'PIERCE_RES'
+
+		if amla_settings['is_strong'] and not amla_settings['is_fast'] and not amla_settings['is_quick'] then
+			allowed_amlas[#allowed_amlas + 1] = 'M_CRITICAL_DAMAGE'
+		end
 	end
 
 	if amla_settings['is_saurian'] then
 		allowed_amlas[#allowed_amlas + 1] = 'SWAMP_FLAT_DEF'
-		allowed_amlas[#allowed_amlas + 1] = 'MINI_DEF_EVERYWHERE'
 		allowed_amlas[#allowed_amlas + 1] = 'COLD_RES'
+
+		if amla_settings['has_cold_attack'] then
+			allowed_amlas[#allowed_amlas + 1] = 'COLD_LIFE_VOODOO'
+			allowed_amlas[#allowed_amlas + 1] = 'COLD_DEATH_VOODOO'
+
+			if not amla_settings['has_poison'] then
+				allowed_amlas[#allowed_amlas + 1] = 'COLD_WEAKEN'
+			end
+		else 
+			allowed_amlas[#allowed_amlas + 1] = 'MINI_DEF_EVERYWHERE'
+		end
 	end
 
 	if amla_settings['is_orc'] then
@@ -246,8 +269,14 @@ local find_amla_buffs = function(amla_settings)
 
 	if amla_settings['has_poison'] then
 		allowed_amlas[#allowed_amlas + 1] = 'STRONG_POISON'
+		allowed_amlas[#allowed_amlas + 1] = 'SUPER_POISON'
+		allowed_amlas[#allowed_amlas + 1] = 'POISON_WEAKEN'
 	end
 	
+	if amla_settings['is_fearless'] then
+		allowed_amlas[#allowed_amlas + 1] = 'ATTACK_OFFENSIVE_STANCE'
+	end
+
 	return allowed_amlas
 end
 
@@ -262,7 +291,9 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 		['has_melee'] = wml.variables["qquws_amla_data.has_melee_attack"],
 		['has_magical_ranged'] = wml.variables["qquws_amla_data.has_magical_ranged"],
 		['has_op_magical_ranged'] = wml.variables["qquws_amla_data.has_op_magical_ranged"],
+		['has_thrown_weapon'] = wml.variables["qquws_amla_data.has_thrown_weapon"],
 		['has_magical_melee'] = wml.variables["qquws_amla_data.has_magical_melee"],
+		['has_cold_attack'] = wml.variables["qquws_amla_data.has_cold_attack"],
 		['has_steadfast'] = wml.variables["qquws_amla_data.has_steadfast"],
 		['has_poison'] = wml.variables["qquws_amla_data.has_poison"],
 		['has_drains'] = wml.variables["qquws_amla_data.has_drains"],
@@ -272,6 +303,7 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 		['is_quick'] = wml.variables["qquws_amla_data.is_quick"],
 		['is_resilient'] = wml.variables["qquws_amla_data.is_resilient"],
 		['is_intelligent'] = wml.variables["qquws_amla_data.is_intelligent"],
+		['is_fearless'] = wml.variables["qquws_amla_data.is_fearless"],
 		['is_healthy'] = wml.variables["qquws_amla_data.is_healthy"],
 		['is_undead'] = wml.variables["qquws_amla_data.is_undead"],
 		['is_mechanical'] = wml.variables["qquws_amla_data.is_mechanical"],
