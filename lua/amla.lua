@@ -94,7 +94,6 @@ local find_amla_buffs = function(amla_settings)
 	if amla_settings['is_human'] then
 		allowed_amlas[#allowed_amlas + 1] = 'VIL_CASTLE_DEF'
 		allowed_amlas[#allowed_amlas + 1] = 'BLADE_RES'
-		allowed_amlas[#allowed_amlas + 1] = 'PIERCE_RES'
 		allowed_amlas[#allowed_amlas + 1] = 'COLD_RES'
 
 		if not amla_settings['has_ranged'] then
@@ -103,6 +102,8 @@ local find_amla_buffs = function(amla_settings)
 
 		if amla_settings['alignment'] == 'lawful' then
 			allowed_amlas[#allowed_amlas + 1] = 'ATT_LAWFUL'
+			allowed_amlas[#allowed_amlas + 1] = 'PIERCE_RES'
+
 		elseif amla_settings['alignment'] == 'chaotic' and amla_settings['has_cold_attack'] then
 			allowed_amlas[#allowed_amlas + 1] = 'COLD_DEATH_VOODOO'
 		end
