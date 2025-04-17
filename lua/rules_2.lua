@@ -249,7 +249,7 @@ return {
 	{ ['t'] = 51, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Hellhound', ['default'] = 'Direwolf Rider', ['guard'] = true },
 	{ ['t'] = 53, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['armored'] = 20, ['gold'] = 9, },
 	{ ['t'] = 54, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['gold'] = 5, ['aggressive'] = 1 },
-	{ ['t'] = 54, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Spiderpriest', ['default'] = 'Dark Sorcerer', ['recruits'] = 'AE_stf_free_saurians_Spider,AE_ext_monsters_Little_Spider,AE_rhy_de_Small_Spider', ['default_recruits'] = 'Ghost,Ghoul,Skeleton Archer', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 80, ['gold'] = 40, },
+	{ ['t'] = 54, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Spiderpriest', ['default'] = 'Dark Sorcerer', ['recruits'] = 'AE_stf_free_saurians_Spider,AE_ext_monsters_Little_Spider,AE_rhy_de_Small_Spider', ['default_recruits'] = 'Ghost,Ghoul,Skeleton Archer', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 80, ['gold'] = 40, ['recruit_minion'] = 'C39' },
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 4, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_myh_Gargoyle', ['default'] = 'Wolf Rider', ['gold'] = 4 },
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_myh_Blood_Hulk', ['default'] = 'Chocobone', ['gold'] = 22, ['buff'] = 'A20:B20:C20:B21:C48' },
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 4, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_stf_free_saurians_Tarantula', ['default'] = 'Goblin Pillager', ['guard'] = true },
