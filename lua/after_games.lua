@@ -624,6 +624,7 @@ end
 
 function wesnoth.wml_actions.qquws_generate_random_boosts_table(cfg)
 	local wml_table_name = cfg.var
+	local wml_second_table_name = cfg.second_var
 	local boosts_table = {}
 	local new_item = ''
 	local all_table = all_boosts_table
@@ -643,6 +644,10 @@ function wesnoth.wml_actions.qquws_generate_random_boosts_table(cfg)
 
 	for k,v in pairs(boosts_table) do
 		wml.variables[wml_table_name .. '.' .. k .. '_available'] = v
+
+		if wml_second_table_name then
+			wml.variables[wml_second_table_name .. '.' .. k .. '_available'] = v
+		end
 	end
 end
 

@@ -24,10 +24,10 @@ local find_amla_buffs = function(amla_settings)
 			if amla_settings['is_quick'] or amla_settings['is_undead'] then
 				allowed_amlas[#allowed_amlas + 1] = 'R_PAR'
 			end
-		end
 
-		if amla_settings['has_thrown_weapon'] then
-			allowed_amlas[#allowed_amlas + 1] = 'R_CRIT_DAMAGE'
+			if amla_settings['has_thrown_weapon'] then
+				allowed_amlas[#allowed_amlas + 1] = 'R_CRIT_DAMAGE'
+			end
 		end
 	end
 	
