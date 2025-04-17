@@ -1,6 +1,7 @@
 <span color='#e4aef2'>v2.6.7</span> (date):
 - Badamar's Icicle - item partially redesigned on higher ranks
 - Potion of Agility - buffed defense on higher ranks
+- Emerald Trident - fixed broken paralyse attack
 - New AMLAs added to the pool
 - Max Hitpoints AMLA buffed to 10%
 - Insane mode added to Dimaga Beach map
