@@ -1,6 +1,7 @@
-<span color='#e4aef2'>v2.6.7</span> (date):
+<span color='#e4aef2'>v2.6.7</span> (17/04/2024):
 - Potion of Swiftness - item partially redesigned and renamed Tracker's Disguise
 - Badamar's Icicle - item partially redesigned on higher ranks
+- Perkele's Undying Ember - item significantly buffed on higher ranks
 - Potion of Agility - buffed defense on higher ranks
 - Emerald Trident - fixed broken paralyse attack
 - Consecrated Blade - improved handling of reversed polarity special
