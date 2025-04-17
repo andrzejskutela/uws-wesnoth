@@ -69,6 +69,11 @@ local find_amla_buffs = function(amla_settings)
 
 		if not amla_settings['has_drains'] then
 			allowed_amlas[#allowed_amlas + 1] = 'SMALL_DRAINS'
+			allowed_amlas[#allowed_amlas + 1] = 'BLOODLUST'
+		end
+
+		if amla_settings['alignment'] == 'chaotic' then
+			allowed_amlas[#allowed_amlas + 1] = 'ATT_HATEFUL'
 		end
 	end
 
@@ -90,6 +95,10 @@ local find_amla_buffs = function(amla_settings)
 
 		if not amla_settings['has_ranged'] then
 			allowed_amlas[#allowed_amlas + 1] = 'MELEE_DUEL'
+		end
+
+		if amla_settings['alignment'] == 'lawful' then
+			allowed_amlas[#allowed_amlas + 1] = 'ATT_LAWFUL'
 		end
 	end
 
@@ -116,6 +125,7 @@ local find_amla_buffs = function(amla_settings)
 	if amla_settings['is_dwarf'] then
 		allowed_amlas[#allowed_amlas + 1] = 'CAVE_MOUNT_DEF'
 		allowed_amlas[#allowed_amlas + 1] = 'DWARF_DMG'
+		allowed_amlas[#allowed_amlas + 1] = 'ATT_BROTHERHOOD'
 
 		if not amla_settings['has_steadfast'] then
 			allowed_amlas[#allowed_amlas + 1] = 'DWARF_DEFENSIVE_STANCE'
@@ -147,6 +157,7 @@ local find_amla_buffs = function(amla_settings)
 
 	if amla_settings['is_saurian'] then
 		allowed_amlas[#allowed_amlas + 1] = 'SWAMP_FLAT_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'MINI_DEF_EVERYWHERE'
 		allowed_amlas[#allowed_amlas + 1] = 'COLD_RES'
 	end
 
@@ -156,6 +167,14 @@ local find_amla_buffs = function(amla_settings)
 
 		if amla_settings['has_ranged'] then
 			allowed_amlas[#allowed_amlas + 1] = 'BACKSTAB_RANGED'
+		end
+
+		if amla_settings['alignment'] == 'chaotic' then
+			allowed_amlas[#allowed_amlas + 1] = 'ATT_HATEFUL'
+		end
+
+		if not amla_settings['has_poison'] and amla_settings['is_strong'] then
+			allowed_amlas[#allowed_amlas + 1] = 'BIG_BLOODLUST'
 		end
 	end
 
@@ -167,6 +186,7 @@ local find_amla_buffs = function(amla_settings)
 
 	if amla_settings['is_goblin'] then
 		allowed_amlas[#allowed_amlas + 1] = 'HILLS_MOUNT_DEF'
+		allowed_amlas[#allowed_amlas + 1] = 'MINI_DEF_EVERYWHERE'
 	end
 
 	if amla_settings['is_centaur'] then
@@ -195,6 +215,10 @@ local find_amla_buffs = function(amla_settings)
 			allowed_amlas[#allowed_amlas + 1] = 'BIG_BLOODLUST'
 		else
 			allowed_amlas[#allowed_amlas + 1] = 'BLOODLUST'
+		end
+
+		if amla_settings['alignment'] == 'chaotic' then
+			allowed_amlas[#allowed_amlas + 1] = 'ATT_HATEFUL'
 		end
 	end
 
@@ -232,6 +256,7 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 
 	local amla_settings = {
 		['level'] = wml.variables['qquws_amla_data.level'],
+		['alignment'] = wml.variables['qquws_amla_data.alignment'],
 		['has_default_regenerates'] = wml.variables['qquws_amla_data.has_default_regenerates'],
 		['has_ranged'] = wml.variables["qquws_amla_data.has_ranged_attack"],
 		['has_melee'] = wml.variables["qquws_amla_data.has_melee_attack"],
