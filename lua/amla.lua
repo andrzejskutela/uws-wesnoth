@@ -158,6 +158,7 @@ local find_amla_buffs = function(amla_settings)
 		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_PIERCE_RES'
 		allowed_amlas[#allowed_amlas + 1] = 'WOSE_DMG'
 		allowed_amlas[#allowed_amlas + 1] = 'QUICK_FIGHT_RECOVERY'
+		allowed_amlas[#allowed_amlas + 1] = 'ENTANGLING_ROOTS'
 	end
 
 	if amla_settings['is_drake'] then
