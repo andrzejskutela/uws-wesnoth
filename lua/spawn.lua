@@ -259,6 +259,10 @@ local function process_spawn_table(spawn_table)
 				if rules['agile'] > 0 then
 					titles[#titles + 1] = 'Agile'
 				end
+
+				if rules['aggressive'] > 0 then
+					titles[#titles + 1] = 'Aggressive'
+				end
 				
 				if rules['fast'] > 0 then
 					titles[#titles + 1] = 'Fast'
@@ -270,10 +274,6 @@ local function process_spawn_table(spawn_table)
 				
 				if rules['bulky'] > 0 then
 					titles[#titles + 1] = 'Bulky'
-				end
-
-				if rules['aggressive'] > 0 then
-					titles[#titles + 1] = 'Aggressive'
 				end
 				
 				if rules['beefy'] > 0 then
