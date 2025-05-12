@@ -43,7 +43,7 @@ return {
 	-- 2 - 8 (mask y 74 - 68)
 	
 	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Drone', ['default'] = 'Mage', },
-	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_agl_steelhive_Repairer', ['default'] = 'Naga Warrior', ['recruits'] = 'AE_agl_steelhive_Sentient,AE_agl_steelhive_Oculus', ['default_recruits'] = 'Naga Fighter,Saurian Augur', ['r_lvls'] = '1,1', ['recruitment_gold'] = 35, ['gold'] = 50, ['recruit_armored'] = 10, },
+	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_agl_steelhive_Repairer', ['default'] = 'Naga Warrior', ['recruits'] = 'AE_agl_steelhive_Sentient,AE_agl_steelhive_Slasher', ['default_recruits'] = 'Naga Fighter,Saurian Augur', ['r_lvls'] = '1,1', ['recruitment_gold'] = 35, ['gold'] = 50, ['recruit_armored'] = 10, },
 	{ ['t'] = 5, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Cyborg', ['default'] = 'Troll Whelp', },
 	{ ['t'] = 8, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Cyborg', ['default'] = 'Troll Whelp', },
 	{ ['t'] = 8, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Mechanical_Seeker', ['default'] = 'Poacher', },
@@ -52,7 +52,7 @@ return {
 	
 	{ ['t'] = 4, ['d'] = 4, ['side'] = 2, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_agl_steelhive_Cybercore', ['default'] = 'Naga Fighter', ['bulky'] = 32, ['armored'] = 20 },
 
-	{ ['t'] = 5, ['d'] = 7, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_agl_steelhive_Slasher', ['default'] = 'Naga Dirkfang', },
+	{ ['t'] = 5, ['d'] = 7, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_agl_steelhive_Oculus', ['default'] = 'Naga Dirkfang', },
 	
 	-- 9 - 15 (mask y 67 - 61)
 	
