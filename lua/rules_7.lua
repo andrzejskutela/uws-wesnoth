@@ -112,8 +112,8 @@ return {
 	{ ['t'] = 24, ['d'] = 3, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_thelian_deerstalker', ['default'] = 'Elvish Ranger', ['disallow_slash_unguardian'] = true, },
 	{ ['t'] = 27, ['d'] = 3, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', },
 	
-	{ ['t'] = 26, ['d'] = 4, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_warrior', ['default'] = 'Dwarvish Stalwart', ['guard'] = true },
 	{ ['t'] = 24, ['d'] = 4, ['side'] = 4, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_mie_thelian_wolf', ['default'] = 'Bay Horse', },
+	{ ['t'] = 26, ['d'] = 4, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_warrior', ['default'] = 'Dwarvish Stalwart', ['guard'] = true },
 	{ ['t'] = 28, ['d'] = 4, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'Great Wolf', ['default'] = 'Great Wolf', },
 	
 	{ ['t'] = 25, ['d'] = 6, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_berserker_golem', ['default'] = 'Dwarvish Berserker', },

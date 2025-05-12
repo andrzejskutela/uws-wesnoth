@@ -67,13 +67,12 @@ return {
 	{ ['row'] = 'object', ['t'] = 10, ['x'] = 8, ['cat'] = 'rune', ['image'] = 'items/dummy.png', ['amount'] = 1, ['name'] = 'Armory', ['set'] = 'R4', ['color'] = '#a7b2b5', ['tooltip'] = '+10% physical resistance (100%)' },
 	
 
-	{ ['row'] = 'object', ['t'] = 41, ['x'] = 8, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 50 },
+	{ ['row'] = 'object', ['t'] = 41, ['x'] = 8, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 85 },
 	{ ['row'] = 'object', ['t'] = 50, ['x'] = 17, ['cat'] = 'hidden_unit', ['type'] = 'AE_fut_brungar_Undecided_Student', ['type_default'] = 'Peasant', ['message'] = "Hey man! I'm so glad to see someone normal here. Listen, this is insane what is going on here I need to get the hell out of here! If you escort me to the <span color='#8de1f2'>Crystal Forest</span> I will reward you greatly!", ['new_unit_special_id'] = 'rfc_crystal_forest_escort_unit' },
 	{ ['row'] = 'object', ['t'] = 56, ['x'] = 8, ['cat'] = 'rune', ['image'] = 'scenery/uws/stone-circle.png', ['amount'] = 2, ['name'] = 'Stone Circle', ['set'] = 'R6,R7', ['color'] = '#a0a2ad', ['tooltip'] = '+10% forest defense (50%)\
 +10% hills defense (50%)' },
 	{ ['row'] = 'object', ['t'] = 63, ['x'] = 11, ['cat'] = 'decorative', ['image'] = 'halo/monster/stoat-frost-mask.png', ['name'] = 'Town of Ahrenvou' },
 
-	{ ['row'] = 'item', ['t'] = 85, ['x'] = 23, ['asymmetric'] = true, ['pool'] = { 'cold_res','cold_weapon','freezing_gem','icewind_aura' }, },
 	{ ['row'] = 'object', ['t'] = 90, ['x'] = 7, ['image'] = 'halo/elven/druid-healing8.png', ['name'] = 'Crystal Forest', ['cat'] = 'event', ['event'] = 'rfc_3_crystal_forest', },
 	{ ['row'] = 'object', ['t'] = 98, ['x'] = 24, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 100 },
 
@@ -225,13 +224,113 @@ return {
 	
 	-- 44 - 50 (mask y 141 - 135)     old t=5 to t=11
 
-	-- 51 - 56 (mask y 134 - 128)     old t=12 to t=17
-
-	-- 57 - 63 (mask y 127 - 121)     old t=18 to t=24
-
-	-- 64 - 70 (mask y 120 - 114)     old t=25 to t=31
+	{ ['t'] = 44, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_rhy_fh_Axethrower', ['default'] = 'Elvish Fighter', ['guard'] = true },
+	{ ['t'] = 45, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_rhy_fd_Gnome_Mage', ['default'] = 'Mage', ['recruits'] = 'AE_rhy_fh_Archer,AE_rhy_fh_Axethrower,AE_rhy_fh_Shaman', ['default_recruits'] = 'Elvish Fighter,Elvish Archer,Elvish Shaman', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 110, ['recruit_minion'] = 'C30' },
+	{ ['t'] = 48, ['d'] = 1, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_agl_yokai_Leshi', ['default'] = 'Elvish Druid', ['gold'] = 20, },
+	{ ['t'] = 48, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Water_Snake', ['default'] = 'Naga Fighter', },
+	{ ['t'] = 49, ['d'] = 1, ['side'] = 4, ['x'] = 7, ['lvl'] = 0, ['type'] = 'AE_mrc_hive_Gnat', ['default'] = 'Giant Rat', ['race_guard_off'] = true, },
+	{ ['t'] = 50, ['d'] = 1, ['side'] = 4, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Queen', ['default'] = 'Naga Warrior', ['recruits'] = 'AE_mrc_hive_Beetle,AE_mrc_hive_Mosquito,AE_mrc_hive_Swarm', ['default_recruits'] = 'Naga Dirkfang,Naga Fighter,Naga Guard', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 120, ['recruit_minion'] = 'D2' },
 	
+	{ ['t'] = 49, ['d'] = 2, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_bem_wood_warriors_Carnivore_Plant', ['default'] = 'Elvish Fighter', ['race_guard_off'] = true, },
+
+	{ ['t'] = 46, ['d'] = 3, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_rhy_fd_Giant', ['default'] = 'Young Ogre', ['race_guard_off'] = true, ['bulky'] = 40 },
+
+	{ ['t'] = 49, ['d'] = 4, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Drone', ['default'] = 'Naga Fighter', ['agile'] = 5 },
+
+	{ ['t'] = 46, ['d'] = 5, ['side'] = 3, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Firefly', ['default'] = 'Naga Guard', },
+
+	{ ['t'] = 49, ['d'] = 6, ['side'] = 4, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_efm_pygmies_Crocodile', ['default'] = 'Naga Guard', ['beefy'] = 24, },
+
+	-- 51 - 56 (mask y 134 - 128)
+
+	{ ['t'] = 52, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', ['guard'] = true, },
+	{ ['t'] = 53, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_agl_yokai_Kodama', ['default'] = 'Wose Shaman', ['guard'] = true, },
+	{ ['t'] = 53, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', ['guard'] = true, },
+	{ ['t'] = 55, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_mie_thelian_guardian', ['default'] = 'Elvish Champion', ['guard'] = true },
+	{ ['t'] = 56, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_agl_yokai_Medusa_Witch', ['default'] = 'Wild Wyvern', ['race_guard_off'] = true, ['calls_for_help'] = true },
+
+	{ ['t'] = 56, ['d'] = 2, ['side'] = 4, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_rhy_mh_Stonegolem', ['default'] = 'Ogre', ['guard'] = true, },
+
+	{ ['t'] = 51, ['d'] = 3, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_rhy_ey_Waterpixie', ['default'] = 'Elder Falcon', },
+
+	{ ['t'] = 52, ['d'] = 4, ['side'] = 3, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_rhy_ey_Nymph', ['default'] = 'Water Serpent', ['guard'] = true, },
+
+	{ ['t'] = 55, ['d'] = 5, ['side'] = 2, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_myh_Water', ['default'] = 'Elder Falcon', },
+
+	{ ['t'] = 54, ['d'] = 6, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_bem_wood_warriors_Fatal_Tangle', ['default'] = 'Wose Shaman', ['buff'] = 'A29:B15:C43:C21', },
+
+
+	-- 57 - 63 (mask y 127 - 121)
+
+	{ ['t'] = 57, ['d'] = 1, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_mie_thelian_feral', ['default'] = 'Elvish Fighter', ['guard'] = true, ['fast'] = 1 },
+	{ ['t'] = 58, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mie_thelian_spirit', ['default'] = 'Elvish Scout', ['agile'] = 10 },
+	{ ['t'] = 58, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_mie_thelian_warrior', ['default'] = 'Elvish Fighter', ['beefy'] = 24 },
+	{ ['t'] = 59, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Wose', ['default'] = 'Wose', ['bulky'] = 40, ['guard'] = true },
+	{ ['t'] = 60, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_myh_Water', ['default'] = 'Elder Falcon', ['race_guard_off'] = true, },
+	{ ['t'] = 61, ['d'] = 1, ['side'] = 2, ['x'] = 12, ['lvl'] = 3, ['type'] = 'AE_rhy_fh_Forestking', ['default'] = 'Elvish High Lord', ['recruits'] = 'AE_mie_thelian_shaman,AE_mie_thelian_hunter,AE_mie_thelian_deer_rider,AE_rhy_fd_Giant,AE_rhy_fd_Gnome_Musican', ['default_recruits'] = 'Elvish Fighter,Elvish Archer,Elvish Shaman,Elvish Scout,Mage', ['r_lvls'] = '1,1,1,1,1', ['recruitment_gold'] = 180, },
+	{ ['t'] = 62, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 2, ['type'] = 'Wose Shaman', ['default'] = 'Wose Shaman', ['bulky'] = 100, ['event'] = 'follow_players_race', ['race_guard_off'] = true },
+	{ ['t'] = 63, ['d'] = 1, ['side'] = 2, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_mie_thelian_shaman', ['default'] = 'Elvish Shaman', },
+
+	{ ['t'] = 62, ['d'] = 2, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mie_thelian_spirit', ['default'] = 'Elvish Scout', ['aggressive'] = 2, },
+
+	{ ['t'] = 59, ['d'] = 3, ['side'] = 2, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_rhy_fh_Healer', ['default'] = 'Elvish Sorceress', },
+	{ ['t'] = 63, ['d'] = 3, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_thelian_deerstalker', ['default'] = 'Elvish Ranger', ['disallow_slash_unguardian'] = true, },
+
+	{ ['t'] = 63, ['d'] = 4, ['side'] = 2, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_mie_thelian_wolf', ['default'] = 'Bay Horse', },
+
+
+	{ ['t'] = 60, ['d'] = 6, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_thelian_chieftain', ['default'] = 'Elvish Captain', ['bulky'] = 32, ['beefy'] = 20, ['ai_add_gold'] = 70, },
+
+
+	-- 64 - 70 (mask y 120 - 114)
 	
+	{ ['t'] = 64, ['d'] = 1, ['side'] = 2, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_mie_thelian_wolf_fanatic', ['default'] = 'Elvish Hero', },
+	{ ['t'] = 66, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', },
+	{ ['t'] = 67, ['d'] = 1, ['side'] = 3, ['x'] = 25, ['lvl'] = 3, ['type'] = 'AE_agl_frozen_ice_golem_king', ['default'] = 'Dwarvish Runemaster', ['buff'] = 'A26:B16:C45', ['story_message'] = 'So you decided to take the path through the mountains? You will not pass and I will see to it!', ['story_response'] = 'Stay together! We have won battles with worse opponents!', ['item'] = true },
+	{ ['t'] = 67, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', },
+	{ ['t'] = 68, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', },
+	{ ['t'] = 70, ['d'] = 1, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_spearman', ['default'] = 'Dwarvish Fighter', },
+
+	{ ['t'] = 68, ['d'] = 2, ['side'] = 2, ['x'] = 8, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', },
+	{ ['t'] = 70, ['d'] = 2, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'Direwolf', ['default'] = 'Direwolf', },
+
+	{ ['t'] = 66, ['d'] = 3, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', },
+	{ ['t'] = 68, ['d'] = 3, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_ice_golem', ['default'] = 'Dwarvish Guardsman', },
+
+	{ ['t'] = 66, ['d'] = 4, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_warrior', ['default'] = 'Dwarvish Stalwart', },
+	{ ['t'] = 67, ['d'] = 4, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'Great Wolf', ['default'] = 'Great Wolf', },
+
+	{ ['t'] = 65, ['d'] = 5, ['side'] = 3, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_berserker_golem', ['default'] = 'Dwarvish Berserker', ['calls_for_help'] = true },
+	{ ['t'] = 69, ['d'] = 5, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_spearman', ['default'] = 'Dwarvish Fighter', },
+	{ ['t'] = 70, ['d'] = 5, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_spearman', ['default'] = 'Dwarvish Fighter', },
+
+	{ ['t'] = 68, ['d'] = 6, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'Great Wolf', ['default'] = 'Great Wolf', ['fast'] = 1 },
+	{ ['t'] = 70, ['d'] = 6, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_big_ice_golem', ['default'] = 'Dwarvish Steelclad', ['bulky'] = 48, },
+
+
+	-- 71 - 77 (mask y 113 - 107)    old t=0 to t=4
+
+	{ ['t'] = 71, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_gunner', ['default'] = 'Dwarvish Stalwart', ['guard'] = true, ['armored'] = 20 },
+	{ ['t'] = 74, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_mage', ['default'] = 'Dwarvish Pathfinder', ['bulky'] = 20, },
+	{ ['t'] = 74, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_spearman', ['default'] = 'Dwarvish Fighter', },
+	{ ['t'] = 75, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_fighter', ['default'] = 'Dwarvish Thunderer', },
+
+	{ ['t'] = 77, ['d'] = 2, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_agl_frozen_frost_gunner_master', ['default'] = 'Dwarvish Sentinel', ['guard'] = true, ['disallow_slash_unguardian'] = true, ['armored'] = 30, ['gold'] = 20 },
+	
+	{ ['t'] = 77, ['d'] = 3, ['side'] = 3, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_rider', ['default'] = 'Dwarvish Ulfserker', ['beefy'] = 40 },
+	
+	{ ['t'] = 72, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_flying_golem', ['default'] = 'Gryphon Rider', ['agile'] = 15 },
+
+	{ ['t'] = 72, ['d'] = 5, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_spearman', ['default'] = 'Dwarvish Fighter', },
+
+
+	-- 78 - 84 (mask y 106 - 100)    old t=5 to t=11
+
+	-- 85 - 91 (mask y 99 - 93)    old t=12 to t=18
+
+	-- 92 - 98 (mask y 92 - 86)    old t=19 to t=26
+
+
 
 	
 	-- final boss 33 / mask y 5
