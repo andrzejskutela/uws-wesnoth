@@ -22,14 +22,14 @@ if r == 1 then
 	hidden_item['x'] = 17
 	hidden_item['y'] = 13
 elseif r == 2 then
-	hidden_item['x'] = 13
-	hidden_item['y'] = 14
+	hidden_item['x'] = 23
+	hidden_item['y'] = 9
 elseif r == 3 then
-	hidden_item['x'] = 24
+	hidden_item['x'] = 20
 	hidden_item['y'] = 6
 else
-	hidden_item['y'] = 11
-	hidden_item['x'] = 10
+	hidden_item['y'] = 10
+	hidden_item['x'] = 12
 end
 
 return {
@@ -53,9 +53,9 @@ return {
 	
 	hidden_item,
 	{ ['row'] = 'object', ['t'] = 1, ['x'] = 17, ['y'] = 13, ['image'] = 'items/bones.png', ['cat'] = 'decorative', },
-	{ ['row'] = 'object', ['t'] = 1, ['x'] = 13, ['y'] = 14, ['image'] = 'items/bones.png', ['cat'] = 'decorative', },
-	{ ['row'] = 'object', ['t'] = 1, ['x'] = 24, ['y'] = 6, ['image'] = 'items/bones.png', ['cat'] = 'decorative', },
-	{ ['row'] = 'object', ['t'] = 1, ['x'] = 10, ['y'] = 11, ['image'] = 'items/bones.png', ['cat'] = 'decorative', },
+	{ ['row'] = 'object', ['t'] = 1, ['x'] = 23, ['y'] = 9, ['image'] = 'items/bones.png', ['cat'] = 'decorative', },
+	{ ['row'] = 'object', ['t'] = 1, ['x'] = 20, ['y'] = 6, ['image'] = 'items/bones.png', ['cat'] = 'decorative', },
+	{ ['row'] = 'object', ['t'] = 1, ['x'] = 12, ['y'] = 10, ['image'] = 'items/bones.png', ['cat'] = 'decorative', },
 	
 	{ ['row'] = 'object', ['t'] = 1, ['x'] = 19, ['y'] = 10, ['cat'] = 'heal', ['image'] = 'scenery/leanto.png', ['name'] = "Medic's tent", ['amount'] = 4 },
 	{ ['row'] = 'object', ['t'] = 1, ['x'] = 10, ['y'] = 4, ['cat'] = 'heal', ['image'] = 'items/box.png', ['name'] = "Medicine box", ['amount'] = 6 },
@@ -76,12 +76,12 @@ return {
 	{ ['row'] = 'object', ['t'] = 90, ['x'] = 7, ['image'] = 'halo/elven/druid-healing8.png', ['name'] = 'Crystal Forest', ['cat'] = 'event', ['event'] = 'rfc_3_crystal_forest', },
 	{ ['row'] = 'object', ['t'] = 98, ['x'] = 24, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 100 },
 
-	{ ['row'] = 'object', ['t'] = 111, ['x'] = 11, ['image'] = 'scenery/temple-cracked3.png', ['cat'] = 'event', ['event'] = 'rfc_4b_temple', },
+	{ ['row'] = 'object', ['t'] = 111, ['x'] = 11, ['image'] = 'scenery/temple-cracked3.png', ['cat'] = 'event', ['event'] = 'rfc_temple', },
 	{ ['row'] = 'object', ['t'] = 115, ['x'] = 9, ['image'] = 'scenery/uws/altar.png', ['cat'] = 'decorative', ['render'] = false, ['id'] = 'sacrificial_altar' },
 	{ ['row'] = 'object', ['t'] = 115, ['x'] = 9, ['image'] = 'scenery/uws/altar-bloody.png', ['cat'] = 'decorative', ['render'] = false, ['id'] = 'bloody_altar' },
-	{ ['row'] = 'object', ['t'] = 114, ['x'] = 6, ['image'] = 'items/bones.png', ['cat'] = 'decorative', ['render'] = false, ['id'] = 'temple_bones' },
-	{ ['row'] = 'object', ['t'] = 115, ['x'] = 9, ['cat'] = 'event', ['event'] = 'rfc_4b_altar', },
-	{ ['row'] = 'object', ['t'] = 114, ['x'] = 6, ['cat'] = 'event', ['event'] = 'rfc_4b_bones', },
+	{ ['row'] = 'object', ['t'] = 115, ['x'] = 6, ['image'] = 'items/bones.png', ['cat'] = 'decorative', ['render'] = false, ['id'] = 'temple_bones' },
+	{ ['row'] = 'object', ['t'] = 115, ['x'] = 9, ['cat'] = 'event', ['event'] = 'rfc_altar', },
+	{ ['row'] = 'object', ['t'] = 115, ['x'] = 6, ['cat'] = 'event', ['event'] = 'rfc_bones', },
 	{ ['row'] = 'object', ['t'] = 130, ['x'] = 20, ['cat'] = 'rune', ['image'] = 'scenery/uws/energy_vortex_alt.png', ['amount'] = 3, ['name'] = 'Rune', ['set'] = 'R12,R13,R14', ['color'] = '#b366ed', ['tooltip'] = '+2 ranged parry (33%)\
 +2 ranged accuracy (33% - no effect on magical)\
 +1 ranged damage (33%)' },
@@ -326,7 +326,40 @@ return {
 
 	-- 78 - 84 (mask y 106 - 100)    old t=5 to t=11
 
+	{ ['t'] = 79, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_witch', ['default'] = 'Dwarvish Thunderguard', ['recruits'] = 'AE_agl_frozen_frost_fighter,AE_agl_frozen_frost_rider,AE_agl_frozen_frost_student,AE_agl_frozen_ice_golem', ['default_recruits'] = 'Dwarvish Fighter,Dwarvish Guardsman,Dwarvish Scout,Dwarvish Thunderer', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 110, ['recruit_armored'] = 20, ['gold'] = 75 },
+	{ ['t'] = 80, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_agl_frozen_frost_fury_shooter', ['default'] = 'Dwarvish Dragonguard', ['guard'] = true, ['disallow_slash_unguardian'] = true },
+	{ ['t'] = 82, ['d'] = 1, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_dep_deep_greater_wisp', ['default'] = 'Troll Whelp', ['race_guard_off'] = true },
+	{ ['t'] = 84, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Matriarch', ['default'] = 'Troll Shaman', ['guard'] = true, ['calls_for_help'] = true },
+	{ ['t'] = 84, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_agl_deep_Priestress_of_the_Vault', ['default'] = 'Skeleton', ['armored'] = 10, ['gold'] = 10 },
+
+	{ ['t'] = 84, ['d'] = 2, ['side'] = 4, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_dep_deep_greater_wisp', ['default'] = 'Troll Whelp', },
+
+	{ ['t'] = 78, ['d'] = 3, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_lanceman', ['default'] = 'Dwarvish Runesmith', ['gold'] = 10 },
+
+	{ ['t'] = 84, ['d'] = 4, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Black_Tyrhai', ['default'] = 'Troll Hero', ['bulky'] = 60, },
+
+
+	{ ['t'] = 80, ['d'] = 6, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_agl_frozen_frost_lance_master', ['default'] = 'Dwarvish Runemaster', ['armored'] = 20, },
+
+
 	-- 85 - 91 (mask y 99 - 93)    old t=12 to t=18
+
+	{ ['t'] = 85, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_agl_deep_Night_Maiden', ['default'] = 'Ghoul', },
+	{ ['t'] = 87, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Phade', ['default'] = 'Great Icemonax', },
+	{ ['t'] = 87, ['d'] = 1, ['side'] = 4, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_dep_deep_greater_wisp', ['default'] = 'Orcish Assassin', ['guard'] = true },
+	{ ['t'] = 89, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_agl_deep_Patroness', ['default'] = 'Great Troll', ['recruits'] = 'AE_agl_deep_Bloodmaiden,AE_agl_deep_Tyrhai_Rider,AE_agl_deep_Lidh,AE_agl_deep_Priestress_of_the_Vault', ['default_recruits'] = 'Troll Whelp,Young Ogre,Ghost,Ghoul', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 110, ['recruit_minion'] = 'D1' },
+	{ ['t'] = 89, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 0, ['type'] = 'AE_dep_deep_wisp', ['default'] = 'Icemonax', },
+	{ ['t'] = 91, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_arc_despair_Fright', ['default'] = 'Ghost', ['beefy'] = 40, ['fast'] = 1 },
+
+	{ ['t'] = 90, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_arc_despair_Soldier', ['default'] = 'Deathblade', ['guard'] = true },
+
+	{ ['t'] = 86, ['d'] = 3, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Minotaur', ['default'] = 'Troll', ['guard'] = true, ['beefy'] = 40 },
+	{ ['t'] = 87, ['d'] = 3, ['side'] = 4, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_agl_deep_Lidh', ['default'] = 'Young Ogre', },
+
+	{ ['t'] = 88, ['d'] = 4, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_agl_deep_Tyrhai_Rider', ['default'] = 'Giant Mudcrawler', },
+	
+	{ ['t'] = 90, ['d'] = 6, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Elthare', ['default'] = 'Ogre', ['buff'] = 'A46:B51:C32:C21', },
+
 
 	-- 92 - 98 (mask y 92 - 86)    old t=19 to t=26
 

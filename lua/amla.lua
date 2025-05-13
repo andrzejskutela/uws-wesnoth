@@ -334,7 +334,7 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 	local allowed_no = 0
 
 	if amla_settings['level'] >= 2 then
-		allowed_no = 3
+		allowed_no = 4
 	end
 
 	if allowed_no > 0 then
