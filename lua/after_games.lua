@@ -34,6 +34,15 @@ local after_classic_locations = {
 	['map_17'] = { { ['x'] = 4, ['y'] = 1 } },
 }
 
+local pvp_restricted_items_table = {
+	['Drakes'] = ':leadership',
+	['Knalgan Alliance'] = ':field_disruption:fear',
+	['Loyalists'] = ':leadership:feeding',
+	['Northerners'] = ':field_disruption',
+	['Rebels'] = ':steadfast:leadership',
+	['Undead'] = ':hp_low:hp_med:hp_high:steadfast'
+}
+
 local all_available_items = {
 	'magic_res','cold_res','cold_weapon','phys_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','hp_low','hp_med','hp_high',
 	'steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership',
@@ -358,8 +367,13 @@ local copy_all_units = function(from_side, to_side, locations, map_edge, gold_am
 	end
 end
 
-local function get_available_items(pool, used_items)
+local function get_available_items(pool, used_items, restriction_key)
 	local ret = {}
+	local restrictions = nil
+	if pvp_restricted_items_table[restriction_key] ~= nil then
+		restrictions = pvp_restricted_items_table[restriction_key]
+	end
+
 	for k,v in ipairs(pool) do
 		local used = false
 		for uk,uv in ipairs(used_items) do
@@ -369,7 +383,9 @@ local function get_available_items(pool, used_items)
 		end
 		
 		if used == false then
-			table.insert(ret, v)
+			if restrictions == nil or string.find(restrictions, v) == nil then
+				table.insert(ret, v)
+			end
 		end
 	end
 	
@@ -480,6 +496,8 @@ function wesnoth.wml_actions.qquws_calculate_after_games_spawn_variables(cfg)
 end
 
 function wesnoth.wml_actions.qquws_handle_after_race_spawn(cfg)
+	local version = wml.variables['uws_game.version']
+	local turn_number = wml.variables['turn_number']
 	local spawn_west = cfg.spawn_west
 	local spawn_east = cfg.spawn_east
 	local index = cfg.index
@@ -494,11 +512,24 @@ function wesnoth.wml_actions.qquws_handle_after_race_spawn(cfg)
 	local item = ''
 	local spawn_use_y = 1
 	local locations = {}
+	local is_default_era = wml.variables['uws_game.is_default_era']
 
 	local iterator = {
-		{ ['spawn'] = spawn_west, ['from'] = 3, ['to'] = 2, ['perc'] = after_games_progression[index]['percentage_west'], ['debuff'] = west_debuff, ['extra_buff'] = extra_copy_buff_west }, -- debuff & extra_buff check what they do with create_after_copies
-		{ ['spawn'] = spawn_east, ['from'] = 1, ['to'] = 4, ['perc'] = after_games_progression[index]['percentage_east'], ['debuff'] = east_debuff, ['extra_buff'] = extra_copy_buff_east },
+		{ ['spawn'] = spawn_west, ['from'] = 3, ['to'] = 2, ['perc'] = after_games_progression[index]['percentage_west'], ['debuff'] = west_debuff, ['extra_buff'] = extra_copy_buff_west, ['restrict_key'] = nil }, -- debuff & extra_buff check what they do with create_after_copies
+		{ ['spawn'] = spawn_east, ['from'] = 1, ['to'] = 4, ['perc'] = after_games_progression[index]['percentage_east'], ['debuff'] = east_debuff, ['extra_buff'] = extra_copy_buff_east, ['restrict_key'] = nil },
 	}
+
+	if is_default_era then
+		iterator[1].restrict_key = wesnoth.sides[1].faction
+		iterator[2].restrict_key = wesnoth.sides[3].faction
+		if turn_number == 1 and spawn_west then
+			local restriction_info = 'Restricted item rules: (' .. tostring(iterator[1].restrict_key) .. ' / ' .. tostring(iterator[2].restrict_key) .. ')'
+			local game_info_data = wml.variables['game_info_data']
+			wml.variables['game_info_data'] = game_info_data .. '\
+' .. restriction_info
+			wesnoth.interface.add_chat_message("Quequo's Ultimate Wesnoth Survival v." .. version, restriction_info)
+		end
+	end
 
 	for _,v in ipairs(iterator) do
 		item = ''
@@ -506,7 +537,7 @@ function wesnoth.wml_actions.qquws_handle_after_race_spawn(cfg)
 		if v.spawn then
 			if after_games_progression[index]['item'] then
 				if allow_items then
-					available_items = get_available_items(all_available_items, after_games_items_table)
+					available_items = get_available_items(all_available_items, after_games_items_table, v.restrict_key)
 					item = mathx.random_choice(available_items)
 					table.insert(after_games_items_table, item)
 				else
@@ -530,6 +561,8 @@ function wesnoth.wml_actions.qquws_handle_after_race_spawn(cfg)
 end
 
 function wesnoth.wml_actions.qquws_create_after_copies(cfg)
+	local version = wml.variables['uws_game.version']
+	local turn_number = wml.variables['turn_number']
 	local map_id = cfg.map_id
 	local key = 'map_' .. tostring(map_id)
 	local map_edge = wml.variables["uws_game.edge"]
@@ -545,14 +578,28 @@ function wesnoth.wml_actions.qquws_create_after_copies(cfg)
 	local east_item = ''
 	local drop_gold = after_games_progression[wave_index]['gold']
 	local payback_damage = 0
+	local is_default_era = wml.variables['uws_game.is_default_era']
+	local restriction_keys = { nil, nil }
+
+	if is_default_era then
+		restriction_keys[1] = wesnoth.sides[1].faction
+		restriction_keys[2] = wesnoth.sides[3].faction
+		if turn_number == 1 then
+			local restriction_info = 'Restricted item rules: (' .. tostring(restriction_keys[1]) .. ' / ' .. tostring(restriction_keys[2]) .. ')'
+			local game_info_data = wml.variables['game_info_data']
+			wml.variables['game_info_data'] = game_info_data .. '\
+' .. restriction_info
+			wesnoth.interface.add_chat_message("Quequo's Ultimate Wesnoth Survival v." .. version, restriction_info)
+		end
+	end
 	
 	if after_games_progression[wave_index]['item'] then
 		if allow_items then
-			available_items = get_available_items(all_available_items, after_games_items_table)
+			available_items = get_available_items(all_available_items, after_games_items_table, restriction_keys[1])
 			west_item = mathx.random_choice(available_items)
 			table.insert(after_games_items_table, west_item)
 			
-			available_items = get_available_items(all_available_items, after_games_items_table)
+			available_items = get_available_items(all_available_items, after_games_items_table, restriction_keys[2])
 			east_item = mathx.random_choice(available_items)
 			table.insert(after_games_items_table, east_item)
 		else

@@ -1,4 +1,13 @@
 --<<
+local pvp_restricted_items_table = {
+	['Drakes'] = ':leadership',
+	['Knalgan Alliance'] = ':field_disruption:fear',
+	['Loyalists'] = ':leadership:feeding',
+	['Northerners'] = ':field_disruption',
+	['Rebels'] = ':steadfast:leadership',
+	['Undead'] = ':hp_low:hp_med:hp_high:steadfast'
+}
+
 function build_spawn_rules_row(data)
 	local ret = {
 		['y'] = 4, ['guard'] = false, ['moves'] = -1, ['buff'] = '', ['default'] = '', ['default_recruits'] = '',
@@ -72,8 +81,13 @@ local function get_unit_random_recruit_list(recruit_lvls)
 	return table.concat(list, ',')
 end 
 
-local function get_available_items(pool, used_items)
+local function get_available_items(pool, used_items, restriction_key)
 	local ret = {}
+	local restrictions = nil
+	if pvp_restricted_items_table[restriction_key] ~= nil then
+		restrictions = pvp_restricted_items_table[restriction_key]
+	end
+
 	for k,v in ipairs(pool) do
 		local used = false
 		for uk,uv in ipairs(used_items) do
@@ -83,7 +97,9 @@ local function get_available_items(pool, used_items)
 		end
 		
 		if used == false then
-			table.insert(ret, v)
+			if restrictions == nil or string.find(restrictions, v) == nil then
+				table.insert(ret, v)
+			end
 		end
 	end
 	
@@ -95,6 +111,7 @@ local function get_available_items(pool, used_items)
 end
 
 local function process_spawn_table(spawn_table)
+	local version = wml.variables['uws_game.version']
 	local difficulty = wml.variables['uws_game.difficulty']
 	local is_random = wml.variables["uws_game.random_enemies"]
 	local is_full_random = wml.variables["uws_game.full_random"]
@@ -106,12 +123,22 @@ local function process_spawn_table(spawn_table)
 	local is_single_side_hns = wml.variables['uws_game.hns_single_side']
 	local used_items_list = wml.variables['used_items_list']
 	local copy_fields_list = wml.variables['uws_spawn.copy_fields']
+	local is_default_era = wml.variables['uws_game.is_default_era']
+	local is_pvp = wml.variables['uws_game.is_pvp']
+	local hns_keep_wall = wml.variables['uws_game.hns_keep_wall']
+	local scroll_remove_wall = wml.variables['uws_game.remove_wall']
 	local is_single_side_game = false
-	local is_campaign = wml.variables['uws_game.is_campaign']
-	local all_available_items = {'magic_res','cold_res','cold_weapon','phys_res','impact_res','impact_weapon','fire_res','fire_weapon','arcane_res','arcane_weapon','blade_res','blade_weapon','pierce_res','pierce_weapon','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura','book'}
-	if not is_campaign then
-		all_available_items[#all_available_items + 1] = 'hp_low'
-		all_available_items[#all_available_items + 1] = 'dragon_protection'
+	local all_available_items = {'magic_res','cold_res','cold_weapon','phys_res','impact_res','impact_weapon','fire_res','fire_weapon','arcane_res','arcane_weapon','blade_res','blade_weapon','pierce_res','pierce_weapon','hp_low','hp_med','hp_high','steadfast','regen','melee_dmg','ranged_dmg','ranged_acc','melee_parry','melee_poison','melee_slow','mp','feeding','leadership','drain','defense','skirm','first_strike','fear','discouragement','burns','golden_armor','heal','freezing_gem','field_disruption','armor_destruction','protection','double_attack','hitn_run','extra_strikes','rat_pack','icewind_aura','book','dragon_protection'}
+	local restriction_keys = { nil, nil }
+
+	if is_default_era and (is_pvp or hns_keep_wall or not scroll_remove_wall) then
+		restriction_keys[1] = wesnoth.sides[8].faction
+		restriction_keys[2] = wesnoth.sides[9].faction
+		local restriction_info = 'Restricted item rules: (' .. tostring(restriction_keys[1]) .. ' / ' .. tostring(restriction_keys[2]) .. ')'
+		local game_info_data = wml.variables['game_info_data']
+		wml.variables['game_info_data'] = game_info_data .. '\
+' .. restriction_info
+		wesnoth.interface.add_chat_message("Quequo's Ultimate Wesnoth Survival v." .. version, restriction_info)
 	end
 
 	if game_mode == 'slash' and is_single_side_hns == true then
@@ -201,11 +228,11 @@ local function process_spawn_table(spawn_table)
 			end
 			
 			if rules['item'] == true then
-				local available_items = get_available_items(all_available_items, used_items_table)
+				local available_items = get_available_items(all_available_items, used_items_table, restriction_keys[1])
 				rules['item'] = mathx.random_choice(available_items)
 				table.insert(used_items_table, rules['item'])
 				
-				available_items = get_available_items(all_available_items, used_items_table)
+				available_items = get_available_items(all_available_items, used_items_table, restriction_keys[2])
 				rules['second_item'] = mathx.random_choice(available_items)
 				table.insert(used_items_table, rules['second_item'])
 			elseif rules['item'] ~= '' then
@@ -500,7 +527,7 @@ local function process_spawn_table(spawn_table)
 		elseif row_type == 'item' and process_object then
 			local y = 0
 			local render_new_item = true
-			local available_items = get_available_items(table_row['pool'], used_items_table)
+			local available_items = get_available_items(table_row['pool'], used_items_table, restriction_keys[1])
 			local item = mathx.random_choice(available_items)
 			table.insert(used_items_table, item)
 			local item_image = ''
@@ -537,7 +564,7 @@ local function process_spawn_table(spawn_table)
 		
 			if is_single_side_game == false then
 				if table_row['asymmetric'] then
-					available_items = get_available_items(table_row['pool'], used_items_table)
+					available_items = get_available_items(table_row['pool'], used_items_table, restriction_keys[2])
 					item = mathx.random_choice(available_items)
 					table.insert(used_items_table, item)
 				end

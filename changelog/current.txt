@@ -1,5 +1,6 @@
 <span color='#aec7f2'>v2.7.0</span> (date):
 - UWS campaign is replaced with one single map
-- IceLord's Protection - enemy level limitation removed and item buffed
+- IceLord's Protection item buffed and enemy level limitation removed
+- Item restriction rules added to some games to prevent players from getting faction-irrelevant items
 - Number of randomly generated amlas per unit changed from 3 to 4
 - Small amla balancing
