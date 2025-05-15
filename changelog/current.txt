@@ -4,3 +4,4 @@
 - Item restriction rules added to some games to prevent players from getting faction-irrelevant items
 - Number of randomly generated amlas per unit changed from 3 to 4
 - Small amla balancing
+- White Book - fixed bug where intelligent trait was removed on epic rank

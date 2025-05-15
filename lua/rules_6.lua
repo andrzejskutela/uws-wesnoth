@@ -286,7 +286,7 @@ return {
 	
 	{ ['t'] = 64, ['d'] = 1, ['side'] = 2, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_mie_thelian_wolf_fanatic', ['default'] = 'Elvish Hero', },
 	{ ['t'] = 66, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', },
-	{ ['t'] = 67, ['d'] = 1, ['side'] = 3, ['x'] = 25, ['lvl'] = 3, ['type'] = 'AE_agl_frozen_ice_golem_king', ['default'] = 'Dwarvish Runemaster', ['buff'] = 'A26:B16:C45', ['story_message'] = 'So you decided to take the path through the mountains? You will not pass and I will see to it!', ['story_response'] = 'Stay together! We have won battles with worse opponents!', ['item'] = true },
+	{ ['t'] = 67, ['d'] = 1, ['side'] = 3, ['x'] = 25, ['lvl'] = 3, ['type'] = 'AE_agl_frozen_ice_golem_king', ['default'] = 'Dwarvish Runemaster', ['buff'] = 'A26:B16:C45', ['item'] = true },
 	{ ['t'] = 67, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', },
 	{ ['t'] = 68, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Wolf', ['default'] = 'Wolf', },
 	{ ['t'] = 70, ['d'] = 1, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_spearman', ['default'] = 'Dwarvish Fighter', },
@@ -361,14 +361,70 @@ return {
 	{ ['t'] = 90, ['d'] = 6, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Elthare', ['default'] = 'Ogre', ['buff'] = 'A46:B51:C32:C21', },
 
 
-	-- 92 - 98 (mask y 92 - 86)    old t=19 to t=26
+	-- 92 - 98 (mask y 94 - 88)
+
+	{ ['t'] = 92, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_arc_despair_Fright', ['default'] = 'Ghost', ['bulky'] = 12, ['agile'] = 10, },
+	{ ['t'] = 94, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_arc_despair_Widow', ['default'] = 'Dark Adept', },
+	{ ['t'] = 95, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_arc_despair_Stone_Soldier', ['default'] = 'Shadow', },
+	{ ['t'] = 95, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_arc_despair_Officer', ['default'] = 'Necromancer', ['recruits'] = 'Shadow,Wraith,Deathblade,Bone Shooter,Necrophage', ['default_recruits'] = 'Shadow,Wraith,Deathblade,Bone Shooter,Necrophage', ['r_lvls'] = '2,2,2,2', ['recruitment_gold'] = 150, },
+	
+	{ ['t'] = 96, ['d'] = 2, ['side'] = 2, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_arc_despair_Banshee', ['default'] = 'Death Knight', },
+
+	{ ['t'] = 93, ['d'] = 3, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_arc_despair_Black_Shadow', ['default'] = 'Wraith', ['bulky'] = 36, ['beefy'] = 68 },
+
+	{ ['t'] = 92, ['d'] = 4, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_arc_despair_Fright', ['default'] = 'Ghost', },
+	{ ['t'] = 94, ['d'] = 4, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_arc_despair_Midnight_Beauty', ['default'] = 'Dark Sorcerer', },
+
+	{ ['t'] = 96, ['d'] = 5, ['side'] = 2, ['x'] = 21, ['lvl'] = 4, ['type'] = 'QQ_dark_witness', ['default'] = 'QQ_dark_witness', ['buff'] = 'A13:B7:C49', ['allow_random'] = false },
+
+	{ ['t'] = 97, ['d'] = 6, ['side'] = 2, ['x'] = 22, ['lvl'] = 3, ['type'] = 'Nightgaunt', ['default'] = 'Nightgaunt', ['aggressive'] = 2, ['allow_random'] = false },
 
 
+	-- 99 - 105 (mask y 87 - 81)
+
+	{ ['t'] = 99, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_efm_pygmies_Fly', ['default'] = 'Saurian Skirmisher', },
+	{ ['t'] = 100, ['d'] = 1, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Web_Spitter', ['default'] = 'Swamp Lizard', ['guard'] = true },
+	{ ['t'] = 102, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Great_Spider', ['default'] = 'Water Serpent', ['guard'] = true },
+	{ ['t'] = 104, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_efm_pygmies_Saber_Cat', ['default'] = 'Saurian Flanker', ['guard'] = true, ['buff'] = 'A20:B9:C11' },
+	
+	{ ['t'] = 101, ['d'] = 2, ['side'] = 3, ['x'] = 11, ['lvl'] = 0, ['type'] = 'AE_mrc_hive_Gnat', ['default'] = 'Giant Rat', },
+	
+	{ ['t'] = 100, ['d'] = 3, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Swarm', ['default'] = 'Giant Scorpion', ['guard'] = true, },
+	
+	{ ['t'] = 99, ['d'] = 4, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_efm_pygmies_Piper', ['default'] = 'Saurian Augur', },
+	{ ['t'] = 103, ['d'] = 4, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Charmer', ['default'] = 'Saurian Oracle', ['calls_for_help'] = true, ['race_guard_off'] = true },
+
+	{ ['t'] = 105, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_efm_pygmies_Lizard_Eye', ['default'] = 'Saurian Javelineer', ['agile'] = 10 },
+	
+	{ ['t'] = 105, ['d'] = 6, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_efm_pygmies_Crocodile', ['default'] = 'Saurian Skirmisher', ['beefy'] = 60, ['armored'] = 20 },
+	
+	-- 106 - 112 (mask y 80 - 74) old t=2 to t=8
+
+	{ ['t'] = 106, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 0, ['type'] = 'AE_efm_pygmies_Knat', ['default'] = 'Giant Rat', },
+	{ ['t'] = 106, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, },
+	{ ['t'] = 108, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_efm_pygmies_Swamp_Witch', ['default'] = 'Giant Scorpion', },
+	{ ['t'] = 108, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 0, ['type'] = 'AE_mrc_hive_Gnat', ['default'] = 'Giant Rat', },
+	{ ['t'] = 109, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_efm_pygmies_Puma', ['default'] = 'Saurian Augur', ['guard'] = true,  },
+	{ ['t'] = 110, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, },
+	{ ['t'] = 111, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 4, ['type'] = 'AE_chs_chaos_empire_Armageddon_Imp', ['default'] = 'Wyvern Rider', ['recruits'] = 'AE_mrc_hive_Drone,AE_mrc_hive_Mosquito,AE_mrc_hive_Swarm,AE_mrc_hive_Spider,AE_mrc_hive_Hopper', ['default_recruits'] = 'Saurian Augur,Saurian Skirmisher,Giant Scorpion,Giant Mudcrawler', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 160, ['gold'] = 60, ['armored'] = 20 },
+	
+	{ ['t'] = 107, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_efm_pygmies_Fly', ['default'] = 'Rock Scorpion',  },
+	
+	{ ['t'] = 109, ['d'] = 3, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Infest', ['default'] = 'Swamp Lizard', ['guard'] = true, ['agile'] = 15, ['allow_random'] = false },
+	{ ['t'] = 110, ['d'] = 3, ['side'] = 3, ['x'] = 23, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, },
+	{ ['t'] = 110, ['d'] = 3, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Toad_Breath', ['default'] = 'Saurian Oracle', },
+	
+	{ ['t'] = 108, ['d'] = 4, ['side'] = 3, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Mudfoot', ['default'] = 'Saurian Soothsayer', },
+	{ ['t'] = 112, ['d'] = 4, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Great_Spider', ['default'] = 'Saurian Ambusher', },
+	
+	{ ['t'] = 110, ['d'] = 6, ['side'] = 3, ['x'] = 10, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, },
+	{ ['t'] = 111, ['d'] = 6, ['side'] = 3, ['x'] = 19, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['beefy'] = 160 },
+	{ ['t'] = 112, ['d'] = 6, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Wyrd', ['default'] = 'Saurian Ambusher', },
 
 	
 	-- final boss 33 / mask y 5
 	
-	{ ['t'] = 180, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 2, ['type'] = 'AE_myh_Militant', ['default'] = 'Javelineer', ['buff'] = 'A28:B13:C21:C16', ['moves'] = 0, ['final_boss'] = true, ['story_message'] = 'The prisoners are escaping! Guards! After them!', ['story_response'] = 'I want the head of this filth!' },
+	{ ['t'] = 180, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 2, ['type'] = 'AE_myh_Militant', ['default'] = 'Javelineer', ['buff'] = 'A28:B13:C21:C16', ['moves'] = 0, ['final_boss'] = true, },
 }
 
 
