@@ -421,7 +421,67 @@ return {
 	{ ['t'] = 111, ['d'] = 6, ['side'] = 3, ['x'] = 19, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['beefy'] = 160 },
 	{ ['t'] = 112, ['d'] = 6, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Wyrd', ['default'] = 'Saurian Ambusher', },
 
+	-- 113 - 119 (mask y 73 - 67) old t=9 to t=15
+
+	{ ['t'] = 113, ['d'] = 1, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Great_Spider', ['default'] = 'Saurian Ambusher', },
+	{ ['t'] = 113, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 0, ['type'] = 'AE_efm_pygmies_Knat', ['default'] = 'Giant Rat', ['allow_random'] = false },
+	{ ['t'] = 115, ['d'] = 1, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mag_Black_Salamander', ['default'] = 'Naga Ringcaster', ['guard'] = true },
+	{ ['t'] = 115, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Grand_Crocodile', ['default'] = 'Swamp Lizard', ['bulky'] = 20, ['fast'] = 1, ['guard'] = true, },
+	{ ['t'] = 118, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mag_Green_Salamander', ['default'] = 'Naga Warrior', ['bulky'] = 60, ['race_guard_off'] = true, },
+	{ ['t'] = 119, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_mag_Toad_Rider', ['default'] = 'Naga Dirkfang', ['race_guard_off'] = true, },
+	{ ['t'] = 119, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mag_Yellow_Salamander', ['default'] = 'Naga Shield Guard', ['guard'] = true },
 	
+	{ ['t'] = 115, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mag_Wyvern', ['default'] = 'Giant Scorpion', ['armored'] = 10, ['guard'] = true },
+	{ ['t'] = 118, ['d'] = 2, ['side'] = 4, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mag_Salamander', ['default'] = 'Naga Guard', ['race_guard_off'] = true, },
+	
+	{ ['t'] = 115, ['d'] = 3, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_efm_pygmies_Lizard_Eye', ['default'] = 'Saurian Flanker', ['guard'] = true, ['aggressive'] = 3, ['beefy'] = 48, ['allow_random'] = false },
+	
+	{ ['t'] = 115, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_efm_pygmies_Sorceress', ['default'] = 'Wild Wyvern', },
+	{ ['t'] = 119, ['d'] = 4, ['side'] = 4, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_mag_Toad_Rider', ['default'] = 'Naga Fighter', },
+	
+	{ ['t'] = 117, ['d'] = 6, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Toad_Shaman', ['default'] = 'Naga Ringcaster', ['agile'] = 10, ['race_guard_off'] = true, },
+
+	-- 120 - 126 (mask y 66 - 60) old t=16 - t=22
+
+	{ ['t'] = 121, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_rhy_vx_Snake_Viper', ['default'] = 'Elder Wose', ['agile'] = 20, ['fast'] = 1, ['guard'] = true, },
+	{ ['t'] = 122, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 4, ['type'] = 'AE_mag_Chosen_of_Marsh', ['default'] = 'Skeletal Dragon', ['recruits'] = 'AE_mag_Black_Salamander,AE_mag_Blue_Salamander,AE_mag_Green_Salamander,AE_mag_Red_Salamander,AE_mag_Yellow_Salamander,AE_mag_Toad_Shaman,AE_mag_Toad_Archer,AE_mag_Battle_Toad', ['default_recruits'] = 'Naga Ophidian,Naga Ringcaster,Naga Warrior,Naga Shield Guard,Swamp Lizard', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 150, ['item'] = true, ['buff'] = 'A5:B14:C29' },
+	{ ['t'] = 122, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mag_Battle_Toad', ['default'] = 'Naga Ophidian', ['buff'] = 'A21:B41:C42' },
+	{ ['t'] = 123, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_mag_Lava_Salamander', ['default'] = 'Naga High Guard', ['guard'] = true, ['disallow_slash_unguardian'] = true, ['bulky'] = 100 },
+	{ ['t'] = 124, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_treefolk_ghastbark', ['default'] = 'Wose Shaman', ['guard'] = true, ['gold'] = 15 },
+	{ ['t'] = 126, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 0, ['type'] = 'AE_mie_leaf_wyvern', ['default'] = 'Wose Sapling', ['race_guard_off'] = true, ['calls_for_help'] = true, ['event'] = 'follow_players_race' },
+	
+	{ ['t'] = 121, ['d'] = 2, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Great_Wyvern', ['default'] = 'Naga Warrior', ['race_guard_off'] = true, ['bulky'] = 40 },
+	{ ['t'] = 124, ['d'] = 2, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mie_treefolk_ghastbark', ['default'] = 'Elvish Ranger', ['race_guard_off'] = true, ['beefy'] = 40 },
+	
+	{ ['t'] = 123, ['d'] = 3, ['side'] = 2, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_mie_spirit_thorn_witch', ['default'] = 'Elvish Shaman', ['armored'] = 25, ['race_guard_off'] = true },
+	{ ['t'] = 125, ['d'] = 3, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mie_sylvan_faerie', ['default'] = 'Elvish Rider', ['guard'] = true, ['fast'] = 1, ['agile'] = 15 },
+	
+	{ ['t'] = 121, ['d'] = 4, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Battle_Toad', ['default'] = 'Naga Warrior', ['armored'] = 15, ['bulky'] = 180 },
+	
+	{ ['t'] = 122, ['d'] = 6, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Mosquito', ['default'] = 'Naga Dirkfang', },
+
+	-- 127 - 133 (mask y 59 - 53) old t=23 - 29
+
+	{ ['t'] = 128, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mie_sylvan_shadow_faerie', ['default'] = 'Elvish Druid', ['beefy'] = 20 },
+	{ ['t'] = 128, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_mie_sylvan_guardian', ['default'] = 'Cave Bear', ['guard'] = true },
+	{ ['t'] = 129, ['d'] = 1, ['side'] = 2, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_mie_treefolk_assailant', ['default'] = 'Woodland Boar', ['guard'] = true, },
+	{ ['t'] = 130, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'Wose', ['default'] = 'Wose', },
+	{ ['t'] = 131, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Wose Shaman', ['default'] = 'Wose Shaman', },
+	{ ['t'] = 132, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_mie_treefolk_vengeance', ['default'] = 'Elvish Champion', ['guard'] = true },
+	{ ['t'] = 133, ['d'] = 1, ['side'] = 2, ['x'] = 12, ['lvl'] = 4, ['type'] = 'QQ_wose_destroyer', ['default'] = 'QQ_wose_destroyer', ['recruits'] = 'Elder Wose,Wose Shaman,AE_bem_wood_warriors_Fatal_Tangle,AE_chs_sylvians_Ancestor', ['default_recruits'] = 'Elder Wose,Wose Shaman,Elvish Hero,Elvish Marksman', ['r_lvls'] = '2,2,2,2', ['recruitment_gold'] = 140, ['gold'] = 100, ['allow_random'] = false },
+	
+	{ ['t'] = 131, ['d'] = 2, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_mie_sylvan_wrath', ['default'] = 'Ancient Wose', },
+	
+	{ ['t'] = 129, ['d'] = 3, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_mie_treefolk_assailant', ['default'] = 'Elvish Archer', },
+	
+	{ ['t'] = 127, ['d'] = 4, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mie_treefolk_bark_elder', ['default'] = 'Elder Wose', },
+
+	{ ['t'] = 129, ['d'] = 5, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_rhy_fh_bear', ['default'] = 'Grand Dragonfly', ['fast'] = 1 },
+	
+	{ ['t'] = 130, ['d'] = 6, ['side'] = 2, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_myh_Vine_Tiger', ['default'] = 'Elvish Sorceress', ['armored'] = 15 },
+
+
+
 	-- final boss 33 / mask y 5
 	
 	{ ['t'] = 180, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 2, ['type'] = 'AE_myh_Militant', ['default'] = 'Javelineer', ['buff'] = 'A28:B13:C21:C16', ['moves'] = 0, ['final_boss'] = true, },
