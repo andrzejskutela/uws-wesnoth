@@ -5,3 +5,5 @@
 - Number of randomly generated amlas per unit changed from 3 to 4
 - Small amla balancing
 - White Book - fixed bug where intelligent trait was removed on epic rank
+- Perkele's Undying Ember - the strength of the summoned familiars is somewhat nerfed
+- Potion of Hindrance - corrupted units can no longer be gifted
