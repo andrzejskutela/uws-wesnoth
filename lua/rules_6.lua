@@ -317,7 +317,7 @@ return {
 
 	{ ['t'] = 77, ['d'] = 2, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_agl_frozen_frost_gunner_master', ['default'] = 'Dwarvish Sentinel', ['guard'] = true, ['disallow_slash_unguardian'] = true, ['armored'] = 30, ['gold'] = 20 },
 	
-	{ ['t'] = 77, ['d'] = 3, ['side'] = 3, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_rider', ['default'] = 'Dwarvish Ulfserker', ['beefy'] = 40 },
+	{ ['t'] = 77, ['d'] = 3, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_rider', ['default'] = 'Dwarvish Ulfserker', ['beefy'] = 40 },
 	
 	{ ['t'] = 72, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_flying_golem', ['default'] = 'Gryphon Rider', ['agile'] = 15 },
 
@@ -398,7 +398,7 @@ return {
 	
 	{ ['t'] = 105, ['d'] = 6, ['side'] = 3, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_efm_pygmies_Crocodile', ['default'] = 'Saurian Skirmisher', ['beefy'] = 60, ['armored'] = 20 },
 	
-	-- 106 - 112 (mask y 80 - 74) old t=2 to t=8
+	-- 106 - 112 (mask y 80 - 74)
 
 	{ ['t'] = 106, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 0, ['type'] = 'AE_efm_pygmies_Knat', ['default'] = 'Giant Rat', },
 	{ ['t'] = 106, ['d'] = 1, ['side'] = 3, ['x'] = 10, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, },
@@ -421,7 +421,7 @@ return {
 	{ ['t'] = 111, ['d'] = 6, ['side'] = 3, ['x'] = 19, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['beefy'] = 160 },
 	{ ['t'] = 112, ['d'] = 6, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Wyrd', ['default'] = 'Saurian Ambusher', },
 
-	-- 113 - 119 (mask y 73 - 67) old t=9 to t=15
+	-- 113 - 119 (mask y 73 - 67)
 
 	{ ['t'] = 113, ['d'] = 1, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Great_Spider', ['default'] = 'Saurian Ambusher', },
 	{ ['t'] = 113, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 0, ['type'] = 'AE_efm_pygmies_Knat', ['default'] = 'Giant Rat', ['allow_random'] = false },
@@ -441,7 +441,7 @@ return {
 	
 	{ ['t'] = 117, ['d'] = 6, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Toad_Shaman', ['default'] = 'Naga Ringcaster', ['agile'] = 10, ['race_guard_off'] = true, },
 
-	-- 120 - 126 (mask y 66 - 60) old t=16 - t=22
+	-- 120 - 126 (mask y 66 - 60)
 
 	{ ['t'] = 121, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_rhy_vx_Snake_Viper', ['default'] = 'Elder Wose', ['agile'] = 20, ['fast'] = 1, ['guard'] = true, },
 	{ ['t'] = 122, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 4, ['type'] = 'AE_mag_Chosen_of_Marsh', ['default'] = 'Skeletal Dragon', ['recruits'] = 'AE_mag_Black_Salamander,AE_mag_Blue_Salamander,AE_mag_Green_Salamander,AE_mag_Red_Salamander,AE_mag_Yellow_Salamander,AE_mag_Toad_Shaman,AE_mag_Toad_Archer,AE_mag_Battle_Toad', ['default_recruits'] = 'Naga Ophidian,Naga Ringcaster,Naga Warrior,Naga Shield Guard,Swamp Lizard', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 150, ['item'] = true, ['buff'] = 'A5:B14:C29' },
@@ -460,7 +460,7 @@ return {
 	
 	{ ['t'] = 122, ['d'] = 6, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Mosquito', ['default'] = 'Naga Dirkfang', },
 
-	-- 127 - 133 (mask y 59 - 53) old t=23 - 29
+	-- 127 - 133 (mask y 58 - 52)
 
 	{ ['t'] = 128, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mie_sylvan_shadow_faerie', ['default'] = 'Elvish Druid', ['beefy'] = 20 },
 	{ ['t'] = 128, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_mie_sylvan_guardian', ['default'] = 'Cave Bear', ['guard'] = true },
@@ -475,11 +475,43 @@ return {
 	{ ['t'] = 129, ['d'] = 3, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_mie_treefolk_assailant', ['default'] = 'Elvish Archer', },
 	
 	{ ['t'] = 127, ['d'] = 4, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mie_treefolk_bark_elder', ['default'] = 'Elder Wose', },
+	{ ['t'] = 133, ['d'] = 4, ['side'] = 2, ['x'] = 14, ['lvl'] = 3, ['type'] = 'Ancient Wose', ['default'] = 'Ancient Wose', ['allow_random'] = false, ['aggressive'] = 1, ['armored'] = 30 },
 
 	{ ['t'] = 129, ['d'] = 5, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_rhy_fh_bear', ['default'] = 'Grand Dragonfly', ['fast'] = 1 },
 	
 	{ ['t'] = 130, ['d'] = 6, ['side'] = 2, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_myh_Vine_Tiger', ['default'] = 'Elvish Sorceress', ['armored'] = 15 },
 
+	-- 134 - 140 (mask y 51 - 45)
+
+	{ ['t'] = 135, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 5, ['type'] = 'QQ_Archwitch', ['default'] = 'QQ_Archwitch', ['buff'] = 'A19:B15:C13:C16', },
+	{ ['t'] = 137, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_bem_calydonians_Gymnet', ['default'] = 'Shock Trooper', },
+	{ ['t'] = 137, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_bem_calydonians_Dardanian_Pillager', ['default'] = 'Pikeman', },
+	{ ['t'] = 139, ['d'] = 1, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_bem_calydonians_Dardanian_Warrior', ['default'] = 'Bowman', },
+	{ ['t'] = 139, ['d'] = 1, ['side'] = 3, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_bem_calydonians_Hoplite', ['default'] = 'Mage', },
+	{ ['t'] = 140, ['d'] = 1, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_bem_calydonians_Teti', ['default'] = 'Fencer', },
+
+	{ ['t'] = 136, ['d'] = 2, ['side'] = 3, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_bem_calydonians_Thracian_Peltast', ['default'] = 'Master at Arms', },
+	{ ['t'] = 138, ['d'] = 2, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_bem_calydonians_Peltast', ['default'] = 'Spearman', },
+
+	{ ['t'] = 136, ['d'] = 3, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_bem_calydonians_Teti', ['default'] = 'Footpad', },
+
+	{ ['t'] = 137, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_bem_calydonians_Dioian_Veteran', ['default'] = 'Bandit', },
+	
+	{ ['t'] = 140, ['d'] = 5, ['side'] = 3, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_bem_calydonians_Strategos', ['default'] = 'Royal Guard', ['beefy'] = 40, ['armored'] = 15, ['calls_for_help'] = true },
+	
+	{ ['t'] = 134, ['d'] = 6, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Deadwood', ['default'] = 'Cave Bear', ['buff'] = 'A54:B22:C14:C21:A11' },
+
+	-- 141 - 147 (mask y 44 - 38) old t=6 - t=12
+
+	
+
+	
+	
+	
+	
+	
+	
+	
 
 
 	-- final boss 33 / mask y 5
