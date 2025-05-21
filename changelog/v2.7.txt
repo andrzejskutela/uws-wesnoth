@@ -7,4 +7,5 @@
 - White Book - fixed bug where intelligent trait was removed on epic rank
 - Perkele's Undying Ember - the strength of the summoned familiars is somewhat nerfed
 - Potion of Hindrance - corrupted units can no longer be gifted
-- New lvl5 unit added - Archon Polemarchos
+- Tracker's Disguise - epic rank traps now prevent retaliation when discovered
+- Two new lvl5 unit added - Archon Polemarchos and ArchPriest of War
