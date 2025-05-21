@@ -434,9 +434,10 @@ return {
 	{ ['t'] = 115, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mag_Wyvern', ['default'] = 'Giant Scorpion', ['armored'] = 10, ['guard'] = true },
 	{ ['t'] = 118, ['d'] = 2, ['side'] = 4, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mag_Salamander', ['default'] = 'Naga Guard', ['race_guard_off'] = true, },
 	
-	{ ['t'] = 115, ['d'] = 3, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_efm_pygmies_Lizard_Eye', ['default'] = 'Saurian Flanker', ['guard'] = true, ['aggressive'] = 3, ['beefy'] = 48, ['allow_random'] = false },
+	{ ['t'] = 113, ['d'] = 3, ['side'] = 3, ['x'] = 17, ['lvl'] = 5, ['type'] = 'QQ_arachna_queen', ['default'] = 'QQ_arachna_queen', ['buff'] = 'A13:B22:C11' },
+	{ ['t'] = 114, ['d'] = 3, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_efm_pygmies_Lizard_Eye', ['default'] = 'Saurian Flanker', ['guard'] = true, ['aggressive'] = 3, ['beefy'] = 48, ['allow_random'] = false },
 	
-	{ ['t'] = 115, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_efm_pygmies_Sorceress', ['default'] = 'Wild Wyvern', },
+	{ ['t'] = 114, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_efm_pygmies_Sorceress', ['default'] = 'Wild Wyvern', },
 	{ ['t'] = 119, ['d'] = 4, ['side'] = 4, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_mag_Toad_Rider', ['default'] = 'Naga Fighter', },
 	
 	{ ['t'] = 117, ['d'] = 6, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Toad_Shaman', ['default'] = 'Naga Ringcaster', ['agile'] = 10, ['race_guard_off'] = true, },
@@ -501,17 +502,33 @@ return {
 	
 	{ ['t'] = 134, ['d'] = 6, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Deadwood', ['default'] = 'Cave Bear', ['buff'] = 'A54:B22:C14:C21:A11' },
 
-	-- 141 - 147 (mask y 44 - 38) old t=6 - t=12
+	-- 141 - 147 (mask y 44 - 38)
 
+	{ ['t'] = 142, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_bem_calydonians_Hippikon', ['default'] = 'White Mage', },
+	{ ['t'] = 143, ['d'] = 1, ['side'] = 3, ['x'] = 20, ['lvl'] = 5, ['type'] = 'QQ_archon_polemarchos', ['default'] = 'QQ_archon_polemarchos', ['buff'] = 'A57:B6:C10', ['recruits'] = 'AE_bem_calydonians_Dardanian_Ravager,AE_bem_calydonians_Dioian_Swordmaster,AE_bem_calydonians_Diarch,AE_bem_calydonians_Thracian_Peltast,AE_bem_calydonians_Rhodian_Slinger,AE_bem_calydonians_Cretan_Toxotes', ['default_recruits'] = 'Master at Arms,Iron Mauler,Master Bowman,Halberdier,Royal Guard,Silver Mage', ['r_lvls'] = '3,3,3,3,3,3', ['recruitment_gold'] = 400, ['recruit_minion'] = 'A63' },
+	{ ['t'] = 145, ['d'] = 1, ['side'] = 3, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_bem_calydonians_Dardanian_Ravager', ['default'] = 'Cavalier', },
+	{ ['t'] = 145, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_bem_calydonians_Diarch', ['default'] = 'Paladin', ['gold'] = 15 },
+	{ ['t'] = 146, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_stf_eltireans_Lightbringer', ['default'] = 'Dune Apothecary', },
 	
+	{ ['t'] = 146, ['d'] = 2, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_stf_eltireans_Calmblade', ['default'] = 'Dune Strider', },
 
+	{ ['t'] = 142, ['d'] = 3, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_bem_calydonians_Dioian_Swordsman', ['default'] = 'Bowman', },
+	{ ['t'] = 144, ['d'] = 3, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_bem_calydonians_Prodromoi', ['default'] = 'Horseman', },
 	
+	{ ['t'] = 141, ['d'] = 4, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_bem_calydonians_Dardanian_Warrior', ['default'] = 'Mage', },
+
+	{ ['t'] = 147, ['d'] = 5, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_stf_eltireans_Fury', ['default'] = 'Dune Alchemist', },
 	
+	{ ['t'] = 143, ['d'] = 6, ['side'] = 3, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_bem_calydonians_Rhodian_Slinger', ['default'] = 'Master Bowman', ['buff'] = 'A59:B1:C8:C16', ['gold'] = 30 },
+	{ ['t'] = 145, ['d'] = 6, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_bem_calydonians_Hetaroi', ['default'] = 'Grand Knight', },
 	
+	-- 148 - 154 (mask y 37 - 31) old t=13 - t=19
 	
-	
-	
-	
+	{ ['t'] = 148, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_rhy_fh_Bearver', ['default'] = 'Swamp Lizard', ['item'] = true, ['guard'] = true, ['buff'] = 'A28:B9:C19:C29:C30' },
+
+
+
+
 
 
 	-- final boss 33 / mask y 5
