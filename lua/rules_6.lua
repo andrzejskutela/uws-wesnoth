@@ -22,7 +22,7 @@ if r == 1 then
 	hidden_item['x'] = 17
 	hidden_item['y'] = 13
 elseif r == 2 then
-	hidden_item['x'] = 23
+	hidden_item['x'] = 22
 	hidden_item['y'] = 9
 elseif r == 3 then
 	hidden_item['x'] = 20
@@ -53,7 +53,7 @@ return {
 	
 	hidden_item,
 	{ ['row'] = 'object', ['t'] = 1, ['x'] = 17, ['y'] = 13, ['image'] = 'items/bones.png', ['cat'] = 'decorative', },
-	{ ['row'] = 'object', ['t'] = 1, ['x'] = 23, ['y'] = 9, ['image'] = 'items/bones.png', ['cat'] = 'decorative', },
+	{ ['row'] = 'object', ['t'] = 1, ['x'] = 22, ['y'] = 9, ['image'] = 'items/bones.png', ['cat'] = 'decorative', },
 	{ ['row'] = 'object', ['t'] = 1, ['x'] = 20, ['y'] = 6, ['image'] = 'items/bones.png', ['cat'] = 'decorative', },
 	{ ['row'] = 'object', ['t'] = 1, ['x'] = 12, ['y'] = 10, ['image'] = 'items/bones.png', ['cat'] = 'decorative', },
 	
@@ -100,11 +100,11 @@ return {
 	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 13, ['y'] = 6, ['lvl'] = 1, ['type'] = 'AE_feu_khaganate_Shieldbearer', ['default'] = 'Heavy Infantryman', ['moves'] = 0 },
 	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['y'] = 6, ['lvl'] = 0, ['type'] = 'AE_imp_Lavinians_Auxiliary', ['default'] = 'Goblin Spearman', ['moves'] = 5 },
 	
-	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 11, ['y'] = 13, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Microbe', ['default'] = 'Giant Rat', ['moves'] = 3 },
+	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 12, ['y'] = 13, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Microbe', ['default'] = 'Giant Rat', ['moves'] = 4 },
 	
-	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 16, ['y'] = 13, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Microbe', ['default'] = 'Giant Rat', ['moves'] = 4 },
+	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 9, ['y'] = 13, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Microbe', ['default'] = 'Giant Rat', ['moves'] = 4 },
 	
-	{ ['t'] = 1, ['d'] = 6, ['side'] = 2, ['x'] = 11, ['y'] = 14, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Infected_Hound', ['default'] = 'Thug', ['moves'] = 5 },
+	{ ['t'] = 1, ['d'] = 6, ['side'] = 2, ['x'] = 8, ['y'] = 14, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Infected_Hound', ['default'] = 'Thug', ['moves'] = 5 },
 	
 	-- 2 - 8 (mask y 183 - 177)
 	
@@ -116,7 +116,7 @@ return {
 	
 	{ ['t'] = 8, ['d'] = 2, ['side'] = 2, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Legionnaire', ['default'] = 'Goblin Rouser', ['race_guard_off'] = true, ['calls_for_help'] = true },
 
-	{ ['t'] = 8, ['d'] = 3, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Ballista', ['default'] = 'Soulless', ['moves'] = 0 },
+	{ ['t'] = 8, ['d'] = 3, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Ballista', ['default'] = 'Soulless', ['moves'] = 0 },
 	
 	{ ['t'] = 8, ['d'] = 4, ['side'] = 2, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_arc_ukians_Attack_Dog', ['default'] = 'Goblin Impaler', ['race_guard_off'] = true },
 	
@@ -137,7 +137,7 @@ return {
 	{ ['t'] = 10, ['d'] = 4, ['side'] = 2, ['x'] = 24, ['lvl'] = 1, ['type'] = 'Spearman', ['default'] = 'Spearman', },
 	{ ['t'] = 14, ['d'] = 4, ['side'] = 2, ['x'] = 25, ['lvl'] = 2, ['type'] = 'AE_mrc_enchanters_Elemental_Rune_Interpreter', ['default'] = 'Red Mage', ['disallow_slash_unguardian'] = true },
 	
-	{ ['t'] = 10, ['d'] = 6, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_imp_Lavinians_Light_Infantryman', ['default'] = 'Spearman', ['race_guard_off'] = true },
+	{ ['t'] = 10, ['d'] = 6, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_imp_Lavinians_Light_Infantryman', ['default'] = 'Spearman', ['race_guard_off'] = true },
 	
 	-- 16 - 22 (mask y 169 - 163)
 	
