@@ -242,6 +242,11 @@ return {
 	{ ['t'] = 46, ['d'] = 4, ['side'] = 3, ['x'] = 5, ['lvl'] = 2, ['type'] = 'AE_ext_chaos_Hell_Crab', ['default'] = 'Deathblade', ['bulky'] = 100, },
 	
 	{ ['t'] = 46, ['d'] = 5, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_mrc_infernai_Bloodbather', ['default'] = 'Orcish Warlord', ['bulky'] = 48, ['beefy'] = 12, },
+
+	{ ['t'] = 47, ['d'] = 6, ['side'] = 3, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_mrc_infernai_Incubus', ['default'] = 'Orcish Slurbow', ['aggressive'] = 1, },
+
+	{ ['t'] = 48, ['d'] = 7, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Demon_Stormtide', ['default'] = 'Necromancer', ['buff'] = 'A44:B28:C56:C21', },
+	{ ['t'] = 49, ['d'] = 7, ['side'] = 3, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Hellhound', ['default'] = 'Ghast', ['agile'] = 10, ['ai_add_gold'] = 100, ['event'] = 'set_high_armoured_recruits' },
 	
 	-- 51 - 57 (mask y 30 - 24)
 	
@@ -289,6 +294,7 @@ return {
 	{ ['t'] = 62, ['d'] = 6, ['side'] = 2, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_chs_aragwaith_Eagle_Rider', ['default'] = 'Drake Glider', },
 	{ ['t'] = 62, ['d'] = 6, ['side'] = 2, ['x'] = 28, ['lvl'] = 1, ['type'] = 'AE_chs_aragwaith_Eagle_Rider', ['default'] = 'Drake Glider', },
 
+	{ ['t'] = 62, ['d'] = 7, ['side'] = 2, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_rhy_aq_Siren', ['default'] = 'Mermaid Siren', ['ai_add_gold'] = 60, ['buff'] = 'A13:B54:C61' },
 	{ ['t'] = 64, ['d'] = 7, ['side'] = 2, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_rhy_aq_Tank', ['default'] = 'Drake Enforcer', ['ai_add_gold'] = 60, ['buff'] = 'A47:B60:C36' },
 	
 	-- 65 - 69 (mask y 16 - 12)
@@ -297,7 +303,7 @@ return {
 	{ ['t'] = 68, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 3, ['type'] = 'AE_mag_Dharma_rhami', ['default'] = 'Master at Arms', ['guard'] = true, },
 	{ ['t'] = 68, ['d'] = 1, ['side'] = 2, ['x'] = 25, ['lvl'] = 3, ['type'] = 'AE_rhy_tr_Nova', ['default'] = 'Mermaid Siren', ['event'] = 'follow_players_race', ['beefy'] = 32 },
 	
-	{ ['t'] = 67, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Abomination', ['default'] = 'General', ['recruits'] = 'AE_ext_orcs_Naga_Depthstalker,AE_ext_orcs_Naga_Assassin,Naga Myrmidon,Naga Zephyr,Naga Sicarius', ['default_recruits'] = 'Wild Wyvern,Water Serpent,Sea Serpent,Naga Zephyr,Naga Sicarius', ['r_lvls'] = '3,2,3,3,3', ['recruitment_gold'] = 250, ['gold'] = 50, ['recruit_armored'] = 5 },
+	{ ['t'] = 67, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_ext_orcs_Naga_Abomination', ['default'] = 'General', ['recruits'] = 'AE_ext_orcs_Naga_Depthstalker,AE_ext_orcs_Naga_Assassin,Naga Myrmidon,Naga Zephyr,Naga Sicarius', ['default_recruits'] = 'Wild Wyvern,Water Serpent,Sea Serpent,Naga Zephyr,Naga Sicarius', ['r_lvls'] = '3,2,3,3,3', ['recruitment_gold'] = 250, ['gold'] = 50, ['recruit_armored'] = 15, ['aggressive'] = 2 },
 	
 	{ ['t'] = 67, ['d'] = 3, ['side'] = 2, ['x'] = 27, ['lvl'] = 3, ['type'] = 'AE_mag_Sky_Guardian', ['default'] = 'Merman Hoplite', },
 	
