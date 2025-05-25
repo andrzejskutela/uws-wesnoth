@@ -461,7 +461,7 @@ return {
 	{ ['t'] = 120, ['d'] = 6, ['side'] = 3, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_mrc_enchanters_Excalibur', ['default'] = 'Ancient Lich', ['buff'] = 'A36:B37:C57', ['allow_random'] = false, },
 
 	{ ['t'] = 117, ['d'] = 7, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_mrc_oracles_Quietus', ['default'] = 'Necromancer', ['buff'] = 'A59:B58:C60', ['allow_random'] = false },
-	{ ['t'] = 120, ['d'] = 7, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_mrc_oracles_Judgementor', ['default'] = 'Royal Guard', ['beefy'] = 40, ['fast'] = 1, ['ai_add_gold'] = 250 },
+	{ ['t'] = 120, ['d'] = 7, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_mrc_oracles_Judgementor', ['default'] = 'Royal Guard', ['beefy'] = 40, ['fast'] = 1, ['ai_add_gold'] = 250, ['event'] = 'set_high_armoured_recruits', ['event_var_a'] = 20 },
 
 	-- 121 - 127 (mask y 49 - 43)
 	
@@ -470,15 +470,15 @@ return {
 	{ ['t'] = 122, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_rhy_ce_Siege_Bowman', ['default'] = 'Master Bowman', },
 	{ ['t'] = 124, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_rhy_de_Bloodpriest', ['default'] = 'Silver Mage', ['beefy'] = 60, ['guard'] = true },
 	{ ['t'] = 127, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Hell_Guardian', ['default'] = 'Draug', ['guard'] = true, ['calls_for_help'] = true, },
-	
-	{ ['t'] = 123, ['d'] = 2, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Darkguard', ['default'] = 'Swordsman', },
+
+	{ ['t'] = 121, ['d'] = 2, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_rhy_ce_Doctor', ['default'] = 'Mage of Light', ['buff'] = 'A13:B59:C37', ['event'] = 'follow_players_race', ['item'] = true, ['allow_random'] = false, },
 	
 	{ ['t'] = 123, ['d'] = 3, ['side'] = 3, ['x'] = 14, ['lvl'] = 4, ['type'] = 'AE_rhy_de_Greatassassin', ['default'] = 'Dune Paragon', ['beefy'] = 40, ['agile'] = 5 },
 
 	{ ['t'] = 125, ['d'] = 4, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_chs_chaos_empire_Marksman', ['default'] = 'Bandit', },
 	{ ['t'] = 126, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_chs_chaos_empire_Demonic_Hound', ['default'] = 'Outlaw', },
 
-	{ ['t'] = 121, ['d'] = 5, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_rhy_ce_Doctor', ['default'] = 'Mage of Light', ['buff'] = 'A13:B59:C37', ['event'] = 'follow_players_race', ['item'] = true, ['allow_random'] = false, },
+	{ ['t'] = 123, ['d'] = 5, ['side'] = 3, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Darkguard', ['default'] = 'Swordsman', },
 	
 	{ ['t'] = 122, ['d'] = 6, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_mrc_enchanters_Sellsoul', ['default'] = 'Fugitive', ['beefy'] = 100, ['calls_for_help'] = true },
 	{ ['t'] = 127, ['d'] = 6, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Soulhunter', ['default'] = 'Huntsman', },

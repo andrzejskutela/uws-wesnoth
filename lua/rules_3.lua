@@ -169,6 +169,8 @@ return {
 	{ ['t'] = 40, ['d'] = 6, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_feu_high_elves_Shieldbearer', ['default'] = 'Elder Wose', ['bulky'] = 72, ['beefy'] = 40, },
 
 	{ ['t'] = 39, ['d'] = 6, ['side'] = 2, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_agl_harpies_Harpy_Raider', ['default'] = 'Elvish High Lord', ['aggressive'] = 1, },
+
+	{ ['t'] = 38, ['d'] = 7, ['side'] = 2, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_chs_sylvians_Forefather', ['default'] = 'Spectre', ['buff'] = 'A39:B9:C26', ['ai_add_gold'] = 90, ['event'] = 'set_minion_recruits', ['event_var_a'] = 'A57'  },
 	
 	-- 44 - 50 (mask y 14 - 8)
 	
@@ -185,7 +187,7 @@ return {
 	
 	{ ['t'] = 44, ['d'] = 6, ['side'] = 3, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Termite_Soldier', ['default'] = 'Dread Bat', ['bulky'] = 20, ['beefy'] = 28 },
 
-	{ ['t'] = 44, ['d'] = 7, ['side'] = 3, ['x'] = 6, ['lvl'] = 2, ['type'] = 'Wose Shaman', ['default'] = 'Wose Shaman', ['buff'] = 'A58:B59:C43:B16', },
+	{ ['t'] = 44, ['d'] = 7, ['side'] = 3, ['x'] = 6, ['lvl'] = 2, ['type'] = 'Wose Shaman', ['default'] = 'Wose Shaman', ['buff'] = 'A58:B59:C43:B16:B52', },
 	
 	-- 48 / final boss
 	

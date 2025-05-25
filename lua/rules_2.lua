@@ -246,12 +246,12 @@ return {
 	{ ['t'] = 47, ['d'] = 6, ['side'] = 3, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_mrc_infernai_Incubus', ['default'] = 'Orcish Slurbow', ['aggressive'] = 1, },
 
 	{ ['t'] = 48, ['d'] = 7, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Demon_Stormtide', ['default'] = 'Necromancer', ['buff'] = 'A44:B28:C56:C21', },
-	{ ['t'] = 49, ['d'] = 7, ['side'] = 3, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Hellhound', ['default'] = 'Ghast', ['agile'] = 10, ['ai_add_gold'] = 100, ['event'] = 'set_high_armoured_recruits' },
+	{ ['t'] = 49, ['d'] = 7, ['side'] = 3, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Hellhound', ['default'] = 'Ghast', ['agile'] = 10, ['ai_add_gold'] = 100, ['event'] = 'set_high_armoured_recruits', ['event_var_a'] = 25 },
 	
 	-- 51 - 57 (mask y 30 - 24)
 	
 	{ ['t'] = 51, ['d'] = 1, ['side'] = 3, ['x'] = 25, ['lvl'] = 2, ['type'] = 'AE_rhy_dw_Wraith', ['default'] = 'Troll Shaman', ['bulky'] = 30, ['guard'] = true },
-	{ ['t'] = 51, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Hellhound', ['default'] = 'Direwolf Rider', ['guard'] = true },
+	{ ['t'] = 51, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_chs_chaos_empire_Hellhound', ['default'] = 'Direwolf Rider', ['guard'] = true, ['beefy'] = 32 },
 	{ ['t'] = 53, ['d'] = 1, ['side'] = 4, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['armored'] = 20, ['gold'] = 9, },
 	{ ['t'] = 54, ['d'] = 1, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['gold'] = 5, ['aggressive'] = 1 },
 	{ ['t'] = 54, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Spiderpriest', ['default'] = 'Dark Sorcerer', ['recruits'] = 'AE_stf_free_saurians_Spider,AE_ext_monsters_Little_Spider,AE_rhy_de_Small_Spider', ['default_recruits'] = 'Ghost,Ghoul,Skeleton Archer', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 80, ['gold'] = 40, ['recruit_minion'] = 'C39' },
@@ -314,7 +314,7 @@ return {
 	{ ['t'] = 68, ['d'] = 6, ['side'] = 3, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_stf_triththa_Kraken', ['default'] = 'Naga Sicarius', ['buff'] = 'A21:B2:C4:C21:C2', },
 
 	{ ['t'] = 66, ['d'] = 7, ['side'] = 2, ['x'] = 25, ['lvl'] = 5, ['type'] = 'QQ_sunrise_guard', ['default'] = 'QQ_sunrise_guard', ['ai_add_gold'] = 60, ['agile'] = 10, ['beefy'] = 28 },
-	{ ['t'] = 66, ['d'] = 7, ['side'] = 3, ['x'] = 23, ['lvl'] = 4, ['type'] = 'AE_mag_Master_Banisher', ['default'] = 'Dune Paragon', ['aggressive'] = 1, ['fast'] = 1, ['ai_add_gold'] = 150 },
+	{ ['t'] = 66, ['d'] = 7, ['side'] = 3, ['x'] = 23, ['lvl'] = 4, ['type'] = 'AE_mag_Master_Banisher', ['default'] = 'Dune Paragon', ['aggressive'] = 1, ['fast'] = 1, ['ai_add_gold'] = 150, ['event'] = 'set_minion_recruits', ['event_var_a'] = 'D3' },
 	
 	-- 69 / final boss
 	

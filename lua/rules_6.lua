@@ -15,7 +15,7 @@
 -- for objects 'row' = object
 -- cat is mandatory
 
-local hidden_item = { ['row'] = 'item', ['t'] = 1, ['asymmetric'] = true, ['pool'] = { 'cold_res','impact_res','fire_res','arcane_res','blade_res','pierce_res','melee_poison','double_attack','hitn_run','extra_strikes' }, ['overwrite_image'] = 'items/bones.png' }
+local hidden_item = { ['row'] = 'item', ['t'] = 1, ['asymmetric'] = true, ['pool'] = { 'cold_weapon','impact_weapon','fire_weapon','arcane_weapon','blade_weapon','pierce_weapon' }, ['overwrite_image'] = 'items/bones.png' }
 local r = mathx.random(1, 4)
 
 if r == 1 then
@@ -73,7 +73,7 @@ return {
 +10% hills defense (50%)' },
 	{ ['row'] = 'object', ['t'] = 63, ['x'] = 11, ['cat'] = 'decorative', ['image'] = 'halo/monster/stoat-frost-mask.png', ['name'] = 'Town of Ahrenvou' },
 
-	{ ['row'] = 'object', ['t'] = 90, ['x'] = 7, ['image'] = 'halo/elven/druid-healing8.png', ['name'] = 'Crystal Forest', ['cat'] = 'event', ['event'] = 'rfc_3_crystal_forest', },
+	{ ['row'] = 'object', ['t'] = 90, ['x'] = 7, ['image'] = 'halo/elven/druid-healing8.png', ['name'] = 'Crystal Forest', ['cat'] = 'event', ['event'] = 'rfc_crystal_forest', },
 	{ ['row'] = 'object', ['t'] = 98, ['x'] = 24, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 100 },
 
 	{ ['row'] = 'object', ['t'] = 111, ['x'] = 11, ['image'] = 'scenery/temple-cracked3.png', ['cat'] = 'event', ['event'] = 'rfc_temple', },
@@ -82,14 +82,11 @@ return {
 	{ ['row'] = 'object', ['t'] = 115, ['x'] = 6, ['image'] = 'items/bones.png', ['cat'] = 'decorative', ['render'] = false, ['id'] = 'temple_bones' },
 	{ ['row'] = 'object', ['t'] = 115, ['x'] = 9, ['cat'] = 'event', ['event'] = 'rfc_altar', },
 	{ ['row'] = 'object', ['t'] = 115, ['x'] = 6, ['cat'] = 'event', ['event'] = 'rfc_bones', },
-	{ ['row'] = 'object', ['t'] = 130, ['x'] = 20, ['cat'] = 'rune', ['image'] = 'scenery/uws/energy_vortex_alt.png', ['amount'] = 3, ['name'] = 'Rune', ['set'] = 'R12,R13,R14', ['color'] = '#b366ed', ['tooltip'] = '+2 ranged parry (33%)\
-+2 ranged accuracy (33% - no effect on magical)\
-+1 ranged damage (33%)' },
+	{ ['row'] = 'object', ['t'] = 130, ['x'] = 20, ['cat'] = 'rune', ['image'] = 'scenery/uws/energy_vortex_alt.png', ['amount'] = 1, ['name'] = 'Rune', ['set'] = 'R17', ['color'] = '#b366ed', ['tooltip'] = '+3 damage (100%)' },
 
-	{ ['row'] = 'object', ['t'] = 138, ['x'] = 15, ['image'] = 'scenery/tent-fancy-red.png', ['cat'] = 'event', ['event'] = 'rfc_5_shop', },
-	{ ['row'] = 'object', ['t'] = 166, ['x'] = 23, ['cat'] = 'rune', ['image'] = 'scenery/nest-full.png', ['amount'] = 2, ['name'] = 'Nest', ['set'] = 'reheal', ['color'] = '#dbbf60', ['tooltip'] = '100% reheal (100%)' },
+	{ ['row'] = 'object', ['t'] = 138, ['x'] = 15, ['image'] = 'scenery/tent-fancy-red.png', ['cat'] = 'event', ['event'] = 'rfc_shop', },
+	{ ['row'] = 'object', ['t'] = 166, ['x'] = 23, ['cat'] = 'rune', ['image'] = 'scenery/nest-full.png', ['amount'] = 5, ['name'] = 'Nest', ['set'] = 'reheal', ['color'] = '#dbbf60', ['tooltip'] = '100% reheal (100%)' },
 	
-
 
 	-- beginning
 	
@@ -483,7 +480,7 @@ return {
 
 	-- 134 - 140 (mask y 51 - 45)
 
-	{ ['t'] = 135, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 5, ['type'] = 'QQ_Archwitch', ['default'] = 'QQ_Archwitch', ['buff'] = 'A19:B15:C13:C16', },
+	{ ['t'] = 135, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 5, ['type'] = 'QQ_Archwitch', ['default'] = 'QQ_Archwitch', ['buff'] = 'A19:B15:C13:C16', ['item'] = true },
 	{ ['t'] = 137, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_bem_calydonians_Gymnet', ['default'] = 'Shock Trooper', },
 	{ ['t'] = 137, ['d'] = 1, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_bem_calydonians_Dardanian_Pillager', ['default'] = 'Pikeman', },
 	{ ['t'] = 139, ['d'] = 1, ['side'] = 3, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_bem_calydonians_Dardanian_Warrior', ['default'] = 'Bowman', },
@@ -523,7 +520,7 @@ return {
 	
 	-- 148 - 154 (mask y 37 - 31)
 	
-	{ ['t'] = 148, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_rhy_fh_Bearver', ['default'] = 'Swamp Lizard', ['item'] = true, ['guard'] = true, ['buff'] = 'A28:B9:C19:C29:C30' },
+	{ ['t'] = 148, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_rhy_fh_Bearver', ['default'] = 'Swamp Lizard', ['guard'] = true, ['buff'] = 'A28:B9:C19:C29:C30' },
 	{ ['t'] = 149, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_stf_eltireans_Crusher', ['default'] = 'Shock Trooper', ['beefy'] = 48 },
 	{ ['t'] = 150, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_stf_eltireans_Patrol_Captain', ['default'] = 'Lieutenant', ['calls_for_help'] = true, ['gold'] = 20 },
 	{ ['t'] = 151, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 4, ['type'] = 'Grand Marshal', ['default'] = 'Grand Marshal', ['recruits'] = 'AE_stf_eltireans_Frostwalker,AE_stf_eltireans_Destroyer,AE_stf_eltireans_Guardian_of_the_Sun,AE_stf_eltireans_Raging_Mistress,AE_stf_eltireans_Siren', ['default_recruits'] = 'Master at Arms,Grand Knight,Paladin,Mage of Light,Royal Warrior', ['r_lvls'] = '3,3,3,3,3', ['recruitment_gold'] = 500, },

@@ -16,7 +16,7 @@ function build_spawn_rules_row(data)
 		['allow_random'] = true, ['allow_random_recruits'] = true, ['disallow_slash_unguardian'] = false, ['calls_for_help'] = false,
 		['armored'] = 0, ['recruit_armored'] = 0, ['recruit_minion'] = '', ['title'] = '', ['fast'] = 0, ['agile'] = 0, ['story_message'] = '',
 		['story_response'] = '', ['race_points_value'] = -1, ['second_item'] = '', ['clear_boss_tile_overlay'] = false, ['count'] = 1,
-		['delayed'] = -1, ['ai_add_gold'] = 0, ['aggressive'] = 0
+		['delayed'] = -1, ['ai_add_gold'] = 0, ['aggressive'] = 0, ['event_var_a'] = '',
 	}
 	
 	for k,v in pairs(data) do
