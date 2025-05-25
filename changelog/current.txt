@@ -1,12 +1,16 @@
-<span color='#aec7f2'>v2.7.0</span> (date):
+<span color='#aec7f2'>v2.7.0</span> (26/05/2025):
 - UWS campaign is replaced with one single map
-- IceLord's Protection item buffed and enemy level limitation removed
+- Element res items now give global res auras instead of dmg auras
+- All weapon items now give global dmg increase auras
 - Item restriction rules added to some games to prevent players from getting faction-irrelevant items
-- Number of randomly generated amlas per unit changed from 3 to 4
-- Small amla balancing
+- IceLord's Protection item buffed and enemy level limitation removed
 - White Book - fixed bug where intelligent trait was removed on epic rank
 - Perkele's Undying Ember - the strength of the summoned familiars is somewhat nerfed
 - Potion of Hindrance - corrupted units can no longer be gifted
 - Tracker's Disguise - epic rank traps now prevent retaliation when discovered
+- Necklace of Inversion slightly nerfed on higher ranks
+- Potion of Agility - item buffed on lower ranks
+- Number of randomly generated amlas per unit changed from 3 to 4
+- Small amla balancing
 - Two new lvl5 unit added - Archon Polemarchos and ArchPriest of War
 - Minor balancing of various maps
