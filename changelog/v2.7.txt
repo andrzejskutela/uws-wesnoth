@@ -9,6 +9,7 @@
 - Potion of Hindrance - corrupted units can no longer be gifted
 - Tracker's Disguise - epic rank traps now prevent retaliation when discovered
 - Necklace of Inversion slightly nerfed on higher ranks
+- Necromancer's Bane - no longer reduces damage of nearby enemies if the attacked enemy isn't killed, also some graphical improvements
 - Potion of Agility - item buffed on lower ranks
 - Number of randomly generated amlas per unit changed from 3 to 4
 - Small amla balancing
