@@ -1,4 +1,4 @@
-<span color='#aec7f2'>v2.7.0</span> (26/05/2025):
+<span color='#aec7f2'>v2.7.0</span> (27/05/2025):
 - UWS campaign is replaced with one single map
 - Element res items now give global res auras instead of dmg auras
 - All weapon items now give global dmg increase auras

@@ -561,11 +561,11 @@ return {
 	{ ['t'] = 155, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mag_Aeromancer', ['default'] = 'Orcish Warrior', ['calls_for_help'] = true },
 	{ ['t'] = 155, ['d'] = 1, ['side'] = 2, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_mag_Golem', ['default'] = 'Young Ogre', },
 	{ ['t'] = 156, ['d'] = 1, ['side'] = 2, ['x'] = 5, ['lvl'] = 3, ['type'] = 'AE_mag_Mirrorshield', ['default'] = 'Great Troll', ['beefy'] = 28, ['armored'] = 10 },
-	{ ['t'] = 158, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'AE_mrc_avians_Diamondbeak', ['default'] = 'Armageddon Drake', ['beefy'] = 68, ['gold'] = 100 },
+	{ ['t'] = 158, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'AE_mrc_avians_Diamondbeak', ['default'] = 'Armageddon Drake', ['beefy'] = 112, ['gold'] = 100 },
 	{ ['t'] = 160, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_avians_Hawkeye', ['default'] = 'Drake Flare', ['race_guard_off'] = true, },
 	{ ['t'] = 161, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 3, ['type'] = 'AE_mrc_avians_Shell', ['default'] = 'Inferno Drake', ['race_guard_off'] = true },
 
-	{ ['t'] = 157, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_mag_Um', ['default'] = 'Orcish Warlord', ['bulky'] = 400, ['beefy'] = 120 },
+	{ ['t'] = 157, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_mag_Um', ['default'] = 'Orcish Warlord', ['bulky'] = 400, ['beefy'] = 120, ['allow_random'] = false },
 
 	{ ['t'] = 155, ['d'] = 3, ['side'] = 2, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_mag_War_Mage', ['default'] = 'Troll Shaman', },
 
@@ -608,7 +608,7 @@ return {
 	{ ['t'] = 175, ['d'] = 1, ['side'] = 4, ['x'] = 9, ['lvl'] = 4, ['type'] = 'AE_mag_Abaddon', ['default'] = 'Skeletal Dragon', ['race_guard_off'] = true, },
 
 	{ ['t'] = 169, ['d'] = 2, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_ele_Fallen_Knight', ['default'] = 'Rogue', },
-	{ ['t'] = 175, ['d'] = 2, ['side'] = 4, ['x'] = 14, ['lvl'] = 4, ['type'] = 'AE_mag_Dark_Apostle', ['default'] = 'Skeletal Dragon', },
+	{ ['t'] = 175, ['d'] = 2, ['side'] = 4, ['x'] = 14, ['lvl'] = 4, ['type'] = 'AE_mag_Dark_Apostle', ['default'] = 'Skeletal Dragon', ['beefy'] = 200, ['allow_random'] = false },
 
 	{ ['t'] = 173, ['d'] = 3, ['side'] = 4, ['x'] = 10, ['lvl'] = 3, ['type'] = 'AE_mag_Crimson_Atokpi', ['default'] = 'Banebow', },
 
