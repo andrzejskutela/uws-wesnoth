@@ -1,17 +1,4 @@
-<span color='#aec7f2'>v2.7.0</span> (27/05/2025):
-- UWS campaign is replaced with one single map
-- Element res items now give global res auras instead of dmg auras
-- All weapon items now give global dmg increase auras
-- Item restriction rules added to some games to prevent players from getting faction-irrelevant items
-- IceLord's Protection item buffed and enemy level limitation removed
-- White Book - fixed bug where intelligent trait was removed on epic rank
-- Perkele's Undying Ember - the strength of the summoned familiars is somewhat nerfed
-- Potion of Hindrance - corrupted units can no longer be gifted
-- Tracker's Disguise - epic rank traps now prevent retaliation when discovered
-- Necklace of Inversion slightly nerfed on higher ranks
-- Necromancer's Bane - no longer reduces damage of nearby enemies if the attacked enemy isn't killed, also some graphical improvements
-- Potion of Agility - item buffed on lower ranks
-- Number of randomly generated amlas per unit changed from 3 to 4
-- Small amla balancing
-- Two new lvl5 unit added - Archon Polemarchos and ArchPriest of War
-- Minor balancing of various maps
+<span color='#7db085'>v2.7.1</span> (date):
+- Insane mode added to Return from Captivity map
+- Two new units added - lvl6 Hades Guard and lvl5 Rotting Observer
+- New champion bonuses
