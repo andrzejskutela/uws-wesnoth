@@ -87,7 +87,8 @@ return {
 	{ ['row'] = 'object', ['t'] = 133, ['x'] = 7, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 40 },
 	{ ['row'] = 'object', ['t'] = 138, ['x'] = 15, ['image'] = 'scenery/tent-fancy-red.png', ['cat'] = 'event', ['event'] = 'rfc_shop', },
 	{ ['row'] = 'object', ['t'] = 152, ['x'] = 23, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 60 },
-	{ ['row'] = 'object', ['t'] = 166, ['x'] = 23, ['cat'] = 'rune', ['image'] = 'scenery/nest-full.png', ['amount'] = 5, ['name'] = 'Nest', ['set'] = 'reheal', ['color'] = '#dbbf60', ['tooltip'] = '100% reheal (100%)' },
+	{ ['row'] = 'object', ['t'] = 163, ['x'] = 7, ['cat'] = 'rune', ['image'] = 'scenery/nest-full.png', ['amount'] = 3, ['name'] = 'Nest', ['set'] = 'reheal', ['color'] = '#dbbf60', ['tooltip'] = '100% reheal (100%)' },
+	{ ['row'] = 'object', ['t'] = 166, ['x'] = 23, ['cat'] = 'rune', ['image'] = 'scenery/nest-full.png', ['amount'] = 3, ['name'] = 'Nest', ['set'] = 'reheal', ['color'] = '#dbbf60', ['tooltip'] = '100% reheal (100%)' },
 	
 
 	-- beginning
@@ -487,11 +488,12 @@ return {
 	{ ['t'] = 117, ['d'] = 6, ['side'] = 4, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Toad_Shaman', ['default'] = 'Naga Ringcaster', ['agile'] = 10, ['race_guard_off'] = true, },
 
 	{ ['t'] = 112, ['d'] = 7, ['side'] = 3, ['x'] = 15, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['beefy'] = 72 },
+	{ ['t'] = 112, ['d'] = 7, ['side'] = 3, ['x'] = 14, ['lvl'] = 5, ['type'] = 'QQ_abyssal_fungoid', ['default'] = 'QQ_abyssal_fungoid', ['allow_random'] = false, ['buff'] = 'A37:B29:C36:C14' },
 
 	-- 120 - 126 (mask y 66 - 60)
 
 	{ ['t'] = 121, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_rhy_vx_Snake_Viper', ['default'] = 'Elder Wose', ['agile'] = 20, ['fast'] = 1, ['guard'] = true, },
-	{ ['t'] = 122, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 4, ['type'] = 'AE_mag_Chosen_of_Marsh', ['default'] = 'Wyvern Rider', ['recruits'] = 'AE_mag_Black_Salamander,AE_mag_Blue_Salamander,AE_mag_Green_Salamander,AE_mag_Red_Salamander,AE_mag_Yellow_Salamander,AE_mag_Toad_Shaman,AE_mag_Toad_Archer,AE_mag_Battle_Toad', ['default_recruits'] = 'Naga Ophidian,Naga Ringcaster,Naga Warrior,Naga Shield Guard,Swamp Lizard', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 200, ['item'] = true, ['buff'] = 'A5:B14:C29', ['recruit_minion'] = 'D5' },
+	{ ['t'] = 122, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 4, ['type'] = 'AE_mag_Chosen_of_Marsh', ['default'] = 'Armageddon Drake', ['recruits'] = 'AE_mag_Black_Salamander,AE_mag_Blue_Salamander,AE_mag_Green_Salamander,AE_mag_Red_Salamander,AE_mag_Yellow_Salamander,AE_mag_Toad_Shaman,AE_mag_Toad_Archer,AE_mag_Battle_Toad', ['default_recruits'] = 'Fire Drake,Drake Arbiter,Drake Warrior,Sky Drake,Swamp Lizard', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 200, ['item'] = true, ['buff'] = 'A5:B14:C29', ['recruit_minion'] = 'D5' },
 	{ ['t'] = 122, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mag_Battle_Toad', ['default'] = 'Naga Ophidian', ['buff'] = 'A21:B41:C42' },
 	{ ['t'] = 123, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_mag_Lava_Salamander', ['default'] = 'Naga High Guard', ['guard'] = true, ['disallow_slash_unguardian'] = true, ['bulky'] = 100 },
 	{ ['t'] = 124, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_treefolk_ghastbark', ['default'] = 'Wose Shaman', ['guard'] = true, ['gold'] = 15 },
@@ -584,7 +586,7 @@ return {
 	{ ['t'] = 148, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_rhy_fh_Bearver', ['default'] = 'Swamp Lizard', ['guard'] = true, ['buff'] = 'A28:B9:C19:C29:C30' },
 	{ ['t'] = 149, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_stf_eltireans_Crusher', ['default'] = 'Shock Trooper', ['beefy'] = 48 },
 	{ ['t'] = 150, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_stf_eltireans_Patrol_Captain', ['default'] = 'Lieutenant', ['calls_for_help'] = true, ['gold'] = 20 },
-	{ ['t'] = 151, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 4, ['type'] = 'Grand Marshal', ['default'] = 'Grand Marshal', ['recruits'] = 'AE_stf_eltireans_Frostwalker,AE_stf_eltireans_Destroyer,AE_stf_eltireans_Guardian_of_the_Sun,AE_stf_eltireans_Raging_Mistress,AE_stf_eltireans_Siren', ['default_recruits'] = 'Master at Arms,Grand Knight,Paladin,Mage of Light,Royal Warrior', ['r_lvls'] = '3,3,3,3,3', ['recruitment_gold'] = 500, },
+	{ ['t'] = 151, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 4, ['type'] = 'AE_AoA_kingdoms_rovahr_Archbishop_Fighter', ['default'] = 'Grand Marshal', ['recruits'] = 'AE_AoA_kingdoms_rovahr_Templar_Captain,AE_AoA_kingdoms_rovahr_Grand_Inquisitor,AE_AoA_kingdoms_rovahr_Gothic_Kight_On_Foots,AE_AoA_kingdoms_rovahr_Gothic_Knight,AE_AoA_kingdoms_rovahr_Grand_Mage', ['default_recruits'] = 'Master at Arms,Grand Knight,Paladin,Mage of Light,Royal Warrior', ['r_lvls'] = '3,3,3,3,3', ['recruitment_gold'] = 500, ['recruit_minion'] = 'A58' },
 	{ ['t'] = 153, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_stf_eltireans_Elementalist', ['default'] = 'Spearman', },
 	{ ['t'] = 154, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_mag_War_Golem', ['default'] = 'Orcish Crossbowman', },
 
@@ -598,6 +600,8 @@ return {
 	{ ['t'] = 151, ['d'] = 5, ['side'] = 4, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_stf_eltireans_Sky_Lord', ['default'] = 'Great Mage', },
 
 	{ ['t'] = 154, ['d'] = 6, ['side'] = 2, ['x'] = 8, ['lvl'] = 3, ['type'] = 'AE_mag_Sky_Guardian', ['default'] = 'Orcish Nightblade', ['agile'] = 10, ['aggressive'] = 1 },
+
+	{ ['t'] = 150, ['d'] = 7, ['side'] = 4, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_AoA_kingdoms_rovahr_Crossbowman_With_Bulwark', ['default'] = 'Master Bowman', ['buff'] = 'A13:B3:C26:C29:C31' },
 
 	-- 155 - 161 (mask y 30 - 24)
 
@@ -618,6 +622,8 @@ return {
 
 	{ ['t'] = 157, ['d'] = 6, ['side'] = 2, ['x'] = 8, ['lvl'] = 3, ['type'] = 'AE_mag_Master_of_Earth', ['default'] = 'Drake Blademaster', ['armored'] = 10, ['aggressive'] = 1 },
 
+	{ ['t'] = 160, ['d'] = 7, ['side'] = 2, ['x'] = 17, ['lvl'] = 6, ['type'] = 'QQ_grand_scholar', ['default'] = 'QQ_grand_scholar', ['buff'] = 'A31:B58:C56' },
+
 	-- 162 - 168 (mask y 23 - 17)
 
 	{ ['t'] = 162, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_mrc_avians_Passer', ['default'] = 'Drake Warden', ['calls_for_help'] = true, ['fast'] = 3 },
@@ -625,10 +631,11 @@ return {
 	{ ['t'] = 165, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Shieldmaster', ['default'] = 'Highwayman', ['guard'] = true },
 	{ ['t'] = 165, ['d'] = 1, ['side'] = 3, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Inquisitor', ['default'] = 'Assassin', ['beefy'] = 24, ['guard'] = true },
 	{ ['t'] = 166, ['d'] = 1, ['side'] = 3, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_ele_Fallen_Infiltrator', ['default'] = 'Bandit', ['race_guard_off'] = true, },
-	{ ['t'] = 167, ['d'] = 1, ['side'] = 3, ['x'] = 8, ['lvl'] = 4, ['type'] = 'AE_ele_Fallen_Dragon_Rider', ['default'] = 'Yeti', ['guard'] = true, ['buff'] = 'A40:B47:C14', ['disallow_slash_unguardian'] = true },
-	{ ['t'] = 168, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 5, ['type'] = 'AE_ele_Fallen_Supreme_Lord', ['default'] = 'Fire Dragon', ['recruits'] = 'AE_ele_Fallen_Inquisitor,AE_ele_Fallen_Liquidator,AE_ele_Fallen_Purgator', ['default_recruits'] = 'Fugitive,Huntsman,Assassin', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 300, ['recruit_armored'] = 10 },
+	{ ['t'] = 167, ['d'] = 1, ['side'] = 3, ['x'] = 11, ['lvl'] = 4, ['type'] = 'AE_ele_Fallen_Dragon_Rider', ['default'] = 'Yeti', ['guard'] = true, ['buff'] = 'A40:B47:C14', ['disallow_slash_unguardian'] = true },
+	{ ['t'] = 168, ['d'] = 1, ['side'] = 3, ['x'] = 9, ['lvl'] = 5, ['type'] = 'AE_ele_Fallen_Supreme_Lord', ['default'] = 'Fire Dragon', ['recruits'] = 'AE_ele_Fallen_Inquisitor,AE_ele_Fallen_Liquidator,AE_ele_Fallen_Purgator', ['default_recruits'] = 'Fugitive,Huntsman,Assassin', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 360, ['recruit_armored'] = 15 },
 	{ ['t'] = 168, ['d'] = 1, ['side'] = 3, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_ele_Fallen_Shieldbearer', ['default'] = 'Trapper', ['race_guard_off'] = true },
 
+	{ ['t'] = 163, ['d'] = 4, ['side'] = 4, ['x'] = 7, ['lvl'] = 2, ['type'] = 'AE_mrc_avians_Nestguard', ['default'] = 'War Harbinger', ['guard'] = true },
 	{ ['t'] = 164, ['d'] = 2, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mrc_avians_Egglayer', ['default'] = 'Sky Drake', },
 
 	{ ['t'] = 163, ['d'] = 3, ['side'] = 2, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_mrc_avians_Bowflurry', ['default'] = 'Drake Enforcer', },
@@ -636,40 +643,49 @@ return {
 	{ ['t'] = 166, ['d'] = 3, ['side'] = 3, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_ele_Fallen_Infiltrator', ['default'] = 'Outlaw', ['race_guard_off'] = true, },
 
 	{ ['t'] = 163, ['d'] = 4, ['side'] = 2, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_mrc_avians_Armorpiercer', ['default'] = 'War Harbinger', ['buff'] = 'A45:B20:C36' },
-	{ ['t'] = 166, ['d'] = 4, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mrc_avians_Nestguard', ['default'] = 'Fire Wraith', ['guard'] = true },
+	{ ['t'] = 166, ['d'] = 4, ['side'] = 4, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mrc_avians_Nestguard', ['default'] = 'Fire Wraith', },
 
 	{ ['t'] = 167, ['d'] = 5, ['side'] = 3, ['x'] = 12, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Decapitator', ['default'] = 'Ranger', ['beefy'] = 40, },
 	
 	{ ['t'] = 162, ['d'] = 6, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_mrc_avians_Nightwing', ['default'] = 'Inferno Drake', },
-	{ ['t'] = 168, ['d'] = 6, ['side'] = 3, ['x'] = 12, ['lvl'] = 5, ['type'] = 'QQ_orc_decapitator', ['default'] = 'QQ_orc_decapitator', ['buff'] = 'A1:B20:C19' },
+	{ ['t'] = 168, ['d'] = 6, ['side'] = 3, ['x'] = 12, ['lvl'] = 5, ['type'] = 'QQ_orc_decapitator', ['default'] = 'QQ_orc_decapitator', ['buff'] = 'A1:B20:C19:C55:C31' },
+
+	{ ['t'] = 166, ['d'] = 7, ['side'] = 3, ['x'] = 12, ['lvl'] = 4, ['type'] = 'QQ_terror_hulk', ['default'] = 'QQ_terror_hulk', ['buff'] = 'A3:B6:C19' },
 
 	-- 169 - 175 (mask y 16 - 10)
 
 	{ ['t'] = 171, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 6, ['type'] = 'QQ_blackness', ['default'] = 'QQ_blackness', ['buff'] = 'A37:B37:C46' },
 	{ ['t'] = 172, ['d'] = 1, ['side'] = 4, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_mag_Doom_Bringer', ['default'] = 'Death Knight', ['race_guard_off'] = true, },
-	{ ['t'] = 175, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 4, ['type'] = 'AE_mag_Fallen_Cyclops_King', ['default'] = 'Ancient Lich', ['recruits'] = 'AE_mag_Apocalypse,AE_mag_Devourer,AE_mag_Atokpi_Charger', ['default_recruits'] = 'Spectre,Ghast,Draug', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 300, ['recruit_minion'] = 'C43' },
+	{ ['t'] = 175, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 4, ['type'] = 'AE_mag_Fallen_Cyclops_King', ['default'] = 'Ancient Lich', ['recruits'] = 'AE_mag_Apocalypse,AE_mag_Devourer,AE_mag_Atokpi_Charger', ['default_recruits'] = 'Spectre,Ghast,Draug', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 260, ['recruit_minion'] = 'C43' },
 	{ ['t'] = 175, ['d'] = 1, ['side'] = 4, ['x'] = 9, ['lvl'] = 4, ['type'] = 'AE_mag_Abaddon', ['default'] = 'Skeletal Dragon', ['race_guard_off'] = true, },
 
 	{ ['t'] = 169, ['d'] = 2, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_ele_Fallen_Knight', ['default'] = 'Rogue', },
-	{ ['t'] = 175, ['d'] = 2, ['side'] = 4, ['x'] = 14, ['lvl'] = 4, ['type'] = 'AE_mag_Dark_Apostle', ['default'] = 'Skeletal Dragon', ['beefy'] = 200, ['allow_random'] = false },
-
+	
 	{ ['t'] = 173, ['d'] = 3, ['side'] = 4, ['x'] = 10, ['lvl'] = 3, ['type'] = 'AE_mag_Crimson_Atokpi', ['default'] = 'Banebow', },
 
 	{ ['t'] = 172, ['d'] = 4, ['side'] = 4, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_mag_Moloch', ['default'] = 'Nightgaunt', ['race_guard_off'] = true, ['bulky'] = 72, ['aggressive'] = 1 },
 
+	{ ['t'] = 175, ['d'] = 5, ['side'] = 4, ['x'] = 14, ['lvl'] = 4, ['type'] = 'AE_mag_Dark_Apostle', ['default'] = 'Skeletal Dragon', ['beefy'] = 200, ['allow_random'] = false },
+
 	{ ['t'] = 169, ['d'] = 6, ['side'] = 3, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Scorch_King', ['default'] = 'Highwayman', },
+
+	{ ['t'] = 174, ['d'] = 7, ['side'] = 4, ['x'] = 12, ['lvl'] = 5, ['type'] = 'QQ_boneblade_terror', ['default'] = 'QQ_boneblade_terror', ['buff'] = 'A20:B40:C40:C51' },
 
 	-- 176 - 182 (mask y 9 - 3) old t=41 - t=47
 
-	{ ['t'] = 176, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 4, ['type'] = 'AE_myh_Librarian', ['default'] = 'Dwarvish Arcanister', ['recruits'] = 'AE_myh_Oathkeeper,AE_myh_Runeforger,AE_myh_Stormbringer', ['default_recruits'] = 'Dwarvish Lord,Dwarvish Dragonguard,Dwarvish Sentinel', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 300, ['recruit_minion'] = 'A3' },
-	{ ['t'] = 178, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 5, ['type'] = 'QQ_atronachs', ['default'] = 'QQ_atronachs', ['buff'] = 'A33:B30:C30' },
+	{ ['t'] = 176, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 4, ['type'] = 'AE_myh_Librarian', ['default'] = 'Dwarvish Arcanister', ['recruits'] = 'AE_myh_Oathkeeper,AE_myh_Runeforger,AE_myh_Stormbringer', ['default_recruits'] = 'Dwarvish Lord,Dwarvish Dragonguard,Dwarvish Sentinel', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 320, ['recruit_minion'] = 'A3' },
 
-	{ ['t'] = 176, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 7, ['type'] = 'QQ_harbinger_of_chaos', ['default'] = 'QQ_harbinger_of_chaos', ['buff'] = 'A24:B9:C50:A18', ['allow_random'] = false },
+	{ ['t'] = 176, ['d'] = 2, ['side'] = 2, ['x'] = 11, ['lvl'] = 7, ['type'] = 'QQ_harbinger_of_chaos', ['default'] = 'QQ_harbinger_of_chaos', ['buff'] = 'A24:B9:C50:A18', ['allow_random'] = false },
 
-	{ ['t'] = 177, ['d'] = 3, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_myh_Harbinger', ['default'] = 'Dwarvish Runemaster', ['beefy'] = 40 },
+	{ ['t'] = 177, ['d'] = 3, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_myh_Harbinger', ['default'] = 'Dwarvish Runemaster', ['beefy'] = 72 },
 	
 	{ ['t'] = 177, ['d'] = 4, ['side'] = 2, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_myh_Dreadnought', ['default'] = 'Naga Sicarius', ['armored'] = 10, },
 
+	{ ['t'] = 178, ['d'] = 5, ['side'] = 2, ['x'] = 21, ['lvl'] = 5, ['type'] = 'QQ_atronachs', ['default'] = 'QQ_atronachs', ['buff'] = 'A33:B30:C30' },
+
+	{ ['t'] = 176, ['d'] = 6, ['side'] = 2, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_myh_Arbiter', ['default'] = 'Drake Enforcer', ['aggressive'] = 2 },
+
+	{ ['t'] = 177, ['d'] = 7, ['side'] = 2, ['x'] = 25, ['lvl'] = 6, ['type'] = 'QQ_empty_shadow', ['default'] = 'QQ_empty_shadow', ['buff'] = 'A8:B13:C44', },
 
 	-- final boss 33 / mask y 5
 	
