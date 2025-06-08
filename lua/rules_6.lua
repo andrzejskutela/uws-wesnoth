@@ -657,7 +657,7 @@ return {
 	{ ['t'] = 171, ['d'] = 1, ['side'] = 3, ['x'] = 17, ['lvl'] = 6, ['type'] = 'QQ_blackness', ['default'] = 'QQ_blackness', ['buff'] = 'A37:B37:C46' },
 	{ ['t'] = 172, ['d'] = 1, ['side'] = 4, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_mag_Doom_Bringer', ['default'] = 'Death Knight', ['race_guard_off'] = true, },
 	{ ['t'] = 175, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 4, ['type'] = 'AE_mag_Fallen_Cyclops_King', ['default'] = 'Ancient Lich', ['recruits'] = 'AE_mag_Apocalypse,AE_mag_Devourer,AE_mag_Atokpi_Charger', ['default_recruits'] = 'Spectre,Ghast,Draug', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 260, ['recruit_minion'] = 'C43' },
-	{ ['t'] = 175, ['d'] = 1, ['side'] = 4, ['x'] = 9, ['lvl'] = 4, ['type'] = 'AE_mag_Abaddon', ['default'] = 'Skeletal Dragon', ['race_guard_off'] = true, },
+	{ ['t'] = 175, ['d'] = 1, ['side'] = 4, ['x'] = 9, ['lvl'] = 4, ['type'] = 'AE_mag_Abaddon', ['default'] = 'Skeletal Dragon', ['race_guard_off'] = true, ['calls_for_help'] = true },
 
 	{ ['t'] = 169, ['d'] = 2, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_ele_Fallen_Knight', ['default'] = 'Rogue', },
 	
@@ -690,7 +690,7 @@ return {
 
 	-- final boss 33 / mask y 5
 	
-	{ ['t'] = 180, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 6, ['type'] = 'QQ_adjudicator', ['default'] = 'QQ_adjudicator', ['moves'] = 0, ['final_boss'] = true, ['buff'] = 'A6:B22:C47:C29:B11:B64:C16', },
+	{ ['t'] = 180, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 6, ['type'] = 'QQ_adjudicator', ['default'] = 'QQ_adjudicator', ['moves'] = 0, ['final_boss'] = true, ['buff'] = 'A6:B22:C47:C29:B64:C16', ['quiet_buff'] = 'rfc_adjudicator' },
 }
 
 
