@@ -3,6 +3,7 @@
 - Return from Captivity - Crystal Forest reward offered now depends on the level of escorted unit
 - Golden Idol - armour science effect now lasts one turn
 - Elven Ring of Accuracy - improved handling of assassination special
+- Rodent Breeder - Rat Ambassador now receives 50% xp and kill count increase from kills made by royal rodents
 - Two new units added - lvl6 Hades Guard and lvl5 Rotting Observer
 - New champion bonuses
 - Balancing of various maps and specials
