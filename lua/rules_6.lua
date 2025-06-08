@@ -328,7 +328,7 @@ return {
 	{ ['t'] = 70, ['d'] = 6, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_big_ice_golem', ['default'] = 'Dwarvish Steelclad', ['bulky'] = 48, },
 	{ ['t'] = 70, ['d'] = 6, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_spearman', ['default'] = 'Dwarvish Fighter', },
 
-	{ ['t'] = 69, ['d'] = 7, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_agl_frozen_frost_heavy_warrior', ['default'] = 'Dwarvish Explorer', ['buff'] = 'A19:B25:C58', ['allow_random'] = false },
+	{ ['t'] = 69, ['d'] = 7, ['side'] = 3, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_agl_frozen_frost_heavy_warrior', ['default'] = 'Dwarvish Explorer', ['buff'] = 'A19:B25:C58', },
 
 	-- 71 - 77 (mask y 113 - 107)
 
