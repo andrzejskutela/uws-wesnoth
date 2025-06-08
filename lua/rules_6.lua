@@ -668,6 +668,7 @@ return {
 	{ ['t'] = 175, ['d'] = 5, ['side'] = 4, ['x'] = 14, ['lvl'] = 4, ['type'] = 'AE_mag_Dark_Apostle', ['default'] = 'Skeletal Dragon', ['beefy'] = 200, ['allow_random'] = false },
 
 	{ ['t'] = 169, ['d'] = 6, ['side'] = 3, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Scorch_King', ['default'] = 'Highwayman', },
+	{ ['t'] = 173, ['d'] = 6, ['side'] = 3, ['x'] = 12, ['lvl'] = 6, ['type'] = 'QQ_death', ['default'] = 'QQ_death', ['buff'] = 'A64:B9:C34' },
 
 	{ ['t'] = 174, ['d'] = 7, ['side'] = 4, ['x'] = 12, ['lvl'] = 5, ['type'] = 'QQ_boneblade_terror', ['default'] = 'QQ_boneblade_terror', ['buff'] = 'A20:B40:C40:C51' },
 
@@ -689,7 +690,7 @@ return {
 
 	-- final boss 33 / mask y 5
 	
-	{ ['t'] = 180, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 6, ['type'] = 'QQ_adjudicator', ['default'] = 'QQ_adjudicator', ['moves'] = 0, ['final_boss'] = true, ['buff'] = 'A6:B22:C47:C29:B11', },
+	{ ['t'] = 180, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 6, ['type'] = 'QQ_adjudicator', ['default'] = 'QQ_adjudicator', ['moves'] = 0, ['final_boss'] = true, ['buff'] = 'A6:B22:C47:C29:B11:B64:C16', },
 }
 
 

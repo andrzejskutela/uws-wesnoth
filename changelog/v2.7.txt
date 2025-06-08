@@ -5,7 +5,7 @@
 - Elven Ring of Accuracy - improved handling of assassination special
 - Rodent Breeder - Rat Ambassador now receives 50% xp and kill count increase from kills made by royal rodents
 - Two new units added - lvl6 Hades Guard and lvl5 Rotting Observer
-- New champion bonuses
+- New champion bonuses added
 - Balancing of various maps and specials
 
 <span color='#aec7f2'>v2.7.0</span> (27/05/2025):
