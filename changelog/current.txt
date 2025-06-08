@@ -2,5 +2,6 @@
 - Insane mode added to Return from Captivity map
 - Two new units added - lvl6 Hades Guard and lvl5 Rotting Observer
 - New champion bonuses
+- Golden Idol - armour science effect now lasts one turn
 - Elven Ring of Accuracy - improved handling of assassination special
 - Balancing of various maps and specials

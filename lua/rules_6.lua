@@ -673,7 +673,7 @@ return {
 
 	-- 176 - 182 (mask y 9 - 3) old t=41 - t=47
 
-	{ ['t'] = 176, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 4, ['type'] = 'AE_myh_Librarian', ['default'] = 'Dwarvish Arcanister', ['recruits'] = 'AE_myh_Oathkeeper,AE_myh_Runeforger,AE_myh_Stormbringer', ['default_recruits'] = 'Dwarvish Lord,Dwarvish Dragonguard,Dwarvish Sentinel', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 320, ['recruit_minion'] = 'A3' },
+	{ ['t'] = 176, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 4, ['type'] = 'AE_myh_Librarian', ['default'] = 'Dwarvish Arcanister', ['recruits'] = 'AE_myh_Oathkeeper,AE_myh_Runeforger,AE_myh_Stormbringer', ['default_recruits'] = 'Dwarvish Lord,Dwarvish Dragonguard,Dwarvish Sentinel', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 340, ['recruit_minion'] = 'A3' },
 
 	{ ['t'] = 176, ['d'] = 2, ['side'] = 2, ['x'] = 11, ['lvl'] = 7, ['type'] = 'QQ_harbinger_of_chaos', ['default'] = 'QQ_harbinger_of_chaos', ['buff'] = 'A24:B9:C50:A18', ['allow_random'] = false },
 
