@@ -1,3 +1,4 @@
 <span color='#c28c63'>v2.7.2</span> (date):
+- Durinn's Buckler - Battle Cry ability redesigned
 - Dimaga Beach map now spawns Ageless enemies in predefined mode if Ageless Era is used
 - Fixed Return from Captivity incorrect scrolling
