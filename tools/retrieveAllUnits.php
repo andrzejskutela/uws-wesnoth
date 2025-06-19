@@ -87,6 +87,10 @@ class UnitRetriever {
 		$noOfAttacks = 0;
 		$isUnitDefinition = false;
 		foreach ($lines as $line) {
+			if (preg_match("/^\s*#define\s/i", $line) {
+				return [];
+			}
+			
 			if (preg_match("/^\s*#/", $line)) {
 				continue;
 			}
