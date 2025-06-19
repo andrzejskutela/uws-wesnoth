@@ -1,3 +1,7 @@
+<span color='#c28c63'>v2.7.2</span> (date):
+- Dimaga Beach map now spawns Ageless enemies in predefined mode if Ageless Era is used
+- Fixed Return from Captivity incorrect scrolling
+
 <span color='#7db085'>v2.7.1</span> (08/06/2025):
 - Insane mode added to Return from Captivity map
 - Return from Captivity - Crystal Forest reward now depends on the level of the escorted unit

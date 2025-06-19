@@ -179,7 +179,7 @@ return {
 	{ ['t'] = 26, ['d'] = 3, ['side'] = 4, ['x'] = 7, ['lvl'] = 1, ['type'] = 'Blood Bat', ['default'] = 'Blood Bat', },
 	{ ['t'] = 27, ['d'] = 3, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_stf_eltireans_Knight_of_the_Sun', ['default'] = 'Shock Trooper', },
 	
-	{ ['t'] = 25, ['d'] = 4, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Trapdoor_Spider', ['default'] = 'Swamp Lizard', },
+	{ ['t'] = 25, ['d'] = 4, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_mrc_hive_Trapdoor_Spider', ['default'] = 'Swamp Lizard', ['moves'] = 0 },
 	{ ['t'] = 26, ['d'] = 4, ['side'] = 4, ['x'] = 6, ['lvl'] = 1, ['type'] = 'Blood Bat', ['default'] = 'Blood Bat', ['agile'] = 10 },
 	
 	{ ['t'] = 23, ['d'] = 5, ['side'] = 3, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Legionnaire', ['default'] = 'Fencer', },
@@ -300,7 +300,7 @@ return {
 
 	{ ['t'] = 60, ['d'] = 6, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_thelian_chieftain', ['default'] = 'Elvish Captain', ['bulky'] = 32, ['beefy'] = 20, ['ai_add_gold'] = 120, ['event'] = 'set_high_armoured_recruits', ['event_var_a'] = 25 },
 
-	{ ['t'] = 58, ['d'] = 7, ['side'] = 2, ['x'] = 6, ['lvl'] = 3, ['type'] = 'AE_mie_thelian_forefather', ['default'] = 'Nightgaunt', ['armored'] = 15, ['race_guard_off'] = true, ['calls_for_help'] = true },
+	{ ['t'] = 59, ['d'] = 7, ['side'] = 2, ['x'] = 6, ['lvl'] = 3, ['type'] = 'AE_mie_thelian_forefather', ['default'] = 'Nightgaunt', ['armored'] = 15, ['race_guard_off'] = true, ['calls_for_help'] = true },
 	{ ['t'] = 62, ['d'] = 7, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_mie_thelian_ghost_warrior', ['default'] = 'Elvish Champion', ['buff'] = 'A46:B10:C14:B56' },
 
 	-- 64 - 70 (mask y 120 - 114)
@@ -410,12 +410,12 @@ return {
 
 	{ ['t'] = 96, ['d'] = 5, ['side'] = 2, ['x'] = 21, ['lvl'] = 4, ['type'] = 'QQ_dark_witness', ['default'] = 'QQ_dark_witness', ['buff'] = 'A13:B7:C49', ['allow_random'] = false },
 	{ ['t'] = 96, ['d'] = 5, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_arc_phantom_Vapor_12', ['default'] = 'Ghost', },
-	{ ['t'] = 97, ['d'] = 7, ['side'] = 2, ['x'] = 23, ['lvl'] = 4, ['type'] = 'QQ_hellbat', ['default'] = 'QQ_hellbat', ['buff'] = 'A28:B30:C64', },
-
+	
 	{ ['t'] = 93, ['d'] = 6, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_arc_phantom_Vapor_11', ['default'] = 'Ghost', },
-	{ ['t'] = 97, ['d'] = 6, ['side'] = 2, ['x'] = 21, ['lvl'] = 3, ['type'] = 'Nightgaunt', ['default'] = 'Nightgaunt', ['aggressive'] = 2, ['allow_random'] = false },
-
+	{ ['t'] = 97, ['d'] = 6, ['side'] = 2, ['x'] = 23, ['lvl'] = 4, ['type'] = 'QQ_hellbat', ['default'] = 'QQ_hellbat', ['buff'] = 'A28:B30:C64', },
+	
 	{ ['t'] = 94, ['d'] = 7, ['side'] = 2, ['x'] = 16, ['lvl'] = 3, ['type'] = 'AE_arc_phantom_Winged_Warrior', ['default'] = 'Spectre', ['buff'] = 'A51:B59:C47:D4', ['allow_random'] = false },
+	{ ['t'] = 97, ['d'] = 7, ['side'] = 2, ['x'] = 21, ['lvl'] = 3, ['type'] = 'Nightgaunt', ['default'] = 'Nightgaunt', ['aggressive'] = 2, ['allow_random'] = false },
 
 	-- 99 - 105 (mask y 87 - 81)
 
@@ -512,7 +512,7 @@ return {
 	
 	{ ['t'] = 122, ['d'] = 6, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Mosquito', ['default'] = 'Naga Dirkfang', },
 
-	{ ['t'] = 123, ['d'] = 7, ['side'] = 4, ['x'] = 16, ['lvl'] = 5, ['type'] = 'QQ_rotting_observer', ['default'] = 'QQ_rotting_observer', ['buff'] = 'A13:B15:C62', ['ai_add_gold'] = 60 },
+	{ ['t'] = 123, ['d'] = 7, ['side'] = 4, ['x'] = 16, ['lvl'] = 5, ['type'] = 'QQ_rotting_observer', ['default'] = 'QQ_rotting_observer', ['buff'] = 'A31:B15:C62', ['ai_add_gold'] = 60 },
 	{ ['t'] = 124, ['d'] = 7, ['side'] = 4, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mag_Jungle_Assassin', ['default'] = 'Shadow Jumping Spider', ['ai_add_gold'] = 40 },
 
 	-- 127 - 133 (mask y 58 - 52)
