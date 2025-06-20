@@ -2,5 +2,6 @@
 - Durinn's Buckler - Battle Cry ability redesigned
 - Dimaga Beach map now spawns Ageless enemies in predefined mode if Ageless Era is used
 - Corrupted units and summoned familiars now have their uws amlas calculated
+- After-classic slow boost redesigned
 - Fixed Return from Captivity incorrect scrolling
 - Balancing of various maps and champion abilities
