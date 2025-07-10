@@ -5,6 +5,7 @@ class UnitRetriever {
 		'/usr/share/wesnoth/data/core/units',
 		'~/.local/share/wesnoth/1.18/data/add-ons/Ageless_Era/units',
 		'~/.local/share/wesnoth/1.18/data/add-ons/Reign_of_the_Lords/units',
+		'~/.local/share/wesnoth/1.18/data/add-ons/Era_of_Magic',
 		'~/.local/share/wesnoth/1.18/data/add-ons/WarOfTheGods/units',
 		'~/.local/share/wesnoth/1.18/data/add-ons/QQ_Ultimate_Wesnoth_Survival/units',
 	];
@@ -87,7 +88,7 @@ class UnitRetriever {
 		$noOfAttacks = 0;
 		$isUnitDefinition = false;
 		foreach ($lines as $line) {
-			if (preg_match("/^\s*#define\s/i", $line) {
+			if (preg_match("/^\s*#define\s/i", $line)) {
 				return [];
 			}
 			
