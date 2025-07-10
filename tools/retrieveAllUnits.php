@@ -158,7 +158,7 @@ class UnitRetriever {
 	protected function getAllCfgFiles(string $location) {
 		$items = scandir($location);
 		foreach ($items as $item) {
-			if ($item === '.' || $item === '..') {
+			if ($item === '.' || $item === '..' || $item == 'unused') {
 				continue;
 			}
 
