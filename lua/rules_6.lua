@@ -94,7 +94,6 @@ return {
 	-- beginning
 	
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['y'] = 11, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Legionnaire', ['default'] = 'Goblin Impaler', ['moves'] = 0 },
-	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['y'] = 4, ['lvl'] = 0, ['type'] = 'AE_imp_Lavinians_Auxiliary', ['default'] = 'Goblin Spearman', ['moves'] = 4 },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['y'] = 5, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Ballista', ['default'] = 'Soulless', ['moves'] = 0, ['gold'] = 20 },
 
 	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 13, ['y'] = 6, ['lvl'] = 1, ['type'] = 'AE_feu_khaganate_Shieldbearer', ['default'] = 'Heavy Infantryman', ['moves'] = 0 },
@@ -102,12 +101,13 @@ return {
 	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 12, ['y'] = 13, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Microbe', ['default'] = 'Giant Rat', ['moves'] = 4 },
 	
 	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 9, ['y'] = 13, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Microbe', ['default'] = 'Giant Rat', ['moves'] = 4 },
+
+	{ ['t'] = 1, ['d'] = 5, ['side'] = 2, ['x'] = 19, ['y'] = 4, ['lvl'] = 0, ['type'] = 'AE_imp_Lavinians_Auxiliary', ['default'] = 'Goblin Spearman', ['moves'] = 4 },
 	
 	{ ['t'] = 1, ['d'] = 6, ['side'] = 2, ['x'] = 8, ['y'] = 14, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Infected_Hound', ['default'] = 'Thug', ['moves'] = 5 },
 	
 	-- 2 - 8 (mask y 183 - 177)
 	
-	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_imp_Lavinians_Bowman', ['default'] = 'Bowman', ['moves'] = 0 },
 	{ ['t'] = 3, ['d'] = 1, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_imp_Lavinians_Legionaire', ['default'] = 'Sergeant', ['recruits'] = 'AE_efm_imperialists_Legionnaire,AE_myh_Legionnaire,AE_imp_Lavinians_Bowman', ['default_recruits'] = 'Thug,Bowman,Spearman', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 40, ['gold'] = 40 },
 	{ ['t'] = 4, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 0, ['type'] = 'AE_imp_Lavinians_Auxiliary', ['default'] = 'Goblin Spearman', },
 	{ ['t'] = 6, ['d'] = 1, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_feu_khaganate_Rigid', ['default'] = 'Swordsman', ['moves'] = 0 },
@@ -118,6 +118,8 @@ return {
 	{ ['t'] = 8, ['d'] = 3, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Ballista', ['default'] = 'Soulless', ['moves'] = 0 },
 	
 	{ ['t'] = 8, ['d'] = 4, ['side'] = 2, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_arc_ukians_Attack_Dog', ['default'] = 'Goblin Impaler', ['race_guard_off'] = true },
+
+	{ ['t'] = 3, ['d'] = 5, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_imp_Lavinians_Bowman', ['default'] = 'Bowman', ['moves'] = 0 },
 	
 	{ ['t'] = 3, ['d'] = 6, ['side'] = 2, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_mrc_holy_order_Interrogator', ['default'] = 'Heavy Infantryman', ['race_guard_off'] = true, ['beefy'] = 20 },
 
@@ -128,7 +130,6 @@ return {
 	{ ['t'] = 10, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 1, ['type'] = 'AE_mrc_enchanters_Floating_Sword', ['default'] = 'Fencer', ['moves'] = 0 },
 	{ ['t'] = 11, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'Sergeant', ['default'] = 'Sergeant', ['race_guard_off'] = true, ['calls_for_help'] = true, },
 	{ ['t'] = 11, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_feu_ceresians_Corporal', ['default'] = 'Sergeant', },
-	{ ['t'] = 11, ['d'] = 1, ['side'] = 2, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_feu_ceresians_Crossbowman', ['default'] = 'Bowman', },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_imp_Lavinians_Field_Ballista', ['default'] = 'Longbowman', ['moves'] = 0, ['gold'] = 10 },
 	
 	{ ['t'] = 10, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'Bowman', ['default'] = 'Bowman', },
@@ -140,6 +141,8 @@ return {
 	{ ['t'] = 10, ['d'] = 5, ['side'] = 2, ['x'] = 24, ['lvl'] = 1, ['type'] = 'Spearman', ['default'] = 'Spearman', },
 
 	{ ['t'] = 10, ['d'] = 6, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_imp_Lavinians_Light_Infantryman', ['default'] = 'Spearman', ['race_guard_off'] = true },
+
+	{ ['t'] = 11, ['d'] = 7, ['side'] = 2, ['x'] = 24, ['lvl'] = 1, ['type'] = 'AE_feu_ceresians_Crossbowman', ['default'] = 'Bowman', },
 	
 	-- 16 - 22 (mask y 169 - 163)
 	

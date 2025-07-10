@@ -83,10 +83,13 @@ class UnitRetriever {
 	}
 
 	protected function loadRelevantData(string $content, string $path) : array {
+		$content = preg_replace("/\{[^\}\n]+\}/", "", $content);
+		$content = preg_replace("/\{[^\n]+\([^)]+\)[^}]*\}/", "", $content);
 		$lines = explode("\n", $content);
 		$final = [];
 		$noOfAttacks = 0;
 		$isUnitDefinition = false;
+		$depth = 0;
 		foreach ($lines as $line) {
 			if (preg_match("/^\s*#define\s/i", $line)) {
 				return [];
@@ -102,13 +105,13 @@ class UnitRetriever {
 
 			if ($tag) {
 				if ($tag === 'unit_type') {
-					$isUnitDefinition = true;
-				} elseif ($tag[0] === '/unit_type') {
-					$isUnitDefinition = false;
+					$depth = 1;
+				} elseif ($tag === '/unit_type') {
+					$depth = 0;
 				}  elseif ($tag[0] === '/') {
-					$isUnitDefinition = true;
+					$depth--;
 				} else {
-					$isUnitDefinition = false;
+					$depth++;
 
 					if ($tag === 'attack') {
 						$noOfAttacks++;
@@ -120,6 +123,7 @@ class UnitRetriever {
 				}
 			}
 
+			$isUnitDefinition = ($depth === 1) ? true : false;
 			if ($isUnitDefinition) {
 				[$field, $value] = $this->extract($line);
 				if ($field) {
