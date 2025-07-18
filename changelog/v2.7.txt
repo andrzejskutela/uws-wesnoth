@@ -1,8 +1,11 @@
+<span color='#8f63c2'>v2.7.3</span> (date):
+- New AMLAs added
+
 <span color='#c28c63'>v2.7.2</span> (10/07/2025):
 - Durinn's Buckler - Battle Cry ability redesigned
 - Dimaga Beach map now spawns Ageless enemies in predefined mode if Ageless Era is used
 - Corrupted units and summoned familiars now have their uws amlas calculated
-- Random unit pools updated to the newest Ageless Era, WotG, EoMa, and  RoL
+- Random unit pools updated to the newest Ageless Era, WotG, EoMa, and RoL
 - After-classic slow boost redesigned
 - Fixed Return from Captivity incorrect scrolling
 - Fixed and buffed Emerald Trident paralyse special

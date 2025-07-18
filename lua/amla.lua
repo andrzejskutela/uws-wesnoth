@@ -49,6 +49,10 @@ local find_amla_buffs = function(amla_settings)
 				allowed_amlas[#allowed_amlas + 1] = 'M_PAR'
 			end
 		end
+
+		if amla_settings['has_sword'] then
+			allowed_amlas[#allowed_amlas + 1] = 'M_SWORD'
+		end
 	end
 	
 	if amla_settings['is_fast'] and amla_settings['is_quick'] then
@@ -279,6 +283,11 @@ local find_amla_buffs = function(amla_settings)
 		allowed_amlas[#allowed_amlas + 1] = 'ATTACK_OFFENSIVE_STANCE'
 	end
 
+	if amla_settings['has_slow'] then
+		allowed_amlas[#allowed_amlas + 1] = 'CRUEL_SLOW'
+		allowed_amlas[#allowed_amlas + 1] = 'EFFICIENT_SLOW'
+	end
+
 	return allowed_amlas
 end
 
@@ -299,6 +308,8 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 		['has_steadfast'] = wml.variables["qquws_amla_data.has_steadfast"],
 		['has_poison'] = wml.variables["qquws_amla_data.has_poison"],
 		['has_drains'] = wml.variables["qquws_amla_data.has_drains"],
+		['has_slow'] = wml.variables["qquws_amla_data.has_slow"],
+		['has_sword'] = wml.variables["qquws_amla_data.has_sword"],
 		['is_fast'] = wml.variables["qquws_amla_data.is_fast"],
 		['is_strong'] = wml.variables["qquws_amla_data.is_strong"],
 		['is_dextrous'] = wml.variables["qquws_amla_data.is_dextrous"],
