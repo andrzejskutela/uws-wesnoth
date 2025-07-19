@@ -288,6 +288,14 @@ local find_amla_buffs = function(amla_settings)
 		allowed_amlas[#allowed_amlas + 1] = 'EFFICIENT_SLOW'
 	end
 
+	if amla_settings['has_impact_attack'] then
+		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_STUN'
+	end
+
+	if amla_settings['alignment'] == 'neutral' and (amla_settings['is_human'] or amla_settings['is_dwarf'] or amla_settings['is_goblin']) then
+		allowed_amlas[#allowed_amlas + 1] = 'BOUNTY'
+	end
+
 	return allowed_amlas
 end
 
@@ -305,6 +313,7 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 		['has_thrown_weapon'] = wml.variables["qquws_amla_data.has_thrown_weapon"],
 		['has_magical_melee'] = wml.variables["qquws_amla_data.has_magical_melee"],
 		['has_cold_attack'] = wml.variables["qquws_amla_data.has_cold_attack"],
+		['has_impact_attack'] = wml.variables["qquws_amla_data.has_impact_attack"],
 		['has_steadfast'] = wml.variables["qquws_amla_data.has_steadfast"],
 		['has_poison'] = wml.variables["qquws_amla_data.has_poison"],
 		['has_drains'] = wml.variables["qquws_amla_data.has_drains"],
