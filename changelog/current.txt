@@ -1,2 +1,3 @@
 <span color='#8f63c2'>v2.7.3</span> (date):
 - New AMLAs added
+- Improved ability descriptions of mastery items

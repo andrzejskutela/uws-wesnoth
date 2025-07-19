@@ -1,5 +1,6 @@
 <span color='#8f63c2'>v2.7.3</span> (date):
 - New AMLAs added
+- Improved ability descriptions of mastery items
 
 <span color='#c28c63'>v2.7.2</span> (10/07/2025):
 - Durinn's Buckler - Battle Cry ability redesigned
