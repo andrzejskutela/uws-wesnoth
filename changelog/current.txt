@@ -2,3 +2,4 @@
 - New AMLAs added
 - UWS player info now shows information about AMLAs taken
 - Improved ability descriptions of mastery items
+- Minor rebalancing of various maps

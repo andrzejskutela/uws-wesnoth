@@ -2,6 +2,7 @@
 - New AMLAs added
 - UWS player info now shows information about AMLAs taken
 - Improved ability descriptions of mastery items
+- Minor rebalancing of various maps
 
 <span color='#c28c63'>v2.7.2</span> (10/07/2025):
 - Durinn's Buckler - Battle Cry ability redesigned
