@@ -366,3 +366,21 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 		end
 	end
 end
+
+function wesnoth.wml_actions.qquws_get_selected_amla_modifications(cfg)
+	local unit_id = cfg.unit_id
+	local save_results_var_name = cfg.results_var
+
+	local unit = wesnoth.get_units({ id = unit_id })[1]
+	local results = ''
+
+	local modifications = wml.get_child(unit.__cfg, "modifications")
+
+	for k,v in ipairs(modifications) do
+		if v[1] == 'advancement' then
+			results = results .. v[2].description:gsub("max experience", "XP")
+		end
+	end
+
+	wml.variables[save_results_var_name] = results
+end
