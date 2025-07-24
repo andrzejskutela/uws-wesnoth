@@ -1,4 +1,4 @@
-<span color='#8f63c2'>v2.7.3</span> (date):
+<span color='#8f63c2'>v2.7.3</span> (24/07/2025):
 - 17 new AMLAs added
 - UWS player info now shows information about AMLAs taken
 - Improved ability descriptions of mastery items
