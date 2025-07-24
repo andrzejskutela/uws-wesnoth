@@ -421,7 +421,7 @@ function wesnoth.wml_actions.qquws_get_selected_amla_modifications(cfg)
 
 	for k,v in ipairs(modifications) do
 		if v[1] == 'advancement' then
-			results = results .. v[2].description:gsub("max experience", "XP")
+			results = results .. v[2].description:gsub("max experience", "xp")
 		end
 	end
 
