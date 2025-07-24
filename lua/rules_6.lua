@@ -411,6 +411,7 @@ return {
 	{ ['t'] = 92, ['d'] = 4, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_arc_despair_Fright', ['default'] = 'Ghost', },
 	{ ['t'] = 94, ['d'] = 4, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_arc_despair_Midnight_Beauty', ['default'] = 'Dark Sorcerer', },
 
+	{ ['t'] = 95, ['d'] = 5, ['side'] = 2, ['x'] = 21, ['lvl'] = 4, ['type'] = 'QQ_hollow_flesh', ['default'] = 'QQ_hollow_flesh', ['race_guard_off'] = true },
 	{ ['t'] = 96, ['d'] = 5, ['side'] = 2, ['x'] = 21, ['lvl'] = 4, ['type'] = 'QQ_dark_witness', ['default'] = 'QQ_dark_witness', ['buff'] = 'A13:B7:C49', ['allow_random'] = false },
 	{ ['t'] = 96, ['d'] = 5, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_arc_phantom_Vapor_12', ['default'] = 'Ghost', },
 	

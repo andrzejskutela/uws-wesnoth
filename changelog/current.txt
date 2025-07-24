@@ -2,4 +2,5 @@
 - 17 new AMLAs added
 - UWS player info now shows information about AMLAs taken
 - Improved ability descriptions of mastery items
+- New unique lvl4 unit added - Hollow Flesh
 - Minor rebalancing of various maps
