@@ -243,6 +243,8 @@ local find_amla_buffs = function(amla_settings)
 
 	if amla_settings['is_allien'] then
 		allowed_amlas[#allowed_amlas + 1] = 'ARCANE_SECRET_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_MP'
+		allowed_amlas[#allowed_amlas + 1] = 'ELEM_RES'
 
 		if not amla_settings['has_ranged'] and not amla_settings['has_cth_special'] then
 			allowed_amlas[#allowed_amlas + 1] = 'M_CTH_MARKSMAN'
@@ -280,10 +282,12 @@ local find_amla_buffs = function(amla_settings)
 	if amla_settings['is_insect'] then
 		allowed_amlas[#allowed_amlas + 1] = 'IMPACT_RES'
 		allowed_amlas[#allowed_amlas + 1] = 'FIRE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'MINI_DEF_EVERYWHERE'
 	end
 
 	if amla_settings['is_warg'] then
 		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_STRIKE'
+		allowed_amlas[#allowed_amlas + 1] = 'NIGHT_EXTRA_DMG'
 
 		if amla_settings['has_melee'] then
 			allowed_amlas[#allowed_amlas + 1] = 'M_RABID_ATTACK'
