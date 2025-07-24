@@ -27,6 +27,7 @@ local find_amla_buffs = function(amla_settings)
 
 			if amla_settings['has_thrown_weapon'] then
 				allowed_amlas[#allowed_amlas + 1] = 'R_CRIT_DAMAGE'
+				allowed_amlas[#allowed_amlas + 1] = 'OPPORTUNIST'
 			end
 		end
 	end
@@ -44,6 +45,7 @@ local find_amla_buffs = function(amla_settings)
 			allowed_amlas[#allowed_amlas + 1] = 'M_PAR'
 		else
 			allowed_amlas[#allowed_amlas + 1] = 'M_ACC'
+			allowed_amlas[#allowed_amlas + 1] = 'DEFENSIVE_GUARDIAN'
 
 			if amla_settings['is_quick'] then
 				allowed_amlas[#allowed_amlas + 1] = 'M_PAR'
@@ -107,9 +109,12 @@ local find_amla_buffs = function(amla_settings)
 		if amla_settings['alignment'] == 'lawful' then
 			allowed_amlas[#allowed_amlas + 1] = 'ATT_LAWFUL'
 			allowed_amlas[#allowed_amlas + 1] = 'PIERCE_RES'
-
 		elseif amla_settings['alignment'] == 'chaotic' and amla_settings['has_cold_attack'] then
 			allowed_amlas[#allowed_amlas + 1] = 'COLD_DEATH_VOODOO'
+		end
+
+		if amla_settings['has_double_magical_att'] then
+			allowed_amlas[#allowed_amlas + 1] = 'SPELL_BIND'
 		end
 	end
 
@@ -174,6 +179,10 @@ local find_amla_buffs = function(amla_settings)
 		end
 	end
 
+	if amla_settings['is_elf'] or amla_settings['is_wose'] or amla_settings['is_animal'] then
+		allowed_amlas[#allowed_amlas + 1] = 'FOREST_GUARDIAN'
+	end
+
 	if amla_settings['is_saurian'] then
 		allowed_amlas[#allowed_amlas + 1] = 'SWAMP_FLAT_DEF'
 		allowed_amlas[#allowed_amlas + 1] = 'COLD_RES'
@@ -211,6 +220,11 @@ local find_amla_buffs = function(amla_settings)
 		allowed_amlas[#allowed_amlas + 1] = 'WATER_DEF'
 		allowed_amlas[#allowed_amlas + 1] = 'FISH_FLAT_DEF'
 		allowed_amlas[#allowed_amlas + 1] = 'SLOW_IMMUNE'
+		allowed_amlas[#allowed_amlas + 1] = 'AQUATIC_DAMAGE'
+
+		if not amla_settings['has_default_regenerates'] then
+			allowed_amlas[#allowed_amlas + 1] = 'AQUATIC_REGEN'
+		end
 	end
 
 	if amla_settings['is_goblin'] then
@@ -239,6 +253,7 @@ local find_amla_buffs = function(amla_settings)
 
 	if amla_settings['is_demon'] then
 		allowed_amlas[#allowed_amlas + 1] = 'COLD_ARCANE_RES'
+		allowed_amlas[#allowed_amlas + 1] = 'STUBBORN'
 
 		if amla_settings['has_bloodlust'] then
 			allowed_amlas[#allowed_amlas + 1] = 'BIG_BLOODLUST'
@@ -253,6 +268,8 @@ local find_amla_buffs = function(amla_settings)
 
 	if amla_settings['is_animal'] then
 		allowed_amlas[#allowed_amlas + 1] = 'BIG_HITPOINTS'
+	elseif amla_settings['has_melee_pierce_attack'] then
+		allowed_amlas[#allowed_amlas + 1] = 'ARMOUR_PIERCER'
 	end
 
 	if amla_settings['is_aerial'] then
@@ -296,6 +313,22 @@ local find_amla_buffs = function(amla_settings)
 		allowed_amlas[#allowed_amlas + 1] = 'BOUNTY'
 	end
 
+	if amla_settings['alignment'] == 'chaotic' then
+		allowed_amlas[#allowed_amlas + 1] = 'SMELL_OF_BLOOD'
+	end
+
+	if amla_settings['is_leader'] and amla_settings['allow_extra_recruits'] and (amla_settings['is_orc'] or amla_settings['is_goblin']) then
+		allowed_amlas[#allowed_amlas + 1] = 'RECRUIT_KAMI'
+	end
+
+	if not amla_settings['is_leader'] and (amla_settings['is_human'] or amla_settings['is_dwarf'] or amla_settings['is_elf']) and amla_settings['alignment'] ~= 'chaotic' then
+		allowed_amlas[#allowed_amlas + 1] = 'MARTYR'
+	end
+
+	if amla_settings['has_walking_dead_plague'] then
+		allowed_amlas[#allowed_amlas + 1] = 'PLAGUE_ENSLAVED_SOUL'
+	end
+
 	return allowed_amlas
 end
 
@@ -305,6 +338,8 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 	local amla_settings = {
 		['level'] = wml.variables['qquws_amla_data.level'],
 		['alignment'] = wml.variables['qquws_amla_data.alignment'],
+		['race'] = wml.variables["qquws_amla_data.race"],
+		['allow_extra_recruits'] = wml.variables["qquws_amla_data.allow_extra_recruits"],
 		['has_default_regenerates'] = wml.variables['qquws_amla_data.has_default_regenerates'],
 		['has_ranged'] = wml.variables["qquws_amla_data.has_ranged_attack"],
 		['has_melee'] = wml.variables["qquws_amla_data.has_melee_attack"],
@@ -314,11 +349,15 @@ function wesnoth.wml_actions.qquws_generate_random_amla_list(cfg)
 		['has_magical_melee'] = wml.variables["qquws_amla_data.has_magical_melee"],
 		['has_cold_attack'] = wml.variables["qquws_amla_data.has_cold_attack"],
 		['has_impact_attack'] = wml.variables["qquws_amla_data.has_impact_attack"],
+		['has_melee_pierce_attack'] = wml.variables["qquws_amla_data.has_melee_pierce_attack"],
 		['has_steadfast'] = wml.variables["qquws_amla_data.has_steadfast"],
 		['has_poison'] = wml.variables["qquws_amla_data.has_poison"],
 		['has_drains'] = wml.variables["qquws_amla_data.has_drains"],
 		['has_slow'] = wml.variables["qquws_amla_data.has_slow"],
 		['has_sword'] = wml.variables["qquws_amla_data.has_sword"],
+		['has_double_magical_att'] = wml.variables["qquws_amla_data.has_double_magical_att"],
+		['has_walking_dead_plague'] = wml.variables["qquws_amla_data.has_walking_dead_plague"],
+		['is_leader'] = wml.variables["qquws_amla_data.is_leader"],
 		['is_fast'] = wml.variables["qquws_amla_data.is_fast"],
 		['is_strong'] = wml.variables["qquws_amla_data.is_strong"],
 		['is_dextrous'] = wml.variables["qquws_amla_data.is_dextrous"],
@@ -371,7 +410,7 @@ function wesnoth.wml_actions.qquws_get_selected_amla_modifications(cfg)
 	local unit_id = cfg.unit_id
 	local save_results_var_name = cfg.results_var
 
-	local unit = wesnoth.get_units({ id = unit_id })[1]
+	local unit = wesnoth.units.find_on_map({ id = unit_id })[1]
 	local results = ''
 
 	local modifications = wml.get_child(unit.__cfg, "modifications")
