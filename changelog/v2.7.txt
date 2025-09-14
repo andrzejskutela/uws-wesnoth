@@ -1,3 +1,7 @@
+<span color='#a9c263'>v2.7.4</span> (date):
+- Fixed UWS player info bugging out in certain scenarios
+- Minor balancing of various maps, amlas, and champion bonuses
+
 <span color='#8f63c2'>v2.7.3</span> (25/07/2025):
 - 17 new AMLAs added
 - UWS player info now shows information about AMLAs taken

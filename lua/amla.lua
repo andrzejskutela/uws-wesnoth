@@ -418,10 +418,15 @@ function wesnoth.wml_actions.qquws_get_selected_amla_modifications(cfg)
 	local results = ''
 
 	local modifications = wml.get_child(unit.__cfg, "modifications")
-
-	for k,v in ipairs(modifications) do
-		if v[1] == 'advancement' then
-			results = results .. v[2].description:gsub("max experience", "xp")
+	if modifications then
+		for k,v in ipairs(modifications) do
+			if v[1] == 'advancement' and v[2] and v[2].description then
+				if type(v[2].description) == 'userdata' then
+					results = results .. tostring(v[2].description)
+				else
+					results = results .. v[2].description:gsub("max experience", "xp")
+				end
+			end
 		end
 	end
 
