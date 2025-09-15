@@ -1,3 +1,4 @@
 <span color='#a9c263'>v2.7.4</span> (date):
 - Fixed UWS player info bugging out in certain scenarios
+- AE and EoMa Architect's statue copies no longer can duplicate items
 - Minor balancing of various maps, amlas, and champion bonuses
