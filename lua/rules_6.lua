@@ -304,7 +304,7 @@ return {
 	{ ['t'] = 60, ['d'] = 6, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_thelian_chieftain', ['default'] = 'Elvish Captain', ['bulky'] = 32, ['beefy'] = 20, ['ai_add_gold'] = 120, ['event'] = 'set_high_armoured_recruits', ['event_var_a'] = 25 },
 
 	{ ['t'] = 59, ['d'] = 7, ['side'] = 2, ['x'] = 6, ['lvl'] = 3, ['type'] = 'AE_mie_thelian_forefather', ['default'] = 'Nightgaunt', ['armored'] = 15, ['race_guard_off'] = true, ['calls_for_help'] = true },
-	{ ['t'] = 62, ['d'] = 7, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_mie_thelian_ghost_warrior', ['default'] = 'Elvish Champion', ['buff'] = 'A46:B10:C14:B56' },
+	{ ['t'] = 59, ['d'] = 7, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_mie_thelian_ghost_warrior', ['default'] = 'Elvish Champion', ['buff'] = 'A46:B56:C14' },
 
 	-- 64 - 70 (mask y 120 - 114)
 	
@@ -418,7 +418,7 @@ return {
 	{ ['t'] = 93, ['d'] = 6, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_arc_phantom_Vapor_11', ['default'] = 'Ghost', },
 	{ ['t'] = 94, ['d'] = 6, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'QQ_hellbat', ['default'] = 'QQ_hellbat', ['buff'] = 'A28:B30:C64', ['allow_random'] = false, },
 	
-	{ ['t'] = 97, ['d'] = 7, ['side'] = 2, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_arc_phantom_Winged_Warrior', ['default'] = 'Spectre', ['buff'] = 'A51:B59:C47:D4', ['allow_random'] = false },
+	{ ['t'] = 93, ['d'] = 7, ['side'] = 2, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_arc_phantom_Winged_Warrior', ['default'] = 'Spectre', ['buff'] = 'A51:B59:C47:D4', ['allow_random'] = false },
 	{ ['t'] = 97, ['d'] = 7, ['side'] = 2, ['x'] = 21, ['lvl'] = 3, ['type'] = 'Nightgaunt', ['default'] = 'Nightgaunt', ['aggressive'] = 2, ['allow_random'] = false },
 
 	-- 99 - 105 (mask y 87 - 81)
@@ -498,7 +498,7 @@ return {
 	-- 120 - 126 (mask y 66 - 60)
 
 	{ ['t'] = 121, ['d'] = 1, ['side'] = 2, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_rhy_vx_Snake_Viper', ['default'] = 'Elder Wose', ['agile'] = 20, ['fast'] = 1, ['guard'] = true, },
-	{ ['t'] = 122, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 4, ['type'] = 'AE_mag_Chosen_of_Marsh', ['default'] = 'Armageddon Drake', ['recruits'] = 'AE_mag_Black_Salamander,AE_mag_Blue_Salamander,AE_mag_Green_Salamander,AE_mag_Red_Salamander,AE_mag_Yellow_Salamander,AE_mag_Toad_Shaman,AE_mag_Toad_Archer,AE_mag_Battle_Toad', ['default_recruits'] = 'Fire Drake,Drake Arbiter,Drake Warrior,Sky Drake,Swamp Lizard', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 200, ['item'] = true, ['buff'] = 'A5:B14:C29', ['recruit_minion'] = 'D5' },
+	{ ['t'] = 122, ['d'] = 1, ['side'] = 4, ['x'] = 24, ['lvl'] = 4, ['type'] = 'AE_mag_Chosen_of_Marsh', ['default'] = 'Armageddon Drake', ['recruits'] = 'AE_mag_Black_Salamander,AE_mag_Blue_Salamander,AE_mag_Green_Salamander,AE_mag_Red_Salamander,AE_mag_Yellow_Salamander,AE_mag_Toad_Shaman,AE_mag_Toad_Archer,AE_mag_Battle_Toad', ['default_recruits'] = 'Fire Drake,Drake Arbiter,Drake Warrior,Sky Drake,Swamp Lizard', ['r_lvls'] = '2,2,2,2,2', ['recruitment_gold'] = 240, ['item'] = true, ['buff'] = 'A5:B14:C29', ['recruit_minion'] = 'D5' },
 	{ ['t'] = 122, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_mag_Battle_Toad', ['default'] = 'Naga Ophidian', ['buff'] = 'A21:B41:C42' },
 	{ ['t'] = 123, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_mag_Lava_Salamander', ['default'] = 'Naga High Guard', ['guard'] = true, ['disallow_slash_unguardian'] = true, ['bulky'] = 100 },
 	{ ['t'] = 124, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_treefolk_ghastbark', ['default'] = 'Wose Shaman', ['guard'] = true, ['gold'] = 15 },
@@ -516,8 +516,8 @@ return {
 	
 	{ ['t'] = 122, ['d'] = 6, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Mosquito', ['default'] = 'Naga Dirkfang', },
 
-	{ ['t'] = 123, ['d'] = 7, ['side'] = 4, ['x'] = 16, ['lvl'] = 5, ['type'] = 'QQ_rotting_observer', ['default'] = 'QQ_rotting_observer', ['buff'] = 'A31:B15:C62', ['ai_add_gold'] = 60 },
-	{ ['t'] = 124, ['d'] = 7, ['side'] = 4, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mag_Jungle_Assassin', ['default'] = 'Shadow Jumping Spider', ['ai_add_gold'] = 40 },
+	{ ['t'] = 123, ['d'] = 7, ['side'] = 4, ['x'] = 16, ['lvl'] = 5, ['type'] = 'QQ_rotting_observer', ['default'] = 'QQ_rotting_observer', ['buff'] = 'A31:B15:C62', ['ai_add_gold'] = 100 },
+	{ ['t'] = 124, ['d'] = 7, ['side'] = 4, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mag_Jungle_Assassin', ['default'] = 'Shadow Jumping Spider', ['ai_add_gold'] = 100 },
 
 	-- 127 - 133 (mask y 58 - 52)
 

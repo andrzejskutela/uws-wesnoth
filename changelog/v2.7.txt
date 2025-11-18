@@ -1,3 +1,7 @@
+<span color='#29c2c3'>v2.7.5</span> (date):
+- Fixed Martyr special sometimes creating immortal units
+- Minor balancing of various maps, amlas, and champion bonuses
+
 <span color='#a9c263'>v2.7.4</span> (21/09/2025):
 - Random unit pool updated to the newest AE and WotG releases
 - Fixed UWS player info bugging out in certain scenarios
