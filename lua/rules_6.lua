@@ -516,7 +516,7 @@ return {
 	
 	{ ['t'] = 122, ['d'] = 6, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_mrc_hive_Mosquito', ['default'] = 'Naga Dirkfang', },
 
-	{ ['t'] = 123, ['d'] = 7, ['side'] = 4, ['x'] = 16, ['lvl'] = 5, ['type'] = 'QQ_rotting_observer', ['default'] = 'QQ_rotting_observer', ['buff'] = 'A31:B15:C62', ['ai_add_gold'] = 100 },
+	{ ['t'] = 123, ['d'] = 7, ['side'] = 4, ['x'] = 16, ['lvl'] = 5, ['type'] = 'QQ_rotting_observer', ['default'] = 'QQ_rotting_observer', ['buff'] = 'A29:B15:C62', ['ai_add_gold'] = 100 },
 	{ ['t'] = 124, ['d'] = 7, ['side'] = 4, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_mag_Jungle_Assassin', ['default'] = 'Shadow Jumping Spider', ['ai_add_gold'] = 100 },
 
 	-- 127 - 133 (mask y 58 - 52)

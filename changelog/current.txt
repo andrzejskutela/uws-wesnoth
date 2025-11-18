@@ -1,3 +1,4 @@
 <span color='#29c2c3'>v2.7.5</span> (date):
+- Removed level-dependant damage from all weapon items
 - Fixed Martyr special sometimes creating immortal units
 - Minor balancing of various maps, amlas, and champion bonuses
