@@ -372,7 +372,7 @@ return {
 
 	{ ['t'] = 80, ['d'] = 6, ['side'] = 3, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_agl_frozen_frost_lance_master', ['default'] = 'Dwarvish Runemaster', ['armored'] = 20, },
 
-	{ ['t'] = 81, ['d'] = 7, ['side'] = 3, ['x'] = 17, ['lvl'] = 5, ['type'] = 'QQ_ice_mammoth', ['default'] = 'QQ_ice_mammoth', ['buff'] = 'A26:B48:C61', ['allow_random'] = false },
+	{ ['t'] = 81, ['d'] = 7, ['side'] = 3, ['x'] = 17, ['lvl'] = 5, ['type'] = 'QQ_mammoth_king', ['default'] = 'QQ_mammoth_king', ['buff'] = 'A26:B36:C34', ['allow_random'] = false },
 
 	-- 85 - 91 (mask y 98 - 92 - something is off somewhere)
 
@@ -416,7 +416,7 @@ return {
 	{ ['t'] = 96, ['d'] = 5, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_arc_phantom_Vapor_12', ['default'] = 'Ghost', },
 	
 	{ ['t'] = 93, ['d'] = 6, ['side'] = 2, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_arc_phantom_Vapor_11', ['default'] = 'Ghost', },
-	{ ['t'] = 94, ['d'] = 6, ['side'] = 2, ['x'] = 16, ['lvl'] = 4, ['type'] = 'QQ_hellbat', ['default'] = 'QQ_hellbat', ['buff'] = 'A28:B30:C64', ['allow_random'] = false, },
+	{ ['t'] = 95, ['d'] = 6, ['side'] = 2, ['x'] = 18, ['lvl'] = 4, ['type'] = 'QQ_hellbat', ['default'] = 'QQ_hellbat', ['buff'] = 'A28:B30:C64', ['allow_random'] = false, },
 	
 	{ ['t'] = 93, ['d'] = 7, ['side'] = 2, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_arc_phantom_Winged_Warrior', ['default'] = 'Spectre', ['buff'] = 'A51:B59:C47:D4', ['allow_random'] = false },
 	{ ['t'] = 97, ['d'] = 7, ['side'] = 2, ['x'] = 21, ['lvl'] = 3, ['type'] = 'Nightgaunt', ['default'] = 'Nightgaunt', ['aggressive'] = 2, ['allow_random'] = false },
