@@ -4,4 +4,5 @@
 - Removed level-dependant damage from all weapon items
 - Added new lvl5 unique unit - Mammoth King
 - Fixed Martyr special sometimes creating immortal units
+- Support for EoMa + RoL mod
 - Minor balancing of various maps, amlas, and champion bonuses
