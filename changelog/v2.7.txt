@@ -1,4 +1,4 @@
-<span color='#29c2c3'>v2.7.5</span> (date):
+<span color='#29c2c3'>v2.7.5</span> (21/11/2025):
 - Dragon's Tooth and Necklace of Inversion items redesigned
 - Thunderhammer, Emerald Trident, and Golden Armour items slighlty changed
 - Removed level-dependant damage from all weapon items
