@@ -1,6 +1,6 @@
 <span color='#29c2c3'>v2.7.5</span> (date):
 - Dragon's Tooth and Necklace of Inversion items redesigned
-- Emerald Trident item slighlty changed
+- Thunderhammer and Emerald Trident items slighlty changed
 - Removed level-dependant damage from all weapon items
 - Added new lvl5 unique unit - Mammoth King
 - Fixed Martyr special sometimes creating immortal units

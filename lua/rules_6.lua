@@ -356,7 +356,7 @@ return {
 
 	-- 78 - 84 (mask y 106 - 100)
 
-	{ ['t'] = 79, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_witch', ['default'] = 'Dwarvish Thunderguard', ['recruits'] = 'AE_agl_frozen_frost_fighter,AE_agl_frozen_frost_rider,AE_agl_frozen_frost_student,AE_agl_frozen_ice_golem', ['default_recruits'] = 'Dwarvish Fighter,Dwarvish Guardsman,Dwarvish Scout,Dwarvish Thunderer', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 110, ['recruit_armored'] = 25, ['gold'] = 50 },
+	{ ['t'] = 79, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_witch', ['default'] = 'Dwarvish Thunderguard', ['recruits'] = 'AE_agl_frozen_frost_fighter,AE_agl_frozen_frost_rider,AE_agl_frozen_frost_student,AE_agl_frozen_ice_golem', ['default_recruits'] = 'Dwarvish Fighter,Dwarvish Guardsman,Dwarvish Scout,Dwarvish Thunderer', ['r_lvls'] = '1,1,1,1', ['recruitment_gold'] = 120, ['recruit_armored'] = 30, ['recruit_minion'] = 'A62', ['gold'] = 50 },
 	{ ['t'] = 80, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_agl_frozen_frost_fury_shooter', ['default'] = 'Dwarvish Dragonguard', ['guard'] = true, ['disallow_slash_unguardian'] = true },
 	{ ['t'] = 82, ['d'] = 1, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_dep_deep_greater_wisp', ['default'] = 'Troll Whelp', ['race_guard_off'] = true },
 	{ ['t'] = 84, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Matriarch', ['default'] = 'Troll Shaman', ['guard'] = true, ['calls_for_help'] = true },
@@ -467,7 +467,7 @@ return {
 	{ ['t'] = 111, ['d'] = 6, ['side'] = 3, ['x'] = 19, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['beefy'] = 160 },
 	{ ['t'] = 112, ['d'] = 6, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_efm_pygmies_Wyrd', ['default'] = 'Saurian Ambusher', },
 
-	{ ['t'] = 110, ['d'] = 7, ['side'] = 3, ['x'] = 17, ['lvl'] = 4, ['type'] = 'AE_arc_khthon_Ker_Kato', ['default'] = 'Wyvern Rider', ['buff'] = 'A28:B30:C30', ['ai_add_gold'] = 125 },
+	{ ['t'] = 110, ['d'] = 7, ['side'] = 3, ['x'] = 17, ['lvl'] = 4, ['type'] = 'AE_arc_khthon_Ker_Kato', ['default'] = 'Wyvern Rider', ['buff'] = 'A62:B30:C30', ['ai_add_gold'] = 125 },
 	{ ['t'] = 111, ['d'] = 7, ['side'] = 3, ['x'] = 20, ['lvl'] = 0, ['type'] = 'AE_mag_Swamp_Spirit', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false, ['beefy'] = 52 },
 	{ ['t'] = 112, ['d'] = 7, ['side'] = 3, ['x'] = 14, ['lvl'] = 5, ['type'] = 'QQ_abyssal_fungoid', ['default'] = 'QQ_abyssal_fungoid', ['allow_random'] = false, ['buff'] = 'A37:B29:C36:C14' },
 
@@ -584,7 +584,7 @@ return {
 	{ ['t'] = 143, ['d'] = 6, ['side'] = 3, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_bem_calydonians_Rhodian_Slinger', ['default'] = 'Master Bowman', ['buff'] = 'A59:B1:C8:C16', ['gold'] = 30 },
 	{ ['t'] = 145, ['d'] = 6, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_bem_calydonians_Hetaroi', ['default'] = 'Grand Knight', },
 
-	{ ['t'] = 144, ['d'] = 7, ['side'] = 3, ['x'] = 17, ['lvl'] = 6, ['type'] = 'QQ_hades_guard', ['default'] = 'QQ_hades_guard', ['buff'] = 'A62:B20:C19' },
+	{ ['t'] = 144, ['d'] = 7, ['side'] = 3, ['x'] = 17, ['lvl'] = 6, ['type'] = 'QQ_hades_guard', ['default'] = 'QQ_hades_guard', ['buff'] = 'A61:B20:C19' },
 	
 	-- 148 - 154 (mask y 37 - 31)
 	
@@ -595,7 +595,7 @@ return {
 	{ ['t'] = 153, ['d'] = 1, ['side'] = 4, ['x'] = 20, ['lvl'] = 1, ['type'] = 'AE_stf_eltireans_Elementalist', ['default'] = 'Spearman', },
 	{ ['t'] = 154, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_mag_War_Golem', ['default'] = 'Orcish Crossbowman', },
 
-	{ ['t'] = 152, ['d'] = 2, ['side'] = 4, ['x'] = 16, ['lvl'] = 5, ['type'] = 'QQ_arch_warpriest', ['default'] = 'QQ_arch_warpriest', ['buff'] = 'A55:B36:C51:C44' },
+	{ ['t'] = 152, ['d'] = 2, ['side'] = 4, ['x'] = 16, ['lvl'] = 5, ['type'] = 'QQ_arch_warpriest', ['default'] = 'QQ_arch_warpriest', ['buff'] = 'A65:B36:C51:C44' },
 	{ ['t'] = 153, ['d'] = 2, ['side'] = 4, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_stf_eltireans_Glory_Seeker', ['default'] = 'Fencer', },
 
 	{ ['t'] = 148, ['d'] = 3, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_stf_eltireans_Siren', ['default'] = 'Grand Knight', },
