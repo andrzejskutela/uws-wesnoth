@@ -325,10 +325,6 @@ local find_amla_buffs = function(amla_settings)
 		allowed_amlas[#allowed_amlas + 1] = 'RECRUIT_KAMI'
 	end
 
-	if not amla_settings['is_leader'] and (amla_settings['is_human'] or amla_settings['is_dwarf'] or amla_settings['is_elf']) and amla_settings['alignment'] ~= 'chaotic' then
-		allowed_amlas[#allowed_amlas + 1] = 'MARTYR'
-	end
-
 	if amla_settings['has_walking_dead_plague'] then
 		allowed_amlas[#allowed_amlas + 1] = 'PLAGUE_ENSLAVED_SOUL'
 	end
