@@ -2,6 +2,7 @@
 - New item added - The Arkenstone
 - All weapon items now give +1/2/3 dmg to native weapons on low ranks
 - Guardians of Mania item slightly redesigned
+- Added new unique lvl4 unit - Hypergryphon
 - Martyr ability somewhat nerfed and removed from amla options
 
 <span color='#29c2c3'>v2.7.5</span> (21/11/2025):

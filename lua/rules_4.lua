@@ -430,6 +430,7 @@ return {
 	{ ['t'] = 107, ['d'] = 5, ['side'] = 3, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_imp_Arendians_Horse_Master', ['default'] = 'Cavalier', ['fast'] = 2, },
 	{ ['t'] = 110, ['d'] = 5, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Arbalestier', ['default'] = 'Longbowman', },
 	
+	{ ['t'] = 111, ['d'] = 6, ['side'] = 3, ['x'] = 16, ['lvl'] = 4, ['type'] = 'QQ_hypergryphon', ['default'] = 'QQ_hypergryphon' },
 	{ ['t'] = 112, ['d'] = 6, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Mounted_Infantryman', ['default'] = 'Lancer', },
 	{ ['t'] = 113, ['d'] = 6, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Mounted_Crossbowman', ['default'] = 'Red Mage', },
 	
