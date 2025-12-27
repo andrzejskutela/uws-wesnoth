@@ -82,7 +82,7 @@ return {
 	{ ['row'] = 'object', ['t'] = 115, ['x'] = 6, ['image'] = 'items/bones.png', ['cat'] = 'decorative', ['render'] = false, ['id'] = 'temple_bones' },
 	{ ['row'] = 'object', ['t'] = 115, ['x'] = 9, ['cat'] = 'event', ['event'] = 'rfc_altar', },
 	{ ['row'] = 'object', ['t'] = 115, ['x'] = 6, ['cat'] = 'event', ['event'] = 'rfc_bones', },
-	{ ['row'] = 'object', ['t'] = 130, ['x'] = 20, ['cat'] = 'rune', ['image'] = 'scenery/uws/energy_vortex_alt.png', ['amount'] = 1, ['name'] = 'Rune', ['set'] = 'R17', ['color'] = '#b366ed', ['tooltip'] = '+3 damage (100%)' },
+	{ ['row'] = 'object', ['t'] = 130, ['x'] = 20, ['cat'] = 'rune', ['image'] = 'scenery/uws/energy_vortex_alt.png', ['amount'] = 1, ['name'] = 'Rune', ['set'] = 'R17', ['color'] = '#b366ed', ['tooltip'] = '+2 damage (100%)' },
 
 	{ ['row'] = 'object', ['t'] = 133, ['x'] = 7, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 40 },
 	{ ['row'] = 'object', ['t'] = 138, ['x'] = 15, ['image'] = 'scenery/tent-fancy-red.png', ['cat'] = 'event', ['event'] = 'rfc_shop', },
@@ -195,7 +195,7 @@ return {
 	
 	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_efm_imperialists_Hoplite', ['default'] = 'Pikeman', ['bulky'] = 40, ['armored'] = 10 },
 	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Order_Knight', ['default'] = 'Dragoon', ['calls_for_help'] = true, ['race_guard_off'] = true },
-	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_stf_eltireans_Disciple_of_Eltire', ['default'] = 'Mage', },
+	{ ['t'] = 30, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_stf_eltireans_Disciple_of_Eltire', ['default'] = 'Mage', ['event'] = 'spawn_more_enemies', ['event_var_a'] = 4, },
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 4, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_arc_menagerie_Blue_Machinist', ['default'] = 'Outlaw', ['recruits'] = 'AE_arc_menagerie_Cyborg,AE_arc_menagerie_Drone,AE_arc_menagerie_Mechanical_Seeker', ['default_recruits'] = 'Thief,Footpad,Thug', ['r_lvls'] = '1,1,1', ['recruitment_gold'] = 75, ['item'] = true },
 	{ ['t'] = 31, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_stf_eltireans_Patrol_Captain', ['default'] = 'Lieutenant', },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_myh_Militant', ['default'] = 'Javelineer', ['buff'] = 'A49:B13:C21:C16', ['name'] = 'Badamar the Prison Guard', ['story_message'] = 'The prisoners are escaping! Guards! After them!', ['story_response'] = 'I want the head of this filth!', ['calls_for_help'] = true, ['race_guard_off'] = true },
@@ -301,7 +301,7 @@ return {
 
 	{ ['t'] = 57, ['d'] = 5, ['side'] = 2, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_mie_thelian_feral', ['default'] = 'Elvish Fighter', ['fast'] = 1 },
 
-	{ ['t'] = 60, ['d'] = 6, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_thelian_chieftain', ['default'] = 'Elvish Captain', ['bulky'] = 32, ['beefy'] = 20, ['ai_add_gold'] = 120, ['event'] = 'set_high_armoured_recruits', ['event_var_a'] = 25 },
+	{ ['t'] = 60, ['d'] = 6, ['side'] = 2, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_mie_thelian_chieftain', ['default'] = 'Elvish Captain', ['bulky'] = 32, ['beefy'] = 20, ['ai_add_gold'] = 120, ['event'] = 'set_high_armoured_recruits', ['event_var_a'] = 30 },
 
 	{ ['t'] = 59, ['d'] = 7, ['side'] = 2, ['x'] = 6, ['lvl'] = 3, ['type'] = 'AE_mie_thelian_forefather', ['default'] = 'Nightgaunt', ['armored'] = 15, ['race_guard_off'] = true, ['calls_for_help'] = true },
 	{ ['t'] = 59, ['d'] = 7, ['side'] = 2, ['x'] = 15, ['lvl'] = 3, ['type'] = 'AE_mie_thelian_ghost_warrior', ['default'] = 'Elvish Champion', ['buff'] = 'A46:B56:C14' },
@@ -336,20 +336,20 @@ return {
 	-- 71 - 77 (mask y 113 - 107)
 
 	{ ['t'] = 71, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_gunner', ['default'] = 'Dwarvish Stalwart', ['guard'] = true, ['armored'] = 20 },
+	{ ['t'] = 73, ['d'] = 6, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_warrior', ['default'] = 'Great Icemonax', },
 	{ ['t'] = 74, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_mage', ['default'] = 'Dwarvish Pathfinder', ['bulky'] = 20, },
 	{ ['t'] = 74, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_spearman', ['default'] = 'Dwarvish Fighter', },
 	{ ['t'] = 75, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_fighter', ['default'] = 'Dwarvish Thunderer', },
+	{ ['t'] = 77, ['d'] = 3, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_shieldman', ['default'] = 'Dwarvish Stalwart', ['calls_for_help'] = true, },
 
 	{ ['t'] = 77, ['d'] = 2, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_agl_frozen_frost_gunner_master', ['default'] = 'Dwarvish Sentinel', ['guard'] = true, ['disallow_slash_unguardian'] = true, ['armored'] = 30, ['gold'] = 20 },
 	
 	{ ['t'] = 77, ['d'] = 3, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_rider', ['default'] = 'Dwarvish Ulfserker', ['beefy'] = 40 },
-	{ ['t'] = 77, ['d'] = 3, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_shieldman', ['default'] = 'Dwarvish Stalwart', ['calls_for_help'] = true, },
 	
 	{ ['t'] = 72, ['d'] = 4, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_flying_golem', ['default'] = 'Gryphon Rider', ['agile'] = 15 },
 
 	{ ['t'] = 72, ['d'] = 5, ['side'] = 3, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_agl_frozen_frost_spearman', ['default'] = 'Dwarvish Fighter', },
 
-	{ ['t'] = 73, ['d'] = 6, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_warrior', ['default'] = 'Great Icemonax', },
 	{ ['t'] = 76, ['d'] = 6, ['side'] = 3, ['x'] = 17, ['lvl'] = 2, ['type'] = 'Great Icemonax', ['default'] = 'Great Icemonax', ['bulky'] = 48 },
 
 	{ ['t'] = 74, ['d'] = 7, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_agl_frozen_frost_lanceman', ['default'] = 'Dwarvish Steelclad', ['armored'] = 15 },
@@ -360,7 +360,7 @@ return {
 	{ ['t'] = 80, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 3, ['type'] = 'AE_agl_frozen_frost_fury_shooter', ['default'] = 'Dwarvish Dragonguard', ['guard'] = true, ['disallow_slash_unguardian'] = true },
 	{ ['t'] = 82, ['d'] = 1, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_dep_deep_greater_wisp', ['default'] = 'Troll Whelp', ['race_guard_off'] = true },
 	{ ['t'] = 84, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Matriarch', ['default'] = 'Troll Shaman', ['guard'] = true, ['calls_for_help'] = true },
-	{ ['t'] = 84, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_agl_deep_Priestress_of_the_Vault', ['default'] = 'Skeleton', ['armored'] = 10, ['gold'] = 10 },
+	{ ['t'] = 84, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_agl_deep_Priestress_of_the_Vault', ['default'] = 'Skeleton', ['armored'] = 10, ['gold'] = 10 },
 
 	{ ['t'] = 84, ['d'] = 2, ['side'] = 4, ['x'] = 12, ['lvl'] = 1, ['type'] = 'AE_dep_deep_greater_wisp', ['default'] = 'Troll Whelp', },
 
@@ -379,9 +379,9 @@ return {
 	{ ['t'] = 85, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_agl_deep_Night_Maiden', ['default'] = 'Ghoul', },
 	{ ['t'] = 87, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Phade', ['default'] = 'Great Icemonax', },
 	{ ['t'] = 87, ['d'] = 1, ['side'] = 4, ['x'] = 13, ['lvl'] = 1, ['type'] = 'AE_dep_deep_greater_wisp', ['default'] = 'Orcish Assassin', ['guard'] = true },
-	{ ['t'] = 89, ['d'] = 1, ['side'] = 4, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_agl_deep_Patroness', ['default'] = 'Great Troll', ['recruits'] = 'AE_agl_deep_Tyrhai_Cavalry,AE_agl_deep_Vengeance,AE_agl_deep_Phade,AE_agl_deep_Night_Stalker', ['default_recruits'] = 'Troll Hero,Shadow,War Harbinger,Ogre', ['r_lvls'] = '2,2,2,2', ['recruitment_gold'] = 170, ['recruit_minion'] = 'D1' },
 	{ ['t'] = 89, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 0, ['type'] = 'AE_dep_deep_wisp', ['default'] = 'Icemonax', },
-
+	{ ['t'] = 90, ['d'] = 1, ['side'] = 4, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_agl_deep_Patroness', ['default'] = 'Great Troll', ['recruits'] = 'AE_agl_deep_Tyrhai_Cavalry,AE_agl_deep_Vengeance,AE_agl_deep_Phade,AE_agl_deep_Night_Stalker', ['default_recruits'] = 'Troll Hero,Shadow,War Harbinger,Ogre', ['r_lvls'] = '2,2,2,2', ['recruitment_gold'] = 170, ['recruit_minion'] = 'D1' },
+	
 	{ ['t'] = 90, ['d'] = 2, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_arc_despair_Soldier', ['default'] = 'Deathblade', ['guard'] = true },
 
 	{ ['t'] = 86, ['d'] = 3, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Minotaur', ['default'] = 'Troll', ['guard'] = true, ['beefy'] = 40 },
@@ -391,7 +391,7 @@ return {
 
 	{ ['t'] = 91, ['d'] = 5, ['side'] = 2, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_arc_despair_Fright', ['default'] = 'Ghost', ['beefy'] = 40, ['fast'] = 1 },
 	
-	{ ['t'] = 90, ['d'] = 6, ['side'] = 4, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_agl_deep_Irr', ['default'] = 'Banebow', ['buff'] = 'A46:B51:C32:C21', },
+	{ ['t'] = 90, ['d'] = 6, ['side'] = 4, ['x'] = 14, ['lvl'] = 3, ['type'] = 'AE_agl_deep_Irr', ['default'] = 'Banebow', ['buff'] = 'A46:B51:C32:C21', ['event'] = 'spawn_more_enemies', ['event_var_a'] = 8, },
 
 	{ ['t'] = 91, ['d'] = 7, ['side'] = 4, ['x'] = 12, ['lvl'] = 3, ['type'] = 'AE_agl_deep_Corrupted', ['default'] = 'Nightgaunt', ['buff'] = 'A55:B57:C36', },
 
@@ -581,7 +581,7 @@ return {
 
 	{ ['t'] = 147, ['d'] = 5, ['side'] = 4, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_stf_eltireans_Fury', ['default'] = 'Longbowman', },
 	
-	{ ['t'] = 143, ['d'] = 6, ['side'] = 3, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_bem_calydonians_Rhodian_Slinger', ['default'] = 'Master Bowman', ['buff'] = 'A59:B1:C8:C16', ['gold'] = 30 },
+	{ ['t'] = 143, ['d'] = 6, ['side'] = 3, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_bem_calydonians_Rhodian_Slinger', ['default'] = 'Master Bowman', ['buff'] = 'A59:B1:C8:C16', ['gold'] = 18 },
 	{ ['t'] = 145, ['d'] = 6, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_bem_calydonians_Hetaroi', ['default'] = 'Grand Knight', },
 
 	{ ['t'] = 144, ['d'] = 7, ['side'] = 3, ['x'] = 17, ['lvl'] = 6, ['type'] = 'QQ_hades_guard', ['default'] = 'QQ_hades_guard', ['buff'] = 'A61:B20:C19' },
@@ -662,14 +662,14 @@ return {
 	{ ['t'] = 169, ['d'] = 1, ['side'] = 3, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_ele_Fallen_Scorch_King', ['default'] = 'Highwayman', },
 	{ ['t'] = 172, ['d'] = 1, ['side'] = 4, ['x'] = 13, ['lvl'] = 3, ['type'] = 'AE_mag_Doom_Bringer', ['default'] = 'Death Knight', ['race_guard_off'] = true, },
 	{ ['t'] = 173, ['d'] = 1, ['side'] = 4, ['x'] = 10, ['lvl'] = 3, ['type'] = 'AE_mag_Crimson_Atokpi', ['default'] = 'Banebow', },
-	{ ['t'] = 175, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 4, ['type'] = 'AE_mag_Fallen_Cyclops_King', ['default'] = 'Ancient Lich', ['recruits'] = 'AE_mag_Apocalypse,AE_mag_Devourer,AE_mag_Atokpi_Charger', ['default_recruits'] = 'Spectre,Ghast,Draug', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 240, ['recruit_minion'] = 'C43' },
+	{ ['t'] = 175, ['d'] = 1, ['side'] = 4, ['x'] = 12, ['lvl'] = 4, ['type'] = 'AE_mag_Fallen_Cyclops_King', ['default'] = 'Ancient Lich', ['recruits'] = 'AE_mag_Apocalypse,AE_mag_Devourer,AE_mag_Atokpi_Charger', ['default_recruits'] = 'Spectre,Ghast,Draug', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 260, ['recruit_minion'] = 'C43' },
 	{ ['t'] = 175, ['d'] = 1, ['side'] = 4, ['x'] = 9, ['lvl'] = 4, ['type'] = 'AE_mag_Abaddon', ['default'] = 'Skeletal Dragon', ['race_guard_off'] = true, ['calls_for_help'] = true },
 
 	{ ['t'] = 169, ['d'] = 2, ['side'] = 3, ['x'] = 15, ['lvl'] = 2, ['type'] = 'AE_ele_Fallen_Knight', ['default'] = 'Rogue', },
 	
-	{ ['t'] = 171, ['d'] = 3, ['side'] = 3, ['x'] = 17, ['lvl'] = 6, ['type'] = 'QQ_blackness', ['default'] = 'QQ_blackness', ['buff'] = 'A37:B37:C46' },
+	{ ['t'] = 171, ['d'] = 3, ['side'] = 3, ['x'] = 17, ['lvl'] = 6, ['type'] = 'QQ_blackness', ['default'] = 'QQ_blackness', ['buff'] = 'A37:B37:C46', ['ai_add_gold'] = 240, ['event'] = 'set_minion_recruits', ['event_var_a'] = 'C51' },
 
-	{ ['t'] = 172, ['d'] = 4, ['side'] = 4, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_mag_Moloch', ['default'] = 'Nightgaunt', ['race_guard_off'] = true, ['bulky'] = 72, ['aggressive'] = 1 },
+	{ ['t'] = 172, ['d'] = 4, ['side'] = 4, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_mag_Moloch', ['default'] = 'Nightgaunt', ['race_guard_off'] = true, ['bulky'] = 72, ['aggressive'] = 1, ['event'] = 'spawn_more_enemies', ['event_var_a'] = 20 },
 
 	{ ['t'] = 175, ['d'] = 5, ['side'] = 4, ['x'] = 14, ['lvl'] = 4, ['type'] = 'AE_mag_Dark_Apostle', ['default'] = 'Skeletal Dragon', ['beefy'] = 200, ['allow_random'] = false },
 
@@ -679,7 +679,7 @@ return {
 
 	-- 176 - 182 (mask y 9 - 3) old t=41 - t=47
 
-	{ ['t'] = 176, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 4, ['type'] = 'AE_myh_Librarian', ['default'] = 'Dwarvish Arcanister', ['recruits'] = 'AE_myh_Oathkeeper,AE_myh_Runeforger,AE_myh_Stormbringer', ['default_recruits'] = 'Dwarvish Lord,Dwarvish Dragonguard,Dwarvish Sentinel', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 300, ['recruit_minion'] = 'A3' },
+	{ ['t'] = 176, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 4, ['type'] = 'AE_myh_Librarian', ['default'] = 'Dwarvish Arcanister', ['recruits'] = 'AE_myh_Oathkeeper,AE_myh_Runeforger,AE_myh_Stormbringer', ['default_recruits'] = 'Dwarvish Lord,Dwarvish Dragonguard,Dwarvish Sentinel', ['r_lvls'] = '3,3,3', ['recruitment_gold'] = 340, ['recruit_minion'] = 'A3' },
 
 	{ ['t'] = 176, ['d'] = 2, ['side'] = 2, ['x'] = 11, ['lvl'] = 7, ['type'] = 'QQ_harbinger_of_chaos', ['default'] = 'QQ_harbinger_of_chaos', ['buff'] = 'A24:B9:C50:A18', ['allow_random'] = false, ['calls_for_help'] = true },
 
