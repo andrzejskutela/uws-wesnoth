@@ -1,10 +1,11 @@
-<span color='#29c2c3'>v2.7.6</span> (date):
+<span color='#29c2c3'>v2.7.6</span> (28/12/2025):
 - New item added - The Arkenstone
 - All weapon items now give +1/2/3 dmg to native weapons on low ranks
 - Guardians of Mania item slightly redesigned
 - New unique lvl4 unit added - Hypergryphon
 - Martyr ability somewhat nerfed and removed from amla options
 - Return from Captivity - rank progression changed from 10/25/45/70/100 to 10/20/40/70/105
+- Random units pool updated to the newest WotG and RoL releases
 - Minor balancing of various maps and abilities
 - Preparation for the upcoming v2.8 line
 
