@@ -75,7 +75,6 @@ return {
 	{ ['t'] = 10, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Dark_Current', ['default'] = 'Fire Guardian', },
 	{ ['t'] = 11, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Charred_Zombie', ['default'] = 'Ghoul', ['bulky'] = 30 },
 	{ ['t'] = 12, ['d'] = 1, ['side'] = 2, ['x'] = 14, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Parasite', ['default'] = 'Vampire Bat' },
-	{ ['t'] = 12, ['d'] = 1, ['side'] = 2, ['x'] = 15, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Parasite', ['default'] = 'Vampire Bat' },
 	{ ['t'] = 13, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Water_Snake', ['default'] = 'Naga Fighter', },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Tower_Servant', ['default'] = 'Footpad', ['moves'] = 0, ['gold'] = 10, ['disallow_slash_unguardian'] = true },
 	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 16, ['lvl'] = 1, ['type'] = 'AE_myh_Water_Dryad', ['default'] = 'Mermaid Initiate', },
@@ -85,6 +84,8 @@ return {
 	{ ['t'] = 15, ['d'] = 2, ['side'] = 3, ['x'] = 17, ['lvl'] = 1, ['type'] = 'AE_chs_elementals_Undine', ['default'] = 'Great Seahorse', },
 	
 	{ ['t'] = 11, ['d'] = 3, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Amoeba', ['default'] = 'Blood Bat', ['gold'] = 15, },
+
+	{ ['t'] = 12, ['d'] = 4, ['side'] = 2, ['x'] = 15, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Parasite', ['default'] = 'Vampire Bat' },
 	
 	{ ['t'] = 9, ['d'] = 5, ['side'] = 2, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_mrc_Blight_Fetid', ['default'] = 'Skeleton', ['gold'] = 15, },
 	{ ['t'] = 13, ['d'] = 5, ['side'] = 2, ['x'] = 18, ['lvl'] = 1, ['type'] = 'AE_rhy_ne_Skeleton_Horse', ['default'] = 'Wolf', ['fast'] = 1 },
@@ -126,7 +127,6 @@ return {
 	{ ['t'] = 26, ['d'] = 1, ['side'] = 2, ['x'] = 17, ['lvl'] = 2, ['type'] = 'AE_ext_orcs_Naga_Assassin', ['default'] = 'Naga Warrior', },
 	{ ['t'] = 28, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Sniper', ['default'] = 'Orcish Crossbowman', ['moves'] = 0, ['gold'] = 10, },
 	{ ['t'] = 29, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Shaman', ['default'] = 'Goblin Impaler', },
-	{ ['t'] = 29, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Hunter', ['default'] = 'Goblin Impaler', },
 	
 	{ ['t'] = 23, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_ext_orcs_Goblin_Cavalryman', ['default'] = 'Wolf Rider', },
 	{ ['t'] = 28, ['d'] = 2, ['side'] = 4, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mag_Goblin_Warrior', ['default'] = 'Orcish Warrior', ['beefy'] = 40, },
@@ -137,7 +137,8 @@ return {
 	{ ['t'] = 28, ['d'] = 4, ['side'] = 4, ['x'] = 11, ['lvl'] = 3, ['type'] = 'AE_mag_Roc_Master', ['default'] = 'Roc', ['allow_random'] = false },
 
 	{ ['t'] = 29, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['race_guard_off'] = true, ['allow_random'] = false, ['bulky'] = 64, ['beefy'] = 64 },
-	
+	{ ['t'] = 29, ['d'] = 5, ['side'] = 4, ['x'] = 21, ['lvl'] = 1, ['type'] = 'AE_mag_Goblin_Hunter', ['default'] = 'Goblin Impaler', },
+
 	{ ['t'] = 28, ['d'] = 6, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_mag_Goblin_Invader', ['default'] = 'Orcish Nightblade', ['race_guard_off'] = true, },
 
 	{ ['t'] = 23, ['d'] = 7, ['side'] = 2, ['x'] = 21, ['lvl'] = 0, ['type'] = 'Dragonfly Naiad', ['default'] = 'Dragonfly Naiad', },
@@ -192,7 +193,6 @@ return {
 	
 	-- 44 - 50 (mask y 126 - 120)
 	
-	{ ['t'] = 44, ['d'] = 1, ['side'] = 2, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_arc_ukians_Ukian_Iceblade_Seal', ['default'] = 'Great Icemonax', },
 	{ ['t'] = 45, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 4, ['type'] = 'AE_ext_monsters_Giant_Yeti', ['default'] = 'Yeti', ['race_guard_off'] = true, ['bulky'] = 60, ['event'] = 'tsw_yeti', ['allow_random'] = false },
 	{ ['t'] = 48, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 4, ['type'] = 'QQ_bear_gatekeeper', ['default'] = 'QQ_bear_gatekeeper', ['buff'] = 'A29:B31:C31', ['guard'] = true, ['item'] = true, },
 	
@@ -202,6 +202,7 @@ return {
 	
 	{ ['t'] = 46, ['d'] = 4, ['side'] = 2, ['x'] = 17, ['lvl'] = 3, ['type'] = 'AE_mrc_highlanders_Behemoth', ['default'] = 'Troll Warrior', ['armored'] = 15, ['bulky'] = 40 },
 
+	{ ['t'] = 44, ['d'] = 5, ['side'] = 2, ['x'] = 12, ['lvl'] = 2, ['type'] = 'AE_arc_ukians_Ukian_Iceblade_Seal', ['default'] = 'Great Icemonax', },
 	{ ['t'] = 48, ['d'] = 5, ['side'] = 3, ['x'] = 24, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Balloon', ['default'] = 'War Harbinger', ['race_guard_off'] = true },
 
 	{ ['t'] = 47, ['d'] = 6, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Heavy_Balloon', ['default'] = 'War Harbinger', ['race_guard_off'] = true },
@@ -214,11 +215,11 @@ return {
 	{ ['t'] = 51, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 3, ['type'] = 'AE_mag_Dwarvish_Runic_Warrior', ['default'] = 'Dwarvish Sentinel', ['moves'] = 0, ['disallow_slash_unguardian'] = true },
 	{ ['t'] = 53, ['d'] = 1, ['side'] = 3, ['x'] = 20, ['lvl'] = 1, ['type'] = 'Dwarvish Fighter', ['default'] = 'Dwarvish Fighter', },
 	{ ['t'] = 54, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_mag_Red_Steam_Ulfserker', ['default'] = 'Dwarvish Berserker', ['beefy'] = 40, },
-	{ ['t'] = 57, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Technician', ['default'] = 'Dwarvish Runesmith', },
 	
 	{ ['t'] = 54, ['d'] = 2, ['side'] = 3, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_mag_Red_Steam_Ulfserker', ['default'] = 'Dwarvish Berserker', ['bulky'] = 40, },
 	
 	{ ['t'] = 53, ['d'] = 3, ['side'] = 3, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_feu_clockwork_dwarves_Miasmist', ['default'] = 'Dwarvish Steelclad', },
+	{ ['t'] = 57, ['d'] = 3, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_mag_Technician', ['default'] = 'Dwarvish Runesmith', },
 	
 	{ ['t'] = 53, ['d'] = 4, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'Dwarvish Fighter', ['default'] = 'Dwarvish Fighter', },
 	{ ['t'] = 56, ['d'] = 4, ['side'] = 3, ['x'] = 18, ['lvl'] = 2, ['type'] = 'AE_mag_Steam_Berserker', ['default'] = 'Dwarvish Berserker', },
@@ -264,7 +265,6 @@ return {
 	{ ['t'] = 65, ['d'] = 1, ['side'] = 2, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_arc_menagerie_Lunar_Mouth', ['default'] = 'Dread Bat', ['bulky'] = 40, ['race_guard_off'] = true },
 	{ ['t'] = 65, ['d'] = 1, ['side'] = 3, ['x'] = 14, ['lvl'] = 1, ['type'] = 'Dwarvish Thunderer', ['default'] = 'Dwarvish Thunderer', ['allow_random'] = false, ['race_guard_off'] = true, ['quiet_buff'] = 'Q3' },
 	{ ['t'] = 65, ['d'] = 1, ['side'] = 1, ['x'] = 6, ['lvl'] = 1, ['type'] = 'AE_mag_Shamanistic_Adept', ['default'] = 'Elvish Shaman', ['allow_random'] = false },
-	{ ['t'] = 66, ['d'] = 1, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_arc_menagerie_Lunar_Mouth', ['default'] = 'Saurian Oracle', },
 	{ ['t'] = 69, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_arc_menagerie_Lunar_Ripper', ['default'] = 'Saurian Ambusher', ['race_guard_off'] = true, ['calls_for_help'] = true, ['fast'] = 1 },
 	{ ['t'] = 71, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 3, ['type'] = 'Dwarvish Sentinel', ['default'] = 'Dwarvish Sentinel', ['moves'] = 0, },
 	
@@ -273,6 +273,7 @@ return {
 	{ ['t'] = 66, ['d'] = 3, ['side'] = 2, ['x'] = 20, ['lvl'] = 2, ['type'] = 'AE_arc_menagerie_Lunar_Mouth', ['default'] = 'Saurian Soothsayer', ['buff'] = 'A33:B33:C33', },
 	{ ['t'] = 71, ['d'] = 3, ['side'] = 3, ['x'] = 20, ['lvl'] = 4, ['type'] = 'AE_rhy_dw_Ballista', ['default'] = 'Dwarvish Arcanister', ['moves'] = 0, },
 
+	{ ['t'] = 66, ['d'] = 4, ['side'] = 2, ['x'] = 22, ['lvl'] = 2, ['type'] = 'AE_arc_menagerie_Lunar_Mouth', ['default'] = 'Saurian Oracle', },
 	{ ['t'] = 68, ['d'] = 4, ['side'] = 2, ['x'] = 22, ['lvl'] = 3, ['type'] = 'AE_arc_menagerie_Green_Frogman', ['default'] = 'Saurian Flanker', ['guard'] = true, },
 	
 	{ ['t'] = 67, ['d'] = 5, ['side'] = 2, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_arc_menagerie_Lunar_Stinkbug', ['default'] = 'Saurian Skirmisher', },

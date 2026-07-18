@@ -99,7 +99,6 @@ return {
 	{ ['t'] = 11, ['d'] = 1, ['side'] = 2, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_myh_Water_Dryad', ['default'] = 'Mermaid Initiate', },
 	{ ['t'] = 12, ['d'] = 1, ['side'] = 3, ['x'] = 19, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Albatross', ['default'] = 'Elder Falcon', },
 	{ ['t'] = 13, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Albatross', ['default'] = 'Elder Falcon', },
-	{ ['t'] = 14, ['d'] = 1, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Seaman', ['default'] = 'Fencer', },
 	{ ['t'] = 15, ['d'] = 1, ['side'] = 3, ['x'] = 23, ['lvl'] = 1, ['type'] = 'AE_rhy_de_Spearman', ['default'] = 'Spearman', ['gold'] = 8 },
 	{ ['t'] = 15, ['d'] = 1, ['side'] = 3, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_rhy_de_Spearman', ['default'] = 'Spearman', ['gold'] = 8 },
 	
@@ -111,6 +110,7 @@ return {
 	{ ['t'] = 14, ['d'] = 4, ['side'] = 3, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Whirlwind', ['default'] = 'Pikeman', ['armored'] = 10, ['gold'] = 18 },
 	
 	{ ['t'] = 13, ['d'] = 5, ['side'] = 3, ['x'] = 16, ['lvl'] = 2, ['type'] = 'AE_arc_south_seas_Greater_Albatross', ['default'] = 'Gryphon', ['bulky'] = 40 },
+	{ ['t'] = 14, ['d'] = 5, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_arc_south_seas_Seaman', ['default'] = 'Fencer', },
 
 	{ ['t'] = 15, ['d'] = 6, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_rhy_rg_Bowman', ['default'] = 'Bowman', ['beefy'] = 20, ['quiet_buff'] = 'Q3', },
 
@@ -156,7 +156,6 @@ return {
 	{ ['t'] = 29, ['d'] = 1, ['side'] = 4, ['x'] = 19, ['lvl'] = 0, ['type'] = 'AE_ext_monsters_Baby_Mudcrawler', ['default'] = 'Mudcrawler', ['race_guard_off'] = true, ['allow_random'] = false },
 	
 	{ ['t'] = 25, ['d'] = 2, ['side'] = 4, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_mag_Cyclops', ['default'] = 'Dune Rover', },
-	{ ['t'] = 25, ['d'] = 2, ['side'] = 4, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_mag_Cyclops', ['default'] = 'Dune Skirmisher', },
 	{ ['t'] = 25, ['d'] = 2, ['side'] = 3, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Water_Snake', ['default'] = 'Elder Falcon', },
 	
 	{ ['t'] = 23, ['d'] = 3, ['side'] = 3, ['x'] = 26, ['lvl'] = 2, ['type'] = 'AE_fut_brungar_Sting_Ray', ['default'] = 'Mermaid Enchantress', },
@@ -164,6 +163,7 @@ return {
 
 	{ ['t'] = 29, ['d'] = 4, ['side'] = 4, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_ext_monsters_Mudcrawler', ['default'] = 'Giant Mudcrawler', ['beefy'] = 40, ['race_guard_off'] = true, ['allow_random'] = false },
 	
+	{ ['t'] = 25, ['d'] = 5, ['side'] = 4, ['x'] = 11, ['lvl'] = 1, ['type'] = 'AE_mag_Cyclops', ['default'] = 'Dune Skirmisher', },
 	{ ['t'] = 25, ['d'] = 5, ['side'] = 3, ['x'] = 10, ['lvl'] = 3, ['type'] = 'AE_fut_brungar_Giant_Crab', ['default'] = 'Dune Firetrooper', ['buff'] = 'A15:B7:C14', ['disallow_slash_unguardian'] = true },
 	
 	{ ['t'] = 28, ['d'] = 6, ['side'] = 4, ['x'] = 13, ['lvl'] = 2, ['type'] = 'AE_mag_Cyclops_Brute', ['default'] = 'Dune Captain', ['bulky'] = 36, ['beefy'] = 24, },
@@ -178,7 +178,6 @@ return {
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 3, ['x'] = 18, ['lvl'] = 3, ['type'] = 'AE_ext_chaos_Hell_Guardian', ['default'] = 'Highwayman', ['moves'] = 0 },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 3, ['x'] = 27, ['lvl'] = 2, ['type'] = 'AE_mag_Wyvern_Knight', ['default'] = 'Cuttle Fish', ['race_guard_off'] = true },
 	{ ['t'] = 33, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Overseer', ['default'] = 'Outlaw', ['recruits'] = 'QQ_Kamikaze', ['default_recruits'] = 'QQ_Kamikaze', ['r_lvls'] = '0', ['recruitment_gold'] = 85, ['gold'] = 30, ['allow_random_recruits'] = false, },
-	{ ['t'] = 34, ['d'] = 1, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_mrc_slavers_Worker', ['default'] = 'QQ_Kamikaze', ['guard'] = true },
 	{ ['t'] = 35, ['d'] = 1, ['side'] = 2, ['x'] = 7, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['bulky'] = 50, ['beefy'] = 50, ['allow_random'] = false },
 	{ ['t'] = 35, ['d'] = 1, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Miner', ['default'] = 'Rogue', ['guard'] = true },
 	{ ['t'] = 36, ['d'] = 1, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_agl_deep_Minotaur', ['default'] = 'Cave Bear', ['beefy'] = 40 },
@@ -189,6 +188,7 @@ return {
 	
 	{ ['t'] = 33, ['d'] = 4, ['side'] = 2, ['x'] = 6, ['lvl'] = 2, ['type'] = 'AE_mrc_slavers_Miner', ['default'] = 'Rogue', ['guard'] = true, ['gold'] = 15 },
 	
+	{ ['t'] = 34, ['d'] = 5, ['side'] = 2, ['x'] = 10, ['lvl'] = 1, ['type'] = 'AE_mrc_slavers_Worker', ['default'] = 'QQ_Kamikaze', ['guard'] = true },
 	{ ['t'] = 34, ['d'] = 5, ['side'] = 2, ['x'] = 8, ['lvl'] = 0, ['type'] = 'QQ_Kamikaze', ['default'] = 'QQ_Kamikaze', ['allow_random'] = false },
 	
 	{ ['t'] = 34, ['d'] = 6, ['side'] = 3, ['x'] = 28, ['lvl'] = 3, ['type'] = 'AE_mag_Chaos_Wyvern', ['default'] = 'Sea Serpent', ['race_guard_off'] = true, ['bulky'] = 52, },
@@ -258,13 +258,14 @@ return {
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 4, ['x'] = 9, ['lvl'] = 1, ['type'] = 'AE_myh_Gargoyle', ['default'] = 'Wolf Rider', ['gold'] = 4 },
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 4, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_myh_Blood_Hulk', ['default'] = 'Chocobone', ['gold'] = 22, ['buff'] = 'A20:B20:C20:B21:C48' },
 	{ ['t'] = 55, ['d'] = 1, ['side'] = 4, ['x'] = 10, ['lvl'] = 2, ['type'] = 'AE_stf_free_saurians_Tarantula', ['default'] = 'Goblin Pillager', ['guard'] = true },
-	{ ['t'] = 55, ['d'] = 1, ['side'] = 3, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_rhy_dw_Ghost', ['default'] = 'Troll Whelp', ['guard'] = true, },
 	{ ['t'] = 57, ['d'] = 1, ['side'] = 4, ['x'] = 14, ['lvl'] = 2, ['type'] = 'AE_myh_Blood_Manipulator', ['default'] = 'Jinn', ['gold'] = 12, },
 	
 	{ ['t'] = 54, ['d'] = 2, ['side'] = 4, ['x'] = 14, ['lvl'] = 1, ['type'] = 'AE_myh_Malborn', ['default'] = 'Ghoul', ['gold'] = 7, ['armored'] = 30 },
 	{ ['t'] = 57, ['d'] = 2, ['side'] = 4, ['x'] = 15, ['lvl'] = 1, ['type'] = 'AE_ext_chaos_Hound', ['default'] = 'Woodland Boar', },
 	
 	{ ['t'] = 57, ['d'] = 3, ['side'] = 4, ['x'] = 11, ['lvl'] = 2, ['type'] = 'AE_rhy_de_Deadwood', ['default'] = 'Revenant', ['beefy'] = 60, },
+
+	{ ['t'] = 55, ['d'] = 4, ['side'] = 3, ['x'] = 26, ['lvl'] = 1, ['type'] = 'AE_rhy_dw_Ghost', ['default'] = 'Troll Whelp', ['guard'] = true, },
 	
 	{ ['t'] = 56, ['d'] = 5, ['side'] = 4, ['x'] = 20, ['lvl'] = 3, ['type'] = 'AE_myh_Sangel', ['default'] = 'Banebow', ['beefy'] = 40, },
 	

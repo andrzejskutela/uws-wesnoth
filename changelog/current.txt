@@ -1,4 +1,6 @@
-<span color='#99c2c3'>v2.7.7</span> (date):
+<span color='#99c2c3'>v2.7.7</span> (18/07/2026):
 - Fixes to the spawning mechanism in open world maps
 - When playing random enemies, all champion bonuses are random now, not only the first 3
 - Arkenstone chance to rune nerfed slightly
+- Units with Potion of Hindrance no longer need ranged attacks to fully benefit from the item on higher levels
+- Minor balancing of scroll games
