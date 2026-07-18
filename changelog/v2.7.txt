@@ -1,5 +1,6 @@
 <span color='#99c2c3'>v2.7.7</span> (date):
 - Fixes to the spawning mechanism in open world maps
+- Arkenstone chance to rune nerfed slightly
 
 <span color='#29c2c3'>v2.7.6</span> (28/12/2025):
 - New item added - The Arkenstone
