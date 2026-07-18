@@ -32,6 +32,7 @@ local after_classic_locations = {
 	['map_10'] = { { ['x'] = 2, ['y'] = 2 }, { ['x'] = 9, ['y'] = 2 } },
 	['map_11'] = { { ['x'] = 4, ['y'] = 1 } },
 	['map_12'] = { { ['x'] = 4, ['y'] = 1 } },
+	['map_18'] = { { ['x'] = 5, ['y'] = 1 } },
 }
 
 local pvp_restricted_items_table = {
