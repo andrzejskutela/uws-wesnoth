@@ -72,6 +72,7 @@ return {
 	{ ['row'] = 'object', ['t'] = 56, ['x'] = 8, ['cat'] = 'rune', ['image'] = 'scenery/uws/stone-circle.png', ['amount'] = 2, ['name'] = 'Stone Circle', ['set'] = 'R6,R7', ['color'] = '#a0a2ad', ['tooltip'] = '+10% forest defense (50%)\
 +10% hills defense (50%)' },
 	{ ['row'] = 'object', ['t'] = 63, ['x'] = 11, ['cat'] = 'decorative', ['image'] = 'halo/monster/stoat-frost-mask.png', ['name'] = 'Town of Ahrenvou' },
+	{ ['row'] = 'object', ['t'] = 64, ['x'] = 8, ['cat'] = 'training_module', ['image'] = 'items/dummy.png', ['name'] = 'training dummy', ['cost'] = 40, ['type'] = 'defense', ['value'] = 10 },
 
 	{ ['row'] = 'object', ['t'] = 90, ['x'] = 7, ['image'] = 'halo/elven/druid-healing8.png', ['name'] = 'Crystal Forest', ['cat'] = 'event', ['event'] = 'rfc_crystal_forest', },
 	{ ['row'] = 'object', ['t'] = 98, ['x'] = 24, ['cat'] = 'gold_chest', ['image'] = 'items/chest.png', ['amount'] = 60 },

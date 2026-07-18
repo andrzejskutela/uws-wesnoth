@@ -380,6 +380,9 @@ function wesnoth.wml_actions.qquws_roll_recruit_improvement(cfg)
 end
 
 
+-- set_random_trained_module is handled by the mode-agnostic training engine in
+-- lua/training.lua (qquws_add_random_training) + the QQUWS_TRAINING_MODULES event.
+--
 -- todo
--- write code to set_random_trained_module to the player (choose some villages at random, offer training for gold when village captured)
--- training is held in player variables (max hp + / max dmg + / mp + / res + / etc) - this is then applied to all new recruited units
+-- village-based training: some villages offer player-chosen training for gold when
+-- captured, reusing the training engine (qquws_add_training_module) - to be specced.

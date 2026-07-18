@@ -30,6 +30,7 @@ function build_object_row(data)
 	local ret = {
 		['y'] = 4, ['type'] = '', ['image'] = '', ['message'] = '', ['amount'] = 0, ['name'] = '', ['set'] = '', ['color'] = '#f4f5e9',
 		['tooltip'] = '', ['event'] = '', ['new_unit_special_id'] = '', ['render'] = true, ['id'] = '',
+		['cost'] = 0, ['value'] = 0,
 	}
 	
 	for k,v in pairs(data) do
@@ -146,7 +147,7 @@ local function process_spawn_table(spawn_table)
 	end
 	
 	local copy_fields = {}
-	local copy_object_fields = { 'x', 'y', 'cat', 'image', 'type', 'message', 'amount', 'name', 'set', 'color', 'tooltip', 'event', 'new_unit_special_id', 'render', }
+	local copy_object_fields = { 'x', 'y', 'cat', 'image', 'type', 'message', 'amount', 'name', 'set', 'color', 'tooltip', 'event', 'new_unit_special_id', 'render', 'cost', 'value', }
 	for field in string.gmatch(copy_fields_list, '([^,]+)') do
 	    table.insert(copy_fields, field)
 	end
