@@ -93,7 +93,6 @@ return {
 
 	-- beginning
 	
-	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 19, ['y'] = 11, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Legionnaire', ['default'] = 'Goblin Impaler', ['moves'] = 0 },
 	{ ['t'] = 1, ['d'] = 1, ['side'] = 2, ['x'] = 11, ['y'] = 5, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Ballista', ['default'] = 'Soulless', ['moves'] = 0, ['gold'] = 20 },
 
 	{ ['t'] = 1, ['d'] = 2, ['side'] = 2, ['x'] = 13, ['y'] = 6, ['lvl'] = 1, ['type'] = 'AE_feu_khaganate_Shieldbearer', ['default'] = 'Heavy Infantryman', ['moves'] = 0 },
@@ -101,6 +100,7 @@ return {
 	{ ['t'] = 1, ['d'] = 3, ['side'] = 2, ['x'] = 12, ['y'] = 13, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Microbe', ['default'] = 'Giant Rat', ['moves'] = 4 },
 	
 	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 9, ['y'] = 13, ['lvl'] = 0, ['type'] = 'AE_mrc_Blight_Microbe', ['default'] = 'Giant Rat', ['moves'] = 4 },
+	{ ['t'] = 1, ['d'] = 4, ['side'] = 2, ['x'] = 19, ['y'] = 11, ['lvl'] = 1, ['type'] = 'AE_efm_imperialists_Legionnaire', ['default'] = 'Goblin Impaler', ['moves'] = 0 },
 
 	{ ['t'] = 1, ['d'] = 5, ['side'] = 2, ['x'] = 19, ['y'] = 4, ['lvl'] = 0, ['type'] = 'AE_imp_Lavinians_Auxiliary', ['default'] = 'Goblin Spearman', ['moves'] = 4 },
 	
@@ -152,17 +152,17 @@ return {
 	{ ['t'] = 22, ['d'] = 1, ['side'] = 1, ['x'] = 11, ['lvl'] = 1, ['type'] = 'Elvish Shaman', ['default'] = 'Elvish Shaman', ['allow_random'] = false },
 	
 	{ ['t'] = 19, ['d'] = 2, ['side'] = 3, ['x'] = 19, ['lvl'] = 2, ['type'] = 'AE_feu_ceresians_Pikeman', ['default'] = 'Pikeman', ['guard'] = true, ['gold'] = 10, ['disallow_slash_unguardian'] = true, },
-	{ ['t'] = 20, ['d'] = 2, ['side'] = 3, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_feu_ceresians_Squire', ['default'] = 'Spearman', },
 
-	{ ['t'] = 20, ['d'] = 3, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Shadow', ['default'] = 'Shadow', },
 	{ ['t'] = 21, ['d'] = 3, ['side'] = 3, ['x'] = 21, ['lvl'] = 2, ['type'] = 'AE_myh_Great_Wizard', ['default'] = 'White Mage', },
 	
 	{ ['t'] = 16, ['d'] = 4, ['side'] = 3, ['x'] = 23, ['lvl'] = 2, ['type'] = 'AE_mrc_enchanters_Titan', ['default'] = 'Pikeman', ['beefy'] = 40 },
 	{ ['t'] = 17, ['d'] = 4, ['side'] = 2, ['x'] = 17, ['lvl'] = 1, ['type'] = 'Ghost', ['default'] = 'Ghost', ['race_guard_off'] = true, },
 
+	{ ['t'] = 20, ['d'] = 5, ['side'] = 3, ['x'] = 25, ['lvl'] = 1, ['type'] = 'AE_feu_ceresians_Squire', ['default'] = 'Spearman', },
 	{ ['t'] = 21, ['d'] = 5, ['side'] = 3, ['x'] = 13, ['lvl'] = 1, ['type'] = 'Spearman', ['default'] = 'Spearman', },
 	
 	{ ['t'] = 19, ['d'] = 6, ['side'] = 3, ['x'] = 23, ['lvl'] = 3, ['type'] = 'AE_mrc_slavers_Abuser', ['default'] = 'Fugitive', ['race_guard_off'] = true },
+	{ ['t'] = 20, ['d'] = 6, ['side'] = 2, ['x'] = 8, ['lvl'] = 2, ['type'] = 'Shadow', ['default'] = 'Shadow', ['fast'] = 2, ['agile'] = 10 },
 	{ ['t'] = 21, ['d'] = 6, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'AE_myh_Light_Spirit', ['default'] = 'Mage', },
 
 	{ ['t'] = 17, ['d'] = 7, ['side'] = 2, ['x'] = 22, ['lvl'] = 1, ['type'] = 'Skeleton', ['default'] = 'Skeleton', ['aggressive'] = 2, },

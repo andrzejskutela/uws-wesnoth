@@ -141,6 +141,9 @@ local early_allowed_buffs_table = {
 	'C1','C2','C3','C7','C8','C9','C11','C12','C13','C14','C15','C17','C20','C21','C22','C23','C24','C25','C26','C27','C39','C43','C44','C48','C50','C53','C54','C55','C58','C59','C62'
 }
 
+
+local additional_buffs_pool = early_allowed_buffs_table
+
 local restrict_op_buffs = function(pool)
 	local ret = {}
 	local test_array = {}
@@ -204,6 +207,9 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 			exclude_from_pool[#exclude_from_pool + 1] = buff_section
 		end
 	end
+
+	-- how many additional slots (beyond A/B/C) the champion should end up with
+	local extras_count = math.max(0, buff_no - 3)
 	
 	local pool_a = { 'A1','A3','A5','A7','A8','A10','A11','A12','A16','A18','A19','A22','A23','A26','A29','A31','A32','A36','A61','A62','A63','A65' }
 	local pool_b = { 'B1','B10','B11','B12','B14','B15','B16','B18','B19','B21','B22','B24','B25','B29','B32','B35','B45','B46','B47','B48','B49','B50','B52','B56','B57','B58' }
@@ -285,6 +291,47 @@ function wesnoth.wml_actions.qquws_generate_random_champion(cfg)
 	if buff_c == 'rand' then
 		wml.variables[buff_c_var_name] = mathx.random_choice(pool_c)
 	end
+
+	-- Fill the additional slots (4th and beyond). Draw from additional_buffs_pool,
+	-- keeping only bonuses this unit can accept (i.e. present in its eligible A/B/C
+	-- pools), excluding the three bonuses just generated, and without duplicates.
+	local final_a = wml.variables[buff_a_var_name]
+	local final_b = wml.variables[buff_b_var_name]
+	local final_c = wml.variables[buff_c_var_name]
+
+	local eligible = {}
+	for k,v in ipairs(pool_a) do eligible[v] = true end
+	for k,v in ipairs(pool_b) do eligible[v] = true end
+	for k,v in ipairs(pool_c) do eligible[v] = true end
+
+	local used = { [final_a] = true, [final_b] = true, [final_c] = true }
+	local seen = {}
+	local extra_candidates = {}
+	for k,v in ipairs(additional_buffs_pool) do
+		if eligible[v] and not used[v] and not seen[v] then
+			seen[v] = true
+			extra_candidates[#extra_candidates + 1] = v
+		end
+	end
+
+	local generated = { final_a, final_b, final_c }
+	for i = 1, extras_count do
+		if #extra_candidates == 0 then
+			break
+		end
+
+		local pick = mathx.random_choice(extra_candidates)
+		for j = 1, #extra_candidates do
+			if extra_candidates[j] == pick then
+				table.remove(extra_candidates, j)
+				break
+			end
+		end
+
+		generated[#generated + 1] = pick
+	end
+
+	wml.variables[cfg.result_var or 'prespawn_generated_buff'] = table.concat(generated, ':')
 end
 
 function wesnoth.wml_actions.qquws_generate_champion_params(cfg)

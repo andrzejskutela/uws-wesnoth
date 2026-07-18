@@ -343,6 +343,8 @@ local function process_spawn_table(spawn_table)
 				wml.variables["prespawn_buff_b"] = buff[2]
 				wml.variables["prespawn_buff_c"] = buff[3]
 				wml.variables["prespawn_full_buff"] = rules['buff']
+				-- fallback: if generation is skipped (non-random champion) keep the original buff
+				wml.variables["prespawn_generated_buff"] = rules['buff']
 				wml.variables['champion_unit_already_exists'] = false
 				
 				for k,v in ipairs(buff) do
@@ -358,11 +360,8 @@ local function process_spawn_table(spawn_table)
 					name='generate_champion_data'
 				})
 				
-				buff[1] = wml.variables["prespawn_buff_a"]
-				buff[2] = wml.variables["prespawn_buff_b"]
-				buff[3] = wml.variables["prespawn_buff_c"]
-				rules['buff'] = table.concat(buff, ':')
-				
+				rules['buff'] = wml.variables["prespawn_generated_buff"]
+
 				rules['name'] = wml.variables["prespawn_buff_name"]
 				rules['second_name'] = rules['name']
 				rules['second_buff'] = rules['buff']
@@ -373,15 +372,14 @@ local function process_spawn_table(spawn_table)
 					wml.variables["prespawn_buff_a"] = second_buff[1]
 					wml.variables["prespawn_buff_b"] = second_buff[2]
 					wml.variables["prespawn_buff_c"] = second_buff[3]
-					
+					-- fallback: if generation is skipped (non-random champion) keep the original buff
+					wml.variables["prespawn_generated_buff"] = rules['second_buff']
+
 					wml.fire('fire_event', {
 						name='generate_champion_data'
 					})
-					
-					second_buff[1] = wml.variables["prespawn_buff_a"]
-					second_buff[2] = wml.variables["prespawn_buff_b"]
-					second_buff[3] = wml.variables["prespawn_buff_c"]
-					rules['second_buff'] = table.concat(second_buff, ':')
+
+					rules['second_buff'] = wml.variables["prespawn_generated_buff"]
 					rules['second_name'] = wml.variables["prespawn_buff_name"]
 				end
 			end
