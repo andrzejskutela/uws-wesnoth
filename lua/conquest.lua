@@ -1,87 +1,85 @@
-local generate_conquest_events = {
-	["diff_1"] = {
-		{ ['turn'] = 1, ['e'] = 'set_recruit_list', ['r_lvls'] = '0,0,0' },
-		{ ['turn'] = 4, ['e'] = 'set_recruit_list', ['r_lvls'] = '1,1,1,1' },
-		{ ['turn'] = 11, ['e'] = 'set_random_trained_module', ['strength'] = 1 },
-		{ ['turn'] = 12, ['e'] = 'generate_strong_spawn', ['value'] = 40 },
-		{ ['turn'] = 15, ['e'] = 'set_recruit_list', ['r_lvls'] = '1,1,2,2' },
-		{ ['turn'] = 17, ['e'] = 'set_village_income', ['new_income'] = 4 },
-		{ ['turn'] = 18, ['e'] = 'schedule_weather_change', ['severity'] = 1 },
-		{ ['turn'] = 19, ['e'] = 'set_recruit_list', ['r_lvls'] = '2,2,2,2' },
-		{ ['turn'] = 21, ['e'] = 'generate_strong_spawn', ['value'] = 50 },
-		{ ['turn'] = 23, ['e'] = 'set_random_trained_module', ['strength'] = 1 },
-		{ ['turn'] = 24, ['e'] = 'set_village_income', ['new_income'] = 5 },
-	},
-	["diff_2"] = {
-		{ ['turn'] = 1, ['e'] = 'set_recruit_list', ['r_lvls'] = '0,0,0' },
-		{ ['turn'] = 3, ['e'] = 'set_recruit_list', ['r_lvls'] = '1,1,1,1' },
-		{ ['turn'] = 8, ['e'] = 'set_random_trained_module', ['strength'] = 1 },
-		{ ['turn'] = 9, ['e'] = 'generate_strong_spawn', ['value'] = 25 },
-		{ ['turn'] = 12, ['e'] = 'set_random_trained_module', ['strength'] = 2 },
-		{ ['turn'] = 14, ['e'] = 'schedule_weather_change', ['severity'] = 1 },
-		{ ['turn'] = 14, ['e'] = 'set_recruit_list', ['r_lvls'] = '1,1,1,2' },
-		{ ['turn'] = 14, ['e'] = 'set_village_income', ['new_income'] = 4 },
-		{ ['turn'] = 17, ['e'] = 'set_recruit_list', ['r_lvls'] = '2,2,2,2' },
-		{ ['turn'] = 18, ['e'] = 'generate_strong_spawn', ['value'] = 60 },
-		{ ['turn'] = 19, ['e'] = 'schedule_weather_change', ['severity'] = 2 },
-		{ ['turn'] = 20, ['e'] = 'set_random_trained_module', ['strength'] = 1 },
-		{ ['turn'] = 23, ['e'] = 'set_recruit_list', ['r_lvls'] = '2,2,2,3,3' },
-		{ ['turn'] = 24, ['e'] = 'set_village_income', ['new_income'] = 5 },
-		{ ['turn'] = 26, ['e'] = 'generate_strong_spawn', ['value'] = 30 },
-		{ ['turn'] = 27, ['e'] = 'set_random_trained_module', ['strength'] = 1 },
-	},
-	["diff_3"] = {
-		{ ['turn'] = 1, ['e'] = 'set_recruit_list', ['r_lvls'] = '0,0,0' },
-		{ ['turn'] = 2, ['e'] = 'generate_strong_spawn', ['value'] = 20 },
-		{ ['turn'] = 3, ['e'] = 'set_recruit_list', ['r_lvls'] = '1,1,1,1' },
-		{ ['turn'] = 7, ['e'] = 'schedule_weather_change', ['severity'] = 2 },
-		{ ['turn'] = 7, ['e'] = 'set_random_trained_module', ['strength'] = 2 },
-		{ ['turn'] = 9, ['e'] = 'generate_strong_spawn', ['value'] = 40 },
-		{ ['turn'] = 11, ['e'] = 'set_recruit_list', ['r_lvls'] = '1,1,2,2' },
-		{ ['turn'] = 12, ['e'] = 'set_random_trained_module', ['strength'] = 1 },
-		{ ['turn'] = 14, ['e'] = 'set_village_income', ['new_income'] = 5 },
-		{ ['turn'] = 16, ['e'] = 'generate_strong_spawn', ['value'] = 50 },
-		{ ['turn'] = 16, ['e'] = 'set_random_trained_module', ['strength'] = 2 },
-		{ ['turn'] = 17, ['e'] = 'set_recruit_list', ['r_lvls'] = '2,2,2,2' },
-		{ ['turn'] = 19, ['e'] = 'schedule_weather_change', ['severity'] = 3 },
-		{ ['turn'] = 20, ['e'] = 'generate_strong_spawn', ['value'] = 60 },
-		{ ['turn'] = 22, ['e'] = 'set_recruit_list', ['r_lvls'] = '2,2,2,3,3' },
-		{ ['turn'] = 24, ['e'] = 'set_random_trained_module', ['strength'] = 1 },
-		{ ['turn'] = 28, ['e'] = 'set_village_income', ['new_income'] = 7 },
-		{ ['turn'] = 28, ['e'] = 'set_random_trained_module', ['strength'] = 1 },
-		{ ['turn'] = 28, ['e'] = 'set_recruit_list', ['r_lvls'] = '3,3,3,3' },
-		{ ['turn'] = 28, ['e'] = 'generate_strong_spawn', ['value'] = 70 },
-	},
-	["diff_4"] = {
-		{ ['turn'] = 1, ['e'] = 'set_recruit_list', ['r_lvls'] = '0,0,0' },
-		{ ['turn'] = 2, ['e'] = 'generate_strong_spawn', ['value'] = 40 },
-		{ ['turn'] = 3, ['e'] = 'set_recruit_list', ['r_lvls'] = '1,1,1,1' },
-		{ ['turn'] = 6, ['e'] = 'schedule_weather_change', ['severity'] = 2 },
-		{ ['turn'] = 7, ['e'] = 'set_random_trained_module', ['strength'] = 2 },
-		{ ['turn'] = 9, ['e'] = 'generate_strong_spawn', ['value'] = 40 },
-		{ ['turn'] = 11, ['e'] = 'set_recruit_list', ['r_lvls'] = '1,1,2,2' },
-		{ ['turn'] = 12, ['e'] = 'set_random_trained_module', ['strength'] = 1 },
-		{ ['turn'] = 14, ['e'] = 'set_village_income', ['new_income'] = 5 },
-		{ ['turn'] = 16, ['e'] = 'generate_strong_spawn', ['value'] = 50 },
-		{ ['turn'] = 16, ['e'] = 'set_random_trained_module', ['strength'] = 2 },
-		{ ['turn'] = 17, ['e'] = 'set_recruit_list', ['r_lvls'] = '2,2,2,2' },
-		{ ['turn'] = 17, ['e'] = 'schedule_weather_change', ['severity'] = 3 },
-		{ ['turn'] = 19, ['e'] = 'generate_strong_spawn', ['value'] = 60 },
-		{ ['turn'] = 22, ['e'] = 'set_recruit_list', ['r_lvls'] = '3,3,3,3' },
-		{ ['turn'] = 23, ['e'] = 'schedule_weather_change', ['severity'] = 1 },
-		{ ['turn'] = 24, ['e'] = 'set_random_trained_module', ['strength'] = 1 },
-		{ ['turn'] = 25, ['e'] = 'set_village_income', ['new_income'] = 7 },
-		{ ['turn'] = 25, ['e'] = 'set_random_trained_module', ['strength'] = 1 },
-		{ ['turn'] = 26, ['e'] = 'schedule_weather_change', ['severity'] = 1 },
-		{ ['turn'] = 27, ['e'] = 'set_recruit_list', ['r_lvls'] = '4,4,5,5' },
-		{ ['turn'] = 28, ['e'] = 'generate_strong_spawn', ['value'] = 70 },
-		{ ['turn'] = 29, ['e'] = 'set_village_income', ['new_income'] = 9 },
-	},
-}
+-- Procedurally builds the conquest event schedule for a given difficulty (1-4).
+-- Higher difficulty starts events sooner, repeats them more often, and lets the
+-- AI climb to stronger recruit tiers / bigger bonuses. No RNG here, so every
+-- client generates the same schedule (safe for multiplayer).
+local function generate_conquest_events(difficulty)
+	local d = difficulty
+	if d < 1 then d = 1 end
+	if d > 4 then d = 4 end
+
+	local last_turn = 32
+	local events = {}
+	local function add(turn, e, extra)
+		if turn < 1 or turn > last_turn then return end
+		local row = { turn = turn, e = e }
+		if extra then
+			for k, v in pairs(extra) do row[k] = v end
+		end
+		events[#events + 1] = row
+	end
+
+	-- AI recruit tiers: advance through this progression over the game.
+	local recruit_progression = {
+		'0,0,0', '1,1,1,0', '1,1,2,2', '2,2,2,2', '2,2,2,3,3', '3,3,3,3', '3,3,4,4', '3,4,4,5',
+	}
+	local recruit_interval = 7 - d                          -- d1:6 ... d4:3
+	local max_tier = math.min(#recruit_progression, 4 + d)  -- d1:5 ... d4:8
+	local turn = 1
+	for tier = 1, max_tier do
+		add(turn, 'set_recruit_list', { r_lvls = recruit_progression[tier] })
+		turn = turn + recruit_interval
+	end
+
+	-- Village income: periodic RELATIVE increases (handler adds increase_by).
+	local income_step = 1 + math.floor(d / 2)   -- d1:1, d2:2, d3:2, d4:3
+	local income_interval = 8 - d               -- d1:7 ... d4:4
+	turn = 12 - d                               -- d1:11 ... d4:8
+	while turn <= last_turn do
+		add(turn, 'set_village_income', { increase_by = income_step })
+		turn = turn + income_interval
+	end
+
+	-- Strong spawns: boost tokens for AI recruit improvements, growing over time.
+	local spawn_interval = 10 - d               -- d1:9 ... d4:6
+	local spawn_occ = 0
+	turn = 10 - 2 * d                           -- d1:8, d2:6, d3:4, d4:2
+	if turn < 2 then turn = 2 end
+	while turn <= last_turn do
+		local value = 20 + 5 * d + spawn_occ * 12
+		if value > 90 then value = 90 end
+		add(turn, 'generate_strong_spawn', { value = value })
+		spawn_occ = spawn_occ + 1
+		turn = turn + spawn_interval
+	end
+
+	-- Training modules granted to the AI sides.
+	local train_strength = 1 + math.floor((d - 1) / 2)  -- d1:1, d2:1, d3:2, d4:2
+	local train_interval = 9 - d                        -- d1:8 ... d4:5
+	turn = 12 - d                                       -- d1:11 ... d4:8
+	while turn <= last_turn do
+		add(turn, 'set_random_trained_module', { strength = train_strength })
+		turn = turn + train_interval
+	end
+
+	-- Weather: periodic, escalating severity.
+	local weather_interval = 12 - d             -- d1:11 ... d4:8
+	local weather_occ = 0
+	turn = 16 - 2 * d                           -- d1:14, d2:12, d3:10, d4:8
+	while turn <= last_turn do
+		local severity = math.ceil(d / 2) + math.floor(weather_occ / 2)
+		if severity > 5 then severity = 5 end
+		add(turn, 'schedule_weather_change', { severity = severity })
+		weather_occ = weather_occ + 1
+		turn = turn + weather_interval
+	end
+
+	table.sort(events, function(a, b) return a.turn < b.turn end)
+	return events
+end
 
 function wesnoth.wml_actions.qquws_generate_conquest_event_list(cfg)
-	local difficulty = cfg.difficulty
-	wml.array_access.set("conquest_events", generate_conquest_events['diff_' .. tostring(difficulty)])
+	local difficulty = tonumber(cfg.difficulty) or 1
+	wml.array_access.set("conquest_events", generate_conquest_events(difficulty))
 end
 
 function wesnoth.wml_actions.qquws_generate_new_recruit_list(cfg)
@@ -99,6 +97,67 @@ function wesnoth.wml_actions.qquws_generate_new_recruit_list(cfg)
 	end
 	
 	wml.variables['uwsc_recruit_list'] = table.concat(list, ',')
+end
+
+
+-- Sets each listed side's gold to an absolute amount (comma-separated side list).
+function wesnoth.wml_actions.qquws_set_side_gold(cfg)
+	local gold = tonumber(cfg.gold) or 0
+	for s in string.gmatch(tostring(cfg.sides or ''), '([^,]+)') do
+		local side = tonumber(s)
+		if side and wesnoth.sides[side] then
+			wesnoth.sides[side].gold = gold
+		end
+	end
+end
+
+-- Leader buffs: one is rolled per enemy leader, tuned to be sensibly strong.
+local leader_buffs = {
+	{ var = 'new_unit_bulky_value',      value = 60 },
+	{ var = 'new_unit_beefy_value',      value = 40 },
+	{ var = 'new_unit_armored_value',    value = 20 },
+	{ var = 'new_unit_agile_value',      value = 15 },
+	{ var = 'new_unit_aggressive_value', value = 1  },
+}
+local leader_buff_vars = {
+	'new_unit_bulky_value', 'new_unit_beefy_value', 'new_unit_armored_value',
+	'new_unit_fast_value', 'new_unit_agile_value', 'new_unit_aggressive_value',
+}
+
+-- Advances each enemy leader up its advancement tree to the target level (if it
+-- can) and grants it one random strong buff via the standard bonus applicator.
+function wesnoth.wml_actions.qquws_upgrade_ai_leaders(cfg)
+	local target_level = tonumber(cfg.level) or 4
+	local leaders = wesnoth.get_units { side = tostring(cfg.sides or ''), canrecruit = true }
+
+	for _, u in ipairs(leaders) do
+		local leader_id = u.id
+
+		-- climb the advancement tree toward the target level
+		local guard = 0
+		while u.level < target_level and guard < 12 do
+			local adv = wesnoth.unit_types[u.type].advances_to
+			if not adv or #adv == 0 then break end
+			u:transform(adv[mathx.random(1, #adv)])
+			guard = guard + 1
+		end
+		u.hitpoints = u.max_hitpoints
+
+		-- one random strong buff, applied like a spawn/champion bonus
+		local b = leader_buffs[mathx.random(1, #leader_buffs)]
+		wml.variables['uws_spawn.type'] = u.type
+		wml.variables['uws_spawn.final_boss'] = false
+		wml.variables['new_unit_spawn_id'] = leader_id
+		for _, name in ipairs(leader_buff_vars) do wml.variables[name] = 0 end
+		wml.variables['new_unit_spawn_champion'] = ''
+		wml.variables['new_unit_spawn_minion'] = ''
+		wml.variables['new_unit_spawn_quiet_bonus_id'] = ''
+		wml.variables[b.var] = b.value
+		wml.fire('fire_event', { name = 'apply_new_unit_bonus' })
+
+		local healed = wesnoth.get_units { id = leader_id }[1]
+		if healed then healed.hitpoints = healed.max_hitpoints end
+	end
 end
 
 
@@ -240,7 +299,7 @@ local function describe_conquest_event(e)
 	if t == 'set_recruit_list' then
 		return "enemies recruit " .. tostring(e.r_lvls)
 	elseif t == 'set_village_income' then
-		return "enemy village income " .. tostring(e.new_income)
+		return "enemy village income +" .. tostring(e.increase_by)
 	elseif t == 'schedule_weather_change' then
 		return "a weather change (severity " .. tostring(e.severity) .. ")"
 	elseif t == 'generate_strong_spawn' then
@@ -280,7 +339,7 @@ function wesnoth.wml_actions.qquws_announce_conquest_events(cfg)
 		wesnoth.wml_actions.print {
 			text = table.concat(lines, "\n"),
 			size = 18,
-			duration = 6000,
+			duration = 11000,
 			color = "255,230,150",
 		}
 	end
@@ -378,11 +437,3 @@ function wesnoth.wml_actions.qquws_roll_recruit_improvement(cfg)
 		wml.variables['uwsc_champion_full_buff'] = table.concat(slots, ':')
 	end
 end
-
-
--- set_random_trained_module is handled by the mode-agnostic training engine in
--- lua/training.lua (qquws_add_random_training) + the QQUWS_TRAINING_MODULES event.
---
--- todo
--- village-based training: some villages offer player-chosen training for gold when
--- captured, reusing the training engine (qquws_add_training_module) - to be specced.
