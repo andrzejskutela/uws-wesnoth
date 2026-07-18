@@ -248,13 +248,13 @@ function wesnoth.wml_actions.qquws_place_special_village_locations(cfg)
 		place_label(hex, name, '#ebae2a')
 	end
 
-	-- hidden-unit locations: a random level-3 unit joins the visitor
-	local lvl3_pool = wml.variables['random_pool.level_3']
+	-- hidden-unit locations: a random level-2 unit joins the visitor
+	local lvl2_pool = wml.variables['random_pool.level_2']
 	for i = 1, hidden_count do
 		local hex = next_village()
 		if not hex then break end
-		if not lvl3_pool or lvl3_pool == '' then break end
-		local utype = mathx.random_choice(lvl3_pool)
+		if not lvl2_pool or lvl2_pool == '' then break end
+		local utype = mathx.random_choice(lvl2_pool)
 		local name = hnames[((i - 1) % #hnames) + 1]
 		seq = seq + 1
 		items[#items + 1] = {

@@ -7,7 +7,7 @@ local function generate_conquest_events(difficulty)
 	if d < 1 then d = 1 end
 	if d > 4 then d = 4 end
 
-	local last_turn = 32
+	local last_turn = 42
 	local events = {}
 	local function add(turn, e, extra)
 		if turn < 1 or turn > last_turn then return end
@@ -45,8 +45,8 @@ local function generate_conquest_events(difficulty)
 	turn = 10 - 2 * d                           -- d1:8, d2:6, d3:4, d4:2
 	if turn < 2 then turn = 2 end
 	while turn <= last_turn do
-		local value = 20 + 5 * d + spawn_occ * 12
-		if value > 90 then value = 90 end
+		local value = 30 + 5 * d + spawn_occ * 25
+		if value > 200 then value = 200 end
 		add(turn, 'generate_strong_spawn', { value = value })
 		spawn_occ = spawn_occ + 1
 		turn = turn + spawn_interval
@@ -54,8 +54,8 @@ local function generate_conquest_events(difficulty)
 
 	-- Training modules granted to the AI sides.
 	local train_strength = 1 + math.floor((d - 1) / 2)  -- d1:1, d2:1, d3:2, d4:2
-	local train_interval = 9 - d                        -- d1:8 ... d4:5
-	turn = 12 - d                                       -- d1:11 ... d4:8
+	local train_interval = 14 - d                       -- d1:13 ... d4:10
+	turn = 14 - d                                       -- d1:13 ... d4:10
 	while turn <= last_turn do
 		add(turn, 'set_random_trained_module', { strength = train_strength })
 		turn = turn + train_interval
@@ -64,7 +64,7 @@ local function generate_conquest_events(difficulty)
 	-- Weather: periodic, escalating severity.
 	local weather_interval = 12 - d             -- d1:11 ... d4:8
 	local weather_occ = 0
-	turn = 16 - 2 * d                           -- d1:14, d2:12, d3:10, d4:8
+	turn = 16 - 3 * d                           -- d1:14, d2:12, d3:10, d4:8
 	while turn <= last_turn do
 		local severity = math.ceil(d / 2) + math.floor(weather_occ / 2)
 		if severity > 5 then severity = 5 end
@@ -168,7 +168,7 @@ end
 -- castles and keeps are always left intact.
 
 -- tiles-per-100 changed, indexed by severity (1..5)
-local weather_severity_pct = { 8, 16, 25, 40, 100 }
+local weather_severity_pct = { 8, 16, 25, 40, 80 }
 
 -- Each pattern rewrites a set of source terrains into a target terrain.
 -- 'scale' (on a pattern or a single rule) shrinks the affected fraction - used to
@@ -255,7 +255,17 @@ function wesnoth.wml_actions.qquws_apply_weather_change(cfg)
 			if p.id == cfg.pattern then pattern = p break end
 		end
 	end
+	if not pattern then
+		-- use the pattern pre-rolled by the turn announcement, if any
+		local pending = wml.variables['uwsc_weather_pending']
+		if pending and pending ~= '' then
+			for i,p in ipairs(weather_patterns) do
+				if p.id == pending then pattern = p break end
+			end
+		end
+	end
 	pattern = pattern or weather_patterns[mathx.random(1, #weather_patterns)]
+	wml.variables['uwsc_weather_pending'] = nil
 
 	local map = wesnoth.current.map
 	local occupied = weather_occupied_set()
@@ -294,16 +304,23 @@ end
 -- what fires NEXT turn. It has to be a single print because the engine only shows
 -- one overlay label at a time (a new [print] removes the previous one).
 
-local function describe_conquest_event(e)
+local function describe_conquest_event(e, is_now)
 	local t = e.e
 	if t == 'set_recruit_list' then
 		return "enemies recruit " .. tostring(e.r_lvls)
 	elseif t == 'set_village_income' then
 		return "enemy village income +" .. tostring(e.increase_by)
 	elseif t == 'schedule_weather_change' then
-		return "a weather change (severity " .. tostring(e.severity) .. ")"
+		if is_now then
+			-- pre-roll the weather so the announcement shows the real flavour text and
+			-- qquws_apply_weather_change applies that very same pattern this turn
+			local pattern = weather_patterns[mathx.random(1, #weather_patterns)]
+			wml.variables['uwsc_weather_pending'] = pattern.id
+			return (pattern.label:gsub('%.$', ''))
+		end
+		return "a change in the weather (severity " .. tostring(e.severity) .. ")"
 	elseif t == 'generate_strong_spawn' then
-		return "stronger enemy recruits (+" .. tostring(e.value) .. ")"
+		return "hardened enemy recruits (+" .. tostring(e.value) .. ")"
 	elseif t == 'set_random_trained_module' then
 		return "new training (tier " .. tostring(e.strength) .. ")"
 	end
@@ -314,11 +331,11 @@ function wesnoth.wml_actions.qquws_announce_conquest_events(cfg)
 	local turn = tonumber(cfg.turn) or 0
 	local events = wml.array_access.get("conquest_events")
 
-	local function collect(target)
+	local function collect(target, is_now)
 		local descs = {}
 		for i,e in ipairs(events) do
 			if tonumber(e.turn) == target then
-				local d = describe_conquest_event(e)
+				local d = describe_conquest_event(e, is_now)
 				if d then descs[#descs + 1] = d end
 			end
 		end
@@ -326,11 +343,13 @@ function wesnoth.wml_actions.qquws_announce_conquest_events(cfg)
 	end
 
 	local lines = {}
-	local now = collect(turn)
-	if #now > 0 then
+	-- always collect this turn (so weather is pre-rolled), but don't announce the
+	-- current turn on turn 1
+	local now = collect(turn, true)
+	if turn ~= 1 and #now > 0 then
 		lines[#lines + 1] = "This turn: " .. table.concat(now, "; ") .. "."
 	end
-	local soon = collect(turn + 1)
+	local soon = collect(turn + 1, false)
 	if #soon > 0 then
 		lines[#lines + 1] = "Next turn: " .. table.concat(soon, "; ") .. "."
 	end
@@ -339,7 +358,7 @@ function wesnoth.wml_actions.qquws_announce_conquest_events(cfg)
 		wesnoth.wml_actions.print {
 			text = table.concat(lines, "\n"),
 			size = 18,
-			duration = 11000,
+			duration = 20000,
 			color = "255,230,150",
 		}
 	end
